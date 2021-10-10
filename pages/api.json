@@ -1,0 +1,555 @@
+{
+  "pets": [
+    {
+      "name": "Ant",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 1,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Faint: Give a random friend +2/+1",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 2,
+            "healthAmount": 1,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "UntilEndOfPhase"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Faint: Give a random friend +4/+2",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 4,
+            "healthAmount": 2,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "UntilEndOfPhase"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Faint: Give a random friend +6/+3",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 6,
+            "healthAmount": 3,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "UntilEndOfPhase"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beaver",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Sell: Give two random friends +1 health",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 2,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 1,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Sell: Give two random friends +2 health",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 2,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 2,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Sell: Give two random friends +3 health",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 2,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 3,
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cricket",
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Faint: Summon a 1/1 Cricket",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "SummonPet",
+            "pet": {
+              "name": "Cricket",
+              "tier": 1,
+              "baseAttack": 1,
+              "baseHp": 1
+            }
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Faint: Summon a 2/2 Cricket",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "SummonPet",
+            "pet": {
+              "name": "Cricket",
+              "tier": 1,
+              "baseAttack": 2,
+              "baseHp": 2
+            }
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Faint: Summon a 3/3 Cricket",
+        "trigger": 0,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "SummonPet",
+            "pet": {
+              "name": "Cricket",
+              "tier": 1,
+              "baseAttack": 3,
+              "baseHp": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Duck",
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Sell: Give shop animals +1/+1",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "attackAmount": 1,
+            "healthAmount": 1,
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Sell: Give shop animals +2/+2",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "attackAmount": 1,
+            "healthAmount": 1,
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Sell: Give shop animals +3/+3",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "attackAmount": 3,
+            "healthAmount": 3,
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fish",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 3,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Level-up: Give all friends +1/+1",
+        "trigger": 2,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "EachFriend"
+            },
+            "attackAmount": 1,
+            "healthAmount": 1,
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Level-up: Give all friends +2/+2",
+        "trigger": 2,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "EachFriend"
+            },
+            "attackAmount": 2,
+            "healthAmount": 2,
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Horse",
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHp": 1,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Friend summoned: Give it +1 Attack until end of battle",
+        "trigger": 3,
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "TriggeringEntity"
+            },
+            "attackAmount": 1,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Friend summoned: Give it +2 Attack until end of battle",
+        "trigger": 2,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "TriggeringEntity"
+            },
+            "attackAmount": 2,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Friend summoned: Give it +3 Attack until end of battle",
+        "trigger": 2,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "TriggeringEntity"
+            },
+            "attackAmount": 3,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mosquito",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Start of battle: Deal 1 damage to a random enemy",
+        "trigger": 4,
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomEnemy"
+            },
+            "healthAmount": 1,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Start of battle: Deal 2 damage to a random enemy",
+        "trigger": 4,
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomEnemy"
+            },
+            "healthAmount": 2,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Start of battle: Deal 3 damage to a random enemy",
+        "trigger": 4,
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomEnemy"
+            },
+            "healthAmount": 3,
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Otter",
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Buy: Give a random friend +1/+1",
+        "trigger": 5,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "attackAmount": 1,
+            "healthAmount": 1,
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Buy: Give a random friend +2/+2",
+        "trigger": 5,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "attackAmount": 2,
+            "healthAmount": 2,
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Buy: Give a random friend +3/+3",
+        "trigger": 5,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "target": {
+              "kind": "RandomFriend"
+            },
+            "attackAmount": 3,
+            "healthAmount": 3,
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pig",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Sell: Gain an extra 1 gold",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "GainGold",
+            "amount": 1
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Sell: Gain an extra 2 gold",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "GainGold",
+            "amount": 2
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Sell: Gain an extra 3 gold",
+        "trigger": 1,
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "GainGold",
+            "amount": 3
+          }
+        ]
+      }
+    }
+  ]
+}
