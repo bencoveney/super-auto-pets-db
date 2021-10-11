@@ -23,7 +23,7 @@ exports.output = void 0;
 var fs = __importStar(require("fs"));
 var path = __importStar(require("path"));
 function output(pets) {
-    var outputDir = path.join(process.cwd(), "pages");
+    var outputDir = path.join(process.cwd(), "docs");
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true });
     }

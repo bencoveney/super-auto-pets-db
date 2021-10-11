@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 
 export function output(pets: any) {
-  const outputDir = path.join(process.cwd(), "pages");
+  const outputDir = path.join(process.cwd(), "docs");
 
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });

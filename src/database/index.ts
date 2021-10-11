@@ -1,6 +1,6 @@
 type Pack = "StandardPack" | "ExpansionPack1";
 
-interface Pet {
+export interface Pet {
   name: String;
   tier: number;
   baseAttack: number;
@@ -11,7 +11,7 @@ interface Pet {
   level3Ability?: Ability;
 }
 
-interface Ability {
+export interface Ability {
   description: string;
   // What behaviour (by the trigger entity) will initiate the ability.
   trigger: Trigger;
@@ -544,6 +544,6 @@ const pets: Pet[] = [
   pig,
 ];
 
-import * as writeApi from "./write_api";
-
-writeApi.output(pets);
+export function getPets(): Pet[] {
+  return pets;
+}
