@@ -5,9 +5,9 @@ import { List } from "./List";
 
 export function Page(props: { pets: Pet[] }) {
   return (
-    <div>
+    <>
       <List pets={props.pets} />
       <Blurb />
-    </div>
+    </>
   );
 }

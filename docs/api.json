@@ -6,11 +6,12 @@
       "baseAttack": 2,
       "baseHp": 1,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Faint: Give a random friend +2/+1",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -29,7 +30,7 @@
       },
       "level2Ability": {
         "description": "Faint: Give a random friend +4/+2",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -48,7 +49,7 @@
       },
       "level3Ability": {
         "description": "Faint: Give a random friend +6/+3",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -72,11 +73,12 @@
       "baseAttack": 2,
       "baseHp": 2,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Sell: Give two random friends +1 health",
-        "trigger": 0,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -94,7 +96,7 @@
       },
       "level2Ability": {
         "description": "Sell: Give two random friends +2 health",
-        "trigger": 0,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -112,7 +114,7 @@
       },
       "level3Ability": {
         "description": "Sell: Give two random friends +3 health",
-        "trigger": 0,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -130,16 +132,143 @@
       }
     },
     {
+      "name": "Beetle",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 3,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Eat shop food: Give shop animals +1 health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 1,
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Eat shop food: Give shop animals +2 health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 2,
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Eat shop food: Give shop animals +3 health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "healthAmount": 3,
+            "target": {
+              "kind": "EachShopAnimal"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bluebird",
+      "tier": 1,
+      "baseAttack": 2,
+      "baseHp": 3,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give left-most friend +1 attack",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 1,
+            "target": {
+              "kind": "LeftMostFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "End turn: Give left-most friend +2 attack",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 2,
+            "target": {
+              "kind": "LeftMostFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "End turn: Give left-most friend +3 attack",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 3,
+            "target": {
+              "kind": "LeftMostFriend"
+            },
+            "duration": "Permanent"
+          }
+        ]
+      }
+    },
+    {
       "name": "Cricket",
       "tier": 1,
       "baseAttack": 1,
       "baseHp": 2,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Faint: Summon a 1/1 Cricket",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -158,7 +287,7 @@
       },
       "level2Ability": {
         "description": "Faint: Summon a 2/2 Cricket",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -177,7 +306,7 @@
       },
       "level3Ability": {
         "description": "Faint: Summon a 3/3 Cricket",
-        "trigger": 0,
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -205,7 +334,7 @@
       ],
       "level1Ability": {
         "description": "Sell: Give shop animals +1/+1",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -224,7 +353,7 @@
       },
       "level2Ability": {
         "description": "Sell: Give shop animals +2/+2",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -235,15 +364,15 @@
             "target": {
               "kind": "EachShopAnimal"
             },
-            "attackAmount": 1,
-            "healthAmount": 1,
+            "attackAmount": 2,
+            "healthAmount": 2,
             "duration": "Permanent"
           }
         ]
       },
       "level3Ability": {
         "description": "Sell: Give shop animals +3/+3",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -267,11 +396,12 @@
       "baseAttack": 2,
       "baseHp": 3,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Level-up: Give all friends +1/+1",
-        "trigger": 2,
+        "trigger": "LevelUp",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -290,7 +420,7 @@
       },
       "level2Ability": {
         "description": "Level-up: Give all friends +2/+2",
-        "trigger": 2,
+        "trigger": "LevelUp",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -318,7 +448,7 @@
       ],
       "level1Ability": {
         "description": "Friend summoned: Give it +1 Attack until end of battle",
-        "trigger": 3,
+        "trigger": "Summoned",
         "triggeredBy": {
           "kind": "EachFriend"
         },
@@ -336,9 +466,9 @@
       },
       "level2Ability": {
         "description": "Friend summoned: Give it +2 Attack until end of battle",
-        "trigger": 2,
+        "trigger": "Summoned",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "EachFriend"
         },
         "times": 1,
         "effect": [
@@ -354,9 +484,9 @@
       },
       "level3Ability": {
         "description": "Friend summoned: Give it +3 Attack until end of battle",
-        "trigger": 2,
+        "trigger": "Summoned",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "EachFriend"
         },
         "times": 1,
         "effect": [
@@ -372,16 +502,83 @@
       }
     },
     {
+      "name": "Ladybug",
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHp": 3,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Buy food: Gain +1/+1 until end of battle",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 1,
+            "healthAmount": 1,
+            "target": {
+              "kind": "Self"
+            },
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level2Ability": {
+        "description": "Buy food: Gain +2/+2 until end of battle",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 2,
+            "healthAmount": 2,
+            "target": {
+              "kind": "Self"
+            },
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      },
+      "level3Ability": {
+        "description": "Buy food: Gain +3/+3 until end of battle",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "times": 1,
+        "effect": [
+          {
+            "kind": "ModifyStats",
+            "attackAmount": 3,
+            "healthAmount": 3,
+            "target": {
+              "kind": "Self"
+            },
+            "duration": "UntilEndOfBattle"
+          }
+        ]
+      }
+    },
+    {
       "name": "Mosquito",
       "tier": 1,
       "baseAttack": 2,
       "baseHp": 2,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Start of battle: Deal 1 damage to a random enemy",
-        "trigger": 4,
+        "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "None"
         },
@@ -399,7 +596,7 @@
       },
       "level2Ability": {
         "description": "Start of battle: Deal 2 damage to a random enemy",
-        "trigger": 4,
+        "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "None"
         },
@@ -417,7 +614,7 @@
       },
       "level3Ability": {
         "description": "Start of battle: Deal 3 damage to a random enemy",
-        "trigger": 4,
+        "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "None"
         },
@@ -444,7 +641,7 @@
       ],
       "level1Ability": {
         "description": "Buy: Give a random friend +1/+1",
-        "trigger": 5,
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -463,7 +660,7 @@
       },
       "level2Ability": {
         "description": "Buy: Give a random friend +2/+2",
-        "trigger": 5,
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -482,7 +679,7 @@
       },
       "level3Ability": {
         "description": "Buy: Give a random friend +3/+3",
-        "trigger": 5,
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -506,11 +703,12 @@
       "baseAttack": 2,
       "baseHp": 2,
       "packs": [
-        "StandardPack"
+        "StandardPack",
+        "ExpansionPack1"
       ],
       "level1Ability": {
         "description": "Sell: Gain an extra 1 gold",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -524,7 +722,7 @@
       },
       "level2Ability": {
         "description": "Sell: Gain an extra 2 gold",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -538,7 +736,7 @@
       },
       "level3Ability": {
         "description": "Sell: Gain an extra 3 gold",
-        "trigger": 1,
+        "trigger": "Sell",
         "triggeredBy": {
           "kind": "Self"
         },
