@@ -8,8 +8,15 @@ var react_1 = __importDefault(require("react"));
 var Blurb_1 = require("./Blurb");
 var List_1 = require("./List");
 function Page(props) {
+    var tiers = [1, 2, 3, 4, 5, 6].map(function (tier) {
+        return props.pets.filter(function (pet) { return pet.tier == tier; });
+    });
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(List_1.List, { pets: props.pets }),
+        tiers.map(function (tier, index) { return (react_1.default.createElement("div", { key: index },
+            react_1.default.createElement("h2", { className: "p-6" },
+                "Tier ",
+                index + 1),
+            react_1.default.createElement(List_1.List, { pets: tier }))); }),
         react_1.default.createElement(Blurb_1.Blurb, null)));
 }
 exports.Page = Page;

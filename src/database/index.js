@@ -19,25 +19,23 @@ function antAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                attackAmount: level * 2,
-                healthAmount: level,
-                target: {
-                    kind: "RandomFriend",
-                },
-                duration: "UntilEndOfPhase",
+        effect: {
+            kind: "ModifyStats",
+            attackAmount: level * 2,
+            healthAmount: level,
+            target: {
+                kind: "RandomFriend",
+                n: 1,
             },
-        ],
+            duration: "UntilEndOfPhase",
+        },
     };
 }
 var ant = {
     name: "Ant",
     tier: 1,
     baseAttack: 2,
-    baseHp: 1,
+    baseHealth: 1,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: antAbility(1),
     level2Ability: antAbility(2),
@@ -50,24 +48,22 @@ function beaverAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 2,
-        effect: [
-            {
-                kind: "ModifyStats",
-                healthAmount: level,
-                target: {
-                    kind: "RandomFriend",
-                },
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            healthAmount: level,
+            target: {
+                kind: "RandomFriend",
+                n: 2,
             },
-        ],
+            duration: "Permanent",
+        },
     };
 }
 var beaver = {
     name: "Beaver",
     tier: 1,
     baseAttack: 2,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: beaverAbility(1),
     level2Ability: beaverAbility(2),
@@ -80,24 +76,21 @@ function beetleAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                healthAmount: level,
-                target: {
-                    kind: "EachShopAnimal",
-                },
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            healthAmount: level,
+            target: {
+                kind: "EachShopAnimal",
             },
-        ],
+            duration: "Permanent",
+        },
     };
 }
 var beetle = {
     name: "Beetle",
     tier: 1,
     baseAttack: 2,
-    baseHp: 3,
+    baseHealth: 3,
     packs: ["ExpansionPack1"],
     level1Ability: beetleAbility(1),
     level2Ability: beetleAbility(2),
@@ -110,24 +103,21 @@ function bluebirdAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                attackAmount: level,
-                target: {
-                    kind: "LeftMostFriend",
-                },
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            attackAmount: level,
+            target: {
+                kind: "LeftMostFriend",
             },
-        ],
+            duration: "Permanent",
+        },
     };
 }
 var bluebird = {
     name: "Bluebird",
     tier: 1,
     baseAttack: 2,
-    baseHp: 3,
+    baseHealth: 3,
     packs: ["ExpansionPack1"],
     level1Ability: bluebirdAbility(1),
     level2Ability: bluebirdAbility(2),
@@ -137,7 +127,7 @@ var cricketSummoned = {
     name: "Cricket",
     tier: 1,
     baseAttack: -1,
-    baseHp: -1,
+    baseHealth: -1,
 };
 function cricketAbility(level) {
     return {
@@ -146,20 +136,17 @@ function cricketAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "SummonPet",
-                pet: __assign(__assign({}, cricketSummoned), { baseAttack: level, baseHp: level }),
-            },
-        ],
+        effect: {
+            kind: "SummonPet",
+            pet: __assign(__assign({}, cricketSummoned), { baseAttack: level, baseHealth: level }),
+        },
     };
 }
 var cricket = {
     name: "Cricket",
     tier: 1,
     baseAttack: 1,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: cricketAbility(1),
     level2Ability: cricketAbility(2),
@@ -172,25 +159,22 @@ function duckAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                target: {
-                    kind: "EachShopAnimal",
-                },
-                attackAmount: level,
-                healthAmount: level,
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "EachShopAnimal",
             },
-        ],
+            attackAmount: level,
+            healthAmount: level,
+            duration: "Permanent",
+        },
     };
 }
 var duck = {
     name: "Duck",
     tier: 1,
     baseAttack: 1,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack"],
     level1Ability: duckAbility(1),
     level2Ability: duckAbility(2),
@@ -203,25 +187,22 @@ function fishAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                target: {
-                    kind: "EachFriend",
-                },
-                attackAmount: level,
-                healthAmount: level,
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "EachFriend",
             },
-        ],
+            attackAmount: level,
+            healthAmount: level,
+            duration: "Permanent",
+        },
     };
 }
 var fish = {
     name: "Fish",
     tier: 1,
     baseAttack: 2,
-    baseHp: 3,
+    baseHealth: 3,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: fishAbility(1),
     level2Ability: fishAbility(2),
@@ -233,24 +214,21 @@ function horseAbility(level) {
         triggeredBy: {
             kind: "EachFriend",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                target: {
-                    kind: "TriggeringEntity",
-                },
-                attackAmount: level,
-                duration: "UntilEndOfBattle",
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "TriggeringEntity",
             },
-        ],
+            attackAmount: level,
+            duration: "UntilEndOfBattle",
+        },
     };
 }
 var horse = {
     name: "Horse",
     tier: 1,
     baseAttack: 1,
-    baseHp: 1,
+    baseHealth: 1,
     packs: ["StandardPack"],
     level1Ability: horseAbility(1),
     level2Ability: horseAbility(2),
@@ -263,25 +241,22 @@ function ladybugAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                attackAmount: level,
-                healthAmount: level,
-                target: {
-                    kind: "Self",
-                },
-                duration: "UntilEndOfBattle",
+        effect: {
+            kind: "ModifyStats",
+            attackAmount: level,
+            healthAmount: level,
+            target: {
+                kind: "Self",
             },
-        ],
+            duration: "UntilEndOfBattle",
+        },
     };
 }
 var ladybug = {
     name: "Ladybug",
     tier: 1,
     baseAttack: 1,
-    baseHp: 3,
+    baseHealth: 3,
     packs: ["ExpansionPack1"],
     level1Ability: ladybugAbility(1),
     level2Ability: ladybugAbility(2),
@@ -294,24 +269,22 @@ function mosquitoAbility(level) {
         triggeredBy: {
             kind: "None",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                target: {
-                    kind: "RandomEnemy",
-                },
-                healthAmount: level,
-                duration: "UntilEndOfBattle",
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "RandomEnemy",
+                n: 1,
             },
-        ],
+            healthAmount: level,
+            duration: "UntilEndOfBattle",
+        },
     };
 }
 var mosquito = {
     name: "Mosquito",
     tier: 1,
     baseAttack: 2,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: mosquitoAbility(1),
     level2Ability: mosquitoAbility(2),
@@ -324,25 +297,23 @@ function otterAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "ModifyStats",
-                target: {
-                    kind: "RandomFriend",
-                },
-                attackAmount: level,
-                healthAmount: level,
-                duration: "Permanent",
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "RandomFriend",
+                n: 1,
             },
-        ],
+            attackAmount: level,
+            healthAmount: level,
+            duration: "Permanent",
+        },
     };
 }
 var otter = {
     name: "Otter",
     tier: 1,
     baseAttack: 1,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack"],
     level1Ability: otterAbility(1),
     level2Ability: otterAbility(2),
@@ -355,24 +326,421 @@ function pigAbility(level) {
         triggeredBy: {
             kind: "Self",
         },
-        times: 1,
-        effect: [
-            {
-                kind: "GainGold",
-                amount: level,
-            },
-        ],
+        effect: {
+            kind: "GainGold",
+            amount: level,
+        },
     };
 }
 var pig = {
     name: "Pig",
     tier: 1,
     baseAttack: 2,
-    baseHp: 2,
+    baseHealth: 2,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: pigAbility(1),
     level2Ability: pigAbility(2),
     level3Ability: pigAbility(3),
+};
+function batAbility(level) {
+    return {
+        description: "Start of battle: Make " + level + " enemies Weak.",
+        trigger: "StartOfBattle" /* StartOfBattle */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ApplyStatus",
+            status: {
+                name: "Weak",
+            },
+            to: {
+                kind: "RandomEnemy",
+                n: level,
+            },
+        },
+    };
+}
+var bat = {
+    name: "Bat",
+    tier: 2,
+    baseAttack: 1,
+    baseHealth: 3,
+    packs: ["ExpansionPack1"],
+    level1Ability: __assign(__assign({}, batAbility(1)), { description: "Start of battle: Make 1 enemy Weak." }),
+    level2Ability: batAbility(2),
+    level3Ability: batAbility(3),
+};
+function crabAbility(level) {
+    return {
+        description: "Start of battle: Copy Health from friend ahead.",
+        trigger: "StartOfBattle" /* StartOfBattle */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "TransferStats",
+            copyAttack: false,
+            copyHealth: true,
+            from: {
+                kind: "FriendAhead",
+                n: 1,
+            },
+            to: {
+                kind: "Self",
+            },
+        },
+    };
+}
+var crab = {
+    name: "Crab",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 3,
+    packs: ["StandardPack"],
+    level1Ability: crabAbility(1),
+    level2Ability: crabAbility(2),
+    level3Ability: crabAbility(3),
+};
+function dodoAbility(level) {
+    return {
+        description: "Start of battle: Give Attack to " + level + " friends ahead.",
+        trigger: "StartOfBattle" /* StartOfBattle */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "TransferStats",
+            copyAttack: true,
+            copyHealth: false,
+            from: {
+                kind: "Self",
+            },
+            to: {
+                kind: "FriendAhead",
+                n: level,
+            },
+        },
+    };
+}
+var dodo = {
+    name: "Dodo",
+    tier: 2,
+    baseAttack: 1,
+    baseHealth: 3,
+    packs: ["StandardPack"],
+    level1Ability: __assign(__assign({}, dodoAbility(1)), { description: "Start of battle: Give Attack to friend ahead." }),
+    level2Ability: dodoAbility(2),
+    level3Ability: dodoAbility(3),
+};
+function dogAbility(level) {
+    return {
+        description: "Friend summoned: Gain +" + level + " Attack or +" + level + " Health.",
+        trigger: "StartOfBattle" /* StartOfBattle */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "OneOf",
+            effects: [
+                {
+                    kind: "ModifyStats",
+                    duration: "UntilEndOfPhase",
+                    target: {
+                        kind: "Self",
+                    },
+                    attackAmount: level,
+                },
+                {
+                    kind: "ModifyStats",
+                    duration: "UntilEndOfPhase",
+                    target: {
+                        kind: "Self",
+                    },
+                    healthAmount: level,
+                },
+            ],
+        },
+    };
+}
+var dog = {
+    name: "Dog",
+    tier: 2,
+    baseAttack: 2,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: dogAbility(1),
+    level2Ability: dogAbility(2),
+    level3Ability: dogAbility(3),
+};
+function dromedaryAbility(level) {
+    return {
+        description: "Start of turn: Give shop animals +" + level + "/+" + level,
+        trigger: "StartOfTurn" /* StartOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "EachShopAnimal",
+            },
+            attackAmount: level,
+            healthAmount: level,
+        },
+    };
+}
+var dromedary = {
+    name: "Dromedary",
+    tier: 2,
+    baseAttack: 2,
+    baseHealth: 4,
+    packs: ["ExpansionPack1"],
+    level1Ability: dromedaryAbility(1),
+    level2Ability: dromedaryAbility(2),
+    level3Ability: dromedaryAbility(3),
+};
+function elephantAbility(level) {
+    return {
+        description: "Before Attack: Deal 1 damage to " + level + " friends behind.",
+        trigger: "BeforeAttack" /* BeforeAttack */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "FriendBehind",
+                n: level,
+            },
+            attackAmount: -1,
+        },
+    };
+}
+var elephant = {
+    name: "Elephant",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 5,
+    packs: ["StandardPack"],
+    level1Ability: elephantAbility(1),
+    level2Ability: elephantAbility(2),
+    level3Ability: elephantAbility(3),
+};
+function flamingoAbility(level) {
+    return {
+        description: "Faint: Give the two friends behind +" + level + "/+" + level + ".",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "FriendBehind",
+                n: 2,
+            },
+            attackAmount: +level,
+            healthAmount: +level,
+        },
+    };
+}
+var flamingo = {
+    name: "Flamingo",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 1,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: flamingoAbility(1),
+    level2Ability: flamingoAbility(2),
+    level3Ability: flamingoAbility(3),
+};
+function hedgehogAbility(level) {
+    return {
+        description: "Faint: Deal " + level * 2 + " damage to all.",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "All",
+            },
+            healthAmount: -(level * 2),
+        },
+    };
+}
+var hedgehog = {
+    name: "Hedgehog",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: hedgehogAbility(1),
+    level2Ability: hedgehogAbility(2),
+    level3Ability: hedgehogAbility(3),
+};
+function peacockAbility(level) {
+    return {
+        description: "Hurt: Gain " + level * 2 + " Attack.",
+        trigger: "Hurt" /* Hurt */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "All",
+            },
+            attackAmount: level * 2,
+        },
+    };
+}
+var peacock = {
+    name: "Peacock",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: peacockAbility(1),
+    level2Ability: peacockAbility(2),
+    level3Ability: peacockAbility(3),
+};
+var dirtyRatSummoned = {
+    name: "Cricket",
+    tier: 1,
+    baseAttack: 1,
+    baseHealth: 1,
+};
+function ratAbility(level) {
+    return {
+        description: "Faint: summon one " + level + "/" + level + " Dirty Rat for the opponent that betrays him.",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "SummonPet",
+            pet: dirtyRatSummoned,
+        },
+    };
+}
+var rat = {
+    name: "Rat",
+    tier: 2,
+    baseAttack: 4,
+    baseHealth: 5,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: ratAbility(1),
+    level2Ability: ratAbility(2),
+    level3Ability: ratAbility(3),
+};
+function shrimpAbility(level) {
+    return {
+        description: "Friend sold: Give a random friend +" + level + " Health.",
+        trigger: "Sell" /* Sell */,
+        triggeredBy: {
+            kind: "EachFriend",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfPhase",
+            target: {
+                kind: "RandomFriend",
+                n: 1,
+            },
+            healthAmount: level,
+        },
+    };
+}
+var shrimp = {
+    name: "Shrimp",
+    tier: 2,
+    baseAttack: 2,
+    baseHealth: 1,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: shrimpAbility(1),
+    level2Ability: shrimpAbility(2),
+    level3Ability: shrimpAbility(3),
+};
+function spiderAbility(level) {
+    return {
+        description: "Faint: Summon one tier 3 animal as a " + level + "/" + level + ".",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "EachFriend",
+        },
+        effect: {
+            kind: "SummonPet",
+            pet: __assign(__assign({}, cricketSummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
+        },
+    };
+}
+var spider = {
+    name: "Spider",
+    tier: 2,
+    baseAttack: 2,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: spiderAbility(1),
+    level2Ability: spiderAbility(2),
+    level3Ability: spiderAbility(3),
+};
+function swanAbility(level) {
+    return {
+        description: "Start of turn: Gain 1 gold.",
+        trigger: "StartOfTurn" /* StartOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "GainGold",
+            amount: level,
+        },
+    };
+}
+var swan = {
+    name: "Swan",
+    tier: 2,
+    baseAttack: 3,
+    baseHealth: 4,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: swanAbility(1),
+    level2Ability: swanAbility(2),
+    level3Ability: swanAbility(3),
+};
+function tabbyCatAbility(level) {
+    return {
+        description: "Eats shop food: Give friends +" + level + " Attack until end of battle",
+        trigger: "EatsShopFood" /* EatsShopFood */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            duration: "UntilEndOfBattle",
+            target: {
+                kind: "EachFriend",
+            },
+            attackAmount: level,
+        },
+    };
+}
+var tabbyCat = {
+    name: "Tabby Cat",
+    tier: 2,
+    baseAttack: 4,
+    baseHealth: 3,
+    packs: ["ExpansionPack1"],
+    level1Ability: tabbyCatAbility(1),
+    level2Ability: tabbyCatAbility(2),
+    level3Ability: tabbyCatAbility(3),
 };
 var pets = [
     ant,
@@ -387,6 +755,20 @@ var pets = [
     mosquito,
     otter,
     pig,
+    bat,
+    crab,
+    dodo,
+    dog,
+    dromedary,
+    elephant,
+    flamingo,
+    hedgehog,
+    peacock,
+    rat,
+    shrimp,
+    spider,
+    swan,
+    tabbyCat,
 ];
 function getPets() {
     return pets;

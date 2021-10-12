@@ -1,5 +1,9 @@
 import React from "react";
-import { Pet as PetType, Ability as AbilityType } from "../../database";
+import {
+  Pet as PetType,
+  Ability as AbilityType,
+  Pack as PackType,
+} from "../../database";
 
 export function Pet(props: { pet: PetType }) {
   return (
@@ -7,17 +11,12 @@ export function Pet(props: { pet: PetType }) {
       <div className="p-3 flex flex-row justify-between">
         <div className="text-xl font-medium text-black">{props.pet.name}</div>
         <div className="">
-          ⚔️ {props.pet.baseAttack} / 💖 {props.pet.baseHp}
+          ⚔️ {props.pet.baseAttack} / 💖 {props.pet.baseHealth}
         </div>
       </div>
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (
-          <span
-            key={index}
-            className="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
-          >
-            {pack}
-          </span>
+          <Pack pack={pack} key={index} />
         ))}
       </div>
       {props.pet.level1Ability ? (
@@ -52,4 +51,18 @@ function LevelLabel(level: number) {
     default:
       return "❗";
   }
+}
+
+function Pack(props: { pack: PackType }) {
+  var packInfo = {
+    StandardPack: { color: "bg-blue-100", name: "Standard" },
+    ExpansionPack1: { color: "bg-purple-200", name: "Expansion 1" },
+  }[props.pack];
+  return (
+    <span
+      className={`inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold ${packInfo.color}`}
+    >
+      {packInfo.name}
+    </span>
+  );
 }

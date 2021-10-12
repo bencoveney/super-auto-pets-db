@@ -13,8 +13,8 @@ function Pet(props) {
                 "\u2694\uFE0F ",
                 props.pet.baseAttack,
                 " / \uD83D\uDC96 ",
-                props.pet.baseHp)),
-        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map(function (pack, index) { return (react_1.default.createElement("span", { key: index, className: "inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700" }, pack)); })),
+                props.pet.baseHealth)),
+        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map(function (pack, index) { return (react_1.default.createElement(Pack, { pack: pack, key: index })); })),
         props.pet.level1Ability ? (react_1.default.createElement(Ability, { level: 1, ability: props.pet.level1Ability })) : null,
         props.pet.level2Ability ? (react_1.default.createElement(Ability, { level: 2, ability: props.pet.level2Ability })) : null,
         props.pet.level3Ability ? (react_1.default.createElement(Ability, { level: 3, ability: props.pet.level3Ability })) : null));
@@ -37,4 +37,11 @@ function LevelLabel(level) {
         default:
             return "❗";
     }
+}
+function Pack(props) {
+    var packInfo = {
+        StandardPack: { color: "bg-blue-100", name: "Standard" },
+        ExpansionPack1: { color: "bg-purple-200", name: "Expansion 1" },
+    }[props.pack];
+    return (react_1.default.createElement("span", { className: "inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold " + packInfo.color }, packInfo.name));
 }
