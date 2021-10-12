@@ -1488,6 +1488,674 @@
           "untilEndOfBattle": true
         }
       }
+    },
+    {
+      "name": "Badger",
+      "tier": 3,
+      "baseAttack": 5,
+      "baseHealth": 4,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Faint: Deal Attack damage to adjacent animals",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "AdjacentAnimals"
+          },
+          "amount": "AttackDamage"
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Deal Attack damage to adjacent animals",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "AdjacentAnimals"
+          },
+          "amount": "AttackDamage"
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Deal Attack damage to adjacent animals",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "AdjacentAnimals"
+          },
+          "amount": "AttackDamage"
+        }
+      }
+    },
+    {
+      "name": "Blowfish",
+      "tier": 3,
+      "baseAttack": 3,
+      "baseHealth": 5,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Hurt: Deal 2 damage to a random enemy.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 2
+        }
+      },
+      "level2Ability": {
+        "description": "Hurt: Deal 4 damage to a random enemy.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 4
+        }
+      },
+      "level3Ability": {
+        "description": "Hurt: Deal 6 damage to a random enemy.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 6
+        }
+      }
+    },
+    {
+      "name": "Camel",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 5,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Hurt: Give friend behind +1/+2",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendBehind",
+            "n": 1
+          },
+          "attackAmount": 1,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Hurt: Give friend behind +2/+4",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendBehind",
+            "n": 1
+          },
+          "attackAmount": 2,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Hurt: Give friend behind +3/+6",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendBehind",
+            "n": 1
+          },
+          "attackAmount": 3,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Giraffe",
+      "tier": 3,
+      "baseAttack": 1,
+      "baseHealth": 3,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give friend ahead +1/+1",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give 2 friends ahead +1/+1",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 2
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Give 3 friends ahead +1/+1",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 3
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Kangaroo",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 3,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Friend ahead attacks: Gain +2/+2",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Friend ahead attacks: Gain +4/+4",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Friend ahead attacks: Gain +6/+6",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Ox",
+      "tier": 3,
+      "baseAttack": 1,
+      "baseHealth": 4,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Friend ahead attacks: Gain Melon Armor and +2 attack",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "AllOf",
+          "effects": [
+            {
+              "kind": "ApplyStatus",
+              "status": {
+                "name": "MelonArmor"
+              },
+              "to": {
+                "kind": "Self"
+              }
+            },
+            {
+              "kind": "ModifyStats",
+              "target": {
+                "kind": "Self"
+              },
+              "attackAmount": 2,
+              "untilEndOfBattle": false
+            }
+          ]
+        }
+      },
+      "level2Ability": {
+        "description": "Friend ahead attacks: Gain Melon Armor and +4 attack",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "AllOf",
+          "effects": [
+            {
+              "kind": "ApplyStatus",
+              "status": {
+                "name": "MelonArmor"
+              },
+              "to": {
+                "kind": "Self"
+              }
+            },
+            {
+              "kind": "ModifyStats",
+              "target": {
+                "kind": "Self"
+              },
+              "attackAmount": 4,
+              "untilEndOfBattle": false
+            }
+          ]
+        }
+      },
+      "level3Ability": {
+        "description": "Friend ahead attacks: Gain Melon Armor and +6 attack",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "AllOf",
+          "effects": [
+            {
+              "kind": "ApplyStatus",
+              "status": {
+                "name": "MelonArmor"
+              },
+              "to": {
+                "kind": "Self"
+              }
+            },
+            {
+              "kind": "ModifyStats",
+              "target": {
+                "kind": "Self"
+              },
+              "attackAmount": 6,
+              "untilEndOfBattle": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Rabbit",
+      "tier": 3,
+      "baseAttack": 3,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Friend eats shop food: Give it +1 Health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Friend eats shop food: Give it +2 Health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Friend eats shop food: Give it +3 Health",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Sheep",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Faint: Summon two 2/2 Rams",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Ram",
+            "tier": 1,
+            "baseAttack": 2,
+            "baseHealth": 2
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Summon two 4/4 Rams",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Ram",
+            "tier": 1,
+            "baseAttack": 4,
+            "baseHealth": 4
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Summon two 6/6 Rams",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Ram",
+            "tier": 1,
+            "baseAttack": 6,
+            "baseHealth": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "Snail",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Buy: If you lost last battle, give all friends +2/+1",
+        "trigger": "BuyAfterLoss",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 2,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Buy: If you lost last battle, give all friends +4/+2",
+        "trigger": "BuyAfterLoss",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 4,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Buy: If you lost last battle, give all friends +6/+3",
+        "trigger": "BuyAfterLoss",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 6,
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Turtle",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 4,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Faint: Give 1 friends behind Melon Armor",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "MelonArmor"
+          },
+          "to": {
+            "kind": "FriendBehind",
+            "n": 1
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Give 2 friends behind Melon Armor",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "MelonArmor"
+          },
+          "to": {
+            "kind": "FriendBehind",
+            "n": 2
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Give 3 friends behind Melon Armor",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "MelonArmor"
+          },
+          "to": {
+            "kind": "FriendBehind",
+            "n": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "Whale",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Start of battle: Swallow friend ahead and release it as a level 1 after fainting.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "Swallow",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Start of battle: Swallow friend ahead and release it as a level 2 after fainting.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "Swallow",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Start of battle: Swallow friend ahead and release it as a level 3 after fainting.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "Swallow",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          }
+        }
+      }
     }
   ]
 }

@@ -741,6 +741,328 @@ var tabbyCat = {
     level2Ability: tabbyCatAbility(2),
     level3Ability: tabbyCatAbility(3),
 };
+function badgerAbility(level) {
+    return {
+        description: "Faint: Deal Attack damage to adjacent animals",
+        trigger: "EatsShopFood" /* EatsShopFood */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "DealDamage",
+            target: {
+                kind: "AdjacentAnimals",
+            },
+            amount: "AttackDamage",
+        },
+    };
+}
+var badger = {
+    name: "Badger",
+    tier: 3,
+    baseAttack: 5,
+    baseHealth: 4,
+    packs: ["StandardPack"],
+    level1Ability: badgerAbility(1),
+    level2Ability: badgerAbility(2),
+    level3Ability: badgerAbility(3),
+};
+function blowfishAbility(level) {
+    return {
+        description: "Hurt: Deal " + level * 2 + " damage to a random enemy.",
+        trigger: "Hurt" /* Hurt */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "DealDamage",
+            target: {
+                kind: "RandomEnemy",
+                n: 1,
+            },
+            amount: level * 2,
+        },
+    };
+}
+var blowfish = {
+    name: "Blowfish",
+    tier: 3,
+    baseAttack: 3,
+    baseHealth: 5,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: blowfishAbility(1),
+    level2Ability: blowfishAbility(2),
+    level3Ability: blowfishAbility(3),
+};
+function camelAbility(level) {
+    return {
+        description: "Hurt: Give friend behind +" + level + "/+" + level * 2,
+        trigger: "Hurt" /* Hurt */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "FriendBehind",
+                n: 1,
+            },
+            attackAmount: level,
+            healthAmount: level * 2,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var camel = {
+    name: "Camel",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 5,
+    packs: ["StandardPack"],
+    level1Ability: camelAbility(1),
+    level2Ability: camelAbility(2),
+    level3Ability: camelAbility(3),
+};
+function giraffeAbility(level) {
+    return {
+        description: "End turn: Give " + level + " friends ahead +1/+1",
+        trigger: "EndOfTurn" /* EndOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "FriendAhead",
+                n: level,
+            },
+            attackAmount: 1,
+            healthAmount: 1,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var giraffe = {
+    name: "Giraffe",
+    tier: 3,
+    baseAttack: 1,
+    baseHealth: 3,
+    packs: ["StandardPack"],
+    level1Ability: __assign(__assign({}, giraffeAbility(1)), { description: "End turn: Give friend ahead +1/+1" }),
+    level2Ability: giraffeAbility(2),
+    level3Ability: giraffeAbility(3),
+};
+function kangarooAbility(level) {
+    return {
+        description: "Friend ahead attacks: Gain +" + level * 2 + "/+" + level * 2,
+        trigger: "AfterAttack" /* AfterAttack */,
+        triggeredBy: {
+            kind: "FriendAhead",
+            n: 1,
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "Self",
+            },
+            attackAmount: level * 2,
+            healthAmount: level * 2,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var kangaroo = {
+    name: "Kangaroo",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 3,
+    packs: ["StandardPack"],
+    level1Ability: kangarooAbility(1),
+    level2Ability: kangarooAbility(2),
+    level3Ability: kangarooAbility(3),
+};
+function oxAbility(level) {
+    return {
+        description: "Friend ahead attacks: Gain Melon Armor and +" + level * 2 + " attack",
+        trigger: "AfterAttack" /* AfterAttack */,
+        triggeredBy: {
+            kind: "FriendAhead",
+            n: 1,
+        },
+        effect: {
+            kind: "AllOf",
+            effects: [
+                {
+                    kind: "ApplyStatus",
+                    status: {
+                        name: "MelonArmor",
+                    },
+                    to: {
+                        kind: "Self",
+                    },
+                },
+                {
+                    kind: "ModifyStats",
+                    target: {
+                        kind: "Self",
+                    },
+                    attackAmount: level * 2,
+                    untilEndOfBattle: false,
+                },
+            ],
+        },
+    };
+}
+var ox = {
+    name: "Ox",
+    tier: 3,
+    baseAttack: 1,
+    baseHealth: 4,
+    packs: ["StandardPack"],
+    level1Ability: oxAbility(1),
+    level2Ability: oxAbility(2),
+    level3Ability: oxAbility(3),
+};
+function rabbitAbility(level) {
+    return {
+        description: "Friend eats shop food: Give it +" + level + " Health",
+        trigger: "EatsShopFood" /* EatsShopFood */,
+        triggeredBy: {
+            kind: "EachFriend",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "TriggeringEntity",
+            },
+            attackAmount: level,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var rabbit = {
+    name: "Rabbit",
+    tier: 3,
+    baseAttack: 3,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: rabbitAbility(1),
+    level2Ability: rabbitAbility(2),
+    level3Ability: rabbitAbility(3),
+};
+var ramSummoned = {
+    name: "Ram",
+    tier: 1,
+    baseAttack: -1,
+    baseHealth: -1,
+};
+function sheepAbility(level) {
+    return {
+        description: "Faint: Summon two " + level * 2 + "/" + level * 2 + " Rams",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "SummonPet",
+            pet: __assign(__assign({}, ramSummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
+        },
+    };
+}
+var sheep = {
+    name: "Sheep",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: sheepAbility(1),
+    level2Ability: sheepAbility(2),
+    level3Ability: sheepAbility(3),
+};
+function snailAbility(level) {
+    return {
+        description: "Buy: If you lost last battle, give all friends +" + level * 2 + "/+" + level,
+        trigger: "BuyAfterLoss" /* BuyAfterLoss */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "EachFriend",
+            },
+            attackAmount: level * 2,
+            healthAmount: level,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var snail = {
+    name: "Snail",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 2,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: snailAbility(1),
+    level2Ability: snailAbility(2),
+    level3Ability: snailAbility(3),
+};
+function turtleAbility(level) {
+    return {
+        description: "Faint: Give " + level + " friends behind Melon Armor",
+        trigger: "Faint" /* Faint */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ApplyStatus",
+            status: {
+                name: "MelonArmor",
+            },
+            to: {
+                kind: "FriendBehind",
+                n: level,
+            },
+        },
+    };
+}
+var turtle = {
+    name: "Turtle",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 4,
+    packs: ["StandardPack", "ExpansionPack1"],
+    level1Ability: turtleAbility(1),
+    level2Ability: turtleAbility(2),
+    level3Ability: turtleAbility(3),
+};
+function whaleAbility(level) {
+    return {
+        description: "Start of battle: Swallow friend ahead and release it as a level " + level + " after fainting.",
+        trigger: "StartOfBattle" /* StartOfBattle */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            // TODO: This should probably be represented as 2 abilities, but I would need 2 triggers.
+            kind: "Swallow",
+            target: {
+                kind: "FriendAhead",
+                n: 1,
+            },
+        },
+    };
+}
+var whale = {
+    name: "Whale",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 6,
+    packs: ["StandardPack"],
+    level1Ability: whaleAbility(1),
+    level2Ability: whaleAbility(2),
+    level3Ability: whaleAbility(3),
+};
 var pets = [
     // Tier 1
     ant,
@@ -771,17 +1093,17 @@ var pets = [
     swan,
     tabbyCat,
     // Tier 3
-    // badger,
-    // blowfish,
-    // camel,
-    // giraffe,
-    // kangaroo,
-    // ox,
-    // rabbit,
-    // sheep,
-    // snail,
-    // turtle,
-    // whale,
+    badger,
+    blowfish,
+    camel,
+    giraffe,
+    kangaroo,
+    ox,
+    rabbit,
+    sheep,
+    snail,
+    turtle,
+    whale,
 ];
 function getPets() {
     return pets;
