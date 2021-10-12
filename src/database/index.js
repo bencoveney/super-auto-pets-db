@@ -27,7 +27,7 @@ function antAbility(level) {
                 kind: "RandomFriend",
                 n: 1,
             },
-            duration: "UntilEndOfPhase",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -55,7 +55,7 @@ function beaverAbility(level) {
                 kind: "RandomFriend",
                 n: 2,
             },
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -82,7 +82,7 @@ function beetleAbility(level) {
             target: {
                 kind: "EachShopAnimal",
             },
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -109,7 +109,7 @@ function bluebirdAbility(level) {
             target: {
                 kind: "LeftMostFriend",
             },
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -166,7 +166,7 @@ function duckAbility(level) {
             },
             attackAmount: level,
             healthAmount: level,
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -194,7 +194,7 @@ function fishAbility(level) {
             },
             attackAmount: level,
             healthAmount: level,
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -220,7 +220,7 @@ function horseAbility(level) {
                 kind: "TriggeringEntity",
             },
             attackAmount: level,
-            duration: "UntilEndOfBattle",
+            untilEndOfBattle: true,
         },
     };
 }
@@ -248,7 +248,7 @@ function ladybugAbility(level) {
             target: {
                 kind: "Self",
             },
-            duration: "UntilEndOfBattle",
+            untilEndOfBattle: true,
         },
     };
 }
@@ -270,13 +270,12 @@ function mosquitoAbility(level) {
             kind: "None",
         },
         effect: {
-            kind: "ModifyStats",
+            kind: "DealDamage",
             target: {
                 kind: "RandomEnemy",
                 n: 1,
             },
-            healthAmount: level,
-            duration: "UntilEndOfBattle",
+            amount: level,
         },
     };
 }
@@ -305,7 +304,7 @@ function otterAbility(level) {
             },
             attackAmount: level,
             healthAmount: level,
-            duration: "Permanent",
+            untilEndOfBattle: false,
         },
     };
 }
@@ -351,6 +350,7 @@ function batAbility(level) {
         },
         effect: {
             kind: "ApplyStatus",
+            // TODO: Proper status effects.
             status: {
                 name: "Weak",
             },
@@ -445,7 +445,7 @@ function dogAbility(level) {
             effects: [
                 {
                     kind: "ModifyStats",
-                    duration: "UntilEndOfPhase",
+                    untilEndOfBattle: false,
                     target: {
                         kind: "Self",
                     },
@@ -453,7 +453,7 @@ function dogAbility(level) {
                 },
                 {
                     kind: "ModifyStats",
-                    duration: "UntilEndOfPhase",
+                    untilEndOfBattle: false,
                     target: {
                         kind: "Self",
                     },
@@ -482,7 +482,7 @@ function dromedaryAbility(level) {
         },
         effect: {
             kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
+            untilEndOfBattle: false,
             target: {
                 kind: "EachShopAnimal",
             },
@@ -509,13 +509,12 @@ function elephantAbility(level) {
             kind: "Self",
         },
         effect: {
-            kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
+            kind: "DealDamage",
             target: {
                 kind: "FriendBehind",
                 n: level,
             },
-            attackAmount: -1,
+            amount: 1,
         },
     };
 }
@@ -538,13 +537,13 @@ function flamingoAbility(level) {
         },
         effect: {
             kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
             target: {
                 kind: "FriendBehind",
                 n: 2,
             },
             attackAmount: +level,
             healthAmount: +level,
+            untilEndOfBattle: false,
         },
     };
 }
@@ -566,12 +565,11 @@ function hedgehogAbility(level) {
             kind: "Self",
         },
         effect: {
-            kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
+            kind: "DealDamage",
             target: {
                 kind: "All",
             },
-            healthAmount: -(level * 2),
+            amount: level * 2,
         },
     };
 }
@@ -594,11 +592,11 @@ function peacockAbility(level) {
         },
         effect: {
             kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
             target: {
                 kind: "All",
             },
             attackAmount: level * 2,
+            untilEndOfBattle: false,
         },
     };
 }
@@ -617,6 +615,7 @@ var dirtyRatSummoned = {
     tier: 1,
     baseAttack: 1,
     baseHealth: 1,
+    // TODO: Represent random attacks?
 };
 function ratAbility(level) {
     return {
@@ -650,12 +649,12 @@ function shrimpAbility(level) {
         },
         effect: {
             kind: "ModifyStats",
-            duration: "UntilEndOfPhase",
             target: {
                 kind: "RandomFriend",
                 n: 1,
             },
             healthAmount: level,
+            untilEndOfBattle: false,
         },
     };
 }
@@ -724,11 +723,11 @@ function tabbyCatAbility(level) {
         },
         effect: {
             kind: "ModifyStats",
-            duration: "UntilEndOfBattle",
             target: {
                 kind: "EachFriend",
             },
             attackAmount: level,
+            untilEndOfBattle: true,
         },
     };
 }
@@ -743,6 +742,7 @@ var tabbyCat = {
     level3Ability: tabbyCatAbility(3),
 };
 var pets = [
+    // Tier 1
     ant,
     beaver,
     beetle,
@@ -755,6 +755,7 @@ var pets = [
     mosquito,
     otter,
     pig,
+    // Tier 2
     bat,
     crab,
     dodo,
@@ -769,6 +770,18 @@ var pets = [
     spider,
     swan,
     tabbyCat,
+    // Tier 3
+    // badger,
+    // blowfish,
+    // camel,
+    // giraffe,
+    // kangaroo,
+    // ox,
+    // rabbit,
+    // sheep,
+    // snail,
+    // turtle,
+    // whale,
 ];
 function getPets() {
     return pets;

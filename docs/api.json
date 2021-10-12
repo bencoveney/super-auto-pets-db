@@ -23,7 +23,7 @@
             "kind": "RandomFriend",
             "n": 1
           },
-          "duration": "UntilEndOfPhase"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -40,7 +40,7 @@
             "kind": "RandomFriend",
             "n": 1
           },
-          "duration": "UntilEndOfPhase"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -57,7 +57,7 @@
             "kind": "RandomFriend",
             "n": 1
           },
-          "duration": "UntilEndOfPhase"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -83,7 +83,7 @@
             "kind": "RandomFriend",
             "n": 2
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -99,7 +99,7 @@
             "kind": "RandomFriend",
             "n": 2
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -115,7 +115,7 @@
             "kind": "RandomFriend",
             "n": 2
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -139,7 +139,7 @@
           "target": {
             "kind": "EachShopAnimal"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -154,7 +154,7 @@
           "target": {
             "kind": "EachShopAnimal"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -169,7 +169,7 @@
           "target": {
             "kind": "EachShopAnimal"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -193,7 +193,7 @@
           "target": {
             "kind": "LeftMostFriend"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -208,7 +208,7 @@
           "target": {
             "kind": "LeftMostFriend"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -223,7 +223,7 @@
           "target": {
             "kind": "LeftMostFriend"
           },
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -306,7 +306,7 @@
           },
           "attackAmount": 1,
           "healthAmount": 1,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -322,7 +322,7 @@
           },
           "attackAmount": 2,
           "healthAmount": 2,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -338,7 +338,7 @@
           },
           "attackAmount": 3,
           "healthAmount": 3,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -364,7 +364,7 @@
           },
           "attackAmount": 1,
           "healthAmount": 1,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -380,7 +380,7 @@
           },
           "attackAmount": 2,
           "healthAmount": 2,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -404,7 +404,7 @@
             "kind": "TriggeringEntity"
           },
           "attackAmount": 1,
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       },
       "level2Ability": {
@@ -419,7 +419,7 @@
             "kind": "TriggeringEntity"
           },
           "attackAmount": 2,
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       },
       "level3Ability": {
@@ -434,7 +434,7 @@
             "kind": "TriggeringEntity"
           },
           "attackAmount": 3,
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       }
     },
@@ -459,7 +459,7 @@
           "target": {
             "kind": "Self"
           },
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       },
       "level2Ability": {
@@ -475,7 +475,7 @@
           "target": {
             "kind": "Self"
           },
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       },
       "level3Ability": {
@@ -491,7 +491,7 @@
           "target": {
             "kind": "Self"
           },
-          "duration": "UntilEndOfBattle"
+          "untilEndOfBattle": true
         }
       }
     },
@@ -511,13 +511,12 @@
           "kind": "None"
         },
         "effect": {
-          "kind": "ModifyStats",
+          "kind": "DealDamage",
           "target": {
             "kind": "RandomEnemy",
             "n": 1
           },
-          "healthAmount": 1,
-          "duration": "UntilEndOfBattle"
+          "amount": 1
         }
       },
       "level2Ability": {
@@ -527,13 +526,12 @@
           "kind": "None"
         },
         "effect": {
-          "kind": "ModifyStats",
+          "kind": "DealDamage",
           "target": {
             "kind": "RandomEnemy",
             "n": 1
           },
-          "healthAmount": 2,
-          "duration": "UntilEndOfBattle"
+          "amount": 2
         }
       },
       "level3Ability": {
@@ -543,13 +541,12 @@
           "kind": "None"
         },
         "effect": {
-          "kind": "ModifyStats",
+          "kind": "DealDamage",
           "target": {
             "kind": "RandomEnemy",
             "n": 1
           },
-          "healthAmount": 3,
-          "duration": "UntilEndOfBattle"
+          "amount": 3
         }
       }
     },
@@ -575,7 +572,7 @@
           },
           "attackAmount": 1,
           "healthAmount": 1,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -592,7 +589,7 @@
           },
           "attackAmount": 2,
           "healthAmount": 2,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -609,7 +606,7 @@
           },
           "attackAmount": 3,
           "healthAmount": 3,
-          "duration": "Permanent"
+          "untilEndOfBattle": false
         }
       }
     },
@@ -868,7 +865,7 @@
           "effects": [
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -876,7 +873,7 @@
             },
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -896,7 +893,7 @@
           "effects": [
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -904,7 +901,7 @@
             },
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -924,7 +921,7 @@
           "effects": [
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -932,7 +929,7 @@
             },
             {
               "kind": "ModifyStats",
-              "duration": "UntilEndOfPhase",
+              "untilEndOfBattle": false,
               "target": {
                 "kind": "Self"
               },
@@ -958,7 +955,7 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "untilEndOfBattle": false,
           "target": {
             "kind": "EachShopAnimal"
           },
@@ -974,7 +971,7 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "untilEndOfBattle": false,
           "target": {
             "kind": "EachShopAnimal"
           },
@@ -990,7 +987,7 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "untilEndOfBattle": false,
           "target": {
             "kind": "EachShopAnimal"
           },
@@ -1014,13 +1011,12 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "FriendBehind",
             "n": 1
           },
-          "attackAmount": -1
+          "amount": 1
         }
       },
       "level2Ability": {
@@ -1030,13 +1026,12 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "FriendBehind",
             "n": 2
           },
-          "attackAmount": -1
+          "amount": 1
         }
       },
       "level3Ability": {
@@ -1046,13 +1041,12 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "FriendBehind",
             "n": 3
           },
-          "attackAmount": -1
+          "amount": 1
         }
       }
     },
@@ -1073,13 +1067,13 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "FriendBehind",
             "n": 2
           },
           "attackAmount": 1,
-          "healthAmount": 1
+          "healthAmount": 1,
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -1090,13 +1084,13 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "FriendBehind",
             "n": 2
           },
           "attackAmount": 2,
-          "healthAmount": 2
+          "healthAmount": 2,
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -1107,13 +1101,13 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "FriendBehind",
             "n": 2
           },
           "attackAmount": 3,
-          "healthAmount": 3
+          "healthAmount": 3,
+          "untilEndOfBattle": false
         }
       }
     },
@@ -1133,12 +1127,11 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "All"
           },
-          "healthAmount": -2
+          "amount": 2
         }
       },
       "level2Ability": {
@@ -1148,12 +1141,11 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "All"
           },
-          "healthAmount": -4
+          "amount": 4
         }
       },
       "level3Ability": {
@@ -1163,12 +1155,11 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
+          "kind": "DealDamage",
           "target": {
             "kind": "All"
           },
-          "healthAmount": -6
+          "amount": 6
         }
       }
     },
@@ -1189,11 +1180,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "All"
           },
-          "attackAmount": 2
+          "attackAmount": 2,
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -1204,11 +1195,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "All"
           },
-          "attackAmount": 4
+          "attackAmount": 4,
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -1219,11 +1210,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "All"
           },
-          "attackAmount": 6
+          "attackAmount": 6,
+          "untilEndOfBattle": false
         }
       }
     },
@@ -1302,12 +1293,12 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "RandomFriend",
             "n": 1
           },
-          "healthAmount": 1
+          "healthAmount": 1,
+          "untilEndOfBattle": false
         }
       },
       "level2Ability": {
@@ -1318,12 +1309,12 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "RandomFriend",
             "n": 1
           },
-          "healthAmount": 2
+          "healthAmount": 2,
+          "untilEndOfBattle": false
         }
       },
       "level3Ability": {
@@ -1334,12 +1325,12 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfPhase",
           "target": {
             "kind": "RandomFriend",
             "n": 1
           },
-          "healthAmount": 3
+          "healthAmount": 3,
+          "untilEndOfBattle": false
         }
       }
     },
@@ -1460,11 +1451,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfBattle",
           "target": {
             "kind": "EachFriend"
           },
-          "attackAmount": 1
+          "attackAmount": 1,
+          "untilEndOfBattle": true
         }
       },
       "level2Ability": {
@@ -1475,11 +1466,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfBattle",
           "target": {
             "kind": "EachFriend"
           },
-          "attackAmount": 2
+          "attackAmount": 2,
+          "untilEndOfBattle": true
         }
       },
       "level3Ability": {
@@ -1490,11 +1481,11 @@
         },
         "effect": {
           "kind": "ModifyStats",
-          "duration": "UntilEndOfBattle",
           "target": {
             "kind": "EachFriend"
           },
-          "attackAmount": 3
+          "attackAmount": 3,
+          "untilEndOfBattle": true
         }
       }
     }
