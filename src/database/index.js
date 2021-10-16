@@ -794,6 +794,44 @@ var blowfish = {
     level2Ability: blowfishAbility(2),
     level3Ability: blowfishAbility(3),
 };
+function caterpillarAbility(level) {
+    if (level <= 2) {
+        return {
+            description: "Start of turn: Gain 1 Experience",
+            trigger: "StartOfTurn" /* StartOfTurn */,
+            triggeredBy: {
+                kind: "Self",
+            },
+            effect: {
+                kind: "GainExperience",
+                target: {
+                    kind: "Self",
+                },
+                amount: 1,
+            },
+        };
+    }
+    return {
+        description: "Start of battle: Evolve into a Butterfly",
+        trigger: "StartOfTurn" /* StartOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "Evolve",
+        },
+    };
+}
+var caterpillar = {
+    name: "Caterpillar",
+    tier: 3,
+    baseAttack: 1,
+    baseHealth: 4,
+    packs: ["ExpansionPack1"],
+    level1Ability: caterpillarAbility(1),
+    level2Ability: caterpillarAbility(2),
+    level3Ability: caterpillarAbility(3),
+};
 function camelAbility(level) {
     return {
         description: "Hurt: Give friend behind +" + level + "/+" + level * 2,
@@ -822,6 +860,71 @@ var camel = {
     level1Ability: camelAbility(1),
     level2Ability: camelAbility(2),
     level3Ability: camelAbility(3),
+};
+function hatchingChickAbility(level) {
+    if (level <= 1) {
+        return {
+            description: "End turn: Give +5/+5 to friend ahead until end of battle.",
+            trigger: "EndOfTurn" /* EndOfTurn */,
+            triggeredBy: {
+                kind: "Self",
+            },
+            effect: {
+                kind: "ModifyStats",
+                target: {
+                    kind: "FriendAhead",
+                    n: 1,
+                },
+                attackAmount: 5,
+                healthAmount: 5,
+                untilEndOfBattle: true,
+            },
+        };
+    }
+    if (level <= 2) {
+        return {
+            description: "End turn: Give +2/+2 to friend ahead.",
+            trigger: "EndOfTurn" /* EndOfTurn */,
+            triggeredBy: {
+                kind: "Self",
+            },
+            effect: {
+                kind: "ModifyStats",
+                target: {
+                    kind: "FriendAhead",
+                    n: 1,
+                },
+                attackAmount: 2,
+                healthAmount: 2,
+                untilEndOfBattle: false,
+            },
+        };
+    }
+    return {
+        description: "Start of turn: Give +1 Experience to friend ahead",
+        trigger: "StartOfTurn" /* StartOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "GainExperience",
+            target: {
+                kind: "FriendAhead",
+                n: 1,
+            },
+            amount: 1,
+        },
+    };
+}
+var hatchingChick = {
+    name: "Hatching Chick",
+    tier: 3,
+    baseAttack: 1,
+    baseHealth: 1,
+    packs: ["ExpansionPack1"],
+    level1Ability: hatchingChickAbility(1),
+    level2Ability: hatchingChickAbility(2),
+    level3Ability: hatchingChickAbility(3),
 };
 function giraffeAbility(level) {
     return {
@@ -881,6 +984,35 @@ var kangaroo = {
     level2Ability: kangarooAbility(2),
     level3Ability: kangarooAbility(3),
 };
+function owlAbility(level) {
+    return {
+        description: "Sell: Give a random friend +2/+2",
+        trigger: "Sell" /* Sell */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "RandomFriend",
+                n: 1,
+            },
+            attackAmount: 2,
+            healthAmount: 2,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var owl = {
+    name: "Owl",
+    tier: 3,
+    baseAttack: 5,
+    baseHealth: 3,
+    packs: ["ExpansionPack1"],
+    level1Ability: owlAbility(1),
+    level2Ability: owlAbility(2),
+    level3Ability: owlAbility(3),
+};
 function oxAbility(level) {
     return {
         description: "Friend ahead attacks: Gain Melon Armor and +" + level * 2 + " attack",
@@ -922,6 +1054,34 @@ var ox = {
     level1Ability: oxAbility(1),
     level2Ability: oxAbility(2),
     level3Ability: oxAbility(3),
+};
+function puppyAbility(level) {
+    return {
+        description: "End turn: If you have 2 or more gold, gain +" + level * 2 + "/+" + level * 2,
+        trigger: "EndOfTurnWith2PlusGold" /* EndOfTurnWith2PlusGold */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "Self",
+            },
+            attackAmount: level * 2,
+            healthAmount: level * 2,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var puppy = {
+    name: "Puppy",
+    tier: 3,
+    baseAttack: 1,
+    baseHealth: 1,
+    packs: ["ExpansionPack1"],
+    level1Ability: puppyAbility(1),
+    level2Ability: puppyAbility(2),
+    level3Ability: puppyAbility(3),
 };
 function rabbitAbility(level) {
     return {
@@ -1007,6 +1167,33 @@ var snail = {
     level2Ability: snailAbility(2),
     level3Ability: snailAbility(3),
 };
+function tropicalFishAbility(level) {
+    return {
+        description: "End turn: Give adjacent friends +" + level + " Health",
+        trigger: "EndOfTurn" /* EndOfTurn */,
+        triggeredBy: {
+            kind: "Self",
+        },
+        effect: {
+            kind: "ModifyStats",
+            target: {
+                kind: "AdjacentFriends",
+            },
+            healthAmount: level,
+            untilEndOfBattle: false,
+        },
+    };
+}
+var tropicalFish = {
+    name: "TropicalFish",
+    tier: 3,
+    baseAttack: 2,
+    baseHealth: 4,
+    packs: ["ExpansionPack1"],
+    level1Ability: tropicalFishAbility(1),
+    level2Ability: tropicalFishAbility(2),
+    level3Ability: tropicalFishAbility(3),
+};
 function turtleAbility(level) {
     return {
         description: "Faint: Give " + level + " friends behind Melon Armor",
@@ -1032,7 +1219,7 @@ var turtle = {
     baseAttack: 2,
     baseHealth: 4,
     packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: turtleAbility(1),
+    level1Ability: __assign(__assign({}, turtleAbility(1)), { description: "Faint: Give friend behind Melon Armor" }),
     level2Ability: turtleAbility(2),
     level3Ability: turtleAbility(3),
 };
@@ -1095,13 +1282,18 @@ var pets = [
     // Tier 3
     badger,
     blowfish,
+    caterpillar,
     camel,
+    hatchingChick,
     giraffe,
     kangaroo,
+    owl,
     ox,
+    puppy,
     rabbit,
     sheep,
     snail,
+    tropicalFish,
     turtle,
     whale,
 ];

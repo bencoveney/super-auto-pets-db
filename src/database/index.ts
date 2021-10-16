@@ -38,11 +38,14 @@ const enum Trigger {
   StartOfBattle = "StartOfBattle",
   StartOfTurn = "StartOfTurn",
   Buy = "Buy",
-  BuyAfterLoss = "BuyAfterLoss", // TODO: Probably should represent this as a condition somehow.
+  // TODO: Probably should represent this as a condition somehow.
+  BuyAfterLoss = "BuyAfterLoss",
   BuyFood = "BuyFood",
   BeforeAttack = "BeforeAttack",
   Hurt = "Hurt",
   EndOfTurn = "EndOfTurn",
+  // TODO: Probably should represent this as a condition somehow.
+  EndOfTurnWith2PlusGold = "EndOfTurnWith2PlusGold",
   AfterAttack = "AfterAttack",
   EatsShopFood = "EatsShopFood",
   // ...
@@ -60,8 +63,8 @@ type SimpleTarget = {
     | "EachShopAnimal"
     | "TriggeringEntity"
     | "AdjacentAnimals"
+    | "AdjacentFriends"
     | "None";
-  condition?: "Ahead" | "Behind";
 };
 
 type NTarget = {
@@ -74,10 +77,12 @@ type Effect =
   | DealDamageEffect
   | SummonPetEffect
   | GainGoldEffect
+  | GainExperienceEffect
   | TransferStatsEffect
   | MultipleEffects
   | ApplyStatusEffect
-  | SwallowEffect;
+  | SwallowEffect
+  | EvolveEffect;
 
 interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -111,6 +116,12 @@ interface GainGoldEffect {
   amount: number;
 }
 
+interface GainExperienceEffect {
+  kind: "GainExperience";
+  target: Target;
+  amount: number;
+}
+
 interface MultipleEffects {
   kind: "OneOf" | "AllOf";
   effects: Effect[];
@@ -131,6 +142,11 @@ interface SwallowEffect {
 // TODO: Status Effects.
 interface StatusEffect {
   name: "Weak" | "MelonArmor";
+}
+
+interface EvolveEffect {
+  kind: "Evolve";
+  // TODO: Evolve Effect.
 }
 
 function antAbility(level: number): Ability {
@@ -988,6 +1004,47 @@ const blowfish: Pet = {
   level3Ability: blowfishAbility(3),
 };
 
+function caterpillarAbility(level: number): Ability {
+  if (level <= 2) {
+    return {
+      description: `Start of turn: Gain 1 Experience`,
+      trigger: Trigger.StartOfTurn,
+      triggeredBy: {
+        kind: "Self",
+      },
+      effect: {
+        kind: "GainExperience",
+        target: {
+          kind: "Self",
+        },
+        amount: 1,
+      },
+    };
+  }
+
+  return {
+    description: `Start of battle: Evolve into a Butterfly`,
+    trigger: Trigger.StartOfTurn,
+    triggeredBy: {
+      kind: "Self",
+    },
+    effect: {
+      kind: "Evolve",
+    },
+  };
+}
+
+const caterpillar: Pet = {
+  name: "Caterpillar",
+  tier: 3,
+  baseAttack: 1,
+  baseHealth: 4,
+  packs: ["ExpansionPack1"],
+  level1Ability: caterpillarAbility(1),
+  level2Ability: caterpillarAbility(2),
+  level3Ability: caterpillarAbility(3),
+};
+
 function camelAbility(level: number): Ability {
   return {
     description: `Hurt: Give friend behind +${level}/+${level * 2}`,
@@ -1017,6 +1074,75 @@ const camel: Pet = {
   level1Ability: camelAbility(1),
   level2Ability: camelAbility(2),
   level3Ability: camelAbility(3),
+};
+
+function hatchingChickAbility(level: number): Ability {
+  if (level <= 1) {
+    return {
+      description: `End turn: Give +5/+5 to friend ahead until end of battle.`,
+      trigger: Trigger.EndOfTurn,
+      triggeredBy: {
+        kind: "Self",
+      },
+      effect: {
+        kind: "ModifyStats",
+        target: {
+          kind: "FriendAhead",
+          n: 1,
+        },
+        attackAmount: 5,
+        healthAmount: 5,
+        untilEndOfBattle: true,
+      },
+    };
+  }
+
+  if (level <= 2) {
+    return {
+      description: `End turn: Give +2/+2 to friend ahead.`,
+      trigger: Trigger.EndOfTurn,
+      triggeredBy: {
+        kind: "Self",
+      },
+      effect: {
+        kind: "ModifyStats",
+        target: {
+          kind: "FriendAhead",
+          n: 1,
+        },
+        attackAmount: 2,
+        healthAmount: 2,
+        untilEndOfBattle: false,
+      },
+    };
+  }
+
+  return {
+    description: `Start of turn: Give +1 Experience to friend ahead`,
+    trigger: Trigger.StartOfTurn,
+    triggeredBy: {
+      kind: "Self",
+    },
+    effect: {
+      kind: "GainExperience",
+      target: {
+        kind: "FriendAhead",
+        n: 1,
+      },
+      amount: 1,
+    },
+  };
+}
+
+const hatchingChick: Pet = {
+  name: "Hatching Chick",
+  tier: 3,
+  baseAttack: 1,
+  baseHealth: 1,
+  packs: ["ExpansionPack1"],
+  level1Ability: hatchingChickAbility(1),
+  level2Ability: hatchingChickAbility(2),
+  level3Ability: hatchingChickAbility(3),
 };
 
 function giraffeAbility(level: number): Ability {
@@ -1084,6 +1210,37 @@ const kangaroo: Pet = {
   level3Ability: kangarooAbility(3),
 };
 
+function owlAbility(level: number): Ability {
+  return {
+    description: `Sell: Give a random friend +2/+2`,
+    trigger: Trigger.Sell,
+    triggeredBy: {
+      kind: "Self",
+    },
+    effect: {
+      kind: "ModifyStats",
+      target: {
+        kind: "RandomFriend",
+        n: 1,
+      },
+      attackAmount: 2,
+      healthAmount: 2,
+      untilEndOfBattle: false,
+    },
+  };
+}
+
+const owl: Pet = {
+  name: "Owl",
+  tier: 3,
+  baseAttack: 5,
+  baseHealth: 3,
+  packs: ["ExpansionPack1"],
+  level1Ability: owlAbility(1),
+  level2Ability: owlAbility(2),
+  level3Ability: owlAbility(3),
+};
+
 function oxAbility(level: number): Ability {
   return {
     description: `Friend ahead attacks: Gain Melon Armor and +${
@@ -1128,6 +1285,38 @@ const ox: Pet = {
   level1Ability: oxAbility(1),
   level2Ability: oxAbility(2),
   level3Ability: oxAbility(3),
+};
+
+function puppyAbility(level: number): Ability {
+  return {
+    description: `End turn: If you have 2 or more gold, gain +${level * 2}/+${
+      level * 2
+    }`,
+    trigger: Trigger.EndOfTurnWith2PlusGold,
+    triggeredBy: {
+      kind: "Self",
+    },
+    effect: {
+      kind: "ModifyStats",
+      target: {
+        kind: "Self",
+      },
+      attackAmount: level * 2,
+      healthAmount: level * 2,
+      untilEndOfBattle: false,
+    },
+  };
+}
+
+const puppy: Pet = {
+  name: "Puppy",
+  tier: 3,
+  baseAttack: 1,
+  baseHealth: 1,
+  packs: ["ExpansionPack1"],
+  level1Ability: puppyAbility(1),
+  level2Ability: puppyAbility(2),
+  level3Ability: puppyAbility(3),
 };
 
 function rabbitAbility(level: number): Ability {
@@ -1227,6 +1416,35 @@ const snail: Pet = {
   level3Ability: snailAbility(3),
 };
 
+function tropicalFishAbility(level: number): Ability {
+  return {
+    description: `End turn: Give adjacent friends +${level} Health`,
+    trigger: Trigger.EndOfTurn,
+    triggeredBy: {
+      kind: "Self",
+    },
+    effect: {
+      kind: "ModifyStats",
+      target: {
+        kind: "AdjacentFriends",
+      },
+      healthAmount: level,
+      untilEndOfBattle: false,
+    },
+  };
+}
+
+const tropicalFish: Pet = {
+  name: "TropicalFish",
+  tier: 3,
+  baseAttack: 2,
+  baseHealth: 4,
+  packs: ["ExpansionPack1"],
+  level1Ability: tropicalFishAbility(1),
+  level2Ability: tropicalFishAbility(2),
+  level3Ability: tropicalFishAbility(3),
+};
+
 function turtleAbility(level: number): Ability {
   return {
     description: `Faint: Give ${level} friends behind Melon Armor`,
@@ -1253,7 +1471,10 @@ const turtle: Pet = {
   baseAttack: 2,
   baseHealth: 4,
   packs: ["StandardPack", "ExpansionPack1"],
-  level1Ability: turtleAbility(1),
+  level1Ability: {
+    ...turtleAbility(1),
+    description: "Faint: Give friend behind Melon Armor",
+  },
   level2Ability: turtleAbility(2),
   level3Ability: turtleAbility(3),
 };
@@ -1319,13 +1540,18 @@ const pets: Pet[] = [
   // Tier 3
   badger,
   blowfish,
+  caterpillar,
   camel,
+  hatchingChick,
   giraffe,
   kangaroo,
+  owl,
   ox,
+  puppy,
   rabbit,
   sheep,
   snail,
+  tropicalFish,
   turtle,
   whale,
 ];

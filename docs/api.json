@@ -1596,6 +1596,53 @@
       }
     },
     {
+      "name": "Caterpillar",
+      "tier": 3,
+      "baseAttack": 1,
+      "baseHealth": 4,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Start of turn: Gain 1 Experience",
+        "trigger": "StartOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainExperience",
+          "target": {
+            "kind": "Self"
+          },
+          "amount": 1
+        }
+      },
+      "level2Ability": {
+        "description": "Start of turn: Gain 1 Experience",
+        "trigger": "StartOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainExperience",
+          "target": {
+            "kind": "Self"
+          },
+          "amount": 1
+        }
+      },
+      "level3Ability": {
+        "description": "Start of battle: Evolve into a Butterfly",
+        "trigger": "StartOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "Evolve"
+        }
+      }
+    },
+    {
       "name": "Camel",
       "tier": 3,
       "baseAttack": 2,
@@ -1652,6 +1699,64 @@
           "attackAmount": 3,
           "healthAmount": 6,
           "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Hatching Chick",
+      "tier": 3,
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give +5/+5 to friend ahead until end of battle.",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          },
+          "attackAmount": 5,
+          "healthAmount": 5,
+          "untilEndOfBattle": true
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give +2/+2 to friend ahead.",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Start of turn: Give +1 Experience to friend ahead",
+        "trigger": "StartOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainExperience",
+          "target": {
+            "kind": "FriendAhead",
+            "n": 1
+          },
+          "amount": 1
         }
       }
     },
@@ -1776,6 +1881,66 @@
       }
     },
     {
+      "name": "Owl",
+      "tier": 3,
+      "baseAttack": 5,
+      "baseHealth": 3,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Sell: Give a random friend +2/+2",
+        "trigger": "Sell",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 1
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Sell: Give a random friend +2/+2",
+        "trigger": "Sell",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 1
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Sell: Give a random friend +2/+2",
+        "trigger": "Sell",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 1
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
       "name": "Ox",
       "tier": 3,
       "baseAttack": 1,
@@ -1871,6 +2036,63 @@
               "untilEndOfBattle": false
             }
           ]
+        }
+      }
+    },
+    {
+      "name": "Puppy",
+      "tier": 3,
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: If you have 2 or more gold, gain +2/+2",
+        "trigger": "EndOfTurnWith2PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: If you have 2 or more gold, gain +4/+4",
+        "trigger": "EndOfTurnWith2PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: If you have 2 or more gold, gain +6/+6",
+        "trigger": "EndOfTurnWith2PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
         }
       }
     },
@@ -2046,6 +2268,60 @@
       }
     },
     {
+      "name": "TropicalFish",
+      "tier": 3,
+      "baseAttack": 2,
+      "baseHealth": 4,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give adjacent friends +1 Health",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "AdjacentFriends"
+          },
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give adjacent friends +2 Health",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "AdjacentFriends"
+          },
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Give adjacent friends +3 Health",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "AdjacentFriends"
+          },
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
       "name": "Turtle",
       "tier": 3,
       "baseAttack": 2,
@@ -2055,7 +2331,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Faint: Give 1 friends behind Melon Armor",
+        "description": "Faint: Give friend behind Melon Armor",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
