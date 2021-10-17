@@ -19,7 +19,7 @@ function tropicalFishAbility(level) {
     };
 }
 exports.tropicalFish = {
-    name: "TropicalFish",
+    name: "Tropical Fish",
     tier: 3,
     baseAttack: 2,
     baseHealth: 4,
