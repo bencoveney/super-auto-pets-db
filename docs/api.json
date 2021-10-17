@@ -246,7 +246,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
           }
@@ -262,7 +262,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
           }
@@ -278,7 +278,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 3,
             "baseHealth": 3
           }
@@ -1236,8 +1236,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Dirty Rat",
+            "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
           }
@@ -1252,8 +1252,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Dirty Rat",
+            "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
           }
@@ -1268,8 +1268,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Dirty Rat",
+            "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
           }
@@ -1352,8 +1352,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Tier 3 animal",
+            "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
           }
@@ -1368,8 +1368,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Tier 3 animal",
+            "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
           }
@@ -1384,8 +1384,8 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
-            "tier": 1,
+            "name": "Tier 3 animal",
+            "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
           }
@@ -2170,7 +2170,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
           }
@@ -2186,7 +2186,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
           }
@@ -2202,7 +2202,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
-            "tier": 1,
+            "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
           }
