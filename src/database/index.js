@@ -12,18 +12,23 @@ var bluebird_1 = require("./pets/bluebird");
 var buffalo_1 = require("./pets/buffalo");
 var camel_1 = require("./pets/camel");
 var caterpillar_1 = require("./pets/caterpillar");
+var chicken_1 = require("./pets/chicken");
+var cow_1 = require("./pets/cow");
 var crab_1 = require("./pets/crab");
 var cricket_1 = require("./pets/cricket");
+var crocodile_1 = require("./pets/crocodile");
 var deer_1 = require("./pets/deer");
 var dodo_1 = require("./pets/dodo");
 var dog_1 = require("./pets/dog");
 var dolphin_1 = require("./pets/dolphin");
 var dromedary_1 = require("./pets/dromedary");
 var duck_1 = require("./pets/duck");
+var eagle_1 = require("./pets/eagle");
 var elephant_1 = require("./pets/elephant");
 var fish_1 = require("./pets/fish");
 var flamingo_1 = require("./pets/flamingo");
 var giraffe_1 = require("./pets/giraffe");
+var goat_1 = require("./pets/goat");
 var hatchingChick_1 = require("./pets/hatchingChick");
 var hedgehog_1 = require("./pets/hedgehog");
 var hippo_1 = require("./pets/hippo");
@@ -32,11 +37,13 @@ var kangaroo_1 = require("./pets/kangaroo");
 var ladybug_1 = require("./pets/ladybug");
 var llama_1 = require("./pets/llama");
 var lobster_1 = require("./pets/lobster");
+var microbe_1 = require("./pets/microbe");
 var monkey_1 = require("./pets/monkey");
 var mosquito_1 = require("./pets/mosquito");
 var otter_1 = require("./pets/otter");
 var owl_1 = require("./pets/owl");
 var ox_1 = require("./pets/ox");
+var parrot_1 = require("./pets/parrot");
 var peacock_1 = require("./pets/peacock");
 var penguin_1 = require("./pets/penguin");
 var pig_1 = require("./pets/pig");
@@ -44,7 +51,11 @@ var poodle_1 = require("./pets/poodle");
 var puppy_1 = require("./pets/puppy");
 var rabbit_1 = require("./pets/rabbit");
 var rat_1 = require("./pets/rat");
+var rhino_1 = require("./pets/rhino");
 var rooster_1 = require("./pets/rooster");
+var scorpion_1 = require("./pets/scorpion");
+var seal_1 = require("./pets/seal");
+var shark_1 = require("./pets/shark");
 var sheep_1 = require("./pets/sheep");
 var shrimp_1 = require("./pets/shrimp");
 var skunk_1 = require("./pets/skunk");
@@ -54,6 +65,7 @@ var squirrel_1 = require("./pets/squirrel");
 var swan_1 = require("./pets/swan");
 var tabbyCat_1 = require("./pets/tabbyCat");
 var tropicalFish_1 = require("./pets/tropicalFish");
+var turkey_1 = require("./pets/turkey");
 var turtle_1 = require("./pets/turtle");
 var whale_1 = require("./pets/whale");
 var worm_1 = require("./pets/worm");
@@ -118,6 +130,31 @@ var pets = [
     skunk_1.skunk,
     squirrel_1.squirrel,
     worm_1.worm,
+    // Tier 5
+    chicken_1.chicken,
+    cow_1.cow,
+    crocodile_1.crocodile,
+    eagle_1.eagle,
+    goat_1.goat,
+    microbe_1.microbe,
+    parrot_1.parrot,
+    rhino_1.rhino,
+    scorpion_1.scorpion,
+    seal_1.seal,
+    shark_1.shark,
+    turkey_1.turkey,
+    // // Tier 6
+    // // cat,
+    // dragon,
+    // fly,
+    // gorilla,
+    // leopard,
+    // mammoth,
+    // // octopus,
+    // // sauropod,
+    // snake,
+    // tiger,
+    // // tyrannosaurus,
 ];
 function getPets() {
     return pets;

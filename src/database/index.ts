@@ -9,18 +9,23 @@ import { bluebird } from "./pets/bluebird";
 import { buffalo } from "./pets/buffalo";
 import { camel } from "./pets/camel";
 import { caterpillar } from "./pets/caterpillar";
+import { chicken } from "./pets/chicken";
+import { cow } from "./pets/cow";
 import { crab } from "./pets/crab";
 import { cricket } from "./pets/cricket";
+import { crocodile } from "./pets/crocodile";
 import { deer } from "./pets/deer";
 import { dodo } from "./pets/dodo";
 import { dog } from "./pets/dog";
 import { dolphin } from "./pets/dolphin";
 import { dromedary } from "./pets/dromedary";
 import { duck } from "./pets/duck";
+import { eagle } from "./pets/eagle";
 import { elephant } from "./pets/elephant";
 import { fish } from "./pets/fish";
 import { flamingo } from "./pets/flamingo";
 import { giraffe } from "./pets/giraffe";
+import { goat } from "./pets/goat";
 import { hatchingChick } from "./pets/hatchingChick";
 import { hedgehog } from "./pets/hedgehog";
 import { hippo } from "./pets/hippo";
@@ -29,11 +34,13 @@ import { kangaroo } from "./pets/kangaroo";
 import { ladybug } from "./pets/ladybug";
 import { llama } from "./pets/llama";
 import { lobster } from "./pets/lobster";
+import { microbe } from "./pets/microbe";
 import { monkey } from "./pets/monkey";
 import { mosquito } from "./pets/mosquito";
 import { otter } from "./pets/otter";
 import { owl } from "./pets/owl";
 import { ox } from "./pets/ox";
+import { parrot } from "./pets/parrot";
 import { peacock } from "./pets/peacock";
 import { penguin } from "./pets/penguin";
 import { pig } from "./pets/pig";
@@ -41,7 +48,11 @@ import { poodle } from "./pets/poodle";
 import { puppy } from "./pets/puppy";
 import { rabbit } from "./pets/rabbit";
 import { rat } from "./pets/rat";
+import { rhino } from "./pets/rhino";
 import { rooster } from "./pets/rooster";
+import { scorpion } from "./pets/scorpion";
+import { seal } from "./pets/seal";
+import { shark } from "./pets/shark";
 import { sheep } from "./pets/sheep";
 import { shrimp } from "./pets/shrimp";
 import { skunk } from "./pets/skunk";
@@ -51,6 +62,7 @@ import { squirrel } from "./pets/squirrel";
 import { swan } from "./pets/swan";
 import { tabbyCat } from "./pets/tabbyCat";
 import { tropicalFish } from "./pets/tropicalFish";
+import { turkey } from "./pets/turkey";
 import { turtle } from "./pets/turtle";
 import { whale } from "./pets/whale";
 import { worm } from "./pets/worm";
@@ -97,6 +109,8 @@ export const enum Trigger {
   Buy = "Buy",
   // TODO: Probably should represent this as a condition somehow.
   BuyAfterLoss = "BuyAfterLoss",
+  // TODO: Probably should represent this as a condition somehow.
+  BuyTier1Animal = "BuyTier1Animal",
   BuyFood = "BuyFood",
   BeforeAttack = "BeforeAttack",
   Hurt = "Hurt",
@@ -113,7 +127,7 @@ export const enum Trigger {
   // ...
 }
 
-export type Target = SimpleTarget | NTarget;
+export type Target = SimpleTarget | NTarget | ShopTarget;
 
 export type SimpleTarget = {
   kind:
@@ -122,11 +136,12 @@ export type SimpleTarget = {
     | "EachFriend"
     | "LeftMostFriend"
     | "RightMostFriend"
-    | "EachShopAnimal"
     | "TriggeringEntity"
     | "AdjacentAnimals"
     | "AdjacentFriends"
     | "Level2And3Friends"
+    | "FirstEnemy"
+    | "LastEnemy"
     | "LowestHealthEnemy"
     | "HighestHealthEnemy"
     | "DifferentTierAnimals"
@@ -138,6 +153,11 @@ export type NTarget = {
   n: number;
 };
 
+export type ShopTarget = {
+  kind: "EachShopAnimal";
+  includingFuture: boolean;
+};
+
 export type Effect =
   | ModifyStatsEffect
   | DealDamageEffect
@@ -145,12 +165,13 @@ export type Effect =
   | GainGoldEffect
   | GainExperienceEffect
   | TransferStatsEffect
+  | TransferAbilityEffect
   | MultipleEffects
   | ApplyStatusEffect
   | SwallowEffect
   | EvolveEffect
   | ReduceHealthEffect
-  | ClearAndFillShopsWithFoodEffect;
+  | RefillShopsEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -172,6 +193,13 @@ export interface TransferStatsEffect {
   to: Target;
   copyAttack: boolean;
   copyHealth: boolean;
+}
+
+export interface TransferAbilityEffect {
+  kind: "TransferAbility";
+  from: Target;
+  to: Target;
+  level: number;
 }
 
 export interface SummonPetEffect {
@@ -217,9 +245,10 @@ export interface EvolveEffect {
   // TODO: Evolve Effect.
 }
 
-export interface ClearAndFillShopsWithFoodEffect {
-  kind: "ClearAndFillShopsWithFood";
-  // TODO: Evolve Effect.
+export interface RefillShopsEffect {
+  kind: "RefillShops";
+  shop: "All" | "Food";
+  food: "Any" | "Milk";
 }
 
 export interface ReduceHealthEffect {
@@ -289,6 +318,31 @@ const pets: Pet[] = [
   skunk,
   squirrel,
   worm,
+  // Tier 5
+  chicken,
+  cow,
+  crocodile,
+  eagle,
+  goat,
+  microbe,
+  parrot,
+  rhino,
+  scorpion,
+  seal,
+  shark,
+  turkey,
+  // // Tier 6
+  // // cat,
+  // dragon,
+  // fly,
+  // gorilla,
+  // leopard,
+  // mammoth,
+  // // octopus,
+  // // sauropod,
+  // snake,
+  // tiger,
+  // // tyrannosaurus,
 ];
 
 export function getPets(): Pet[] {

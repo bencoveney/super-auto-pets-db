@@ -11,6 +11,7 @@ function duckAbility(level: number): Ability {
       kind: "ModifyStats",
       target: {
         kind: "EachShopAnimal",
+        includingFuture: false,
       },
       attackAmount: level,
       healthAmount: level,

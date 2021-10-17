@@ -12,6 +12,7 @@ function beetleAbility(level: number): Ability {
       healthAmount: level,
       target: {
         kind: "EachShopAnimal",
+        includingFuture: false,
       },
       untilEndOfBattle: false,
     },

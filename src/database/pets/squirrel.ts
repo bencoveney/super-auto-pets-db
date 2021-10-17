@@ -8,7 +8,9 @@ function squirrelAbility(level: number): Ability {
       kind: "Self",
     },
     effect: {
-      kind: "ClearAndFillShopsWithFood",
+      kind: "RefillShops",
+      shop: "All",
+      food: "Any",
     },
   };
 }

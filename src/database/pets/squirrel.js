@@ -9,7 +9,9 @@ function squirrelAbility(level) {
             kind: "Self",
         },
         effect: {
-            kind: "ClearAndFillShopsWithFood",
+            kind: "RefillShops",
+            shop: "All",
+            food: "Any",
         },
     };
 }

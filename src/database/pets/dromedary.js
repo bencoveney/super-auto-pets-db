@@ -13,6 +13,7 @@ function dromedaryAbility(level) {
             untilEndOfBattle: false,
             target: {
                 kind: "EachShopAnimal",
+                includingFuture: false,
             },
             attackAmount: level,
             healthAmount: level,
