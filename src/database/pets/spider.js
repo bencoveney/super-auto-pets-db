@@ -6,7 +6,7 @@ function spiderAbility(level) {
         description: "Faint: Summon one tier 3 animal as a " + level + "/" + level + ".",
         trigger: "Faint" /* Faint */,
         triggeredBy: {
-            kind: "EachFriend",
+            kind: "Self",
         },
         effect: {
             kind: "SummonPet",

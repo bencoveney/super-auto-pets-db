@@ -1347,7 +1347,7 @@
         "description": "Faint: Summon one tier 3 animal as a 1/1.",
         "trigger": "Faint",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Self"
         },
         "effect": {
           "kind": "SummonPet",
@@ -1363,7 +1363,7 @@
         "description": "Faint: Summon one tier 3 animal as a 2/2.",
         "trigger": "Faint",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Self"
         },
         "effect": {
           "kind": "SummonPet",
@@ -1379,7 +1379,7 @@
         "description": "Faint: Summon one tier 3 animal as a 3/3.",
         "trigger": "Faint",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Self"
         },
         "effect": {
           "kind": "SummonPet",
@@ -2430,6 +2430,552 @@
             "kind": "FriendAhead",
             "n": 1
           }
+        }
+      }
+    },
+    {
+      "name": "Bison",
+      "tier": 4,
+      "baseAttack": 6,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: Gain +2/+2 if there is at least one Lvl. 3 friend.",
+        "trigger": "EndOfTurnWithLvl3Friend",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Gain +4/+4 if there is at least one Lvl. 3 friend.",
+        "trigger": "EndOfTurnWithLvl3Friend",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Gain +6/+6 if there is at least one Lvl. 3 friend.",
+        "trigger": "EndOfTurnWithLvl3Friend",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Deer",
+      "tier": 4,
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Faint: Summon a 5/5 Bus with Splash Attack",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Bus",
+            "tier": "Summoned",
+            "baseAttack": 5,
+            "baseHealth": 5
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Summon a 10/10 Bus with Splash Attack",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Bus",
+            "tier": "Summoned",
+            "baseAttack": 10,
+            "baseHealth": 10
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Summon a 15/15 Bus with Splash Attack",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Bus",
+            "tier": "Summoned",
+            "baseAttack": 15,
+            "baseHealth": 15
+          }
+        }
+      }
+    },
+    {
+      "name": "Dolphin",
+      "tier": 4,
+      "baseAttack": 4,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Start of battle: Deal 5 damage to the lowest health enemy",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "LowestHealthEnemy"
+          },
+          "amount": 5
+        }
+      },
+      "level2Ability": {
+        "description": "Start of battle: Deal 10 damage to the lowest health enemy",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "LowestHealthEnemy"
+          },
+          "amount": 10
+        }
+      },
+      "level3Ability": {
+        "description": "Start of battle: Deal 15 damage to the lowest health enemy",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "LowestHealthEnemy"
+          },
+          "amount": 15
+        }
+      }
+    },
+    {
+      "name": "Hippo",
+      "tier": 4,
+      "baseAttack": 4,
+      "baseHealth": 7,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Knock out: Gain +2/+2.",
+        "trigger": "KnockOut",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Knock out: Gain +4/+4.",
+        "trigger": "KnockOut",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Knock out: Gain +6/+6.",
+        "trigger": "KnockOut",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Monkey",
+      "tier": 4,
+      "baseAttack": 3,
+      "baseHealth": 3,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give right-most friend +2/+2",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RightMostFriend"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give right-most friend +4/+4",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RightMostFriend"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Give right-most friend +6/+6",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RightMostFriend"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Penguin",
+      "tier": 4,
+      "baseAttack": 1,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give other Lvl. 2 and 3 friends +1/+1",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Level2And3Friends"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give other Lvl. 2 and 3 friends +2/+2",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Level2And3Friends"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Give other Lvl. 2 and 3 friends +3/+3",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Level2And3Friends"
+          },
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Rooster",
+      "tier": 4,
+      "baseAttack": 3,
+      "baseHealth": 3,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Faint: Summon a Chick with the same Attack as this.",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Chick",
+            "tier": "Summoned",
+            "baseAttack": -1,
+            "baseHealth": -1
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Summon 2 Chicks with the same Attack as this.",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Chick",
+            "tier": "Summoned",
+            "baseAttack": -1,
+            "baseHealth": -1
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Summon 3 Chicks with the same Attack as this.",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Chick",
+            "tier": "Summoned",
+            "baseAttack": -1,
+            "baseHealth": -1
+          }
+        }
+      }
+    },
+    {
+      "name": "Skunk",
+      "tier": 4,
+      "baseAttack": 3,
+      "baseHealth": 5,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Start of battle: Reduce the highest Health enemy by 33%.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "ReduceHealth",
+          "target": {
+            "kind": "HighestHealthEnemy"
+          },
+          "percentage": 33
+        }
+      },
+      "level2Ability": {
+        "description": "Start of battle: Reduce the highest Health enemy by 66%.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "ReduceHealth",
+          "target": {
+            "kind": "HighestHealthEnemy"
+          },
+          "percentage": 66
+        }
+      },
+      "level3Ability": {
+        "description": "Start of battle: Reduce the highest Health enemy by 100%.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "None"
+        },
+        "effect": {
+          "kind": "ReduceHealth",
+          "target": {
+            "kind": "HighestHealthEnemy"
+          },
+          "percentage": 100
+        }
+      }
+    },
+    {
+      "name": "Squirrel",
+      "tier": 4,
+      "baseAttack": 2,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Buy: Clear and fill shops with food.",
+        "trigger": "LevelUp",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ClearAndFillShopsWithFood"
+        }
+      },
+      "level2Ability": {
+        "description": "Buy: Clear and fill shops with food.",
+        "trigger": "LevelUp",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ClearAndFillShopsWithFood"
+        }
+      },
+      "level3Ability": {
+        "description": "Buy: Clear and fill shops with food.",
+        "trigger": "LevelUp",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ClearAndFillShopsWithFood"
+        }
+      }
+    },
+    {
+      "name": "Worm",
+      "tier": 4,
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Eats shop food: Gain +1/+1",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "target": {
+            "kind": "Self"
+          },
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Eats shop food: Gain +2/+2",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "target": {
+            "kind": "Self"
+          },
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Eats shop food: Gain +3/+3",
+        "trigger": "EatsShopFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "target": {
+            "kind": "Self"
+          },
+          "untilEndOfBattle": false
         }
       }
     }

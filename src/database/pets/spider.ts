@@ -5,7 +5,7 @@ function spiderAbility(level: number): Ability {
     description: `Faint: Summon one tier 3 animal as a ${level}/${level}.`,
     trigger: Trigger.Faint,
     triggeredBy: {
-      kind: "EachFriend",
+      kind: "Self",
     },
     effect: {
       kind: "SummonPet",
