@@ -8,6 +8,7 @@ import { blowfish } from "./pets/blowfish";
 import { bluebird } from "./pets/bluebird";
 import { buffalo } from "./pets/buffalo";
 import { camel } from "./pets/camel";
+import { cat } from "./pets/cat";
 import { caterpillar } from "./pets/caterpillar";
 import { chicken } from "./pets/chicken";
 import { cow } from "./pets/cow";
@@ -18,25 +19,31 @@ import { deer } from "./pets/deer";
 import { dodo } from "./pets/dodo";
 import { dog } from "./pets/dog";
 import { dolphin } from "./pets/dolphin";
+import { dragon } from "./pets/dragon";
 import { dromedary } from "./pets/dromedary";
 import { duck } from "./pets/duck";
 import { eagle } from "./pets/eagle";
 import { elephant } from "./pets/elephant";
 import { fish } from "./pets/fish";
 import { flamingo } from "./pets/flamingo";
+import { fly } from "./pets/fly";
 import { giraffe } from "./pets/giraffe";
 import { goat } from "./pets/goat";
+import { gorilla } from "./pets/gorilla";
 import { hatchingChick } from "./pets/hatchingChick";
 import { hedgehog } from "./pets/hedgehog";
 import { hippo } from "./pets/hippo";
 import { horse } from "./pets/horse";
 import { kangaroo } from "./pets/kangaroo";
 import { ladybug } from "./pets/ladybug";
+import { leopard } from "./pets/leopard";
 import { llama } from "./pets/llama";
 import { lobster } from "./pets/lobster";
+import { mammoth } from "./pets/mammoth";
 import { microbe } from "./pets/microbe";
 import { monkey } from "./pets/monkey";
 import { mosquito } from "./pets/mosquito";
+import { octopus } from "./pets/octopus";
 import { otter } from "./pets/otter";
 import { owl } from "./pets/owl";
 import { ox } from "./pets/ox";
@@ -50,6 +57,7 @@ import { rabbit } from "./pets/rabbit";
 import { rat } from "./pets/rat";
 import { rhino } from "./pets/rhino";
 import { rooster } from "./pets/rooster";
+import { sauropod } from "./pets/sauropod";
 import { scorpion } from "./pets/scorpion";
 import { seal } from "./pets/seal";
 import { shark } from "./pets/shark";
@@ -57,13 +65,16 @@ import { sheep } from "./pets/sheep";
 import { shrimp } from "./pets/shrimp";
 import { skunk } from "./pets/skunk";
 import { snail } from "./pets/snail";
+import { snake } from "./pets/snake";
 import { spider } from "./pets/spider";
 import { squirrel } from "./pets/squirrel";
 import { swan } from "./pets/swan";
 import { tabbyCat } from "./pets/tabbyCat";
+import { tiger } from "./pets/tiger";
 import { tropicalFish } from "./pets/tropicalFish";
 import { turkey } from "./pets/turkey";
 import { turtle } from "./pets/turtle";
+import { tyrannosaurus } from "./pets/tyrannosaurus";
 import { whale } from "./pets/whale";
 import { worm } from "./pets/worm";
 
@@ -104,26 +115,37 @@ export const enum Trigger {
   Sell = "Sell",
   LevelUp = "LevelUp",
   Summoned = "Summoned",
+  // TODO: Often requires a target, but doesn't need one.
   StartOfBattle = "StartOfBattle",
+  // TODO: Often requires a target, but doesn't need one.
   StartOfTurn = "StartOfTurn",
   Buy = "Buy",
   // TODO: Probably should represent this as a condition somehow.
   BuyAfterLoss = "BuyAfterLoss",
   // TODO: Probably should represent this as a condition somehow.
   BuyTier1Animal = "BuyTier1Animal",
+  // TODO: Often requires a target, but doesn't need one.
   BuyFood = "BuyFood",
   BeforeAttack = "BeforeAttack",
   Hurt = "Hurt",
+  // TODO: Often requires a target, but doesn't need one.
   EndOfTurn = "EndOfTurn",
+  // TODO: Often requires a target, but doesn't need one.
   // TODO: Probably should represent this as a condition somehow.
   EndOfTurnWith2PlusGold = "EndOfTurnWith2PlusGold",
+  // TODO: Often requires a target, but doesn't need one.
+  // TODO: Probably should represent this as a condition somehow.
+  EndOfTurnWith3PlusGold = "EndOfTurnWith3PlusGold",
+  // TODO: Often requires a target, but doesn't need one.
   // TODO: Probably should represent this as a condition somehow.
   EndOfTurnWithLvl3Friend = "EndOfTurnWithLvl3Friend",
+  // TODO: Often requires a target, but doesn't need one.
   // TODO: Probably should represent this as a condition somehow.
   EndOfTurnWith4OrLessAnimals = "EndOfTurnWith4OrLessAnimals",
   AfterAttack = "AfterAttack",
   EatsShopFood = "EatsShopFood",
   KnockOut = "KnockOut",
+  CastsAbility = "CastsAbility",
   // ...
 }
 
@@ -134,6 +156,7 @@ export type SimpleTarget = {
     | "Self"
     | "All"
     | "EachFriend"
+    | "EachEnemy"
     | "LeftMostFriend"
     | "RightMostFriend"
     | "TriggeringEntity"
@@ -166,12 +189,15 @@ export type Effect =
   | GainExperienceEffect
   | TransferStatsEffect
   | TransferAbilityEffect
+  | GainAbilityEffect
   | MultipleEffects
   | ApplyStatusEffect
   | SwallowEffect
   | EvolveEffect
   | ReduceHealthEffect
-  | RefillShopsEffect;
+  | RefillShopsEffect
+  | FoodMultiplierEffect
+  | RepeatAbilityEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -184,7 +210,7 @@ export interface ModifyStatsEffect {
 export interface DealDamageEffect {
   kind: "DealDamage";
   target: Target;
-  amount: number | "AttackDamage";
+  amount: number | { attackDamagePercent: number };
 }
 
 export interface TransferStatsEffect {
@@ -200,6 +226,12 @@ export interface TransferAbilityEffect {
   from: Target;
   to: Target;
   level: number;
+}
+
+export interface GainAbilityEffect {
+  // TODO: Figure out how to represent gained ability.
+  kind: "GainAbility";
+  target: Target;
 }
 
 export interface SummonPetEffect {
@@ -237,7 +269,7 @@ export interface SwallowEffect {
 
 // TODO: Status Effects.
 export interface StatusEffect {
-  name: "Weak" | "MelonArmor";
+  name: "Weak" | "MelonArmor" | "CoconutShield";
 }
 
 export interface EvolveEffect {
@@ -255,6 +287,16 @@ export interface ReduceHealthEffect {
   kind: "ReduceHealth";
   target: Target;
   percentage: number;
+}
+
+export interface FoodMultiplierEffect {
+  kind: "FoodMultiplier";
+  amount: number;
+}
+
+export interface RepeatAbilityEffect {
+  kind: "RepeatAbility";
+  target: Target;
 }
 
 const pets: Pet[] = [
@@ -332,17 +374,17 @@ const pets: Pet[] = [
   shark,
   turkey,
   // // Tier 6
-  // // cat,
-  // dragon,
-  // fly,
-  // gorilla,
-  // leopard,
-  // mammoth,
-  // // octopus,
-  // // sauropod,
-  // snake,
-  // tiger,
-  // // tyrannosaurus,
+  cat,
+  dragon,
+  fly,
+  gorilla,
+  leopard,
+  mammoth,
+  octopus,
+  sauropod,
+  snake,
+  tiger,
+  tyrannosaurus,
 ];
 
 export function getPets(): Pet[] {

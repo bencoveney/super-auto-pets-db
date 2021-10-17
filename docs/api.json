@@ -1517,7 +1517,9 @@
           "target": {
             "kind": "AdjacentAnimals"
           },
-          "amount": "AttackDamage"
+          "amount": {
+            "attackDamagePercent": 100
+          }
         }
       },
       "level2Ability": {
@@ -1531,7 +1533,9 @@
           "target": {
             "kind": "AdjacentAnimals"
           },
-          "amount": "AttackDamage"
+          "amount": {
+            "attackDamagePercent": 100
+          }
         }
       },
       "level3Ability": {
@@ -1545,7 +1549,9 @@
           "target": {
             "kind": "AdjacentAnimals"
           },
-          "amount": "AttackDamage"
+          "amount": {
+            "attackDamagePercent": 100
+          }
         }
       }
     },
@@ -3831,6 +3837,613 @@
           },
           "attackAmount": 9,
           "healthAmount": 9,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Cat",
+      "tier": 6,
+      "baseAttack": 4,
+      "baseHealth": 5,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Food with Health and Attack effects are doubled.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "FoodMultiplier",
+          "amount": 2
+        }
+      },
+      "level2Ability": {
+        "description": "Food with Health and Attack effects are tripled.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "FoodMultiplier",
+          "amount": 3
+        }
+      },
+      "level3Ability": {
+        "description": "Food with Health and Attack effects are quadrupled.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "FoodMultiplier",
+          "amount": 4
+        }
+      }
+    },
+    {
+      "name": "Dragon",
+      "tier": 6,
+      "baseAttack": 6,
+      "baseHealth": 8,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Buy tier 1 animal: Give all friends +1/+1.",
+        "trigger": "BuyTier1Animal",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Buy tier 1 animal: Give all friends +2/+2.",
+        "trigger": "BuyTier1Animal",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Buy tier 1 animal: Give all friends +3/+3.",
+        "trigger": "BuyTier1Animal",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Fly",
+      "tier": 6,
+      "baseAttack": 2,
+      "baseHealth": 2,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Friend faints: Summon a 2/2 fly in its place",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Fly",
+            "tier": "Summoned",
+            "baseAttack": 2,
+            "baseHealth": 2
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Friend faints: Summon a 4/4 fly in its place",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Fly",
+            "tier": "Summoned",
+            "baseAttack": 4,
+            "baseHealth": 4
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Friend faints: Summon a 6/6 fly in its place",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Fly",
+            "tier": "Summoned",
+            "baseAttack": 6,
+            "baseHealth": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "Gorilla",
+      "tier": 6,
+      "baseAttack": 6,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Hurt: Gain Coconut Shield.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "CoconutShield"
+          },
+          "to": {
+            "kind": "Self"
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Hurt: Gain Coconut Shield.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "CoconutShield"
+          },
+          "to": {
+            "kind": "Self"
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Hurt: Gain Coconut Shield.",
+        "trigger": "Hurt",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ApplyStatus",
+          "status": {
+            "name": "CoconutShield"
+          },
+          "to": {
+            "kind": "Self"
+          }
+        }
+      }
+    },
+    {
+      "name": "Leopard",
+      "tier": 6,
+      "baseAttack": 6,
+      "baseHealth": 4,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Start of battle: Deal 50% Attack damage to a random enemy.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": {
+            "attackDamagePercent": 50
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "Start of battle: Deal 50% Attack damage to 2 random enemies.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 2
+          },
+          "amount": {
+            "attackDamagePercent": 50
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "Start of battle: Deal 50% Attack damage to 3 random enemies.",
+        "trigger": "StartOfBattle",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 3
+          },
+          "amount": {
+            "attackDamagePercent": 50
+          }
+        }
+      }
+    },
+    {
+      "name": "Mammoth",
+      "tier": 6,
+      "baseAttack": 2,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Faint: Give all friends +2/+2",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "target": {
+            "kind": "EachFriend"
+          },
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Faint: Give all friends +4/+4",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "target": {
+            "kind": "EachFriend"
+          },
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Give all friends +6/+6",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "target": {
+            "kind": "EachFriend"
+          },
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Octopus",
+      "tier": 6,
+      "baseAttack": 8,
+      "baseHealth": 8,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Level-up: Gain +8/+8.",
+        "trigger": "LevelUp",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 8,
+          "healthAmount": 8,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Level-up: Gain +8/+8 and a new ability.",
+        "trigger": "LevelUp",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "AllOf",
+          "effects": [
+            {
+              "kind": "ModifyStats",
+              "target": {
+                "kind": "Self"
+              },
+              "attackAmount": 8,
+              "healthAmount": 8,
+              "untilEndOfBattle": false
+            },
+            {
+              "kind": "GainAbility",
+              "target": {
+                "kind": "Self"
+              }
+            }
+          ]
+        }
+      },
+      "level3Ability": {
+        "description": "Before attack: Deal 5 damage to all enemies",
+        "trigger": "BeforeAttack",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "EachEnemy"
+          },
+          "amount": 5
+        }
+      }
+    },
+    {
+      "name": "Sauropod",
+      "tier": 6,
+      "baseAttack": 4,
+      "baseHealth": 12,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Buy food: Gain 1 gold.",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainGold",
+          "amount": 1
+        }
+      },
+      "level2Ability": {
+        "description": "Buy food: Gain 1 gold.",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainGold",
+          "amount": 1
+        }
+      },
+      "level3Ability": {
+        "description": "Buy food: Gain 1 gold.",
+        "trigger": "BuyFood",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "GainGold",
+          "amount": 1
+        }
+      }
+    },
+    {
+      "name": "Snake",
+      "tier": 6,
+      "baseAttack": 6,
+      "baseHealth": 6,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "Friend ahead attacks: Deal 5 damage to a random enemy.",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 5
+        }
+      },
+      "level2Ability": {
+        "description": "Friend ahead attacks: Deal 10 damage to a random enemy.",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 10
+        }
+      },
+      "level3Ability": {
+        "description": "Friend ahead attacks: Deal 15 damage to a random enemy.",
+        "trigger": "AfterAttack",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "DealDamage",
+          "target": {
+            "kind": "RandomEnemy",
+            "n": 1
+          },
+          "amount": 15
+        }
+      }
+    },
+    {
+      "name": "Tiger",
+      "tier": 6,
+      "baseAttack": 4,
+      "baseHealth": 3,
+      "packs": [
+        "StandardPack"
+      ],
+      "level1Ability": {
+        "description": "The friend ahead casts their ability twice in battle.",
+        "trigger": "CastsAbility",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "RepeatAbility",
+          "target": {
+            "kind": "TriggeringEntity"
+          }
+        }
+      },
+      "level2Ability": {
+        "description": "The friend ahead casts their ability twice in battle.",
+        "trigger": "CastsAbility",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "RepeatAbility",
+          "target": {
+            "kind": "TriggeringEntity"
+          }
+        }
+      },
+      "level3Ability": {
+        "description": "The friend ahead casts their ability twice in battle.",
+        "trigger": "CastsAbility",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "RepeatAbility",
+          "target": {
+            "kind": "TriggeringEntity"
+          }
+        }
+      }
+    },
+    {
+      "name": "Tyrannosaurus",
+      "tier": 6,
+      "baseAttack": 9,
+      "baseHealth": 4,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: If you have 3 or more gold, give other friends +2/+2",
+        "trigger": "EndOfTurnWith3PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: If you have 3 or more gold, give other friends +4/+4",
+        "trigger": "EndOfTurnWith3PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: If you have 3 or more gold, give other friends +6/+6",
+        "trigger": "EndOfTurnWith3PlusGold",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
           "untilEndOfBattle": false
         }
       }

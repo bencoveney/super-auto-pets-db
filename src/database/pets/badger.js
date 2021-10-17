@@ -13,7 +13,7 @@ function badgerAbility(level) {
             target: {
                 kind: "AdjacentAnimals",
             },
-            amount: "AttackDamage",
+            amount: { attackDamagePercent: 100 },
         },
     };
 }
