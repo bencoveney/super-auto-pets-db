@@ -2492,6 +2492,63 @@
       }
     },
     {
+      "name": "Buffalo",
+      "tier": 4,
+      "baseAttack": 5,
+      "baseHealth": 5,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Friend bought: Gain +1/+1",
+        "trigger": "Buy",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Friend bought: Gain +2/+2",
+        "trigger": "Buy",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Friend bought: Gain +3/+3",
+        "trigger": "Buy",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
       "name": "Deer",
       "tier": 4,
       "baseAttack": 1,
@@ -2658,6 +2715,120 @@
       }
     },
     {
+      "name": "Llama",
+      "tier": 4,
+      "baseAttack": 2,
+      "baseHealth": 5,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: If you have 4 or less animals, gain +2/+2.",
+        "trigger": "EndOfTurnWith4OrLessAnimals",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: If you have 4 or less animals, gain +4/+4.",
+        "trigger": "EndOfTurnWith4OrLessAnimals",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: If you have 4 or less animals, gain +6/+6.",
+        "trigger": "EndOfTurnWith4OrLessAnimals",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "Self"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Lobster",
+      "tier": 4,
+      "baseAttack": 3,
+      "baseHealth": 3,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "Friend summoned: Give it +2/+2 when not in battle.",
+        "trigger": "Summoned",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Friend summoned: Give it +4/+4 when not in battle.",
+        "trigger": "Summoned",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 4,
+          "healthAmount": 4,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "Friend summoned: Give it +6/+6 when not in battle.",
+        "trigger": "Summoned",
+        "triggeredBy": {
+          "kind": "EachFriend"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "TriggeringEntity"
+          },
+          "attackAmount": 6,
+          "healthAmount": 6,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
       "name": "Monkey",
       "tier": 4,
       "baseAttack": 3,
@@ -2764,6 +2935,63 @@
           "kind": "ModifyStats",
           "target": {
             "kind": "Level2And3Friends"
+          },
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Poodle",
+      "tier": 4,
+      "baseAttack": 4,
+      "baseHealth": 2,
+      "packs": [
+        "ExpansionPack1"
+      ],
+      "level1Ability": {
+        "description": "End turn: Give +1/+1 to different tier animals.",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "DifferentTierAnimals"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "End turn: Give +2/+2 to different tier animals.",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "DifferentTierAnimals"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      },
+      "level3Ability": {
+        "description": "End turn: Give +3/+3 to different tier animals.",
+        "trigger": "EndOfTurn",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "DifferentTierAnimals"
           },
           "attackAmount": 3,
           "healthAmount": 3,

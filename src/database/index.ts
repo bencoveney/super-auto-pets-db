@@ -6,6 +6,7 @@ import { beetle } from "./pets/beetle";
 import { bison } from "./pets/bison";
 import { blowfish } from "./pets/blowfish";
 import { bluebird } from "./pets/bluebird";
+import { buffalo } from "./pets/buffalo";
 import { camel } from "./pets/camel";
 import { caterpillar } from "./pets/caterpillar";
 import { crab } from "./pets/crab";
@@ -26,6 +27,8 @@ import { hippo } from "./pets/hippo";
 import { horse } from "./pets/horse";
 import { kangaroo } from "./pets/kangaroo";
 import { ladybug } from "./pets/ladybug";
+import { llama } from "./pets/llama";
+import { lobster } from "./pets/lobster";
 import { monkey } from "./pets/monkey";
 import { mosquito } from "./pets/mosquito";
 import { otter } from "./pets/otter";
@@ -34,6 +37,7 @@ import { ox } from "./pets/ox";
 import { peacock } from "./pets/peacock";
 import { penguin } from "./pets/penguin";
 import { pig } from "./pets/pig";
+import { poodle } from "./pets/poodle";
 import { puppy } from "./pets/puppy";
 import { rabbit } from "./pets/rabbit";
 import { rat } from "./pets/rat";
@@ -101,6 +105,8 @@ export const enum Trigger {
   EndOfTurnWith2PlusGold = "EndOfTurnWith2PlusGold",
   // TODO: Probably should represent this as a condition somehow.
   EndOfTurnWithLvl3Friend = "EndOfTurnWithLvl3Friend",
+  // TODO: Probably should represent this as a condition somehow.
+  EndOfTurnWith4OrLessAnimals = "EndOfTurnWith4OrLessAnimals",
   AfterAttack = "AfterAttack",
   EatsShopFood = "EatsShopFood",
   KnockOut = "KnockOut",
@@ -123,6 +129,7 @@ export type SimpleTarget = {
     | "Level2And3Friends"
     | "LowestHealthEnemy"
     | "HighestHealthEnemy"
+    | "DifferentTierAnimals"
     | "None";
 };
 
@@ -269,11 +276,15 @@ const pets: Pet[] = [
   whale,
   // Tier 4
   bison,
+  buffalo,
   deer,
   dolphin,
   hippo,
+  llama,
+  lobster,
   monkey,
   penguin,
+  poodle,
   rooster,
   skunk,
   squirrel,
