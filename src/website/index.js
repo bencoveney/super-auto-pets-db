@@ -15,7 +15,7 @@ function wrapAsPage(element) {
             react_1.default.createElement("meta", { charSet: "utf-8" }),
             react_1.default.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }),
             react_1.default.createElement("title", null, "Super Auto Pets Database"),
-            react_1.default.createElement("meta", { name: "description", content: "A database of pets, food and stats from the game Super Auto Pets." }),
+            react_1.default.createElement("meta", { name: "description", content: "This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets." }),
             react_1.default.createElement("meta", { name: "author", content: "Ben Coveney" }),
             react_1.default.createElement("link", { rel: "stylesheet", href: "tailwind.css" })),
         react_1.default.createElement("body", { className: "bg-gray-200" }, element)));

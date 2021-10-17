@@ -15,7 +15,7 @@ function wrapAsPage(element: React.ReactElement) {
         <title>Super Auto Pets Database</title>
         <meta
           name="description"
-          content="A database of pets, food and stats from the game Super Auto Pets."
+          content="This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."
         />
         <meta name="author" content="Ben Coveney" />
         <link rel="stylesheet" href="tailwind.css" />

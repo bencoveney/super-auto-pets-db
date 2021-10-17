@@ -1,6 +1,6 @@
 # super-auto-pets-db
 
-Super auto pets database is an un-official guide and reference for the game Super Auto Pets.
+This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets.
 
 ## Usage
 

@@ -6,8 +6,8 @@ export function Blurb() {
       <div className="bg-white rounded-xl shadow-md p-3">
         <h2 className="text-xl font-medium text-black">About this site</h2>
         <p className="text-gray-500 mt-2">
-          This is an un-official guide and reference for the game Super Auto
-          Pets.
+          This database website is an un-official guide and reference for the
+          pets, food and stats from the game Super Auto Pets.
         </p>
         <p className="text-gray-500 mt-2">
           If you find any issues or would like to make a contribution, please
