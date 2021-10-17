@@ -2,7 +2,7 @@ import { Ability, Trigger, Pet } from "..";
 
 function swanAbility(level: number): Ability {
   return {
-    description: `Start of turn: Gain 1 gold.`,
+    description: `Start of turn: Gain ${level} gold.`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
       kind: "Self",

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.swan = void 0;
 function swanAbility(level) {
     return {
-        description: "Start of turn: Gain 1 gold.",
+        description: "Start of turn: Gain " + level + " gold.",
         trigger: "StartOfTurn" /* StartOfTurn */,
         triggeredBy: {
             kind: "Self",

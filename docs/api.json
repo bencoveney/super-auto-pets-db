@@ -1422,7 +1422,7 @@
         }
       },
       "level2Ability": {
-        "description": "Start of turn: Gain 1 gold.",
+        "description": "Start of turn: Gain 2 gold.",
         "trigger": "StartOfTurn",
         "triggeredBy": {
           "kind": "Self"
@@ -1433,7 +1433,7 @@
         }
       },
       "level3Ability": {
-        "description": "Start of turn: Gain 1 gold.",
+        "description": "Start of turn: Gain 3 gold.",
         "trigger": "StartOfTurn",
         "triggeredBy": {
           "kind": "Self"
