@@ -22,6 +22,7 @@ function sealAbility(level: number): Ability {
 
 export const seal = {
   name: "Seal",
+  unicodeCodePoint: "\u{1F9AD}",
   tier: 5,
   baseAttack: 3,
   baseHealth: 6,

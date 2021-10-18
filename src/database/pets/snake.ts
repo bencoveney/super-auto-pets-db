@@ -23,6 +23,7 @@ function snakeAbility(level: number): Ability {
 
 export const snake = {
   name: "Snake",
+  unicodeCodePoint: "\u{1F40D}",
   tier: 6,
   baseAttack: 6,
   baseHealth: 6,

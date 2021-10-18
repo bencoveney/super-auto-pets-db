@@ -21,6 +21,7 @@ function shrimpAbility(level: number): Ability {
 
 export const shrimp = {
   name: "Shrimp",
+  unicodeCodePoint: "\u{1F990}",
   tier: 2,
   baseAttack: 2,
   baseHealth: 1,

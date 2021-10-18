@@ -22,6 +22,7 @@ function dromedaryAbility(level: number): Ability {
 
 export const dromedary = {
   name: "Dromedary",
+  unicodeCodePoint: "\u{1F42A}",
   tier: 2,
   baseAttack: 2,
   baseHealth: 4,

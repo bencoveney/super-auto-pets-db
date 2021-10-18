@@ -24,6 +24,7 @@ function crabAbility(level: number): Ability {
 
 export const crab = {
   name: "Crab",
+  unicodeCodePoint: "\u{1F980}",
   tier: 2,
   baseAttack: 3,
   baseHealth: 3,

@@ -2,6 +2,8 @@ import { Ability, Pet, Trigger } from "..";
 
 const busSummoned: Pet = {
   name: "Bus",
+  // TODO: Incorrect.
+  unicodeCodePoint: "\u{1F68D}",
   tier: "Summoned",
   baseAttack: -1,
   baseHealth: -1,
@@ -30,6 +32,7 @@ function deerAbility(level: number): Ability {
 
 export const deer = {
   name: "Deer",
+  unicodeCodePoint: "\u{1F98C}",
   tier: 4,
   baseAttack: 1,
   baseHealth: 1,

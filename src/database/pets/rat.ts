@@ -2,6 +2,7 @@ import { Pet, Ability, Trigger } from "..";
 
 const dirtyRatSummoned: Pet = {
   name: "Dirty Rat",
+  unicodeCodePoint: "\u{1F400}",
   tier: "Summoned",
   baseAttack: 1,
   baseHealth: 1,
@@ -24,6 +25,7 @@ function ratAbility(level: number): Ability {
 
 export const rat = {
   name: "Rat",
+  unicodeCodePoint: "\u{1F400}",
   tier: 2,
   baseAttack: 4,
   baseHealth: 5,

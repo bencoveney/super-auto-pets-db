@@ -21,6 +21,7 @@ function buffaloAbility(level) {
 }
 exports.buffalo = {
     name: "Buffalo",
+    unicodeCodePoint: "\uD83D\uDC03",
     tier: 4,
     baseAttack: 5,
     baseHealth: 5,

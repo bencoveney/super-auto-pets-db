@@ -20,6 +20,7 @@ function mosquitoAbility(level) {
 }
 exports.mosquito = {
     name: "Mosquito",
+    unicodeCodePoint: "\uD83E\uDD9F",
     tier: 1,
     baseAttack: 2,
     baseHealth: 2,

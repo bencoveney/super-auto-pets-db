@@ -22,6 +22,7 @@ function dromedaryAbility(level) {
 }
 exports.dromedary = {
     name: "Dromedary",
+    unicodeCodePoint: "\uD83D\uDC2A",
     tier: 2,
     baseAttack: 2,
     baseHealth: 4,

@@ -35,6 +35,7 @@ function dodoAbility(level) {
 }
 exports.dodo = {
     name: "Dodo",
+    unicodeCodePoint: "\uD83E\uDDA4",
     tier: 2,
     baseAttack: 1,
     baseHealth: 3,

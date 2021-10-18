@@ -16,6 +16,7 @@ function pigAbility(level) {
 }
 exports.pig = {
     name: "Pig",
+    unicodeCodePoint: "\uD83D\uDC16",
     tier: 1,
     baseAttack: 2,
     baseHealth: 2,

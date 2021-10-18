@@ -20,6 +20,7 @@ function skunkAbility(level) {
 }
 exports.skunk = {
     name: "Skunk",
+    unicodeCodePoint: "\uD83E\uDDA8",
     tier: 4,
     baseAttack: 3,
     baseHealth: 5,

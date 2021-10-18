@@ -22,6 +22,7 @@ function sealAbility(level) {
 }
 exports.seal = {
     name: "Seal",
+    unicodeCodePoint: "\uD83E\uDDAD",
     tier: 5,
     baseAttack: 3,
     baseHealth: 6,

@@ -20,6 +20,7 @@ function elephantAbility(level) {
 }
 exports.elephant = {
     name: "Elephant",
+    unicodeCodePoint: "\uD83D\uDC18",
     tier: 2,
     baseAttack: 3,
     baseHealth: 5,

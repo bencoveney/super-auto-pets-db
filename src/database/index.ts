@@ -82,7 +82,9 @@ export type Pack = "StandardPack" | "ExpansionPack1";
 
 export interface Pet {
   // The name of the pet.
-  name: String;
+  name: string;
+  // Unicode codepoint
+  unicodeCodePoint: string;
   // The tier the pet appears in.
   tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
   // The standard starting attack points for the pet.

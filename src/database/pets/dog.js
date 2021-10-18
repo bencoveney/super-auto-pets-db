@@ -33,6 +33,8 @@ function dogAbility(level) {
 }
 exports.dog = {
     name: "Dog",
+    // TODO: Incorrect. Use twitter dog here.
+    unicodeCodePoint: "\uD83E\uDDAE",
     tier: 2,
     baseAttack: 2,
     baseHealth: 2,

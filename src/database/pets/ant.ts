@@ -22,6 +22,7 @@ function antAbility(level: number): Ability {
 
 export const ant = {
   name: "Ant",
+  unicodeCodePoint: "\u{1F41C}",
   tier: 1,
   baseAttack: 2,
   baseHealth: 1,

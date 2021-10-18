@@ -14,6 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.cricket = void 0;
 var cricketSummoned = {
     name: "Cricket",
+    unicodeCodePoint: "\uD83E\uDD97",
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -33,6 +34,7 @@ function cricketAbility(level) {
 }
 exports.cricket = {
     name: "Cricket",
+    unicodeCodePoint: "\uD83E\uDD97",
     tier: 1,
     baseAttack: 1,
     baseHealth: 2,

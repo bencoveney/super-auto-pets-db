@@ -22,6 +22,7 @@ function camelAbility(level) {
 }
 exports.camel = {
     name: "Camel",
+    unicodeCodePoint: "\uD83D\uDC2B",
     tier: 3,
     baseAttack: 2,
     baseHealth: 5,

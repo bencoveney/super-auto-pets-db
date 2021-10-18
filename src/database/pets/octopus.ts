@@ -68,6 +68,7 @@ function octopusAbility(level: number): Ability {
 
 export const octopus = {
   name: "Octopus",
+  unicodeCodePoint: "\u{1F419}",
   tier: 6,
   baseAttack: 8,
   baseHealth: 8,

@@ -23,6 +23,7 @@ function lobsterAbility(level: number): Ability {
 
 export const lobster = {
   name: "Lobster",
+  unicodeCodePoint: "\u{1F99E}",
   tier: 4,
   baseAttack: 3,
   baseHealth: 3,

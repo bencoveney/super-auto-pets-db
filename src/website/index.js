@@ -9,6 +9,7 @@ var react_1 = __importDefault(require("react"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var Page_1 = require("./components/Page");
+var emoji_unicode_1 = __importDefault(require("emoji-unicode"));
 function wrapAsPage(element) {
     return (react_1.default.createElement("html", { lang: "en" },
         react_1.default.createElement("head", null,
@@ -23,9 +24,23 @@ function wrapAsPage(element) {
 function homepage(pets) {
     return wrapAsPage(react_1.default.createElement(Page_1.Page, { pets: pets }));
 }
-function writeWebsite(pets) {
+function writeAssets(outputDir, pets) {
+    var assetsDir = path_1.default.resolve(outputDir, "assets");
+    if (!fs_1.default.existsSync(assetsDir)) {
+        fs_1.default.mkdirSync(assetsDir, { recursive: true });
+    }
+    pets.forEach(function (pet) {
+        console.log(pet.unicodeCodePoint);
+        var unicodeValues = (0, emoji_unicode_1.default)(pet.unicodeCodePoint).split(" ");
+        var emojiFile = path_1.default.resolve(__dirname, "../emoji/noto-emoji/svg/", "emoji_u" + unicodeValues.join("_") + ".svg");
+        var destFile = path_1.default.resolve(assetsDir, pet.name.toLowerCase() + ".svg");
+        fs_1.default.copyFileSync(emojiFile, destFile);
+    });
+}
+function writeWebsite(outputDir, pets) {
     var content = server_1.default.renderToStaticNodeStream(homepage(pets));
-    var indexPath = path_1.default.resolve(process.cwd(), "docs", "index.html");
+    writeAssets(outputDir, pets);
+    var indexPath = path_1.default.resolve(outputDir, "index.html");
     var writeStream = fs_1.default.createWriteStream(indexPath);
     content.pipe(writeStream);
     writeStream.on("finish", function () { return console.log("wrote db"); });

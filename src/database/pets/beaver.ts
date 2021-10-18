@@ -21,6 +21,7 @@ function beaverAbility(level: number): Ability {
 
 export const beaver = {
   name: "Beaver",
+  unicodeCodePoint: "\u{1F9AB}",
   tier: 1,
   baseAttack: 2,
   baseHealth: 2,

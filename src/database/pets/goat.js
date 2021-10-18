@@ -16,6 +16,7 @@ function goatAbility(level) {
 }
 exports.goat = {
     name: "Goat",
+    unicodeCodePoint: "\uD83D\uDC10",
     tier: 5,
     baseAttack: 4,
     baseHealth: 5,

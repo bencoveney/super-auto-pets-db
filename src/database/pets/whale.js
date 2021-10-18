@@ -20,6 +20,7 @@ function whaleAbility(level) {
 }
 exports.whale = {
     name: "Whale",
+    unicodeCodePoint: "\uD83D\uDC0B",
     tier: 3,
     baseAttack: 2,
     baseHealth: 6,

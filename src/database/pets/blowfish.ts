@@ -20,6 +20,7 @@ function blowfishAbility(level: number): Ability {
 
 export const blowfish = {
   name: "Blowfish",
+  unicodeCodePoint: "\u{1F421}",
   tier: 3,
   baseAttack: 3,
   baseHealth: 5,

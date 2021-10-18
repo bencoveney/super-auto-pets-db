@@ -20,6 +20,7 @@ function bluebirdAbility(level) {
 }
 exports.bluebird = {
     name: "Bluebird",
+    unicodeCodePoint: "\uD83D\uDC26",
     tier: 1,
     baseAttack: 2,
     baseHealth: 3,

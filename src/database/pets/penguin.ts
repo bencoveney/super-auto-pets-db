@@ -21,6 +21,7 @@ function penguinAbility(level: number): Ability {
 
 export const penguin = {
   name: "Penguin",
+  unicodeCodePoint: "\u{1F427}",
   tier: 4,
   baseAttack: 1,
   baseHealth: 2,

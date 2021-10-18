@@ -12,6 +12,7 @@ function spiderAbility(level: number): Ability {
       pet: {
         // TODO: Summon correct pet.
         name: "Tier 3 animal",
+        unicodeCodePoint: "\u{1F578}\u{FE0F}",
         tier: "Summoned",
         baseAttack: level * 2,
         baseHealth: level * 2,
@@ -22,6 +23,8 @@ function spiderAbility(level: number): Ability {
 
 export const spider = {
   name: "Spider",
+  // TODO: Shouldn't this be \u{1F577}\u{FE0F} ?
+  unicodeCodePoint: "\u{1F577}",
   tier: 2,
   baseAttack: 2,
   baseHealth: 2,

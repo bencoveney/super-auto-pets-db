@@ -20,6 +20,7 @@ function horseAbility(level: number): Ability {
 
 export const horse = {
   name: "Horse",
+  unicodeCodePoint: "\u{1F40E}",
   tier: 1,
   baseAttack: 1,
   baseHealth: 1,

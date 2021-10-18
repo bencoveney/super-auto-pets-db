@@ -14,6 +14,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deer = void 0;
 var busSummoned = {
     name: "Bus",
+    // TODO: Incorrect.
+    unicodeCodePoint: "\uD83D\uDE8D",
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -34,6 +36,7 @@ function deerAbility(level) {
 }
 exports.deer = {
     name: "Deer",
+    unicodeCodePoint: "\uD83E\uDD8C",
     tier: 4,
     baseAttack: 1,
     baseHealth: 1,

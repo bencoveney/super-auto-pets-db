@@ -14,6 +14,10 @@ export function Pet(props: { pet: PetType }) {
           ⚔️ {props.pet.baseAttack} / 💖 {props.pet.baseHealth}
         </div>
       </div>
+      <img
+        className="mx-20"
+        src={`assets/${props.pet.name.toLowerCase()}.svg`}
+      />
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (
           <Pack pack={pack} key={index} />

@@ -33,6 +33,8 @@ function dogAbility(level: number): Ability {
 
 export const dog = {
   name: "Dog",
+  // TODO: Incorrect. Use twitter dog here.
+  unicodeCodePoint: "\u{1F9AE}",
   tier: 2,
   baseAttack: 2,
   baseHealth: 2,

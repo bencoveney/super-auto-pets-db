@@ -33,6 +33,7 @@
     "@types/node": "^16.10.3",
     "@types/react": "^17.0.27",
     "@types/react-dom": "^17.0.9",
+    "emoji-unicode": "^2.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tailwindcss": "^2.2.16",

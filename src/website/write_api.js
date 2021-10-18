@@ -22,11 +22,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.output = void 0;
 var fs = __importStar(require("fs"));
 var path = __importStar(require("path"));
-function output(pets) {
-    var outputDir = path.join(process.cwd(), "docs");
-    if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true });
-    }
+function output(outputDir, pets) {
     var output = path.join(outputDir, "api.json");
     fs.writeFileSync(output, JSON.stringify({ pets: pets }, null, 2), {
         encoding: "utf-8",

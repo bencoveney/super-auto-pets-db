@@ -17,6 +17,8 @@ function squirrelAbility(level: number): Ability {
 
 export const squirrel = {
   name: "Squirrel",
+  // TODO: Shouldn't this be \u{1F43F}\u{FE0F} ?
+  unicodeCodePoint: "\u{1F43F}",
   tier: 4,
   baseAttack: 2,
   baseHealth: 2,

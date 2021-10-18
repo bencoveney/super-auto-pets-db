@@ -14,6 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.rooster = void 0;
 var chick = {
     name: "Chick",
+    unicodeCodePoint: "\uD83D\uDC24",
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -34,6 +35,7 @@ function roosterAbility(level) {
 }
 exports.rooster = {
     name: "Rooster",
+    unicodeCodePoint: "\uD83D\uDC13",
     tier: 4,
     baseAttack: 3,
     baseHealth: 3,

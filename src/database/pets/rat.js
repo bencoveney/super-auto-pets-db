@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.rat = void 0;
 var dirtyRatSummoned = {
     name: "Dirty Rat",
+    unicodeCodePoint: "\uD83D\uDC00",
     tier: "Summoned",
     baseAttack: 1,
     baseHealth: 1,
@@ -23,6 +24,7 @@ function ratAbility(level) {
 }
 exports.rat = {
     name: "Rat",
+    unicodeCodePoint: "\uD83D\uDC00",
     tier: 2,
     baseAttack: 4,
     baseHealth: 5,

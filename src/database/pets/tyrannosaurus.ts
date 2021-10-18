@@ -23,6 +23,7 @@ function tyrannosaurusAbility(level: number): Ability {
 
 export const tyrannosaurus = {
   name: "Tyrannosaurus",
+  unicodeCodePoint: "\u{1F996}",
   tier: 6,
   baseAttack: 9,
   baseHealth: 4,

@@ -21,6 +21,7 @@ function lobsterAbility(level) {
 }
 exports.lobster = {
     name: "Lobster",
+    unicodeCodePoint: "\uD83E\uDD9E",
     tier: 4,
     baseAttack: 3,
     baseHealth: 3,

@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { Pet } from "../database";
 import { Page } from "./components/Page";
+import emojiUnicode from "emoji-unicode";
 
 function wrapAsPage(element: React.ReactElement) {
   return (
@@ -30,10 +31,29 @@ function homepage(pets: Pet[]) {
   return wrapAsPage(<Page pets={pets}></Page>);
 }
 
-export function writeWebsite(pets: Pet[]) {
-  const content = ReactDOMServer.renderToStaticNodeStream(homepage(pets));
+function writeAssets(outputDir: string, pets: Pet[]) {
+  const assetsDir = path.resolve(outputDir, "assets");
+  if (!fs.existsSync(assetsDir)) {
+    fs.mkdirSync(assetsDir, { recursive: true });
+  }
+  pets.forEach((pet) => {
+    console.log(pet.unicodeCodePoint);
+    let unicodeValues: string[] = emojiUnicode(pet.unicodeCodePoint).split(" ");
+    const emojiFile = path.resolve(
+      __dirname,
+      "../emoji/noto-emoji/svg/",
+      `emoji_u${unicodeValues.join("_")}.svg`
+    );
+    const destFile = path.resolve(assetsDir, `${pet.name.toLowerCase()}.svg`);
 
-  const indexPath = path.resolve(process.cwd(), "docs", "index.html");
+    fs.copyFileSync(emojiFile, destFile);
+  });
+}
+
+export function writeWebsite(outputDir: string, pets: Pet[]) {
+  const content = ReactDOMServer.renderToStaticNodeStream(homepage(pets));
+  writeAssets(outputDir, pets);
+  const indexPath = path.resolve(outputDir, "index.html");
   const writeStream = fs.createWriteStream(indexPath);
   content.pipe(writeStream);
   writeStream.on("finish", () => console.log("wrote db"));

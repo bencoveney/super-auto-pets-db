@@ -20,6 +20,7 @@ function tabbyCatAbility(level: number): Ability {
 
 export const tabbyCat = {
   name: "Tabby Cat",
+  unicodeCodePoint: "\u{1F408}",
   tier: 2,
   baseAttack: 4,
   baseHealth: 3,

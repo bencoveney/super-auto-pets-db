@@ -19,6 +19,7 @@ function rhinoAbility(level: number): Ability {
 
 export const rhino = {
   name: "Rhino",
+  unicodeCodePoint: "\u{1F98F}",
   tier: 5,
   baseAttack: 5,
   baseHealth: 6,

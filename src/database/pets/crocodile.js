@@ -19,6 +19,7 @@ function crocodileAbility(level) {
 }
 exports.crocodile = {
     name: "Crocodile",
+    unicodeCodePoint: "\uD83D\uDC0A",
     tier: 5,
     baseAttack: 6,
     baseHealth: 3,

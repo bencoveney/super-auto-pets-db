@@ -22,6 +22,7 @@ function kangarooAbility(level) {
 }
 exports.kangaroo = {
     name: "Kangaroo",
+    unicodeCodePoint: "\uD83E\uDD98",
     tier: 3,
     baseAttack: 2,
     baseHealth: 3,

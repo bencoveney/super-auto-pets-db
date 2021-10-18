@@ -28,6 +28,7 @@ function catAbility(level: number): Ability {
 
 export const cat = {
   name: "Cat",
+  unicodeCodePoint: "\u{1F408}\u{200D}\u{2B1B}",
   tier: 6,
   baseAttack: 4,
   baseHealth: 5,

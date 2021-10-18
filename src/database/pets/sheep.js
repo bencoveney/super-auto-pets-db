@@ -14,6 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sheep = void 0;
 var ramSummoned = {
     name: "Ram",
+    unicodeCodePoint: "\uD83D\uDC0F",
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -33,6 +34,7 @@ function sheepAbility(level) {
 }
 exports.sheep = {
     name: "Sheep",
+    unicodeCodePoint: "\uD83D\uDC11",
     tier: 3,
     baseAttack: 2,
     baseHealth: 2,

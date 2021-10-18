@@ -21,6 +21,8 @@ function fishAbility(level: number): Ability {
 
 export const fish = {
   name: "Fish",
+  // TODO: Incorrect. Use Mozilla fish.
+  unicodeCodePoint: "\u{1F41F}",
   tier: 1,
   baseAttack: 2,
   baseHealth: 3,

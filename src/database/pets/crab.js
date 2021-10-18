@@ -24,6 +24,7 @@ function crabAbility(level) {
 }
 exports.crab = {
     name: "Crab",
+    unicodeCodePoint: "\uD83E\uDD80",
     tier: 2,
     baseAttack: 3,
     baseHealth: 3,

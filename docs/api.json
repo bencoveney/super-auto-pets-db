@@ -2,6 +2,7 @@
   "pets": [
     {
       "name": "Ant",
+      "unicodeCodePoint": "🐜",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 1,
@@ -63,6 +64,7 @@
     },
     {
       "name": "Beaver",
+      "unicodeCodePoint": "🦫",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -121,6 +123,7 @@
     },
     {
       "name": "Beetle",
+      "unicodeCodePoint": "🪲",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 3,
@@ -178,6 +181,7 @@
     },
     {
       "name": "Bluebird",
+      "unicodeCodePoint": "🐦",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 3,
@@ -232,6 +236,7 @@
     },
     {
       "name": "Cricket",
+      "unicodeCodePoint": "🦗",
       "tier": 1,
       "baseAttack": 1,
       "baseHealth": 2,
@@ -249,6 +254,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
+            "unicodeCodePoint": "🦗",
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -265,6 +271,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
+            "unicodeCodePoint": "🦗",
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -281,6 +288,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Cricket",
+            "unicodeCodePoint": "🦗",
             "tier": "Summoned",
             "baseAttack": 3,
             "baseHealth": 3
@@ -290,6 +298,7 @@
     },
     {
       "name": "Duck",
+      "unicodeCodePoint": "🦆",
       "tier": 1,
       "baseAttack": 1,
       "baseHealth": 2,
@@ -350,6 +359,7 @@
     },
     {
       "name": "Fish",
+      "unicodeCodePoint": "🐟",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 3,
@@ -392,6 +402,7 @@
     },
     {
       "name": "Horse",
+      "unicodeCodePoint": "🐎",
       "tier": 1,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -446,6 +457,7 @@
     },
     {
       "name": "Ladybug",
+      "unicodeCodePoint": "🐞",
       "tier": 1,
       "baseAttack": 1,
       "baseHealth": 3,
@@ -503,6 +515,7 @@
     },
     {
       "name": "Mosquito",
+      "unicodeCodePoint": "🦟",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -558,6 +571,7 @@
     },
     {
       "name": "Otter",
+      "unicodeCodePoint": "🦦",
       "tier": 1,
       "baseAttack": 1,
       "baseHealth": 2,
@@ -618,6 +632,7 @@
     },
     {
       "name": "Pig",
+      "unicodeCodePoint": "🐖",
       "tier": 1,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -661,6 +676,7 @@
     },
     {
       "name": "Bat",
+      "unicodeCodePoint": "🦇",
       "tier": 2,
       "baseAttack": 1,
       "baseHealth": 3,
@@ -721,6 +737,7 @@
     },
     {
       "name": "Crab",
+      "unicodeCodePoint": "🦀",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 3,
@@ -787,6 +804,7 @@
     },
     {
       "name": "Dodo",
+      "unicodeCodePoint": "🦤",
       "tier": 2,
       "baseAttack": 1,
       "baseHealth": 3,
@@ -853,6 +871,7 @@
     },
     {
       "name": "Dog",
+      "unicodeCodePoint": "🦮",
       "tier": 2,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -947,6 +966,7 @@
     },
     {
       "name": "Dromedary",
+      "unicodeCodePoint": "🐪",
       "tier": 2,
       "baseAttack": 2,
       "baseHealth": 4,
@@ -1007,6 +1027,7 @@
     },
     {
       "name": "Elephant",
+      "unicodeCodePoint": "🐘",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 5,
@@ -1061,6 +1082,7 @@
     },
     {
       "name": "Flamingo",
+      "unicodeCodePoint": "🦩",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 1,
@@ -1122,6 +1144,7 @@
     },
     {
       "name": "Hedgehog",
+      "unicodeCodePoint": "🦔",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 2,
@@ -1174,6 +1197,7 @@
     },
     {
       "name": "Peacock",
+      "unicodeCodePoint": "🦚",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 2,
@@ -1229,6 +1253,7 @@
     },
     {
       "name": "Rat",
+      "unicodeCodePoint": "🐀",
       "tier": 2,
       "baseAttack": 4,
       "baseHealth": 5,
@@ -1246,6 +1271,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "unicodeCodePoint": "🐀",
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1262,6 +1288,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "unicodeCodePoint": "🐀",
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1278,6 +1305,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "unicodeCodePoint": "🐀",
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1287,6 +1315,7 @@
     },
     {
       "name": "Shrimp",
+      "unicodeCodePoint": "🦐",
       "tier": 2,
       "baseAttack": 2,
       "baseHealth": 1,
@@ -1345,6 +1374,7 @@
     },
     {
       "name": "Spider",
+      "unicodeCodePoint": "🕷",
       "tier": 2,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -1362,6 +1392,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 3 animal",
+            "unicodeCodePoint": "🕸️",
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -1378,6 +1409,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 3 animal",
+            "unicodeCodePoint": "🕸️",
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
@@ -1394,6 +1426,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 3 animal",
+            "unicodeCodePoint": "🕸️",
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
@@ -1403,6 +1436,7 @@
     },
     {
       "name": "Swan",
+      "unicodeCodePoint": "🦢",
       "tier": 2,
       "baseAttack": 3,
       "baseHealth": 4,
@@ -1446,6 +1480,7 @@
     },
     {
       "name": "Tabby Cat",
+      "unicodeCodePoint": "🐈",
       "tier": 2,
       "baseAttack": 4,
       "baseHealth": 3,
@@ -1500,6 +1535,7 @@
     },
     {
       "name": "Badger",
+      "unicodeCodePoint": "🦡",
       "tier": 3,
       "baseAttack": 5,
       "baseHealth": 4,
@@ -1557,6 +1593,7 @@
     },
     {
       "name": "Blowfish",
+      "unicodeCodePoint": "🐡",
       "tier": 3,
       "baseAttack": 3,
       "baseHealth": 5,
@@ -1612,6 +1649,7 @@
     },
     {
       "name": "Caterpillar",
+      "unicodeCodePoint": "🐛",
       "tier": 3,
       "baseAttack": 1,
       "baseHealth": 4,
@@ -1659,6 +1697,7 @@
     },
     {
       "name": "Camel",
+      "unicodeCodePoint": "🐫",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 5,
@@ -1719,6 +1758,7 @@
     },
     {
       "name": "Hatching Chick",
+      "unicodeCodePoint": "🐣",
       "tier": 3,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -1777,6 +1817,7 @@
     },
     {
       "name": "Giraffe",
+      "unicodeCodePoint": "🦒",
       "tier": 3,
       "baseAttack": 1,
       "baseHealth": 3,
@@ -1837,6 +1878,7 @@
     },
     {
       "name": "Kangaroo",
+      "unicodeCodePoint": "🦘",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 3,
@@ -1897,6 +1939,7 @@
     },
     {
       "name": "Owl",
+      "unicodeCodePoint": "🦉",
       "tier": 3,
       "baseAttack": 5,
       "baseHealth": 3,
@@ -1957,6 +2000,7 @@
     },
     {
       "name": "Ox",
+      "unicodeCodePoint": "🐂",
       "tier": 3,
       "baseAttack": 1,
       "baseHealth": 4,
@@ -2056,6 +2100,7 @@
     },
     {
       "name": "Puppy",
+      "unicodeCodePoint": "🐕",
       "tier": 3,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -2113,6 +2158,7 @@
     },
     {
       "name": "Rabbit",
+      "unicodeCodePoint": "🐇",
       "tier": 3,
       "baseAttack": 3,
       "baseHealth": 2,
@@ -2168,6 +2214,7 @@
     },
     {
       "name": "Sheep",
+      "unicodeCodePoint": "🐑",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -2185,6 +2232,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "unicodeCodePoint": "🐏",
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -2201,6 +2249,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "unicodeCodePoint": "🐏",
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
@@ -2217,6 +2266,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "unicodeCodePoint": "🐏",
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
@@ -2226,6 +2276,7 @@
     },
     {
       "name": "Snail",
+      "unicodeCodePoint": "🐌",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -2284,6 +2335,7 @@
     },
     {
       "name": "Tropical Fish",
+      "unicodeCodePoint": "🐠",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 4,
@@ -2338,6 +2390,7 @@
     },
     {
       "name": "Turtle",
+      "unicodeCodePoint": "🐢",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 4,
@@ -2399,6 +2452,7 @@
     },
     {
       "name": "Whale",
+      "unicodeCodePoint": "🐋",
       "tier": 3,
       "baseAttack": 2,
       "baseHealth": 6,
@@ -2450,6 +2504,7 @@
     },
     {
       "name": "Bison",
+      "unicodeCodePoint": "🦬",
       "tier": 4,
       "baseAttack": 6,
       "baseHealth": 6,
@@ -2508,6 +2563,7 @@
     },
     {
       "name": "Buffalo",
+      "unicodeCodePoint": "🐃",
       "tier": 4,
       "baseAttack": 5,
       "baseHealth": 5,
@@ -2565,6 +2621,7 @@
     },
     {
       "name": "Deer",
+      "unicodeCodePoint": "🦌",
       "tier": 4,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -2582,6 +2639,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "unicodeCodePoint": "🚍",
             "tier": "Summoned",
             "baseAttack": 5,
             "baseHealth": 5
@@ -2598,6 +2656,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "unicodeCodePoint": "🚍",
             "tier": "Summoned",
             "baseAttack": 10,
             "baseHealth": 10
@@ -2614,6 +2673,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "unicodeCodePoint": "🚍",
             "tier": "Summoned",
             "baseAttack": 15,
             "baseHealth": 15
@@ -2623,6 +2683,7 @@
     },
     {
       "name": "Dolphin",
+      "unicodeCodePoint": "🐬",
       "tier": 4,
       "baseAttack": 4,
       "baseHealth": 6,
@@ -2674,6 +2735,7 @@
     },
     {
       "name": "Hippo",
+      "unicodeCodePoint": "🦛",
       "tier": 4,
       "baseAttack": 4,
       "baseHealth": 7,
@@ -2731,6 +2793,7 @@
     },
     {
       "name": "Llama",
+      "unicodeCodePoint": "🦙",
       "tier": 4,
       "baseAttack": 2,
       "baseHealth": 5,
@@ -2788,6 +2851,7 @@
     },
     {
       "name": "Lobster",
+      "unicodeCodePoint": "🦞",
       "tier": 4,
       "baseAttack": 3,
       "baseHealth": 3,
@@ -2845,6 +2909,7 @@
     },
     {
       "name": "Monkey",
+      "unicodeCodePoint": "🐒",
       "tier": 4,
       "baseAttack": 3,
       "baseHealth": 3,
@@ -2902,6 +2967,7 @@
     },
     {
       "name": "Penguin",
+      "unicodeCodePoint": "🐧",
       "tier": 4,
       "baseAttack": 1,
       "baseHealth": 2,
@@ -2959,6 +3025,7 @@
     },
     {
       "name": "Poodle",
+      "unicodeCodePoint": "🐩",
       "tier": 4,
       "baseAttack": 4,
       "baseHealth": 2,
@@ -3016,6 +3083,7 @@
     },
     {
       "name": "Rooster",
+      "unicodeCodePoint": "🐓",
       "tier": 4,
       "baseAttack": 3,
       "baseHealth": 3,
@@ -3033,6 +3101,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "unicodeCodePoint": "🐤",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3049,6 +3118,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "unicodeCodePoint": "🐤",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3065,6 +3135,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "unicodeCodePoint": "🐤",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3074,6 +3145,7 @@
     },
     {
       "name": "Skunk",
+      "unicodeCodePoint": "🦨",
       "tier": 4,
       "baseAttack": 3,
       "baseHealth": 5,
@@ -3126,6 +3198,7 @@
     },
     {
       "name": "Squirrel",
+      "unicodeCodePoint": "🐿",
       "tier": 4,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -3172,6 +3245,7 @@
     },
     {
       "name": "Worm",
+      "unicodeCodePoint": "🪱",
       "tier": 4,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -3230,6 +3304,7 @@
     },
     {
       "name": "Chicken",
+      "unicodeCodePoint": "🐔",
       "tier": 5,
       "baseAttack": 3,
       "baseHealth": 4,
@@ -3290,6 +3365,7 @@
     },
     {
       "name": "Cow",
+      "unicodeCodePoint": "🐄",
       "tier": 5,
       "baseAttack": 4,
       "baseHealth": 6,
@@ -3336,6 +3412,7 @@
     },
     {
       "name": "Crocodile",
+      "unicodeCodePoint": "🐊",
       "tier": 5,
       "baseAttack": 6,
       "baseHealth": 3,
@@ -3387,6 +3464,7 @@
     },
     {
       "name": "Eagle",
+      "unicodeCodePoint": "🦅",
       "tier": 5,
       "baseAttack": 6,
       "baseHealth": 5,
@@ -3403,6 +3481,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 6 animal",
+            "unicodeCodePoint": "🦅",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3419,6 +3498,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 6 animal",
+            "unicodeCodePoint": "🦅",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3435,6 +3515,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Tier 6 animal",
+            "unicodeCodePoint": "🦅",
             "tier": "Summoned",
             "baseAttack": -1,
             "baseHealth": -1
@@ -3444,6 +3525,7 @@
     },
     {
       "name": "Goat",
+      "unicodeCodePoint": "🐐",
       "tier": 5,
       "baseAttack": 4,
       "baseHealth": 5,
@@ -3486,6 +3568,7 @@
     },
     {
       "name": "Microbe",
+      "unicodeCodePoint": "🦠",
       "tier": 5,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -3543,6 +3626,7 @@
     },
     {
       "name": "Parrot",
+      "unicodeCodePoint": "🦜",
       "tier": 5,
       "baseAttack": 3,
       "baseHealth": 2,
@@ -3606,6 +3690,7 @@
     },
     {
       "name": "Rhino",
+      "unicodeCodePoint": "🦏",
       "tier": 5,
       "baseAttack": 5,
       "baseHealth": 6,
@@ -3658,6 +3743,7 @@
     },
     {
       "name": "Scorpion",
+      "unicodeCodePoint": "🦂",
       "tier": 5,
       "baseAttack": 1,
       "baseHealth": 1,
@@ -3668,6 +3754,7 @@
     },
     {
       "name": "Seal",
+      "unicodeCodePoint": "🦭",
       "tier": 5,
       "baseAttack": 3,
       "baseHealth": 6,
@@ -3729,6 +3816,7 @@
     },
     {
       "name": "Shark",
+      "unicodeCodePoint": "🦈",
       "tier": 5,
       "baseAttack": 4,
       "baseHealth": 4,
@@ -3786,6 +3874,7 @@
     },
     {
       "name": "Turkey",
+      "unicodeCodePoint": "🦃",
       "tier": 5,
       "baseAttack": 3,
       "baseHealth": 4,
@@ -3843,6 +3932,7 @@
     },
     {
       "name": "Cat",
+      "unicodeCodePoint": "🐈‍⬛",
       "tier": 6,
       "baseAttack": 4,
       "baseHealth": 5,
@@ -3885,6 +3975,7 @@
     },
     {
       "name": "Dragon",
+      "unicodeCodePoint": "🐉",
       "tier": 6,
       "baseAttack": 6,
       "baseHealth": 8,
@@ -3943,6 +4034,7 @@
     },
     {
       "name": "Fly",
+      "unicodeCodePoint": "🪰",
       "tier": 6,
       "baseAttack": 2,
       "baseHealth": 2,
@@ -3959,6 +4051,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Fly",
+            "unicodeCodePoint": "🪰",
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -3975,6 +4068,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Fly",
+            "unicodeCodePoint": "🪰",
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
@@ -3991,6 +4085,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Fly",
+            "unicodeCodePoint": "🪰",
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
@@ -4000,6 +4095,7 @@
     },
     {
       "name": "Gorilla",
+      "unicodeCodePoint": "🦍",
       "tier": 6,
       "baseAttack": 6,
       "baseHealth": 6,
@@ -4058,6 +4154,7 @@
     },
     {
       "name": "Leopard",
+      "unicodeCodePoint": "🐆",
       "tier": 6,
       "baseAttack": 6,
       "baseHealth": 4,
@@ -4119,6 +4216,7 @@
     },
     {
       "name": "Mammoth",
+      "unicodeCodePoint": "🦣",
       "tier": 6,
       "baseAttack": 2,
       "baseHealth": 6,
@@ -4177,6 +4275,7 @@
     },
     {
       "name": "Octopus",
+      "unicodeCodePoint": "🐙",
       "tier": 6,
       "baseAttack": 8,
       "baseHealth": 8,
@@ -4243,6 +4342,7 @@
     },
     {
       "name": "Sauropod",
+      "unicodeCodePoint": "🦕",
       "tier": 6,
       "baseAttack": 4,
       "baseHealth": 12,
@@ -4285,6 +4385,7 @@
     },
     {
       "name": "Snake",
+      "unicodeCodePoint": "🐍",
       "tier": 6,
       "baseAttack": 6,
       "baseHealth": 6,
@@ -4342,6 +4443,7 @@
     },
     {
       "name": "Tiger",
+      "unicodeCodePoint": "🐅",
       "tier": 6,
       "baseAttack": 4,
       "baseHealth": 3,
@@ -4393,6 +4495,7 @@
     },
     {
       "name": "Tyrannosaurus",
+      "unicodeCodePoint": "🦖",
       "tier": 6,
       "baseAttack": 9,
       "baseHealth": 4,

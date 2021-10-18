@@ -19,6 +19,7 @@ function badgerAbility(level) {
 }
 exports.badger = {
     name: "Badger",
+    unicodeCodePoint: "\uD83E\uDDA1",
     tier: 3,
     baseAttack: 5,
     baseHealth: 4,

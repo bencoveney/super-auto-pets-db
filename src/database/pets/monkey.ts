@@ -21,6 +21,7 @@ function monkeyAbility(level: number): Ability {
 
 export const monkey = {
   name: "Monkey",
+  unicodeCodePoint: "\u{1F412}",
   tier: 4,
   baseAttack: 3,
   baseHealth: 3,

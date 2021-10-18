@@ -20,6 +20,7 @@ function whaleAbility(level: number): Ability {
 
 export const whale = {
   name: "Whale",
+  unicodeCodePoint: "\u{1F40B}",
   tier: 3,
   baseAttack: 2,
   baseHealth: 6,

@@ -21,6 +21,7 @@ function mammothAbility(level) {
 }
 exports.mammoth = {
     name: "Mammoth",
+    unicodeCodePoint: "\uD83E\uDDA3",
     tier: 6,
     baseAttack: 2,
     baseHealth: 6,

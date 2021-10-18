@@ -21,6 +21,7 @@ function beetleAbility(level) {
 }
 exports.beetle = {
     name: "Beetle",
+    unicodeCodePoint: "\uD83E\uDEB2",
     tier: 1,
     baseAttack: 2,
     baseHealth: 3,

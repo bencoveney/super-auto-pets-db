@@ -21,6 +21,7 @@ function monkeyAbility(level) {
 }
 exports.monkey = {
     name: "Monkey",
+    unicodeCodePoint: "\uD83D\uDC12",
     tier: 4,
     baseAttack: 3,
     baseHealth: 3,

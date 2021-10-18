@@ -31,6 +31,7 @@ function caterpillarAbility(level) {
 }
 exports.caterpillar = {
     name: "Caterpillar",
+    unicodeCodePoint: "\uD83D\uDC1B",
     tier: 3,
     baseAttack: 1,
     baseHealth: 4,

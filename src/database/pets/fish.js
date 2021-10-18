@@ -21,6 +21,8 @@ function fishAbility(level) {
 }
 exports.fish = {
     name: "Fish",
+    // TODO: Incorrect. Use Mozilla fish.
+    unicodeCodePoint: "\uD83D\uDC1F",
     tier: 1,
     baseAttack: 2,
     baseHealth: 3,

@@ -23,6 +23,7 @@ function batAbility(level: number): Ability {
 
 export const bat = {
   name: "Bat",
+  unicodeCodePoint: "\u{1F987}",
   tier: 2,
   baseAttack: 1,
   baseHealth: 3,

@@ -28,6 +28,7 @@ function catAbility(level) {
 }
 exports.cat = {
     name: "Cat",
+    unicodeCodePoint: "\uD83D\uDC08\u200D\u2B1B",
     tier: 6,
     baseAttack: 4,
     baseHealth: 5,

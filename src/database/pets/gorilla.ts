@@ -21,6 +21,7 @@ function gorillaAbility(level: number): Ability {
 
 export const gorilla = {
   name: "Gorilla",
+  unicodeCodePoint: "\u{1F98D}",
   tier: 6,
   baseAttack: 6,
   baseHealth: 6,

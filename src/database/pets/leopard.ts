@@ -20,6 +20,7 @@ function leopardAbility(level: number): Ability {
 
 export const leopard = {
   name: "Leopard",
+  unicodeCodePoint: "\u{1F406}",
   tier: 6,
   baseAttack: 6,
   baseHealth: 4,

@@ -21,6 +21,7 @@ function puppyAbility(level) {
 }
 exports.puppy = {
     name: "Puppy",
+    unicodeCodePoint: "\uD83D\uDC15",
     tier: 3,
     baseAttack: 1,
     baseHealth: 1,

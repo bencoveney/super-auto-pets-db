@@ -14,6 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.fly = void 0;
 var flySummoned = {
     name: "Fly",
+    unicodeCodePoint: "\uD83E\uDEB0",
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -33,6 +34,7 @@ function flyAbility(level) {
 }
 exports.fly = {
     name: "Fly",
+    unicodeCodePoint: "\uD83E\uDEB0",
     tier: 6,
     baseAttack: 2,
     baseHealth: 2,

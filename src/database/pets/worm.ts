@@ -21,6 +21,7 @@ function wormAbility(level: number): Ability {
 
 export const worm = {
   name: "Worm",
+  unicodeCodePoint: "\u{1FAB1}",
   tier: 4,
   baseAttack: 1,
   baseHealth: 1,

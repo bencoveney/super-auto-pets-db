@@ -22,6 +22,7 @@ function microbeAbility(level) {
 }
 exports.microbe = {
     name: "Microbe",
+    unicodeCodePoint: "\uD83E\uDDA0",
     tier: 5,
     baseAttack: 1,
     baseHealth: 1,

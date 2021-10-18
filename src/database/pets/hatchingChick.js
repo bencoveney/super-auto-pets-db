@@ -58,6 +58,7 @@ function hatchingChickAbility(level) {
 }
 exports.hatchingChick = {
     name: "Hatching Chick",
+    unicodeCodePoint: "\uD83D\uDC23",
     tier: 3,
     baseAttack: 1,
     baseHealth: 1,

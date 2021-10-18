@@ -20,6 +20,7 @@ function peacockAbility(level) {
 }
 exports.peacock = {
     name: "Peacock",
+    unicodeCodePoint: "\uD83E\uDD9A",
     tier: 2,
     baseAttack: 3,
     baseHealth: 2,

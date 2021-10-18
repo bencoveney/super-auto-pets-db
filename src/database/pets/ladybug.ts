@@ -21,6 +21,7 @@ function ladybugAbility(level: number): Ability {
 
 export const ladybug = {
   name: "Ladybug",
+  unicodeCodePoint: "\u{1F41E}",
   tier: 1,
   baseAttack: 1,
   baseHealth: 3,

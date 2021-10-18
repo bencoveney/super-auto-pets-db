@@ -22,6 +22,7 @@ function duckAbility(level) {
 }
 exports.duck = {
     name: "Duck",
+    unicodeCodePoint: "\uD83E\uDD86",
     tier: 1,
     baseAttack: 1,
     baseHealth: 2,

@@ -22,6 +22,7 @@ function dragonAbility(level) {
 }
 exports.dragon = {
     name: "Dragon",
+    unicodeCodePoint: "\uD83D\uDC09",
     tier: 6,
     baseAttack: 6,
     baseHealth: 8,

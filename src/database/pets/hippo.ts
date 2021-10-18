@@ -21,6 +21,7 @@ function hippoAbility(level: number): Ability {
 
 export const hippo = {
   name: "Hippo",
+  unicodeCodePoint: "\u{1F99B}",
   tier: 4,
   baseAttack: 4,
   baseHealth: 7,

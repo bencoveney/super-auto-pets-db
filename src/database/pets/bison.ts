@@ -23,6 +23,7 @@ function bisonAbility(level: number): Ability {
 
 export const bison = {
   name: "Bison",
+  unicodeCodePoint: "\u{1F9AC}",
   tier: 4,
   baseAttack: 6,
   baseHealth: 6,

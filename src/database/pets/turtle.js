@@ -33,6 +33,7 @@ function turtleAbility(level) {
 }
 exports.turtle = {
     name: "Turtle",
+    unicodeCodePoint: "\uD83D\uDC22",
     tier: 3,
     baseAttack: 2,
     baseHealth: 4,
