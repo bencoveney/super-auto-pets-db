@@ -16,7 +16,7 @@ export function Pet(props: { pet: PetType }) {
       </div>
       <img
         className="mx-20"
-        src={`assets/${props.pet.name.toLowerCase()}.svg`}
+        src={`assets/${props.pet.name.toLowerCase().replace(/\s/g, "_")}.svg`}
       />
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (

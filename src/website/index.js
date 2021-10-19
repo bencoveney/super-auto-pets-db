@@ -30,7 +30,7 @@ function writeAssets(outputDir, pets) {
         fs_1.default.mkdirSync(assetsDir, { recursive: true });
     }
     pets.forEach(function (pet) {
-        fs_1.default.copyFileSync(getEmojiPath(pet.image), path_1.default.resolve(assetsDir, pet.name.toLowerCase() + ".svg"));
+        fs_1.default.copyFileSync(getEmojiPath(pet.image), path_1.default.resolve(assetsDir, pet.name.toLowerCase().replace(/\s/g, "_") + ".svg"));
     });
 }
 function writeWebsite(outputDir, pets) {

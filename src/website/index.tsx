@@ -45,7 +45,10 @@ function writeAssets(outputDir: string, pets: Pet[]) {
   pets.forEach((pet) => {
     fs.copyFileSync(
       getEmojiPath(pet.image),
-      path.resolve(assetsDir, `${pet.name.toLowerCase()}.svg`)
+      path.resolve(
+        assetsDir,
+        `${pet.name.toLowerCase().replace(/\s/g, "_")}.svg`
+      )
     );
   });
 }
