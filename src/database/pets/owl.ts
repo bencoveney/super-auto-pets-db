@@ -22,7 +22,10 @@ function owlAbility(level: number): Ability {
 
 export const owl = {
   name: "Owl",
-  unicodeCodePoint: "\u{1F989}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F989}",
+  },
   tier: 3,
   baseAttack: 5,
   baseHealth: 3,

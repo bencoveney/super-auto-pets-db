@@ -22,7 +22,10 @@ function llamaAbility(level) {
 }
 exports.llama = {
     name: "Llama",
-    unicodeCodePoint: "\uD83E\uDD99",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD99",
+    },
     tier: 4,
     baseAttack: 2,
     baseHealth: 5,

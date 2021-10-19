@@ -21,7 +21,10 @@ function buffaloAbility(level: number): Ability {
 
 export const buffalo = {
   name: "Buffalo",
-  unicodeCodePoint: "\u{1F403}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F403}",
+  },
   tier: 4,
   baseAttack: 5,
   baseHealth: 5,

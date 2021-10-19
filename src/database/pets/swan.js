@@ -16,7 +16,10 @@ function swanAbility(level) {
 }
 exports.swan = {
     name: "Swan",
-    unicodeCodePoint: "\uD83E\uDDA2",
+    image: {
+        source: "twemoji",
+        unicodeCodePoint: "\uD83E\uDDA2",
+    },
     tier: 2,
     baseAttack: 3,
     baseHealth: 4,

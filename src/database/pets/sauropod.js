@@ -16,7 +16,10 @@ function sauropodAbility(level) {
 }
 exports.sauropod = {
     name: "Sauropod",
-    unicodeCodePoint: "\uD83E\uDD95",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD95",
+    },
     tier: 6,
     baseAttack: 4,
     baseHealth: 12,

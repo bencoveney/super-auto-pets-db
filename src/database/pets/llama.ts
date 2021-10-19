@@ -24,7 +24,10 @@ function llamaAbility(level: number): Ability {
 
 export const llama = {
   name: "Llama",
-  unicodeCodePoint: "\u{1F999}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F999}",
+  },
   tier: 4,
   baseAttack: 2,
   baseHealth: 5,

@@ -66,7 +66,10 @@ function octopusAbility(level) {
 }
 exports.octopus = {
     name: "Octopus",
-    unicodeCodePoint: "\uD83D\uDC19",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC19",
+    },
     tier: 6,
     baseAttack: 8,
     baseHealth: 8,

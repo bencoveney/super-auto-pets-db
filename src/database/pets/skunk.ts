@@ -20,7 +20,10 @@ function skunkAbility(level: number): Ability {
 
 export const skunk = {
   name: "Skunk",
-  unicodeCodePoint: "\u{1F9A8}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A8}",
+  },
   tier: 4,
   baseAttack: 3,
   baseHealth: 5,

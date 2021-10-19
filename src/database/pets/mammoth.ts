@@ -21,7 +21,10 @@ function mammothAbility(level: number): Ability {
 
 export const mammoth = {
   name: "Mammoth",
-  unicodeCodePoint: "\u{1F9A3}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A3}",
+  },
   tier: 6,
   baseAttack: 2,
   baseHealth: 6,

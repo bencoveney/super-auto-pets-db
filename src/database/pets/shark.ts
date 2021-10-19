@@ -21,7 +21,10 @@ function sharkAbility(level: number): Ability {
 
 export const shark = {
   name: "Shark",
-  unicodeCodePoint: "\u{1F988}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F988}",
+  },
   tier: 5,
   baseAttack: 4,
   baseHealth: 4,

@@ -21,7 +21,10 @@ function snakeAbility(level) {
 }
 exports.snake = {
     name: "Snake",
-    unicodeCodePoint: "\uD83D\uDC0D",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC0D",
+    },
     tier: 6,
     baseAttack: 6,
     baseHealth: 6,

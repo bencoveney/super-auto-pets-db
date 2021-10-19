@@ -21,7 +21,10 @@ function turkeyAbility(level: number): Ability {
 
 export const turkey = {
   name: "Turkey",
-  unicodeCodePoint: "\u{1F983}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F983}",
+  },
   tier: 5,
   baseAttack: 3,
   baseHealth: 4,

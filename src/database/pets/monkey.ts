@@ -21,7 +21,10 @@ function monkeyAbility(level: number): Ability {
 
 export const monkey = {
   name: "Monkey",
-  unicodeCodePoint: "\u{1F412}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F412}",
+  },
   tier: 4,
   baseAttack: 3,
   baseHealth: 3,

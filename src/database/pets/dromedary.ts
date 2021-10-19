@@ -22,7 +22,11 @@ function dromedaryAbility(level: number): Ability {
 
 export const dromedary = {
   name: "Dromedary",
-  unicodeCodePoint: "\u{1F42A}",
+  image: {
+    source: "noto-emoji",
+    // TODO: Incorrect. Where is correct icon from?
+    unicodeCodePoint: "\u{1F42A}",
+  },
   tier: 2,
   baseAttack: 2,
   baseHealth: 4,

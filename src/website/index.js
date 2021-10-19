@@ -30,11 +30,7 @@ function writeAssets(outputDir, pets) {
         fs_1.default.mkdirSync(assetsDir, { recursive: true });
     }
     pets.forEach(function (pet) {
-        console.log(pet.unicodeCodePoint);
-        var unicodeValues = (0, emoji_unicode_1.default)(pet.unicodeCodePoint).split(" ");
-        var emojiFile = path_1.default.resolve(__dirname, "../emoji/noto-emoji/svg/", "emoji_u" + unicodeValues.join("_") + ".svg");
-        var destFile = path_1.default.resolve(assetsDir, pet.name.toLowerCase() + ".svg");
-        fs_1.default.copyFileSync(emojiFile, destFile);
+        fs_1.default.copyFileSync(getEmojiPath(pet.image), path_1.default.resolve(assetsDir, pet.name.toLowerCase() + ".svg"));
     });
 }
 function writeWebsite(outputDir, pets) {
@@ -46,3 +42,27 @@ function writeWebsite(outputDir, pets) {
     writeStream.on("finish", function () { return console.log("wrote db"); });
 }
 exports.writeWebsite = writeWebsite;
+function getEmojiPath(emoji) {
+    switch (emoji.source) {
+        case "fxemoji":
+            return getFxEmojiPath(emoji);
+        case "noto-emoji":
+            return getNotoEmojiPath(emoji);
+        case "twemoji":
+            return getTwEmojiPath(emoji);
+        default:
+            throw new Error("Unknown emoji source");
+    }
+}
+function getFxEmojiPath(emoji) {
+    var unicodeValues = (0, emoji_unicode_1.default)(emoji.unicodeCodePoint).split(" ");
+    return path_1.default.resolve(__dirname, "../emoji/fxemoji/svgs/FirefoxEmoji/", "u" + unicodeValues.join("_") + "-" + emoji.name + ".svg");
+}
+function getNotoEmojiPath(emoji) {
+    var unicodeValues = (0, emoji_unicode_1.default)(emoji.unicodeCodePoint).split(" ");
+    return path_1.default.resolve(__dirname, "../emoji/noto-emoji/svg/", "emoji_u" + unicodeValues.join("_") + ".svg");
+}
+function getTwEmojiPath(emoji) {
+    var unicodeValues = (0, emoji_unicode_1.default)(emoji.unicodeCodePoint).split(" ");
+    return path_1.default.resolve(__dirname, "../emoji/twemoji/assets/svg/", unicodeValues.join("_") + ".svg");
+}

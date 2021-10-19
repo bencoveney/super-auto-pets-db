@@ -20,7 +20,10 @@ function tropicalFishAbility(level) {
 }
 exports.tropicalFish = {
     name: "Tropical Fish",
-    unicodeCodePoint: "\uD83D\uDC20",
+    image: {
+        source: "twemoji",
+        unicodeCodePoint: "\uD83D\uDC20",
+    },
     tier: 3,
     baseAttack: 2,
     baseHealth: 4,

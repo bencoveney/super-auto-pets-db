@@ -2,7 +2,10 @@ import { Ability, Trigger, Pet } from "..";
 
 const flySummoned: Pet = {
   name: "Fly",
-  unicodeCodePoint: "\u{1FAB0}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1FAB0}",
+  },
   tier: "Summoned",
   baseAttack: -1,
   baseHealth: -1,
@@ -30,7 +33,10 @@ function flyAbility(level: number): Ability {
 
 export const fly = {
   name: "Fly",
-  unicodeCodePoint: "\u{1FAB0}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1FAB0}",
+  },
   tier: 6,
   baseAttack: 2,
   baseHealth: 2,

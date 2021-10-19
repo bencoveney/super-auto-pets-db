@@ -22,7 +22,10 @@ function camelAbility(level: number): Ability {
 
 export const camel = {
   name: "Camel",
-  unicodeCodePoint: "\u{1F42B}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F42B}",
+  },
   tier: 3,
   baseAttack: 2,
   baseHealth: 5,

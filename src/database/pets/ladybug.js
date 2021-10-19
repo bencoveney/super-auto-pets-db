@@ -21,7 +21,10 @@ function ladybugAbility(level) {
 }
 exports.ladybug = {
     name: "Ladybug",
-    unicodeCodePoint: "\uD83D\uDC1E",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC1E",
+    },
     tier: 1,
     baseAttack: 1,
     baseHealth: 3,

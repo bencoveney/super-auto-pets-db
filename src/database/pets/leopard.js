@@ -31,7 +31,11 @@ function leopardAbility(level) {
 }
 exports.leopard = {
     name: "Leopard",
-    unicodeCodePoint: "\uD83D\uDC06",
+    image: {
+        source: "fxemoji",
+        name: "leopardside",
+        unicodeCodePoint: "\uD83D\uDC06",
+    },
     tier: 6,
     baseAttack: 6,
     baseHealth: 4,

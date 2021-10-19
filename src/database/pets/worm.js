@@ -21,7 +21,10 @@ function wormAbility(level) {
 }
 exports.worm = {
     name: "Worm",
-    unicodeCodePoint: "\uD83E\uDEB1",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDEB1",
+    },
     tier: 4,
     baseAttack: 1,
     baseHealth: 1,

@@ -21,7 +21,10 @@ function beaverAbility(level) {
 }
 exports.beaver = {
     name: "Beaver",
-    unicodeCodePoint: "\uD83E\uDDAB",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDDAB",
+    },
     tier: 1,
     baseAttack: 2,
     baseHealth: 2,

@@ -13,7 +13,10 @@ function spiderAbility(level) {
             pet: {
                 // TODO: Summon correct pet.
                 name: "Tier 3 animal",
-                unicodeCodePoint: "\uD83D\uDD78\uFE0F",
+                image: {
+                    source: "noto-emoji",
+                    unicodeCodePoint: "\uD83D\uDD78\uFE0F",
+                },
                 tier: "Summoned",
                 baseAttack: level * 2,
                 baseHealth: level * 2,
@@ -23,8 +26,11 @@ function spiderAbility(level) {
 }
 exports.spider = {
     name: "Spider",
-    // TODO: Shouldn't this be \u{1F577}\u{FE0F} ?
-    unicodeCodePoint: "\uD83D\uDD77",
+    image: {
+        source: "noto-emoji",
+        // TODO: Shouldn't this be \u{1F577}\u{FE0F} ?
+        unicodeCodePoint: "\uD83D\uDD77",
+    },
     tier: 2,
     baseAttack: 2,
     baseHealth: 2,

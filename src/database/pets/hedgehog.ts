@@ -19,7 +19,10 @@ function hedgehogAbility(level: number): Ability {
 
 export const hedgehog = {
   name: "Hedgehog",
-  unicodeCodePoint: "\u{1F994}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F994}",
+  },
   tier: 2,
   baseAttack: 3,
   baseHealth: 2,

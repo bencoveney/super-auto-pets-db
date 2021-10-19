@@ -21,7 +21,10 @@ function buffaloAbility(level) {
 }
 exports.buffalo = {
     name: "Buffalo",
-    unicodeCodePoint: "\uD83D\uDC03",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC03",
+    },
     tier: 4,
     baseAttack: 5,
     baseHealth: 5,

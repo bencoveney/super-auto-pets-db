@@ -22,7 +22,10 @@ function dragonAbility(level: number): Ability {
 
 export const dragon = {
   name: "Dragon",
-  unicodeCodePoint: "\u{1F409}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F409}",
+  },
   tier: 6,
   baseAttack: 6,
   baseHealth: 8,

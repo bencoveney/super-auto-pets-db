@@ -19,7 +19,10 @@ function badgerAbility(level: number): Ability {
 
 export const badger = {
   name: "Badger",
-  unicodeCodePoint: "\u{1F9A1}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A1}",
+  },
   tier: 3,
   baseAttack: 5,
   baseHealth: 4,

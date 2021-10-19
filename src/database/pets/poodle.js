@@ -21,7 +21,10 @@ function poodleAbility(level) {
 }
 exports.poodle = {
     name: "Poodle",
-    unicodeCodePoint: "\uD83D\uDC29",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC29",
+    },
     tier: 4,
     baseAttack: 4,
     baseHealth: 2,

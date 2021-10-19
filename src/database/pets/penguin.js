@@ -21,7 +21,10 @@ function penguinAbility(level) {
 }
 exports.penguin = {
     name: "Penguin",
-    unicodeCodePoint: "\uD83D\uDC27",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC27",
+    },
     tier: 4,
     baseAttack: 1,
     baseHealth: 2,

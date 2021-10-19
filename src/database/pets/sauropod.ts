@@ -16,7 +16,10 @@ function sauropodAbility(level: number): Ability {
 
 export const sauropod = {
   name: "Sauropod",
-  unicodeCodePoint: "\u{1F995}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F995}",
+  },
   tier: 6,
   baseAttack: 4,
   baseHealth: 12,

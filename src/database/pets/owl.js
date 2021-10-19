@@ -22,7 +22,10 @@ function owlAbility(level) {
 }
 exports.owl = {
     name: "Owl",
-    unicodeCodePoint: "\uD83E\uDD89",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD89",
+    },
     tier: 3,
     baseAttack: 5,
     baseHealth: 3,

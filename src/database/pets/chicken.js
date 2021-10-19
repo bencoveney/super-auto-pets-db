@@ -23,8 +23,10 @@ function chickenAbility(level) {
 }
 exports.chicken = {
     name: "Chicken",
-    // TODO: Incorrect.
-    unicodeCodePoint: "\uD83D\uDC14",
+    image: {
+        source: "twemoji",
+        unicodeCodePoint: "\uD83D\uDC13",
+    },
     tier: 5,
     baseAttack: 3,
     baseHealth: 4,

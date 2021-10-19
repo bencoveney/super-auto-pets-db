@@ -21,7 +21,10 @@ function snailAbility(level) {
 }
 exports.snail = {
     name: "Snail",
-    unicodeCodePoint: "\uD83D\uDC0C",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC0C",
+    },
     tier: 3,
     baseAttack: 2,
     baseHealth: 2,

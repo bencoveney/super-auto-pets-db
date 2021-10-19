@@ -22,7 +22,10 @@ function flamingoAbility(level) {
 }
 exports.flamingo = {
     name: "Flamingo",
-    unicodeCodePoint: "\uD83E\uDDA9",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDDA9",
+    },
     tier: 2,
     baseAttack: 3,
     baseHealth: 1,

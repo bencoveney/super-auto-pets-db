@@ -21,7 +21,10 @@ function dolphinAbility(level: number): Ability {
 
 export const dolphin = {
   name: "Dolphin",
-  unicodeCodePoint: "\u{1F42C}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F42C}",
+  },
   tier: 4,
   baseAttack: 4,
   baseHealth: 6,

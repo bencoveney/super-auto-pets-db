@@ -21,7 +21,10 @@ function bisonAbility(level) {
 }
 exports.bison = {
     name: "Bison",
-    unicodeCodePoint: "\uD83E\uDDAC",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDDAC",
+    },
     tier: 4,
     baseAttack: 6,
     baseHealth: 6,

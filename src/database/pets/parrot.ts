@@ -23,7 +23,10 @@ function parrotAbility(level: number): Ability {
 
 export const parrot = {
   name: "Parrot",
-  unicodeCodePoint: "\u{1F99C}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F99C}",
+  },
   tier: 5,
   baseAttack: 3,
   baseHealth: 2,

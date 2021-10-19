@@ -16,7 +16,10 @@ function pigAbility(level: number): Ability {
 
 export const pig = {
   name: "Pig",
-  unicodeCodePoint: "\u{1F416}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F416}",
+  },
   tier: 1,
   baseAttack: 2,
   baseHealth: 2,

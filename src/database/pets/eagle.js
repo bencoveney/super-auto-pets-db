@@ -13,7 +13,10 @@ function eagleAbility(level) {
             pet: {
                 // TODO: Summon correct pet.
                 name: "Tier 6 animal",
-                unicodeCodePoint: "\uD83E\uDD85",
+                image: {
+                    source: "noto-emoji",
+                    unicodeCodePoint: "\uD83E\uDD85",
+                },
                 tier: "Summoned",
                 // TODO: Don't specify stats here.
                 baseAttack: -1,
@@ -25,7 +28,10 @@ function eagleAbility(level) {
 }
 exports.eagle = {
     name: "Eagle",
-    unicodeCodePoint: "\uD83E\uDD85",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD85",
+    },
     tier: 5,
     baseAttack: 6,
     baseHealth: 5,

@@ -16,7 +16,10 @@ function swanAbility(level: number): Ability {
 
 export const swan = {
   name: "Swan",
-  unicodeCodePoint: "\u{1F9A2}",
+  image: {
+    source: "twemoji",
+    unicodeCodePoint: "\u{1F9A2}",
+  },
   tier: 2,
   baseAttack: 3,
   baseHealth: 4,

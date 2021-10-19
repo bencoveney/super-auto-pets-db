@@ -17,8 +17,11 @@ function squirrelAbility(level) {
 }
 exports.squirrel = {
     name: "Squirrel",
-    // TODO: Shouldn't this be \u{1F43F}\u{FE0F} ?
-    unicodeCodePoint: "\uD83D\uDC3F",
+    image: {
+        source: "noto-emoji",
+        // TODO: Shouldn't this be \u{1F43F}\u{FE0F} ?
+        unicodeCodePoint: "\uD83D\uDC3F",
+    },
     tier: 4,
     baseAttack: 2,
     baseHealth: 2,

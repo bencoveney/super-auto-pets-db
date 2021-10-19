@@ -20,7 +20,10 @@ function tabbyCatAbility(level) {
 }
 exports.tabbyCat = {
     name: "Tabby Cat",
-    unicodeCodePoint: "\uD83D\uDC08",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC08",
+    },
     tier: 2,
     baseAttack: 4,
     baseHealth: 3,

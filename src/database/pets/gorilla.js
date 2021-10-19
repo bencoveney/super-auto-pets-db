@@ -21,7 +21,10 @@ function gorillaAbility(level) {
 }
 exports.gorilla = {
     name: "Gorilla",
-    unicodeCodePoint: "\uD83E\uDD8D",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD8D",
+    },
     tier: 6,
     baseAttack: 6,
     baseHealth: 6,

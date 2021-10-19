@@ -20,7 +20,10 @@ function mosquitoAbility(level: number): Ability {
 
 export const mosquito = {
   name: "Mosquito",
-  unicodeCodePoint: "\u{1F99F}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F99F}",
+  },
   tier: 1,
   baseAttack: 2,
   baseHealth: 2,

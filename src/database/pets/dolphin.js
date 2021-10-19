@@ -19,7 +19,10 @@ function dolphinAbility(level) {
 }
 exports.dolphin = {
     name: "Dolphin",
-    unicodeCodePoint: "\uD83D\uDC2C",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC2C",
+    },
     tier: 4,
     baseAttack: 4,
     baseHealth: 6,

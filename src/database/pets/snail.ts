@@ -23,7 +23,10 @@ function snailAbility(level: number): Ability {
 
 export const snail = {
   name: "Snail",
-  unicodeCodePoint: "\u{1F40C}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F40C}",
+  },
   tier: 3,
   baseAttack: 2,
   baseHealth: 2,

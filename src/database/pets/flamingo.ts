@@ -22,7 +22,10 @@ function flamingoAbility(level: number): Ability {
 
 export const flamingo = {
   name: "Flamingo",
-  unicodeCodePoint: "\u{1F9A9}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A9}",
+  },
   tier: 2,
   baseAttack: 3,
   baseHealth: 1,

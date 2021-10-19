@@ -17,7 +17,10 @@ function cowAbility(level: number): Ability {
 
 export const cow = {
   name: "Cow",
-  unicodeCodePoint: "\u{1F404}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F404}",
+  },
   tier: 5,
   baseAttack: 4,
   baseHealth: 6,

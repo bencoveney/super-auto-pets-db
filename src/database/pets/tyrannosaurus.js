@@ -21,7 +21,10 @@ function tyrannosaurusAbility(level) {
 }
 exports.tyrannosaurus = {
     name: "Tyrannosaurus",
-    unicodeCodePoint: "\uD83E\uDD96",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD96",
+    },
     tier: 6,
     baseAttack: 9,
     baseHealth: 4,

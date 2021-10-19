@@ -21,7 +21,10 @@ function hippoAbility(level) {
 }
 exports.hippo = {
     name: "Hippo",
-    unicodeCodePoint: "\uD83E\uDD9B",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD9B",
+    },
     tier: 4,
     baseAttack: 4,
     baseHealth: 7,

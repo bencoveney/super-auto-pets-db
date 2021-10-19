@@ -23,8 +23,10 @@ function chickenAbility(level: number): Ability {
 
 export const chicken = {
   name: "Chicken",
-  // TODO: Incorrect.
-  unicodeCodePoint: "\u{1F414}",
+  image: {
+    source: "twemoji",
+    unicodeCodePoint: "\u{1F413}",
+  },
   tier: 5,
   baseAttack: 3,
   baseHealth: 4,

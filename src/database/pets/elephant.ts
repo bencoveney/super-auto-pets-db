@@ -20,7 +20,10 @@ function elephantAbility(level: number): Ability {
 
 export const elephant = {
   name: "Elephant",
-  unicodeCodePoint: "\u{1F418}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F418}",
+  },
   tier: 2,
   baseAttack: 3,
   baseHealth: 5,

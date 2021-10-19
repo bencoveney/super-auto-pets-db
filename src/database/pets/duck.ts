@@ -22,7 +22,10 @@ function duckAbility(level: number): Ability {
 
 export const duck = {
   name: "Duck",
-  unicodeCodePoint: "\u{1F986}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F986}",
+  },
   tier: 1,
   baseAttack: 1,
   baseHealth: 2,

@@ -24,7 +24,10 @@ function dodoAbility(level: number): Ability {
 
 export const dodo = {
   name: "Dodo",
-  unicodeCodePoint: "\u{1F9A4}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A4}",
+  },
   tier: 2,
   baseAttack: 1,
   baseHealth: 3,

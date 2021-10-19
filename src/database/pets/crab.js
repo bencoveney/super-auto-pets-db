@@ -24,7 +24,10 @@ function crabAbility(level) {
 }
 exports.crab = {
     name: "Crab",
-    unicodeCodePoint: "\uD83E\uDD80",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD80",
+    },
     tier: 2,
     baseAttack: 3,
     baseHealth: 3,

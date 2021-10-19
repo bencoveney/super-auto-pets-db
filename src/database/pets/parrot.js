@@ -23,7 +23,10 @@ function parrotAbility(level) {
 }
 exports.parrot = {
     name: "Parrot",
-    unicodeCodePoint: "\uD83E\uDD9C",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD9C",
+    },
     tier: 5,
     baseAttack: 3,
     baseHealth: 2,

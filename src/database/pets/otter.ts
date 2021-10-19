@@ -22,7 +22,10 @@ function otterAbility(level: number): Ability {
 
 export const otter = {
   name: "Otter",
-  unicodeCodePoint: "\u{1F9A6}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A6}",
+  },
   tier: 1,
   baseAttack: 1,
   baseHealth: 2,

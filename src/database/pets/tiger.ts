@@ -20,7 +20,10 @@ function tigerAbility(level: number): Ability {
 
 export const tiger = {
   name: "Tiger",
-  unicodeCodePoint: "\u{1F405}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F405}",
+  },
   tier: 6,
   baseAttack: 4,
   baseHealth: 3,

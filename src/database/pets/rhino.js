@@ -19,7 +19,10 @@ function rhinoAbility(level) {
 }
 exports.rhino = {
     name: "Rhino",
-    unicodeCodePoint: "\uD83E\uDD8F",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD8F",
+    },
     tier: 5,
     baseAttack: 5,
     baseHealth: 6,

@@ -17,7 +17,10 @@ function cowAbility(level) {
 }
 exports.cow = {
     name: "Cow",
-    unicodeCodePoint: "\uD83D\uDC04",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC04",
+    },
     tier: 5,
     baseAttack: 4,
     baseHealth: 6,

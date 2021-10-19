@@ -14,8 +14,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.deer = void 0;
 var busSummoned = {
     name: "Bus",
-    // TODO: Incorrect.
-    unicodeCodePoint: "\uD83D\uDE8D",
+    image: {
+        source: "noto-emoji",
+        // TODO: Incorrect. Not sure where the right bus should come from
+        unicodeCodePoint: "\uD83D\uDE8D",
+    },
     tier: "Summoned",
     baseAttack: -1,
     baseHealth: -1,
@@ -36,7 +39,10 @@ function deerAbility(level) {
 }
 exports.deer = {
     name: "Deer",
-    unicodeCodePoint: "\uD83E\uDD8C",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD8C",
+    },
     tier: 4,
     baseAttack: 1,
     baseHealth: 1,

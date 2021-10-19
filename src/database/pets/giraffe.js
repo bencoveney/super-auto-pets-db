@@ -33,8 +33,10 @@ function giraffeAbility(level) {
 }
 exports.giraffe = {
     name: "Giraffe",
-    // TODO: Incorrect. Use Twitter giraffe.
-    unicodeCodePoint: "\uD83E\uDD92",
+    image: {
+        source: "twemoji",
+        unicodeCodePoint: "\uD83E\uDD92",
+    },
     tier: 3,
     baseAttack: 1,
     baseHealth: 3,

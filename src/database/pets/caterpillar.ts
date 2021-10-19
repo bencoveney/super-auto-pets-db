@@ -32,7 +32,10 @@ function caterpillarAbility(level: number): Ability {
 
 export const caterpillar = {
   name: "Caterpillar",
-  unicodeCodePoint: "\u{1F41B}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F41B}",
+  },
   tier: 3,
   baseAttack: 1,
   baseHealth: 4,

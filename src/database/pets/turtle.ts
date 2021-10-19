@@ -22,7 +22,10 @@ function turtleAbility(level: number): Ability {
 
 export const turtle = {
   name: "Turtle",
-  unicodeCodePoint: "\u{1F422}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F422}",
+  },
   tier: 3,
   baseAttack: 2,
   baseHealth: 4,

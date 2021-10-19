@@ -20,7 +20,10 @@ function peacockAbility(level: number): Ability {
 
 export const peacock = {
   name: "Peacock",
-  unicodeCodePoint: "\u{1F99A}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F99A}",
+  },
   tier: 2,
   baseAttack: 3,
   baseHealth: 2,

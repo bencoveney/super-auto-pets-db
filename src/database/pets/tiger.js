@@ -20,7 +20,10 @@ function tigerAbility(level) {
 }
 exports.tiger = {
     name: "Tiger",
-    unicodeCodePoint: "\uD83D\uDC05",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC05",
+    },
     tier: 6,
     baseAttack: 4,
     baseHealth: 3,

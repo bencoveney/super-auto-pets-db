@@ -20,7 +20,10 @@ function blowfishAbility(level) {
 }
 exports.blowfish = {
     name: "Blowfish",
-    unicodeCodePoint: "\uD83D\uDC21",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC21",
+    },
     tier: 3,
     baseAttack: 3,
     baseHealth: 5,

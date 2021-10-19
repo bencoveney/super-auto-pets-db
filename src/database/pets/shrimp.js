@@ -21,7 +21,10 @@ function shrimpAbility(level) {
 }
 exports.shrimp = {
     name: "Shrimp",
-    unicodeCodePoint: "\uD83E\uDD90",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD90",
+    },
     tier: 2,
     baseAttack: 2,
     baseHealth: 1,

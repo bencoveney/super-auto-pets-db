@@ -22,7 +22,10 @@ function kangarooAbility(level: number): Ability {
 
 export const kangaroo = {
   name: "Kangaroo",
-  unicodeCodePoint: "\u{1F998}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F998}",
+  },
   tier: 3,
   baseAttack: 2,
   baseHealth: 3,

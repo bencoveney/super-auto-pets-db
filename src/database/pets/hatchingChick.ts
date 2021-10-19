@@ -60,7 +60,10 @@ function hatchingChickAbility(level: number): Ability {
 
 export const hatchingChick = {
   name: "Hatching Chick",
-  unicodeCodePoint: "\u{1F423}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F423}",
+  },
   tier: 3,
   baseAttack: 1,
   baseHealth: 1,

@@ -34,7 +34,10 @@ function batAbility(level) {
 }
 exports.bat = {
     name: "Bat",
-    unicodeCodePoint: "\uD83E\uDD87",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD87",
+    },
     tier: 2,
     baseAttack: 1,
     baseHealth: 3,

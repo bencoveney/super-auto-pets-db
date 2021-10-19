@@ -20,7 +20,10 @@ function tropicalFishAbility(level: number): Ability {
 
 export const tropicalFish = {
   name: "Tropical Fish",
-  unicodeCodePoint: "\u{1F420}",
+  image: {
+    source: "twemoji",
+    unicodeCodePoint: "\u{1F420}",
+  },
   tier: 3,
   baseAttack: 2,
   baseHealth: 4,

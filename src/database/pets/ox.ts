@@ -37,7 +37,10 @@ function oxAbility(level: number): Ability {
 
 export const ox = {
   name: "Ox",
-  unicodeCodePoint: "\u{1F402}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F402}",
+  },
   tier: 3,
   baseAttack: 1,
   baseHealth: 4,

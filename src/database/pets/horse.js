@@ -20,7 +20,10 @@ function horseAbility(level) {
 }
 exports.horse = {
     name: "Horse",
-    unicodeCodePoint: "\uD83D\uDC0E",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC0E",
+    },
     tier: 1,
     baseAttack: 1,
     baseHealth: 1,

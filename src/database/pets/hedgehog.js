@@ -19,7 +19,10 @@ function hedgehogAbility(level) {
 }
 exports.hedgehog = {
     name: "Hedgehog",
-    unicodeCodePoint: "\uD83E\uDD94",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD94",
+    },
     tier: 2,
     baseAttack: 3,
     baseHealth: 2,

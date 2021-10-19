@@ -23,7 +23,10 @@ function puppyAbility(level: number): Ability {
 
 export const puppy = {
   name: "Puppy",
-  unicodeCodePoint: "\u{1F415}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F415}",
+  },
   tier: 3,
   baseAttack: 1,
   baseHealth: 1,

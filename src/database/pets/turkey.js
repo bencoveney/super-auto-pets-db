@@ -21,7 +21,10 @@ function turkeyAbility(level) {
 }
 exports.turkey = {
     name: "Turkey",
-    unicodeCodePoint: "\uD83E\uDD83",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD83",
+    },
     tier: 5,
     baseAttack: 3,
     baseHealth: 4,

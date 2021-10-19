@@ -22,7 +22,10 @@ function antAbility(level) {
 }
 exports.ant = {
     name: "Ant",
-    unicodeCodePoint: "\uD83D\uDC1C",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC1C",
+    },
     tier: 1,
     baseAttack: 2,
     baseHealth: 1,

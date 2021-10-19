@@ -19,7 +19,10 @@ function crocodileAbility(level: number): Ability {
 
 export const crocodile = {
   name: "Crocodile",
-  unicodeCodePoint: "\u{1F40A}",
+  image: {
+    source: "twemoji",
+    unicodeCodePoint: "\u{1F40A}",
+  },
   tier: 5,
   baseAttack: 6,
   baseHealth: 3,

@@ -22,7 +22,10 @@ function microbeAbility(level: number): Ability {
 
 export const microbe = {
   name: "Microbe",
-  unicodeCodePoint: "\u{1F9A0}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F9A0}",
+  },
   tier: 5,
   baseAttack: 1,
   baseHealth: 1,

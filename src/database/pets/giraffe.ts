@@ -22,8 +22,10 @@ function giraffeAbility(level: number): Ability {
 
 export const giraffe = {
   name: "Giraffe",
-  // TODO: Incorrect. Use Twitter giraffe.
-  unicodeCodePoint: "\u{1F992}",
+  image: {
+    source: "twemoji",
+    unicodeCodePoint: "\u{1F992}",
+  },
   tier: 3,
   baseAttack: 1,
   baseHealth: 3,

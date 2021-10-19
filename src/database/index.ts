@@ -83,8 +83,7 @@ export type Pack = "StandardPack" | "ExpansionPack1";
 export interface Pet {
   // The name of the pet.
   name: string;
-  // Unicode codepoint
-  unicodeCodePoint: string;
+  image: EmojiImage;
   // The tier the pet appears in.
   tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
   // The standard starting attack points for the pet.
@@ -100,6 +99,27 @@ export interface Pet {
   // The ability the pet has at level 3.
   level3Ability?: Ability;
 }
+
+export type EmojiImage = NotoEmojiImage | FxEmojiImage | TwEmojiImage;
+
+export type NotoEmojiImage = {
+  source: "noto-emoji";
+  // Unicode codepoint
+  unicodeCodePoint: string;
+};
+
+export type FxEmojiImage = {
+  source: "fxemoji";
+  name: string;
+  // Unicode codepoint
+  unicodeCodePoint: string;
+};
+
+export type TwEmojiImage = {
+  source: "twemoji";
+  // Unicode codepoint
+  unicodeCodePoint: string;
+};
 
 export interface Ability {
   // The text description of the ability.

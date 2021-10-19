@@ -16,7 +16,10 @@ function goatAbility(level: number): Ability {
 
 export const goat = {
   name: "Goat",
-  unicodeCodePoint: "\u{1F410}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F410}",
+  },
   tier: 5,
   baseAttack: 4,
   baseHealth: 5,

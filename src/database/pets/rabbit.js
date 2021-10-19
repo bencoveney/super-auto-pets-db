@@ -20,7 +20,10 @@ function rabbitAbility(level) {
 }
 exports.rabbit = {
     name: "Rabbit",
-    unicodeCodePoint: "\uD83D\uDC07",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC07",
+    },
     tier: 3,
     baseAttack: 3,
     baseHealth: 2,

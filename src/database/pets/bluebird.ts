@@ -20,7 +20,10 @@ function bluebirdAbility(level: number): Ability {
 
 export const bluebird = {
   name: "Bluebird",
-  unicodeCodePoint: "\u{1F426}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F426}",
+  },
   tier: 1,
   baseAttack: 2,
   baseHealth: 3,

@@ -35,7 +35,10 @@ function oxAbility(level) {
 }
 exports.ox = {
     name: "Ox",
-    unicodeCodePoint: "\uD83D\uDC02",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83D\uDC02",
+    },
     tier: 3,
     baseAttack: 1,
     baseHealth: 4,

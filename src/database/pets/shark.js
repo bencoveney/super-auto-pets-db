@@ -21,7 +21,10 @@ function sharkAbility(level) {
 }
 exports.shark = {
     name: "Shark",
-    unicodeCodePoint: "\uD83E\uDD88",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\uD83E\uDD88",
+    },
     tier: 5,
     baseAttack: 4,
     baseHealth: 4,

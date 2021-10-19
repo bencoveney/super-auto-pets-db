@@ -2,7 +2,10 @@ import { Ability, Trigger, Pet } from "..";
 
 const chick: Pet = {
   name: "Chick",
-  unicodeCodePoint: "\u{1F424}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F424}",
+  },
   tier: "Summoned",
   baseAttack: -1,
   baseHealth: -1,
@@ -25,7 +28,10 @@ function roosterAbility(level: number): Ability {
 
 export const rooster = {
   name: "Rooster",
-  unicodeCodePoint: "\u{1F413}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F413}",
+  },
   tier: 4,
   baseAttack: 3,
   baseHealth: 3,

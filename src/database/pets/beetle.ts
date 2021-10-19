@@ -21,7 +21,10 @@ function beetleAbility(level: number): Ability {
 
 export const beetle = {
   name: "Beetle",
-  unicodeCodePoint: "\u{1FAB2}",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1FAB2}",
+  },
   tier: 1,
   baseAttack: 2,
   baseHealth: 3,
