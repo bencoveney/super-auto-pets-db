@@ -1,3 +1,9 @@
 [submodule "src\\emoji\\noto-emoji"]
 	path = src\\emoji\\noto-emoji
 	url = https://github.com/googlefonts/noto-emoji.git
+[submodule "src\\emoji\\fxemoji"]
+	path = src\\emoji\\fxemoji
+	url = https://github.com/mozilla/fxemoji.git
+[submodule "src\\emoji\\twemoji"]
+	path = src\\emoji\\twemoji
+	url = https://github.com/twitter/twemoji.git
