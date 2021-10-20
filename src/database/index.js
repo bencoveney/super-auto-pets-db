@@ -67,6 +67,7 @@ var shark_1 = require("./pets/shark");
 var sheep_1 = require("./pets/sheep");
 var shrimp_1 = require("./pets/shrimp");
 var skunk_1 = require("./pets/skunk");
+var sloth_1 = require("./pets/sloth");
 var snail_1 = require("./pets/snail");
 var snake_1 = require("./pets/snake");
 var spider_1 = require("./pets/spider");
@@ -94,6 +95,7 @@ var pets = [
     mosquito_1.mosquito,
     otter_1.otter,
     pig_1.pig,
+    sloth_1.sloth,
     // Tier 2
     bat_1.bat,
     crab_1.crab,

@@ -64,6 +64,7 @@ import { shark } from "./pets/shark";
 import { sheep } from "./pets/sheep";
 import { shrimp } from "./pets/shrimp";
 import { skunk } from "./pets/skunk";
+import { sloth } from "./pets/sloth";
 import { snail } from "./pets/snail";
 import { snake } from "./pets/snake";
 import { spider } from "./pets/spider";
@@ -78,12 +79,13 @@ import { tyrannosaurus } from "./pets/tyrannosaurus";
 import { whale } from "./pets/whale";
 import { worm } from "./pets/worm";
 
-export type Pack = "StandardPack" | "ExpansionPack1";
+export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
 export interface Pet {
   // The name of the pet.
   name: string;
   image: EmojiImage;
+  notes?: string;
   // The tier the pet appears in.
   tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
   // The standard starting attack points for the pet.
@@ -335,6 +337,7 @@ const pets: Pet[] = [
   mosquito,
   otter,
   pig,
+  sloth,
   // Tier 2
   bat,
   crab,

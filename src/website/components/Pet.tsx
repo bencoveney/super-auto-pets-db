@@ -23,6 +23,11 @@ export function Pet(props: { pet: PetType }) {
           <Pack pack={pack} key={index} />
         ))}
       </div>
+      {props.pet.notes ? (
+        <div className="p-3 border-t border-gray-700 text-gray-200 italic">
+          {props.pet.notes}
+        </div>
+      ) : null}
       {props.pet.level1Ability ? (
         <Ability level={1} ability={props.pet.level1Ability} />
       ) : null}
@@ -61,6 +66,7 @@ function Pack(props: { pack: PackType }) {
   var packInfo = {
     StandardPack: { color: "bg-blue-900", name: "Standard" },
     ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
+    EasterEgg: { color: "bg-yellow-800", name: "Rare Easter Egg" },
   }[props.pack];
   return (
     <span

@@ -16,6 +16,7 @@ function Pet(props) {
                 props.pet.baseHealth)),
         react_1.default.createElement("img", { className: "mx-20", src: "assets/" + props.pet.name.toLowerCase().replace(/\s/g, "_") + ".svg" }),
         react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map(function (pack, index) { return (react_1.default.createElement(Pack, { pack: pack, key: index })); })),
+        props.pet.notes ? (react_1.default.createElement("div", { className: "p-3 border-t border-gray-700 text-gray-200 italic" }, props.pet.notes)) : null,
         props.pet.level1Ability ? (react_1.default.createElement(Ability, { level: 1, ability: props.pet.level1Ability })) : null,
         props.pet.level2Ability ? (react_1.default.createElement(Ability, { level: 2, ability: props.pet.level2Ability })) : null,
         props.pet.level3Ability ? (react_1.default.createElement(Ability, { level: 3, ability: props.pet.level3Ability })) : null));
@@ -43,6 +44,7 @@ function Pack(props) {
     var packInfo = {
         StandardPack: { color: "bg-blue-900", name: "Standard" },
         ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
+        EasterEgg: { color: "bg-yellow-800", name: "Rare Easter Egg" },
     }[props.pack];
     return (react_1.default.createElement("span", { className: "inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold " + packInfo.color }, packInfo.name));
 }

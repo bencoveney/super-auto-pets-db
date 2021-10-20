@@ -721,6 +721,20 @@
       }
     },
     {
+      "name": "Sloth",
+      "notes": "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🦥"
+      },
+      "tier": 1,
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "EasterEgg"
+      ]
+    },
+    {
       "name": "Bat",
       "image": {
         "source": "noto-emoji",
