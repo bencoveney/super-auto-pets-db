@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pet = void 0;
 var react_1 = __importDefault(require("react"));
 function Pet(props) {
-    return (react_1.default.createElement("div", { className: "bg-white rounded-xl shadow-md flex flex-col items-stretch justify-start" },
+    return (react_1.default.createElement("div", { className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start" },
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
-            react_1.default.createElement("div", { className: "text-xl font-medium text-black" }, props.pet.name),
+            react_1.default.createElement("div", { className: "text-xl font-medium" }, props.pet.name),
             react_1.default.createElement("div", { className: "" },
                 "\u2694\uFE0F ",
                 props.pet.baseAttack,
@@ -22,7 +22,7 @@ function Pet(props) {
 }
 exports.Pet = Pet;
 function Ability(props) {
-    return (react_1.default.createElement("div", { className: "text-gray-500 p-3 border-t" },
+    return (react_1.default.createElement("div", { className: "p-3 border-t border-gray-700 text-gray-200" },
         LevelLabel(props.level),
         " ",
         props.ability.description));
@@ -41,8 +41,8 @@ function LevelLabel(level) {
 }
 function Pack(props) {
     var packInfo = {
-        StandardPack: { color: "bg-blue-100", name: "Standard" },
-        ExpansionPack1: { color: "bg-purple-200", name: "Expansion 1" },
+        StandardPack: { color: "bg-blue-900", name: "Standard" },
+        ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
     }[props.pack];
     return (react_1.default.createElement("span", { className: "inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold " + packInfo.color }, packInfo.name));
 }

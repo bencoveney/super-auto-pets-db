@@ -9,14 +9,10 @@ export function Page(props: { pets: Pet[] }) {
   );
   return (
     <>
-      <h1 className="p-3 text-2xl font-medium text-black">
-        Super Auto Pets Database
-      </h1>
+      <h1 className="p-3 text-2xl font-medium">Super Auto Pets Database</h1>
       {tiers.map((tier, index) => (
         <div key={index} className="py-3">
-          <h2 className="px-3 text-xl font-medium text-black">
-            Tier {index + 1}
-          </h2>
+          <h2 className="px-3 text-xl font-medium">Tier {index + 1}</h2>
           <List pets={tier} />
         </div>
       ))}

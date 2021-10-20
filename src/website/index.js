@@ -19,7 +19,7 @@ function wrapAsPage(element) {
             react_1.default.createElement("meta", { name: "description", content: "This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets." }),
             react_1.default.createElement("meta", { name: "author", content: "Ben Coveney" }),
             react_1.default.createElement("link", { rel: "stylesheet", href: "tailwind.css" })),
-        react_1.default.createElement("body", { className: "bg-gray-200" }, element)));
+        react_1.default.createElement("body", { className: "bg-gray-800 text-white" }, element)));
 }
 function homepage(pets) {
     return wrapAsPage(react_1.default.createElement(Page_1.Page, { pets: pets }));

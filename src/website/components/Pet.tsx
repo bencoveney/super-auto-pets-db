@@ -7,9 +7,9 @@ import {
 
 export function Pet(props: { pet: PetType }) {
   return (
-    <div className="bg-white rounded-xl shadow-md flex flex-col items-stretch justify-start">
+    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start">
       <div className="p-3 flex flex-row justify-between">
-        <div className="text-xl font-medium text-black">{props.pet.name}</div>
+        <div className="text-xl font-medium">{props.pet.name}</div>
         <div className="">
           ⚔️ {props.pet.baseAttack} / 💖 {props.pet.baseHealth}
         </div>
@@ -38,7 +38,7 @@ export function Pet(props: { pet: PetType }) {
 
 function Ability(props: { level: number; ability: AbilityType }) {
   return (
-    <div className="text-gray-500 p-3 border-t">
+    <div className="p-3 border-t border-gray-700 text-gray-200">
       {LevelLabel(props.level)} {props.ability.description}
     </div>
   );
@@ -59,8 +59,8 @@ function LevelLabel(level: number) {
 
 function Pack(props: { pack: PackType }) {
   var packInfo = {
-    StandardPack: { color: "bg-blue-100", name: "Standard" },
-    ExpansionPack1: { color: "bg-purple-200", name: "Expansion 1" },
+    StandardPack: { color: "bg-blue-900", name: "Standard" },
+    ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
   }[props.pack];
   return (
     <span

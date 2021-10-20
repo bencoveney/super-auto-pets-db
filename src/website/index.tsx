@@ -28,7 +28,7 @@ function wrapAsPage(element: React.ReactElement) {
         <link rel="stylesheet" href="tailwind.css" />
       </head>
 
-      <body className="bg-gray-200">{element}</body>
+      <body className="bg-gray-800 text-white">{element}</body>
     </html>
   );
 }

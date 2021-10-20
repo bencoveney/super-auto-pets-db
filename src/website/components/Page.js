@@ -12,9 +12,9 @@ function Page(props) {
         return props.pets.filter(function (pet) { return pet.tier == tier; });
     });
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("h1", { className: "p-3 text-2xl font-medium text-black" }, "Super Auto Pets Database"),
+        react_1.default.createElement("h1", { className: "p-3 text-2xl font-medium" }, "Super Auto Pets Database"),
         tiers.map(function (tier, index) { return (react_1.default.createElement("div", { key: index, className: "py-3" },
-            react_1.default.createElement("h2", { className: "px-3 text-xl font-medium text-black" },
+            react_1.default.createElement("h2", { className: "px-3 text-xl font-medium" },
                 "Tier ",
                 index + 1),
             react_1.default.createElement(List_1.List, { pets: tier }))); }),
