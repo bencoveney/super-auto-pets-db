@@ -20430,26 +20430,26 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react = __toModule(require_react());
   function Blurb() {
     return /* @__PURE__ */ import_react.default.createElement("div", {
-      className: "grid grid-cols-2 gap-4 m-4 justify-items-stretch"
+      className: "grid grid-cols-1 lg:grid-cols-2 gap-4 m-4 justify-items-stretch"
     }, /* @__PURE__ */ import_react.default.createElement("div", {
-      className: "bg-white rounded-xl shadow-md p-3"
+      className: "bg-gray-900 rounded-xl shadow-md p-3"
     }, /* @__PURE__ */ import_react.default.createElement("h2", {
-      className: "text-xl font-medium text-black"
+      className: "text-xl font-medium"
     }, "About this site"), /* @__PURE__ */ import_react.default.createElement("p", {
-      className: "text-gray-500 mt-2"
+      className: "mt-2"
     }, "This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."), /* @__PURE__ */ import_react.default.createElement("p", {
-      className: "text-gray-500 mt-2"
+      className: "mt-2"
     }, "If you find any issues or would like to make a contribution, please raise an issue in the", " ", /* @__PURE__ */ import_react.default.createElement("a", {
       className: "text-blue-600 visited:text-purple-600 underline",
       href: "https://github.com/bencoveney/super-auto-pets-db"
     }, "Github Repository"))), /* @__PURE__ */ import_react.default.createElement("div", {
-      className: "bg-white rounded-xl shadow-md p-3"
+      className: "bg-gray-900 rounded-xl shadow-md p-3"
     }, /* @__PURE__ */ import_react.default.createElement("h2", {
-      className: "text-xl font-medium text-black"
+      className: "text-xl font-medium"
     }, "API"), /* @__PURE__ */ import_react.default.createElement("p", {
-      className: "text-gray-500 mt-2"
+      className: "mt-2"
     }, "The data used to power this site can be read/consumed from", " ", /* @__PURE__ */ import_react.default.createElement("a", {
-      className: "text-blue-600 visited:text-purple-600 underline",
+      className: "visited:text-purple-600 underline",
       href: "./api.json"
     }, "api.json"), ".")));
   }
@@ -20538,18 +20538,34 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var allPacks = ["StandardPack", "ExpansionPack1"];
   function Homepage(props) {
     const [packsFilter, setPacksFilter] = (0, import_react5.useState)(allPacks);
-    const filteredPets = props.pets.filter((pet) => {
+    const [nameFilter, setNameFilter] = (0, import_react5.useState)("");
+    let filteredPets = props.pets.filter((pet) => {
       var _a;
       return (_a = pet.packs) == null ? void 0 : _a.some((pack) => packsFilter.includes(pack));
     });
-    const tiers = [1, 2, 3, 4, 5, 6].map((tier) => filteredPets.filter((pet) => pet.tier == tier));
+    if (nameFilter) {
+      let sanitisedNameFilter = nameFilter.toLowerCase();
+      filteredPets = filteredPets.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
+    }
+    const tiers = [1, 2, 3, 4, 5, 6].map((tier) => ({
+      tier,
+      pets: filteredPets.filter((pet) => pet.tier == tier)
+    })).filter((tier) => tier.pets.length > 0);
     return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "p-3 flex flex-col md:flex-row justify-between"
+      className: "p-3 flex flex-col lg:flex-row justify-between items-center"
     }, /* @__PURE__ */ import_react5.default.createElement("h1", {
       className: "text-2xl font-medium"
-    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("span", {
+    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react5.default.createElement("div", {
+      className: "flex flex-col md:flex-row items-center"
+    }, /* @__PURE__ */ import_react5.default.createElement("input", {
+      type: "search",
+      className: "bg-gray-900 shadow rounded border-0 p-1",
+      placeholder: "Search by name",
+      value: nameFilter,
+      onChange: (e) => setNameFilter(e.target.value)
+    }), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("span", {
       className: "p-3"
-    }, "Filter Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react5.default.createElement("a", {
+    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react5.default.createElement("a", {
       onClick: () => {
         if (packsFilter.includes(pack)) {
           setPacksFilter(packsFilter.filter((it) => it != pack));
@@ -20561,13 +20577,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, /* @__PURE__ */ import_react5.default.createElement(Pack, {
       pack,
       colored: packsFilter.includes(pack)
-    }))))), tiers.map((tier, index) => /* @__PURE__ */ import_react5.default.createElement("div", {
-      key: index,
+    })))))), tiers.map((tier) => /* @__PURE__ */ import_react5.default.createElement("div", {
+      key: tier.tier,
       className: "py-3"
     }, /* @__PURE__ */ import_react5.default.createElement("h2", {
       className: "px-3 text-xl font-medium"
-    }, "Tier ", index + 1), /* @__PURE__ */ import_react5.default.createElement(List, {
-      pets: tier
+    }, "Tier ", tier.tier), /* @__PURE__ */ import_react5.default.createElement(List, {
+      pets: tier.pets
     }))), /* @__PURE__ */ import_react5.default.createElement(Blurb, null));
   }
 

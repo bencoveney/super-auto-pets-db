@@ -14,6 +14,7 @@ export function Page(props: { children: React.ReactElement }) {
           content="This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."
         />
         <meta name="author" content="Ben Coveney" />
+        <link rel="icon" type="image/svg+xml" href="/assets/turtle.svg" />
         <link rel="stylesheet" href="tailwind.css" />
       </head>
       <body className="bg-gray-800 text-white">
