@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.beetle = void 0;
 function beetleAbility(level) {
     return {
-        description: "Eat shop food: Give shop animals +" + level + " health",
+        description: `Eat shop food: Give shop animals +${level} health`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.beetle = {
     name: "Beetle",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDEB2",
+        unicodeCodePoint: "\u{1FAB2}",
     },
     tier: 1,
     baseAttack: 2,

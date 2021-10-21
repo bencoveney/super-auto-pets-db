@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.hippo = void 0;
 function hippoAbility(level) {
     return {
-        description: "Knock out: Gain +" + level * 2 + "/+" + level * 2 + ".",
+        description: `Knock out: Gain +${level * 2}/+${level * 2}.`,
         trigger: "KnockOut" /* KnockOut */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.hippo = {
     name: "Hippo",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD9B",
+        unicodeCodePoint: "\u{1F99B}",
     },
     tier: 4,
     baseAttack: 4,

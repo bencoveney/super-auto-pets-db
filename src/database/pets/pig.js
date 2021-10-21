@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.pig = void 0;
 function pigAbility(level) {
     return {
-        description: "Sell: Gain an extra " + level + " gold",
+        description: `Sell: Gain an extra ${level} gold`,
         trigger: "Sell" /* Sell */,
         triggeredBy: {
             kind: "Self",
@@ -18,7 +18,7 @@ exports.pig = {
     name: "Pig",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC16",
+        unicodeCodePoint: "\u{1F416}",
     },
     tier: 1,
     baseAttack: 2,

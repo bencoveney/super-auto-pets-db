@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.rabbit = void 0;
 function rabbitAbility(level) {
     return {
-        description: "Friend eats shop food: Give it +" + level + " Health",
+        description: `Friend eats shop food: Give it +${level} Health`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "EachFriend",
@@ -22,7 +22,7 @@ exports.rabbit = {
     name: "Rabbit",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC07",
+        unicodeCodePoint: "\u{1F407}",
     },
     tier: 3,
     baseAttack: 3,

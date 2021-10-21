@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.rhino = void 0;
 function rhinoAbility(level) {
     return {
-        description: "Knock out: Deal " + level * 4 + " damage to the first enemy.",
+        description: `Knock out: Deal ${level * 4} damage to the first enemy.`,
         trigger: "KnockOut" /* KnockOut */,
         triggeredBy: {
             kind: "Self",
@@ -21,7 +21,7 @@ exports.rhino = {
     name: "Rhino",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD8F",
+        unicodeCodePoint: "\u{1F98F}",
     },
     tier: 5,
     baseAttack: 5,

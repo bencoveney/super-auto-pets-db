@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.microbe = void 0;
 function microbeAbility(level) {
     return {
-        description: "Faint: Make all animals Weak.",
+        description: `Faint: Make all animals Weak.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.microbe = {
     name: "Microbe",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA0",
+        unicodeCodePoint: "\u{1F9A0}",
     },
     tier: 5,
     baseAttack: 1,

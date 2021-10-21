@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.tiger = void 0;
 function tigerAbility(level) {
     return {
-        description: "The friend ahead casts their ability twice in battle.",
+        description: `The friend ahead casts their ability twice in battle.`,
         trigger: "CastsAbility" /* CastsAbility */,
         triggeredBy: {
             kind: "FriendAhead",
@@ -22,7 +22,7 @@ exports.tiger = {
     name: "Tiger",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC05",
+        unicodeCodePoint: "\u{1F405}",
     },
     tier: 6,
     baseAttack: 4,

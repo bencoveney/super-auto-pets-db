@@ -18,14 +18,20 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.output = void 0;
-var fs = __importStar(require("fs"));
-var path = __importStar(require("path"));
-function output(outputDir, pets) {
-    var output = path.join(outputDir, "api.json");
-    fs.writeFileSync(output, JSON.stringify({ pets: pets }, null, 2), {
-        encoding: "utf-8",
-    });
+const react_1 = __importDefault(require("react"));
+const react_dom_1 = __importDefault(require("react-dom"));
+const Homepage_1 = require("../components/Homepage");
+// Use the generated API.json
+// We use const enums but they break esbuild.
+// https://github.com/evanw/esbuild/issues/128
+const api = __importStar(require("../../../docs/api.json"));
+const pets = api.pets;
+const reactRoot = document.getElementById("react-root");
+if (!reactRoot) {
+    throw new Error("Could not find react root");
 }
-exports.output = output;
+react_dom_1.default.hydrate(react_1.default.createElement(Homepage_1.Homepage, { pets: pets }), reactRoot);

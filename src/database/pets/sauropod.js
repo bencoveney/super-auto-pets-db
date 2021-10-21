@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sauropod = void 0;
 function sauropodAbility(level) {
     return {
-        description: "Buy food: Gain 1 gold.",
+        description: `Buy food: Gain 1 gold.`,
         trigger: "BuyFood" /* BuyFood */,
         triggeredBy: {
             kind: "Self",
@@ -18,7 +18,7 @@ exports.sauropod = {
     name: "Sauropod",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD95",
+        unicodeCodePoint: "\u{1F995}",
     },
     tier: 6,
     baseAttack: 4,

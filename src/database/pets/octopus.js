@@ -4,7 +4,7 @@ exports.octopus = void 0;
 function octopusAbility(level) {
     if (level <= 1) {
         return {
-            description: "Level-up: Gain +8/+8.",
+            description: `Level-up: Gain +8/+8.`,
             trigger: "LevelUp" /* LevelUp */,
             triggeredBy: {
                 kind: "Self",
@@ -22,7 +22,7 @@ function octopusAbility(level) {
     }
     if (level <= 2) {
         return {
-            description: "Level-up: Gain +8/+8 and a new ability.",
+            description: `Level-up: Gain +8/+8 and a new ability.`,
             trigger: "LevelUp" /* LevelUp */,
             triggeredBy: {
                 kind: "Self",
@@ -50,7 +50,7 @@ function octopusAbility(level) {
         };
     }
     return {
-        description: "Before attack: Deal 5 damage to all enemies",
+        description: `Before attack: Deal 5 damage to all enemies`,
         trigger: "BeforeAttack" /* BeforeAttack */,
         triggeredBy: {
             kind: "Self",
@@ -68,7 +68,7 @@ exports.octopus = {
     name: "Octopus",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC19",
+        unicodeCodePoint: "\u{1F419}",
     },
     tier: 6,
     baseAttack: 8,

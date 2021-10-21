@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.peacock = void 0;
 function peacockAbility(level) {
     return {
-        description: "Hurt: Gain " + level * 2 + " Attack.",
+        description: `Hurt: Gain ${level * 2} Attack.`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.peacock = {
     name: "Peacock",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD9A",
+        unicodeCodePoint: "\u{1F99A}",
     },
     tier: 2,
     baseAttack: 3,

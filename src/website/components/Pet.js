@@ -4,7 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pet = void 0;
-var react_1 = __importDefault(require("react"));
+const react_1 = __importDefault(require("react"));
+const Pack_1 = require("./Pack");
 function Pet(props) {
     return (react_1.default.createElement("div", { className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start" },
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
@@ -14,8 +15,8 @@ function Pet(props) {
                 props.pet.baseAttack,
                 " / \uD83D\uDC96 ",
                 props.pet.baseHealth)),
-        react_1.default.createElement("img", { className: "mx-20", src: "assets/" + props.pet.name.toLowerCase().replace(/\s/g, "_") + ".svg" }),
-        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map(function (pack, index) { return (react_1.default.createElement(Pack, { pack: pack, key: index })); })),
+        react_1.default.createElement("img", { className: "mx-20", src: `assets/${props.pet.name.toLowerCase().replace(/\s/g, "_")}.svg` }),
+        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map((pack, index) => (react_1.default.createElement(Pack_1.Pack, { pack: pack, key: index, colored: true })))),
         props.pet.notes ? (react_1.default.createElement("div", { className: "p-3 border-t border-gray-700 text-gray-200 italic" }, props.pet.notes)) : null,
         props.pet.level1Ability ? (react_1.default.createElement(Ability, { level: 1, ability: props.pet.level1Ability })) : null,
         props.pet.level2Ability ? (react_1.default.createElement(Ability, { level: 2, ability: props.pet.level2Ability })) : null,
@@ -39,12 +40,4 @@ function LevelLabel(level) {
         default:
             return "❗";
     }
-}
-function Pack(props) {
-    var packInfo = {
-        StandardPack: { color: "bg-blue-900", name: "Standard" },
-        ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
-        EasterEgg: { color: "bg-yellow-800", name: "Rare Easter Egg" },
-    }[props.pack];
-    return (react_1.default.createElement("span", { className: "inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold " + packInfo.color }, packInfo.name));
 }

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.penguin = void 0;
 function penguinAbility(level) {
     return {
-        description: "End turn: Give other Lvl. 2 and 3 friends +" + level + "/+" + level,
+        description: `End turn: Give other Lvl. 2 and 3 friends +${level}/+${level}`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.penguin = {
     name: "Penguin",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC27",
+        unicodeCodePoint: "\u{1F427}",
     },
     tier: 4,
     baseAttack: 1,

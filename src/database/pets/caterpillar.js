@@ -4,7 +4,7 @@ exports.caterpillar = void 0;
 function caterpillarAbility(level) {
     if (level <= 2) {
         return {
-            description: "Start of turn: Gain 1 Experience",
+            description: `Start of turn: Gain 1 Experience`,
             trigger: "StartOfTurn" /* StartOfTurn */,
             triggeredBy: {
                 kind: "Self",
@@ -19,7 +19,7 @@ function caterpillarAbility(level) {
         };
     }
     return {
-        description: "Start of battle: Evolve into a Butterfly",
+        description: `Start of battle: Evolve into a Butterfly`,
         trigger: "StartOfTurn" /* StartOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -33,7 +33,7 @@ exports.caterpillar = {
     name: "Caterpillar",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC1B",
+        unicodeCodePoint: "\u{1F41B}",
     },
     tier: 3,
     baseAttack: 1,

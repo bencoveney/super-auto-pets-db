@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.tyrannosaurus = void 0;
 function tyrannosaurusAbility(level) {
     return {
-        description: "End turn: If you have 3 or more gold, give other friends +" + level * 2 + "/+" + level * 2,
+        description: `End turn: If you have 3 or more gold, give other friends +${level * 2}/+${level * 2}`,
         trigger: "EndOfTurnWith3PlusGold" /* EndOfTurnWith3PlusGold */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.tyrannosaurus = {
     name: "Tyrannosaurus",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD96",
+        unicodeCodePoint: "\u{1F996}",
     },
     tier: 6,
     baseAttack: 9,

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dolphin = void 0;
 function dolphinAbility(level) {
     return {
-        description: "Start of battle: Deal " + level * 5 + " damage to the lowest health enemy",
+        description: `Start of battle: Deal ${level * 5} damage to the lowest health enemy`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "None",
@@ -21,7 +21,7 @@ exports.dolphin = {
     name: "Dolphin",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC2C",
+        unicodeCodePoint: "\u{1F42C}",
     },
     tier: 4,
     baseAttack: 4,

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.duck = void 0;
 function duckAbility(level) {
     return {
-        description: "Sell: Give shop animals +" + level + "/+" + level,
+        description: `Sell: Give shop animals +${level}/+${level}`,
         trigger: "Sell" /* Sell */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.duck = {
     name: "Duck",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD86",
+        unicodeCodePoint: "\u{1F986}",
     },
     tier: 1,
     baseAttack: 1,

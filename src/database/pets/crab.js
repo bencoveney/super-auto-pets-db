@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.crab = void 0;
 function crabAbility(level) {
     return {
-        description: "Start of battle: Copy Health from friend ahead.",
+        description: `Start of battle: Copy Health from friend ahead.`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "Self",
@@ -26,7 +26,7 @@ exports.crab = {
     name: "Crab",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD80",
+        unicodeCodePoint: "\u{1F980}",
     },
     tier: 2,
     baseAttack: 3,

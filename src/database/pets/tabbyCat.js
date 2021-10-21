@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.tabbyCat = void 0;
 function tabbyCatAbility(level) {
     return {
-        description: "Eats shop food: Give friends +" + level + " Attack until end of battle",
+        description: `Eats shop food: Give friends +${level} Attack until end of battle`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.tabbyCat = {
     name: "Tabby Cat",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC08",
+        unicodeCodePoint: "\u{1F408}",
     },
     tier: 2,
     baseAttack: 4,

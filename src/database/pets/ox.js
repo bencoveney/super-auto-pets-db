@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ox = void 0;
 function oxAbility(level) {
     return {
-        description: "Friend ahead attacks: Gain Melon Armor and +" + level * 2 + " attack",
+        description: `Friend ahead attacks: Gain Melon Armor and +${level * 2} attack`,
         trigger: "AfterAttack" /* AfterAttack */,
         triggeredBy: {
             kind: "FriendAhead",
@@ -37,7 +37,7 @@ exports.ox = {
     name: "Ox",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC02",
+        unicodeCodePoint: "\u{1F402}",
     },
     tier: 3,
     baseAttack: 1,

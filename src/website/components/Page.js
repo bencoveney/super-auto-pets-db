@@ -4,20 +4,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Page = void 0;
-var react_1 = __importDefault(require("react"));
-var Blurb_1 = require("./Blurb");
-var List_1 = require("./List");
+const react_1 = __importDefault(require("react"));
+const server_1 = __importDefault(require("react-dom/server"));
 function Page(props) {
-    var tiers = [1, 2, 3, 4, 5, 6].map(function (tier) {
-        return props.pets.filter(function (pet) { return pet.tier == tier; });
-    });
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("h1", { className: "p-3 text-2xl font-medium" }, "Super Auto Pets Database"),
-        tiers.map(function (tier, index) { return (react_1.default.createElement("div", { key: index, className: "py-3" },
-            react_1.default.createElement("h2", { className: "px-3 text-xl font-medium" },
-                "Tier ",
-                index + 1),
-            react_1.default.createElement(List_1.List, { pets: tier }))); }),
-        react_1.default.createElement(Blurb_1.Blurb, null)));
+    const content = server_1.default.renderToString(props.children);
+    return (react_1.default.createElement("html", { lang: "en" },
+        react_1.default.createElement("head", null,
+            react_1.default.createElement("meta", { charSet: "utf-8" }),
+            react_1.default.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1.0" }),
+            react_1.default.createElement("title", null, "Super Auto Pets Database"),
+            react_1.default.createElement("meta", { name: "description", content: "This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets." }),
+            react_1.default.createElement("meta", { name: "author", content: "Ben Coveney" }),
+            react_1.default.createElement("link", { rel: "stylesheet", href: "tailwind.css" })),
+        react_1.default.createElement("body", { className: "bg-gray-800 text-white" },
+            react_1.default.createElement("div", { id: "react-root", dangerouslySetInnerHTML: { __html: content } }),
+            react_1.default.createElement("script", { src: "./bundle.js" }))));
 }
 exports.Page = Page;

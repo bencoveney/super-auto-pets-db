@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.kangaroo = void 0;
 function kangarooAbility(level) {
     return {
-        description: "Friend ahead attacks: Gain +" + level * 2 + "/+" + level * 2,
+        description: `Friend ahead attacks: Gain +${level * 2}/+${level * 2}`,
         trigger: "AfterAttack" /* AfterAttack */,
         triggeredBy: {
             kind: "FriendAhead",
@@ -24,7 +24,7 @@ exports.kangaroo = {
     name: "Kangaroo",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD98",
+        unicodeCodePoint: "\u{1F998}",
     },
     tier: 3,
     baseAttack: 2,

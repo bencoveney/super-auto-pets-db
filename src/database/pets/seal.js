@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.seal = void 0;
 function sealAbility(level) {
     return {
-        description: "Eats shop food: Give 2 random friends +" + level + "/+" + level + ".",
+        description: `Eats shop food: Give 2 random friends +${level}/+${level}.`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.seal = {
     name: "Seal",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDAD",
+        unicodeCodePoint: "\u{1F9AD}",
     },
     tier: 5,
     baseAttack: 3,

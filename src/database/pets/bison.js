@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.bison = void 0;
 function bisonAbility(level) {
     return {
-        description: "End turn: Gain +" + level * 2 + "/+" + level * 2 + " if there is at least one Lvl. 3 friend.",
+        description: `End turn: Gain +${level * 2}/+${level * 2} if there is at least one Lvl. 3 friend.`,
         trigger: "EndOfTurnWithLvl3Friend" /* EndOfTurnWithLvl3Friend */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.bison = {
     name: "Bison",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDAC",
+        unicodeCodePoint: "\u{1F9AC}",
     },
     tier: 4,
     baseAttack: 6,

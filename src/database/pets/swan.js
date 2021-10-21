@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.swan = void 0;
 function swanAbility(level) {
     return {
-        description: "Start of turn: Gain " + level + " gold.",
+        description: `Start of turn: Gain ${level} gold.`,
         trigger: "StartOfTurn" /* StartOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -18,7 +18,7 @@ exports.swan = {
     name: "Swan",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83E\uDDA2",
+        unicodeCodePoint: "\u{1F9A2}",
     },
     tier: 2,
     baseAttack: 3,

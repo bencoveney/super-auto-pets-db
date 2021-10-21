@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.cow = void 0;
 function cowAbility(level) {
     return {
-        description: "Buy: Replace food shop with 2 free milk that gives +2/+2.",
+        description: `Buy: Replace food shop with 2 free milk that gives +2/+2.`,
         trigger: "Buy" /* Buy */,
         triggeredBy: {
             kind: "Self",
@@ -19,7 +19,7 @@ exports.cow = {
     name: "Cow",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC04",
+        unicodeCodePoint: "\u{1F404}",
     },
     tier: 5,
     baseAttack: 4,

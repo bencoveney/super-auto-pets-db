@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.shark = void 0;
 function sharkAbility(level) {
     return {
-        description: "Friend faints: Gain +" + level * 2 + "/+" + level + ".",
+        description: `Friend faints: Gain +${level * 2}/+${level}.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "EachFriend",
@@ -23,7 +23,7 @@ exports.shark = {
     name: "Shark",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD88",
+        unicodeCodePoint: "\u{1F988}",
     },
     tier: 5,
     baseAttack: 4,

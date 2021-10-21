@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.cat = void 0;
 function catAbility(level) {
-    var multiplier = "";
+    let multiplier = "";
     switch (level) {
         case 1:
             multiplier = "doubled";
@@ -15,7 +15,7 @@ function catAbility(level) {
             break;
     }
     return {
-        description: "Food with Health and Attack effects are " + multiplier + ".",
+        description: `Food with Health and Attack effects are ${multiplier}.`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
             kind: "Self",
@@ -30,7 +30,7 @@ exports.cat = {
     name: "Cat",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC08\u200D\u2B1B",
+        unicodeCodePoint: "\u{1F408}\u{200D}\u{2B1B}",
     },
     tier: 6,
     baseAttack: 4,

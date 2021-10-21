@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.camel = void 0;
 function camelAbility(level) {
     return {
-        description: "Hurt: Give friend behind +" + level + "/+" + level * 2,
+        description: `Hurt: Give friend behind +${level}/+${level * 2}`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.camel = {
     name: "Camel",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC2B",
+        unicodeCodePoint: "\u{1F42B}",
     },
     tier: 3,
     baseAttack: 2,

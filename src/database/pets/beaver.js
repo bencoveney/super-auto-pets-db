@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.beaver = void 0;
 function beaverAbility(level) {
     return {
-        description: "Sell: Give two random friends +" + level + " health",
+        description: `Sell: Give two random friends +${level} health`,
         trigger: "Sell" /* Sell */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.beaver = {
     name: "Beaver",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDAB",
+        unicodeCodePoint: "\u{1F9AB}",
     },
     tier: 1,
     baseAttack: 2,

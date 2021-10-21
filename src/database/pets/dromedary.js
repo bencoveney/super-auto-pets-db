@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dromedary = void 0;
 function dromedaryAbility(level) {
     return {
-        description: "Start of turn: Give shop animals +" + level + "/+" + level,
+        description: `Start of turn: Give shop animals +${level}/+${level}`,
         trigger: "StartOfTurn" /* StartOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -25,7 +25,7 @@ exports.dromedary = {
     image: {
         source: "noto-emoji",
         // TODO: Incorrect. Where is correct icon from?
-        unicodeCodePoint: "\uD83D\uDC2A",
+        unicodeCodePoint: "\u{1F42A}",
     },
     tier: 2,
     baseAttack: 2,

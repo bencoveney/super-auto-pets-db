@@ -1,22 +1,28 @@
 import React from "react";
-import { Pet } from "../../database";
-import { Blurb } from "./Blurb";
-import { List } from "./List";
+import ReactDOMServer from "react-dom/server";
 
-export function Page(props: { pets: Pet[] }) {
-  const tiers = [1, 2, 3, 4, 5, 6].map((tier) =>
-    props.pets.filter((pet) => pet.tier == tier)
-  );
+export function Page(props: { children: React.ReactElement }) {
+  const content = ReactDOMServer.renderToString(props.children);
   return (
-    <>
-      <h1 className="p-3 text-2xl font-medium">Super Auto Pets Database</h1>
-      {tiers.map((tier, index) => (
-        <div key={index} className="py-3">
-          <h2 className="px-3 text-xl font-medium">Tier {index + 1}</h2>
-          <List pets={tier} />
-        </div>
-      ))}
-      <Blurb />
-    </>
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Super Auto Pets Database</title>
+        <meta
+          name="description"
+          content="This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."
+        />
+        <meta name="author" content="Ben Coveney" />
+        <link rel="stylesheet" href="tailwind.css" />
+      </head>
+      <body className="bg-gray-800 text-white">
+        <div
+          id="react-root"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></div>
+        <script src="./bundle.js" />
+      </body>
+    </html>
   );
 }

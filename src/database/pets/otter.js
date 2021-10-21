@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.otter = void 0;
 function otterAbility(level) {
     return {
-        description: "Buy: Give a random friend +" + level + "/+" + level,
+        description: `Buy: Give a random friend +${level}/+${level}`,
         trigger: "Buy" /* Buy */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.otter = {
     name: "Otter",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA6",
+        unicodeCodePoint: "\u{1F9A6}",
     },
     tier: 1,
     baseAttack: 1,

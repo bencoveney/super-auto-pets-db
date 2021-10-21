@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.puppy = void 0;
 function puppyAbility(level) {
     return {
-        description: "End turn: If you have 2 or more gold, gain +" + level * 2 + "/+" + level * 2,
+        description: `End turn: If you have 2 or more gold, gain +${level * 2}/+${level * 2}`,
         trigger: "EndOfTurnWith2PlusGold" /* EndOfTurnWith2PlusGold */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.puppy = {
     name: "Puppy",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC15",
+        unicodeCodePoint: "\u{1F415}",
     },
     tier: 3,
     baseAttack: 1,

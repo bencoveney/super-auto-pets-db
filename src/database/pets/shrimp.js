@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.shrimp = void 0;
 function shrimpAbility(level) {
     return {
-        description: "Friend sold: Give a random friend +" + level + " Health.",
+        description: `Friend sold: Give a random friend +${level} Health.`,
         trigger: "Sell" /* Sell */,
         triggeredBy: {
             kind: "EachFriend",
@@ -23,7 +23,7 @@ exports.shrimp = {
     name: "Shrimp",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD90",
+        unicodeCodePoint: "\u{1F990}",
     },
     tier: 2,
     baseAttack: 2,

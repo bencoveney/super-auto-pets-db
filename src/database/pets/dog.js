@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dog = void 0;
 function dogAbility(level) {
     return {
-        description: "Friend summoned: Gain +" + level + " Attack or +" + level + " Health.",
+        description: `Friend summoned: Gain +${level} Attack or +${level} Health.`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "Self",
@@ -35,7 +35,7 @@ exports.dog = {
     name: "Dog",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83D\uDC15",
+        unicodeCodePoint: "\u{1F415}",
     },
     tier: 2,
     baseAttack: 2,

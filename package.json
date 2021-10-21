@@ -5,9 +5,11 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typescript": "tsc && node ./src/index.js",
+    "typescript": "tsc",
+    "ssr": "node ./src/website/ssr/index.js",
+    "live": "esbuild ./src/website/live/index.tsx --bundle --outfile=docs\\bundle.js",
     "css": "tailwindcss -o docs/tailwind.css",
-    "start": "npm run typescript && npm run css"
+    "start": "npm run typescript && npm run ssr && npm run live && npm run css"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,9 @@
     "url": "https://github.com/bencoveney/super-auto-pets-db/issues"
   },
   "homepage": "https://github.com/bencoveney/super-auto-pets-db#readme",
-  "dependencies": {},
+  "dependencies": {
+    "esbuild": "^0.13.8"
+  },
   "devDependencies": {
     "@types/node": "^16.10.3",
     "@types/react": "^17.0.27",

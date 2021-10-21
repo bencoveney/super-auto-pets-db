@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.horse = void 0;
 function horseAbility(level) {
     return {
-        description: "Friend summoned: Give it +" + level + " Attack until end of battle",
+        description: `Friend summoned: Give it +${level} Attack until end of battle`,
         trigger: "Summoned" /* Summoned */,
         triggeredBy: {
             kind: "EachFriend",
@@ -22,7 +22,7 @@ exports.horse = {
     name: "Horse",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC0E",
+        unicodeCodePoint: "\u{1F40E}",
     },
     tier: 1,
     baseAttack: 1,

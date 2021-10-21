@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.snail = void 0;
 function snailAbility(level) {
     return {
-        description: "Buy: If you lost last battle, give all friends +" + level * 2 + "/+" + level,
+        description: `Buy: If you lost last battle, give all friends +${level * 2}/+${level}`,
         trigger: "BuyAfterLoss" /* BuyAfterLoss */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.snail = {
     name: "Snail",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC0C",
+        unicodeCodePoint: "\u{1F40C}",
     },
     tier: 3,
     baseAttack: 2,

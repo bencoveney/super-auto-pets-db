@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.snake = void 0;
 function snakeAbility(level) {
     return {
-        description: "Friend ahead attacks: Deal " + level * 5 + " damage to a random enemy.",
+        description: `Friend ahead attacks: Deal ${level * 5} damage to a random enemy.`,
         trigger: "AfterAttack" /* AfterAttack */,
         triggeredBy: {
             kind: "FriendAhead",
@@ -23,7 +23,7 @@ exports.snake = {
     name: "Snake",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC0D",
+        unicodeCodePoint: "\u{1F40D}",
     },
     tier: 6,
     baseAttack: 6,

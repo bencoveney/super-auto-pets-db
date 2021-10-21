@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.chicken = void 0;
 function chickenAbility(level) {
     return {
-        description: "Buy tier 1 animal: Give current and future shop animals +" + level + "/+" + level,
+        description: `Buy tier 1 animal: Give current and future shop animals +${level}/+${level}`,
         trigger: "BuyTier1Animal" /* BuyTier1Animal */,
         triggeredBy: {
             // TODO: Should by be a property of shop animals rather than friends?
@@ -25,7 +25,7 @@ exports.chicken = {
     name: "Chicken",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83D\uDC13",
+        unicodeCodePoint: "\u{1F413}",
     },
     tier: 5,
     baseAttack: 3,

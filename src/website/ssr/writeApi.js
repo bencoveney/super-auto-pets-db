@@ -18,19 +18,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var writeApi = __importStar(require("./website/write_api"));
-var writeWebsite = __importStar(require("./website/index"));
-var database = __importStar(require("./database/index"));
-var path_1 = __importDefault(require("path"));
-var fs_1 = __importDefault(require("fs"));
-var pets = database.getPets();
-var outputDir = path_1.default.join(process.cwd(), "docs");
-if (!fs_1.default.existsSync(outputDir)) {
-    fs_1.default.mkdirSync(outputDir, { recursive: true });
+exports.writeApi = void 0;
+const fs = __importStar(require("fs"));
+const path = __importStar(require("path"));
+function writeApi(outputDir, pets) {
+    const output = path.join(outputDir, "api.json");
+    fs.writeFileSync(output, JSON.stringify({ pets }, null, 2), {
+        encoding: "utf-8",
+    });
+    console.log(`Wrote ${output}`);
 }
-writeApi.output(outputDir, pets);
-writeWebsite.writeWebsite(outputDir, pets);
+exports.writeApi = writeApi;

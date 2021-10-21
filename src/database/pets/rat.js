@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.rat = void 0;
-var dirtyRatSummoned = {
+const dirtyRatSummoned = {
     name: "Dirty Rat",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC00",
+        unicodeCodePoint: "\u{1F400}",
     },
     tier: "Summoned",
     baseAttack: 1,
@@ -14,7 +14,7 @@ var dirtyRatSummoned = {
 };
 function ratAbility(level) {
     return {
-        description: "Faint: summon one " + level + "/" + level + " Dirty Rat for the opponent that betrays him.",
+        description: `Faint: summon one ${level}/${level} Dirty Rat for the opponent that betrays him.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -29,7 +29,7 @@ exports.rat = {
     name: "Rat",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC00",
+        unicodeCodePoint: "\u{1F400}",
     },
     tier: 2,
     baseAttack: 4,

@@ -1,20 +1,9 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.giraffe = void 0;
 function giraffeAbility(level) {
     return {
-        description: "End turn: Give " + level + " friends ahead +1/+1",
+        description: `End turn: Give ${level} friends ahead +1/+1`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -35,13 +24,13 @@ exports.giraffe = {
     name: "Giraffe",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83E\uDD92",
+        unicodeCodePoint: "\u{1F992}",
     },
     tier: 3,
     baseAttack: 1,
     baseHealth: 3,
     packs: ["StandardPack"],
-    level1Ability: __assign(__assign({}, giraffeAbility(1)), { description: "End turn: Give friend ahead +1/+1" }),
+    level1Ability: Object.assign(Object.assign({}, giraffeAbility(1)), { description: `End turn: Give friend ahead +1/+1` }),
     level2Ability: giraffeAbility(2),
     level3Ability: giraffeAbility(3),
 };

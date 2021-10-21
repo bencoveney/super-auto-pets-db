@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.owl = void 0;
 function owlAbility(level) {
     return {
-        description: "Sell: Give a random friend +2/+2",
+        description: `Sell: Give a random friend +2/+2`,
         trigger: "Sell" /* Sell */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.owl = {
     name: "Owl",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD89",
+        unicodeCodePoint: "\u{1F989}",
     },
     tier: 3,
     baseAttack: 5,

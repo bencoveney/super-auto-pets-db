@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.eagle = void 0;
 function eagleAbility(level) {
     return {
-        description: "Faint: Summon one Lvl. " + level + " tier 6 animal.",
+        description: `Faint: Summon one Lvl. ${level} tier 6 animal.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -15,7 +15,7 @@ function eagleAbility(level) {
                 name: "Tier 6 animal",
                 image: {
                     source: "noto-emoji",
-                    unicodeCodePoint: "\uD83E\uDD85",
+                    unicodeCodePoint: "\u{1F985}",
                 },
                 tier: "Summoned",
                 // TODO: Don't specify stats here.
@@ -30,7 +30,7 @@ exports.eagle = {
     name: "Eagle",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD85",
+        unicodeCodePoint: "\u{1F985}",
     },
     tier: 5,
     baseAttack: 6,

@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.flamingo = void 0;
 function flamingoAbility(level) {
     return {
-        description: "Faint: Give the two friends behind +" + level + "/+" + level + ".",
+        description: `Faint: Give the two friends behind +${level}/+${level}.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.flamingo = {
     name: "Flamingo",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA9",
+        unicodeCodePoint: "\u{1F9A9}",
     },
     tier: 2,
     baseAttack: 3,

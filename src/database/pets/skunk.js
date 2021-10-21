@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.skunk = void 0;
 function skunkAbility(level) {
-    var percentage = level == 3 ? 100 : level * 33;
+    const percentage = level == 3 ? 100 : level * 33;
     return {
-        description: "Start of battle: Reduce the highest Health enemy by " + percentage + "%.",
+        description: `Start of battle: Reduce the highest Health enemy by ${percentage}%.`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "None",
@@ -14,7 +14,7 @@ function skunkAbility(level) {
             target: {
                 kind: "HighestHealthEnemy",
             },
-            percentage: percentage,
+            percentage,
         },
     };
 }
@@ -22,7 +22,7 @@ exports.skunk = {
     name: "Skunk",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA8",
+        unicodeCodePoint: "\u{1F9A8}",
     },
     tier: 4,
     baseAttack: 3,

@@ -4,7 +4,7 @@ exports.llama = void 0;
 function llamaAbility(level) {
     return {
         // Fewer???
-        description: "End turn: If you have 4 or less animals, gain +" + level * 2 + "/+" + level * 2 + ".",
+        description: `End turn: If you have 4 or less animals, gain +${level * 2}/+${level * 2}.`,
         trigger: "EndOfTurnWith4OrLessAnimals" /* EndOfTurnWith4OrLessAnimals */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.llama = {
     name: "Llama",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD99",
+        unicodeCodePoint: "\u{1F999}",
     },
     tier: 4,
     baseAttack: 2,

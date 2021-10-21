@@ -11,5 +11,5 @@ export const sloth = {
   tier: 1,
   baseAttack: 1,
   baseHealth: 1,
-  packs: ["EasterEgg"],
+  packs: ["StandardPack", "ExpansionPack1", "EasterEgg"],
 } as Pet;

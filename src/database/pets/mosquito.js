@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.mosquito = void 0;
 function mosquitoAbility(level) {
     return {
-        description: "Start of battle: Deal " + level + " damage to a random enemy",
+        description: `Start of battle: Deal ${level} damage to a random enemy`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "None",
@@ -22,7 +22,7 @@ exports.mosquito = {
     name: "Mosquito",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD9F",
+        unicodeCodePoint: "\u{1F99F}",
     },
     tier: 1,
     baseAttack: 2,

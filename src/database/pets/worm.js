@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.worm = void 0;
 function wormAbility(level) {
     return {
-        description: "Eats shop food: Gain +" + level + "/+" + level,
+        description: `Eats shop food: Gain +${level}/+${level}`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.worm = {
     name: "Worm",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDEB1",
+        unicodeCodePoint: "\u{1FAB1}",
     },
     tier: 4,
     baseAttack: 1,

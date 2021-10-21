@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.elephant = void 0;
 function elephantAbility(level) {
     return {
-        description: "Before Attack: Deal 1 damage to " + level + " friends behind.",
+        description: `Before Attack: Deal 1 damage to ${level} friends behind.`,
         trigger: "BeforeAttack" /* BeforeAttack */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.elephant = {
     name: "Elephant",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC18",
+        unicodeCodePoint: "\u{1F418}",
     },
     tier: 2,
     baseAttack: 3,

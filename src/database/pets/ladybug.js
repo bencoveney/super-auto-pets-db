@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ladybug = void 0;
 function ladybugAbility(level) {
     return {
-        description: "Buy food: Gain +" + level + "/+" + level + " until end of battle",
+        description: `Buy food: Gain +${level}/+${level} until end of battle`,
         trigger: "BuyFood" /* BuyFood */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.ladybug = {
     name: "Ladybug",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC1E",
+        unicodeCodePoint: "\u{1F41E}",
     },
     tier: 1,
     baseAttack: 1,

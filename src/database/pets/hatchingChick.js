@@ -4,7 +4,7 @@ exports.hatchingChick = void 0;
 function hatchingChickAbility(level) {
     if (level <= 1) {
         return {
-            description: "End turn: Give +5/+5 to friend ahead until end of battle.",
+            description: `End turn: Give +5/+5 to friend ahead until end of battle.`,
             trigger: "EndOfTurn" /* EndOfTurn */,
             triggeredBy: {
                 kind: "Self",
@@ -23,7 +23,7 @@ function hatchingChickAbility(level) {
     }
     if (level <= 2) {
         return {
-            description: "End turn: Give +2/+2 to friend ahead.",
+            description: `End turn: Give +2/+2 to friend ahead.`,
             trigger: "EndOfTurn" /* EndOfTurn */,
             triggeredBy: {
                 kind: "Self",
@@ -41,7 +41,7 @@ function hatchingChickAbility(level) {
         };
     }
     return {
-        description: "Start of turn: Give +1 Experience to friend ahead",
+        description: `Start of turn: Give +1 Experience to friend ahead`,
         trigger: "StartOfTurn" /* StartOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -60,7 +60,7 @@ exports.hatchingChick = {
     name: "Hatching Chick",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC23",
+        unicodeCodePoint: "\u{1F423}",
     },
     tier: 3,
     baseAttack: 1,

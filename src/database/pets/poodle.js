@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.poodle = void 0;
 function poodleAbility(level) {
     return {
-        description: "End turn: Give +" + level + "/+" + level + " to different tier animals.",
+        description: `End turn: Give +${level}/+${level} to different tier animals.`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.poodle = {
     name: "Poodle",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC29",
+        unicodeCodePoint: "\u{1F429}",
     },
     tier: 4,
     baseAttack: 4,

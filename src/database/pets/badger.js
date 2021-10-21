@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.badger = void 0;
 function badgerAbility(level) {
     return {
-        description: "Faint: Deal Attack damage to adjacent animals",
+        description: `Faint: Deal Attack damage to adjacent animals`,
         trigger: "EatsShopFood" /* EatsShopFood */,
         triggeredBy: {
             kind: "Self",
@@ -21,7 +21,7 @@ exports.badger = {
     name: "Badger",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA1",
+        unicodeCodePoint: "\u{1F9A1}",
     },
     tier: 3,
     baseAttack: 5,

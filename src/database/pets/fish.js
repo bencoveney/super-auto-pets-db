@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.fish = void 0;
 function fishAbility(level) {
     return {
-        description: "Level-up: Give all friends +" + level + "/+" + level,
+        description: `Level-up: Give all friends +${level}/+${level}`,
         trigger: "LevelUp" /* LevelUp */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.fish = {
     image: {
         source: "fxemoji",
         name: "fish",
-        unicodeCodePoint: "\uD83D\uDC1F",
+        unicodeCodePoint: "\u{1F41F}",
     },
     tier: 1,
     baseAttack: 2,

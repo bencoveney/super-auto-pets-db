@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.hedgehog = void 0;
 function hedgehogAbility(level) {
     return {
-        description: "Faint: Deal " + level * 2 + " damage to all.",
+        description: `Faint: Deal ${level * 2} damage to all.`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -21,7 +21,7 @@ exports.hedgehog = {
     name: "Hedgehog",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD94",
+        unicodeCodePoint: "\u{1F994}",
     },
     tier: 2,
     baseAttack: 3,

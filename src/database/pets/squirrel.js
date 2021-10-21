@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.squirrel = void 0;
 function squirrelAbility(level) {
     return {
-        description: "Buy: Clear and fill shops with food.",
+        description: `Buy: Clear and fill shops with food.`,
         trigger: "LevelUp" /* LevelUp */,
         triggeredBy: {
             kind: "Self",
@@ -20,7 +20,7 @@ exports.squirrel = {
     image: {
         source: "noto-emoji",
         // TODO: Shouldn't this be \u{1F43F}\u{FE0F} ?
-        unicodeCodePoint: "\uD83D\uDC3F",
+        unicodeCodePoint: "\u{1F43F}",
     },
     tier: 4,
     baseAttack: 2,

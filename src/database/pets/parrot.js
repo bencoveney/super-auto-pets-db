@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.parrot = void 0;
 function parrotAbility(level) {
     return {
-        description: "End Turn: Copy the Lvl. " + level + " ability from animal ahead.",
+        description: `End Turn: Copy the Lvl. ${level} ability from animal ahead.`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -25,7 +25,7 @@ exports.parrot = {
     name: "Parrot",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD9C",
+        unicodeCodePoint: "\u{1F99C}",
     },
     tier: 5,
     baseAttack: 3,

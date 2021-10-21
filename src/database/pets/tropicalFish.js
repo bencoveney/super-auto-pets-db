@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.tropicalFish = void 0;
 function tropicalFishAbility(level) {
     return {
-        description: "End turn: Give adjacent friends +" + level + " Health",
+        description: `End turn: Give adjacent friends +${level} Health`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.tropicalFish = {
     name: "Tropical Fish",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83D\uDC20",
+        unicodeCodePoint: "\u{1F420}",
     },
     tier: 3,
     baseAttack: 2,

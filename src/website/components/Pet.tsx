@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  Pet as PetType,
-  Ability as AbilityType,
-  Pack as PackType,
-} from "../../database";
+import { Pet as PetType, Ability as AbilityType } from "../../database";
+import { Pack } from "./Pack";
 
 export function Pet(props: { pet: PetType }) {
   return (
@@ -20,7 +17,7 @@ export function Pet(props: { pet: PetType }) {
       />
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} />
+          <Pack pack={pack} key={index} colored={true} />
         ))}
       </div>
       {props.pet.notes ? (
@@ -60,19 +57,4 @@ function LevelLabel(level: number) {
     default:
       return "❗";
   }
-}
-
-function Pack(props: { pack: PackType }) {
-  var packInfo = {
-    StandardPack: { color: "bg-blue-900", name: "Standard" },
-    ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
-    EasterEgg: { color: "bg-yellow-800", name: "Rare Easter Egg" },
-  }[props.pack];
-  return (
-    <span
-      className={`inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold ${packInfo.color}`}
-    >
-      {packInfo.name}
-    </span>
-  );
 }

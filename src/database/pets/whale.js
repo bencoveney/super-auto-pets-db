@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.whale = void 0;
 function whaleAbility(level) {
     return {
-        description: "Start of battle: Swallow friend ahead and release it as a level " + level + " after fainting.",
+        description: `Start of battle: Swallow friend ahead and release it as a level ${level} after fainting.`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.whale = {
     name: "Whale",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC0B",
+        unicodeCodePoint: "\u{1F40B}",
     },
     tier: 3,
     baseAttack: 2,

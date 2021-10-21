@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.buffalo = void 0;
 function buffaloAbility(level) {
     return {
-        description: "Friend bought: Gain +" + level + "/+" + level,
+        description: `Friend bought: Gain +${level}/+${level}`,
         trigger: "Buy" /* Buy */,
         triggeredBy: {
             kind: "EachFriend",
@@ -23,7 +23,7 @@ exports.buffalo = {
     name: "Buffalo",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC03",
+        unicodeCodePoint: "\u{1F403}",
     },
     tier: 4,
     baseAttack: 5,

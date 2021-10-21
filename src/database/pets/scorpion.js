@@ -6,7 +6,7 @@ exports.scorpion = {
     name: "Scorpion",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD82",
+        unicodeCodePoint: "\u{1F982}",
     },
     tier: 5,
     baseAttack: 1,

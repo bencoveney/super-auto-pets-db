@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.blowfish = void 0;
 function blowfishAbility(level) {
     return {
-        description: "Hurt: Deal " + level * 2 + " damage to a random enemy.",
+        description: `Hurt: Deal ${level * 2} damage to a random enemy.`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.blowfish = {
     name: "Blowfish",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC21",
+        unicodeCodePoint: "\u{1F421}",
     },
     tier: 3,
     baseAttack: 3,

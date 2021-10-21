@@ -134,6 +134,7 @@ export interface Ability {
   effect: Effect;
 }
 
+// TODO: const enum https://github.com/evanw/esbuild/issues/128
 export const enum Trigger {
   Faint = "Faint",
   Sell = "Sell",

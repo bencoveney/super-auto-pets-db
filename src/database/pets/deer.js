@@ -1,23 +1,12 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deer = void 0;
-var busSummoned = {
+const busSummoned = {
     name: "Bus",
     image: {
         source: "noto-emoji",
         // TODO: Incorrect. Not sure where the right bus should come from
-        unicodeCodePoint: "\uD83D\uDE8D",
+        unicodeCodePoint: "\u{1F68D}",
     },
     tier: "Summoned",
     baseAttack: -1,
@@ -26,14 +15,14 @@ var busSummoned = {
 };
 function deerAbility(level) {
     return {
-        description: "Faint: Summon a " + level * 5 + "/" + level * 5 + " Bus with Splash Attack",
+        description: `Faint: Summon a ${level * 5}/${level * 5} Bus with Splash Attack`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
         },
         effect: {
             kind: "SummonPet",
-            pet: __assign(__assign({}, busSummoned), { baseAttack: level * 5, baseHealth: level * 5 }),
+            pet: Object.assign(Object.assign({}, busSummoned), { baseAttack: level * 5, baseHealth: level * 5 }),
         },
     };
 }
@@ -41,7 +30,7 @@ exports.deer = {
     name: "Deer",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD8C",
+        unicodeCodePoint: "\u{1F98C}",
     },
     tier: 4,
     baseAttack: 1,

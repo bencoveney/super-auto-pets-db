@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.bluebird = void 0;
 function bluebirdAbility(level) {
     return {
-        description: "End turn: Give left-most friend +" + level + " attack",
+        description: `End turn: Give left-most friend +${level} attack`,
         trigger: "EndOfTurn" /* EndOfTurn */,
         triggeredBy: {
             kind: "Self",
@@ -22,7 +22,7 @@ exports.bluebird = {
     name: "Bluebird",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC26",
+        unicodeCodePoint: "\u{1F426}",
     },
     tier: 1,
     baseAttack: 2,

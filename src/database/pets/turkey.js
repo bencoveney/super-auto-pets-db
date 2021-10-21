@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.turkey = void 0;
 function turkeyAbility(level) {
     return {
-        description: "Friend summoned: Give it +" + level * 3 + "/+" + level * 3 + ".",
+        description: `Friend summoned: Give it +${level * 3}/+${level * 3}.`,
         trigger: "Summoned" /* Summoned */,
         triggeredBy: {
             kind: "EachFriend",
@@ -23,7 +23,7 @@ exports.turkey = {
     name: "Turkey",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD83",
+        unicodeCodePoint: "\u{1F983}",
     },
     tier: 5,
     baseAttack: 3,

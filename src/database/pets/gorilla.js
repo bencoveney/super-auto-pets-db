@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.gorilla = void 0;
 function gorillaAbility(level) {
     return {
-        description: "Hurt: Gain Coconut Shield.",
+        description: `Hurt: Gain Coconut Shield.`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.gorilla = {
     name: "Gorilla",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDD8D",
+        unicodeCodePoint: "\u{1F98D}",
     },
     tier: 6,
     baseAttack: 6,

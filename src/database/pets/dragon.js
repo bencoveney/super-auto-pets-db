@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dragon = void 0;
 function dragonAbility(level) {
     return {
-        description: "Buy tier 1 animal: Give all friends +" + level + "/+" + level + ".",
+        description: `Buy tier 1 animal: Give all friends +${level}/+${level}.`,
         trigger: "BuyTier1Animal" /* BuyTier1Animal */,
         triggeredBy: {
             // TODO: Should by be a property of shop animals rather than friends?
@@ -24,7 +24,7 @@ exports.dragon = {
     name: "Dragon",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC09",
+        unicodeCodePoint: "\u{1F409}",
     },
     tier: 6,
     baseAttack: 6,

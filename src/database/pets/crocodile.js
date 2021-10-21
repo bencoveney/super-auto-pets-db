@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.crocodile = void 0;
 function crocodileAbility(level) {
     return {
-        description: "Start of battle: Deal " + level * 7 + " damage to the last enemy",
+        description: `Start of battle: Deal ${level * 7} damage to the last enemy`,
         trigger: "StartOfBattle" /* StartOfBattle */,
         triggeredBy: {
             kind: "None",
@@ -21,7 +21,7 @@ exports.crocodile = {
     name: "Crocodile",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83D\uDC0A",
+        unicodeCodePoint: "\u{1F40A}",
     },
     tier: 5,
     baseAttack: 6,

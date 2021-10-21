@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.lobster = void 0;
 function lobsterAbility(level) {
     return {
-        description: "Friend summoned: Give it +" + level * 2 + "/+" + level * 2 + " when not in battle.",
+        description: `Friend summoned: Give it +${level * 2}/+${level * 2} when not in battle.`,
         trigger: "Summoned" /* Summoned */,
         triggeredBy: {
             kind: "EachFriend",
@@ -23,7 +23,7 @@ exports.lobster = {
     name: "Lobster",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\uD83E\uDD9E",
+        unicodeCodePoint: "\u{1F99E}",
     },
     tier: 4,
     baseAttack: 3,

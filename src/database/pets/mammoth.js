@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.mammoth = void 0;
 function mammothAbility(level) {
     return {
-        description: "Faint: Give all friends +" + level * 2 + "/+" + level * 2,
+        description: `Faint: Give all friends +${level * 2}/+${level * 2}`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -23,7 +23,7 @@ exports.mammoth = {
     name: "Mammoth",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83E\uDDA3",
+        unicodeCodePoint: "\u{1F9A3}",
     },
     tier: 6,
     baseAttack: 2,

@@ -731,6 +731,8 @@
       "baseAttack": 1,
       "baseHealth": 1,
       "packs": [
+        "StandardPack",
+        "ExpansionPack1",
         "EasterEgg"
       ]
     },

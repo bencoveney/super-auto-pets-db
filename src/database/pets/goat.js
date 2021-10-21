@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.goat = void 0;
 function goatAbility(level) {
     return {
-        description: "Friend bought: Gain 1 gold.",
+        description: `Friend bought: Gain 1 gold.`,
         trigger: "Buy" /* Buy */,
         triggeredBy: {
             kind: "EachFriend",
@@ -18,7 +18,7 @@ exports.goat = {
     name: "Goat",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC10",
+        unicodeCodePoint: "\u{1F410}",
     },
     tier: 5,
     baseAttack: 4,

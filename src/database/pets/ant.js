@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ant = void 0;
 function antAbility(level) {
     return {
-        description: "Faint: Give a random friend +" + level * 2 + "/+" + level,
+        description: `Faint: Give a random friend +${level * 2}/+${level}`,
         trigger: "Faint" /* Faint */,
         triggeredBy: {
             kind: "Self",
@@ -24,7 +24,7 @@ exports.ant = {
     name: "Ant",
     image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\uD83D\uDC1C",
+        unicodeCodePoint: "\u{1F41C}",
     },
     tier: 1,
     baseAttack: 2,
