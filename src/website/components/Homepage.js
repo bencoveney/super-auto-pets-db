@@ -28,15 +28,13 @@ const allPacks = ["StandardPack", "ExpansionPack1"];
 function Homepage(props) {
     const [packsFilter, setPacksFilter] = (0, react_1.useState)(allPacks);
     const [nameFilter, setNameFilter] = (0, react_1.useState)("");
-    let filteredPets = props.pets.filter((pet) => { var _a; return (_a = pet.packs) === null || _a === void 0 ? void 0 : _a.some((pack) => packsFilter.includes(pack)); });
-    if (nameFilter) {
-        let sanitisedNameFilter = nameFilter.toLowerCase();
-        filteredPets = filteredPets.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
-    }
+    let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
+    let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
     const tiers = [1, 2, 3, 4, 5, 6]
         .map((tier) => ({
         tier: tier,
         pets: filteredPets.filter((pet) => pet.tier == tier),
+        food: filteredFood.filter((food) => food.tier == tier),
     }))
         .filter((tier) => tier.pets.length > 0);
     return (react_1.default.createElement(react_1.default.Fragment, null,
@@ -59,7 +57,15 @@ function Homepage(props) {
             react_1.default.createElement("h2", { className: "px-3 text-xl font-medium" },
                 "Tier ",
                 tier.tier),
-            react_1.default.createElement(List_1.List, { pets: tier.pets })))),
+            react_1.default.createElement(List_1.List, { pets: tier.pets, food: tier.food })))),
         react_1.default.createElement(Blurb_1.Blurb, null)));
 }
 exports.Homepage = Homepage;
+function applyFilter(all, packsFilter, nameFilter) {
+    let filtered = all.filter((it) => { var _a; return (_a = it.packs) === null || _a === void 0 ? void 0 : _a.some((pack) => packsFilter.includes(pack)); });
+    if (nameFilter) {
+        let sanitisedNameFilter = nameFilter.toLowerCase();
+        filtered = filtered.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
+    }
+    return filtered;
+}

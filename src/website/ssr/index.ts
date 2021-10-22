@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { writeIndex } from "./writeIndex";
 import { copyAssets } from "./writeAssets";
-import { getPets } from "../../database";
+import { getFood, getPets, HasImage } from "../../database";
 import { writeApi } from "./writeApi";
 
 function getOutputDir() {
@@ -15,6 +15,7 @@ function getOutputDir() {
 
 const outputDir = getOutputDir();
 const pets = getPets();
-writeApi(outputDir, pets);
-copyAssets(outputDir, pets);
-writeIndex(outputDir, pets);
+const food = getFood();
+writeApi(outputDir, pets, food);
+copyAssets(outputDir, (pets as HasImage[]).concat(food));
+writeIndex(outputDir, pets, food);

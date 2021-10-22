@@ -4,19 +4,19 @@ import path from "path";
 import {
   EmojiImage,
   FxEmojiImage,
+  HasImage,
   NotoEmojiImage,
-  Pet,
   TwEmojiImage,
 } from "../../database";
 
-export function copyEmojiAssets(targetDir: string, pets: Pet[]) {
-  pets.forEach((pet) => {
+export function copyEmojiAssets(targetDir: string, images: HasImage[]) {
+  images.forEach(({ name, image }) => {
     const assetPath = path.resolve(
       targetDir,
-      `${pet.name.toLowerCase().replace(/\s/g, "_")}.svg`
+      `${name.toLowerCase().replace(/\s/g, "_")}.svg`
     );
 
-    fs.copyFileSync(getEmojiPath(pet.image), assetPath);
+    fs.copyFileSync(getEmojiPath(image), assetPath);
 
     console.log(`Wrote ${assetPath}`);
   });

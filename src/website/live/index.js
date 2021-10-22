@@ -29,9 +29,11 @@ const Homepage_1 = require("../components/Homepage");
 // We use const enums but they break esbuild.
 // https://github.com/evanw/esbuild/issues/128
 const api = __importStar(require("../../../docs/api.json"));
+// As another consequence, cast to any to avoid TypeScript errors when changing API structure.
 const pets = api.pets;
+const food = api.food;
 const reactRoot = document.getElementById("react-root");
 if (!reactRoot) {
     throw new Error("Could not find react root");
 }
-react_dom_1.default.hydrate(react_1.default.createElement(Homepage_1.Homepage, { pets: pets }), reactRoot);
+react_dom_1.default.hydrate(react_1.default.createElement(Homepage_1.Homepage, { pets: pets, food: food }), reactRoot);

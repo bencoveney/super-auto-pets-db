@@ -1,27 +1,21 @@
 import React, { useState } from "react";
-import { Pet, Pack as PackType } from "../../database";
+import { Pet, Pack as PackType, Food, Filterable } from "../../database";
 import { Blurb } from "./Blurb";
 import { List } from "./List";
 import { Pack } from "./Pack";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
-export function Homepage(props: { pets: Pet[] }) {
+export function Homepage(props: { pets: Pet[]; food: Food[] }) {
   const [packsFilter, setPacksFilter] = useState<PackType[]>(allPacks);
   const [nameFilter, setNameFilter] = useState<string>("");
-  let filteredPets = props.pets.filter((pet) =>
-    pet.packs?.some((pack) => packsFilter.includes(pack))
-  );
-  if (nameFilter) {
-    let sanitisedNameFilter = nameFilter.toLowerCase();
-    filteredPets = filteredPets.filter(
-      (pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1
-    );
-  }
+  let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
+  let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
   const tiers = [1, 2, 3, 4, 5, 6]
     .map((tier) => ({
       tier: tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
+      food: filteredFood.filter((food) => food.tier == tier),
     }))
     .filter((tier) => tier.pets.length > 0);
   return (
@@ -58,10 +52,27 @@ export function Homepage(props: { pets: Pet[] }) {
       {tiers.map((tier) => (
         <div key={tier.tier} className="py-3">
           <h2 className="px-3 text-xl font-medium">Tier {tier.tier}</h2>
-          <List pets={tier.pets} />
+          <List pets={tier.pets} food={tier.food} />
         </div>
       ))}
       <Blurb />
     </>
   );
+}
+
+function applyFilter<T extends Filterable>(
+  all: T[],
+  packsFilter: PackType[],
+  nameFilter: string
+): T[] {
+  let filtered = all.filter((it) =>
+    it.packs?.some((pack) => packsFilter.includes(pack))
+  );
+  if (nameFilter) {
+    let sanitisedNameFilter = nameFilter.toLowerCase();
+    filtered = filtered.filter(
+      (pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1
+    );
+  }
+  return filtered;
 }

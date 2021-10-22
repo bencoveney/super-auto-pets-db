@@ -1,11 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { Pet } from "../../database";
+import { HasImage } from "../../database";
 import { copyEmojiAssets } from "./writeEmojiAssets";
 
-export function copyAssets(outputDir: string, pets: Pet[]) {
+export function copyAssets(outputDir: string, images: HasImage[]) {
   const assetsDir = getAssetsDir(outputDir);
-  copyEmojiAssets(assetsDir, pets);
+  copyEmojiAssets(assetsDir, images);
 }
 
 function getAssetsDir(outputDir: string) {

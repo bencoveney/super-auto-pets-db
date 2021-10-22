@@ -7,9 +7,9 @@ exports.copyAssets = void 0;
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const writeEmojiAssets_1 = require("./writeEmojiAssets");
-function copyAssets(outputDir, pets) {
+function copyAssets(outputDir, images) {
     const assetsDir = getAssetsDir(outputDir);
-    (0, writeEmojiAssets_1.copyEmojiAssets)(assetsDir, pets);
+    (0, writeEmojiAssets_1.copyEmojiAssets)(assetsDir, images);
 }
 exports.copyAssets = copyAssets;
 function getAssetsDir(outputDir) {

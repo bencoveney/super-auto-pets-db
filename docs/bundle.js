@@ -2440,11 +2440,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React7 = require_react();
+          var React8 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React7.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React8.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2476,7 +2476,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React7) {
+          if (!React8) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3692,7 +3692,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React7.Children.forEach(children, function(child) {
+            React8.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3703,7 +3703,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React7.Children.forEach(props.children, function(child) {
+                React8.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10896,7 +10896,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React7.Component().refs;
+          var emptyRefsObject = new React8.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -20420,11 +20420,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   });
 
   // src/website/live/index.tsx
-  var import_react6 = __toModule(require_react());
+  var import_react7 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/website/components/Homepage.tsx
-  var import_react5 = __toModule(require_react());
+  var import_react6 = __toModule(require_react());
 
   // src/website/components/Blurb.tsx
   var import_react = __toModule(require_react());
@@ -20455,7 +20455,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/List.tsx
-  var import_react4 = __toModule(require_react());
+  var import_react5 = __toModule(require_react());
 
   // src/website/components/Pet.tsx
   var import_react3 = __toModule(require_react());
@@ -20524,48 +20524,76 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
   }
 
+  // src/website/components/Food.tsx
+  var import_react4 = __toModule(require_react());
+  function Food(props) {
+    return /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start"
+    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 flex flex-row justify-between"
+    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "text-xl font-medium"
+    }, props.food.name)), /* @__PURE__ */ import_react4.default.createElement("img", {
+      className: "mx-20",
+      src: `assets/${props.food.name.toLowerCase().replace(/\s/g, "_")}.svg`
+    }), /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3"
+    }, (props.food.packs || []).map((pack, index) => /* @__PURE__ */ import_react4.default.createElement(Pack, {
+      pack,
+      key: index,
+      colored: true
+    }))), props.food.notes ? /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200 italic"
+    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react4.default.createElement(Ability2, {
+      ability: props.food.ability
+    }) : null);
+  }
+  function Ability2(props) {
+    return /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200"
+    }, props.ability.description);
+  }
+
   // src/website/components/List.tsx
   function List(props) {
-    return /* @__PURE__ */ import_react4.default.createElement("div", {
+    return /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "grid grid-cols-list gap-4 m-4 justify-items-stretch"
-    }, props.pets.map((pet, index) => /* @__PURE__ */ import_react4.default.createElement(Pet, {
-      key: index,
+    }, props.pets.map((pet, index) => /* @__PURE__ */ import_react5.default.createElement(Pet, {
+      key: `pet${index}`,
       pet
+    })), props.food.map((food3, index) => /* @__PURE__ */ import_react5.default.createElement(Food, {
+      key: `food${index}`,
+      food: food3
     })));
   }
 
   // src/website/components/Homepage.tsx
   var allPacks = ["StandardPack", "ExpansionPack1"];
   function Homepage(props) {
-    const [packsFilter, setPacksFilter] = (0, import_react5.useState)(allPacks);
-    const [nameFilter, setNameFilter] = (0, import_react5.useState)("");
-    let filteredPets = props.pets.filter((pet) => {
-      var _a;
-      return (_a = pet.packs) == null ? void 0 : _a.some((pack) => packsFilter.includes(pack));
-    });
-    if (nameFilter) {
-      let sanitisedNameFilter = nameFilter.toLowerCase();
-      filteredPets = filteredPets.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
-    }
+    const [packsFilter, setPacksFilter] = (0, import_react6.useState)(allPacks);
+    const [nameFilter, setNameFilter] = (0, import_react6.useState)("");
+    let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
+    let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
     const tiers = [1, 2, 3, 4, 5, 6].map((tier) => ({
       tier,
-      pets: filteredPets.filter((pet) => pet.tier == tier)
+      pets: filteredPets.filter((pet) => pet.tier == tier),
+      food: filteredFood.filter((food3) => food3.tier == tier)
     })).filter((tier) => tier.pets.length > 0);
-    return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement("div", {
+    return /* @__PURE__ */ import_react6.default.createElement(import_react6.default.Fragment, null, /* @__PURE__ */ import_react6.default.createElement("div", {
       className: "p-3 flex flex-col lg:flex-row justify-between items-center"
-    }, /* @__PURE__ */ import_react5.default.createElement("h1", {
+    }, /* @__PURE__ */ import_react6.default.createElement("h1", {
       className: "text-2xl font-medium"
-    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react5.default.createElement("div", {
+    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react6.default.createElement("div", {
       className: "flex flex-col md:flex-row items-center"
-    }, /* @__PURE__ */ import_react5.default.createElement("input", {
+    }, /* @__PURE__ */ import_react6.default.createElement("input", {
       type: "search",
       className: "bg-gray-900 shadow rounded border-0 p-1",
       placeholder: "Search by name",
       value: nameFilter,
       onChange: (e) => setNameFilter(e.target.value)
-    }), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("span", {
+    }), /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("span", {
       className: "p-3"
-    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react5.default.createElement("a", {
+    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react6.default.createElement("a", {
       onClick: () => {
         if (packsFilter.includes(pack)) {
           setPacksFilter(packsFilter.filter((it) => it != pack));
@@ -20574,17 +20602,29 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       key: index
-    }, /* @__PURE__ */ import_react5.default.createElement(Pack, {
+    }, /* @__PURE__ */ import_react6.default.createElement(Pack, {
       pack,
       colored: packsFilter.includes(pack)
-    })))))), tiers.map((tier) => /* @__PURE__ */ import_react5.default.createElement("div", {
+    })))))), tiers.map((tier) => /* @__PURE__ */ import_react6.default.createElement("div", {
       key: tier.tier,
       className: "py-3"
-    }, /* @__PURE__ */ import_react5.default.createElement("h2", {
+    }, /* @__PURE__ */ import_react6.default.createElement("h2", {
       className: "px-3 text-xl font-medium"
-    }, "Tier ", tier.tier), /* @__PURE__ */ import_react5.default.createElement(List, {
-      pets: tier.pets
-    }))), /* @__PURE__ */ import_react5.default.createElement(Blurb, null));
+    }, "Tier ", tier.tier), /* @__PURE__ */ import_react6.default.createElement(List, {
+      pets: tier.pets,
+      food: tier.food
+    }))), /* @__PURE__ */ import_react6.default.createElement(Blurb, null));
+  }
+  function applyFilter(all, packsFilter, nameFilter) {
+    let filtered = all.filter((it) => {
+      var _a;
+      return (_a = it.packs) == null ? void 0 : _a.some((pack) => packsFilter.includes(pack));
+    });
+    if (nameFilter) {
+      let sanitisedNameFilter = nameFilter.toLowerCase();
+      filtered = filtered.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
+    }
+    return filtered;
   }
 
   // docs/api.json
@@ -25468,15 +25508,467 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       }
     }
   ];
+  var food = [
+    {
+      name: "Apple",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F34E}"
+      },
+      tier: 1,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal +1/+1.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "PurchaseTarget"
+          },
+          attackAmount: 1,
+          healthAmount: 1,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Honey",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F36F}"
+      },
+      tier: 1,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Honey Bee.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "HoneyBee"
+          }
+        }
+      }
+    },
+    {
+      name: "Cupcake",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F9C1}"
+      },
+      tier: 2,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal +3/+3 until end of battle.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "PurchaseTarget"
+          },
+          attackAmount: 3,
+          healthAmount: 3,
+          untilEndOfBattle: true
+        }
+      }
+    },
+    {
+      name: "Meat Bone",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F356}"
+      },
+      tier: 2,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Bone Attack.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "BoneAttack"
+          }
+        }
+      }
+    },
+    {
+      name: "Sleeping Pill",
+      image: {
+        source: "fxemoji",
+        unicodeCodePoint: "\u{1F48A}",
+        name: "pill"
+      },
+      tier: 2,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Make a friendly animal faint.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "Faint",
+          target: {
+            kind: "PurchaseTarget"
+          }
+        }
+      }
+    },
+    {
+      name: "Garlic",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F9C4}"
+      },
+      tier: 3,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Garlic Armor.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "GarlicArmor"
+          }
+        }
+      }
+    },
+    {
+      name: "Salad Bowl",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F957}"
+      },
+      tier: 3,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give 2 random animals +1/+1.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "RandomFriend",
+            n: 2
+          },
+          attackAmount: 1,
+          healthAmount: 1,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Canned Food",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F96B}"
+      },
+      tier: 4,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give all current and future shop animals +2/+2.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "EachShopAnimal",
+            includingFuture: true
+          },
+          attackAmount: 2,
+          healthAmount: 2,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Pear",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F350}"
+      },
+      tier: 4,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal +2/+2.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "PurchaseTarget"
+          },
+          attackAmount: 2,
+          healthAmount: 2,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Chili",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F336}"
+      },
+      tier: 5,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Splash Attack.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "SplashAttack"
+          }
+        }
+      }
+    },
+    {
+      name: "Chocolate",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F36B}"
+      },
+      tier: 5,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal +1 Experience.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "GainExperience",
+          target: {
+            kind: "PurchaseTarget"
+          },
+          amount: 1
+        }
+      }
+    },
+    {
+      name: "Sushi",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F363}"
+      },
+      tier: 5,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give 3 random animals +1/+1.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "RandomFriend",
+            n: 3
+          },
+          attackAmount: 1,
+          healthAmount: 1,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Melon",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F348}"
+      },
+      tier: 6,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Melon Armor.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "MelonArmor"
+          }
+        }
+      }
+    },
+    {
+      name: "Mushroom",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F344}"
+      },
+      tier: 6,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Extra Life.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "ExtraLife"
+          }
+        }
+      }
+    },
+    {
+      name: "Pizza",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F355}"
+      },
+      tier: 6,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give 2 random animals +2/+2.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "RandomFriend",
+            n: 2
+          },
+          attackAmount: 2,
+          healthAmount: 2,
+          untilEndOfBattle: false
+        }
+      }
+    },
+    {
+      name: "Steak",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F969}"
+      },
+      tier: 6,
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal Steak Attack.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ApplyStatus",
+          to: {
+            kind: "PurchaseTarget"
+          },
+          status: {
+            name: "SteakAttack"
+          }
+        }
+      }
+    }
+  ];
 
   // src/website/live/index.tsx
   var pets2 = pets;
+  var food2 = food;
   var reactRoot = document.getElementById("react-root");
   if (!reactRoot) {
     throw new Error("Could not find react root");
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react6.default.createElement(Homepage, {
-    pets: pets2
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react7.default.createElement(Homepage, {
+    pets: pets2,
+    food: food2
   }), reactRoot);
 })();
 /*

@@ -1,3 +1,19 @@
+import { apple } from "./food/apple";
+import { cannedFood } from "./food/cannedFood";
+import { chili } from "./food/chili";
+import { chocolate } from "./food/chocolate";
+import { cupcake } from "./food/cupcake";
+import { garlic } from "./food/garlic";
+import { honey } from "./food/honey";
+import { meatBone } from "./food/meatBone";
+import { melon } from "./food/melon";
+import { mushroom } from "./food/mushroom";
+import { pear } from "./food/pear";
+import { pizza } from "./food/pizza";
+import { saladBowl } from "./food/saladBowl";
+import { sleepingPill } from "./food/sleepingPill";
+import { steak } from "./food/steak";
+import { sushi } from "./food/sushi";
 import { ant } from "./pets/ant";
 import { badger } from "./pets/badger";
 import { bat } from "./pets/bat";
@@ -81,12 +97,11 @@ import { worm } from "./pets/worm";
 
 export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
-export interface Pet {
+export interface Pet extends HasImage, Filterable {
   // The name of the pet.
   name: string;
-  image: EmojiImage;
   notes?: string;
-  // The tier the pet appears in.
+  // The tier the food appears in.
   tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
   // The standard starting attack points for the pet.
   baseAttack: number;
@@ -100,6 +115,28 @@ export interface Pet {
   level2Ability?: Ability;
   // The ability the pet has at level 3.
   level3Ability?: Ability;
+}
+
+export interface Food extends HasImage, Filterable {
+  // The name of the food.
+  name: string;
+  notes?: string;
+  // The tier the food appears in.
+  tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
+  // Which packs the food appears in.
+  packs?: Pack[];
+  // The ability the food item has.
+  ability: Ability;
+}
+
+export interface HasImage {
+  name: string;
+  image: EmojiImage;
+}
+
+export interface Filterable {
+  name: string;
+  packs?: Pack[];
 }
 
 export type EmojiImage = NotoEmojiImage | FxEmojiImage | TwEmojiImage;
@@ -193,6 +230,7 @@ export type SimpleTarget = {
     | "LowestHealthEnemy"
     | "HighestHealthEnemy"
     | "DifferentTierAnimals"
+    | "PurchaseTarget"
     | "None";
 };
 
@@ -222,7 +260,8 @@ export type Effect =
   | ReduceHealthEffect
   | RefillShopsEffect
   | FoodMultiplierEffect
-  | RepeatAbilityEffect;
+  | RepeatAbilityEffect
+  | FaintEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -294,7 +333,17 @@ export interface SwallowEffect {
 
 // TODO: Status Effects.
 export interface StatusEffect {
-  name: "Weak" | "MelonArmor" | "CoconutShield";
+  name:
+    | "Weak"
+    | "MelonArmor"
+    | "CoconutShield"
+    | "HoneyBee"
+    | "BoneAttack"
+    | "GarlicArmor"
+    | "SplashAttack"
+    | "MelonArmor"
+    | "ExtraLife"
+    | "SteakAttack";
 }
 
 export interface EvolveEffect {
@@ -321,6 +370,11 @@ export interface FoodMultiplierEffect {
 
 export interface RepeatAbilityEffect {
   kind: "RepeatAbility";
+  target: Target;
+}
+
+export interface FaintEffect {
+  kind: "Faint";
   target: Target;
 }
 
@@ -417,31 +471,31 @@ export function getPets(): Pet[] {
   return pets;
 }
 
-// const food: Food[] = [
-//   // Tier 1
-//   // Apple: Give an animal +1/+1.
-//   // Honey: Give an animal Honey Bee.
-//   // Tier 2
-//   // Cupcake: Give an animal +3/+3 until end of battle.
-//   // Meat Bone: Give an animal Bone Attack.
-//   // Sleeping Pill: Make a friendly animal faint.
-//   // Tier 3
-//   // Garlic: Give an animal Garlic Armor.
-//   // Salad Bowl: Give 2 random animals +1/+1.
-//   // Tier 4
-//   // Canned Food: Give all current and future shop animals +2/+2.
-//   // Pear: Give an animal +2/+2.
-//   // Tier 5
-//   // Chili: Give an animal Splash Attack.
-//   // Chocolate: Give an animal +1 Experience.
-//   // Sushi: Give 3 random animals +1/+1.
-//   // Tier 6
-//   // Melon: Give an animal Melon Armor.
-//   // Mushroom: Give an animal Extra Life.
-//   // Pizza: Give 2 random animals +2/+2.
-//   // Steak: Give an animal Steak Attack.
-// ];
+const food: Food[] = [
+  // Tier 1
+  apple,
+  honey,
+  // Tier 2
+  cupcake,
+  meatBone,
+  sleepingPill,
+  // Tier 3
+  garlic,
+  saladBowl,
+  // Tier 4
+  cannedFood,
+  pear,
+  // Tier 5
+  chili,
+  chocolate,
+  sushi,
+  // Tier 6
+  melon,
+  mushroom,
+  pizza,
+  steak,
+];
 
-// export function getFood(): Food[] {
-//   return food;
-// }
+export function getFood(): Food[] {
+  return food;
+}

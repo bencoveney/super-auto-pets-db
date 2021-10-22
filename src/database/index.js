@@ -1,6 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPets = void 0;
+exports.getFood = exports.getPets = void 0;
+const apple_1 = require("./food/apple");
+const cannedFood_1 = require("./food/cannedFood");
+const chili_1 = require("./food/chili");
+const chocolate_1 = require("./food/chocolate");
+const cupcake_1 = require("./food/cupcake");
+const garlic_1 = require("./food/garlic");
+const honey_1 = require("./food/honey");
+const meatBone_1 = require("./food/meatBone");
+const melon_1 = require("./food/melon");
+const mushroom_1 = require("./food/mushroom");
+const pear_1 = require("./food/pear");
+const pizza_1 = require("./food/pizza");
+const saladBowl_1 = require("./food/saladBowl");
+const sleepingPill_1 = require("./food/sleepingPill");
+const steak_1 = require("./food/steak");
+const sushi_1 = require("./food/sushi");
 const ant_1 = require("./pets/ant");
 const badger_1 = require("./pets/badger");
 const bat_1 = require("./pets/bat");
@@ -173,30 +189,31 @@ function getPets() {
     return pets;
 }
 exports.getPets = getPets;
-// const food: Food[] = [
-//   // Tier 1
-//   // Apple: Give an animal +1/+1.
-//   // Honey: Give an animal Honey Bee.
-//   // Tier 2
-//   // Cupcake: Give an animal +3/+3 until end of battle.
-//   // Meat Bone: Give an animal Bone Attack.
-//   // Sleeping Pill: Make a friendly animal faint.
-//   // Tier 3
-//   // Garlic: Give an animal Garlic Armor.
-//   // Salad Bowl: Give 2 random animals +1/+1.
-//   // Tier 4
-//   // Canned Food: Give all current and future shop animals +2/+2.
-//   // Pear: Give an animal +2/+2.
-//   // Tier 5
-//   // Chili: Give an animal Splash Attack.
-//   // Chocolate: Give an animal +1 Experience.
-//   // Sushi: Give 3 random animals +1/+1.
-//   // Tier 6
-//   // Melon: Give an animal Melon Armor.
-//   // Mushroom: Give an animal Extra Life.
-//   // Pizza: Give 2 random animals +2/+2.
-//   // Steak: Give an animal Steak Attack.
-// ];
-// export function getFood(): Food[] {
-//   return food;
-// }
+const food = [
+    // Tier 1
+    apple_1.apple,
+    honey_1.honey,
+    // Tier 2
+    cupcake_1.cupcake,
+    meatBone_1.meatBone,
+    sleepingPill_1.sleepingPill,
+    // Tier 3
+    garlic_1.garlic,
+    saladBowl_1.saladBowl,
+    // Tier 4
+    cannedFood_1.cannedFood,
+    pear_1.pear,
+    // Tier 5
+    chili_1.chili,
+    chocolate_1.chocolate,
+    sushi_1.sushi,
+    // Tier 6
+    melon_1.melon,
+    mushroom_1.mushroom,
+    pizza_1.pizza,
+    steak_1.steak,
+];
+function getFood() {
+    return food;
+}
+exports.getFood = getFood;

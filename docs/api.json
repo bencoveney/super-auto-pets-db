@@ -4878,5 +4878,455 @@
         }
       }
     }
+  ],
+  "food": [
+    {
+      "name": "Apple",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍎"
+      },
+      "tier": 1,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal +1/+1.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "PurchaseTarget"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Honey",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍯"
+      },
+      "tier": 1,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Honey Bee.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "HoneyBee"
+          }
+        }
+      }
+    },
+    {
+      "name": "Cupcake",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🧁"
+      },
+      "tier": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal +3/+3 until end of battle.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "PurchaseTarget"
+          },
+          "attackAmount": 3,
+          "healthAmount": 3,
+          "untilEndOfBattle": true
+        }
+      }
+    },
+    {
+      "name": "Meat Bone",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍖"
+      },
+      "tier": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Bone Attack.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "BoneAttack"
+          }
+        }
+      }
+    },
+    {
+      "name": "Sleeping Pill",
+      "image": {
+        "source": "fxemoji",
+        "unicodeCodePoint": "💊",
+        "name": "pill"
+      },
+      "tier": 2,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Make a friendly animal faint.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "Faint",
+          "target": {
+            "kind": "PurchaseTarget"
+          }
+        }
+      }
+    },
+    {
+      "name": "Garlic",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🧄"
+      },
+      "tier": 3,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Garlic Armor.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "GarlicArmor"
+          }
+        }
+      }
+    },
+    {
+      "name": "Salad Bowl",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥗"
+      },
+      "tier": 3,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give 2 random animals +1/+1.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 2
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Canned Food",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥫"
+      },
+      "tier": 4,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give all current and future shop animals +2/+2.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachShopAnimal",
+            "includingFuture": true
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Pear",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍐"
+      },
+      "tier": 4,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal +2/+2.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "PurchaseTarget"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Chili",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🌶"
+      },
+      "tier": 5,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Splash Attack.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "SplashAttack"
+          }
+        }
+      }
+    },
+    {
+      "name": "Chocolate",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍫"
+      },
+      "tier": 5,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal +1 Experience.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "GainExperience",
+          "target": {
+            "kind": "PurchaseTarget"
+          },
+          "amount": 1
+        }
+      }
+    },
+    {
+      "name": "Sushi",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍣"
+      },
+      "tier": 5,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give 3 random animals +1/+1.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 3
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Melon",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍈"
+      },
+      "tier": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Melon Armor.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "MelonArmor"
+          }
+        }
+      }
+    },
+    {
+      "name": "Mushroom",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍄"
+      },
+      "tier": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Extra Life.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "ExtraLife"
+          }
+        }
+      }
+    },
+    {
+      "name": "Pizza",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍕"
+      },
+      "tier": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give 2 random animals +2/+2.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "RandomFriend",
+            "n": 2
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
+        }
+      }
+    },
+    {
+      "name": "Steak",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥩"
+      },
+      "tier": 6,
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal Steak Attack.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ApplyStatus",
+          "to": {
+            "kind": "PurchaseTarget"
+          },
+          "status": {
+            "name": "SteakAttack"
+          }
+        }
+      }
+    }
   ]
 }

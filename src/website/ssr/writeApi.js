@@ -22,9 +22,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.writeApi = void 0;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
-function writeApi(outputDir, pets) {
+function writeApi(outputDir, pets, food) {
     const output = path.join(outputDir, "api.json");
-    fs.writeFileSync(output, JSON.stringify({ pets }, null, 2), {
+    fs.writeFileSync(output, JSON.stringify({ pets, food }, null, 2), {
         encoding: "utf-8",
     });
     console.log(`Wrote ${output}`);

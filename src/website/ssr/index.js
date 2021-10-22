@@ -18,6 +18,7 @@ function getOutputDir() {
 }
 const outputDir = getOutputDir();
 const pets = (0, database_1.getPets)();
-(0, writeApi_1.writeApi)(outputDir, pets);
-(0, writeAssets_1.copyAssets)(outputDir, pets);
-(0, writeIndex_1.writeIndex)(outputDir, pets);
+const food = (0, database_1.getFood)();
+(0, writeApi_1.writeApi)(outputDir, pets, food);
+(0, writeAssets_1.copyAssets)(outputDir, pets.concat(food));
+(0, writeIndex_1.writeIndex)(outputDir, pets, food);

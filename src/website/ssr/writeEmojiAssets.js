@@ -7,10 +7,10 @@ exports.copyEmojiAssets = void 0;
 const fs_1 = __importDefault(require("fs"));
 const emoji_unicode_1 = __importDefault(require("emoji-unicode"));
 const path_1 = __importDefault(require("path"));
-function copyEmojiAssets(targetDir, pets) {
-    pets.forEach((pet) => {
-        const assetPath = path_1.default.resolve(targetDir, `${pet.name.toLowerCase().replace(/\s/g, "_")}.svg`);
-        fs_1.default.copyFileSync(getEmojiPath(pet.image), assetPath);
+function copyEmojiAssets(targetDir, images) {
+    images.forEach(({ name, image }) => {
+        const assetPath = path_1.default.resolve(targetDir, `${name.toLowerCase().replace(/\s/g, "_")}.svg`);
+        fs_1.default.copyFileSync(getEmojiPath(image), assetPath);
         console.log(`Wrote ${assetPath}`);
     });
 }
