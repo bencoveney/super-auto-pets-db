@@ -8,6 +8,7 @@ exports.sleepingPill = {
         unicodeCodePoint: "\u{1F48A}",
         name: "pill",
     },
+    notes: "Only costs 1 gold.",
     tier: 2,
     packs: ["StandardPack", "ExpansionPack1"],
     ability: {

@@ -62,3 +62,8 @@ The purpose of the extra information on the `Ability` type is so that in the fut
 - Allow filtering on things like "pets that spawn other pets".
 
 This extra ability information is still subject to change as the data model becomes clearer. Check out `src/database/index.ts` to get a better idea of how this information is structured.
+
+## Useful Resources
+
+- (Emojipedia, source of icons)[https://emojipedia.org/]
+- (Steam Guide, All Pets and Food)[https://steamcommunity.com/sharedfiles/filedetails/?id=2628954046]

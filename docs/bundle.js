@@ -20578,7 +20578,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
       food: filteredFood.filter((food3) => food3.tier == tier)
-    })).filter((tier) => tier.pets.length > 0);
+    })).filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
     return /* @__PURE__ */ import_react6.default.createElement(import_react6.default.Fragment, null, /* @__PURE__ */ import_react6.default.createElement("div", {
       className: "p-3 flex flex-col lg:flex-row justify-between items-center"
     }, /* @__PURE__ */ import_react6.default.createElement("h1", {
@@ -25628,6 +25628,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unicodeCodePoint: "\u{1F48A}",
         name: "pill"
       },
+      notes: "Only costs 1 gold.",
       tier: 2,
       packs: [
         "StandardPack",

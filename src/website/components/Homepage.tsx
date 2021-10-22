@@ -17,7 +17,7 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
       pets: filteredPets.filter((pet) => pet.tier == tier),
       food: filteredFood.filter((food) => food.tier == tier),
     }))
-    .filter((tier) => tier.pets.length > 0);
+    .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
   return (
     <>
       <div className="p-3 flex flex-col lg:flex-row justify-between items-center">

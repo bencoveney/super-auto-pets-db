@@ -36,7 +36,7 @@ function Homepage(props) {
         pets: filteredPets.filter((pet) => pet.tier == tier),
         food: filteredFood.filter((food) => food.tier == tier),
     }))
-        .filter((tier) => tier.pets.length > 0);
+        .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement("div", { className: "p-3 flex flex-col lg:flex-row justify-between items-center" },
             react_1.default.createElement("h1", { className: "text-2xl font-medium" }, "Super Auto Pets Database"),
