@@ -4999,7 +4999,7 @@
         "unicodeCodePoint": "💊",
         "name": "pill"
       },
-      "notes": "Only costs 1 gold.",
+      "notes": "This costs 1 gold.",
       "tier": 2,
       "packs": [
         "StandardPack",

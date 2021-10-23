@@ -10,6 +10,9 @@ function cowAbility(level: number): Ability {
     effect: {
       kind: "RefillShops",
       shop: "Food",
+      // TODO: Represent milk.
+      // Give an animal +2/+2
+      // This is free!
       food: "Milk",
     },
   };
@@ -25,6 +28,7 @@ export const cow = {
   baseAttack: 4,
   baseHealth: 6,
   packs: ["StandardPack", "ExpansionPack1"],
+  // TODO: Does not upgrade when levelling.
   level1Ability: cowAbility(1),
   level2Ability: cowAbility(2),
   level3Ability: cowAbility(3),

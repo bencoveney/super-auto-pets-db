@@ -30,6 +30,10 @@ function caterpillarAbility(level: number): Ability {
   };
 }
 
+// TODO: Butterfly
+// Base: 1/1
+// Summoned: Copy Attack and Health from most healthy friend.
+
 export const caterpillar = {
   name: "Caterpillar",
   image: {

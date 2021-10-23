@@ -2,6 +2,7 @@ import { Ability, Trigger, Pet } from "..";
 
 function gorillaAbility(level: number): Ability {
   return {
+    // TODO: "Works 1 times per turn."
     description: `Hurt: Gain Coconut Shield.`,
     trigger: Trigger.Hurt,
     triggeredBy: {

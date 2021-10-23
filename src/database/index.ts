@@ -334,16 +334,16 @@ export interface SwallowEffect {
 // TODO: Status Effects.
 export interface StatusEffect {
   name:
-    | "Weak"
-    | "MelonArmor"
-    | "CoconutShield"
-    | "HoneyBee"
-    | "BoneAttack"
-    | "GarlicArmor"
-    | "SplashAttack"
-    | "MelonArmor"
+    | "Weak" // Take 5 extra damage.
+    | "CoconutShield" // Ignore damage once.
+    | "HoneyBee" // Summon a 1/1 Bee after fainting.
+    | "BoneAttack" // Attack for 5 more damage.
+    | "GarlicArmor" // Take 2 less damage.
+    | "SplashAttack" // Attack second enemy for 5 damage.
+    | "MelonArmor" // Take 20 damage less, once.
     | "ExtraLife"
-    | "SteakAttack";
+    | "SteakAttack"
+    | "PoisinAttack"; // Peanut?;
 }
 
 export interface EvolveEffect {

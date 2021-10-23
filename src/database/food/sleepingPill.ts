@@ -7,7 +7,7 @@ export const sleepingPill = {
     unicodeCodePoint: "\u{1F48A}",
     name: "pill",
   },
-  notes: "Only costs 1 gold.",
+  notes: "This costs 1 gold.",
   tier: 2,
   packs: ["StandardPack", "ExpansionPack1"],
   ability: {

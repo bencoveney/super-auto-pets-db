@@ -1,0 +1,36 @@
+import React from "react";
+import { StatusEffect } from "../../database";
+
+export function Status(props: { status: StatusEffect }) {
+  return (
+    <div className="p-3 border-t border-gray-500 text-gray-200 italic">
+      {getStatusDescription(props.status)}
+    </div>
+  );
+}
+
+function getStatusDescription(status: StatusEffect) {
+  switch (status.name) {
+    case "Weak":
+      return "Weak: Take 5 extra damage.";
+    case "CoconutShield":
+      return "Coconut Shield: Ignore damage once.";
+    case "HoneyBee":
+      return "Honey Bee: Summon a 1/1 Bee after fainting.";
+    case "BoneAttack":
+      return "Bone Attack: Attack for 5 more damage.";
+    case "GarlicArmor":
+      return "Garlic Armor: Take 2 less damage.";
+    case "SplashAttack":
+      return "Splash Attack: Attack second enemy for 5 damage.";
+    case "MelonArmor":
+      return "Melon Armor: Take 20 damage less, once.";
+    case "ExtraLife":
+      return "Extra Life: Come back as a 1/1 after fainting";
+    case "SteakAttack":
+      return "Steak Attack: Attack for 20 more damage, once.";
+    case "PoisinAttack":
+      return "Poisin Attack: Knock out any animal hit by this.";
+  }
+  throw new Error(`Missing status: ${status.name}`);
+}

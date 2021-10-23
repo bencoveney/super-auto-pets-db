@@ -2440,11 +2440,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React8 = require_react();
+          var React9 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React8.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React9.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2476,7 +2476,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React8) {
+          if (!React9) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3692,7 +3692,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React8.Children.forEach(children, function(child) {
+            React9.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3703,7 +3703,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React8.Children.forEach(props.children, function(child) {
+                React9.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10896,7 +10896,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React8.Component().refs;
+          var emptyRefsObject = new React9.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -20420,11 +20420,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   });
 
   // src/website/live/index.tsx
-  var import_react7 = __toModule(require_react());
+  var import_react8 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/website/components/Homepage.tsx
-  var import_react6 = __toModule(require_react());
+  var import_react7 = __toModule(require_react());
 
   // src/website/components/Blurb.tsx
   var import_react = __toModule(require_react());
@@ -20455,7 +20455,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/List.tsx
-  var import_react5 = __toModule(require_react());
+  var import_react6 = __toModule(require_react());
 
   // src/website/components/Pet.tsx
   var import_react3 = __toModule(require_react());
@@ -20525,43 +20525,80 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/Food.tsx
+  var import_react5 = __toModule(require_react());
+
+  // src/website/components/Status.tsx
   var import_react4 = __toModule(require_react());
-  function Food(props) {
+  function Status(props) {
     return /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200 italic"
+    }, getStatusDescription(props.status));
+  }
+  function getStatusDescription(status) {
+    switch (status.name) {
+      case "Weak":
+        return "Weak: Take 5 extra damage.";
+      case "CoconutShield":
+        return "Coconut Shield: Ignore damage once.";
+      case "HoneyBee":
+        return "Honey Bee: Summon a 1/1 Bee after fainting.";
+      case "BoneAttack":
+        return "Bone Attack: Attack for 5 more damage.";
+      case "GarlicArmor":
+        return "Garlic Armor: Take 2 less damage.";
+      case "SplashAttack":
+        return "Splash Attack: Attack second enemy for 5 damage.";
+      case "MelonArmor":
+        return "Melon Armor: Take 20 damage less, once.";
+      case "ExtraLife":
+        return "Extra Life: Come back as a 1/1 after fainting";
+      case "SteakAttack":
+        return "Steak Attack: Attack for 20 more damage, once.";
+      case "PoisinAttack":
+        return "Poisin Attack: Knock out any animal hit by this.";
+    }
+    throw new Error(`Missing status: ${status.name}`);
+  }
+
+  // src/website/components/Food.tsx
+  function Food(props) {
+    return /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start"
-    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+    }, /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+    }, /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "text-xl font-medium"
-    }, props.food.name)), /* @__PURE__ */ import_react4.default.createElement("img", {
+    }, props.food.name)), /* @__PURE__ */ import_react5.default.createElement("img", {
       className: "mx-20",
       src: `assets/${props.food.name.toLowerCase().replace(/\s/g, "_")}.svg`
-    }), /* @__PURE__ */ import_react4.default.createElement("div", {
+    }), /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "p-3"
-    }, (props.food.packs || []).map((pack, index) => /* @__PURE__ */ import_react4.default.createElement(Pack, {
+    }, (props.food.packs || []).map((pack, index) => /* @__PURE__ */ import_react5.default.createElement(Pack, {
       pack,
       key: index,
       colored: true
-    }))), props.food.notes ? /* @__PURE__ */ import_react4.default.createElement("div", {
+    }))), props.food.notes ? /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200 italic"
-    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react4.default.createElement(Ability2, {
+    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react5.default.createElement(Ability2, {
       ability: props.food.ability
     }) : null);
   }
   function Ability2(props) {
-    return /* @__PURE__ */ import_react4.default.createElement("div", {
+    return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200"
-    }, props.ability.description);
+    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react5.default.createElement(Status, {
+      status: props.ability.effect.status
+    }) : null);
   }
 
   // src/website/components/List.tsx
   function List(props) {
-    return /* @__PURE__ */ import_react5.default.createElement("div", {
+    return /* @__PURE__ */ import_react6.default.createElement("div", {
       className: "grid grid-cols-list gap-4 m-4 justify-items-stretch"
-    }, props.pets.map((pet, index) => /* @__PURE__ */ import_react5.default.createElement(Pet, {
+    }, props.pets.map((pet, index) => /* @__PURE__ */ import_react6.default.createElement(Pet, {
       key: `pet${index}`,
       pet
-    })), props.food.map((food3, index) => /* @__PURE__ */ import_react5.default.createElement(Food, {
+    })), props.food.map((food3, index) => /* @__PURE__ */ import_react6.default.createElement(Food, {
       key: `food${index}`,
       food: food3
     })));
@@ -20570,8 +20607,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   // src/website/components/Homepage.tsx
   var allPacks = ["StandardPack", "ExpansionPack1"];
   function Homepage(props) {
-    const [packsFilter, setPacksFilter] = (0, import_react6.useState)(allPacks);
-    const [nameFilter, setNameFilter] = (0, import_react6.useState)("");
+    const [packsFilter, setPacksFilter] = (0, import_react7.useState)(allPacks);
+    const [nameFilter, setNameFilter] = (0, import_react7.useState)("");
     let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
     let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
     const tiers = [1, 2, 3, 4, 5, 6].map((tier) => ({
@@ -20579,21 +20616,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       pets: filteredPets.filter((pet) => pet.tier == tier),
       food: filteredFood.filter((food3) => food3.tier == tier)
     })).filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
-    return /* @__PURE__ */ import_react6.default.createElement(import_react6.default.Fragment, null, /* @__PURE__ */ import_react6.default.createElement("div", {
+    return /* @__PURE__ */ import_react7.default.createElement(import_react7.default.Fragment, null, /* @__PURE__ */ import_react7.default.createElement("div", {
       className: "p-3 flex flex-col lg:flex-row justify-between items-center"
-    }, /* @__PURE__ */ import_react6.default.createElement("h1", {
+    }, /* @__PURE__ */ import_react7.default.createElement("h1", {
       className: "text-2xl font-medium"
-    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react6.default.createElement("div", {
+    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react7.default.createElement("div", {
       className: "flex flex-col md:flex-row items-center"
-    }, /* @__PURE__ */ import_react6.default.createElement("input", {
+    }, /* @__PURE__ */ import_react7.default.createElement("input", {
       type: "search",
       className: "bg-gray-900 shadow rounded border-0 p-1",
       placeholder: "Search by name",
       value: nameFilter,
       onChange: (e) => setNameFilter(e.target.value)
-    }), /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("span", {
+    }), /* @__PURE__ */ import_react7.default.createElement("div", null, /* @__PURE__ */ import_react7.default.createElement("span", {
       className: "p-3"
-    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react6.default.createElement("a", {
+    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react7.default.createElement("a", {
       onClick: () => {
         if (packsFilter.includes(pack)) {
           setPacksFilter(packsFilter.filter((it) => it != pack));
@@ -20602,18 +20639,18 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       key: index
-    }, /* @__PURE__ */ import_react6.default.createElement(Pack, {
+    }, /* @__PURE__ */ import_react7.default.createElement(Pack, {
       pack,
       colored: packsFilter.includes(pack)
-    })))))), tiers.map((tier) => /* @__PURE__ */ import_react6.default.createElement("div", {
+    })))))), tiers.map((tier) => /* @__PURE__ */ import_react7.default.createElement("div", {
       key: tier.tier,
       className: "py-3"
-    }, /* @__PURE__ */ import_react6.default.createElement("h2", {
+    }, /* @__PURE__ */ import_react7.default.createElement("h2", {
       className: "px-3 text-xl font-medium"
-    }, "Tier ", tier.tier), /* @__PURE__ */ import_react6.default.createElement(List, {
+    }, "Tier ", tier.tier), /* @__PURE__ */ import_react7.default.createElement(List, {
       pets: tier.pets,
       food: tier.food
-    }))), /* @__PURE__ */ import_react6.default.createElement(Blurb, null));
+    }))), /* @__PURE__ */ import_react7.default.createElement(Blurb, null));
   }
   function applyFilter(all, packsFilter, nameFilter) {
     let filtered = all.filter((it) => {
@@ -25628,7 +25665,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unicodeCodePoint: "\u{1F48A}",
         name: "pill"
       },
-      notes: "Only costs 1 gold.",
+      notes: "This costs 1 gold.",
       tier: 2,
       packs: [
         "StandardPack",
@@ -25967,7 +26004,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   if (!reactRoot) {
     throw new Error("Could not find react root");
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react7.default.createElement(Homepage, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react8.default.createElement(Homepage, {
     pets: pets2,
     food: food2
   }), reactRoot);

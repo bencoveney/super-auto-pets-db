@@ -1,6 +1,7 @@
 import React from "react";
 import { Food as FoodType, Ability as AbilityType } from "../../database";
 import { Pack } from "./Pack";
+import { Status } from "./Status";
 
 export function Food(props: { food: FoodType }) {
   return (
@@ -29,8 +30,13 @@ export function Food(props: { food: FoodType }) {
 
 function Ability(props: { ability: AbilityType }) {
   return (
-    <div className="p-3 border-t border-gray-500 text-gray-200">
-      {props.ability.description}
-    </div>
+    <>
+      <div className="p-3 border-t border-gray-500 text-gray-200">
+        {props.ability.description}
+      </div>
+      {props.ability.effect.kind == "ApplyStatus" ? (
+        <Status status={props.ability.effect.status} />
+      ) : null}
+    </>
   );
 }

@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Food = void 0;
 const react_1 = __importDefault(require("react"));
 const Pack_1 = require("./Pack");
+const Status_1 = require("./Status");
 function Food(props) {
     return (react_1.default.createElement("div", { className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start" },
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
@@ -17,5 +18,7 @@ function Food(props) {
 }
 exports.Food = Food;
 function Ability(props) {
-    return (react_1.default.createElement("div", { className: "p-3 border-t border-gray-500 text-gray-200" }, props.ability.description));
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("div", { className: "p-3 border-t border-gray-500 text-gray-200" }, props.ability.description),
+        props.ability.effect.kind == "ApplyStatus" ? (react_1.default.createElement(Status_1.Status, { status: props.ability.effect.status })) : null));
 }

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.gorilla = void 0;
 function gorillaAbility(level) {
     return {
+        // TODO: "Works 1 times per turn."
         description: `Hurt: Gain Coconut Shield.`,
         trigger: "Hurt" /* Hurt */,
         triggeredBy: {
