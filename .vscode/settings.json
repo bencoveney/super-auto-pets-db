@@ -4,5 +4,10 @@
     "**/*?.js": {
       "when": "$(basename).tsx"
     }
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "src/emoji": true,
+    "docs": true,
   }
 }

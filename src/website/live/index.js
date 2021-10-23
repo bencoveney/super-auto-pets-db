@@ -22,9 +22,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_1 = __importDefault(require("react"));
-const react_dom_1 = __importDefault(require("react-dom"));
-const Homepage_1 = require("../components/Homepage");
 // Use the generated API.json
 // We use const enums but they break esbuild.
 // https://github.com/evanw/esbuild/issues/128
@@ -32,8 +29,35 @@ const api = __importStar(require("../../../docs/api.json"));
 // As another consequence, cast to any to avoid TypeScript errors when changing API structure.
 const pets = api.pets;
 const food = api.food;
+const react_1 = __importDefault(require("react"));
+const react_dom_1 = __importDefault(require("react-dom"));
+const Homepage_1 = require("../components/Homepage");
+const react_router_dom_1 = require("react-router-dom");
+const PetPage_1 = require("../components/PetPage");
+const utils_1 = require("../../utils");
+const FoodPage_1 = require("../components/FoodPage");
 const reactRoot = document.getElementById("react-root");
 if (!reactRoot) {
     throw new Error("Could not find react root");
 }
-react_dom_1.default.hydrate(react_1.default.createElement(Homepage_1.Homepage, { pets: pets, food: food }), reactRoot);
+function PetPageWrapper(props) {
+    const petName = (0, utils_1.sanitiseName)(props.match.params.petName);
+    const pet = pets.find((it) => (0, utils_1.sanitiseName)(it.name) == petName);
+    if (!pet) {
+        throw new Error(`Could not find pet ${petName}`);
+    }
+    return react_1.default.createElement(PetPage_1.PetPage, { pet: pet });
+}
+function FoodPageWrapper(props) {
+    const foodName = (0, utils_1.sanitiseName)(props.match.params.foodName);
+    const theFood = food.find((it) => (0, utils_1.sanitiseName)(it.name) == foodName);
+    if (!theFood) {
+        throw new Error(`Could not find ${foodName}`);
+    }
+    return react_1.default.createElement(FoodPage_1.FoodPage, { food: theFood });
+}
+react_dom_1.default.hydrate(react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
+    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/" },
+        react_1.default.createElement(Homepage_1.Homepage, { pets: pets, food: food })),
+    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/pet/:petName", component: PetPageWrapper }),
+    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/food/:foodName", component: FoodPageWrapper })), reactRoot);

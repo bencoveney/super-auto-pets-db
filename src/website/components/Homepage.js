@@ -53,7 +53,7 @@ function Homepage(props) {
                             }
                         }, key: index },
                         react_1.default.createElement(Pack_1.Pack, { pack: pack, colored: packsFilter.includes(pack) }))))))),
-        tiers.map((tier) => (react_1.default.createElement(Tier_1.Tier, Object.assign({}, tier)))),
+        tiers.map((tier) => (react_1.default.createElement(Tier_1.Tier, Object.assign({ key: tier.tier }, tier)))),
         react_1.default.createElement(Blurb_1.Blurb, null)));
 }
 exports.Homepage = Homepage;

@@ -16,9 +16,9 @@ function Page(props) {
             react_1.default.createElement("meta", { name: "description", content: "This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets." }),
             react_1.default.createElement("meta", { name: "author", content: "Ben Coveney" }),
             react_1.default.createElement("link", { rel: "icon", type: "image/svg+xml", href: "/assets/turtle.svg" }),
-            react_1.default.createElement("link", { rel: "stylesheet", href: "tailwind.css" })),
+            react_1.default.createElement("link", { rel: "stylesheet", href: "/tailwind.css" })),
         react_1.default.createElement("body", { className: "bg-gray-800 text-white" },
             react_1.default.createElement("div", { id: "react-root", dangerouslySetInnerHTML: { __html: content } }),
-            react_1.default.createElement("script", { src: "./bundle.js" }))));
+            react_1.default.createElement("script", { src: "/bundle.js" }))));
 }
 exports.Page = Page;

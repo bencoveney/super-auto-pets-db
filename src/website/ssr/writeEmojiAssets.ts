@@ -8,13 +8,11 @@ import {
   NotoEmojiImage,
   TwEmojiImage,
 } from "../../database";
+import { sanitiseName } from "../../utils";
 
 export function copyEmojiAssets(targetDir: string, images: HasImage[]) {
   images.forEach(({ name, image }) => {
-    const assetPath = path.resolve(
-      targetDir,
-      `${name.toLowerCase().replace(/\s/g, "_")}.svg`
-    );
+    const assetPath = path.resolve(targetDir, `${sanitiseName(name)}.svg`);
 
     fs.copyFileSync(getEmojiPath(image), assetPath);
 

@@ -67,3 +67,4 @@ This extra ability information is still subject to change as the data model beco
 
 - (Emojipedia, source of icons)[https://emojipedia.org/]
 - (Steam Guide, All Pets and Food)[https://steamcommunity.com/sharedfiles/filedetails/?id=2628954046]
+- (Background images)[https://opengameart.org/content/backgrounds-3]

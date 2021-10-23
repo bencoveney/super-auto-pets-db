@@ -1,11 +1,12 @@
 import React from "react";
 import { Pet as PetType, Ability as AbilityType } from "../../database";
+import { sanitiseName } from "../../utils";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
 
 export function Pet(props: { pet: PetType }) {
   return (
-    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start">
+    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm">
       <div className="p-3 flex flex-row justify-between">
         <div className="text-xl font-medium">{props.pet.name}</div>
         <div className="">
@@ -14,7 +15,7 @@ export function Pet(props: { pet: PetType }) {
       </div>
       <img
         className="mx-20"
-        src={`assets/${props.pet.name.toLowerCase().replace(/\s/g, "_")}.svg`}
+        src={`/assets/${sanitiseName(props.pet.name)}.svg`}
       />
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (

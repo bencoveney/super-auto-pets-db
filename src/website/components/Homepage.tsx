@@ -56,7 +56,7 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
         </div>
       </div>
       {tiers.map((tier) => (
-        <Tier {...tier} />
+        <Tier key={tier.tier} {...tier} />
       ))}
       <Blurb />
     </>

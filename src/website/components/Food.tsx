@@ -1,17 +1,18 @@
 import React from "react";
 import { Food as FoodType, Ability as AbilityType } from "../../database";
+import { sanitiseName } from "../../utils";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
 
 export function Food(props: { food: FoodType }) {
   return (
-    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start">
+    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm">
       <div className="p-3 flex flex-row justify-between">
         <div className="text-xl font-medium">{props.food.name}</div>
       </div>
       <img
         className="mx-20"
-        src={`assets/${props.food.name.toLowerCase().replace(/\s/g, "_")}.svg`}
+        src={`/assets/${sanitiseName(props.food.name)}.svg`}
       />
       <div className="p-3">
         {(props.food.packs || []).map((pack, index) => (

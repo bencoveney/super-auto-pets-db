@@ -15,14 +15,14 @@ export function Page(props: { children: React.ReactElement }) {
         />
         <meta name="author" content="Ben Coveney" />
         <link rel="icon" type="image/svg+xml" href="/assets/turtle.svg" />
-        <link rel="stylesheet" href="tailwind.css" />
+        <link rel="stylesheet" href="/tailwind.css" />
       </head>
       <body className="bg-gray-800 text-white">
         <div
           id="react-root"
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
-        <script src="./bundle.js" />
+        <script src="/bundle.js" />
       </body>
     </html>
   );
