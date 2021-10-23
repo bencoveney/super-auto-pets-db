@@ -2454,11 +2454,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React15 = require_react();
+          var React16 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React15.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React16.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2490,7 +2490,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React15) {
+          if (!React16) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3706,7 +3706,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React15.Children.forEach(children, function(child) {
+            React16.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3717,7 +3717,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React15.Children.forEach(props.children, function(child) {
+                React16.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10910,7 +10910,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React15.Component().refs;
+          var emptyRefsObject = new React16.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -26964,11 +26964,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   ];
 
   // src/website/live/index.tsx
-  var import_react14 = __toModule(require_react());
+  var import_react15 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/website/components/Homepage.tsx
-  var import_react8 = __toModule(require_react());
+  var import_react9 = __toModule(require_react());
 
   // src/website/components/Blurb.tsx
   var import_react = __toModule(require_react());
@@ -27002,242 +27002,35 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react2 = __toModule(require_react());
   function Pack(props) {
     let packInfo = {
-      StandardPack: { color: "bg-blue-900", name: "Standard" },
-      ExpansionPack1: { color: "bg-purple-800", name: "Expansion 1" },
-      EasterEgg: { color: "bg-yellow-800", name: "Rare Easter Egg" }
+      StandardPack: {
+        color: "bg-blue-900",
+        name: "Standard",
+        nameCondensed: "Std"
+      },
+      ExpansionPack1: {
+        color: "bg-purple-800",
+        name: "Expansion 1",
+        nameCondensed: "Exp 1"
+      },
+      EasterEgg: {
+        color: "bg-yellow-800",
+        name: "Rare Easter Egg",
+        nameCondensed: "Rare"
+      }
     }[props.pack];
     const color = props.colored ? packInfo.color : "bg-grey-700";
+    const text = props.condensed ? packInfo.nameCondensed : packInfo.name;
+    const styles = props.condensed ? "rounded px-2 mr-1 text-sm" : "rounded px-3 py-1 mr-2 text-sm";
     return /* @__PURE__ */ import_react2.default.createElement("span", {
-      className: `inline-block rounded-full px-3 py-1 mr-2 text-sm font-semibold ${color}`
-    }, packInfo.name);
+      className: `inline-block font-semibold ${styles} ${color}`
+    }, text);
   }
 
   // src/website/components/Tier.tsx
+  var import_react8 = __toModule(require_react());
+
+  // src/website/components/Tiles.tsx
   var import_react7 = __toModule(require_react());
-
-  // src/website/components/List.tsx
-  var import_react6 = __toModule(require_react());
-
-  // src/website/components/Pet.tsx
-  var import_react4 = __toModule(require_react());
-
-  // src/utils.ts
-  function sanitiseName(name) {
-    return name.toLowerCase().replace(/\s/g, "_");
-  }
-
-  // src/website/components/Status.tsx
-  var import_react3 = __toModule(require_react());
-  function Status(props) {
-    return /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200 italic"
-    }, getStatusDescription(props.status));
-  }
-  function getStatusDescription(status) {
-    switch (status.name) {
-      case "Weak":
-        return "Weak: Take 5 extra damage.";
-      case "CoconutShield":
-        return "Coconut Shield: Ignore damage once.";
-      case "HoneyBee":
-        return "Honey Bee: Summon a 1/1 Bee after fainting.";
-      case "BoneAttack":
-        return "Bone Attack: Attack for 5 more damage.";
-      case "GarlicArmor":
-        return "Garlic Armor: Take 2 less damage.";
-      case "SplashAttack":
-        return "Splash Attack: Attack second enemy for 5 damage.";
-      case "MelonArmor":
-        return "Melon Armor: Take 20 damage less, once.";
-      case "ExtraLife":
-        return "Extra Life: Come back as a 1/1 after fainting";
-      case "SteakAttack":
-        return "Steak Attack: Attack for 20 more damage, once.";
-      case "PoisinAttack":
-        return "Poisin Attack: Knock out any animal hit by this.";
-      default:
-        throw new Error(`Unknown status: ${status.name}`);
-    }
-  }
-
-  // src/website/components/Pet.tsx
-  function Pet(props) {
-    return /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm"
-    }, /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "text-xl font-medium"
-    }, props.pet.name), /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: ""
-    }, "\u2694\uFE0F ", props.pet.baseAttack, " / \u{1F496} ", props.pet.baseHealth)), /* @__PURE__ */ import_react4.default.createElement("img", {
-      className: "mx-20",
-      src: `/assets/${sanitiseName(props.pet.name)}.svg`
-    }), /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "p-3"
-    }, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react4.default.createElement(Pack, {
-      pack,
-      key: index2,
-      colored: true
-    }))), props.pet.notes ? /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200 italic"
-    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
-      level: 1,
-      ability: props.pet.level1Ability
-    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
-      level: 2,
-      ability: props.pet.level2Ability
-    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
-      level: 3,
-      ability: props.pet.level3Ability
-    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react4.default.createElement(Status, {
-      status: props.pet.status
-    }) : null);
-  }
-  function Ability(props) {
-    return /* @__PURE__ */ import_react4.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200"
-    }, LevelLabel(props.level), " ", props.ability.description);
-  }
-  function LevelLabel(level) {
-    switch (level) {
-      case 1:
-        return "1\uFE0F\u20E3";
-      case 2:
-        return "2\uFE0F\u20E3";
-      case 3:
-        return "3\uFE0F\u20E3";
-      default:
-        return "\u2757";
-    }
-  }
-
-  // src/website/components/Food.tsx
-  var import_react5 = __toModule(require_react());
-  function Food(props) {
-    return /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm"
-    }, /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "text-xl font-medium"
-    }, props.food.name)), /* @__PURE__ */ import_react5.default.createElement("img", {
-      className: "mx-20",
-      src: `/assets/${sanitiseName(props.food.name)}.svg`
-    }), /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "p-3"
-    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react5.default.createElement(Pack, {
-      pack,
-      key: index2,
-      colored: true
-    }))), props.food.notes ? /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200 italic"
-    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react5.default.createElement(Ability2, {
-      ability: props.food.ability
-    }) : null);
-  }
-  function Ability2(props) {
-    return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200"
-    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react5.default.createElement(Status, {
-      status: props.ability.effect.status
-    }) : null);
-  }
-
-  // src/website/components/List.tsx
-  function List(props) {
-    return /* @__PURE__ */ import_react6.default.createElement("div", {
-      className: "grid grid-cols-list gap-4 m-4 justify-items-stretch"
-    }, props.pets.map((pet, index2) => /* @__PURE__ */ import_react6.default.createElement(Pet, {
-      key: `pet${index2}`,
-      pet
-    })), props.food.map((food3, index2) => /* @__PURE__ */ import_react6.default.createElement(Food, {
-      key: `food${index2}`,
-      food: food3
-    })));
-  }
-
-  // src/website/components/Tier.tsx
-  function Tier(props) {
-    return /* @__PURE__ */ import_react7.default.createElement("div", {
-      key: props.tier,
-      className: "py-3"
-    }, /* @__PURE__ */ import_react7.default.createElement("h2", {
-      className: "px-3 text-xl font-medium"
-    }, getTierName(props.tier)), /* @__PURE__ */ import_react7.default.createElement(List, {
-      pets: props.pets,
-      food: props.food
-    }));
-  }
-  function getTierName(tier) {
-    switch (tier) {
-      case 1:
-      case 2:
-      case 3:
-      case 4:
-      case 5:
-      case 6:
-        return `Tier ${tier}`;
-      case "Summoned":
-        return "Summoned";
-      default:
-        throw new Error(`Unknown tier: ${tier}`);
-    }
-  }
-
-  // src/website/components/Homepage.tsx
-  var allPacks = ["StandardPack", "ExpansionPack1"];
-  function Homepage(props) {
-    const [packsFilter, setPacksFilter] = (0, import_react8.useState)(allPacks);
-    const [nameFilter, setNameFilter] = (0, import_react8.useState)("");
-    let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
-    let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
-    const tiers = [1, 2, 3, 4, 5, 6, "Summoned"].map((tier) => ({
-      tier,
-      pets: filteredPets.filter((pet) => pet.tier == tier),
-      food: filteredFood.filter((food3) => food3.tier == tier)
-    })).filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
-    return /* @__PURE__ */ import_react8.default.createElement(import_react8.default.Fragment, null, /* @__PURE__ */ import_react8.default.createElement("div", {
-      className: "p-3 flex flex-col lg:flex-row justify-between items-center"
-    }, /* @__PURE__ */ import_react8.default.createElement("h1", {
-      className: "text-2xl font-medium"
-    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react8.default.createElement("div", {
-      className: "flex flex-col md:flex-row items-center"
-    }, /* @__PURE__ */ import_react8.default.createElement("input", {
-      type: "search",
-      className: "bg-gray-900 shadow rounded border-0 p-1",
-      placeholder: "Search by name",
-      value: nameFilter,
-      onChange: (e) => setNameFilter(e.target.value)
-    }), /* @__PURE__ */ import_react8.default.createElement("div", null, /* @__PURE__ */ import_react8.default.createElement("span", {
-      className: "p-3"
-    }, "Include Packs:"), allPacks.map((pack, index2) => /* @__PURE__ */ import_react8.default.createElement("a", {
-      onClick: () => {
-        if (packsFilter.includes(pack)) {
-          setPacksFilter(packsFilter.filter((it) => it != pack));
-        } else {
-          setPacksFilter(packsFilter.concat(pack));
-        }
-      },
-      key: index2
-    }, /* @__PURE__ */ import_react8.default.createElement(Pack, {
-      pack,
-      colored: packsFilter.includes(pack)
-    })))))), tiers.map((tier) => /* @__PURE__ */ import_react8.default.createElement(Tier, __spreadValues({
-      key: tier.tier
-    }, tier))), /* @__PURE__ */ import_react8.default.createElement(Blurb, null));
-  }
-  function applyFilter(all, packsFilter, nameFilter) {
-    let filtered = all.filter((it) => {
-      var _a;
-      return (_a = it.packs) == null ? void 0 : _a.some((pack) => packsFilter.includes(pack));
-    });
-    if (nameFilter) {
-      let sanitisedNameFilter = nameFilter.toLowerCase();
-      filtered = filtered.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
-    }
-    return filtered;
-  }
 
   // node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
   function _setPrototypeOf(o, p) {
@@ -27256,7 +27049,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // node_modules/react-router/esm/react-router.js
-  var import_react10 = __toModule(require_react());
+  var import_react4 = __toModule(require_react());
   var import_prop_types2 = __toModule(require_prop_types());
 
   // node_modules/@babel/runtime/helpers/esm/extends.js
@@ -28122,7 +27915,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // node_modules/mini-create-react-context/dist/esm/index.js
-  var import_react9 = __toModule(require_react());
+  var import_react3 = __toModule(require_react());
   var import_prop_types = __toModule(require_prop_types());
   var MAX_SIGNED_31_BIT_INT = 1073741823;
   var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : {};
@@ -28201,7 +27994,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         return this.props.children;
       };
       return Provider2;
-    }(import_react9.Component);
+    }(import_react3.Component);
     Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = import_prop_types.default.object.isRequired, _Provider$childContex);
     var Consumer = /* @__PURE__ */ function(_Component2) {
       _inheritsLoose(Consumer2, _Component2);
@@ -28249,14 +28042,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         return onlyChild(this.props.children)(this.state.value);
       };
       return Consumer2;
-    }(import_react9.Component);
+    }(import_react3.Component);
     Consumer.contextTypes = (_Consumer$contextType = {}, _Consumer$contextType[contextProp] = import_prop_types.default.object, _Consumer$contextType);
     return {
       Provider,
       Consumer
     };
   }
-  var index = import_react9.default.createContext || createReactContext;
+  var index = import_react3.default.createContext || createReactContext;
   var esm_default = index;
 
   // node_modules/react-router/esm/react-router.js
@@ -28336,20 +28129,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       }
     };
     _proto.render = function render() {
-      return /* @__PURE__ */ import_react10.default.createElement(context.Provider, {
+      return /* @__PURE__ */ import_react4.default.createElement(context.Provider, {
         value: {
           history: this.props.history,
           location: this.state.location,
           match: Router2.computeRootMatch(this.state.location.pathname),
           staticContext: this.props.staticContext
         }
-      }, /* @__PURE__ */ import_react10.default.createElement(historyContext.Provider, {
+      }, /* @__PURE__ */ import_react4.default.createElement(historyContext.Provider, {
         children: this.props.children || null,
         value: this.props.history
       }));
     };
     return Router2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   if (true) {
     Router.propTypes = {
       children: import_prop_types2.default.node,
@@ -28373,13 +28166,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     var _proto = MemoryRouter2.prototype;
     _proto.render = function render() {
-      return /* @__PURE__ */ import_react10.default.createElement(Router, {
+      return /* @__PURE__ */ import_react4.default.createElement(Router, {
         history: this.history,
         children: this.props.children
       });
     };
     return MemoryRouter2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   if (true) {
     MemoryRouter.propTypes = {
       initialEntries: import_prop_types2.default.array,
@@ -28414,15 +28207,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       return null;
     };
     return Lifecycle2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   function Prompt(_ref) {
     var message = _ref.message, _ref$when = _ref.when, when = _ref$when === void 0 ? true : _ref$when;
-    return /* @__PURE__ */ import_react10.default.createElement(context.Consumer, null, function(context2) {
+    return /* @__PURE__ */ import_react4.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Prompt> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
       if (!when || context2.staticContext)
         return null;
       var method = context2.history.block;
-      return /* @__PURE__ */ import_react10.default.createElement(Lifecycle, {
+      return /* @__PURE__ */ import_react4.default.createElement(Lifecycle, {
         onMount: function onMount(self) {
           self.release = method(message);
         },
@@ -28473,7 +28266,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   function Redirect(_ref) {
     var computedMatch = _ref.computedMatch, to = _ref.to, _ref$push = _ref.push, push = _ref$push === void 0 ? false : _ref$push;
-    return /* @__PURE__ */ import_react10.default.createElement(context.Consumer, null, function(context2) {
+    return /* @__PURE__ */ import_react4.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Redirect> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
       var history = context2.history, staticContext = context2.staticContext;
       var method = push ? history.push : history.replace;
@@ -28484,7 +28277,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         method(location);
         return null;
       }
-      return /* @__PURE__ */ import_react10.default.createElement(Lifecycle, {
+      return /* @__PURE__ */ import_react4.default.createElement(Lifecycle, {
         onMount: function onMount() {
           method(location);
         },
@@ -28567,7 +28360,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, null);
   }
   function isEmptyChildren(children) {
-    return import_react10.default.Children.count(children) === 0;
+    return import_react4.default.Children.count(children) === 0;
   }
   function evalChildrenDev(children, props, path) {
     var value = children(props);
@@ -28582,7 +28375,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     var _proto = Route2.prototype;
     _proto.render = function render() {
       var _this = this;
-      return /* @__PURE__ */ import_react10.default.createElement(context.Consumer, null, function(context$1) {
+      return /* @__PURE__ */ import_react4.default.createElement(context.Consumer, null, function(context$1) {
         !context$1 ? true ? tiny_invariant_esm_default(false, "You should not use <Route> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
         var location = _this.props.location || context$1.location;
         var match = _this.props.computedMatch ? _this.props.computedMatch : _this.props.path ? matchPath(location.pathname, _this.props) : context$1.match;
@@ -28594,13 +28387,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         if (Array.isArray(children) && isEmptyChildren(children)) {
           children = null;
         }
-        return /* @__PURE__ */ import_react10.default.createElement(context.Provider, {
+        return /* @__PURE__ */ import_react4.default.createElement(context.Provider, {
           value: props
-        }, props.match ? children ? typeof children === "function" ? true ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? /* @__PURE__ */ import_react10.default.createElement(component, props) : render2 ? render2(props) : null : typeof children === "function" ? true ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
+        }, props.match ? children ? typeof children === "function" ? true ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? /* @__PURE__ */ import_react4.default.createElement(component, props) : render2 ? render2(props) : null : typeof children === "function" ? true ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
       });
     };
     return Route2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   if (true) {
     Route.propTypes = {
       children: import_prop_types2.default.oneOfType([import_prop_types2.default.func, import_prop_types2.default.node]),
@@ -28701,13 +28494,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         listen: this.handleListen,
         block: this.handleBlock
       };
-      return /* @__PURE__ */ import_react10.default.createElement(Router, _extends({}, rest, {
+      return /* @__PURE__ */ import_react4.default.createElement(Router, _extends({}, rest, {
         history,
         staticContext: context2
       }));
     };
     return StaticRouter2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   if (true) {
     StaticRouter.propTypes = {
       basename: import_prop_types2.default.string,
@@ -28726,12 +28519,12 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     var _proto = Switch2.prototype;
     _proto.render = function render() {
       var _this = this;
-      return /* @__PURE__ */ import_react10.default.createElement(context.Consumer, null, function(context2) {
+      return /* @__PURE__ */ import_react4.default.createElement(context.Consumer, null, function(context2) {
         !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Switch> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
         var location = _this.props.location || context2.location;
         var element, match;
-        import_react10.default.Children.forEach(_this.props.children, function(child) {
-          if (match == null && /* @__PURE__ */ import_react10.default.isValidElement(child)) {
+        import_react4.default.Children.forEach(_this.props.children, function(child) {
+          if (match == null && /* @__PURE__ */ import_react4.default.isValidElement(child)) {
             element = child;
             var path = child.props.path || child.props.from;
             match = path ? matchPath(location.pathname, _extends({}, child.props, {
@@ -28739,14 +28532,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             })) : context2.match;
           }
         });
-        return match ? /* @__PURE__ */ import_react10.default.cloneElement(element, {
+        return match ? /* @__PURE__ */ import_react4.default.cloneElement(element, {
           location,
           computedMatch: match
         }) : null;
       });
     };
     return Switch2;
-  }(import_react10.default.Component);
+  }(import_react4.default.Component);
   if (true) {
     Switch.propTypes = {
       children: import_prop_types2.default.node,
@@ -28757,7 +28550,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       true ? tiny_warning_esm_default(!(!this.props.location && prevProps.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
     };
   }
-  var useContext = import_react10.default.useContext;
+  var useContext = import_react4.default.useContext;
   if (true) {
     if (typeof window !== "undefined") {
       global2 = window;
@@ -28782,7 +28575,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var secondaryBuildName;
 
   // node_modules/react-router-dom/esm/react-router-dom.js
-  var import_react11 = __toModule(require_react());
+  var import_react5 = __toModule(require_react());
   var import_prop_types3 = __toModule(require_prop_types());
   var BrowserRouter = /* @__PURE__ */ function(_React$Component) {
     _inheritsLoose(BrowserRouter2, _React$Component);
@@ -28797,13 +28590,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     var _proto = BrowserRouter2.prototype;
     _proto.render = function render() {
-      return /* @__PURE__ */ import_react11.default.createElement(Router, {
+      return /* @__PURE__ */ import_react5.default.createElement(Router, {
         history: this.history,
         children: this.props.children
       });
     };
     return BrowserRouter2;
-  }(import_react11.default.Component);
+  }(import_react5.default.Component);
   if (true) {
     BrowserRouter.propTypes = {
       basename: import_prop_types3.default.string,
@@ -28829,13 +28622,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     var _proto = HashRouter2.prototype;
     _proto.render = function render() {
-      return /* @__PURE__ */ import_react11.default.createElement(Router, {
+      return /* @__PURE__ */ import_react5.default.createElement(Router, {
         history: this.history,
         children: this.props.children
       });
     };
     return HashRouter2;
-  }(import_react11.default.Component);
+  }(import_react5.default.Component);
   if (true) {
     HashRouter.propTypes = {
       basename: import_prop_types3.default.string,
@@ -28856,7 +28649,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var forwardRefShim = function forwardRefShim2(C) {
     return C;
   };
-  var forwardRef = import_react11.default.forwardRef;
+  var forwardRef = import_react5.default.forwardRef;
   if (typeof forwardRef === "undefined") {
     forwardRef = forwardRefShim;
   }
@@ -28886,14 +28679,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     } else {
       props.ref = innerRef;
     }
-    return /* @__PURE__ */ import_react11.default.createElement("a", props);
+    return /* @__PURE__ */ import_react5.default.createElement("a", props);
   });
   if (true) {
     LinkAnchor.displayName = "LinkAnchor";
   }
   var Link = forwardRef(function(_ref2, forwardedRef) {
     var _ref2$component = _ref2.component, component = _ref2$component === void 0 ? LinkAnchor : _ref2$component, replace = _ref2.replace, to = _ref2.to, innerRef = _ref2.innerRef, rest = _objectWithoutPropertiesLoose(_ref2, ["component", "replace", "to", "innerRef"]);
-    return /* @__PURE__ */ import_react11.default.createElement(context.Consumer, null, function(context2) {
+    return /* @__PURE__ */ import_react5.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Link> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
       var history = context2.history;
       var location = normalizeToLocation(resolveToLocation(to, context2.location), context2.location);
@@ -28912,7 +28705,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       } else {
         props.innerRef = innerRef;
       }
-      return /* @__PURE__ */ import_react11.default.createElement(component, props);
+      return /* @__PURE__ */ import_react5.default.createElement(component, props);
     });
   });
   if (true) {
@@ -28934,7 +28727,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var forwardRefShim$1 = function forwardRefShim3(C) {
     return C;
   };
-  var forwardRef$1 = import_react11.default.forwardRef;
+  var forwardRef$1 = import_react5.default.forwardRef;
   if (typeof forwardRef$1 === "undefined") {
     forwardRef$1 = forwardRefShim$1;
   }
@@ -28948,7 +28741,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var NavLink = forwardRef$1(function(_ref, forwardedRef) {
     var _ref$ariaCurrent = _ref["aria-current"], ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent, _ref$activeClassName = _ref.activeClassName, activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName, activeStyle = _ref.activeStyle, classNameProp = _ref.className, exact = _ref.exact, isActiveProp = _ref.isActive, locationProp = _ref.location, sensitive = _ref.sensitive, strict = _ref.strict, styleProp = _ref.style, to = _ref.to, innerRef = _ref.innerRef, rest = _objectWithoutPropertiesLoose(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
-    return /* @__PURE__ */ import_react11.default.createElement(context.Consumer, null, function(context2) {
+    return /* @__PURE__ */ import_react5.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <NavLink> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
       var currentLocation = locationProp || context2.location;
       var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
@@ -28978,7 +28771,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       } else {
         props.innerRef = innerRef;
       }
-      return /* @__PURE__ */ import_react11.default.createElement(Link, props);
+      return /* @__PURE__ */ import_react5.default.createElement(Link, props);
     });
   });
   if (true) {
@@ -28999,8 +28792,253 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ariaCurrentType;
 
+  // src/utils.ts
+  function sanitiseName(name) {
+    return name.toLowerCase().replace(/\s/g, "_");
+  }
+
+  // src/website/components/Tile.tsx
+  var import_react6 = __toModule(require_react());
+  function Tile({
+    name,
+    stats,
+    packs,
+    background
+  }) {
+    return /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: "transition group bg-gray-900 hover:bg-black shadow-md flex flex-col items-stretch justify-start max-w-sm cursor-pointer"
+    }, /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: "relative"
+    }, /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: `transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`
+    }), /* @__PURE__ */ import_react6.default.createElement("img", {
+      className: "transition-margin mx-7 my-7 group-hover:mx-3 group-hover:my-3 filter drop-shadow-tile",
+      src: `/assets/${sanitiseName(name)}.svg`
+    }), /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: `transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`
+    }), stats ? /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: "absolute bottom-0 right-0 p-1"
+    }, "\u2694\uFE0F ", stats.attack, " / \u{1F496} ", stats.health) : null), /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: "p-2"
+    }, /* @__PURE__ */ import_react6.default.createElement("div", {
+      className: "text-xl font-medium pb-2"
+    }, name), /* @__PURE__ */ import_react6.default.createElement("div", null, (packs || []).map((pack, index2) => /* @__PURE__ */ import_react6.default.createElement(Pack, {
+      pack,
+      key: index2,
+      colored: true,
+      condensed: true
+    })))));
+  }
+
+  // src/website/components/Tiles.tsx
+  function Tiles(props) {
+    const tiles = props.pets.map((pet, index2) => /* @__PURE__ */ import_react7.default.createElement(PetTile, {
+      key: `pet${index2}`,
+      pet
+    })).concat(props.food.map((food3, index2) => /* @__PURE__ */ import_react7.default.createElement(FoodTile, {
+      key: `food${index2}`,
+      food: food3
+    })));
+    return /* @__PURE__ */ import_react7.default.createElement("div", {
+      className: "grid grid-cols-tiles gap-4 m-4 justify-items-stretch"
+    }, tiles);
+  }
+  function FoodTile(props) {
+    return /* @__PURE__ */ import_react7.default.createElement(Link, {
+      to: `/food/${sanitiseName(props.food.name)}`
+    }, /* @__PURE__ */ import_react7.default.createElement(Tile, {
+      name: props.food.name,
+      background: "bgimage-4",
+      packs: props.food.packs || []
+    }));
+  }
+  function PetTile(props) {
+    return /* @__PURE__ */ import_react7.default.createElement(Link, {
+      to: `/pet/${sanitiseName(props.pet.name)}`
+    }, /* @__PURE__ */ import_react7.default.createElement(Tile, {
+      name: props.pet.name,
+      background: "bgimage-1",
+      packs: props.pet.packs || [],
+      stats: { attack: props.pet.baseAttack, health: props.pet.baseHealth }
+    }));
+  }
+
+  // src/website/components/Tier.tsx
+  function Tier(props) {
+    return /* @__PURE__ */ import_react8.default.createElement("div", {
+      key: props.tier
+    }, /* @__PURE__ */ import_react8.default.createElement("h2", {
+      className: "px-3 text-xl font-medium sticky block top-0 z-10 bg-gray-800 py-2"
+    }, getTierName(props.tier)), /* @__PURE__ */ import_react8.default.createElement(Tiles, {
+      pets: props.pets,
+      food: props.food
+    }));
+  }
+  function getTierName(tier) {
+    switch (tier) {
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        return `Tier ${tier}`;
+      case "Summoned":
+        return "Summoned";
+      default:
+        throw new Error(`Unknown tier: ${tier}`);
+    }
+  }
+
+  // src/website/components/Homepage.tsx
+  var allPacks = ["StandardPack", "ExpansionPack1"];
+  function Homepage(props) {
+    const [packsFilter, setPacksFilter] = (0, import_react9.useState)(allPacks);
+    const [nameFilter, setNameFilter] = (0, import_react9.useState)("");
+    let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
+    let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
+    const tiers = [1, 2, 3, 4, 5, 6, "Summoned"].map((tier) => ({
+      tier,
+      pets: filteredPets.filter((pet) => pet.tier == tier),
+      food: filteredFood.filter((food3) => food3.tier == tier)
+    })).filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
+    return /* @__PURE__ */ import_react9.default.createElement(import_react9.default.Fragment, null, /* @__PURE__ */ import_react9.default.createElement("div", {
+      className: "p-3 flex flex-col lg:flex-row justify-between items-center"
+    }, /* @__PURE__ */ import_react9.default.createElement("h1", {
+      className: "text-2xl font-medium"
+    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react9.default.createElement("div", {
+      className: "flex flex-col md:flex-row items-center"
+    }, /* @__PURE__ */ import_react9.default.createElement("input", {
+      type: "search",
+      className: "bg-gray-900 shadow rounded border-0 p-1",
+      placeholder: "Search by name",
+      value: nameFilter,
+      onChange: (e) => setNameFilter(e.target.value)
+    }), /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("span", {
+      className: "p-3"
+    }, "Toggle Packs:"), allPacks.map((pack, index2) => /* @__PURE__ */ import_react9.default.createElement("a", {
+      onClick: () => {
+        if (packsFilter.includes(pack)) {
+          setPacksFilter(packsFilter.filter((it) => it != pack));
+        } else {
+          setPacksFilter(packsFilter.concat(pack));
+        }
+      },
+      key: index2
+    }, /* @__PURE__ */ import_react9.default.createElement(Pack, {
+      pack,
+      colored: packsFilter.includes(pack),
+      condensed: false
+    })))))), tiers.map((tier) => /* @__PURE__ */ import_react9.default.createElement(Tier, __spreadValues({
+      key: tier.tier
+    }, tier))), /* @__PURE__ */ import_react9.default.createElement(Blurb, null));
+  }
+  function applyFilter(all, packsFilter, nameFilter) {
+    let filtered = all.filter((it) => {
+      var _a;
+      return (_a = it.packs) == null ? void 0 : _a.some((pack) => packsFilter.includes(pack));
+    });
+    if (nameFilter) {
+      let sanitisedNameFilter = nameFilter.toLowerCase();
+      filtered = filtered.filter((pet) => pet.name.toLowerCase().indexOf(sanitisedNameFilter) != -1);
+    }
+    return filtered;
+  }
+
   // src/website/components/PetPage.tsx
   var import_react12 = __toModule(require_react());
+
+  // src/website/components/Pet.tsx
+  var import_react11 = __toModule(require_react());
+
+  // src/website/components/Status.tsx
+  var import_react10 = __toModule(require_react());
+  function Status(props) {
+    return /* @__PURE__ */ import_react10.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200 italic"
+    }, getStatusDescription(props.status));
+  }
+  function getStatusDescription(status) {
+    switch (status.name) {
+      case "Weak":
+        return "Weak: Take 5 extra damage.";
+      case "CoconutShield":
+        return "Coconut Shield: Ignore damage once.";
+      case "HoneyBee":
+        return "Honey Bee: Summon a 1/1 Bee after fainting.";
+      case "BoneAttack":
+        return "Bone Attack: Attack for 5 more damage.";
+      case "GarlicArmor":
+        return "Garlic Armor: Take 2 less damage.";
+      case "SplashAttack":
+        return "Splash Attack: Attack second enemy for 5 damage.";
+      case "MelonArmor":
+        return "Melon Armor: Take 20 damage less, once.";
+      case "ExtraLife":
+        return "Extra Life: Come back as a 1/1 after fainting";
+      case "SteakAttack":
+        return "Steak Attack: Attack for 20 more damage, once.";
+      case "PoisinAttack":
+        return "Poisin Attack: Knock out any animal hit by this.";
+      default:
+        throw new Error(`Unknown status: ${status.name}`);
+    }
+  }
+
+  // src/website/components/Pet.tsx
+  function Pet(props) {
+    return /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm"
+    }, /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "p-3 flex flex-row justify-between"
+    }, /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "text-xl font-medium"
+    }, props.pet.name), /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: ""
+    }, "\u2694\uFE0F ", props.pet.baseAttack, " / \u{1F496} ", props.pet.baseHealth)), /* @__PURE__ */ import_react11.default.createElement("img", {
+      className: "mx-20",
+      src: `/assets/${sanitiseName(props.pet.name)}.svg`
+    }), /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "p-3"
+    }, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react11.default.createElement(Pack, {
+      pack,
+      key: index2,
+      colored: true,
+      condensed: false
+    }))), props.pet.notes ? /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "p-3 border-t border-gray-700 text-gray-200 italic"
+    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react11.default.createElement(Ability, {
+      level: 1,
+      ability: props.pet.level1Ability
+    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react11.default.createElement(Ability, {
+      level: 2,
+      ability: props.pet.level2Ability
+    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react11.default.createElement(Ability, {
+      level: 3,
+      ability: props.pet.level3Ability
+    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react11.default.createElement(Status, {
+      status: props.pet.status
+    }) : null);
+  }
+  function Ability(props) {
+    return /* @__PURE__ */ import_react11.default.createElement("div", {
+      className: "p-3 border-t border-gray-700 text-gray-200"
+    }, LevelLabel(props.level), " ", props.ability.description);
+  }
+  function LevelLabel(level) {
+    switch (level) {
+      case 1:
+        return "1\uFE0F\u20E3";
+      case 2:
+        return "2\uFE0F\u20E3";
+      case 3:
+        return "3\uFE0F\u20E3";
+      default:
+        return "\u2757";
+    }
+  }
+
+  // src/website/components/PetPage.tsx
   function PetPage(props) {
     return /* @__PURE__ */ import_react12.default.createElement(import_react12.default.Fragment, null, /* @__PURE__ */ import_react12.default.createElement(Link, {
       to: "/"
@@ -29010,11 +29048,46 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/FoodPage.tsx
+  var import_react14 = __toModule(require_react());
+
+  // src/website/components/Food.tsx
   var import_react13 = __toModule(require_react());
+  function Food(props) {
+    return /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "p-3 flex flex-row justify-between"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "text-xl font-medium"
+    }, props.food.name)), /* @__PURE__ */ import_react13.default.createElement("img", {
+      className: "mx-20",
+      src: `/assets/${sanitiseName(props.food.name)}.svg`
+    }), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "p-3"
+    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react13.default.createElement(Pack, {
+      pack,
+      key: index2,
+      colored: true,
+      condensed: false
+    }))), props.food.notes ? /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200 italic"
+    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react13.default.createElement(Ability2, {
+      ability: props.food.ability
+    }) : null);
+  }
+  function Ability2(props) {
+    return /* @__PURE__ */ import_react13.default.createElement(import_react13.default.Fragment, null, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "p-3 border-t border-gray-500 text-gray-200"
+    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react13.default.createElement(Status, {
+      status: props.ability.effect.status
+    }) : null);
+  }
+
+  // src/website/components/FoodPage.tsx
   function FoodPage(props) {
-    return /* @__PURE__ */ import_react13.default.createElement(import_react13.default.Fragment, null, /* @__PURE__ */ import_react13.default.createElement(Link, {
+    return /* @__PURE__ */ import_react14.default.createElement(import_react14.default.Fragment, null, /* @__PURE__ */ import_react14.default.createElement(Link, {
       to: "/"
-    }, "Home"), /* @__PURE__ */ import_react13.default.createElement(Food, {
+    }, "Home"), /* @__PURE__ */ import_react14.default.createElement(Food, {
       food: props.food
     }));
   }
@@ -29032,7 +29105,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!pet) {
       throw new Error(`Could not find pet ${petName}`);
     }
-    return /* @__PURE__ */ import_react14.default.createElement(PetPage, {
+    return /* @__PURE__ */ import_react15.default.createElement(PetPage, {
       pet
     });
   }
@@ -29042,21 +29115,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!theFood) {
       throw new Error(`Could not find ${foodName}`);
     }
-    return /* @__PURE__ */ import_react14.default.createElement(FoodPage, {
+    return /* @__PURE__ */ import_react15.default.createElement(FoodPage, {
       food: theFood
     });
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react14.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react14.default.createElement(Route, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react15.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react15.default.createElement(Route, {
     exact: true,
     path: "/"
-  }, /* @__PURE__ */ import_react14.default.createElement(Homepage, {
+  }, /* @__PURE__ */ import_react15.default.createElement(Homepage, {
     pets: pets2,
     food: food2
-  })), /* @__PURE__ */ import_react14.default.createElement(Route, {
+  })), /* @__PURE__ */ import_react15.default.createElement(Route, {
     exact: true,
     path: "/pet/:petName",
     component: PetPageWrapper
-  }), /* @__PURE__ */ import_react14.default.createElement(Route, {
+  }), /* @__PURE__ */ import_react15.default.createElement(Route, {
     exact: true,
     path: "/food/:foodName",
     component: FoodPageWrapper

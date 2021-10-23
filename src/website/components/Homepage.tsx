@@ -37,7 +37,7 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
             onChange={(e) => setNameFilter(e.target.value)}
           />
           <div>
-            <span className="p-3">Include Packs:</span>
+            <span className="p-3">Toggle Packs:</span>
             {allPacks.map((pack, index) => (
               <a
                 onClick={() => {
@@ -49,7 +49,11 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
                 }}
                 key={index}
               >
-                <Pack pack={pack} colored={packsFilter.includes(pack)} />
+                <Pack
+                  pack={pack}
+                  colored={packsFilter.includes(pack)}
+                  condensed={false}
+                />
               </a>
             ))}
           </div>

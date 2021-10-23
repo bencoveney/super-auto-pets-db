@@ -3,7 +3,8 @@
     "**/*.js": {"when": "$(basename).ts"},
     "**/*?.js": {
       "when": "$(basename).tsx"
-    }
+    },
+    "**/node_modules": true,
   },
   "search.exclude": {
     "**/node_modules": true,

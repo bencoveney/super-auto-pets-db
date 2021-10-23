@@ -13,7 +13,7 @@ function Food(props) {
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
             react_1.default.createElement("div", { className: "text-xl font-medium" }, props.food.name)),
         react_1.default.createElement("img", { className: "mx-20", src: `/assets/${(0, utils_1.sanitiseName)(props.food.name)}.svg` }),
-        react_1.default.createElement("div", { className: "p-3" }, (props.food.packs || []).map((pack, index) => (react_1.default.createElement(Pack_1.Pack, { pack: pack, key: index, colored: true })))),
+        react_1.default.createElement("div", { className: "p-3" }, (props.food.packs || []).map((pack, index) => (react_1.default.createElement(Pack_1.Pack, { pack: pack, key: index, colored: true, condensed: false })))),
         props.food.notes ? (react_1.default.createElement("div", { className: "p-3 border-t border-gray-500 text-gray-200 italic" }, props.food.notes)) : null,
         props.food.ability ? react_1.default.createElement(Ability, { ability: props.food.ability }) : null));
 }

@@ -43,7 +43,7 @@ function Homepage(props) {
             react_1.default.createElement("div", { className: "flex flex-col md:flex-row items-center" },
                 react_1.default.createElement("input", { type: "search", className: "bg-gray-900 shadow rounded border-0 p-1", placeholder: "Search by name", value: nameFilter, onChange: (e) => setNameFilter(e.target.value) }),
                 react_1.default.createElement("div", null,
-                    react_1.default.createElement("span", { className: "p-3" }, "Include Packs:"),
+                    react_1.default.createElement("span", { className: "p-3" }, "Toggle Packs:"),
                     allPacks.map((pack, index) => (react_1.default.createElement("a", { onClick: () => {
                             if (packsFilter.includes(pack)) {
                                 setPacksFilter(packsFilter.filter((it) => it != pack));
@@ -52,7 +52,7 @@ function Homepage(props) {
                                 setPacksFilter(packsFilter.concat(pack));
                             }
                         }, key: index },
-                        react_1.default.createElement(Pack_1.Pack, { pack: pack, colored: packsFilter.includes(pack) }))))))),
+                        react_1.default.createElement(Pack_1.Pack, { pack: pack, colored: packsFilter.includes(pack), condensed: false }))))))),
         tiers.map((tier) => (react_1.default.createElement(Tier_1.Tier, Object.assign({ key: tier.tier }, tier)))),
         react_1.default.createElement(Blurb_1.Blurb, null)));
 }

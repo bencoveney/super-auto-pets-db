@@ -16,7 +16,7 @@ export function Food(props: { food: FoodType }) {
       />
       <div className="p-3">
         {(props.food.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} colored={true} />
+          <Pack pack={pack} key={index} colored={true} condensed={false} />
         ))}
       </div>
       {props.food.notes ? (

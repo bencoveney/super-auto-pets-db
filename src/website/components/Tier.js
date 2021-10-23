@@ -5,11 +5,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tier = void 0;
 const react_1 = __importDefault(require("react"));
-const List_1 = require("./List");
+const Tiles_1 = require("./Tiles");
 function Tier(props) {
-    return (react_1.default.createElement("div", { key: props.tier, className: "py-3" },
-        react_1.default.createElement("h2", { className: "px-3 text-xl font-medium" }, getTierName(props.tier)),
-        react_1.default.createElement(List_1.List, { pets: props.pets, food: props.food })));
+    return (react_1.default.createElement("div", { key: props.tier },
+        react_1.default.createElement("h2", { className: "px-3 text-xl font-medium sticky block top-0 z-10 bg-gray-800 py-2" }, getTierName(props.tier)),
+        react_1.default.createElement(Tiles_1.Tiles, { pets: props.pets, food: props.food })));
 }
 exports.Tier = Tier;
 function getTierName(tier) {

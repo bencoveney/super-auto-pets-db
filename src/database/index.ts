@@ -100,6 +100,8 @@ export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
 export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
 
+export type Stat = number | "?";
+
 export interface Pet extends HasImage, Filterable {
   // The name of the pet.
   name: string;
@@ -107,9 +109,9 @@ export interface Pet extends HasImage, Filterable {
   // The tier the food appears in.
   tier: Tier;
   // The standard starting attack points for the pet.
-  baseAttack: number | "?";
+  baseAttack: Stat;
   // The standard starting health points for the pet.
-  baseHealth: number | "?";
+  baseHealth: Stat;
   // Which packs the pet appears in.
   packs?: Pack[];
   // The ability the pet has at level 1.

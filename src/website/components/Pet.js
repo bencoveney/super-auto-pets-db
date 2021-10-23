@@ -18,7 +18,7 @@ function Pet(props) {
                 " / \uD83D\uDC96 ",
                 props.pet.baseHealth)),
         react_1.default.createElement("img", { className: "mx-20", src: `/assets/${(0, utils_1.sanitiseName)(props.pet.name)}.svg` }),
-        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map((pack, index) => (react_1.default.createElement(Pack_1.Pack, { pack: pack, key: index, colored: true })))),
+        react_1.default.createElement("div", { className: "p-3" }, (props.pet.packs || []).map((pack, index) => (react_1.default.createElement(Pack_1.Pack, { pack: pack, key: index, colored: true, condensed: false })))),
         props.pet.notes ? (react_1.default.createElement("div", { className: "p-3 border-t border-gray-700 text-gray-200 italic" }, props.pet.notes)) : null,
         props.pet.level1Ability ? (react_1.default.createElement(Ability, { level: 1, ability: props.pet.level1Ability })) : null,
         props.pet.level2Ability ? (react_1.default.createElement(Ability, { level: 2, ability: props.pet.level2Ability })) : null,

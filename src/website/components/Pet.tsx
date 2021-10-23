@@ -19,7 +19,7 @@ export function Pet(props: { pet: PetType }) {
       />
       <div className="p-3">
         {(props.pet.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} colored={true} />
+          <Pack pack={pack} key={index} colored={true} condensed={false} />
         ))}
       </div>
       {props.pet.notes ? (
