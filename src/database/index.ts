@@ -7,6 +7,7 @@ import { garlic } from "./food/garlic";
 import { honey } from "./food/honey";
 import { meatBone } from "./food/meatBone";
 import { melon } from "./food/melon";
+import { milk } from "./food/milk";
 import { mushroom } from "./food/mushroom";
 import { pear } from "./food/pear";
 import { pizza } from "./food/pizza";
@@ -29,9 +30,9 @@ import { caterpillar } from "./pets/caterpillar";
 import { chicken } from "./pets/chicken";
 import { cow } from "./pets/cow";
 import { crab } from "./pets/crab";
-import { cricket } from "./pets/cricket";
+import { cricket, cricketSummoned } from "./pets/cricket";
 import { crocodile } from "./pets/crocodile";
-import { deer } from "./pets/deer";
+import { busSummoned, deer } from "./pets/deer";
 import { dodo } from "./pets/dodo";
 import { dog } from "./pets/dog";
 import { dolphin } from "./pets/dolphin";
@@ -42,7 +43,7 @@ import { eagle } from "./pets/eagle";
 import { elephant } from "./pets/elephant";
 import { fish } from "./pets/fish";
 import { flamingo } from "./pets/flamingo";
-import { fly } from "./pets/fly";
+import { fly, flySummoned } from "./pets/fly";
 import { giraffe } from "./pets/giraffe";
 import { goat } from "./pets/goat";
 import { gorilla } from "./pets/gorilla";
@@ -70,14 +71,14 @@ import { pig } from "./pets/pig";
 import { poodle } from "./pets/poodle";
 import { puppy } from "./pets/puppy";
 import { rabbit } from "./pets/rabbit";
-import { rat } from "./pets/rat";
+import { dirtyRatSummoned, rat } from "./pets/rat";
 import { rhino } from "./pets/rhino";
-import { rooster } from "./pets/rooster";
+import { chick, rooster } from "./pets/rooster";
 import { sauropod } from "./pets/sauropod";
 import { scorpion } from "./pets/scorpion";
 import { seal } from "./pets/seal";
 import { shark } from "./pets/shark";
-import { sheep } from "./pets/sheep";
+import { ramSummoned, sheep } from "./pets/sheep";
 import { shrimp } from "./pets/shrimp";
 import { skunk } from "./pets/skunk";
 import { sloth } from "./pets/sloth";
@@ -97,16 +98,18 @@ import { worm } from "./pets/worm";
 
 export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
+export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
+
 export interface Pet extends HasImage, Filterable {
   // The name of the pet.
   name: string;
   notes?: string;
   // The tier the food appears in.
-  tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
+  tier: Tier;
   // The standard starting attack points for the pet.
-  baseAttack: number;
+  baseAttack: number | "?";
   // The standard starting health points for the pet.
-  baseHealth: number;
+  baseHealth: number | "?";
   // Which packs the pet appears in.
   packs?: Pack[];
   // The ability the pet has at level 1.
@@ -115,6 +118,7 @@ export interface Pet extends HasImage, Filterable {
   level2Ability?: Ability;
   // The ability the pet has at level 3.
   level3Ability?: Ability;
+  status?: StatusEffect;
 }
 
 export interface Food extends HasImage, Filterable {
@@ -122,7 +126,7 @@ export interface Food extends HasImage, Filterable {
   name: string;
   notes?: string;
   // The tier the food appears in.
-  tier: 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
+  tier: Tier;
   // Which packs the food appears in.
   packs?: Pack[];
   // The ability the food item has.
@@ -261,7 +265,8 @@ export type Effect =
   | RefillShopsEffect
   | FoodMultiplierEffect
   | RepeatAbilityEffect
-  | FaintEffect;
+  | FaintEffect
+  | SummonRandomPetEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -303,6 +308,14 @@ export interface SummonPetEffect {
   pet: Pet;
 }
 
+export interface SummonRandomPetEffect {
+  kind: "SummonRandomPet";
+  tier: Tier;
+  baseAttack?: number;
+  baseAealth?: number;
+  level?: number;
+}
+
 export interface GainGoldEffect {
   kind: "GainGold";
   amount: number;
@@ -331,19 +344,18 @@ export interface SwallowEffect {
   target: Target;
 }
 
-// TODO: Status Effects.
 export interface StatusEffect {
   name:
-    | "Weak" // Take 5 extra damage.
-    | "CoconutShield" // Ignore damage once.
-    | "HoneyBee" // Summon a 1/1 Bee after fainting.
-    | "BoneAttack" // Attack for 5 more damage.
-    | "GarlicArmor" // Take 2 less damage.
-    | "SplashAttack" // Attack second enemy for 5 damage.
-    | "MelonArmor" // Take 20 damage less, once.
+    | "Weak"
+    | "CoconutShield"
+    | "HoneyBee"
+    | "BoneAttack"
+    | "GarlicArmor"
+    | "SplashAttack"
+    | "MelonArmor"
     | "ExtraLife"
     | "SteakAttack"
-    | "PoisinAttack"; // Peanut?;
+    | "PoisinAttack";
 }
 
 export interface EvolveEffect {
@@ -465,6 +477,13 @@ const pets: Pet[] = [
   snake,
   tiger,
   tyrannosaurus,
+  // Summoned
+  cricketSummoned,
+  busSummoned,
+  flySummoned,
+  dirtyRatSummoned,
+  chick,
+  ramSummoned,
 ];
 
 export function getPets(): Pet[] {
@@ -494,6 +513,8 @@ const food: Food[] = [
   mushroom,
   pizza,
   steak,
+  // Summoned
+  milk,
 ];
 
 export function getFood(): Food[] {

@@ -31,6 +31,7 @@ function getStatusDescription(status) {
             return "Steak Attack: Attack for 20 more damage, once.";
         case "PoisinAttack":
             return "Poisin Attack: Knock out any animal hit by this.";
+        default:
+            throw new Error(`Unknown status: ${status.name}`);
     }
-    throw new Error(`Missing status: ${status.name}`);
 }

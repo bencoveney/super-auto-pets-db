@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sheep = void 0;
-const ramSummoned = {
+exports.sheep = exports.ramSummoned = void 0;
+exports.ramSummoned = {
     name: "Ram",
     image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40F}",
     },
+    packs: ["StandardPack", "ExpansionPack1"],
     tier: "Summoned",
-    baseAttack: -1,
-    baseHealth: -1,
+    baseAttack: "?",
+    baseHealth: "?",
 };
 function sheepAbility(level) {
     return {
@@ -20,7 +21,7 @@ function sheepAbility(level) {
         },
         effect: {
             kind: "SummonPet",
-            pet: Object.assign(Object.assign({}, ramSummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
+            pet: Object.assign(Object.assign({}, exports.ramSummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
         },
     };
 }

@@ -2,24 +2,18 @@ import { Ability, Trigger, Pet } from "..";
 
 function spiderAbility(level: number): Ability {
   return {
-    description: `Faint: Summon one tier 3 animal as a ${level}/${level}.`,
+    description: `Faint: Summon one tier 3 animal as a ${level * 2}/${
+      level * 2
+    }.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "Self",
     },
     effect: {
-      kind: "SummonPet",
-      pet: {
-        // TODO: Summon correct pet.
-        name: "Tier 3 animal",
-        image: {
-          source: "noto-emoji",
-          unicodeCodePoint: "\u{1F578}\u{FE0F}",
-        },
-        tier: "Summoned",
-        baseAttack: level * 2,
-        baseHealth: level * 2,
-      },
+      kind: "SummonRandomPet",
+      tier: 3,
+      baseAttack: level * 2,
+      baseAealth: level * 2,
     },
   };
 }

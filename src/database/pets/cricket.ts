@@ -1,14 +1,15 @@
 import { Ability, Pet, Trigger } from "..";
 
-const cricketSummoned: Pet = {
-  name: "Cricket",
+export const cricketSummoned: Pet = {
+  name: "Zombie Cricket",
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F997}",
   },
+  packs: ["StandardPack", "ExpansionPack1"],
   tier: "Summoned",
-  baseAttack: -1,
-  baseHealth: -1,
+  baseAttack: "?",
+  baseHealth: "?",
 };
 
 function cricketAbility(level: number): Ability {

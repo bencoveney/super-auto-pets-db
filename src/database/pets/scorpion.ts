@@ -1,6 +1,5 @@
 import { Pet } from "..";
 
-// TODO: Represent the fact that it knocks out enemies.
 export const scorpion = {
   name: "Scorpion",
   image: {
@@ -11,4 +10,7 @@ export const scorpion = {
   baseAttack: 1,
   baseHealth: 1,
   packs: ["StandardPack", "ExpansionPack1"],
+  status: {
+    name: "PoisinAttack",
+  },
 } as Pet;

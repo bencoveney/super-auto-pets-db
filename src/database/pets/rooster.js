@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.rooster = void 0;
-const chick = {
+exports.rooster = exports.chick = void 0;
+exports.chick = {
     name: "Chick",
     image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F424}",
     },
+    packs: ["StandardPack", "ExpansionPack1"],
     tier: "Summoned",
-    baseAttack: -1,
-    baseHealth: -1,
+    baseAttack: "?",
+    baseHealth: 1,
 };
 function roosterAbility(level) {
     return {
@@ -20,7 +21,7 @@ function roosterAbility(level) {
         },
         effect: {
             kind: "SummonPet",
-            pet: chick,
+            pet: exports.chick,
             // TODO: Represent copied attack value.
         },
     };

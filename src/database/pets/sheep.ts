@@ -1,14 +1,15 @@
 import { Pet, Ability, Trigger } from "..";
 
-const ramSummoned: Pet = {
+export const ramSummoned: Pet = {
   name: "Ram",
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F40F}",
   },
+  packs: ["StandardPack", "ExpansionPack1"],
   tier: "Summoned",
-  baseAttack: -1,
-  baseHealth: -1,
+  baseAttack: "?",
+  baseHealth: "?",
 };
 
 function sheepAbility(level: number): Ability {

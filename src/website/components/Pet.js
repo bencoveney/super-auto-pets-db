@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pet = void 0;
 const react_1 = __importDefault(require("react"));
 const Pack_1 = require("./Pack");
+const Status_1 = require("./Status");
 function Pet(props) {
     return (react_1.default.createElement("div", { className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start" },
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
@@ -20,7 +21,8 @@ function Pet(props) {
         props.pet.notes ? (react_1.default.createElement("div", { className: "p-3 border-t border-gray-700 text-gray-200 italic" }, props.pet.notes)) : null,
         props.pet.level1Ability ? (react_1.default.createElement(Ability, { level: 1, ability: props.pet.level1Ability })) : null,
         props.pet.level2Ability ? (react_1.default.createElement(Ability, { level: 2, ability: props.pet.level2Ability })) : null,
-        props.pet.level3Ability ? (react_1.default.createElement(Ability, { level: 3, ability: props.pet.level3Ability })) : null));
+        props.pet.level3Ability ? (react_1.default.createElement(Ability, { level: 3, ability: props.pet.level3Ability })) : null,
+        !!props.pet.status ? react_1.default.createElement(Status_1.Status, { status: props.pet.status }) : null));
 }
 exports.Pet = Pet;
 function Ability(props) {

@@ -11,9 +11,6 @@ function cowAbility(level) {
         effect: {
             kind: "RefillShops",
             shop: "Food",
-            // TODO: Represent milk.
-            // Give an animal +2/+2
-            // This is free!
             food: "Milk",
         },
     };

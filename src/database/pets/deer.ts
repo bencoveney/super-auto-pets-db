@@ -1,16 +1,19 @@
 import { Ability, Pet, Trigger } from "..";
 
-const busSummoned: Pet = {
+export const busSummoned: Pet = {
   name: "Bus",
   image: {
     source: "noto-emoji",
     // TODO: Incorrect. Not sure where the right bus should come from
     unicodeCodePoint: "\u{1F68D}",
   },
+  packs: ["StandardPack", "ExpansionPack1"],
   tier: "Summoned",
-  baseAttack: -1,
-  baseHealth: -1,
-  // TODO: Represent Splash Attack
+  baseAttack: "?",
+  baseHealth: "?",
+  status: {
+    name: "SplashAttack",
+  },
 };
 
 function deerAbility(level: number): Ability {

@@ -3,8 +3,22 @@
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
   var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getOwnPropSymbols = Object.getOwnPropertySymbols;
   var __getProtoOf = Object.getPrototypeOf;
   var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __propIsEnum = Object.prototype.propertyIsEnumerable;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+  var __spreadValues = (a, b) => {
+    for (var prop in b || (b = {}))
+      if (__hasOwnProp.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols)
+      for (var prop of __getOwnPropSymbols(b)) {
+        if (__propIsEnum.call(b, prop))
+          __defNormalProp(a, prop, b[prop]);
+      }
+    return a;
+  };
   var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
   var __commonJS = (cb, mod) => function __require() {
     return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
@@ -2440,11 +2454,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React9 = require_react();
+          var React10 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React9.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React10.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2476,7 +2490,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React9) {
+          if (!React10) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3692,7 +3706,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React9.Children.forEach(children, function(child) {
+            React10.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3703,7 +3717,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React9.Children.forEach(props.children, function(child) {
+                React10.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10896,7 +10910,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React9.Component().refs;
+          var emptyRefsObject = new React10.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -20420,11 +20434,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   });
 
   // src/website/live/index.tsx
-  var import_react8 = __toModule(require_react());
+  var import_react9 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/website/components/Homepage.tsx
-  var import_react7 = __toModule(require_react());
+  var import_react8 = __toModule(require_react());
 
   // src/website/components/Blurb.tsx
   var import_react = __toModule(require_react());
@@ -20454,12 +20468,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, "api.json"), ".")));
   }
 
-  // src/website/components/List.tsx
-  var import_react6 = __toModule(require_react());
-
-  // src/website/components/Pet.tsx
-  var import_react3 = __toModule(require_react());
-
   // src/website/components/Pack.tsx
   var import_react2 = __toModule(require_react());
   function Pack(props) {
@@ -20474,63 +20482,19 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, packInfo.name);
   }
 
-  // src/website/components/Pet.tsx
-  function Pet(props) {
-    return /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start"
-    }, /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "text-xl font-medium"
-    }, props.pet.name), /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: ""
-    }, "\u2694\uFE0F ", props.pet.baseAttack, " / \u{1F496} ", props.pet.baseHealth)), /* @__PURE__ */ import_react3.default.createElement("img", {
-      className: "mx-20",
-      src: `assets/${props.pet.name.toLowerCase().replace(/\s/g, "_")}.svg`
-    }), /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "p-3"
-    }, (props.pet.packs || []).map((pack, index) => /* @__PURE__ */ import_react3.default.createElement(Pack, {
-      pack,
-      key: index,
-      colored: true
-    }))), props.pet.notes ? /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200 italic"
-    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react3.default.createElement(Ability, {
-      level: 1,
-      ability: props.pet.level1Ability
-    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react3.default.createElement(Ability, {
-      level: 2,
-      ability: props.pet.level2Ability
-    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react3.default.createElement(Ability, {
-      level: 3,
-      ability: props.pet.level3Ability
-    }) : null);
-  }
-  function Ability(props) {
-    return /* @__PURE__ */ import_react3.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200"
-    }, LevelLabel(props.level), " ", props.ability.description);
-  }
-  function LevelLabel(level) {
-    switch (level) {
-      case 1:
-        return "1\uFE0F\u20E3";
-      case 2:
-        return "2\uFE0F\u20E3";
-      case 3:
-        return "3\uFE0F\u20E3";
-      default:
-        return "\u2757";
-    }
-  }
+  // src/website/components/Tier.tsx
+  var import_react7 = __toModule(require_react());
 
-  // src/website/components/Food.tsx
-  var import_react5 = __toModule(require_react());
+  // src/website/components/List.tsx
+  var import_react6 = __toModule(require_react());
+
+  // src/website/components/Pet.tsx
+  var import_react4 = __toModule(require_react());
 
   // src/website/components/Status.tsx
-  var import_react4 = __toModule(require_react());
+  var import_react3 = __toModule(require_react());
   function Status(props) {
-    return /* @__PURE__ */ import_react4.default.createElement("div", {
+    return /* @__PURE__ */ import_react3.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200 italic"
     }, getStatusDescription(props.status));
   }
@@ -20556,11 +20520,65 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         return "Steak Attack: Attack for 20 more damage, once.";
       case "PoisinAttack":
         return "Poisin Attack: Knock out any animal hit by this.";
+      default:
+        throw new Error(`Unknown status: ${status.name}`);
     }
-    throw new Error(`Missing status: ${status.name}`);
+  }
+
+  // src/website/components/Pet.tsx
+  function Pet(props) {
+    return /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start"
+    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 flex flex-row justify-between"
+    }, /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "text-xl font-medium"
+    }, props.pet.name), /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: ""
+    }, "\u2694\uFE0F ", props.pet.baseAttack, " / \u{1F496} ", props.pet.baseHealth)), /* @__PURE__ */ import_react4.default.createElement("img", {
+      className: "mx-20",
+      src: `assets/${props.pet.name.toLowerCase().replace(/\s/g, "_")}.svg`
+    }), /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3"
+    }, (props.pet.packs || []).map((pack, index) => /* @__PURE__ */ import_react4.default.createElement(Pack, {
+      pack,
+      key: index,
+      colored: true
+    }))), props.pet.notes ? /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 border-t border-gray-700 text-gray-200 italic"
+    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
+      level: 1,
+      ability: props.pet.level1Ability
+    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
+      level: 2,
+      ability: props.pet.level2Ability
+    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react4.default.createElement(Ability, {
+      level: 3,
+      ability: props.pet.level3Ability
+    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react4.default.createElement(Status, {
+      status: props.pet.status
+    }) : null);
+  }
+  function Ability(props) {
+    return /* @__PURE__ */ import_react4.default.createElement("div", {
+      className: "p-3 border-t border-gray-700 text-gray-200"
+    }, LevelLabel(props.level), " ", props.ability.description);
+  }
+  function LevelLabel(level) {
+    switch (level) {
+      case 1:
+        return "1\uFE0F\u20E3";
+      case 2:
+        return "2\uFE0F\u20E3";
+      case 3:
+        return "3\uFE0F\u20E3";
+      default:
+        return "\u2757";
+    }
   }
 
   // src/website/components/Food.tsx
+  var import_react5 = __toModule(require_react());
   function Food(props) {
     return /* @__PURE__ */ import_react5.default.createElement("div", {
       className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start"
@@ -20604,33 +20622,61 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     })));
   }
 
+  // src/website/components/Tier.tsx
+  function Tier(props) {
+    return /* @__PURE__ */ import_react7.default.createElement("div", {
+      key: props.tier,
+      className: "py-3"
+    }, /* @__PURE__ */ import_react7.default.createElement("h2", {
+      className: "px-3 text-xl font-medium"
+    }, getTierName(props.tier)), /* @__PURE__ */ import_react7.default.createElement(List, {
+      pets: props.pets,
+      food: props.food
+    }));
+  }
+  function getTierName(tier) {
+    switch (tier) {
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        return `tier ${tier}`;
+      case "Summoned":
+        return "Summoned";
+      default:
+        throw new Error(`Unknown tier: ${tier}`);
+    }
+  }
+
   // src/website/components/Homepage.tsx
   var allPacks = ["StandardPack", "ExpansionPack1"];
   function Homepage(props) {
-    const [packsFilter, setPacksFilter] = (0, import_react7.useState)(allPacks);
-    const [nameFilter, setNameFilter] = (0, import_react7.useState)("");
+    const [packsFilter, setPacksFilter] = (0, import_react8.useState)(allPacks);
+    const [nameFilter, setNameFilter] = (0, import_react8.useState)("");
     let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
     let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
-    const tiers = [1, 2, 3, 4, 5, 6].map((tier) => ({
+    const tiers = [1, 2, 3, 4, 5, 6, "Summoned"].map((tier) => ({
       tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
       food: filteredFood.filter((food3) => food3.tier == tier)
     })).filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
-    return /* @__PURE__ */ import_react7.default.createElement(import_react7.default.Fragment, null, /* @__PURE__ */ import_react7.default.createElement("div", {
+    return /* @__PURE__ */ import_react8.default.createElement(import_react8.default.Fragment, null, /* @__PURE__ */ import_react8.default.createElement("div", {
       className: "p-3 flex flex-col lg:flex-row justify-between items-center"
-    }, /* @__PURE__ */ import_react7.default.createElement("h1", {
+    }, /* @__PURE__ */ import_react8.default.createElement("h1", {
       className: "text-2xl font-medium"
-    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react7.default.createElement("div", {
+    }, "Super Auto Pets Database"), /* @__PURE__ */ import_react8.default.createElement("div", {
       className: "flex flex-col md:flex-row items-center"
-    }, /* @__PURE__ */ import_react7.default.createElement("input", {
+    }, /* @__PURE__ */ import_react8.default.createElement("input", {
       type: "search",
       className: "bg-gray-900 shadow rounded border-0 p-1",
       placeholder: "Search by name",
       value: nameFilter,
       onChange: (e) => setNameFilter(e.target.value)
-    }), /* @__PURE__ */ import_react7.default.createElement("div", null, /* @__PURE__ */ import_react7.default.createElement("span", {
+    }), /* @__PURE__ */ import_react8.default.createElement("div", null, /* @__PURE__ */ import_react8.default.createElement("span", {
       className: "p-3"
-    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react7.default.createElement("a", {
+    }, "Include Packs:"), allPacks.map((pack, index) => /* @__PURE__ */ import_react8.default.createElement("a", {
       onClick: () => {
         if (packsFilter.includes(pack)) {
           setPacksFilter(packsFilter.filter((it) => it != pack));
@@ -20639,18 +20685,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       key: index
-    }, /* @__PURE__ */ import_react7.default.createElement(Pack, {
+    }, /* @__PURE__ */ import_react8.default.createElement(Pack, {
       pack,
       colored: packsFilter.includes(pack)
-    })))))), tiers.map((tier) => /* @__PURE__ */ import_react7.default.createElement("div", {
-      key: tier.tier,
-      className: "py-3"
-    }, /* @__PURE__ */ import_react7.default.createElement("h2", {
-      className: "px-3 text-xl font-medium"
-    }, "Tier ", tier.tier), /* @__PURE__ */ import_react7.default.createElement(List, {
-      pets: tier.pets,
-      food: tier.food
-    }))), /* @__PURE__ */ import_react7.default.createElement(Blurb, null));
+    })))))), tiers.map((tier) => /* @__PURE__ */ import_react8.default.createElement(Tier, __spreadValues({}, tier))), /* @__PURE__ */ import_react8.default.createElement(Blurb, null));
   }
   function applyFilter(all, packsFilter, nameFilter) {
     let filtered = all.filter((it) => {
@@ -20934,11 +20972,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Cricket",
+            name: "Zombie Cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
@@ -20954,11 +20996,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Cricket",
+            name: "Zombie Cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
@@ -20974,11 +21020,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Cricket",
+            name: "Zombie Cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 3,
             baseHealth: 3
@@ -22033,6 +22083,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
@@ -22040,7 +22094,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "Faint: summon one 2/2 Dirty Rat for the opponent that betrays him.",
+        description: "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -22053,6 +22107,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
@@ -22060,7 +22118,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Faint: summon one 3/3 Dirty Rat for the opponent that betrays him.",
+        description: "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -22073,6 +22131,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
@@ -22156,63 +22218,42 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "ExpansionPack1"
       ],
       level1Ability: {
-        description: "Faint: Summon one tier 3 animal as a 1/1.",
-        trigger: "Faint",
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 3 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F578}\uFE0F"
-            },
-            tier: "Summoned",
-            baseAttack: 2,
-            baseHealth: 2
-          }
-        }
-      },
-      level2Ability: {
         description: "Faint: Summon one tier 3 animal as a 2/2.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
         },
         effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 3 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F578}\uFE0F"
-            },
-            tier: "Summoned",
-            baseAttack: 4,
-            baseHealth: 4
-          }
+          kind: "SummonRandomPet",
+          tier: 3,
+          baseAttack: 2,
+          baseAealth: 2
         }
       },
-      level3Ability: {
-        description: "Faint: Summon one tier 3 animal as a 3/3.",
+      level2Ability: {
+        description: "Faint: Summon one tier 3 animal as a 4/4.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
         },
         effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 3 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F578}\uFE0F"
-            },
-            tier: "Summoned",
-            baseAttack: 6,
-            baseHealth: 6
-          }
+          kind: "SummonRandomPet",
+          tier: 3,
+          baseAttack: 4,
+          baseAealth: 4
+        }
+      },
+      level3Ability: {
+        description: "Faint: Summon one tier 3 animal as a 6/6.",
+        trigger: "Faint",
+        triggeredBy: {
+          kind: "Self"
+        },
+        effect: {
+          kind: "SummonRandomPet",
+          tier: 3,
+          baseAttack: 6,
+          baseAealth: 6
         }
       }
     },
@@ -23060,6 +23101,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
@@ -23080,6 +23125,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 4,
             baseHealth: 4
@@ -23100,6 +23149,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 6,
             baseHealth: 6
@@ -23497,9 +23550,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 5,
-            baseHealth: 5
+            baseHealth: 5,
+            status: {
+              name: "SplashAttack"
+            }
           }
         }
       },
@@ -23517,9 +23577,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 10,
-            baseHealth: 10
+            baseHealth: 10,
+            status: {
+              name: "SplashAttack"
+            }
           }
         }
       },
@@ -23537,9 +23604,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
             baseAttack: 15,
-            baseHealth: 15
+            baseHealth: 15,
+            status: {
+              name: "SplashAttack"
+            }
           }
         }
       }
@@ -23992,9 +24066,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
+            baseAttack: "?",
+            baseHealth: 1
           }
         }
       },
@@ -24012,9 +24090,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
+            baseAttack: "?",
+            baseHealth: 1
           }
         }
       },
@@ -24032,9 +24114,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
             },
+            packs: [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
+            baseAttack: "?",
+            baseHealth: 1
           }
         }
       }
@@ -24395,17 +24481,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "Self"
         },
         effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 6 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F985}"
-            },
-            tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
-          }
+          kind: "SummonRandomPet",
+          tier: 6,
+          level: 1
         }
       },
       level2Ability: {
@@ -24415,17 +24493,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "Self"
         },
         effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 6 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F985}"
-            },
-            tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
-          }
+          kind: "SummonRandomPet",
+          tier: 6,
+          level: 2
         }
       },
       level3Ability: {
@@ -24435,17 +24505,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "Self"
         },
         effect: {
-          kind: "SummonPet",
-          pet: {
-            name: "Tier 6 animal",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F985}"
-            },
-            tier: "Summoned",
-            baseAttack: -1,
-            baseHealth: -1
-          }
+          kind: "SummonRandomPet",
+          tier: 6,
+          level: 3
         }
       }
     },
@@ -24691,7 +24753,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       packs: [
         "StandardPack",
         "ExpansionPack1"
-      ]
+      ],
+      status: {
+        name: "PoisinAttack"
+      }
     },
     {
       name: "Seal",
@@ -25014,6 +25079,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
             },
+            packs: [
+              "StandardPack"
+            ],
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
@@ -25034,6 +25102,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
             },
+            packs: [
+              "StandardPack"
+            ],
             tier: "Summoned",
             baseAttack: 4,
             baseHealth: 4
@@ -25054,6 +25125,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
             },
+            packs: [
+              "StandardPack"
+            ],
             tier: "Summoned",
             baseAttack: 6,
             baseHealth: 6
@@ -25543,6 +25617,92 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           untilEndOfBattle: false
         }
       }
+    },
+    {
+      name: "Zombie Cricket",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F997}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: "?",
+      baseHealth: "?"
+    },
+    {
+      name: "Bus",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F68D}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: "?",
+      baseHealth: "?",
+      status: {
+        name: "SplashAttack"
+      }
+    },
+    {
+      name: "Fly",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1FAB0}"
+      },
+      packs: [
+        "StandardPack"
+      ],
+      tier: "Summoned",
+      baseAttack: "?",
+      baseHealth: "?"
+    },
+    {
+      name: "Dirty Rat",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F400}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: 1,
+      baseHealth: 1
+    },
+    {
+      name: "Chick",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F424}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: "?",
+      baseHealth: 1
+    },
+    {
+      name: "Ram",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F40F}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: "?",
+      baseHealth: "?"
     }
   ];
   var food = [
@@ -25994,6 +26154,35 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           }
         }
       }
+    },
+    {
+      name: "Milk",
+      notes: "This is free!",
+      image: {
+        source: "twemoji",
+        unicodeCodePoint: "\u{1F95B}"
+      },
+      tier: "Summoned",
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      ability: {
+        description: "Give an animal +2/+2.",
+        triggeredBy: {
+          kind: "Self"
+        },
+        trigger: "Buy",
+        effect: {
+          kind: "ModifyStats",
+          target: {
+            kind: "PurchaseTarget"
+          },
+          attackAmount: 2,
+          healthAmount: 2,
+          untilEndOfBattle: false
+        }
+      }
     }
   ];
 
@@ -26004,7 +26193,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   if (!reactRoot) {
     throw new Error("Could not find react root");
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react8.default.createElement(Homepage, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react9.default.createElement(Homepage, {
     pets: pets2,
     food: food2
   }), reactRoot);

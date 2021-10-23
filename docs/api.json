@@ -268,11 +268,15 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
+            "name": "Zombie Cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -288,11 +292,15 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
+            "name": "Zombie Cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -308,11 +316,15 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Cricket",
+            "name": "Zombie Cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 3,
             "baseHealth": 3
@@ -1367,6 +1379,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1374,7 +1390,7 @@
         }
       },
       "level2Ability": {
-        "description": "Faint: summon one 2/2 Dirty Rat for the opponent that betrays him.",
+        "description": "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
@@ -1387,6 +1403,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1394,7 +1414,7 @@
         }
       },
       "level3Ability": {
-        "description": "Faint: summon one 3/3 Dirty Rat for the opponent that betrays him.",
+        "description": "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
@@ -1407,6 +1427,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
@@ -1490,63 +1514,42 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Faint: Summon one tier 3 animal as a 1/1.",
-        "trigger": "Faint",
-        "triggeredBy": {
-          "kind": "Self"
-        },
-        "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 3 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🕸️"
-            },
-            "tier": "Summoned",
-            "baseAttack": 2,
-            "baseHealth": 2
-          }
-        }
-      },
-      "level2Ability": {
         "description": "Faint: Summon one tier 3 animal as a 2/2.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
         "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 3 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🕸️"
-            },
-            "tier": "Summoned",
-            "baseAttack": 4,
-            "baseHealth": 4
-          }
+          "kind": "SummonRandomPet",
+          "tier": 3,
+          "baseAttack": 2,
+          "baseAealth": 2
         }
       },
-      "level3Ability": {
-        "description": "Faint: Summon one tier 3 animal as a 3/3.",
+      "level2Ability": {
+        "description": "Faint: Summon one tier 3 animal as a 4/4.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
         "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 3 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🕸️"
-            },
-            "tier": "Summoned",
-            "baseAttack": 6,
-            "baseHealth": 6
-          }
+          "kind": "SummonRandomPet",
+          "tier": 3,
+          "baseAttack": 4,
+          "baseAealth": 4
+        }
+      },
+      "level3Ability": {
+        "description": "Faint: Summon one tier 3 animal as a 6/6.",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "SummonRandomPet",
+          "tier": 3,
+          "baseAttack": 6,
+          "baseAealth": 6
         }
       }
     },
@@ -2394,6 +2397,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -2414,6 +2421,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
@@ -2434,6 +2445,10 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
@@ -2831,9 +2846,16 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 5,
-            "baseHealth": 5
+            "baseHealth": 5,
+            "status": {
+              "name": "SplashAttack"
+            }
           }
         }
       },
@@ -2851,9 +2873,16 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 10,
-            "baseHealth": 10
+            "baseHealth": 10,
+            "status": {
+              "name": "SplashAttack"
+            }
           }
         }
       },
@@ -2871,9 +2900,16 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
             "baseAttack": 15,
-            "baseHealth": 15
+            "baseHealth": 15,
+            "status": {
+              "name": "SplashAttack"
+            }
           }
         }
       }
@@ -3326,9 +3362,13 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
+            "baseAttack": "?",
+            "baseHealth": 1
           }
         }
       },
@@ -3346,9 +3386,13 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
+            "baseAttack": "?",
+            "baseHealth": 1
           }
         }
       },
@@ -3366,9 +3410,13 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
             },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
             "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
+            "baseAttack": "?",
+            "baseHealth": 1
           }
         }
       }
@@ -3729,17 +3777,9 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 6 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦅"
-            },
-            "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
-          }
+          "kind": "SummonRandomPet",
+          "tier": 6,
+          "level": 1
         }
       },
       "level2Ability": {
@@ -3749,17 +3789,9 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 6 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦅"
-            },
-            "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
-          }
+          "kind": "SummonRandomPet",
+          "tier": 6,
+          "level": 2
         }
       },
       "level3Ability": {
@@ -3769,17 +3801,9 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "SummonPet",
-          "pet": {
-            "name": "Tier 6 animal",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦅"
-            },
-            "tier": "Summoned",
-            "baseAttack": -1,
-            "baseHealth": -1
-          }
+          "kind": "SummonRandomPet",
+          "tier": 6,
+          "level": 3
         }
       }
     },
@@ -4025,7 +4049,10 @@
       "packs": [
         "StandardPack",
         "ExpansionPack1"
-      ]
+      ],
+      "status": {
+        "name": "PoisinAttack"
+      }
     },
     {
       "name": "Seal",
@@ -4348,6 +4375,9 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
             },
+            "packs": [
+              "StandardPack"
+            ],
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
@@ -4368,6 +4398,9 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
             },
+            "packs": [
+              "StandardPack"
+            ],
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
@@ -4388,6 +4421,9 @@
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
             },
+            "packs": [
+              "StandardPack"
+            ],
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
@@ -4877,6 +4913,92 @@
           "untilEndOfBattle": false
         }
       }
+    },
+    {
+      "name": "Zombie Cricket",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🦗"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": "?",
+      "baseHealth": "?"
+    },
+    {
+      "name": "Bus",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🚍"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": "?",
+      "baseHealth": "?",
+      "status": {
+        "name": "SplashAttack"
+      }
+    },
+    {
+      "name": "Fly",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🪰"
+      },
+      "packs": [
+        "StandardPack"
+      ],
+      "tier": "Summoned",
+      "baseAttack": "?",
+      "baseHealth": "?"
+    },
+    {
+      "name": "Dirty Rat",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🐀"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": 1,
+      "baseHealth": 1
+    },
+    {
+      "name": "Chick",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🐤"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": "?",
+      "baseHealth": 1
+    },
+    {
+      "name": "Ram",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🐏"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": "?",
+      "baseHealth": "?"
     }
   ],
   "food": [
@@ -5326,6 +5448,35 @@
           "status": {
             "name": "SteakAttack"
           }
+        }
+      }
+    },
+    {
+      "name": "Milk",
+      "notes": "This is free!",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥛"
+      },
+      "tier": "Summoned",
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "ability": {
+        "description": "Give an animal +2/+2.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Buy",
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "PurchaseTarget"
+          },
+          "attackAmount": 2,
+          "healthAmount": 2,
+          "untilEndOfBattle": false
         }
       }
     }

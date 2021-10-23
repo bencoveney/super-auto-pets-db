@@ -1,17 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.deer = void 0;
-const busSummoned = {
+exports.deer = exports.busSummoned = void 0;
+exports.busSummoned = {
     name: "Bus",
     image: {
         source: "noto-emoji",
         // TODO: Incorrect. Not sure where the right bus should come from
         unicodeCodePoint: "\u{1F68D}",
     },
+    packs: ["StandardPack", "ExpansionPack1"],
     tier: "Summoned",
-    baseAttack: -1,
-    baseHealth: -1,
-    // TODO: Represent Splash Attack
+    baseAttack: "?",
+    baseHealth: "?",
+    status: {
+        name: "SplashAttack",
+    },
 };
 function deerAbility(level) {
     return {
@@ -22,7 +25,7 @@ function deerAbility(level) {
         },
         effect: {
             kind: "SummonPet",
-            pet: Object.assign(Object.assign({}, busSummoned), { baseAttack: level * 5, baseHealth: level * 5 }),
+            pet: Object.assign(Object.assign({}, exports.busSummoned), { baseAttack: level * 5, baseHealth: level * 5 }),
         },
     };
 }

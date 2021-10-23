@@ -9,7 +9,6 @@ function batAbility(level: number): Ability {
     },
     effect: {
       kind: "ApplyStatus",
-      // TODO: Proper status effects.
       status: {
         name: "Weak",
       },

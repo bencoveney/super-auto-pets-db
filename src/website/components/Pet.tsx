@@ -1,6 +1,7 @@
 import React from "react";
 import { Pet as PetType, Ability as AbilityType } from "../../database";
 import { Pack } from "./Pack";
+import { Status } from "./Status";
 
 export function Pet(props: { pet: PetType }) {
   return (
@@ -34,6 +35,7 @@ export function Pet(props: { pet: PetType }) {
       {props.pet.level3Ability ? (
         <Ability level={3} ability={props.pet.level3Ability} />
       ) : null}
+      {!!props.pet.status ? <Status status={props.pet.status} /> : null}
     </div>
   );
 }

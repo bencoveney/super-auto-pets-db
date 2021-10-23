@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.cricket = void 0;
-const cricketSummoned = {
-    name: "Cricket",
+exports.cricket = exports.cricketSummoned = void 0;
+exports.cricketSummoned = {
+    name: "Zombie Cricket",
     image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F997}",
     },
+    packs: ["StandardPack", "ExpansionPack1"],
     tier: "Summoned",
-    baseAttack: -1,
-    baseHealth: -1,
+    baseAttack: "?",
+    baseHealth: "?",
 };
 function cricketAbility(level) {
     return {
@@ -20,7 +21,7 @@ function cricketAbility(level) {
         },
         effect: {
             kind: "SummonPet",
-            pet: Object.assign(Object.assign({}, cricketSummoned), { baseAttack: level, baseHealth: level }),
+            pet: Object.assign(Object.assign({}, exports.cricketSummoned), { baseAttack: level, baseHealth: level }),
         },
     };
 }

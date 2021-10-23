@@ -10,6 +10,7 @@ const garlic_1 = require("./food/garlic");
 const honey_1 = require("./food/honey");
 const meatBone_1 = require("./food/meatBone");
 const melon_1 = require("./food/melon");
+const milk_1 = require("./food/milk");
 const mushroom_1 = require("./food/mushroom");
 const pear_1 = require("./food/pear");
 const pizza_1 = require("./food/pizza");
@@ -184,6 +185,13 @@ const pets = [
     snake_1.snake,
     tiger_1.tiger,
     tyrannosaurus_1.tyrannosaurus,
+    // Summoned
+    cricket_1.cricketSummoned,
+    deer_1.busSummoned,
+    fly_1.flySummoned,
+    rat_1.dirtyRatSummoned,
+    rooster_1.chick,
+    sheep_1.ramSummoned,
 ];
 function getPets() {
     return pets;
@@ -212,6 +220,8 @@ const food = [
     mushroom_1.mushroom,
     pizza_1.pizza,
     steak_1.steak,
+    // Summoned
+    milk_1.milk,
 ];
 function getFood() {
     return food;

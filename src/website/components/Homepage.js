@@ -22,15 +22,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Homepage = void 0;
 const react_1 = __importStar(require("react"));
 const Blurb_1 = require("./Blurb");
-const List_1 = require("./List");
 const Pack_1 = require("./Pack");
+const Tier_1 = require("./Tier");
 const allPacks = ["StandardPack", "ExpansionPack1"];
 function Homepage(props) {
     const [packsFilter, setPacksFilter] = (0, react_1.useState)(allPacks);
     const [nameFilter, setNameFilter] = (0, react_1.useState)("");
     let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
     let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
-    const tiers = [1, 2, 3, 4, 5, 6]
+    const tiers = [1, 2, 3, 4, 5, 6, "Summoned"]
         .map((tier) => ({
         tier: tier,
         pets: filteredPets.filter((pet) => pet.tier == tier),
@@ -53,11 +53,7 @@ function Homepage(props) {
                             }
                         }, key: index },
                         react_1.default.createElement(Pack_1.Pack, { pack: pack, colored: packsFilter.includes(pack) }))))))),
-        tiers.map((tier) => (react_1.default.createElement("div", { key: tier.tier, className: "py-3" },
-            react_1.default.createElement("h2", { className: "px-3 text-xl font-medium" },
-                "Tier ",
-                tier.tier),
-            react_1.default.createElement(List_1.List, { pets: tier.pets, food: tier.food })))),
+        tiers.map((tier) => (react_1.default.createElement(Tier_1.Tier, Object.assign({}, tier)))),
         react_1.default.createElement(Blurb_1.Blurb, null)));
 }
 exports.Homepage = Homepage;

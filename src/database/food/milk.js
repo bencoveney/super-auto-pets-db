@@ -1,29 +1,29 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.honey = void 0;
-exports.honey = {
-    name: "Honey",
+exports.milk = void 0;
+exports.milk = {
+    name: "Milk",
+    notes: "This is free!",
     image: {
         source: "twemoji",
-        unicodeCodePoint: "\u{1F36F}",
+        unicodeCodePoint: "\u{1F95B}",
     },
-    tier: 1,
+    tier: "Summoned",
     packs: ["StandardPack", "ExpansionPack1"],
     ability: {
-        description: "Give an animal Honey Bee.",
+        description: "Give an animal +2/+2.",
         triggeredBy: {
             kind: "Self",
         },
         trigger: "Buy" /* Buy */,
         effect: {
-            kind: "ApplyStatus",
-            to: {
+            kind: "ModifyStats",
+            target: {
                 kind: "PurchaseTarget",
             },
-            status: {
-                // TODO: Summoned bee.
-                name: "HoneyBee",
-            },
+            attackAmount: 2,
+            healthAmount: 2,
+            untilEndOfBattle: false,
         },
     },
 };

@@ -8,20 +8,10 @@ function eagleAbility(level: number): Ability {
       kind: "Self",
     },
     effect: {
-      kind: "SummonPet",
-      pet: {
-        // TODO: Summon correct pet.
-        name: "Tier 6 animal",
-        image: {
-          source: "noto-emoji",
-          unicodeCodePoint: "\u{1F985}",
-        },
-        tier: "Summoned",
-        // TODO: Don't specify stats here.
-        baseAttack: -1,
-        baseHealth: -1,
-        // TODO: Specify level here.
-      },
+      kind: "SummonRandomPet",
+      tier: 6,
+      // TODO: What are the stats?
+      level: level,
     },
   };
 }

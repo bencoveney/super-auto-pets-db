@@ -1,14 +1,15 @@
 import { Ability, Trigger, Pet } from "..";
 
-const chick: Pet = {
+export const chick: Pet = {
   name: "Chick",
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F424}",
   },
+  packs: ["StandardPack", "ExpansionPack1"],
   tier: "Summoned",
-  baseAttack: -1,
-  baseHealth: -1,
+  baseAttack: "?",
+  baseHealth: 1,
 };
 
 function roosterAbility(level: number): Ability {

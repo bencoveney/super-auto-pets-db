@@ -1,28 +1,28 @@
 import { Food, Trigger } from "..";
 
-export const honey = {
-  name: "Honey",
+export const milk = {
+  name: "Milk",
+  notes: "This is free!",
   image: {
     source: "twemoji",
-    unicodeCodePoint: "\u{1F36F}",
+    unicodeCodePoint: "\u{1F95B}",
   },
-  tier: 1,
+  tier: "Summoned",
   packs: ["StandardPack", "ExpansionPack1"],
   ability: {
-    description: "Give an animal Honey Bee.",
+    description: "Give an animal +2/+2.",
     triggeredBy: {
       kind: "Self",
     },
     trigger: Trigger.Buy,
     effect: {
-      kind: "ApplyStatus",
-      to: {
+      kind: "ModifyStats",
+      target: {
         kind: "PurchaseTarget",
       },
-      status: {
-        // TODO: Summoned bee.
-        name: "HoneyBee",
-      },
+      attackAmount: 2,
+      healthAmount: 2,
+      untilEndOfBattle: false,
     },
   },
 } as Food;

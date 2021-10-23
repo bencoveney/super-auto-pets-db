@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import { Pet, Pack as PackType, Food, Filterable } from "../../database";
+import {
+  Pet,
+  Pack as PackType,
+  Food,
+  Tier as TierType,
+  Filterable,
+} from "../../database";
 import { Blurb } from "./Blurb";
-import { List } from "./List";
 import { Pack } from "./Pack";
+import { Tier } from "./Tier";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
@@ -11,7 +17,7 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
   const [nameFilter, setNameFilter] = useState<string>("");
   let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
   let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
-  const tiers = [1, 2, 3, 4, 5, 6]
+  const tiers = ([1, 2, 3, 4, 5, 6, "Summoned"] as TierType[])
     .map((tier) => ({
       tier: tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
@@ -50,10 +56,7 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
         </div>
       </div>
       {tiers.map((tier) => (
-        <div key={tier.tier} className="py-3">
-          <h2 className="px-3 text-xl font-medium">Tier {tier.tier}</h2>
-          <List pets={tier.pets} food={tier.food} />
-        </div>
+        <Tier {...tier} />
       ))}
       <Blurb />
     </>

@@ -10,7 +10,6 @@ function microbeAbility(level) {
         },
         effect: {
             kind: "ApplyStatus",
-            // TODO: Proper status effects.
             status: {
                 name: "Weak",
             },

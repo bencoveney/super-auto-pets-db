@@ -1,14 +1,15 @@
 import { Ability, Trigger, Pet } from "..";
 
-const flySummoned: Pet = {
+export const flySummoned: Pet = {
   name: "Fly",
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1FAB0}",
   },
+  packs: ["StandardPack"],
   tier: "Summoned",
-  baseAttack: -1,
-  baseHealth: -1,
+  baseAttack: "?",
+  baseHealth: "?",
 };
 
 function flyAbility(level: number): Ability {
