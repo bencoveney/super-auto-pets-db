@@ -11,7 +11,6 @@ exports.dirtyRatSummoned = {
     tier: "Summoned",
     baseAttack: 1,
     baseHealth: 1,
-    // TODO: Represent summoning for enemy?
     // TODO: Represent random attacks?
 };
 function ratAbility(level) {
@@ -24,6 +23,7 @@ function ratAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: exports.dirtyRatSummoned,
+            team: "Enemy",
         },
     };
 }

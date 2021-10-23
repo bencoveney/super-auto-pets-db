@@ -1,7 +1,7 @@
 import { Ability, Trigger, Pet } from "..";
 
 export const flySummoned: Pet = {
-  name: "Fly",
+  name: "Zombie Fly",
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1FAB0}",
@@ -28,6 +28,7 @@ function flyAbility(level: number): Ability {
         baseAttack: level * 2,
         baseHealth: level * 2,
       },
+      team: "Friendly",
     },
   };
 }

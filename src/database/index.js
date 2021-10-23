@@ -192,6 +192,8 @@ const pets = [
     rat_1.dirtyRatSummoned,
     rooster_1.chick,
     sheep_1.ramSummoned,
+    caterpillar_1.butterfly,
+    honey_1.beeSummoned,
 ];
 function getPets() {
     return pets;

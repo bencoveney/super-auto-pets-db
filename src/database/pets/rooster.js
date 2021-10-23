@@ -22,6 +22,7 @@ function roosterAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: exports.chick,
+            team: "Friendly",
             // TODO: Represent copied attack value.
         },
     };

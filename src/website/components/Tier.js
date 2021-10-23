@@ -20,7 +20,7 @@ function getTierName(tier) {
         case 4:
         case 5:
         case 6:
-            return `tier ${tier}`;
+            return `Tier ${tier}`;
         case "Summoned":
             return "Summoned";
         default:

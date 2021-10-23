@@ -20642,7 +20642,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       case 4:
       case 5:
       case 6:
-        return `tier ${tier}`;
+        return `Tier ${tier}`;
       case "Summoned":
         return "Summoned";
       default:
@@ -20984,7 +20984,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
-          }
+          },
+          team: "Friendly"
         }
       },
       level2Ability: {
@@ -21008,7 +21009,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
-          }
+          },
+          team: "Friendly"
         }
       },
       level3Ability: {
@@ -21032,7 +21034,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 3,
             baseHealth: 3
-          }
+          },
+          team: "Friendly"
         }
       }
     },
@@ -22090,7 +22093,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
-          }
+          },
+          team: "Enemy"
         }
       },
       level2Ability: {
@@ -22114,7 +22118,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
-          }
+          },
+          team: "Enemy"
         }
       },
       level3Ability: {
@@ -22138,7 +22143,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 1,
             baseHealth: 1
-          }
+          },
+          team: "Enemy"
         }
       }
     },
@@ -23108,7 +23114,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
-          }
+          },
+          team: "Friendly"
         }
       },
       level2Ability: {
@@ -23132,7 +23139,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 4,
             baseHealth: 4
-          }
+          },
+          team: "Friendly"
         }
       },
       level3Ability: {
@@ -23156,7 +23164,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 6,
             baseHealth: 6
-          }
+          },
+          team: "Friendly"
         }
       }
     },
@@ -23560,7 +23569,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             status: {
               name: "SplashAttack"
             }
-          }
+          },
+          team: "Friendly"
         }
       },
       level2Ability: {
@@ -23587,7 +23597,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             status: {
               name: "SplashAttack"
             }
-          }
+          },
+          team: "Friendly"
         }
       },
       level3Ability: {
@@ -23614,7 +23625,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             status: {
               name: "SplashAttack"
             }
-          }
+          },
+          team: "Friendly"
         }
       }
     },
@@ -24073,7 +24085,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: "?",
             baseHealth: 1
-          }
+          },
+          team: "Friendly"
         }
       },
       level2Ability: {
@@ -24097,7 +24110,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: "?",
             baseHealth: 1
-          }
+          },
+          team: "Friendly"
         }
       },
       level3Ability: {
@@ -24121,7 +24135,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: "?",
             baseHealth: 1
-          }
+          },
+          team: "Friendly"
         }
       }
     },
@@ -25074,7 +25089,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Fly",
+            name: "Zombie Fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25085,7 +25100,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 2,
             baseHealth: 2
-          }
+          },
+          team: "Friendly"
         }
       },
       level2Ability: {
@@ -25097,7 +25113,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Fly",
+            name: "Zombie Fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25108,7 +25124,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 4,
             baseHealth: 4
-          }
+          },
+          team: "Friendly"
         }
       },
       level3Ability: {
@@ -25120,7 +25137,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "SummonPet",
           pet: {
-            name: "Fly",
+            name: "Zombie Fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25131,7 +25148,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             tier: "Summoned",
             baseAttack: 6,
             baseHealth: 6
-          }
+          },
+          team: "Friendly"
         }
       }
     },
@@ -25650,7 +25668,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       }
     },
     {
-      name: "Fly",
+      name: "Zombie Fly",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB0}"
@@ -25703,6 +25721,34 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       tier: "Summoned",
       baseAttack: "?",
       baseHealth: "?"
+    },
+    {
+      name: "Butterfly",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F98B}"
+      },
+      notes: "Summoned: Copy Attack and Health from most healthy friend.",
+      tier: "Summoned",
+      baseAttack: 1,
+      baseHealth: 1,
+      packs: [
+        "ExpansionPack1"
+      ]
+    },
+    {
+      name: "Bee",
+      image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F41D}"
+      },
+      packs: [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      tier: "Summoned",
+      baseAttack: 1,
+      baseHealth: 1
     }
   ];
   var food = [

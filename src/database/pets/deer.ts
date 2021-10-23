@@ -32,6 +32,7 @@ function deerAbility(level: number): Ability {
         baseAttack: level * 5,
         baseHealth: level * 5,
       },
+      team: "Friendly",
     },
   };
 }

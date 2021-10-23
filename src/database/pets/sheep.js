@@ -22,6 +22,7 @@ function sheepAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: Object.assign(Object.assign({}, exports.ramSummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
+            team: "Friendly",
         },
     };
 }

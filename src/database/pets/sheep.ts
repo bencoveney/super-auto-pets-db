@@ -26,6 +26,7 @@ function sheepAbility(level: number): Ability {
         baseAttack: level * 2,
         baseHealth: level * 2,
       },
+      team: "Friendly",
     },
   };
 }

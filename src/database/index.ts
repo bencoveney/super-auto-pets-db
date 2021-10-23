@@ -4,7 +4,7 @@ import { chili } from "./food/chili";
 import { chocolate } from "./food/chocolate";
 import { cupcake } from "./food/cupcake";
 import { garlic } from "./food/garlic";
-import { honey } from "./food/honey";
+import { beeSummoned, honey } from "./food/honey";
 import { meatBone } from "./food/meatBone";
 import { melon } from "./food/melon";
 import { milk } from "./food/milk";
@@ -26,7 +26,7 @@ import { bluebird } from "./pets/bluebird";
 import { buffalo } from "./pets/buffalo";
 import { camel } from "./pets/camel";
 import { cat } from "./pets/cat";
-import { caterpillar } from "./pets/caterpillar";
+import { butterfly, caterpillar } from "./pets/caterpillar";
 import { chicken } from "./pets/chicken";
 import { cow } from "./pets/cow";
 import { crab } from "./pets/crab";
@@ -306,6 +306,7 @@ export interface GainAbilityEffect {
 export interface SummonPetEffect {
   kind: "SummonPet";
   pet: Pet;
+  team: "Friendly" | "Enemy";
 }
 
 export interface SummonRandomPetEffect {
@@ -484,6 +485,8 @@ const pets: Pet[] = [
   dirtyRatSummoned,
   chick,
   ramSummoned,
+  butterfly,
+  beeSummoned,
 ];
 
 export function getPets(): Pet[] {

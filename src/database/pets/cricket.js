@@ -22,6 +22,7 @@ function cricketAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: Object.assign(Object.assign({}, exports.cricketSummoned), { baseAttack: level, baseHealth: level }),
+            team: "Friendly",
         },
     };
 }

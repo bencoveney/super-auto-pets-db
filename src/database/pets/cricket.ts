@@ -26,6 +26,7 @@ function cricketAbility(level: number): Ability {
         baseAttack: level,
         baseHealth: level,
       },
+      team: "Friendly",
     },
   };
 }

@@ -1,6 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.caterpillar = void 0;
+exports.caterpillar = exports.butterfly = void 0;
+exports.butterfly = {
+    name: "Butterfly",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F98B}",
+    },
+    // TODO: Represent this as a summoned behaviour.
+    notes: "Summoned: Copy Attack and Health from most healthy friend.",
+    tier: "Summoned",
+    baseAttack: 1,
+    baseHealth: 1,
+    packs: ["ExpansionPack1"],
+};
 function caterpillarAbility(level) {
     if (level <= 2) {
         return {
@@ -29,9 +42,6 @@ function caterpillarAbility(level) {
         },
     };
 }
-// TODO: Summoned Butterfly.
-// Base: 1/1
-// Summoned: Copy Attack and Health from most healthy friend.
 exports.caterpillar = {
     name: "Caterpillar",
     image: {

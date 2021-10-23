@@ -26,6 +26,7 @@ function deerAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: Object.assign(Object.assign({}, exports.busSummoned), { baseAttack: level * 5, baseHealth: level * 5 }),
+            team: "Friendly",
         },
     };
 }

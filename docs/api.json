@@ -280,7 +280,8 @@
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level2Ability": {
@@ -304,7 +305,8 @@
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level3Ability": {
@@ -328,7 +330,8 @@
             "tier": "Summoned",
             "baseAttack": 3,
             "baseHealth": 3
-          }
+          },
+          "team": "Friendly"
         }
       }
     },
@@ -1386,7 +1389,8 @@
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
-          }
+          },
+          "team": "Enemy"
         }
       },
       "level2Ability": {
@@ -1410,7 +1414,8 @@
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
-          }
+          },
+          "team": "Enemy"
         }
       },
       "level3Ability": {
@@ -1434,7 +1439,8 @@
             "tier": "Summoned",
             "baseAttack": 1,
             "baseHealth": 1
-          }
+          },
+          "team": "Enemy"
         }
       }
     },
@@ -2404,7 +2410,8 @@
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level2Ability": {
@@ -2428,7 +2435,8 @@
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level3Ability": {
@@ -2452,7 +2460,8 @@
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
-          }
+          },
+          "team": "Friendly"
         }
       }
     },
@@ -2856,7 +2865,8 @@
             "status": {
               "name": "SplashAttack"
             }
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level2Ability": {
@@ -2883,7 +2893,8 @@
             "status": {
               "name": "SplashAttack"
             }
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level3Ability": {
@@ -2910,7 +2921,8 @@
             "status": {
               "name": "SplashAttack"
             }
-          }
+          },
+          "team": "Friendly"
         }
       }
     },
@@ -3369,7 +3381,8 @@
             "tier": "Summoned",
             "baseAttack": "?",
             "baseHealth": 1
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level2Ability": {
@@ -3393,7 +3406,8 @@
             "tier": "Summoned",
             "baseAttack": "?",
             "baseHealth": 1
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level3Ability": {
@@ -3417,7 +3431,8 @@
             "tier": "Summoned",
             "baseAttack": "?",
             "baseHealth": 1
-          }
+          },
+          "team": "Friendly"
         }
       }
     },
@@ -4370,7 +4385,7 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Fly",
+            "name": "Zombie Fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4381,7 +4396,8 @@
             "tier": "Summoned",
             "baseAttack": 2,
             "baseHealth": 2
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level2Ability": {
@@ -4393,7 +4409,7 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Fly",
+            "name": "Zombie Fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4404,7 +4420,8 @@
             "tier": "Summoned",
             "baseAttack": 4,
             "baseHealth": 4
-          }
+          },
+          "team": "Friendly"
         }
       },
       "level3Ability": {
@@ -4416,7 +4433,7 @@
         "effect": {
           "kind": "SummonPet",
           "pet": {
-            "name": "Fly",
+            "name": "Zombie Fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4427,7 +4444,8 @@
             "tier": "Summoned",
             "baseAttack": 6,
             "baseHealth": 6
-          }
+          },
+          "team": "Friendly"
         }
       }
     },
@@ -4946,7 +4964,7 @@
       }
     },
     {
-      "name": "Fly",
+      "name": "Zombie Fly",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🪰"
@@ -4999,6 +5017,34 @@
       "tier": "Summoned",
       "baseAttack": "?",
       "baseHealth": "?"
+    },
+    {
+      "name": "Butterfly",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🦋"
+      },
+      "notes": "Summoned: Copy Attack and Health from most healthy friend.",
+      "tier": "Summoned",
+      "baseAttack": 1,
+      "baseHealth": 1,
+      "packs": [
+        "ExpansionPack1"
+      ]
+    },
+    {
+      "name": "Bee",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🐝"
+      },
+      "packs": [
+        "StandardPack",
+        "ExpansionPack1"
+      ],
+      "tier": "Summoned",
+      "baseAttack": 1,
+      "baseHealth": 1
     }
   ],
   "food": [

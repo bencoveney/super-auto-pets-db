@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fly = exports.flySummoned = void 0;
 exports.flySummoned = {
-    name: "Fly",
+    name: "Zombie Fly",
     image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB0}",
@@ -22,6 +22,7 @@ function flyAbility(level) {
         effect: {
             kind: "SummonPet",
             pet: Object.assign(Object.assign({}, exports.flySummoned), { baseAttack: level * 2, baseHealth: level * 2 }),
+            team: "Friendly",
         },
     };
 }

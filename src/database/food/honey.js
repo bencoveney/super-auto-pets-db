@@ -1,6 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.honey = void 0;
+exports.honey = exports.beeSummoned = void 0;
+exports.beeSummoned = {
+    name: "Bee",
+    image: {
+        source: "noto-emoji",
+        unicodeCodePoint: "\u{1F41D}",
+    },
+    packs: ["StandardPack", "ExpansionPack1"],
+    tier: "Summoned",
+    baseAttack: 1,
+    baseHealth: 1,
+};
 exports.honey = {
     name: "Honey",
     image: {
@@ -21,7 +32,6 @@ exports.honey = {
                 kind: "PurchaseTarget",
             },
             status: {
-                // TODO: Summoned bee.
                 name: "HoneyBee",
             },
         },

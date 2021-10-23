@@ -1,6 +1,18 @@
-import { Food, Trigger } from "..";
+import { Food, Pet, Trigger } from "..";
 
-export const honey = {
+export const beeSummoned: Pet = {
+  name: "Bee",
+  image: {
+    source: "noto-emoji",
+    unicodeCodePoint: "\u{1F41D}",
+  },
+  packs: ["StandardPack", "ExpansionPack1"],
+  tier: "Summoned",
+  baseAttack: 1,
+  baseHealth: 1,
+};
+
+export const honey: Food = {
   name: "Honey",
   image: {
     source: "twemoji",
@@ -20,9 +32,8 @@ export const honey = {
         kind: "PurchaseTarget",
       },
       status: {
-        // TODO: Summoned bee.
         name: "HoneyBee",
       },
     },
   },
-} as Food;
+};
