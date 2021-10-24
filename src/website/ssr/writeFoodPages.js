@@ -22,21 +22,21 @@ const FoodPage_1 = require("../components/FoodPage");
 const utils_1 = require("../../utils");
 const react_router_dom_1 = require("react-router-dom");
 const writeFile_1 = require("./writeFile");
-function writeFoodPages(outputDir, food) {
+function writeFoodPages(outputDir, pets, food) {
     return __awaiter(this, void 0, void 0, function* () {
         const foodPagesDir = path_1.default.resolve(outputDir, "food");
         if (!fs_1.default.existsSync(foodPagesDir)) {
             fs_1.default.mkdirSync(foodPagesDir, { recursive: true });
         }
-        yield Promise.all(food.map((food) => writeFoodPage(foodPagesDir, food)));
+        yield Promise.all(food.map((theFood) => writeFoodPage(foodPagesDir, theFood, pets, food)));
     });
 }
 exports.writeFoodPages = writeFoodPages;
-function writeFoodPage(outputDir, food) {
+function writeFoodPage(outputDir, theFood, pets, food) {
     return __awaiter(this, void 0, void 0, function* () {
-        const pageName = (0, utils_1.sanitiseName)(food.name);
+        const pageName = (0, utils_1.sanitiseName)(theFood.name);
         yield (0, writeFile_1.writeToFile)(server_1.default.renderToStaticNodeStream(react_1.default.createElement(Page_1.Page, null,
             react_1.default.createElement(react_router_dom_1.StaticRouter, { location: { pathname: `/food/${pageName}` } },
-                react_1.default.createElement(FoodPage_1.FoodPage, { food: food })))), path_1.default.resolve(outputDir, `${pageName}.html`));
+                react_1.default.createElement(FoodPage_1.FoodPage, { theFood: theFood, pets: pets, food: food })))), path_1.default.resolve(outputDir, `${pageName}.html`));
     });
 }

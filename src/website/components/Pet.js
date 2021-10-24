@@ -9,7 +9,7 @@ const utils_1 = require("../../utils");
 const Pack_1 = require("./Pack");
 const Status_1 = require("./Status");
 function Pet(props) {
-    return (react_1.default.createElement("div", { className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm" },
+    return (react_1.default.createElement("div", { className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5" },
         react_1.default.createElement("div", { className: "p-3 flex flex-row justify-between" },
             react_1.default.createElement("div", { className: "text-xl font-medium" }, props.pet.name),
             react_1.default.createElement("div", { className: "" },

@@ -22,8 +22,8 @@ async function buildSite() {
   writeApi(outputDir, pets, food);
   copyAssets(outputDir, (pets as HasImage[]).concat(food));
   await writeHomepage(outputDir, pets, food);
-  await writePetPages(outputDir, pets);
-  await writeFoodPages(outputDir, food);
+  await writePetPages(outputDir, pets, food);
+  await writeFoodPages(outputDir, pets, food);
 }
 
 buildSite().then(

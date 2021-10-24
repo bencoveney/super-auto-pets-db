@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Pet,
   Pack as PackType,
@@ -7,16 +7,18 @@ import {
   Filterable,
 } from "../../database";
 import { Blurb } from "./Blurb";
-import { Pack } from "./Pack";
+import { Breadcrumbs } from "./Breadcrumbs";
+import { Header } from "./Header";
 import { Tier } from "./Tier";
+import { Filters, useFilters } from "./Filters";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
 export function Homepage(props: { pets: Pet[]; food: Food[] }) {
-  const [packsFilter, setPacksFilter] = useState<PackType[]>(allPacks);
-  const [nameFilter, setNameFilter] = useState<string>("");
-  let filteredPets = applyFilter(props.pets, packsFilter, nameFilter);
-  let filteredFood = applyFilter(props.food, packsFilter, nameFilter);
+  const [filters, setName, togglePack] = useFilters();
+
+  let filteredPets = applyFilter(props.pets, filters.packs, filters.name);
+  let filteredFood = applyFilter(props.food, filters.packs, filters.name);
   const tiers = ([1, 2, 3, 4, 5, 6, "Summoned"] as TierType[])
     .map((tier) => ({
       tier: tier,
@@ -24,41 +26,13 @@ export function Homepage(props: { pets: Pet[]; food: Food[] }) {
       food: filteredFood.filter((food) => food.tier == tier),
     }))
     .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
+
   return (
     <>
-      <div className="p-3 flex flex-col lg:flex-row justify-between items-center">
-        <h1 className="text-2xl font-medium">Super Auto Pets Database</h1>
-        <div className="flex flex-col md:flex-row items-center">
-          <input
-            type="search"
-            className="bg-gray-900 shadow rounded border-0 p-1"
-            placeholder="Search by name"
-            value={nameFilter}
-            onChange={(e) => setNameFilter(e.target.value)}
-          />
-          <div>
-            <span className="p-3">Toggle Packs:</span>
-            {allPacks.map((pack, index) => (
-              <a
-                onClick={() => {
-                  if (packsFilter.includes(pack)) {
-                    setPacksFilter(packsFilter.filter((it) => it != pack));
-                  } else {
-                    setPacksFilter(packsFilter.concat(pack));
-                  }
-                }}
-                key={index}
-              >
-                <Pack
-                  pack={pack}
-                  colored={packsFilter.includes(pack)}
-                  condensed={false}
-                />
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+      <Header>
+        <Breadcrumbs {...props} />
+        <Filters filters={filters} setName={setName} togglePack={togglePack} />
+      </Header>
       {tiers.map((tier) => (
         <Tier key={tier.tier} {...tier} />
       ))}

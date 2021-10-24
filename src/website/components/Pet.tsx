@@ -6,7 +6,7 @@ import { Status } from "./Status";
 
 export function Pet(props: { pet: PetType }) {
   return (
-    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm">
+    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5">
       <div className="p-3 flex flex-row justify-between">
         <div className="text-xl font-medium">{props.pet.name}</div>
         <div className="">

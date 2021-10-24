@@ -46,7 +46,7 @@ function PetPageWrapper(props) {
     if (!pet) {
         throw new Error(`Could not find pet ${petName}`);
     }
-    return react_1.default.createElement(PetPage_1.PetPage, { pet: pet });
+    return react_1.default.createElement(PetPage_1.PetPage, { pet: pet, pets: pets, food: food });
 }
 function FoodPageWrapper(props) {
     const foodName = (0, utils_1.sanitiseName)(props.match.params.foodName);
@@ -54,7 +54,7 @@ function FoodPageWrapper(props) {
     if (!theFood) {
         throw new Error(`Could not find ${foodName}`);
     }
-    return react_1.default.createElement(FoodPage_1.FoodPage, { food: theFood });
+    return react_1.default.createElement(FoodPage_1.FoodPage, { theFood: theFood, pets: pets, food: food });
 }
 react_dom_1.default.hydrate(react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
     react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/" },

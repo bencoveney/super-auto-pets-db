@@ -22,21 +22,21 @@ const PetPage_1 = require("../components/PetPage");
 const utils_1 = require("../../utils");
 const react_router_dom_1 = require("react-router-dom");
 const writeFile_1 = require("./writeFile");
-function writePetPages(outputDir, pets) {
+function writePetPages(outputDir, pets, food) {
     return __awaiter(this, void 0, void 0, function* () {
         const petPagesDir = path_1.default.resolve(outputDir, "pet");
         if (!fs_1.default.existsSync(petPagesDir)) {
             fs_1.default.mkdirSync(petPagesDir, { recursive: true });
         }
-        yield Promise.all(pets.map((pet) => writePetPage(petPagesDir, pet)));
+        yield Promise.all(pets.map((pet) => writePetPage(petPagesDir, pet, pets, food)));
     });
 }
 exports.writePetPages = writePetPages;
-function writePetPage(outputDir, pet) {
+function writePetPage(outputDir, pet, pets, food) {
     return __awaiter(this, void 0, void 0, function* () {
         const pageName = (0, utils_1.sanitiseName)(pet.name);
         yield (0, writeFile_1.writeToFile)(server_1.default.renderToStaticNodeStream(react_1.default.createElement(Page_1.Page, null,
             react_1.default.createElement(react_router_dom_1.StaticRouter, { location: { pathname: `/pet/${pageName}` } },
-                react_1.default.createElement(PetPage_1.PetPage, { pet: pet })))), path_1.default.resolve(outputDir, `${pageName}.html`));
+                react_1.default.createElement(PetPage_1.PetPage, { pet: pet, pets: pets, food: food })))), path_1.default.resolve(outputDir, `${pageName}.html`));
     });
 }

@@ -1,12 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Pet as PetType } from "../../database";
+import { Pet as PetType, Food as FoodType } from "../../database";
+import { Breadcrumbs } from "./Breadcrumbs";
+import { Header } from "./Header";
 import { Pet } from "./Pet";
 
-export function PetPage(props: { pet: PetType }) {
+export function PetPage(props: {
+  pet: PetType;
+  pets: PetType[];
+  food: FoodType[];
+}) {
   return (
     <>
-      <Link to="/">Home</Link>
+      <Header>
+        <Breadcrumbs {...props} />
+      </Header>
       <Pet pet={props.pet} />
     </>
   );

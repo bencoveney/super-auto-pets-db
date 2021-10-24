@@ -35,8 +35,8 @@ function buildSite() {
         (0, writeApi_1.writeApi)(outputDir, pets, food);
         (0, writeAssets_1.copyAssets)(outputDir, pets.concat(food));
         yield (0, writeHomepage_1.writeHomepage)(outputDir, pets, food);
-        yield (0, writePetPages_1.writePetPages)(outputDir, pets);
-        yield (0, writeFoodPages_1.writeFoodPages)(outputDir, food);
+        yield (0, writePetPages_1.writePetPages)(outputDir, pets, food);
+        yield (0, writeFoodPages_1.writeFoodPages)(outputDir, pets, food);
     });
 }
 buildSite().then(() => console.log("Build succeeded"), (error) => {

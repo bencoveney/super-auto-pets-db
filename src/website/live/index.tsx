@@ -26,7 +26,7 @@ function PetPageWrapper(props: RouteComponentProps<{ petName: string }>) {
   if (!pet) {
     throw new Error(`Could not find pet ${petName}`);
   }
-  return <PetPage pet={pet} />;
+  return <PetPage pet={pet} pets={pets} food={food} />;
 }
 
 function FoodPageWrapper(props: RouteComponentProps<{ foodName: string }>) {
@@ -35,7 +35,7 @@ function FoodPageWrapper(props: RouteComponentProps<{ foodName: string }>) {
   if (!theFood) {
     throw new Error(`Could not find ${foodName}`);
   }
-  return <FoodPage food={theFood} />;
+  return <FoodPage theFood={theFood} pets={pets} food={food} />;
 }
 
 ReactDOM.hydrate(
