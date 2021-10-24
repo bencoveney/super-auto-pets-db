@@ -6,7 +6,7 @@ import { Status } from "./Status";
 
 export function Food(props: { food: FoodType }) {
   return (
-    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm">
+    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5">
       <div className="p-3 flex flex-row justify-between">
         <div className="text-xl font-medium">{props.food.name}</div>
       </div>

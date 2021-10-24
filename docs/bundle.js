@@ -29133,7 +29133,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react16 = __toModule(require_react());
   function Food(props) {
     return /* @__PURE__ */ import_react16.default.createElement("div", {
-      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm"
+      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5"
     }, /* @__PURE__ */ import_react16.default.createElement("div", {
       className: "p-3 flex flex-row justify-between"
     }, /* @__PURE__ */ import_react16.default.createElement("div", {
