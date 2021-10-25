@@ -1,7 +1,10 @@
 import React from "react";
 import { StatusEffect } from "../../database";
 
-export function Status(props: { status: StatusEffect }) {
+export function Status(props: { status?: StatusEffect }) {
+  if (!props.status) {
+    return null;
+  }
   return <div className="italic">{getStatusDescription(props.status)}</div>;
 }
 
