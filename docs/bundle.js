@@ -27302,11 +27302,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     statuses
   };
 
-  // src/utils.ts
-  function sanitiseName(name) {
-    return name.toLowerCase().replace(/\s/g, "_");
-  }
-
   // src/database/food/apple.ts
   var apple = {
     name: "Apple",
@@ -30815,6 +30810,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   function enumerateTable(table) {
     return Object.entries(table).map((it) => it[1]);
+  }
+  function sanitiseName(name) {
+    return name.toLowerCase().replace(/\s/g, "_");
   }
 
   // src/website/live/index.tsx

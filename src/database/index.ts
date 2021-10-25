@@ -1,4 +1,3 @@
-import { sanitiseName } from "../utils";
 import { apple } from "./food/apple";
 import { cannedFood } from "./food/cannedFood";
 import { chili } from "./food/chili";
@@ -806,4 +805,8 @@ export function enumerateTable<T>(table: Table<T>): WithId<T>[] {
 
 export function yoinkId<T>(without: T): string {
   return (without as WithId<T>).id;
+}
+
+export function sanitiseName(name: string): string {
+  return name.toLowerCase().replace(/\s/g, "_");
 }

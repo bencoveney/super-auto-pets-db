@@ -97,11 +97,14 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
+  "ts-node": {
+    "files": true
+  },
   "include": [
     "src/**/*"
   ],
   "exclude": [
     "node_modules",
     "src/emoji"
-  ]
+  ],
 }
