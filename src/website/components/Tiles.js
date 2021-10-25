@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tiles = void 0;
 const react_1 = __importDefault(require("react"));
 const react_router_dom_1 = require("react-router-dom");
-const utils_1 = require("../../utils");
+const database_1 = require("../../database");
 const Tile_1 = require("./Tile");
 function Tiles(props) {
     const tiles = props.pets
@@ -16,10 +16,10 @@ function Tiles(props) {
 }
 exports.Tiles = Tiles;
 function FoodTile(props) {
-    return (react_1.default.createElement(react_router_dom_1.Link, { to: `/food/${(0, utils_1.sanitiseName)(props.food.name)}` },
-        react_1.default.createElement(Tile_1.Tile, { name: props.food.name, background: "bgimage-4", packs: props.food.packs || [] })));
+    return (react_1.default.createElement(react_router_dom_1.Link, { to: (0, database_1.getFoodUrl)(props.food) },
+        react_1.default.createElement(Tile_1.Tile, { id: props.food.id, name: props.food.name, background: "bgimage-4", packs: props.food.packs || [] })));
 }
 function PetTile(props) {
-    return (react_1.default.createElement(react_router_dom_1.Link, { to: `/pet/${(0, utils_1.sanitiseName)(props.pet.name)}` },
-        react_1.default.createElement(Tile_1.Tile, { name: props.pet.name, background: "bgimage-1", packs: props.pet.packs || [], stats: { attack: props.pet.baseAttack, health: props.pet.baseHealth } })));
+    return (react_1.default.createElement(react_router_dom_1.Link, { to: (0, database_1.getPetUrl)(props.pet) },
+        react_1.default.createElement(Tile_1.Tile, { id: props.pet.id, name: props.pet.name, background: "bgimage-1", packs: props.pet.packs || [], stats: { attack: props.pet.baseAttack, health: props.pet.baseHealth } })));
 }

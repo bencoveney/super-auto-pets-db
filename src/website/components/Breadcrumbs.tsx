@@ -1,35 +1,33 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { Link, Route, RouteComponentProps } from "react-router-dom";
-import { Food, Pet } from "../../database";
-import { sanitiseName } from "../../utils";
+import {
+  Database,
+  getFoodId,
+  getFoodUrl,
+  getPetId,
+  getPetUrl,
+} from "../../database";
 
 function PetBreadbrumb(
-  props: RouteComponentProps<{ petName: string }> & { pets: Pet[] }
+  props: RouteComponentProps<{ petName: string }> & { database: Database }
 ) {
-  const petName = sanitiseName(props.match.params.petName);
-  const pet = props.pets.find((it) => sanitiseName(it.name) == petName);
+  const name = getPetId(props.match.params.petName);
+  const pet = props.database.pets[name];
   if (!pet) {
-    throw new Error(`Could not find pet ${petName}`);
+    throw new Error(`Could not find pet ${name}`);
   }
-  return (
-    <Breadbrumb name={pet.name} target={`/pet/${props.match.params.petName}`} />
-  );
+  return <Breadbrumb name={pet.name} target={getPetUrl(pet)} />;
 }
 
 function FoodBreadbrumb(
-  props: RouteComponentProps<{ foodName: string }> & { food: Food[] }
+  props: RouteComponentProps<{ foodName: string }> & { database: Database }
 ) {
-  const foodName = sanitiseName(props.match.params.foodName);
-  const theFood = props.food.find((it) => sanitiseName(it.name) == foodName);
-  if (!theFood) {
-    throw new Error(`Could not find ${foodName}`);
+  const name = getFoodId(props.match.params.foodName);
+  const food = props.database.foods[name];
+  if (!food) {
+    throw new Error(`Could not find ${name}`);
   }
-  return (
-    <Breadbrumb
-      name={theFood.name}
-      target={`/food/${props.match.params.foodName}`}
-    />
-  );
+  return <Breadbrumb name={food.name} target={getFoodUrl(food)} />;
 }
 
 function Breadbrumb(props: { name: string; target: string }) {
@@ -45,7 +43,7 @@ function Breadbrumb(props: { name: string; target: string }) {
   );
 }
 
-export function Breadcrumbs(props: { pets: Pet[]; food: Food[] }) {
+export function Breadcrumbs(props: { database: Database }) {
   return (
     <h1 className="text-2xl font-light">
       <Route path="/">
@@ -58,14 +56,14 @@ export function Breadcrumbs(props: { pets: Pet[]; food: Food[] }) {
         exact
         path="/pet/:petName"
         render={(routeProps: RouteComponentProps<{ petName: string }>) => (
-          <PetBreadbrumb {...routeProps} pets={props.pets} />
+          <PetBreadbrumb {...routeProps} database={props.database} />
         )}
       />
       <Route
         exact
         path="/food/:foodName"
         render={(routeProps: RouteComponentProps<{ foodName: string }>) => (
-          <FoodBreadbrumb {...routeProps} food={props.food} />
+          <FoodBreadbrumb {...routeProps} database={props.database} />
         )}
       />
     </h1>

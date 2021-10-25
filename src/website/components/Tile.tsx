@@ -1,14 +1,15 @@
 import React from "react";
 import { Pack as PackType, Stat } from "../../database";
-import { sanitiseName } from "../../utils";
 import { Pack } from "./Pack";
 
 export function Tile({
+  id,
   name,
   stats,
   packs,
   background,
 }: {
+  id: string;
   name: string;
   stats?: { attack: Stat; health: Stat };
   packs: PackType[];
@@ -22,7 +23,7 @@ export function Tile({
         />
         <img
           className="transition-margin mx-7 my-7 group-hover:mx-3 group-hover:my-3 filter drop-shadow-tile"
-          src={`/assets/${sanitiseName(name)}.svg`}
+          src={`/assets/${id}.svg`}
         />
         <div
           className={`transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`}

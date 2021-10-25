@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Homepage = void 0;
 const react_1 = __importDefault(require("react"));
+const database_1 = require("../../database");
 const Blurb_1 = require("./Blurb");
 const Breadcrumbs_1 = require("./Breadcrumbs");
 const Header_1 = require("./Header");
@@ -13,13 +14,13 @@ const Filters_1 = require("./Filters");
 const allPacks = ["StandardPack", "ExpansionPack1"];
 function Homepage(props) {
     const [filters, setName, togglePack] = (0, Filters_1.useFilters)();
-    let filteredPets = applyFilter(props.pets, filters.packs, filters.name);
-    let filteredFood = applyFilter(props.food, filters.packs, filters.name);
+    let filteredPets = applyFilter((0, database_1.enumerateTable)(props.database.pets), filters.packs, filters.name);
+    let filteredFoods = applyFilter((0, database_1.enumerateTable)(props.database.foods), filters.packs, filters.name);
     const tiers = [1, 2, 3, 4, 5, 6, "Summoned"]
         .map((tier) => ({
         tier: tier,
         pets: filteredPets.filter((pet) => pet.tier == tier),
-        food: filteredFood.filter((food) => food.tier == tier),
+        food: filteredFoods.filter((food) => food.tier == tier),
     }))
         .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
     return (react_1.default.createElement(react_1.default.Fragment, null,

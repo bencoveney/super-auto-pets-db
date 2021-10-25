@@ -2,42 +2,44 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import { Food, Pet } from "../../database";
+import {
+  Database,
+  enumerateTable,
+  Food,
+  getFoodUrl,
+  WithId,
+} from "../../database";
 import { Page } from "../components/Page";
 import { FoodPage } from "../components/FoodPage";
-import { sanitiseName } from "../../utils";
 import { StaticRouter } from "react-router-dom";
 import { writeToFile } from "./writeFile";
 
-export async function writeFoodPages(
-  outputDir: string,
-  pets: Pet[],
-  food: Food[]
-) {
+export async function writeFoodPages(outputDir: string, database: Database) {
   const foodPagesDir = path.resolve(outputDir, "food");
   if (!fs.existsSync(foodPagesDir)) {
     fs.mkdirSync(foodPagesDir, { recursive: true });
   }
   await Promise.all(
-    food.map((theFood) => writeFoodPage(foodPagesDir, theFood, pets, food))
+    enumerateTable(database.foods).map((food) =>
+      writeFoodPage(foodPagesDir, food, database)
+    )
   );
 }
 
 async function writeFoodPage(
   outputDir: string,
-  theFood: Food,
-  pets: Pet[],
-  food: Food[]
+  food: WithId<Food>,
+  database: Database
 ) {
-  const pageName = sanitiseName(theFood.name);
+  const pathname = getFoodUrl(food);
   await writeToFile(
     ReactDOMServer.renderToStaticNodeStream(
       <Page>
-        <StaticRouter location={{ pathname: `/food/${pageName}` }}>
-          <FoodPage theFood={theFood} pets={pets} food={food}></FoodPage>
+        <StaticRouter location={{ pathname }}>
+          <FoodPage theFood={food} database={database} />
         </StaticRouter>
       </Page>
     ),
-    path.resolve(outputDir, `${pageName}.html`)
+    path.resolve(outputDir, `${path.posix.basename(pathname)}.html`)
   );
 }

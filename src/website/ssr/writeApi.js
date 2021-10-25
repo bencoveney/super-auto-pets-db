@@ -22,9 +22,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.writeApi = void 0;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
-function writeApi(outputDir, pets, food) {
+const database_1 = require("../../database");
+function writeApi(outputDir, database) {
     const output = path.join(outputDir, "api.json");
-    fs.writeFileSync(output, JSON.stringify({ pets, food }, null, 2), {
+    fs.writeFileSync(output, (0, database_1.serialiseDatabase)(database), {
         encoding: "utf-8",
     });
     console.log(`Wrote ${output}`);

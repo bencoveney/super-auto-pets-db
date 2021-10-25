@@ -1,14 +1,10 @@
 import React from "react";
-import { Pet as PetType, Food as FoodType } from "../../database";
+import { Pet as PetType, Database, WithId } from "../../database";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Header } from "./Header";
 import { Pet } from "./Pet";
 
-export function PetPage(props: {
-  pet: PetType;
-  pets: PetType[];
-  food: FoodType[];
-}) {
+export function PetPage(props: { pet: WithId<PetType>; database: Database }) {
   return (
     <>
       <Header>

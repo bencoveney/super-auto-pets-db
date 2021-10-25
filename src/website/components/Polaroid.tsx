@@ -1,13 +1,11 @@
 import React from "react";
-import { Pack as PackType, Stat } from "../../database";
-import { sanitiseName } from "../../utils";
-import { Pack } from "./Pack";
-import { Pet } from "./Pet";
 
 export function Polaroid({
+  id,
   name,
   background,
 }: {
+  id: string;
   name: string;
   background: string;
 }) {
@@ -18,10 +16,7 @@ export function Polaroid({
           className={`absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover`}
         />
         <div className="p-3">
-          <img
-            className="filter drop-shadow-tile"
-            src={`/assets/${sanitiseName(name)}.svg`}
-          />
+          <img className="filter drop-shadow-tile" src={`/assets/${id}.svg`} />
         </div>
         <div
           className={`absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover`}

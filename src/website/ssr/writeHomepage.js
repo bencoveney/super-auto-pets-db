@@ -20,11 +20,11 @@ const Homepage_1 = require("../components/Homepage");
 const Page_1 = require("../components/Page");
 const react_router_dom_1 = require("react-router-dom");
 const writeFile_1 = require("./writeFile");
-function writeHomepage(outputDir, pets, food) {
+function writeHomepage(outputDir, database) {
     return __awaiter(this, void 0, void 0, function* () {
         yield (0, writeFile_1.writeToFile)(server_1.default.renderToStaticNodeStream(react_1.default.createElement(Page_1.Page, null,
             react_1.default.createElement(react_router_dom_1.StaticRouter, { location: { pathname: `/` } },
-                react_1.default.createElement(Homepage_1.Homepage, { pets: pets, food: food })))), path_1.default.resolve(outputDir, "index.html"));
+                react_1.default.createElement(Homepage_1.Homepage, { database: database })))), path_1.default.resolve(outputDir, "index.html"));
     });
 }
 exports.writeHomepage = writeHomepage;

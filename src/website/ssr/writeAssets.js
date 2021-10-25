@@ -8,9 +8,9 @@ const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const writeBackgroundAssets_1 = require("./writeBackgroundAssets");
 const writeEmojiAssets_1 = require("./writeEmojiAssets");
-function copyAssets(outputDir, images) {
+function copyAssets(outputDir, database) {
     const assetsDir = getAssetsDir(outputDir);
-    (0, writeEmojiAssets_1.copyEmojiAssets)(assetsDir, images);
+    (0, writeEmojiAssets_1.copyEmojiAssets)(assetsDir, database);
     (0, writeBackgroundAssets_1.copyBackgroundAssets)(assetsDir);
 }
 exports.copyAssets = copyAssets;

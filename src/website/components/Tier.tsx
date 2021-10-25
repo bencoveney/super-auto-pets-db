@@ -1,9 +1,12 @@
 import React from "react";
-import { Pet, Food, Tier as TierType } from "../../database";
-import { List } from "./List";
+import { Pet, Food, Tier as TierType, WithId } from "../../database";
 import { Tiles } from "./Tiles";
 
-export function Tier(props: { tier: TierType; pets: Pet[]; food: Food[] }) {
+export function Tier(props: {
+  tier: TierType;
+  pets: WithId<Pet>[];
+  food: WithId<Food>[];
+}) {
   return (
     <div key={props.tier}>
       <h2 className="px-3 text-xl font-light sticky block top-0 z-10 bg-gray-800 py-2">

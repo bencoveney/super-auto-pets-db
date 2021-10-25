@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Food, Pet } from "../../database";
-import { sanitiseName } from "../../utils";
+import { Food, getFoodUrl, getPetUrl, Pet, WithId } from "../../database";
 import { Tile } from "./Tile";
 
-export function Tiles(props: { pets: Pet[]; food: Food[] }) {
+export function Tiles(props: { pets: WithId<Pet>[]; food: WithId<Food>[] }) {
   const tiles = props.pets
     .map((pet, index) => <PetTile key={`pet${index}`} pet={pet} />)
     .concat(
@@ -19,10 +18,11 @@ export function Tiles(props: { pets: Pet[]; food: Food[] }) {
   );
 }
 
-function FoodTile(props: { food: Food }) {
+function FoodTile(props: { food: WithId<Food> }) {
   return (
-    <Link to={`/food/${sanitiseName(props.food.name)}`}>
+    <Link to={getFoodUrl(props.food)}>
       <Tile
+        id={props.food.id}
         name={props.food.name}
         background="bgimage-4"
         packs={props.food.packs || []}
@@ -31,10 +31,11 @@ function FoodTile(props: { food: Food }) {
   );
 }
 
-function PetTile(props: { pet: Pet }) {
+function PetTile(props: { pet: WithId<Pet> }) {
   return (
-    <Link to={`/pet/${sanitiseName(props.pet.name)}`}>
+    <Link to={getPetUrl(props.pet)}>
       <Tile
+        id={props.pet.id}
         name={props.pet.name}
         background="bgimage-1"
         packs={props.pet.packs || []}

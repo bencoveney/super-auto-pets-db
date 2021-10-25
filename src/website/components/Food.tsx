@@ -1,17 +1,21 @@
 import React from "react";
-import { Food as FoodType, ApplyStatusEffect } from "../../database";
+import { Food as FoodType, ApplyStatusEffect, WithId } from "../../database";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
 import { Polaroid } from "./Polaroid";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
 import { AbilityDescription } from "./AbilityDescription";
 
-export function Food(props: { food: FoodType }) {
+export function Food(props: { food: WithId<FoodType> }) {
   return (
     <div className="m-3">
       <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">
         <div className="flex-grow max-w-xs w-80">
-          <Polaroid name={props.food.name} background="bgimage-4" />
+          <Polaroid
+            id={props.food.id}
+            name={props.food.name}
+            background="bgimage-4"
+          />
         </div>
         <StatsGrid>
           <StatsSummary>Stats</StatsSummary>

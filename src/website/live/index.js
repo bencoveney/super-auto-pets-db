@@ -26,38 +26,37 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // We use const enums but they break esbuild.
 // https://github.com/evanw/esbuild/issues/128
 const api = __importStar(require("../../../docs/api.json"));
+const database_1 = require("../../database");
 // As another consequence, cast to any to avoid TypeScript errors when changing API structure.
-const pets = api.pets;
-const food = api.food;
+const database = api;
 const react_1 = __importDefault(require("react"));
 const react_dom_1 = __importDefault(require("react-dom"));
 const Homepage_1 = require("../components/Homepage");
 const react_router_dom_1 = require("react-router-dom");
 const PetPage_1 = require("../components/PetPage");
-const utils_1 = require("../../utils");
 const FoodPage_1 = require("../components/FoodPage");
 const reactRoot = document.getElementById("react-root");
 if (!reactRoot) {
     throw new Error("Could not find react root");
 }
 function PetPageWrapper(props) {
-    const petName = (0, utils_1.sanitiseName)(props.match.params.petName);
-    const pet = pets.find((it) => (0, utils_1.sanitiseName)(it.name) == petName);
+    const name = (0, database_1.getPetId)(props.match.params.petName);
+    const pet = database.pets[name];
     if (!pet) {
-        throw new Error(`Could not find pet ${petName}`);
+        throw new Error(`Could not find pet ${name}`);
     }
-    return react_1.default.createElement(PetPage_1.PetPage, { pet: pet, pets: pets, food: food });
+    return react_1.default.createElement(PetPage_1.PetPage, { pet: pet, database: database });
 }
 function FoodPageWrapper(props) {
-    const foodName = (0, utils_1.sanitiseName)(props.match.params.foodName);
-    const theFood = food.find((it) => (0, utils_1.sanitiseName)(it.name) == foodName);
-    if (!theFood) {
-        throw new Error(`Could not find ${foodName}`);
+    const name = (0, database_1.getFoodId)(props.match.params.foodName);
+    const food = database.foods[name];
+    if (!food) {
+        throw new Error(`Could not find ${name}`);
     }
-    return react_1.default.createElement(FoodPage_1.FoodPage, { theFood: theFood, pets: pets, food: food });
+    return react_1.default.createElement(FoodPage_1.FoodPage, { theFood: food, database: database });
 }
 react_dom_1.default.hydrate(react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
     react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/" },
-        react_1.default.createElement(Homepage_1.Homepage, { pets: pets, food: food })),
+        react_1.default.createElement(Homepage_1.Homepage, { database: database })),
     react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/pet/:petName", component: PetPageWrapper }),
     react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/food/:foodName", component: FoodPageWrapper })), reactRoot);

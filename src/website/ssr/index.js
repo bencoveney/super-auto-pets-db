@@ -30,13 +30,12 @@ function getOutputDir() {
 function buildSite() {
     return __awaiter(this, void 0, void 0, function* () {
         const outputDir = getOutputDir();
-        const pets = (0, database_1.getPets)();
-        const food = (0, database_1.getFood)();
-        (0, writeApi_1.writeApi)(outputDir, pets, food);
-        (0, writeAssets_1.copyAssets)(outputDir, pets.concat(food));
-        yield (0, writeHomepage_1.writeHomepage)(outputDir, pets, food);
-        yield (0, writePetPages_1.writePetPages)(outputDir, pets, food);
-        yield (0, writeFoodPages_1.writeFoodPages)(outputDir, pets, food);
+        const database = (0, database_1.getDatabase)();
+        (0, writeApi_1.writeApi)(outputDir, database);
+        (0, writeAssets_1.copyAssets)(outputDir, database);
+        yield (0, writeHomepage_1.writeHomepage)(outputDir, database);
+        yield (0, writePetPages_1.writePetPages)(outputDir, database);
+        yield (0, writeFoodPages_1.writeFoodPages)(outputDir, database);
     });
 }
 buildSite().then(() => console.log("Build succeeded"), (error) => {

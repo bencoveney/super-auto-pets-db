@@ -15,7 +15,7 @@ function Pet(props) {
     return (react_1.default.createElement("div", { className: "m-3" },
         react_1.default.createElement("div", { className: "flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center" },
             react_1.default.createElement("div", { className: "flex-grow max-w-xs w-80" },
-                react_1.default.createElement(Polaroid_1.Polaroid, { name: props.pet.name, background: "bgimage-1" })),
+                react_1.default.createElement(Polaroid_1.Polaroid, { id: props.pet.id, name: props.pet.name, background: "bgimage-1" })),
             react_1.default.createElement(StatsGrid_1.StatsGrid, null,
                 react_1.default.createElement(StatsGrid_1.StatsSummary, null, "Stats"),
                 react_1.default.createElement(StatsGrid_1.StatsRow, { text: "Name" }, props.pet.name),

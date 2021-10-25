@@ -2,20 +2,25 @@ import fs from "fs";
 import emojiUnicode from "emoji-unicode";
 import path from "path";
 import {
+  Database,
   EmojiImage,
+  enumerateTable,
   FxEmojiImage,
   HasImage,
   NotoEmojiImage,
   TwEmojiImage,
+  WithId,
 } from "../../database";
-import { sanitiseName } from "../../utils";
 
-export function copyEmojiAssets(targetDir: string, images: HasImage[]) {
-  images.forEach(({ name, image }) => {
-    const assetPath = path.resolve(targetDir, `${sanitiseName(name)}.svg`);
-
+export function copyEmojiAssets(targetDir: string, database: Database) {
+  const images = new Array<WithId<HasImage>>().concat(
+    enumerateTable(database.pets),
+    enumerateTable(database.foods),
+    enumerateTable(database.statuses)
+  );
+  images.forEach(({ id, image }) => {
+    const assetPath = path.resolve(targetDir, `${id}.svg`);
     fs.copyFileSync(getEmojiPath(image), assetPath);
-
     console.log(`Wrote ${assetPath}`);
   });
 }
