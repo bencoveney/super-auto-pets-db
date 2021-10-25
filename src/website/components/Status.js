@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Status = void 0;
 const react_1 = __importDefault(require("react"));
 function Status(props) {
-    return (react_1.default.createElement("div", { className: "p-3 border-t border-gray-500 text-gray-200 italic" }, getStatusDescription(props.status)));
+    return react_1.default.createElement("div", { className: "italic" }, getStatusDescription(props.status));
 }
 exports.Status = Status;
 function getStatusDescription(status) {

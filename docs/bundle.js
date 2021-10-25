@@ -29060,7 +29060,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react14 = __toModule(require_react());
   function Status(props) {
     return /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200 italic"
+      className: "italic"
     }, getStatusDescription(props.status));
   }
   function getStatusDescription(status) {
@@ -29095,30 +29095,44 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     return /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "m-3"
     }, /* @__PURE__ */ import_react15.default.createElement("div", {
-      className: "flex flex-row-reverse items-stretch justify-start"
+      className: "flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center"
     }, /* @__PURE__ */ import_react15.default.createElement("div", {
-      className: "flex-grow max-w-sm"
+      className: "flex-grow max-w-xs w-80"
     }, /* @__PURE__ */ import_react15.default.createElement(Polaroid, {
       name: props.pet.name,
       background: "bgimage-1"
     })), /* @__PURE__ */ import_react15.default.createElement("div", {
-      className: "text-xl flex-grow grid grid-cols-keyvalue gap-2"
-    }, /* @__PURE__ */ import_react15.default.createElement("div", null, "Name:"), /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline"
+    }, /* @__PURE__ */ import_react15.default.createElement(SectionTitle, {
+      text: "Stats"
+    }), /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Name"
+    }), /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "font-medium"
-    }, props.pet.name), /* @__PURE__ */ import_react15.default.createElement("div", null, "Attack:"), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
+    }, props.pet.name), /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Attack"
+    }), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
       stat: props.pet.baseAttack,
       emoji: "\u2694\uFE0F"
-    }), /* @__PURE__ */ import_react15.default.createElement("div", null, "Health:"), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
+    }), /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Health"
+    }), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
       stat: props.pet.baseHealth,
       emoji: "\u{1F496}"
-    }), /* @__PURE__ */ import_react15.default.createElement("div", null, "Packs:"), /* @__PURE__ */ import_react15.default.createElement("div", null, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react15.default.createElement(Pack, {
+    }), /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Packs"
+    }), /* @__PURE__ */ import_react15.default.createElement("div", null, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react15.default.createElement(Pack, {
       pack,
       key: index2,
       colored: true,
       condensed: false
-    }))), props.pet.notes ? /* @__PURE__ */ import_react15.default.createElement("div", {
-      className: "col-span-2 border-t border-gray-700 text-gray-200 italic"
-    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
+    }))), props.pet.notes ? /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Notes"
+    }), /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "italic"
+    }, props.pet.notes)) : null, /* @__PURE__ */ import_react15.default.createElement(SectionTitle, {
+      text: "Abilities"
+    }), props.pet.level1Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
       level: 1,
       ability: props.pet.level1Ability
     }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
@@ -29127,9 +29141,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
       level: 3,
       ability: props.pet.level3Ability
-    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react15.default.createElement(Status, {
+    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: "Status"
+    }), /* @__PURE__ */ import_react15.default.createElement(Status, {
       status: props.pet.status
-    }) : null)));
+    })) : null)));
   }
   function StatDisplay(props) {
     if (typeof props.stat == "string") {
@@ -29137,20 +29153,20 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
   }
-  function Ability(props) {
-    return /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", null, "Level ", props.level, " Ability:"), /* @__PURE__ */ import_react15.default.createElement("div", null, LevelLabel(props.level), " ", props.ability.description));
+  function SectionTitle(props) {
+    return /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "col-span-2 mt-4 border-b border-gray-500 text-2xl font-light"
+    }, props.text, ":");
   }
-  function LevelLabel(level) {
-    switch (level) {
-      case 1:
-        return "1\uFE0F\u20E3";
-      case 2:
-        return "2\uFE0F\u20E3";
-      case 3:
-        return "3\uFE0F\u20E3";
-      default:
-        return "\u2757";
-    }
+  function RowLabel(props) {
+    return /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "font-bold text-base text-gray-300"
+    }, props.text, ":");
+  }
+  function Ability(props) {
+    return /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(RowLabel, {
+      text: `Level ${props.level}`
+    }), /* @__PURE__ */ import_react15.default.createElement("div", null, props.ability.description));
   }
 
   // src/website/components/PetPage.tsx
@@ -29167,36 +29183,57 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react17 = __toModule(require_react());
   function Food(props) {
     return /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5"
+      className: "m-3"
     }, /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "p-3 flex flex-row justify-between"
+      className: "flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center"
     }, /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "text-xl font-medium"
-    }, props.food.name)), /* @__PURE__ */ import_react17.default.createElement("img", {
-      className: "mx-20",
-      src: `/assets/${sanitiseName(props.food.name)}.svg`
+      className: "flex-grow max-w-xs w-80"
+    }, /* @__PURE__ */ import_react17.default.createElement(Polaroid, {
+      name: props.food.name,
+      background: "bgimage-4"
+    })), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline"
+    }, /* @__PURE__ */ import_react17.default.createElement(SectionTitle2, {
+      text: "Stats"
+    }), /* @__PURE__ */ import_react17.default.createElement(RowLabel2, {
+      text: "Name"
     }), /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "p-3"
-    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react17.default.createElement(Pack, {
+      className: "font-medium"
+    }, props.food.name), /* @__PURE__ */ import_react17.default.createElement(RowLabel2, {
+      text: "Packs"
+    }), /* @__PURE__ */ import_react17.default.createElement("div", null, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react17.default.createElement(Pack, {
       pack,
       key: index2,
       colored: true,
       condensed: false
-    }))), props.food.notes ? /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200 italic"
-    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react17.default.createElement(Ability2, {
+    }))), props.food.notes ? /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement(RowLabel2, {
+      text: "Notes"
+    }), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "italic"
+    }, props.food.notes)) : null, /* @__PURE__ */ import_react17.default.createElement(SectionTitle2, {
+      text: "Abilities"
+    }), props.food.ability ? /* @__PURE__ */ import_react17.default.createElement(Ability2, {
       ability: props.food.ability
-    }) : null, /* @__PURE__ */ import_react17.default.createElement(Polaroid, {
-      name: props.food.name,
-      background: "bgimage-4"
-    }));
+    }) : null)));
+  }
+  function SectionTitle2(props) {
+    return /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "col-span-2 mt-4 border-b border-gray-500 text-2xl font-light"
+    }, props.text, ":");
+  }
+  function RowLabel2(props) {
+    return /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "font-bold text-base text-gray-300"
+    }, props.text, ":");
   }
   function Ability2(props) {
-    return /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "p-3 border-t border-gray-500 text-gray-200"
-    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react17.default.createElement(Status, {
+    return /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement(RowLabel2, {
+      text: "Effect"
+    }), /* @__PURE__ */ import_react17.default.createElement("div", null, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement(RowLabel2, {
+      text: "Status"
+    }), /* @__PURE__ */ import_react17.default.createElement(Status, {
       status: props.ability.effect.status
-    }) : null);
+    })) : null);
   }
 
   // src/website/components/FoodPage.tsx

@@ -10,7 +10,7 @@ export const dirtyRatSummoned: Pet = {
   tier: "Summoned",
   baseAttack: 1,
   baseHealth: 1,
-  // TODO: Represent random attacks?
+  // TODO: whenever the animal in front of it attacks the rat will do 1 damage to it
 };
 
 function ratAbility(level: number): Ability {

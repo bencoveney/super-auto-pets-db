@@ -7,38 +7,57 @@ import { Polaroid } from "./Polaroid";
 
 export function Food(props: { food: FoodType }) {
   return (
-    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5">
-      <div className="p-3 flex flex-row justify-between">
-        <div className="text-xl font-medium">{props.food.name}</div>
-      </div>
-      <img
-        className="mx-20"
-        src={`/assets/${sanitiseName(props.food.name)}.svg`}
-      />
-      <div className="p-3">
-        {(props.food.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} colored={true} condensed={false} />
-        ))}
-      </div>
-      {props.food.notes ? (
-        <div className="p-3 border-t border-gray-500 text-gray-200 italic">
-          {props.food.notes}
+    <div className="m-3">
+      <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">
+        <div className="flex-grow max-w-xs w-80">
+          <Polaroid name={props.food.name} background="bgimage-4" />
         </div>
-      ) : null}
-      {props.food.ability ? <Ability ability={props.food.ability} /> : null}
-      <Polaroid name={props.food.name} background="bgimage-4" />
+        <div className="text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline">
+          <SectionTitle text="Stats" />
+          <RowLabel text="Name" />
+          <div className="font-medium">{props.food.name}</div>
+          <RowLabel text="Packs" />
+          <div>
+            {(props.food.packs || []).map((pack, index) => (
+              <Pack pack={pack} key={index} colored={true} condensed={false} />
+            ))}
+          </div>
+          {props.food.notes ? (
+            <>
+              <RowLabel text="Notes" />
+              <div className="italic">{props.food.notes}</div>
+            </>
+          ) : null}
+          <SectionTitle text="Abilities" />
+          {props.food.ability ? <Ability ability={props.food.ability} /> : null}
+        </div>
+      </div>
     </div>
   );
+}
+
+function SectionTitle(props: { text: string }): React.ReactElement {
+  return (
+    <div className="col-span-2 mt-4 border-b border-gray-500 text-2xl font-light">
+      {props.text}:
+    </div>
+  );
+}
+
+function RowLabel(props: { text: string }) {
+  return <div className="font-bold text-base text-gray-300">{props.text}:</div>;
 }
 
 function Ability(props: { ability: AbilityType }) {
   return (
     <>
-      <div className="p-3 border-t border-gray-500 text-gray-200">
-        {props.ability.description}
-      </div>
+      <RowLabel text={"Effect"} />
+      <div>{props.ability.description}</div>
       {props.ability.effect.kind == "ApplyStatus" ? (
-        <Status status={props.ability.effect.status} />
+        <>
+          <RowLabel text={"Status"} />
+          <Status status={props.ability.effect.status} />
+        </>
       ) : null}
     </>
   );

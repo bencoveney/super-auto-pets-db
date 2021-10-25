@@ -2,11 +2,7 @@ import React from "react";
 import { StatusEffect } from "../../database";
 
 export function Status(props: { status: StatusEffect }) {
-  return (
-    <div className="p-3 border-t border-gray-500 text-gray-200 italic">
-      {getStatusDescription(props.status)}
-    </div>
-  );
+  return <div className="italic">{getStatusDescription(props.status)}</div>;
 }
 
 function getStatusDescription(status: StatusEffect) {

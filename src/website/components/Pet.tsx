@@ -8,28 +8,31 @@ import { stat } from "fs";
 export function Pet(props: { pet: PetType }) {
   return (
     <div className="m-3">
-      <div className="flex flex-row-reverse items-stretch justify-start">
-        <div className="flex-grow max-w-sm">
+      <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">
+        <div className="flex-grow max-w-xs w-80">
           <Polaroid name={props.pet.name} background="bgimage-1" />
         </div>
-        <div className="text-xl flex-grow grid grid-cols-keyvalue gap-2">
-          <div>Name:</div>
+        <div className="text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline">
+          <SectionTitle text="Stats" />
+          <RowLabel text="Name" />
           <div className="font-medium">{props.pet.name}</div>
-          <div>Attack:</div>
+          <RowLabel text="Attack" />
           <StatDisplay stat={props.pet.baseAttack} emoji="⚔️" />
-          <div>Health:</div>
+          <RowLabel text="Health" />
           <StatDisplay stat={props.pet.baseHealth} emoji="💖" />
-          <div>Packs:</div>
+          <RowLabel text="Packs" />
           <div>
             {(props.pet.packs || []).map((pack, index) => (
               <Pack pack={pack} key={index} colored={true} condensed={false} />
             ))}
           </div>
           {props.pet.notes ? (
-            <div className="col-span-2 border-t border-gray-700 text-gray-200 italic">
-              {props.pet.notes}
-            </div>
+            <>
+              <RowLabel text="Notes" />
+              <div className="italic">{props.pet.notes}</div>
+            </>
           ) : null}
+          <SectionTitle text="Abilities" />
           {props.pet.level1Ability ? (
             <Ability level={1} ability={props.pet.level1Ability} />
           ) : null}
@@ -39,7 +42,12 @@ export function Pet(props: { pet: PetType }) {
           {props.pet.level3Ability ? (
             <Ability level={3} ability={props.pet.level3Ability} />
           ) : null}
-          {!!props.pet.status ? <Status status={props.pet.status} /> : null}
+          {!!props.pet.status ? (
+            <>
+              <RowLabel text={"Status"} />
+              <Status status={props.pet.status} />
+            </>
+          ) : null}
         </div>
       </div>
     </div>
@@ -58,13 +66,23 @@ function StatDisplay(props: { stat: Stat; emoji: string }): React.ReactElement {
   );
 }
 
+function SectionTitle(props: { text: string }): React.ReactElement {
+  return (
+    <div className="col-span-2 mt-4 border-b border-gray-500 text-2xl font-light">
+      {props.text}:
+    </div>
+  );
+}
+
+function RowLabel(props: { text: string }) {
+  return <div className="font-bold text-base text-gray-300">{props.text}:</div>;
+}
+
 function Ability(props: { level: number; ability: AbilityType }) {
   return (
     <>
-      <div>Level {props.level} Ability:</div>
-      <div>
-        {LevelLabel(props.level)} {props.ability.description}
-      </div>
+      <RowLabel text={`Level ${props.level}`} />
+      <div>{props.ability.description}</div>
     </>
   );
 }
