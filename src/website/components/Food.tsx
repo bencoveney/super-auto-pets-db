@@ -3,6 +3,7 @@ import { Food as FoodType, Ability as AbilityType } from "../../database";
 import { sanitiseName } from "../../utils";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
+import { Polaroid } from "./Polaroid";
 
 export function Food(props: { food: FoodType }) {
   return (
@@ -25,6 +26,7 @@ export function Food(props: { food: FoodType }) {
         </div>
       ) : null}
       {props.food.ability ? <Ability ability={props.food.ability} /> : null}
+      <Polaroid name={props.food.name} background="bgimage-4" />
     </div>
   );
 }

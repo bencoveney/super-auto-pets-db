@@ -479,7 +479,7 @@
               }
             }
           }
-          var ReactElement2 = function(type, key, ref, self, source, owner, props) {
+          var ReactElement3 = function(type, key, ref, self, source, owner, props) {
             var element = {
               $$typeof: REACT_ELEMENT_TYPE,
               type,
@@ -574,10 +574,10 @@
                 }
               }
             }
-            return ReactElement2(type, key, ref, self, source, ReactCurrentOwner.current, props);
+            return ReactElement3(type, key, ref, self, source, ReactCurrentOwner.current, props);
           }
           function cloneAndReplaceKey(oldElement, newKey) {
-            var newElement = ReactElement2(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
+            var newElement = ReactElement3(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
             return newElement;
           }
           function cloneElement(element, config, children) {
@@ -625,7 +625,7 @@
               }
               props.children = childArray;
             }
-            return ReactElement2(element.type, key, ref, self, source, owner, props);
+            return ReactElement3(element.type, key, ref, self, source, owner, props);
           }
           function isValidElement(object) {
             return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
@@ -2457,11 +2457,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React19 = require_react();
+          var React20 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React19.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React20.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2493,7 +2493,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React19) {
+          if (!React20) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3709,7 +3709,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React19.Children.forEach(children, function(child) {
+            React20.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3720,7 +3720,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React19.Children.forEach(props.children, function(child) {
+                React20.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10913,7 +10913,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React19.Component().refs;
+          var emptyRefsObject = new React20.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -26967,7 +26967,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   ];
 
   // src/website/live/index.tsx
-  var import_react18 = __toModule(require_react());
+  var import_react19 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/website/components/Homepage.tsx
@@ -29027,15 +29027,39 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/PetPage.tsx
-  var import_react15 = __toModule(require_react());
+  var import_react16 = __toModule(require_react());
 
   // src/website/components/Pet.tsx
-  var import_react14 = __toModule(require_react());
+  var import_react15 = __toModule(require_react());
+
+  // src/website/components/Polaroid.tsx
+  var import_react13 = __toModule(require_react());
+  function Polaroid({
+    name,
+    background
+  }) {
+    return /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "bg-white shadow p-3 m-4 transform rotate-3"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "relative"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover`
+    }), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "p-3"
+    }, /* @__PURE__ */ import_react13.default.createElement("img", {
+      className: "filter drop-shadow-tile",
+      src: `/assets/${sanitiseName(name)}.svg`
+    })), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover`
+    })), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "text-center text-black mt-2 italic text-xl"
+    }, "My ", name, "!"));
+  }
 
   // src/website/components/Status.tsx
-  var import_react13 = __toModule(require_react());
+  var import_react14 = __toModule(require_react());
   function Status(props) {
-    return /* @__PURE__ */ import_react13.default.createElement("div", {
+    return /* @__PURE__ */ import_react14.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200 italic"
     }, getStatusDescription(props.status));
   }
@@ -29068,43 +29092,53 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
 
   // src/website/components/Pet.tsx
   function Pet(props) {
-    return /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "text-xl font-medium"
-    }, props.pet.name), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: ""
-    }, "\u2694\uFE0F ", props.pet.baseAttack, " / \u{1F496} ", props.pet.baseHealth)), /* @__PURE__ */ import_react14.default.createElement("img", {
-      className: "mx-20",
-      src: `/assets/${sanitiseName(props.pet.name)}.svg`
-    }), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "p-3"
-    }, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react14.default.createElement(Pack, {
+    return /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "m-3"
+    }, /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "flex flex-row-reverse items-stretch justify-start"
+    }, /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "flex-grow max-w-sm"
+    }, /* @__PURE__ */ import_react15.default.createElement(Polaroid, {
+      name: props.pet.name,
+      background: "bgimage-1"
+    })), /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "text-xl flex-grow grid grid-cols-keyvalue gap-2"
+    }, /* @__PURE__ */ import_react15.default.createElement("div", null, "Name:"), /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "font-medium"
+    }, props.pet.name), /* @__PURE__ */ import_react15.default.createElement("div", null, "Attack:"), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
+      stat: props.pet.baseAttack,
+      emoji: "\u2694\uFE0F"
+    }), /* @__PURE__ */ import_react15.default.createElement("div", null, "Health:"), /* @__PURE__ */ import_react15.default.createElement(StatDisplay, {
+      stat: props.pet.baseHealth,
+      emoji: "\u{1F496}"
+    }), /* @__PURE__ */ import_react15.default.createElement("div", null, "Packs:"), /* @__PURE__ */ import_react15.default.createElement("div", null, (props.pet.packs || []).map((pack, index2) => /* @__PURE__ */ import_react15.default.createElement(Pack, {
       pack,
       key: index2,
       colored: true,
       condensed: false
-    }))), props.pet.notes ? /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200 italic"
-    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react14.default.createElement(Ability, {
+    }))), props.pet.notes ? /* @__PURE__ */ import_react15.default.createElement("div", {
+      className: "col-span-2 border-t border-gray-700 text-gray-200 italic"
+    }, props.pet.notes) : null, props.pet.level1Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
       level: 1,
       ability: props.pet.level1Ability
-    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react14.default.createElement(Ability, {
+    }) : null, props.pet.level2Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
       level: 2,
       ability: props.pet.level2Ability
-    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react14.default.createElement(Ability, {
+    }) : null, props.pet.level3Ability ? /* @__PURE__ */ import_react15.default.createElement(Ability, {
       level: 3,
       ability: props.pet.level3Ability
-    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react14.default.createElement(Status, {
+    }) : null, !!props.pet.status ? /* @__PURE__ */ import_react15.default.createElement(Status, {
       status: props.pet.status
-    }) : null);
+    }) : null)));
+  }
+  function StatDisplay(props) {
+    if (typeof props.stat == "string") {
+      return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat);
+    }
+    return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
   }
   function Ability(props) {
-    return /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "p-3 border-t border-gray-700 text-gray-200"
-    }, LevelLabel(props.level), " ", props.ability.description);
+    return /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("div", null, "Level ", props.level, " Ability:"), /* @__PURE__ */ import_react15.default.createElement("div", null, LevelLabel(props.level), " ", props.ability.description));
   }
   function LevelLabel(level) {
     switch (level) {
@@ -29121,50 +29155,53 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
 
   // src/website/components/PetPage.tsx
   function PetPage(props) {
-    return /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement(Header, null, /* @__PURE__ */ import_react15.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react15.default.createElement(Pet, {
+    return /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, /* @__PURE__ */ import_react16.default.createElement(Header, null, /* @__PURE__ */ import_react16.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react16.default.createElement(Pet, {
       pet: props.pet
     }));
   }
 
   // src/website/components/FoodPage.tsx
-  var import_react17 = __toModule(require_react());
+  var import_react18 = __toModule(require_react());
 
   // src/website/components/Food.tsx
-  var import_react16 = __toModule(require_react());
+  var import_react17 = __toModule(require_react());
   function Food(props) {
-    return /* @__PURE__ */ import_react16.default.createElement("div", {
+    return /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5"
-    }, /* @__PURE__ */ import_react16.default.createElement("div", {
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "p-3 flex flex-row justify-between"
-    }, /* @__PURE__ */ import_react16.default.createElement("div", {
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "text-xl font-medium"
-    }, props.food.name)), /* @__PURE__ */ import_react16.default.createElement("img", {
+    }, props.food.name)), /* @__PURE__ */ import_react17.default.createElement("img", {
       className: "mx-20",
       src: `/assets/${sanitiseName(props.food.name)}.svg`
-    }), /* @__PURE__ */ import_react16.default.createElement("div", {
+    }), /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "p-3"
-    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react16.default.createElement(Pack, {
+    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react17.default.createElement(Pack, {
       pack,
       key: index2,
       colored: true,
       condensed: false
-    }))), props.food.notes ? /* @__PURE__ */ import_react16.default.createElement("div", {
+    }))), props.food.notes ? /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200 italic"
-    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react16.default.createElement(Ability2, {
+    }, props.food.notes) : null, props.food.ability ? /* @__PURE__ */ import_react17.default.createElement(Ability2, {
       ability: props.food.ability
-    }) : null);
+    }) : null, /* @__PURE__ */ import_react17.default.createElement(Polaroid, {
+      name: props.food.name,
+      background: "bgimage-4"
+    }));
   }
   function Ability2(props) {
-    return /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, /* @__PURE__ */ import_react16.default.createElement("div", {
+    return /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "p-3 border-t border-gray-500 text-gray-200"
-    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react16.default.createElement(Status, {
+    }, props.ability.description), props.ability.effect.kind == "ApplyStatus" ? /* @__PURE__ */ import_react17.default.createElement(Status, {
       status: props.ability.effect.status
     }) : null);
   }
 
   // src/website/components/FoodPage.tsx
   function FoodPage(props) {
-    return /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement(Header, null, /* @__PURE__ */ import_react17.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react17.default.createElement(Food, {
+    return /* @__PURE__ */ import_react18.default.createElement(import_react18.default.Fragment, null, /* @__PURE__ */ import_react18.default.createElement(Header, null, /* @__PURE__ */ import_react18.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react18.default.createElement(Food, {
       food: props.theFood
     }));
   }
@@ -29182,7 +29219,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!pet) {
       throw new Error(`Could not find pet ${petName}`);
     }
-    return /* @__PURE__ */ import_react18.default.createElement(PetPage, {
+    return /* @__PURE__ */ import_react19.default.createElement(PetPage, {
       pet,
       pets: pets2,
       food: food2
@@ -29194,23 +29231,23 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!theFood) {
       throw new Error(`Could not find ${foodName}`);
     }
-    return /* @__PURE__ */ import_react18.default.createElement(FoodPage, {
+    return /* @__PURE__ */ import_react19.default.createElement(FoodPage, {
       theFood,
       pets: pets2,
       food: food2
     });
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react18.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react18.default.createElement(Route, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react19.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react19.default.createElement(Route, {
     exact: true,
     path: "/"
-  }, /* @__PURE__ */ import_react18.default.createElement(Homepage, {
+  }, /* @__PURE__ */ import_react19.default.createElement(Homepage, {
     pets: pets2,
     food: food2
-  })), /* @__PURE__ */ import_react18.default.createElement(Route, {
+  })), /* @__PURE__ */ import_react19.default.createElement(Route, {
     exact: true,
     path: "/pet/:petName",
     component: PetPageWrapper
-  }), /* @__PURE__ */ import_react18.default.createElement(Route, {
+  }), /* @__PURE__ */ import_react19.default.createElement(Route, {
     exact: true,
     path: "/food/:foodName",
     component: FoodPageWrapper
