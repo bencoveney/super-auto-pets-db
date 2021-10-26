@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusEffect } from "../../database";
+import { StatusEffect } from "../../db";
 
 export function Status(props: { status?: StatusEffect }) {
   if (!props.status) {

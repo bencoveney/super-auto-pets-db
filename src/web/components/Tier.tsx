@@ -1,5 +1,5 @@
 import React from "react";
-import { Pet, Food, Tier as TierType } from "../../database";
+import { Pet, Food, Tier as TierType } from "../../db";
 import { Tiles } from "./Tiles";
 
 export function Tier(props: { tier: TierType; pets: Pet[]; food: Food[] }) {

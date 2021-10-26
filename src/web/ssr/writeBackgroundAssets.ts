@@ -4,7 +4,7 @@ import path from "path";
 export function copyBackgroundAssets(targetDir: string) {
   const backgroundsDir = path.resolve(
     process.cwd(),
-    "./src/website/assets/backgrounds"
+    "./src/web/assets/backgrounds"
   );
   fs.readdirSync(backgroundsDir).forEach((background) => {
     const sourcePath = path.resolve(backgroundsDir, background);

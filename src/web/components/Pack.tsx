@@ -1,5 +1,5 @@
 import React from "react";
-import { Pack as PackType } from "../../database";
+import { Pack as PackType } from "../../db";
 
 export function Pack(props: {
   pack: PackType;

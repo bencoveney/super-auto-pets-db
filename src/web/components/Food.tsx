@@ -1,5 +1,5 @@
 import React from "react";
-import { Food as FoodType, ApplyStatusEffect } from "../../database";
+import { Food as FoodType, ApplyStatusEffect } from "../../db";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
 import { Polaroid } from "./Polaroid";

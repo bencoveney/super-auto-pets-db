@@ -1,7 +1,7 @@
 import ReactDOMServer from "react-dom/server";
 import React from "react";
 import path from "path";
-import { Database } from "../../database/database";
+import { Database } from "../../db/database";
 import { Homepage } from "../components/Homepage";
 import { Page } from "../components/Page";
 import { StaticRouter } from "react-router-dom";

@@ -8,8 +8,8 @@ import {
   Identifiers,
   NotoEmojiImage,
   TwEmojiImage,
-} from "../../database";
-import { Database, enumerateTable } from "../../database/database";
+} from "../../db";
+import { Database, enumerateTable } from "../../db/database";
 
 export function copyEmojiAssets(targetDir: string, database: Database) {
   const images = new Array<HasImage & Identifiers>().concat(

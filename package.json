@@ -5,9 +5,9 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ssr": "ts-node ./src/website/ssr/index.ts",
+    "ssr": "ts-node ./src/web/ssr/index.ts",
     "typecheck": "tsc -noEmit",
-    "live": "esbuild ./src/website/live/index.tsx --bundle --outfile=docs\\bundle.js",
+    "live": "esbuild ./src/web/live/index.tsx --bundle --outfile=docs\\bundle.js",
     "css": "tailwindcss -o docs/tailwind.css",
     "start": "npm run typecheck && npm run ssr && npm run live && npm run css",
     "dev": "serve docs"

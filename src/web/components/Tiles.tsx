@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Food, Pet } from "../../database";
-import { getFoodUrl, getPetUrl } from "../../database/database";
+import { Food, Pet } from "../../db";
+import { getFoodUrl, getPetUrl } from "../../db/database";
 import { Tile } from "./Tile";
 
 export function Tiles(props: { pets: Pet[]; food: Food[] }) {

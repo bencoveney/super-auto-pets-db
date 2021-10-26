@@ -27321,7 +27321,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     statuses
   };
 
-  // src/database/database.ts
+  // src/db/database.ts
   function getPetId(pet) {
     let name = typeof pet == "string" ? pet : pet.name;
     return `pet_${sanitiseName(name)}`;
@@ -27343,14 +27343,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     return name.toLowerCase().replace(/\s/g, "_");
   }
 
-  // src/website/live/index.tsx
+  // src/web/live/index.tsx
   var import_react22 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
-  // src/website/components/Homepage.tsx
+  // src/web/components/Homepage.tsx
   var import_react12 = __toModule(require_react());
 
-  // src/website/components/Blurb.tsx
+  // src/web/components/Blurb.tsx
   var import_react = __toModule(require_react());
   function Blurb() {
     return /* @__PURE__ */ import_react.default.createElement("div", {
@@ -27378,7 +27378,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, "api.json"), ".")));
   }
 
-  // src/website/components/Breadcrumbs.tsx
+  // src/web/components/Breadcrumbs.tsx
   var import_react5 = __toModule(require_react());
 
   // node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
@@ -29141,7 +29141,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var ariaCurrentType;
 
-  // src/website/components/Breadcrumbs.tsx
+  // src/web/components/Breadcrumbs.tsx
   function PetBreadbrumb(props) {
     const name = getPetId(props.match.params.petName);
     const pet = props.database.pets[name];
@@ -29195,7 +29195,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }));
   }
 
-  // src/website/components/Header.tsx
+  // src/web/components/Header.tsx
   var import_react6 = __toModule(require_react());
   function Header(props) {
     return /* @__PURE__ */ import_react6.default.createElement("div", {
@@ -29203,16 +29203,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, props.children);
   }
 
-  // src/website/components/Tier.tsx
+  // src/web/components/Tier.tsx
   var import_react10 = __toModule(require_react());
 
-  // src/website/components/Tiles.tsx
+  // src/web/components/Tiles.tsx
   var import_react9 = __toModule(require_react());
 
-  // src/website/components/Tile.tsx
+  // src/web/components/Tile.tsx
   var import_react8 = __toModule(require_react());
 
-  // src/website/components/Pack.tsx
+  // src/web/components/Pack.tsx
   var import_react7 = __toModule(require_react());
   function Pack(props) {
     let packInfo = {
@@ -29240,7 +29240,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, text);
   }
 
-  // src/website/components/Tile.tsx
+  // src/web/components/Tile.tsx
   function Tile({
     id,
     name,
@@ -29273,7 +29273,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     })))));
   }
 
-  // src/website/components/Tiles.tsx
+  // src/web/components/Tiles.tsx
   function Tiles(props) {
     const tiles = props.pets.map((pet, index2) => /* @__PURE__ */ import_react9.default.createElement(PetTile, {
       key: `pet${index2}`,
@@ -29308,7 +29308,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }));
   }
 
-  // src/website/components/Tier.tsx
+  // src/web/components/Tier.tsx
   function Tier(props) {
     return /* @__PURE__ */ import_react10.default.createElement("div", {
       key: props.tier
@@ -29335,7 +29335,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
   }
 
-  // src/website/components/Filters.tsx
+  // src/web/components/Filters.tsx
   var import_react11 = __toModule(require_react());
   var allPacks = ["StandardPack", "ExpansionPack1"];
   function useFilters() {
@@ -29371,7 +29371,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     })))));
   }
 
-  // src/website/components/Homepage.tsx
+  // src/web/components/Homepage.tsx
   function Homepage(props) {
     const [filters, setName, togglePack] = useFilters();
     let filteredPets = applyFilter(enumerateTable(props.database.pets), filters.packs, filters.name);
@@ -29401,13 +29401,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     return filtered;
   }
 
-  // src/website/components/PetPage.tsx
+  // src/web/components/PetPage.tsx
   var import_react19 = __toModule(require_react());
 
-  // src/website/components/Pet.tsx
+  // src/web/components/Pet.tsx
   var import_react18 = __toModule(require_react());
 
-  // src/website/components/Polaroid.tsx
+  // src/web/components/Polaroid.tsx
   var import_react13 = __toModule(require_react());
   function Polaroid({
     id,
@@ -29432,7 +29432,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, "My ", name, "!"));
   }
 
-  // src/website/components/Status.tsx
+  // src/web/components/Status.tsx
   var import_react14 = __toModule(require_react());
   function Status(props) {
     if (!props.status) {
@@ -29469,7 +29469,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
   }
 
-  // src/website/components/StatsGrid.tsx
+  // src/web/components/StatsGrid.tsx
   var import_react15 = __toModule(require_react());
   function StatsGrid(props) {
     return /* @__PURE__ */ import_react15.default.createElement("div", {
@@ -29492,7 +29492,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, props.children));
   }
 
-  // src/website/components/StatDisplay.tsx
+  // src/web/components/StatDisplay.tsx
   var import_react16 = __toModule(require_react());
   function StatDisplay(props) {
     if (typeof props.stat == "string") {
@@ -29501,7 +29501,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     return /* @__PURE__ */ import_react16.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
   }
 
-  // src/website/components/AbilityDescription.tsx
+  // src/web/components/AbilityDescription.tsx
   var import_react17 = __toModule(require_react());
   function AbilityDescription(props) {
     if (!props.ability) {
@@ -29510,7 +29510,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     return /* @__PURE__ */ import_react17.default.createElement("div", null, props.ability.description);
   }
 
-  // src/website/components/Pet.tsx
+  // src/web/components/Pet.tsx
   function Pet(props) {
     return /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "m-3"
@@ -29563,17 +29563,17 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     })))));
   }
 
-  // src/website/components/PetPage.tsx
+  // src/web/components/PetPage.tsx
   function PetPage(props) {
     return /* @__PURE__ */ import_react19.default.createElement(import_react19.default.Fragment, null, /* @__PURE__ */ import_react19.default.createElement(Header, null, /* @__PURE__ */ import_react19.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react19.default.createElement(Pet, {
       pet: props.pet
     }));
   }
 
-  // src/website/components/FoodPage.tsx
+  // src/web/components/FoodPage.tsx
   var import_react21 = __toModule(require_react());
 
-  // src/website/components/Food.tsx
+  // src/web/components/Food.tsx
   var import_react20 = __toModule(require_react());
   function Food(props) {
     return /* @__PURE__ */ import_react20.default.createElement("div", {
@@ -29609,14 +29609,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     })))));
   }
 
-  // src/website/components/FoodPage.tsx
+  // src/web/components/FoodPage.tsx
   function FoodPage(props) {
     return /* @__PURE__ */ import_react21.default.createElement(import_react21.default.Fragment, null, /* @__PURE__ */ import_react21.default.createElement(Header, null, /* @__PURE__ */ import_react21.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react21.default.createElement(Food, {
       food: props.theFood
     }));
   }
 
-  // src/website/live/index.tsx
+  // src/web/live/index.tsx
   var database = api_exports;
   var reactRoot = document.getElementById("react-root");
   if (!reactRoot) {

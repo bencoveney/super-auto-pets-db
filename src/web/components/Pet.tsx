@@ -1,5 +1,5 @@
 import React from "react";
-import { Pet as PetType } from "../../database";
+import { Pet as PetType } from "../../db";
 import { Polaroid } from "./Polaroid";
 import { Pack } from "./Pack";
 import { Status } from "./Status";

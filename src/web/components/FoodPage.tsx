@@ -1,6 +1,6 @@
 import React from "react";
-import { Food as FoodType } from "../../database";
-import { Database } from "../../database/database";
+import { Food as FoodType } from "../../db";
+import { Database } from "../../db/database";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Food } from "./Food";
 import { Header } from "./Header";

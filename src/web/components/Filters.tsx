@@ -5,7 +5,7 @@ import {
   Food,
   Tier as TierType,
   Filterable,
-} from "../../database";
+} from "../../db";
 import { Pack } from "./Pack";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];

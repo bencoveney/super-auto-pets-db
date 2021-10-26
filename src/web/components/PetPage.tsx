@@ -1,6 +1,6 @@
 import React from "react";
-import { Pet as PetType } from "../../database";
-import { Database } from "../../database/database";
+import { Pet as PetType } from "../../db";
+import { Database } from "../../db/database";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Header } from "./Header";
 import { Pet } from "./Pet";

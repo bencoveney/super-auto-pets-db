@@ -1,5 +1,5 @@
 import React from "react";
-import { Pack as PackType, Stat } from "../../database";
+import { Pack as PackType, Stat } from "../../db";
 import { Pack } from "./Pack";
 
 export function Tile({

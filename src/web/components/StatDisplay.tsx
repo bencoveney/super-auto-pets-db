@@ -1,5 +1,5 @@
 import React from "react";
-import { Stat } from "../../database";
+import { Stat } from "../../db";
 
 export function StatDisplay(props: {
   stat: Stat;

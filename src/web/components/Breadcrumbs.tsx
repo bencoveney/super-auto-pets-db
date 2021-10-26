@@ -6,7 +6,7 @@ import {
   getFoodUrl,
   getPetId,
   getPetUrl,
-} from "../../database/database";
+} from "../../db/database";
 
 function PetBreadbrumb(
   props: RouteComponentProps<{ petName: string }> & { database: Database }

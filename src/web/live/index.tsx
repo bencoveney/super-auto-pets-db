@@ -2,7 +2,7 @@
 // We use const enums but they break esbuild.
 // https://github.com/evanw/esbuild/issues/128
 import * as api from "../../../docs/api.json";
-import { Database, getFoodId, getPetId } from "../../database/database";
+import { Database, getFoodId, getPetId } from "../../db/database";
 // As another consequence, cast to any to avoid TypeScript errors when changing API structure.
 const database = api as any as Database;
 
