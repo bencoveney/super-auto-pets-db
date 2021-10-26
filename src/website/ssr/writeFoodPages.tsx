@@ -2,13 +2,8 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import {
-  Database,
-  enumerateTable,
-  Food,
-  getFoodUrl,
-  WithId,
-} from "../../database";
+import { Food } from "../../database";
+import { Database, enumerateTable, getFoodUrl } from "../../database/database";
 import { Page } from "../components/Page";
 import { FoodPage } from "../components/FoodPage";
 import { StaticRouter } from "react-router-dom";
@@ -28,7 +23,7 @@ export async function writeFoodPages(outputDir: string, database: Database) {
 
 async function writeFoodPage(
   outputDir: string,
-  food: WithId<Food>,
+  food: Food,
   database: Database
 ) {
   const pathname = getFoodUrl(food);

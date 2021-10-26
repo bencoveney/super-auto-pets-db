@@ -1,7 +1,8 @@
 import { Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
-export const sloth = {
-  name: "Sloth",
+export const sloth: Pet = {
+  ...getPetIdentifiers("Sloth"),
   notes:
     "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
   image: {
@@ -12,4 +13,4 @@ export const sloth = {
   baseAttack: 1,
   baseHealth: 1,
   packs: ["StandardPack", "ExpansionPack1", "EasterEgg"],
-} as Pet;
+};

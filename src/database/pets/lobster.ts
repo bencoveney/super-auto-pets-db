@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function lobsterAbility(level: number): Ability {
   return {
@@ -21,8 +22,8 @@ function lobsterAbility(level: number): Ability {
   };
 }
 
-export const lobster = {
-  name: "Lobster",
+export const lobster: Pet = {
+  ...getPetIdentifiers("Lobster"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F99E}",
@@ -34,4 +35,4 @@ export const lobster = {
   level1Ability: lobsterAbility(1),
   level2Ability: lobsterAbility(2),
   level3Ability: lobsterAbility(3),
-} as Pet;
+};

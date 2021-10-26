@@ -1,7 +1,8 @@
 import { Pet, Ability, Trigger } from "..";
+import { getPetIdentifiers } from "../database";
 
 export const dirtyRatSummoned: Pet = {
-  name: "Dirty Rat",
+  ...getPetIdentifiers("Dirty Rat"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F400}",
@@ -28,8 +29,8 @@ function ratAbility(level: number): Ability {
   };
 }
 
-export const rat = {
-  name: "Rat",
+export const rat: Pet = {
+  ...getPetIdentifiers("Rat"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F400}",
@@ -41,4 +42,4 @@ export const rat = {
   level1Ability: ratAbility(1),
   level2Ability: ratAbility(2),
   level3Ability: ratAbility(3),
-} as Pet;
+};

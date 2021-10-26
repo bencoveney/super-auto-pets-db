@@ -1,7 +1,8 @@
 import { Food, Trigger } from "..";
+import { getFoodIdentifiers } from "../database";
 
-export const meatBone = {
-  name: "Meat Bone",
+export const meatBone: Food = {
+  ...getFoodIdentifiers("Meat Bone"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F356}",
@@ -24,4 +25,4 @@ export const meatBone = {
       },
     },
   },
-} as Food;
+};

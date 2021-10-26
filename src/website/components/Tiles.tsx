@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Food, getFoodUrl, getPetUrl, Pet, WithId } from "../../database";
+import { Food, Pet } from "../../database";
+import { getFoodUrl, getPetUrl } from "../../database/database";
 import { Tile } from "./Tile";
 
-export function Tiles(props: { pets: WithId<Pet>[]; food: WithId<Food>[] }) {
+export function Tiles(props: { pets: Pet[]; food: Food[] }) {
   const tiles = props.pets
     .map((pet, index) => <PetTile key={`pet${index}`} pet={pet} />)
     .concat(
@@ -18,7 +19,7 @@ export function Tiles(props: { pets: WithId<Pet>[]; food: WithId<Food>[] }) {
   );
 }
 
-function FoodTile(props: { food: WithId<Food> }) {
+function FoodTile(props: { food: Food }) {
   return (
     <Link to={getFoodUrl(props.food)}>
       <Tile
@@ -31,7 +32,7 @@ function FoodTile(props: { food: WithId<Food> }) {
   );
 }
 
-function PetTile(props: { pet: WithId<Pet> }) {
+function PetTile(props: { pet: Pet }) {
   return (
     <Link to={getPetUrl(props.pet)}>
       <Tile

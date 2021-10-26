@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { Database, HasImage } from "../../database";
+import { Database } from "../../database/database";
 import { copyBackgroundAssets } from "./writeBackgroundAssets";
 import { copyEmojiAssets } from "./writeEmojiAssets";
 

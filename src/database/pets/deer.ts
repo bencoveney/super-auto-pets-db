@@ -1,7 +1,8 @@
 import { Ability, Pet, Trigger } from "..";
+import { getPetIdentifiers } from "../database";
 
 export const busSummoned: Pet = {
-  name: "Bus",
+  ...getPetIdentifiers("Bus"),
   image: {
     source: "noto-emoji",
     // TODO: Incorrect. Not sure where the right bus should come from
@@ -37,8 +38,8 @@ function deerAbility(level: number): Ability {
   };
 }
 
-export const deer = {
-  name: "Deer",
+export const deer: Pet = {
+  ...getPetIdentifiers("Deer"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F98C}",
@@ -50,4 +51,4 @@ export const deer = {
   level1Ability: deerAbility(1),
   level2Ability: deerAbility(2),
   level3Ability: deerAbility(3),
-} as Pet;
+};

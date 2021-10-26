@@ -1,5 +1,5 @@
 import React from "react";
-import { Pet as PetType, WithId } from "../../database";
+import { Pet as PetType } from "../../database";
 import { Polaroid } from "./Polaroid";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
@@ -7,7 +7,7 @@ import { StatsGrid, StatsRow, StatsSummary } from "./StatsGrid";
 import { StatDisplay } from "./StatDisplay";
 import { AbilityDescription } from "./AbilityDescription";
 
-export function Pet(props: { pet: WithId<PetType> }) {
+export function Pet(props: { pet: PetType }) {
   return (
     <div className="m-3">
       <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">

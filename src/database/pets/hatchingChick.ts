@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function hatchingChickAbility(level: number): Ability {
   if (level <= 1) {
@@ -58,8 +59,8 @@ function hatchingChickAbility(level: number): Ability {
   };
 }
 
-export const hatchingChick = {
-  name: "Hatching Chick",
+export const hatchingChick: Pet = {
+  ...getPetIdentifiers("Hatching Chick"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F423}",
@@ -71,4 +72,4 @@ export const hatchingChick = {
   level1Ability: hatchingChickAbility(1),
   level2Ability: hatchingChickAbility(2),
   level3Ability: hatchingChickAbility(3),
-} as Pet;
+};

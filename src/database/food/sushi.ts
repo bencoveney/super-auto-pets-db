@@ -1,7 +1,8 @@
 import { Food, Trigger } from "..";
+import { getFoodIdentifiers } from "../database";
 
-export const sushi = {
-  name: "Sushi",
+export const sushi: Food = {
+  ...getFoodIdentifiers("Sushi"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F363}",
@@ -25,4 +26,4 @@ export const sushi = {
       untilEndOfBattle: false,
     },
   },
-} as Food;
+};

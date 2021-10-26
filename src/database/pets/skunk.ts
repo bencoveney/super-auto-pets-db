@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function skunkAbility(level: number): Ability {
   const percentage = level == 3 ? 100 : level * 33;
@@ -18,8 +19,8 @@ function skunkAbility(level: number): Ability {
   };
 }
 
-export const skunk = {
-  name: "Skunk",
+export const skunk: Pet = {
+  ...getPetIdentifiers("Skunk"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F9A8}",
@@ -31,4 +32,4 @@ export const skunk = {
   level1Ability: skunkAbility(1),
   level2Ability: skunkAbility(2),
   level3Ability: skunkAbility(3),
-} as Pet;
+};

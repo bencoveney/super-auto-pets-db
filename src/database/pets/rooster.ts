@@ -1,7 +1,8 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 export const chick: Pet = {
-  name: "Chick",
+  ...getPetIdentifiers("Chick"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F424}",
@@ -28,8 +29,8 @@ function roosterAbility(level: number): Ability {
   };
 }
 
-export const rooster = {
-  name: "Rooster",
+export const rooster: Pet = {
+  ...getPetIdentifiers("Rooster"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F413}",
@@ -44,4 +45,4 @@ export const rooster = {
   },
   level2Ability: roosterAbility(2),
   level3Ability: roosterAbility(3),
-} as Pet;
+};

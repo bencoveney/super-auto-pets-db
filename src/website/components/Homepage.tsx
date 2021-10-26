@@ -5,9 +5,8 @@ import {
   Food,
   Tier as TierType,
   Filterable,
-  Database,
-  enumerateTable,
 } from "../../database";
+import { Database, enumerateTable } from "../../database/database";
 import { Blurb } from "./Blurb";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Header } from "./Header";

@@ -1,7 +1,8 @@
 import { Food, Pet, Trigger } from "..";
+import { getFoodIdentifiers, getPetIdentifiers } from "../database";
 
 export const beeSummoned: Pet = {
-  name: "Bee",
+  ...getPetIdentifiers("Bee"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F41D}",
@@ -13,7 +14,7 @@ export const beeSummoned: Pet = {
 };
 
 export const honey: Food = {
-  name: "Honey",
+  ...getFoodIdentifiers("Honey"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F36F}",

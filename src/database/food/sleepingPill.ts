@@ -1,7 +1,8 @@
 import { Food, Trigger } from "..";
+import { getFoodIdentifiers } from "../database";
 
-export const sleepingPill = {
-  name: "Sleeping Pill",
+export const sleepingPill: Food = {
+  ...getFoodIdentifiers("Sleeping Pill"),
   image: {
     source: "fxemoji",
     unicodeCodePoint: "\u{1F48A}",
@@ -23,4 +24,4 @@ export const sleepingPill = {
       },
     },
   },
-} as Food;
+};

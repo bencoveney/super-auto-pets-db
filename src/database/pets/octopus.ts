@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function octopusAbility(level: number): Ability {
   if (level <= 1) {
@@ -66,8 +67,8 @@ function octopusAbility(level: number): Ability {
   };
 }
 
-export const octopus = {
-  name: "Octopus",
+export const octopus: Pet = {
+  ...getPetIdentifiers("Octopus"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F419}",
@@ -79,4 +80,4 @@ export const octopus = {
   level1Ability: octopusAbility(1),
   level2Ability: octopusAbility(2),
   level3Ability: octopusAbility(3),
-} as Pet;
+};

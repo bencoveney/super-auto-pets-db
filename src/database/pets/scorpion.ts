@@ -1,7 +1,8 @@
 import { Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
-export const scorpion = {
-  name: "Scorpion",
+export const scorpion: Pet = {
+  ...getPetIdentifiers("Scorpion"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F982}",
@@ -13,4 +14,4 @@ export const scorpion = {
   status: {
     name: "PoisinAttack",
   },
-} as Pet;
+};

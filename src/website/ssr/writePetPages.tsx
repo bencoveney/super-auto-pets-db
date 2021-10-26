@@ -2,13 +2,8 @@ import path from "path";
 import fs from "fs";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
-import {
-  Database,
-  enumerateTable,
-  getPetUrl,
-  Pet,
-  WithId,
-} from "../../database";
+import { Pet } from "../../database";
+import { Database, enumerateTable, getPetUrl } from "../../database/database";
 import { Page } from "../components/Page";
 import { PetPage } from "../components/PetPage";
 import { StaticRouter } from "react-router-dom";
@@ -26,11 +21,7 @@ export async function writePetPages(outputDir: string, database: Database) {
   );
 }
 
-async function writePetPage(
-  outputDir: string,
-  pet: WithId<Pet>,
-  database: Database
-) {
+async function writePetPage(outputDir: string, pet: Pet, database: Database) {
   const pathname = getPetUrl(pet);
   await writeToFile(
     ReactDOMServer.renderToStaticNodeStream(

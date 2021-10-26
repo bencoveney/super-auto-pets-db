@@ -1,0 +1,264 @@
+import { Pet, Food, Status } from ".";
+import { Database, getPetId, getFoodId, getStatusId } from "./database";
+import { apple } from "./food/apple";
+import { cannedFood } from "./food/cannedFood";
+import { chili } from "./food/chili";
+import { chocolate } from "./food/chocolate";
+import { cupcake } from "./food/cupcake";
+import { garlic } from "./food/garlic";
+import { beeSummoned, honey } from "./food/honey";
+import { meatBone } from "./food/meatBone";
+import { melon } from "./food/melon";
+import { milk } from "./food/milk";
+import { mushroom } from "./food/mushroom";
+import { pear } from "./food/pear";
+import { pizza } from "./food/pizza";
+import { saladBowl } from "./food/saladBowl";
+import { sleepingPill } from "./food/sleepingPill";
+import { steak } from "./food/steak";
+import { sushi } from "./food/sushi";
+import { ant } from "./pets/ant";
+import { badger } from "./pets/badger";
+import { bat } from "./pets/bat";
+import { beaver } from "./pets/beaver";
+import { beetle } from "./pets/beetle";
+import { bison } from "./pets/bison";
+import { blowfish } from "./pets/blowfish";
+import { bluebird } from "./pets/bluebird";
+import { buffalo } from "./pets/buffalo";
+import { camel } from "./pets/camel";
+import { cat } from "./pets/cat";
+import { caterpillar, butterfly } from "./pets/caterpillar";
+import { chicken } from "./pets/chicken";
+import { cow } from "./pets/cow";
+import { crab } from "./pets/crab";
+import { cricket, cricketSummoned } from "./pets/cricket";
+import { crocodile } from "./pets/crocodile";
+import { deer, busSummoned } from "./pets/deer";
+import { dodo } from "./pets/dodo";
+import { dog } from "./pets/dog";
+import { dolphin } from "./pets/dolphin";
+import { dragon } from "./pets/dragon";
+import { dromedary } from "./pets/dromedary";
+import { duck } from "./pets/duck";
+import { eagle } from "./pets/eagle";
+import { elephant } from "./pets/elephant";
+import { fish } from "./pets/fish";
+import { flamingo } from "./pets/flamingo";
+import { fly, flySummoned } from "./pets/fly";
+import { giraffe } from "./pets/giraffe";
+import { goat } from "./pets/goat";
+import { gorilla } from "./pets/gorilla";
+import { hatchingChick } from "./pets/hatchingChick";
+import { hedgehog } from "./pets/hedgehog";
+import { hippo } from "./pets/hippo";
+import { horse } from "./pets/horse";
+import { kangaroo } from "./pets/kangaroo";
+import { ladybug } from "./pets/ladybug";
+import { leopard } from "./pets/leopard";
+import { llama } from "./pets/llama";
+import { lobster } from "./pets/lobster";
+import { mammoth } from "./pets/mammoth";
+import { microbe } from "./pets/microbe";
+import { monkey } from "./pets/monkey";
+import { mosquito } from "./pets/mosquito";
+import { octopus } from "./pets/octopus";
+import { otter } from "./pets/otter";
+import { owl } from "./pets/owl";
+import { ox } from "./pets/ox";
+import { parrot } from "./pets/parrot";
+import { peacock } from "./pets/peacock";
+import { penguin } from "./pets/penguin";
+import { pig } from "./pets/pig";
+import { poodle } from "./pets/poodle";
+import { puppy } from "./pets/puppy";
+import { rabbit } from "./pets/rabbit";
+import { rat, dirtyRatSummoned } from "./pets/rat";
+import { rhino } from "./pets/rhino";
+import { rooster, chick } from "./pets/rooster";
+import { sauropod } from "./pets/sauropod";
+import { scorpion } from "./pets/scorpion";
+import { seal } from "./pets/seal";
+import { shark } from "./pets/shark";
+import { sheep, ramSummoned } from "./pets/sheep";
+import { shrimp } from "./pets/shrimp";
+import { skunk } from "./pets/skunk";
+import { sloth } from "./pets/sloth";
+import { snail } from "./pets/snail";
+import { snake } from "./pets/snake";
+import { spider } from "./pets/spider";
+import { squirrel } from "./pets/squirrel";
+import { swan } from "./pets/swan";
+import { tabbyCat } from "./pets/tabbyCat";
+import { tiger } from "./pets/tiger";
+import { tropicalFish } from "./pets/tropicalFish";
+import { turkey } from "./pets/turkey";
+import { turtle } from "./pets/turtle";
+import { tyrannosaurus } from "./pets/tyrannosaurus";
+import { whale } from "./pets/whale";
+import { worm } from "./pets/worm";
+import { boneAttack } from "./statusEffects/boneAttack";
+import { coconutShield } from "./statusEffects/coconutShield";
+import { extraLife } from "./statusEffects/extraLife";
+import { garlicArmor } from "./statusEffects/garlicArmor";
+import { honeyBee } from "./statusEffects/honeyBee";
+import { melonArmor } from "./statusEffects/melonArmor";
+import { poisonAttack } from "./statusEffects/poisonAttack";
+import { splashAttack } from "./statusEffects/splashAttack";
+import { steakAttack } from "./statusEffects/steakAttack";
+import { weak } from "./statusEffects/weak";
+
+export function getDatabase(): Database {
+  let database: Database = { pets: {}, foods: {}, statuses: {} };
+  pets.forEach((pet) => {
+    const id = getPetId(pet);
+    database.pets[id] = { ...pet, id };
+  });
+  foods.forEach((food) => {
+    const id = getFoodId(food);
+    database.foods[id] = { ...food, id };
+  });
+  statuses.forEach((status) => {
+    const id = getStatusId(status);
+    database.statuses[id] = { ...status, id };
+  });
+  return database;
+}
+
+export const pets: Pet[] = [
+  // Tier 1
+  ant,
+  beaver,
+  beetle,
+  bluebird,
+  cricket,
+  duck,
+  fish,
+  horse,
+  ladybug,
+  mosquito,
+  otter,
+  pig,
+  sloth,
+  // Tier 2
+  bat,
+  crab,
+  dodo,
+  dog,
+  dromedary,
+  elephant,
+  flamingo,
+  hedgehog,
+  peacock,
+  rat,
+  shrimp,
+  spider,
+  swan,
+  tabbyCat,
+  // Tier 3
+  badger,
+  blowfish,
+  caterpillar,
+  camel,
+  hatchingChick,
+  giraffe,
+  kangaroo,
+  owl,
+  ox,
+  puppy,
+  rabbit,
+  sheep,
+  snail,
+  tropicalFish,
+  turtle,
+  whale,
+  // Tier 4
+  bison,
+  buffalo,
+  deer,
+  dolphin,
+  hippo,
+  llama,
+  lobster,
+  monkey,
+  penguin,
+  poodle,
+  rooster,
+  skunk,
+  squirrel,
+  worm,
+  // Tier 5
+  chicken,
+  cow,
+  crocodile,
+  eagle,
+  goat,
+  microbe,
+  parrot,
+  rhino,
+  scorpion,
+  seal,
+  shark,
+  turkey,
+  // Tier 6
+  cat,
+  dragon,
+  fly,
+  gorilla,
+  leopard,
+  mammoth,
+  octopus,
+  sauropod,
+  snake,
+  tiger,
+  tyrannosaurus,
+  // Summoned
+  cricketSummoned,
+  busSummoned,
+  flySummoned,
+  dirtyRatSummoned,
+  chick,
+  ramSummoned,
+  butterfly,
+  beeSummoned,
+];
+
+export const foods: Food[] = [
+  // Tier 1
+  apple,
+  honey,
+  // Tier 2
+  cupcake,
+  meatBone,
+  sleepingPill,
+  // Tier 3
+  garlic,
+  saladBowl,
+  // Tier 4
+  cannedFood,
+  pear,
+  // Tier 5
+  chili,
+  chocolate,
+  sushi,
+  // Tier 6
+  melon,
+  mushroom,
+  pizza,
+  steak,
+  // Summoned
+  milk,
+];
+
+export const statuses: Status[] = [
+  weak,
+  coconutShield,
+  honeyBee,
+  boneAttack,
+  garlicArmor,
+  splashAttack,
+  melonArmor,
+  extraLife,
+  steakAttack,
+  poisonAttack,
+];

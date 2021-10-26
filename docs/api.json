@@ -2,6 +2,7 @@
   "pets": {
     "pet_ant": {
       "name": "Ant",
+      "id": "pet_ant",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐜"
@@ -63,11 +64,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_ant"
+      }
     },
     "pet_beaver": {
       "name": "Beaver",
+      "id": "pet_beaver",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦫"
@@ -126,11 +127,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_beaver"
+      }
     },
     "pet_beetle": {
       "name": "Beetle",
+      "id": "pet_beetle",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🪲"
@@ -188,11 +189,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_beetle"
+      }
     },
     "pet_bluebird": {
       "name": "Bluebird",
+      "id": "pet_bluebird",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐦"
@@ -247,11 +248,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_bluebird"
+      }
     },
     "pet_cricket": {
       "name": "Cricket",
+      "id": "pet_cricket",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦗"
@@ -273,6 +274,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Cricket",
+            "id": "pet_zombie_cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
@@ -298,6 +300,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Cricket",
+            "id": "pet_zombie_cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
@@ -323,6 +326,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Cricket",
+            "id": "pet_zombie_cricket",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🦗"
@@ -337,11 +341,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "pet_cricket"
+      }
     },
     "pet_duck": {
       "name": "Duck",
+      "id": "pet_duck",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦆"
@@ -402,11 +406,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_duck"
+      }
     },
     "pet_fish": {
       "name": "Fish",
+      "id": "pet_fish",
       "image": {
         "source": "fxemoji",
         "name": "fish",
@@ -450,11 +454,11 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_fish"
+      }
     },
     "pet_horse": {
       "name": "Horse",
+      "id": "pet_horse",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐎"
@@ -509,11 +513,11 @@
           "attackAmount": 3,
           "untilEndOfBattle": true
         }
-      },
-      "id": "pet_horse"
+      }
     },
     "pet_ladybug": {
       "name": "Ladybug",
+      "id": "pet_ladybug",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐞"
@@ -571,11 +575,11 @@
           },
           "untilEndOfBattle": true
         }
-      },
-      "id": "pet_ladybug"
+      }
     },
     "pet_mosquito": {
       "name": "Mosquito",
+      "id": "pet_mosquito",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦟"
@@ -631,11 +635,11 @@
           },
           "amount": 3
         }
-      },
-      "id": "pet_mosquito"
+      }
     },
     "pet_otter": {
       "name": "Otter",
+      "id": "pet_otter",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦦"
@@ -696,11 +700,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_otter"
+      }
     },
     "pet_pig": {
       "name": "Pig",
+      "id": "pet_pig",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐖"
@@ -744,11 +748,11 @@
           "kind": "GainGold",
           "amount": 3
         }
-      },
-      "id": "pet_pig"
+      }
     },
     "pet_sloth": {
       "name": "Sloth",
+      "id": "pet_sloth",
       "notes": "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       "image": {
         "source": "noto-emoji",
@@ -761,11 +765,11 @@
         "StandardPack",
         "ExpansionPack1",
         "EasterEgg"
-      ],
-      "id": "pet_sloth"
+      ]
     },
     "pet_bat": {
       "name": "Bat",
+      "id": "pet_bat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦇"
@@ -826,11 +830,11 @@
             "n": 3
           }
         }
-      },
-      "id": "pet_bat"
+      }
     },
     "pet_crab": {
       "name": "Crab",
+      "id": "pet_crab",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦀"
@@ -897,11 +901,11 @@
             "kind": "Self"
           }
         }
-      },
-      "id": "pet_crab"
+      }
     },
     "pet_dodo": {
       "name": "Dodo",
+      "id": "pet_dodo",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦤"
@@ -968,11 +972,11 @@
             "n": 3
           }
         }
-      },
-      "id": "pet_dodo"
+      }
     },
     "pet_dog": {
       "name": "Dog",
+      "id": "pet_dog",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🐕"
@@ -1067,11 +1071,11 @@
             }
           ]
         }
-      },
-      "id": "pet_dog"
+      }
     },
     "pet_dromedary": {
       "name": "Dromedary",
+      "id": "pet_dromedary",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐪"
@@ -1132,11 +1136,11 @@
           "attackAmount": 3,
           "healthAmount": 3
         }
-      },
-      "id": "pet_dromedary"
+      }
     },
     "pet_elephant": {
       "name": "Elephant",
+      "id": "pet_elephant",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐘"
@@ -1191,11 +1195,11 @@
           },
           "amount": 1
         }
-      },
-      "id": "pet_elephant"
+      }
     },
     "pet_flamingo": {
       "name": "Flamingo",
+      "id": "pet_flamingo",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦩"
@@ -1257,11 +1261,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_flamingo"
+      }
     },
     "pet_hedgehog": {
       "name": "Hedgehog",
+      "id": "pet_hedgehog",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦔"
@@ -1314,11 +1318,11 @@
           },
           "amount": 6
         }
-      },
-      "id": "pet_hedgehog"
+      }
     },
     "pet_peacock": {
       "name": "Peacock",
+      "id": "pet_peacock",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦚"
@@ -1374,11 +1378,11 @@
           "attackAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_peacock"
+      }
     },
     "pet_rat": {
       "name": "Rat",
+      "id": "pet_rat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐀"
@@ -1400,6 +1404,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "id": "pet_dirty_rat",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
@@ -1425,6 +1430,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "id": "pet_dirty_rat",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
@@ -1450,6 +1456,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Dirty Rat",
+            "id": "pet_dirty_rat",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐀"
@@ -1464,11 +1471,11 @@
           },
           "team": "Enemy"
         }
-      },
-      "id": "pet_rat"
+      }
     },
     "pet_shrimp": {
       "name": "Shrimp",
+      "id": "pet_shrimp",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦐"
@@ -1527,11 +1534,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_shrimp"
+      }
     },
     "pet_spider": {
       "name": "Spider",
+      "id": "pet_spider",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🕷"
@@ -1581,11 +1588,11 @@
           "baseAttack": 6,
           "baseAealth": 6
         }
-      },
-      "id": "pet_spider"
+      }
     },
     "pet_swan": {
       "name": "Swan",
+      "id": "pet_swan",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🦢"
@@ -1629,11 +1636,11 @@
           "kind": "GainGold",
           "amount": 3
         }
-      },
-      "id": "pet_swan"
+      }
     },
     "pet_tabby_cat": {
       "name": "Tabby Cat",
+      "id": "pet_tabby_cat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐈"
@@ -1688,11 +1695,11 @@
           "attackAmount": 3,
           "untilEndOfBattle": true
         }
-      },
-      "id": "pet_tabby_cat"
+      }
     },
     "pet_badger": {
       "name": "Badger",
+      "id": "pet_badger",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦡"
@@ -1750,11 +1757,11 @@
             "attackDamagePercent": 100
           }
         }
-      },
-      "id": "pet_badger"
+      }
     },
     "pet_blowfish": {
       "name": "Blowfish",
+      "id": "pet_blowfish",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐡"
@@ -1810,11 +1817,11 @@
           },
           "amount": 6
         }
-      },
-      "id": "pet_blowfish"
+      }
     },
     "pet_caterpillar": {
       "name": "Caterpillar",
+      "id": "pet_caterpillar",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐛"
@@ -1862,11 +1869,11 @@
         "effect": {
           "kind": "Evolve"
         }
-      },
-      "id": "pet_caterpillar"
+      }
     },
     "pet_camel": {
       "name": "Camel",
+      "id": "pet_camel",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐫"
@@ -1927,11 +1934,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_camel"
+      }
     },
     "pet_hatching_chick": {
       "name": "Hatching Chick",
+      "id": "pet_hatching_chick",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐣"
@@ -1990,11 +1997,11 @@
           },
           "amount": 1
         }
-      },
-      "id": "pet_hatching_chick"
+      }
     },
     "pet_giraffe": {
       "name": "Giraffe",
+      "id": "pet_giraffe",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🦒"
@@ -2055,11 +2062,11 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_giraffe"
+      }
     },
     "pet_kangaroo": {
       "name": "Kangaroo",
+      "id": "pet_kangaroo",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦘"
@@ -2120,11 +2127,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_kangaroo"
+      }
     },
     "pet_owl": {
       "name": "Owl",
+      "id": "pet_owl",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦉"
@@ -2185,11 +2192,11 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_owl"
+      }
     },
     "pet_ox": {
       "name": "Ox",
+      "id": "pet_ox",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐂"
@@ -2289,11 +2296,11 @@
             }
           ]
         }
-      },
-      "id": "pet_ox"
+      }
     },
     "pet_puppy": {
       "name": "Puppy",
+      "id": "pet_puppy",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐕"
@@ -2351,11 +2358,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_puppy"
+      }
     },
     "pet_rabbit": {
       "name": "Rabbit",
+      "id": "pet_rabbit",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐇"
@@ -2411,11 +2418,11 @@
           "attackAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_rabbit"
+      }
     },
     "pet_sheep": {
       "name": "Sheep",
+      "id": "pet_sheep",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐑"
@@ -2437,6 +2444,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "id": "pet_ram",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
@@ -2462,6 +2470,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "id": "pet_ram",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
@@ -2487,6 +2496,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Ram",
+            "id": "pet_ram",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐏"
@@ -2501,11 +2511,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "pet_sheep"
+      }
     },
     "pet_snail": {
       "name": "Snail",
+      "id": "pet_snail",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐌"
@@ -2564,11 +2574,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_snail"
+      }
     },
     "pet_tropical_fish": {
       "name": "Tropical Fish",
+      "id": "pet_tropical_fish",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🐠"
@@ -2623,11 +2633,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_tropical_fish"
+      }
     },
     "pet_turtle": {
       "name": "Turtle",
+      "id": "pet_turtle",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐢"
@@ -2689,11 +2699,11 @@
             "n": 3
           }
         }
-      },
-      "id": "pet_turtle"
+      }
     },
     "pet_whale": {
       "name": "Whale",
+      "id": "pet_whale",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐋"
@@ -2745,11 +2755,11 @@
             "n": 1
           }
         }
-      },
-      "id": "pet_whale"
+      }
     },
     "pet_bison": {
       "name": "Bison",
+      "id": "pet_bison",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦬"
@@ -2808,11 +2818,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_bison"
+      }
     },
     "pet_buffalo": {
       "name": "Buffalo",
+      "id": "pet_buffalo",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐃"
@@ -2870,11 +2880,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_buffalo"
+      }
     },
     "pet_deer": {
       "name": "Deer",
+      "id": "pet_deer",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦌"
@@ -2896,6 +2906,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "id": "pet_bus",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
@@ -2924,6 +2935,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "id": "pet_bus",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
@@ -2952,6 +2964,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bus",
+            "id": "pet_bus",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🚍"
@@ -2969,11 +2982,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "pet_deer"
+      }
     },
     "pet_dolphin": {
       "name": "Dolphin",
+      "id": "pet_dolphin",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐬"
@@ -3025,11 +3038,11 @@
           },
           "amount": 15
         }
-      },
-      "id": "pet_dolphin"
+      }
     },
     "pet_hippo": {
       "name": "Hippo",
+      "id": "pet_hippo",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦛"
@@ -3087,11 +3100,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_hippo"
+      }
     },
     "pet_llama": {
       "name": "Llama",
+      "id": "pet_llama",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦙"
@@ -3149,11 +3162,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_llama"
+      }
     },
     "pet_lobster": {
       "name": "Lobster",
+      "id": "pet_lobster",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🦞"
@@ -3211,11 +3224,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_lobster"
+      }
     },
     "pet_monkey": {
       "name": "Monkey",
+      "id": "pet_monkey",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐒"
@@ -3273,11 +3286,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_monkey"
+      }
     },
     "pet_penguin": {
       "name": "Penguin",
+      "id": "pet_penguin",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐧"
@@ -3335,11 +3348,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_penguin"
+      }
     },
     "pet_poodle": {
       "name": "Poodle",
+      "id": "pet_poodle",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐩"
@@ -3397,11 +3410,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_poodle"
+      }
     },
     "pet_rooster": {
       "name": "Rooster",
+      "id": "pet_rooster",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐓"
@@ -3423,6 +3436,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "id": "pet_chick",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
@@ -3448,6 +3462,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "id": "pet_chick",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
@@ -3473,6 +3488,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Chick",
+            "id": "pet_chick",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐤"
@@ -3487,11 +3503,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "pet_rooster"
+      }
     },
     "pet_skunk": {
       "name": "Skunk",
+      "id": "pet_skunk",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦨"
@@ -3544,11 +3560,11 @@
           },
           "percentage": 100
         }
-      },
-      "id": "pet_skunk"
+      }
     },
     "pet_squirrel": {
       "name": "Squirrel",
+      "id": "pet_squirrel",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐿"
@@ -3595,11 +3611,11 @@
           "shop": "All",
           "food": "Any"
         }
-      },
-      "id": "pet_squirrel"
+      }
     },
     "pet_worm": {
       "name": "Worm",
+      "id": "pet_worm",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🪱"
@@ -3658,11 +3674,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_worm"
+      }
     },
     "pet_chicken": {
       "name": "Chicken",
+      "id": "pet_chicken",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🐓"
@@ -3723,11 +3739,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_chicken"
+      }
     },
     "pet_cow": {
       "name": "Cow",
+      "id": "pet_cow",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐄"
@@ -3774,11 +3790,11 @@
           "shop": "Food",
           "food": "Milk"
         }
-      },
-      "id": "pet_cow"
+      }
     },
     "pet_crocodile": {
       "name": "Crocodile",
+      "id": "pet_crocodile",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🐊"
@@ -3830,11 +3846,11 @@
           },
           "amount": 21
         }
-      },
-      "id": "pet_crocodile"
+      }
     },
     "pet_eagle": {
       "name": "Eagle",
+      "id": "pet_eagle",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦅"
@@ -3880,11 +3896,11 @@
           "tier": 6,
           "level": 3
         }
-      },
-      "id": "pet_eagle"
+      }
     },
     "pet_goat": {
       "name": "Goat",
+      "id": "pet_goat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐐"
@@ -3927,11 +3943,11 @@
           "kind": "GainGold",
           "amount": 1
         }
-      },
-      "id": "pet_goat"
+      }
     },
     "pet_microbe": {
       "name": "Microbe",
+      "id": "pet_microbe",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦠"
@@ -3989,11 +4005,11 @@
             "kind": "All"
           }
         }
-      },
-      "id": "pet_microbe"
+      }
     },
     "pet_parrot": {
       "name": "Parrot",
+      "id": "pet_parrot",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦜"
@@ -4057,11 +4073,11 @@
           },
           "level": 3
         }
-      },
-      "id": "pet_parrot"
+      }
     },
     "pet_rhino": {
       "name": "Rhino",
+      "id": "pet_rhino",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦏"
@@ -4114,11 +4130,11 @@
           },
           "amount": 12
         }
-      },
-      "id": "pet_rhino"
+      }
     },
     "pet_scorpion": {
       "name": "Scorpion",
+      "id": "pet_scorpion",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦂"
@@ -4132,11 +4148,11 @@
       ],
       "status": {
         "name": "PoisinAttack"
-      },
-      "id": "pet_scorpion"
+      }
     },
     "pet_seal": {
       "name": "Seal",
+      "id": "pet_seal",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦭"
@@ -4198,11 +4214,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_seal"
+      }
     },
     "pet_shark": {
       "name": "Shark",
+      "id": "pet_shark",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦈"
@@ -4260,11 +4276,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_shark"
+      }
     },
     "pet_turkey": {
       "name": "Turkey",
+      "id": "pet_turkey",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦃"
@@ -4322,11 +4338,11 @@
           "healthAmount": 9,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_turkey"
+      }
     },
     "pet_cat": {
       "name": "Cat",
+      "id": "pet_cat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐈‍⬛"
@@ -4369,11 +4385,11 @@
           "kind": "FoodMultiplier",
           "amount": 4
         }
-      },
-      "id": "pet_cat"
+      }
     },
     "pet_dragon": {
       "name": "Dragon",
+      "id": "pet_dragon",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐉"
@@ -4432,11 +4448,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_dragon"
+      }
     },
     "pet_fly": {
       "name": "Fly",
+      "id": "pet_fly",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🪰"
@@ -4457,6 +4473,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Fly",
+            "id": "pet_zombie_fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4481,6 +4498,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Fly",
+            "id": "pet_zombie_fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4505,6 +4523,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Zombie Fly",
+            "id": "pet_zombie_fly",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🪰"
@@ -4518,11 +4537,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "pet_fly"
+      }
     },
     "pet_gorilla": {
       "name": "Gorilla",
+      "id": "pet_gorilla",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦍"
@@ -4581,11 +4600,11 @@
             "kind": "Self"
           }
         }
-      },
-      "id": "pet_gorilla"
+      }
     },
     "pet_leopard": {
       "name": "Leopard",
+      "id": "pet_leopard",
       "image": {
         "source": "fxemoji",
         "name": "leopardside",
@@ -4648,11 +4667,11 @@
             "attackDamagePercent": 50
           }
         }
-      },
-      "id": "pet_leopard"
+      }
     },
     "pet_mammoth": {
       "name": "Mammoth",
+      "id": "pet_mammoth",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦣"
@@ -4711,11 +4730,11 @@
           },
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_mammoth"
+      }
     },
     "pet_octopus": {
       "name": "Octopus",
+      "id": "pet_octopus",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐙"
@@ -4782,11 +4801,11 @@
           },
           "amount": 5
         }
-      },
-      "id": "pet_octopus"
+      }
     },
     "pet_sauropod": {
       "name": "Sauropod",
+      "id": "pet_sauropod",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦕"
@@ -4829,11 +4848,11 @@
           "kind": "GainGold",
           "amount": 1
         }
-      },
-      "id": "pet_sauropod"
+      }
     },
     "pet_snake": {
       "name": "Snake",
+      "id": "pet_snake",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐍"
@@ -4891,11 +4910,11 @@
           },
           "amount": 15
         }
-      },
-      "id": "pet_snake"
+      }
     },
     "pet_tiger": {
       "name": "Tiger",
+      "id": "pet_tiger",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐅"
@@ -4947,11 +4966,11 @@
             "kind": "TriggeringEntity"
           }
         }
-      },
-      "id": "pet_tiger"
+      }
     },
     "pet_tyrannosaurus": {
       "name": "Tyrannosaurus",
+      "id": "pet_tyrannosaurus",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦖"
@@ -5009,11 +5028,11 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      },
-      "id": "pet_tyrannosaurus"
+      }
     },
     "pet_zombie_cricket": {
       "name": "Zombie Cricket",
+      "id": "pet_zombie_cricket",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦗"
@@ -5024,11 +5043,11 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?",
-      "id": "pet_zombie_cricket"
+      "baseHealth": "?"
     },
     "pet_bus": {
       "name": "Bus",
+      "id": "pet_bus",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🚍"
@@ -5042,11 +5061,11 @@
       "baseHealth": "?",
       "status": {
         "name": "SplashAttack"
-      },
-      "id": "pet_bus"
+      }
     },
     "pet_zombie_fly": {
       "name": "Zombie Fly",
+      "id": "pet_zombie_fly",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🪰"
@@ -5056,11 +5075,11 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?",
-      "id": "pet_zombie_fly"
+      "baseHealth": "?"
     },
     "pet_dirty_rat": {
       "name": "Dirty Rat",
+      "id": "pet_dirty_rat",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐀"
@@ -5071,11 +5090,11 @@
       ],
       "tier": "Summoned",
       "baseAttack": 1,
-      "baseHealth": 1,
-      "id": "pet_dirty_rat"
+      "baseHealth": 1
     },
     "pet_chick": {
       "name": "Chick",
+      "id": "pet_chick",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐤"
@@ -5086,11 +5105,11 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": 1,
-      "id": "pet_chick"
+      "baseHealth": 1
     },
     "pet_ram": {
       "name": "Ram",
+      "id": "pet_ram",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐏"
@@ -5101,11 +5120,11 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?",
-      "id": "pet_ram"
+      "baseHealth": "?"
     },
     "pet_butterfly": {
       "name": "Butterfly",
+      "id": "pet_butterfly",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦋"
@@ -5116,11 +5135,11 @@
       "baseHealth": 1,
       "packs": [
         "ExpansionPack1"
-      ],
-      "id": "pet_butterfly"
+      ]
     },
     "pet_bee": {
       "name": "Bee",
+      "id": "pet_bee",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🐝"
@@ -5131,13 +5150,13 @@
       ],
       "tier": "Summoned",
       "baseAttack": 1,
-      "baseHealth": 1,
-      "id": "pet_bee"
+      "baseHealth": 1
     }
   },
   "foods": {
     "food_apple": {
       "name": "Apple",
+      "id": "food_apple",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍎"
@@ -5162,11 +5181,11 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_apple"
+      }
     },
     "food_honey": {
       "name": "Honey",
+      "id": "food_honey",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍯"
@@ -5191,11 +5210,11 @@
             "name": "HoneyBee"
           }
         }
-      },
-      "id": "food_honey"
+      }
     },
     "food_cupcake": {
       "name": "Cupcake",
+      "id": "food_cupcake",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🧁"
@@ -5220,11 +5239,11 @@
           "healthAmount": 3,
           "untilEndOfBattle": true
         }
-      },
-      "id": "food_cupcake"
+      }
     },
     "food_meat_bone": {
       "name": "Meat Bone",
+      "id": "food_meat_bone",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍖"
@@ -5249,11 +5268,11 @@
             "name": "BoneAttack"
           }
         }
-      },
-      "id": "food_meat_bone"
+      }
     },
     "food_sleeping_pill": {
       "name": "Sleeping Pill",
+      "id": "food_sleeping_pill",
       "image": {
         "source": "fxemoji",
         "unicodeCodePoint": "💊",
@@ -5277,11 +5296,11 @@
             "kind": "PurchaseTarget"
           }
         }
-      },
-      "id": "food_sleeping_pill"
+      }
     },
     "food_garlic": {
       "name": "Garlic",
+      "id": "food_garlic",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🧄"
@@ -5306,11 +5325,11 @@
             "name": "GarlicArmor"
           }
         }
-      },
-      "id": "food_garlic"
+      }
     },
     "food_salad_bowl": {
       "name": "Salad Bowl",
+      "id": "food_salad_bowl",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🥗"
@@ -5336,11 +5355,11 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_salad_bowl"
+      }
     },
     "food_canned_food": {
       "name": "Canned Food",
+      "id": "food_canned_food",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🥫"
@@ -5366,11 +5385,11 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_canned_food"
+      }
     },
     "food_pear": {
       "name": "Pear",
+      "id": "food_pear",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍐"
@@ -5395,11 +5414,11 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_pear"
+      }
     },
     "food_chili": {
       "name": "Chili",
+      "id": "food_chili",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🌶"
@@ -5424,11 +5443,11 @@
             "name": "SplashAttack"
           }
         }
-      },
-      "id": "food_chili"
+      }
     },
     "food_chocolate": {
       "name": "Chocolate",
+      "id": "food_chocolate",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍫"
@@ -5451,11 +5470,11 @@
           },
           "amount": 1
         }
-      },
-      "id": "food_chocolate"
+      }
     },
     "food_sushi": {
       "name": "Sushi",
+      "id": "food_sushi",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍣"
@@ -5481,11 +5500,11 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_sushi"
+      }
     },
     "food_melon": {
       "name": "Melon",
+      "id": "food_melon",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍈"
@@ -5510,11 +5529,11 @@
             "name": "MelonArmor"
           }
         }
-      },
-      "id": "food_melon"
+      }
     },
     "food_mushroom": {
       "name": "Mushroom",
+      "id": "food_mushroom",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍄"
@@ -5539,11 +5558,11 @@
             "name": "ExtraLife"
           }
         }
-      },
-      "id": "food_mushroom"
+      }
     },
     "food_pizza": {
       "name": "Pizza",
+      "id": "food_pizza",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍕"
@@ -5569,11 +5588,11 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_pizza"
+      }
     },
     "food_steak": {
       "name": "Steak",
+      "id": "food_steak",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🥩"
@@ -5598,11 +5617,11 @@
             "name": "SteakAttack"
           }
         }
-      },
-      "id": "food_steak"
+      }
     },
     "food_milk": {
       "name": "Milk",
+      "id": "food_milk",
       "notes": "This is free!",
       "image": {
         "source": "twemoji",
@@ -5628,13 +5647,13 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      },
-      "id": "food_milk"
+      }
     }
   },
   "statuses": {
     "status_weak": {
       "name": "Weak",
+      "id": "status_weak",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🦠"
@@ -5650,11 +5669,11 @@
           "damageModifier": 5,
           "appliesOnce": false
         }
-      },
-      "id": "status_weak"
+      }
     },
     "status_coconut_shield": {
       "name": "Coconut Shield",
+      "id": "status_coconut_shield",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🥥"
@@ -5670,11 +5689,11 @@
           "damageModifier": null,
           "appliesOnce": true
         }
-      },
-      "id": "status_coconut_shield"
+      }
     },
     "status_honey_bee": {
       "name": "Honey Bee",
+      "id": "status_honey_bee",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍯"
@@ -5689,6 +5708,7 @@
           "kind": "SummonPet",
           "pet": {
             "name": "Bee",
+            "id": "pet_bee",
             "image": {
               "source": "noto-emoji",
               "unicodeCodePoint": "🐝"
@@ -5703,11 +5723,11 @@
           },
           "team": "Friendly"
         }
-      },
-      "id": "status_honey_bee"
+      }
     },
     "status_bone_attack": {
       "name": "Bone Attack",
+      "id": "status_bone_attack",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍖"
@@ -5723,11 +5743,11 @@
           "damageModifier": 5,
           "appliesOnce": false
         }
-      },
-      "id": "status_bone_attack"
+      }
     },
     "status_garlic_armor": {
       "name": "Garlic Armor",
+      "id": "status_garlic_armor",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🧄"
@@ -5743,11 +5763,11 @@
           "damageModifier": -2,
           "appliesOnce": false
         }
-      },
-      "id": "status_garlic_armor"
+      }
     },
     "status_splash_attack": {
       "name": "Splash Attack",
+      "id": "status_splash_attack",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🌶"
@@ -5762,11 +5782,11 @@
           "kind": "SplashDamage",
           "amount": 5
         }
-      },
-      "id": "status_splash_attack"
+      }
     },
     "status_melon_armor": {
       "name": "Melon Armor",
+      "id": "status_melon_armor",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍈"
@@ -5782,11 +5802,11 @@
           "damageModifier": -20,
           "appliesOnce": true
         }
-      },
-      "id": "status_melon_armor"
+      }
     },
     "status_extra_life": {
       "name": "Extra Life",
+      "id": "status_extra_life",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🍄"
@@ -5802,11 +5822,11 @@
           "baseAttack": 1,
           "baseHealth": 1
         }
-      },
-      "id": "status_extra_life"
+      }
     },
     "status_steak_attack": {
       "name": "Steak Attack",
+      "id": "status_steak_attack",
       "image": {
         "source": "twemoji",
         "unicodeCodePoint": "🥩"
@@ -5822,11 +5842,11 @@
           "damageModifier": 20,
           "appliesOnce": true
         }
-      },
-      "id": "status_steak_attack"
+      }
     },
     "status_poison_attack": {
       "name": "Poison Attack",
+      "id": "status_poison_attack",
       "image": {
         "source": "noto-emoji",
         "unicodeCodePoint": "🥜"
@@ -5842,8 +5862,7 @@
           "damageModifier": null,
           "appliesOnce": false
         }
-      },
-      "id": "status_poison_attack"
+      }
     }
   }
 }

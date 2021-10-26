@@ -1,7 +1,8 @@
 import { Food, Trigger } from "..";
+import { getFoodIdentifiers } from "../database";
 
-export const saladBowl = {
-  name: "Salad Bowl",
+export const saladBowl: Food = {
+  ...getFoodIdentifiers("Salad Bowl"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F957}",
@@ -25,4 +26,4 @@ export const saladBowl = {
       untilEndOfBattle: false,
     },
   },
-} as Food;
+};

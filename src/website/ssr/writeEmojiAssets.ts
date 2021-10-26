@@ -2,18 +2,17 @@ import emojiUnicode from "emoji-unicode";
 import fs from "fs";
 import path from "path";
 import {
-  Database,
   EmojiImage,
-  enumerateTable,
   FxEmojiImage,
   HasImage,
+  Identifiers,
   NotoEmojiImage,
   TwEmojiImage,
-  WithId,
 } from "../../database";
+import { Database, enumerateTable } from "../../database/database";
 
 export function copyEmojiAssets(targetDir: string, database: Database) {
-  const images = new Array<WithId<HasImage>>().concat(
+  const images = new Array<HasImage & Identifiers>().concat(
     enumerateTable(database.pets),
     enumerateTable(database.foods),
     enumerateTable(database.statuses)

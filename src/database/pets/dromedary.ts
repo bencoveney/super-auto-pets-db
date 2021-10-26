@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function dromedaryAbility(level: number): Ability {
   return {
@@ -20,8 +21,8 @@ function dromedaryAbility(level: number): Ability {
   };
 }
 
-export const dromedary = {
-  name: "Dromedary",
+export const dromedary: Pet = {
+  ...getPetIdentifiers("Dromedary"),
   image: {
     source: "noto-emoji",
     // TODO: Incorrect. Where is correct icon from?
@@ -34,4 +35,4 @@ export const dromedary = {
   level1Ability: dromedaryAbility(1),
   level2Ability: dromedaryAbility(2),
   level3Ability: dromedaryAbility(3),
-} as Pet;
+};

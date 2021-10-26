@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function giraffeAbility(level: number): Ability {
   return {
@@ -20,8 +21,8 @@ function giraffeAbility(level: number): Ability {
   };
 }
 
-export const giraffe = {
-  name: "Giraffe",
+export const giraffe: Pet = {
+  ...getPetIdentifiers("Giraffe"),
   image: {
     source: "twemoji",
     unicodeCodePoint: "\u{1F992}",
@@ -36,4 +37,4 @@ export const giraffe = {
   },
   level2Ability: giraffeAbility(2),
   level3Ability: giraffeAbility(3),
-} as Pet;
+};

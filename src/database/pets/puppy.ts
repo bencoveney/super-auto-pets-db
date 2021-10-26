@@ -1,4 +1,5 @@
 import { Ability, Trigger, Pet } from "..";
+import { getPetIdentifiers } from "../database";
 
 function puppyAbility(level: number): Ability {
   return {
@@ -21,8 +22,8 @@ function puppyAbility(level: number): Ability {
   };
 }
 
-export const puppy = {
-  name: "Puppy",
+export const puppy: Pet = {
+  ...getPetIdentifiers("Puppy"),
   image: {
     source: "noto-emoji",
     unicodeCodePoint: "\u{1F415}",
@@ -34,4 +35,4 @@ export const puppy = {
   level1Ability: puppyAbility(1),
   level2Ability: puppyAbility(2),
   level3Ability: puppyAbility(3),
-} as Pet;
+};

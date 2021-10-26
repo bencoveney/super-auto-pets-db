@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { writeHomepage } from "./writeHomepage";
 import { copyAssets } from "./writeAssets";
-import { getDatabase } from "../../database";
+import { getDatabase } from "../../database/content";
 import { writeApi } from "./writeApi";
 import { writePetPages } from "./writePetPages";
 import { writeFoodPages } from "./writeFoodPages";

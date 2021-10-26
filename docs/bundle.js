@@ -21452,6 +21452,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var pets = {
     pet_ant: {
       name: "Ant",
+      id: "pet_ant",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F41C}"
@@ -21513,11 +21514,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_ant"
+      }
     },
     pet_beaver: {
       name: "Beaver",
+      id: "pet_beaver",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9AB}"
@@ -21576,11 +21577,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_beaver"
+      }
     },
     pet_beetle: {
       name: "Beetle",
+      id: "pet_beetle",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB2}"
@@ -21638,11 +21639,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_beetle"
+      }
     },
     pet_bluebird: {
       name: "Bluebird",
+      id: "pet_bluebird",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F426}"
@@ -21697,11 +21698,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_bluebird"
+      }
     },
     pet_cricket: {
       name: "Cricket",
+      id: "pet_cricket",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F997}"
@@ -21723,6 +21724,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Cricket",
+            id: "pet_zombie_cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
@@ -21748,6 +21750,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Cricket",
+            id: "pet_zombie_cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
@@ -21773,6 +21776,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Cricket",
+            id: "pet_zombie_cricket",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F997}"
@@ -21787,11 +21791,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "pet_cricket"
+      }
     },
     pet_duck: {
       name: "Duck",
+      id: "pet_duck",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F986}"
@@ -21852,11 +21856,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_duck"
+      }
     },
     pet_fish: {
       name: "Fish",
+      id: "pet_fish",
       image: {
         source: "fxemoji",
         name: "fish",
@@ -21900,11 +21904,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_fish"
+      }
     },
     pet_horse: {
       name: "Horse",
+      id: "pet_horse",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40E}"
@@ -21959,11 +21963,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           attackAmount: 3,
           untilEndOfBattle: true
         }
-      },
-      id: "pet_horse"
+      }
     },
     pet_ladybug: {
       name: "Ladybug",
+      id: "pet_ladybug",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F41E}"
@@ -22021,11 +22025,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: true
         }
-      },
-      id: "pet_ladybug"
+      }
     },
     pet_mosquito: {
       name: "Mosquito",
+      id: "pet_mosquito",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F99F}"
@@ -22081,11 +22085,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 3
         }
-      },
-      id: "pet_mosquito"
+      }
     },
     pet_otter: {
       name: "Otter",
+      id: "pet_otter",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A6}"
@@ -22146,11 +22150,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_otter"
+      }
     },
     pet_pig: {
       name: "Pig",
+      id: "pet_pig",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F416}"
@@ -22194,11 +22198,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "GainGold",
           amount: 3
         }
-      },
-      id: "pet_pig"
+      }
     },
     pet_sloth: {
       name: "Sloth",
+      id: "pet_sloth",
       notes: "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       image: {
         source: "noto-emoji",
@@ -22211,11 +22215,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "StandardPack",
         "ExpansionPack1",
         "EasterEgg"
-      ],
-      id: "pet_sloth"
+      ]
     },
     pet_bat: {
       name: "Bat",
+      id: "pet_bat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F987}"
@@ -22276,11 +22280,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             n: 3
           }
         }
-      },
-      id: "pet_bat"
+      }
     },
     pet_crab: {
       name: "Crab",
+      id: "pet_crab",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F980}"
@@ -22347,11 +22351,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "Self"
           }
         }
-      },
-      id: "pet_crab"
+      }
     },
     pet_dodo: {
       name: "Dodo",
+      id: "pet_dodo",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A4}"
@@ -22418,11 +22422,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             n: 3
           }
         }
-      },
-      id: "pet_dodo"
+      }
     },
     pet_dog: {
       name: "Dog",
+      id: "pet_dog",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F415}"
@@ -22517,11 +22521,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             }
           ]
         }
-      },
-      id: "pet_dog"
+      }
     },
     pet_dromedary: {
       name: "Dromedary",
+      id: "pet_dromedary",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F42A}"
@@ -22582,11 +22586,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           attackAmount: 3,
           healthAmount: 3
         }
-      },
-      id: "pet_dromedary"
+      }
     },
     pet_elephant: {
       name: "Elephant",
+      id: "pet_elephant",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F418}"
@@ -22641,11 +22645,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 1
         }
-      },
-      id: "pet_elephant"
+      }
     },
     pet_flamingo: {
       name: "Flamingo",
+      id: "pet_flamingo",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A9}"
@@ -22707,11 +22711,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_flamingo"
+      }
     },
     pet_hedgehog: {
       name: "Hedgehog",
+      id: "pet_hedgehog",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F994}"
@@ -22764,11 +22768,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 6
         }
-      },
-      id: "pet_hedgehog"
+      }
     },
     pet_peacock: {
       name: "Peacock",
+      id: "pet_peacock",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F99A}"
@@ -22824,11 +22828,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           attackAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_peacock"
+      }
     },
     pet_rat: {
       name: "Rat",
+      id: "pet_rat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F400}"
@@ -22850,6 +22854,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Dirty Rat",
+            id: "pet_dirty_rat",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
@@ -22875,6 +22880,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Dirty Rat",
+            id: "pet_dirty_rat",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
@@ -22900,6 +22906,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Dirty Rat",
+            id: "pet_dirty_rat",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F400}"
@@ -22914,11 +22921,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Enemy"
         }
-      },
-      id: "pet_rat"
+      }
     },
     pet_shrimp: {
       name: "Shrimp",
+      id: "pet_shrimp",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F990}"
@@ -22977,11 +22984,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_shrimp"
+      }
     },
     pet_spider: {
       name: "Spider",
+      id: "pet_spider",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F577}"
@@ -23031,11 +23038,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           baseAttack: 6,
           baseAealth: 6
         }
-      },
-      id: "pet_spider"
+      }
     },
     pet_swan: {
       name: "Swan",
+      id: "pet_swan",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F9A2}"
@@ -23079,11 +23086,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "GainGold",
           amount: 3
         }
-      },
-      id: "pet_swan"
+      }
     },
     pet_tabby_cat: {
       name: "Tabby Cat",
+      id: "pet_tabby_cat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F408}"
@@ -23138,11 +23145,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           attackAmount: 3,
           untilEndOfBattle: true
         }
-      },
-      id: "pet_tabby_cat"
+      }
     },
     pet_badger: {
       name: "Badger",
+      id: "pet_badger",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A1}"
@@ -23200,11 +23207,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             attackDamagePercent: 100
           }
         }
-      },
-      id: "pet_badger"
+      }
     },
     pet_blowfish: {
       name: "Blowfish",
+      id: "pet_blowfish",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F421}"
@@ -23260,11 +23267,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 6
         }
-      },
-      id: "pet_blowfish"
+      }
     },
     pet_caterpillar: {
       name: "Caterpillar",
+      id: "pet_caterpillar",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F41B}"
@@ -23312,11 +23319,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         effect: {
           kind: "Evolve"
         }
-      },
-      id: "pet_caterpillar"
+      }
     },
     pet_camel: {
       name: "Camel",
+      id: "pet_camel",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F42B}"
@@ -23377,11 +23384,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_camel"
+      }
     },
     pet_hatching_chick: {
       name: "Hatching Chick",
+      id: "pet_hatching_chick",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F423}"
@@ -23440,11 +23447,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 1
         }
-      },
-      id: "pet_hatching_chick"
+      }
     },
     pet_giraffe: {
       name: "Giraffe",
+      id: "pet_giraffe",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F992}"
@@ -23505,11 +23512,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 1,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_giraffe"
+      }
     },
     pet_kangaroo: {
       name: "Kangaroo",
+      id: "pet_kangaroo",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F998}"
@@ -23570,11 +23577,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_kangaroo"
+      }
     },
     pet_owl: {
       name: "Owl",
+      id: "pet_owl",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F989}"
@@ -23635,11 +23642,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_owl"
+      }
     },
     pet_ox: {
       name: "Ox",
+      id: "pet_ox",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F402}"
@@ -23739,11 +23746,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             }
           ]
         }
-      },
-      id: "pet_ox"
+      }
     },
     pet_puppy: {
       name: "Puppy",
+      id: "pet_puppy",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F415}"
@@ -23801,11 +23808,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_puppy"
+      }
     },
     pet_rabbit: {
       name: "Rabbit",
+      id: "pet_rabbit",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F407}"
@@ -23861,11 +23868,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           attackAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_rabbit"
+      }
     },
     pet_sheep: {
       name: "Sheep",
+      id: "pet_sheep",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F411}"
@@ -23887,6 +23894,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Ram",
+            id: "pet_ram",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
@@ -23912,6 +23920,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Ram",
+            id: "pet_ram",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
@@ -23937,6 +23946,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Ram",
+            id: "pet_ram",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F40F}"
@@ -23951,11 +23961,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "pet_sheep"
+      }
     },
     pet_snail: {
       name: "Snail",
+      id: "pet_snail",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40C}"
@@ -24014,11 +24024,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_snail"
+      }
     },
     pet_tropical_fish: {
       name: "Tropical Fish",
+      id: "pet_tropical_fish",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F420}"
@@ -24073,11 +24083,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_tropical_fish"
+      }
     },
     pet_turtle: {
       name: "Turtle",
+      id: "pet_turtle",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F422}"
@@ -24139,11 +24149,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             n: 3
           }
         }
-      },
-      id: "pet_turtle"
+      }
     },
     pet_whale: {
       name: "Whale",
+      id: "pet_whale",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40B}"
@@ -24195,11 +24205,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             n: 1
           }
         }
-      },
-      id: "pet_whale"
+      }
     },
     pet_bison: {
       name: "Bison",
+      id: "pet_bison",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9AC}"
@@ -24258,11 +24268,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_bison"
+      }
     },
     pet_buffalo: {
       name: "Buffalo",
+      id: "pet_buffalo",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F403}"
@@ -24320,11 +24330,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_buffalo"
+      }
     },
     pet_deer: {
       name: "Deer",
+      id: "pet_deer",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F98C}"
@@ -24346,6 +24356,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Bus",
+            id: "pet_bus",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
@@ -24374,6 +24385,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Bus",
+            id: "pet_bus",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
@@ -24402,6 +24414,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Bus",
+            id: "pet_bus",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F68D}"
@@ -24419,11 +24432,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "pet_deer"
+      }
     },
     pet_dolphin: {
       name: "Dolphin",
+      id: "pet_dolphin",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F42C}"
@@ -24475,11 +24488,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 15
         }
-      },
-      id: "pet_dolphin"
+      }
     },
     pet_hippo: {
       name: "Hippo",
+      id: "pet_hippo",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F99B}"
@@ -24537,11 +24550,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_hippo"
+      }
     },
     pet_llama: {
       name: "Llama",
+      id: "pet_llama",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F999}"
@@ -24599,11 +24612,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_llama"
+      }
     },
     pet_lobster: {
       name: "Lobster",
+      id: "pet_lobster",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F99E}"
@@ -24661,11 +24674,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_lobster"
+      }
     },
     pet_monkey: {
       name: "Monkey",
+      id: "pet_monkey",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F412}"
@@ -24723,11 +24736,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_monkey"
+      }
     },
     pet_penguin: {
       name: "Penguin",
+      id: "pet_penguin",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F427}"
@@ -24785,11 +24798,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_penguin"
+      }
     },
     pet_poodle: {
       name: "Poodle",
+      id: "pet_poodle",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F429}"
@@ -24847,11 +24860,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_poodle"
+      }
     },
     pet_rooster: {
       name: "Rooster",
+      id: "pet_rooster",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F413}"
@@ -24873,6 +24886,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Chick",
+            id: "pet_chick",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
@@ -24898,6 +24912,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Chick",
+            id: "pet_chick",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
@@ -24923,6 +24938,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Chick",
+            id: "pet_chick",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F424}"
@@ -24937,11 +24953,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "pet_rooster"
+      }
     },
     pet_skunk: {
       name: "Skunk",
+      id: "pet_skunk",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A8}"
@@ -24994,11 +25010,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           percentage: 100
         }
-      },
-      id: "pet_skunk"
+      }
     },
     pet_squirrel: {
       name: "Squirrel",
+      id: "pet_squirrel",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F43F}"
@@ -25045,11 +25061,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           shop: "All",
           food: "Any"
         }
-      },
-      id: "pet_squirrel"
+      }
     },
     pet_worm: {
       name: "Worm",
+      id: "pet_worm",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB1}"
@@ -25108,11 +25124,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_worm"
+      }
     },
     pet_chicken: {
       name: "Chicken",
+      id: "pet_chicken",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F413}"
@@ -25173,11 +25189,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_chicken"
+      }
     },
     pet_cow: {
       name: "Cow",
+      id: "pet_cow",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F404}"
@@ -25224,11 +25240,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           shop: "Food",
           food: "Milk"
         }
-      },
-      id: "pet_cow"
+      }
     },
     pet_crocodile: {
       name: "Crocodile",
+      id: "pet_crocodile",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F40A}"
@@ -25280,11 +25296,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 21
         }
-      },
-      id: "pet_crocodile"
+      }
     },
     pet_eagle: {
       name: "Eagle",
+      id: "pet_eagle",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F985}"
@@ -25330,11 +25346,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           tier: 6,
           level: 3
         }
-      },
-      id: "pet_eagle"
+      }
     },
     pet_goat: {
       name: "Goat",
+      id: "pet_goat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F410}"
@@ -25377,11 +25393,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "GainGold",
           amount: 1
         }
-      },
-      id: "pet_goat"
+      }
     },
     pet_microbe: {
       name: "Microbe",
+      id: "pet_microbe",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A0}"
@@ -25439,11 +25455,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "All"
           }
         }
-      },
-      id: "pet_microbe"
+      }
     },
     pet_parrot: {
       name: "Parrot",
+      id: "pet_parrot",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F99C}"
@@ -25507,11 +25523,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           level: 3
         }
-      },
-      id: "pet_parrot"
+      }
     },
     pet_rhino: {
       name: "Rhino",
+      id: "pet_rhino",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F98F}"
@@ -25564,11 +25580,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 12
         }
-      },
-      id: "pet_rhino"
+      }
     },
     pet_scorpion: {
       name: "Scorpion",
+      id: "pet_scorpion",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F982}"
@@ -25582,11 +25598,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       status: {
         name: "PoisinAttack"
-      },
-      id: "pet_scorpion"
+      }
     },
     pet_seal: {
       name: "Seal",
+      id: "pet_seal",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9AD}"
@@ -25648,11 +25664,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_seal"
+      }
     },
     pet_shark: {
       name: "Shark",
+      id: "pet_shark",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F988}"
@@ -25710,11 +25726,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_shark"
+      }
     },
     pet_turkey: {
       name: "Turkey",
+      id: "pet_turkey",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F983}"
@@ -25772,11 +25788,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 9,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_turkey"
+      }
     },
     pet_cat: {
       name: "Cat",
+      id: "pet_cat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F408}\u200D\u2B1B"
@@ -25819,11 +25835,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "FoodMultiplier",
           amount: 4
         }
-      },
-      id: "pet_cat"
+      }
     },
     pet_dragon: {
       name: "Dragon",
+      id: "pet_dragon",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F409}"
@@ -25882,11 +25898,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_dragon"
+      }
     },
     pet_fly: {
       name: "Fly",
+      id: "pet_fly",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB0}"
@@ -25907,6 +25923,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Fly",
+            id: "pet_zombie_fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25931,6 +25948,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Fly",
+            id: "pet_zombie_fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25955,6 +25973,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Zombie Fly",
+            id: "pet_zombie_fly",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1FAB0}"
@@ -25968,11 +25987,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "pet_fly"
+      }
     },
     pet_gorilla: {
       name: "Gorilla",
+      id: "pet_gorilla",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F98D}"
@@ -26031,11 +26050,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "Self"
           }
         }
-      },
-      id: "pet_gorilla"
+      }
     },
     pet_leopard: {
       name: "Leopard",
+      id: "pet_leopard",
       image: {
         source: "fxemoji",
         name: "leopardside",
@@ -26098,11 +26117,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             attackDamagePercent: 50
           }
         }
-      },
-      id: "pet_leopard"
+      }
     },
     pet_mammoth: {
       name: "Mammoth",
+      id: "pet_mammoth",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A3}"
@@ -26161,11 +26180,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           untilEndOfBattle: false
         }
-      },
-      id: "pet_mammoth"
+      }
     },
     pet_octopus: {
       name: "Octopus",
+      id: "pet_octopus",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F419}"
@@ -26232,11 +26251,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 5
         }
-      },
-      id: "pet_octopus"
+      }
     },
     pet_sauropod: {
       name: "Sauropod",
+      id: "pet_sauropod",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F995}"
@@ -26279,11 +26298,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "GainGold",
           amount: 1
         }
-      },
-      id: "pet_sauropod"
+      }
     },
     pet_snake: {
       name: "Snake",
+      id: "pet_snake",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40D}"
@@ -26341,11 +26360,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 15
         }
-      },
-      id: "pet_snake"
+      }
     },
     pet_tiger: {
       name: "Tiger",
+      id: "pet_tiger",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F405}"
@@ -26397,11 +26416,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "TriggeringEntity"
           }
         }
-      },
-      id: "pet_tiger"
+      }
     },
     pet_tyrannosaurus: {
       name: "Tyrannosaurus",
+      id: "pet_tyrannosaurus",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F996}"
@@ -26459,11 +26478,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 6,
           untilEndOfBattle: false
         }
-      },
-      id: "pet_tyrannosaurus"
+      }
     },
     pet_zombie_cricket: {
       name: "Zombie Cricket",
+      id: "pet_zombie_cricket",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F997}"
@@ -26474,11 +26493,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: "?",
-      baseHealth: "?",
-      id: "pet_zombie_cricket"
+      baseHealth: "?"
     },
     pet_bus: {
       name: "Bus",
+      id: "pet_bus",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F68D}"
@@ -26492,11 +26511,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       baseHealth: "?",
       status: {
         name: "SplashAttack"
-      },
-      id: "pet_bus"
+      }
     },
     pet_zombie_fly: {
       name: "Zombie Fly",
+      id: "pet_zombie_fly",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1FAB0}"
@@ -26506,11 +26525,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: "?",
-      baseHealth: "?",
-      id: "pet_zombie_fly"
+      baseHealth: "?"
     },
     pet_dirty_rat: {
       name: "Dirty Rat",
+      id: "pet_dirty_rat",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F400}"
@@ -26521,11 +26540,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: 1,
-      baseHealth: 1,
-      id: "pet_dirty_rat"
+      baseHealth: 1
     },
     pet_chick: {
       name: "Chick",
+      id: "pet_chick",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F424}"
@@ -26536,11 +26555,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: "?",
-      baseHealth: 1,
-      id: "pet_chick"
+      baseHealth: 1
     },
     pet_ram: {
       name: "Ram",
+      id: "pet_ram",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F40F}"
@@ -26551,11 +26570,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: "?",
-      baseHealth: "?",
-      id: "pet_ram"
+      baseHealth: "?"
     },
     pet_butterfly: {
       name: "Butterfly",
+      id: "pet_butterfly",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F98B}"
@@ -26566,11 +26585,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       baseHealth: 1,
       packs: [
         "ExpansionPack1"
-      ],
-      id: "pet_butterfly"
+      ]
     },
     pet_bee: {
       name: "Bee",
+      id: "pet_bee",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F41D}"
@@ -26581,13 +26600,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ],
       tier: "Summoned",
       baseAttack: 1,
-      baseHealth: 1,
-      id: "pet_bee"
+      baseHealth: 1
     }
   };
   var foods = {
     food_apple: {
       name: "Apple",
+      id: "food_apple",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F34E}"
@@ -26612,11 +26631,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 1,
           untilEndOfBattle: false
         }
-      },
-      id: "food_apple"
+      }
     },
     food_honey: {
       name: "Honey",
+      id: "food_honey",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F36F}"
@@ -26641,11 +26660,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "HoneyBee"
           }
         }
-      },
-      id: "food_honey"
+      }
     },
     food_cupcake: {
       name: "Cupcake",
+      id: "food_cupcake",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F9C1}"
@@ -26670,11 +26689,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 3,
           untilEndOfBattle: true
         }
-      },
-      id: "food_cupcake"
+      }
     },
     food_meat_bone: {
       name: "Meat Bone",
+      id: "food_meat_bone",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F356}"
@@ -26699,11 +26718,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "BoneAttack"
           }
         }
-      },
-      id: "food_meat_bone"
+      }
     },
     food_sleeping_pill: {
       name: "Sleeping Pill",
+      id: "food_sleeping_pill",
       image: {
         source: "fxemoji",
         unicodeCodePoint: "\u{1F48A}",
@@ -26727,11 +26746,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "PurchaseTarget"
           }
         }
-      },
-      id: "food_sleeping_pill"
+      }
     },
     food_garlic: {
       name: "Garlic",
+      id: "food_garlic",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F9C4}"
@@ -26756,11 +26775,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "GarlicArmor"
           }
         }
-      },
-      id: "food_garlic"
+      }
     },
     food_salad_bowl: {
       name: "Salad Bowl",
+      id: "food_salad_bowl",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F957}"
@@ -26786,11 +26805,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 1,
           untilEndOfBattle: false
         }
-      },
-      id: "food_salad_bowl"
+      }
     },
     food_canned_food: {
       name: "Canned Food",
+      id: "food_canned_food",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F96B}"
@@ -26816,11 +26835,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "food_canned_food"
+      }
     },
     food_pear: {
       name: "Pear",
+      id: "food_pear",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F350}"
@@ -26845,11 +26864,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "food_pear"
+      }
     },
     food_chili: {
       name: "Chili",
+      id: "food_chili",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F336}"
@@ -26874,11 +26893,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "SplashAttack"
           }
         }
-      },
-      id: "food_chili"
+      }
     },
     food_chocolate: {
       name: "Chocolate",
+      id: "food_chocolate",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F36B}"
@@ -26901,11 +26920,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           amount: 1
         }
-      },
-      id: "food_chocolate"
+      }
     },
     food_sushi: {
       name: "Sushi",
+      id: "food_sushi",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F363}"
@@ -26931,11 +26950,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 1,
           untilEndOfBattle: false
         }
-      },
-      id: "food_sushi"
+      }
     },
     food_melon: {
       name: "Melon",
+      id: "food_melon",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F348}"
@@ -26960,11 +26979,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "MelonArmor"
           }
         }
-      },
-      id: "food_melon"
+      }
     },
     food_mushroom: {
       name: "Mushroom",
+      id: "food_mushroom",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F344}"
@@ -26989,11 +27008,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "ExtraLife"
           }
         }
-      },
-      id: "food_mushroom"
+      }
     },
     food_pizza: {
       name: "Pizza",
+      id: "food_pizza",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F355}"
@@ -27019,11 +27038,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "food_pizza"
+      }
     },
     food_steak: {
       name: "Steak",
+      id: "food_steak",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F969}"
@@ -27048,11 +27067,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             name: "SteakAttack"
           }
         }
-      },
-      id: "food_steak"
+      }
     },
     food_milk: {
       name: "Milk",
+      id: "food_milk",
       notes: "This is free!",
       image: {
         source: "twemoji",
@@ -27078,13 +27097,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           healthAmount: 2,
           untilEndOfBattle: false
         }
-      },
-      id: "food_milk"
+      }
     }
   };
   var statuses = {
     status_weak: {
       name: "Weak",
+      id: "status_weak",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F9A0}"
@@ -27100,11 +27119,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: 5,
           appliesOnce: false
         }
-      },
-      id: "status_weak"
+      }
     },
     status_coconut_shield: {
       name: "Coconut Shield",
+      id: "status_coconut_shield",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F965}"
@@ -27120,11 +27139,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: null,
           appliesOnce: true
         }
-      },
-      id: "status_coconut_shield"
+      }
     },
     status_honey_bee: {
       name: "Honey Bee",
+      id: "status_honey_bee",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F36F}"
@@ -27139,6 +27158,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SummonPet",
           pet: {
             name: "Bee",
+            id: "pet_bee",
             image: {
               source: "noto-emoji",
               unicodeCodePoint: "\u{1F41D}"
@@ -27153,11 +27173,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           },
           team: "Friendly"
         }
-      },
-      id: "status_honey_bee"
+      }
     },
     status_bone_attack: {
       name: "Bone Attack",
+      id: "status_bone_attack",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F356}"
@@ -27173,11 +27193,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: 5,
           appliesOnce: false
         }
-      },
-      id: "status_bone_attack"
+      }
     },
     status_garlic_armor: {
       name: "Garlic Armor",
+      id: "status_garlic_armor",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F9C4}"
@@ -27193,11 +27213,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: -2,
           appliesOnce: false
         }
-      },
-      id: "status_garlic_armor"
+      }
     },
     status_splash_attack: {
       name: "Splash Attack",
+      id: "status_splash_attack",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F336}"
@@ -27212,11 +27232,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "SplashDamage",
           amount: 5
         }
-      },
-      id: "status_splash_attack"
+      }
     },
     status_melon_armor: {
       name: "Melon Armor",
+      id: "status_melon_armor",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F348}"
@@ -27232,11 +27252,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: -20,
           appliesOnce: true
         }
-      },
-      id: "status_melon_armor"
+      }
     },
     status_extra_life: {
       name: "Extra Life",
+      id: "status_extra_life",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F344}"
@@ -27252,11 +27272,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           baseAttack: 1,
           baseHealth: 1
         }
-      },
-      id: "status_extra_life"
+      }
     },
     status_steak_attack: {
       name: "Steak Attack",
+      id: "status_steak_attack",
       image: {
         source: "twemoji",
         unicodeCodePoint: "\u{1F969}"
@@ -27272,11 +27292,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: 20,
           appliesOnce: true
         }
-      },
-      id: "status_steak_attack"
+      }
     },
     status_poison_attack: {
       name: "Poison Attack",
+      id: "status_poison_attack",
       image: {
         source: "noto-emoji",
         unicodeCodePoint: "\u{1F95C}"
@@ -27292,8 +27312,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           damageModifier: null,
           appliesOnce: false
         }
-      },
-      id: "status_poison_attack"
+      }
     }
   };
   var api_default = {
@@ -27302,3498 +27321,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     statuses
   };
 
-  // src/database/food/apple.ts
-  var apple = {
-    name: "Apple",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F34E}"
-    },
-    tier: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal +1/+1.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "PurchaseTarget"
-        },
-        attackAmount: 1,
-        healthAmount: 1,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/cannedFood.ts
-  var cannedFood = {
-    name: "Canned Food",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F96B}"
-    },
-    tier: 4,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give all current and future shop animals +2/+2.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachShopAnimal",
-          includingFuture: true
-        },
-        attackAmount: 2,
-        healthAmount: 2,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/chili.ts
-  var chili = {
-    name: "Chili",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F336}"
-    },
-    tier: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Splash Attack.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "SplashAttack"
-        }
-      }
-    }
-  };
-
-  // src/database/food/chocolate.ts
-  var chocolate = {
-    name: "Chocolate",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F36B}"
-    },
-    tier: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal +1 Experience.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "GainExperience",
-        target: {
-          kind: "PurchaseTarget"
-        },
-        amount: 1
-      }
-    }
-  };
-
-  // src/database/food/cupcake.ts
-  var cupcake = {
-    name: "Cupcake",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F9C1}"
-    },
-    tier: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal +3/+3 until end of battle.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "PurchaseTarget"
-        },
-        attackAmount: 3,
-        healthAmount: 3,
-        untilEndOfBattle: true
-      }
-    }
-  };
-
-  // src/database/food/garlic.ts
-  var garlic = {
-    name: "Garlic",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F9C4}"
-    },
-    tier: 3,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Garlic Armor.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "GarlicArmor"
-        }
-      }
-    }
-  };
-
-  // src/database/food/honey.ts
-  var beeSummoned = {
-    name: "Bee",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F41D}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: 1,
-    baseHealth: 1
-  };
-  var honey = {
-    name: "Honey",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F36F}"
-    },
-    tier: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Honey Bee.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "HoneyBee"
-        }
-      }
-    }
-  };
-
-  // src/database/food/meatBone.ts
-  var meatBone = {
-    name: "Meat Bone",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F356}"
-    },
-    tier: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Bone Attack.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "BoneAttack"
-        }
-      }
-    }
-  };
-
-  // src/database/food/melon.ts
-  var melon = {
-    name: "Melon",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F348}"
-    },
-    tier: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Melon Armor.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "MelonArmor"
-        }
-      }
-    }
-  };
-
-  // src/database/food/milk.ts
-  var milk = {
-    name: "Milk",
-    notes: "This is free!",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F95B}"
-    },
-    tier: "Summoned",
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal +2/+2.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "PurchaseTarget"
-        },
-        attackAmount: 2,
-        healthAmount: 2,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/mushroom.ts
-  var mushroom = {
-    name: "Mushroom",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F344}"
-    },
-    tier: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Extra Life.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "ExtraLife"
-        }
-      }
-    }
-  };
-
-  // src/database/food/pear.ts
-  var pear = {
-    name: "Pear",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F350}"
-    },
-    tier: 4,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal +2/+2.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "PurchaseTarget"
-        },
-        attackAmount: 2,
-        healthAmount: 2,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/pizza.ts
-  var pizza = {
-    name: "Pizza",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F355}"
-    },
-    tier: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give 2 random animals +2/+2.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 2
-        },
-        attackAmount: 2,
-        healthAmount: 2,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/saladBowl.ts
-  var saladBowl = {
-    name: "Salad Bowl",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F957}"
-    },
-    tier: 3,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give 2 random animals +1/+1.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 2
-        },
-        attackAmount: 1,
-        healthAmount: 1,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/food/sleepingPill.ts
-  var sleepingPill = {
-    name: "Sleeping Pill",
-    image: {
-      source: "fxemoji",
-      unicodeCodePoint: "\u{1F48A}",
-      name: "pill"
-    },
-    notes: "This costs 1 gold.",
-    tier: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Make a friendly animal faint.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "Faint",
-        target: {
-          kind: "PurchaseTarget"
-        }
-      }
-    }
-  };
-
-  // src/database/food/steak.ts
-  var steak = {
-    name: "Steak",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F969}"
-    },
-    tier: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give an animal Steak Attack.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ApplyStatus",
-        to: {
-          kind: "PurchaseTarget"
-        },
-        status: {
-          name: "SteakAttack"
-        }
-      }
-    }
-  };
-
-  // src/database/food/sushi.ts
-  var sushi = {
-    name: "Sushi",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F363}"
-    },
-    tier: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    ability: {
-      description: "Give 3 random animals +1/+1.",
-      triggeredBy: {
-        kind: "Self"
-      },
-      trigger: Trigger.Buy,
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 3
-        },
-        attackAmount: 1,
-        healthAmount: 1,
-        untilEndOfBattle: false
-      }
-    }
-  };
-
-  // src/database/pets/ant.ts
-  function antAbility(level) {
-    return {
-      description: `Faint: Give a random friend +${level * 2}/+${level}`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        attackAmount: level * 2,
-        healthAmount: level,
-        target: {
-          kind: "RandomFriend",
-          n: 1
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var ant = {
-    name: "Ant",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F41C}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: antAbility(1),
-    level2Ability: antAbility(2),
-    level3Ability: antAbility(3)
-  };
-
-  // src/database/pets/badger.ts
-  function badgerAbility(level) {
-    return {
-      description: `Faint: Deal Attack damage to adjacent animals`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "AdjacentAnimals"
-        },
-        amount: { attackDamagePercent: 100 }
-      }
-    };
-  }
-  var badger = {
-    name: "Badger",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A1}"
-    },
-    tier: 3,
-    baseAttack: 5,
-    baseHealth: 4,
-    packs: ["StandardPack"],
-    level1Ability: badgerAbility(1),
-    level2Ability: badgerAbility(2),
-    level3Ability: badgerAbility(3)
-  };
-
-  // src/database/pets/bat.ts
-  function batAbility(level) {
-    return {
-      description: `Start of battle: Make ${level} enemies Weak.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ApplyStatus",
-        status: {
-          name: "Weak"
-        },
-        to: {
-          kind: "RandomEnemy",
-          n: level
-        }
-      }
-    };
-  }
-  var bat = {
-    name: "Bat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F987}"
-    },
-    tier: 2,
-    baseAttack: 1,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: __spreadProps(__spreadValues({}, batAbility(1)), {
-      description: "Start of battle: Make 1 enemy Weak."
-    }),
-    level2Ability: batAbility(2),
-    level3Ability: batAbility(3)
-  };
-
-  // src/database/pets/beaver.ts
-  function beaverAbility(level) {
-    return {
-      description: `Sell: Give two random friends +${level} health`,
-      trigger: Trigger.Sell,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        healthAmount: level,
-        target: {
-          kind: "RandomFriend",
-          n: 2
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var beaver = {
-    name: "Beaver",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9AB}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: beaverAbility(1),
-    level2Ability: beaverAbility(2),
-    level3Ability: beaverAbility(3)
-  };
-
-  // src/database/pets/beetle.ts
-  function beetleAbility(level) {
-    return {
-      description: `Eat shop food: Give shop animals +${level} health`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        healthAmount: level,
-        target: {
-          kind: "EachShopAnimal",
-          includingFuture: false
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var beetle = {
-    name: "Beetle",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1FAB2}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: beetleAbility(1),
-    level2Ability: beetleAbility(2),
-    level3Ability: beetleAbility(3)
-  };
-
-  // src/database/pets/bison.ts
-  function bisonAbility(level) {
-    return {
-      description: `End turn: Gain +${level * 2}/+${level * 2} if there is at least one Lvl. 3 friend.`,
-      trigger: Trigger.EndOfTurnWithLvl3Friend,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var bison = {
-    name: "Bison",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9AC}"
-    },
-    tier: 4,
-    baseAttack: 6,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: bisonAbility(1),
-    level2Ability: bisonAbility(2),
-    level3Ability: bisonAbility(3)
-  };
-
-  // src/database/pets/blowfish.ts
-  function blowfishAbility(level) {
-    return {
-      description: `Hurt: Deal ${level * 2} damage to a random enemy.`,
-      trigger: Trigger.Hurt,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "RandomEnemy",
-          n: 1
-        },
-        amount: level * 2
-      }
-    };
-  }
-  var blowfish = {
-    name: "Blowfish",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F421}"
-    },
-    tier: 3,
-    baseAttack: 3,
-    baseHealth: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: blowfishAbility(1),
-    level2Ability: blowfishAbility(2),
-    level3Ability: blowfishAbility(3)
-  };
-
-  // src/database/pets/bluebird.ts
-  function bluebirdAbility(level) {
-    return {
-      description: `End turn: Give left-most friend +${level} attack`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        attackAmount: level,
-        target: {
-          kind: "LeftMostFriend"
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var bluebird = {
-    name: "Bluebird",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F426}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: bluebirdAbility(1),
-    level2Ability: bluebirdAbility(2),
-    level3Ability: bluebirdAbility(3)
-  };
-
-  // src/database/pets/buffalo.ts
-  function buffaloAbility(level) {
-    return {
-      description: `Friend bought: Gain +${level}/+${level}`,
-      trigger: Trigger.Buy,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var buffalo = {
-    name: "Buffalo",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F403}"
-    },
-    tier: 4,
-    baseAttack: 5,
-    baseHealth: 5,
-    packs: ["ExpansionPack1"],
-    level1Ability: buffaloAbility(1),
-    level2Ability: buffaloAbility(2),
-    level3Ability: buffaloAbility(3)
-  };
-
-  // src/database/pets/camel.ts
-  function camelAbility(level) {
-    return {
-      description: `Hurt: Give friend behind +${level}/+${level * 2}`,
-      trigger: Trigger.Hurt,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "FriendBehind",
-          n: 1
-        },
-        attackAmount: level,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var camel = {
-    name: "Camel",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F42B}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 5,
-    packs: ["StandardPack"],
-    level1Ability: camelAbility(1),
-    level2Ability: camelAbility(2),
-    level3Ability: camelAbility(3)
-  };
-
-  // src/database/pets/cat.ts
-  function catAbility(level) {
-    let multiplier = "";
-    switch (level) {
-      case 1:
-        multiplier = "doubled";
-        break;
-      case 2:
-        multiplier = "tripled";
-        break;
-      case 3:
-        multiplier = "quadrupled";
-        break;
-    }
-    return {
-      description: `Food with Health and Attack effects are ${multiplier}.`,
-      trigger: Trigger.Hurt,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "FoodMultiplier",
-        amount: level + 1
-      }
-    };
-  }
-  var cat = {
-    name: "Cat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F408}\u200D\u2B1B"
-    },
-    tier: 6,
-    baseAttack: 4,
-    baseHealth: 5,
-    packs: ["StandardPack"],
-    level1Ability: catAbility(1),
-    level2Ability: catAbility(2),
-    level3Ability: catAbility(3)
-  };
-
-  // src/database/pets/caterpillar.ts
-  function caterpillarAbility(level) {
-    if (level <= 2) {
-      return {
-        description: `Start of turn: Gain 1 Experience`,
-        trigger: Trigger.StartOfTurn,
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "GainExperience",
-          target: {
-            kind: "Self"
-          },
-          amount: 1
-        }
-      };
-    }
-    return {
-      description: `Start of battle: Evolve into a Butterfly`,
-      trigger: Trigger.StartOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "Evolve"
-      }
-    };
-  }
-  var caterpillar = {
-    name: "Caterpillar",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F41B}"
-    },
-    tier: 3,
-    baseAttack: 1,
-    baseHealth: 4,
-    packs: ["ExpansionPack1"],
-    level1Ability: caterpillarAbility(1),
-    level2Ability: caterpillarAbility(2),
-    level3Ability: caterpillarAbility(3)
-  };
-
-  // src/database/pets/chicken.ts
-  function chickenAbility(level) {
-    return {
-      description: `Buy tier 1 animal: Give current and future shop animals +${level}/+${level}`,
-      trigger: Trigger.BuyTier1Animal,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachShopAnimal",
-          includingFuture: false
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var chicken = {
-    name: "Chicken",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F413}"
-    },
-    tier: 5,
-    baseAttack: 3,
-    baseHealth: 4,
-    packs: ["ExpansionPack1"],
-    level1Ability: chickenAbility(1),
-    level2Ability: chickenAbility(2),
-    level3Ability: chickenAbility(3)
-  };
-
-  // src/database/pets/cow.ts
-  function cowAbility(level) {
-    return {
-      description: `Buy: Replace food shop with 2 free milk that gives +2/+2.`,
-      trigger: Trigger.Buy,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "RefillShops",
-        shop: "Food",
-        food: "Milk"
-      }
-    };
-  }
-  var cow = {
-    name: "Cow",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F404}"
-    },
-    tier: 5,
-    baseAttack: 4,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: cowAbility(1),
-    level2Ability: cowAbility(2),
-    level3Ability: cowAbility(3)
-  };
-
-  // src/database/pets/crab.ts
-  function crabAbility(level) {
-    return {
-      description: `Start of battle: Copy Health from friend ahead.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "TransferStats",
-        copyAttack: false,
-        copyHealth: true,
-        from: {
-          kind: "FriendAhead",
-          n: 1
-        },
-        to: {
-          kind: "Self"
-        }
-      }
-    };
-  }
-  var crab = {
-    name: "Crab",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F980}"
-    },
-    tier: 2,
-    baseAttack: 3,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: crabAbility(1),
-    level2Ability: crabAbility(2),
-    level3Ability: crabAbility(3)
-  };
-
-  // src/database/pets/cricket.ts
-  var cricketSummoned = {
-    name: "Zombie Cricket",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F997}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: "?",
-    baseHealth: "?"
-  };
-  function cricketAbility(level) {
-    return {
-      description: `Faint: Summon a ${level}/${level} Cricket`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: __spreadProps(__spreadValues({}, cricketSummoned), {
-          baseAttack: level,
-          baseHealth: level
-        }),
-        team: "Friendly"
-      }
-    };
-  }
-  var cricket = {
-    name: "Cricket",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F997}"
-    },
-    tier: 1,
-    baseAttack: 1,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: cricketAbility(1),
-    level2Ability: cricketAbility(2),
-    level3Ability: cricketAbility(3)
-  };
-
-  // src/database/pets/crocodile.ts
-  function crocodileAbility(level) {
-    return {
-      description: `Start of battle: Deal ${level * 7} damage to the last enemy`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "None"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "LowestHealthEnemy"
-        },
-        amount: level * 7
-      }
-    };
-  }
-  var crocodile = {
-    name: "Crocodile",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F40A}"
-    },
-    tier: 5,
-    baseAttack: 6,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: crocodileAbility(1),
-    level2Ability: crocodileAbility(2),
-    level3Ability: crocodileAbility(3)
-  };
-
-  // src/database/pets/deer.ts
-  var busSummoned = {
-    name: "Bus",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F68D}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: "?",
-    baseHealth: "?",
-    status: {
-      name: "SplashAttack"
-    }
-  };
-  function deerAbility(level) {
-    return {
-      description: `Faint: Summon a ${level * 5}/${level * 5} Bus with Splash Attack`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: __spreadProps(__spreadValues({}, busSummoned), {
-          baseAttack: level * 5,
-          baseHealth: level * 5
-        }),
-        team: "Friendly"
-      }
-    };
-  }
-  var deer = {
-    name: "Deer",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F98C}"
-    },
-    tier: 4,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: deerAbility(1),
-    level2Ability: deerAbility(2),
-    level3Ability: deerAbility(3)
-  };
-
-  // src/database/pets/dodo.ts
-  function dodoAbility(level) {
-    return {
-      description: `Start of battle: Give Attack to ${level} friends ahead.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "TransferStats",
-        copyAttack: true,
-        copyHealth: false,
-        from: {
-          kind: "Self"
-        },
-        to: {
-          kind: "FriendAhead",
-          n: level
-        }
-      }
-    };
-  }
-  var dodo = {
-    name: "Dodo",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A4}"
-    },
-    tier: 2,
-    baseAttack: 1,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: __spreadProps(__spreadValues({}, dodoAbility(1)), {
-      description: `Start of battle: Give Attack to friend ahead.`
-    }),
-    level2Ability: dodoAbility(2),
-    level3Ability: dodoAbility(3)
-  };
-
-  // src/database/pets/dog.ts
-  function dogAbility(level) {
-    return {
-      description: `Friend summoned: Gain +${level} Attack or +${level} Health.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "OneOf",
-        effects: [
-          {
-            kind: "ModifyStats",
-            untilEndOfBattle: false,
-            target: {
-              kind: "Self"
-            },
-            attackAmount: level
-          },
-          {
-            kind: "ModifyStats",
-            untilEndOfBattle: false,
-            target: {
-              kind: "Self"
-            },
-            healthAmount: level
-          }
-        ]
-      }
-    };
-  }
-  var dog = {
-    name: "Dog",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F415}"
-    },
-    tier: 2,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: dogAbility(1),
-    level2Ability: dogAbility(2),
-    level3Ability: dogAbility(3)
-  };
-
-  // src/database/pets/dolphin.ts
-  function dolphinAbility(level) {
-    return {
-      description: `Start of battle: Deal ${level * 5} damage to the lowest health enemy`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "None"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "LowestHealthEnemy"
-        },
-        amount: level * 5
-      }
-    };
-  }
-  var dolphin = {
-    name: "Dolphin",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F42C}"
-    },
-    tier: 4,
-    baseAttack: 4,
-    baseHealth: 6,
-    packs: ["StandardPack"],
-    level1Ability: dolphinAbility(1),
-    level2Ability: dolphinAbility(2),
-    level3Ability: dolphinAbility(3)
-  };
-
-  // src/database/pets/dragon.ts
-  function dragonAbility(level) {
-    return {
-      description: `Buy tier 1 animal: Give all friends +${level}/+${level}.`,
-      trigger: Trigger.BuyTier1Animal,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachFriend"
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var dragon = {
-    name: "Dragon",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F409}"
-    },
-    tier: 6,
-    baseAttack: 6,
-    baseHealth: 8,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: dragonAbility(1),
-    level2Ability: dragonAbility(2),
-    level3Ability: dragonAbility(3)
-  };
-
-  // src/database/pets/dromedary.ts
-  function dromedaryAbility(level) {
-    return {
-      description: `Start of turn: Give shop animals +${level}/+${level}`,
-      trigger: Trigger.StartOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        untilEndOfBattle: false,
-        target: {
-          kind: "EachShopAnimal",
-          includingFuture: false
-        },
-        attackAmount: level,
-        healthAmount: level
-      }
-    };
-  }
-  var dromedary = {
-    name: "Dromedary",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F42A}"
-    },
-    tier: 2,
-    baseAttack: 2,
-    baseHealth: 4,
-    packs: ["ExpansionPack1"],
-    level1Ability: dromedaryAbility(1),
-    level2Ability: dromedaryAbility(2),
-    level3Ability: dromedaryAbility(3)
-  };
-
-  // src/database/pets/duck.ts
-  function duckAbility(level) {
-    return {
-      description: `Sell: Give shop animals +${level}/+${level}`,
-      trigger: Trigger.Sell,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachShopAnimal",
-          includingFuture: false
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var duck = {
-    name: "Duck",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F986}"
-    },
-    tier: 1,
-    baseAttack: 1,
-    baseHealth: 2,
-    packs: ["StandardPack"],
-    level1Ability: duckAbility(1),
-    level2Ability: duckAbility(2),
-    level3Ability: duckAbility(3)
-  };
-
-  // src/database/pets/eagle.ts
-  function eagleAbility(level) {
-    return {
-      description: `Faint: Summon one Lvl. ${level} tier 6 animal.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonRandomPet",
-        tier: 6,
-        level
-      }
-    };
-  }
-  var eagle = {
-    name: "Eagle",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F985}"
-    },
-    tier: 5,
-    baseAttack: 6,
-    baseHealth: 5,
-    packs: ["ExpansionPack1"],
-    level1Ability: eagleAbility(1),
-    level2Ability: eagleAbility(2),
-    level3Ability: eagleAbility(3)
-  };
-
-  // src/database/pets/elephant.ts
-  function elephantAbility(level) {
-    return {
-      description: `Before Attack: Deal 1 damage to ${level} friends behind.`,
-      trigger: Trigger.BeforeAttack,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "FriendBehind",
-          n: level
-        },
-        amount: 1
-      }
-    };
-  }
-  var elephant = {
-    name: "Elephant",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F418}"
-    },
-    tier: 2,
-    baseAttack: 3,
-    baseHealth: 5,
-    packs: ["StandardPack"],
-    level1Ability: elephantAbility(1),
-    level2Ability: elephantAbility(2),
-    level3Ability: elephantAbility(3)
-  };
-
-  // src/database/pets/fish.ts
-  function fishAbility(level) {
-    return {
-      description: `Level-up: Give all friends +${level}/+${level}`,
-      trigger: Trigger.LevelUp,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachFriend"
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var fish = {
-    name: "Fish",
-    image: {
-      source: "fxemoji",
-      name: "fish",
-      unicodeCodePoint: "\u{1F41F}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 3,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: fishAbility(1),
-    level2Ability: fishAbility(2)
-  };
-
-  // src/database/pets/flamingo.ts
-  function flamingoAbility(level) {
-    return {
-      description: `Faint: Give the two friends behind +${level}/+${level}.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "FriendBehind",
-          n: 2
-        },
-        attackAmount: +level,
-        healthAmount: +level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var flamingo = {
-    name: "Flamingo",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A9}"
-    },
-    tier: 2,
-    baseAttack: 3,
-    baseHealth: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: flamingoAbility(1),
-    level2Ability: flamingoAbility(2),
-    level3Ability: flamingoAbility(3)
-  };
-
-  // src/database/pets/fly.ts
-  var flySummoned = {
-    name: "Zombie Fly",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1FAB0}"
-    },
-    packs: ["StandardPack"],
-    tier: "Summoned",
-    baseAttack: "?",
-    baseHealth: "?"
-  };
-  function flyAbility(level) {
-    return {
-      description: `Friend faints: Summon a ${level * 2}/${level * 2} fly in its place`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: __spreadProps(__spreadValues({}, flySummoned), {
-          baseAttack: level * 2,
-          baseHealth: level * 2
-        }),
-        team: "Friendly"
-      }
-    };
-  }
-  var fly = {
-    name: "Fly",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1FAB0}"
-    },
-    tier: 6,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack"],
-    level1Ability: flyAbility(1),
-    level2Ability: flyAbility(2),
-    level3Ability: flyAbility(3)
-  };
-
-  // src/database/pets/giraffe.ts
-  function giraffeAbility(level) {
-    return {
-      description: `End turn: Give ${level} friends ahead +1/+1`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "FriendAhead",
-          n: level
-        },
-        attackAmount: 1,
-        healthAmount: 1,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var giraffe = {
-    name: "Giraffe",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F992}"
-    },
-    tier: 3,
-    baseAttack: 1,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: __spreadProps(__spreadValues({}, giraffeAbility(1)), {
-      description: `End turn: Give friend ahead +1/+1`
-    }),
-    level2Ability: giraffeAbility(2),
-    level3Ability: giraffeAbility(3)
-  };
-
-  // src/database/pets/goat.ts
-  function goatAbility(level) {
-    return {
-      description: `Friend bought: Gain 1 gold.`,
-      trigger: Trigger.Buy,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "GainGold",
-        amount: 1
-      }
-    };
-  }
-  var goat = {
-    name: "Goat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F410}"
-    },
-    tier: 5,
-    baseAttack: 4,
-    baseHealth: 5,
-    packs: ["ExpansionPack1"],
-    level1Ability: goatAbility(1),
-    level2Ability: goatAbility(2),
-    level3Ability: goatAbility(3)
-  };
-
-  // src/database/pets/gorilla.ts
-  function gorillaAbility(level) {
-    return {
-      description: `Hurt: Gain Coconut Shield.`,
-      trigger: Trigger.Hurt,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ApplyStatus",
-        status: {
-          name: "CoconutShield"
-        },
-        to: {
-          kind: "Self"
-        }
-      }
-    };
-  }
-  var gorilla = {
-    name: "Gorilla",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F98D}"
-    },
-    tier: 6,
-    baseAttack: 6,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: gorillaAbility(1),
-    level2Ability: gorillaAbility(2),
-    level3Ability: gorillaAbility(3)
-  };
-
-  // src/database/pets/hatchingChick.ts
-  function hatchingChickAbility(level) {
-    if (level <= 1) {
-      return {
-        description: `End turn: Give +5/+5 to friend ahead until end of battle.`,
-        trigger: Trigger.EndOfTurn,
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "ModifyStats",
-          target: {
-            kind: "FriendAhead",
-            n: 1
-          },
-          attackAmount: 5,
-          healthAmount: 5,
-          untilEndOfBattle: true
-        }
-      };
-    }
-    if (level <= 2) {
-      return {
-        description: `End turn: Give +2/+2 to friend ahead.`,
-        trigger: Trigger.EndOfTurn,
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "ModifyStats",
-          target: {
-            kind: "FriendAhead",
-            n: 1
-          },
-          attackAmount: 2,
-          healthAmount: 2,
-          untilEndOfBattle: false
-        }
-      };
-    }
-    return {
-      description: `Start of turn: Give +1 Experience to friend ahead`,
-      trigger: Trigger.StartOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "GainExperience",
-        target: {
-          kind: "FriendAhead",
-          n: 1
-        },
-        amount: 1
-      }
-    };
-  }
-  var hatchingChick = {
-    name: "Hatching Chick",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F423}"
-    },
-    tier: 3,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["ExpansionPack1"],
-    level1Ability: hatchingChickAbility(1),
-    level2Ability: hatchingChickAbility(2),
-    level3Ability: hatchingChickAbility(3)
-  };
-
-  // src/database/pets/hedgehog.ts
-  function hedgehogAbility(level) {
-    return {
-      description: `Faint: Deal ${level * 2} damage to all.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "All"
-        },
-        amount: level * 2
-      }
-    };
-  }
-  var hedgehog = {
-    name: "Hedgehog",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F994}"
-    },
-    tier: 2,
-    baseAttack: 3,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: hedgehogAbility(1),
-    level2Ability: hedgehogAbility(2),
-    level3Ability: hedgehogAbility(3)
-  };
-
-  // src/database/pets/hippo.ts
-  function hippoAbility(level) {
-    return {
-      description: `Knock out: Gain +${level * 2}/+${level * 2}.`,
-      trigger: Trigger.KnockOut,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var hippo = {
-    name: "Hippo",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F99B}"
-    },
-    tier: 4,
-    baseAttack: 4,
-    baseHealth: 7,
-    packs: ["StandardPack"],
-    level1Ability: hippoAbility(1),
-    level2Ability: hippoAbility(2),
-    level3Ability: hippoAbility(3)
-  };
-
-  // src/database/pets/horse.ts
-  function horseAbility(level) {
-    return {
-      description: `Friend summoned: Give it +${level} Attack until end of battle`,
-      trigger: Trigger.Summoned,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "TriggeringEntity"
-        },
-        attackAmount: level,
-        untilEndOfBattle: true
-      }
-    };
-  }
-  var horse = {
-    name: "Horse",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F40E}"
-    },
-    tier: 1,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["StandardPack"],
-    level1Ability: horseAbility(1),
-    level2Ability: horseAbility(2),
-    level3Ability: horseAbility(3)
-  };
-
-  // src/database/pets/kangaroo.ts
-  function kangarooAbility(level) {
-    return {
-      description: `Friend ahead attacks: Gain +${level * 2}/+${level * 2}`,
-      trigger: Trigger.AfterAttack,
-      triggeredBy: {
-        kind: "FriendAhead",
-        n: 1
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var kangaroo = {
-    name: "Kangaroo",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F998}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: kangarooAbility(1),
-    level2Ability: kangarooAbility(2),
-    level3Ability: kangarooAbility(3)
-  };
-
-  // src/database/pets/ladybug.ts
-  function ladybugAbility(level) {
-    return {
-      description: `Buy food: Gain +${level}/+${level} until end of battle`,
-      trigger: Trigger.BuyFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        attackAmount: level,
-        healthAmount: level,
-        target: {
-          kind: "Self"
-        },
-        untilEndOfBattle: true
-      }
-    };
-  }
-  var ladybug = {
-    name: "Ladybug",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F41E}"
-    },
-    tier: 1,
-    baseAttack: 1,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: ladybugAbility(1),
-    level2Ability: ladybugAbility(2),
-    level3Ability: ladybugAbility(3)
-  };
-
-  // src/database/pets/leopard.ts
-  function leopardAbility(level) {
-    return {
-      description: `Start of battle: Deal 50% Attack damage to ${level} random enemies.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "RandomEnemy",
-          n: level
-        },
-        amount: { attackDamagePercent: 50 }
-      }
-    };
-  }
-  var leopard = {
-    name: "Leopard",
-    image: {
-      source: "fxemoji",
-      name: "leopardside",
-      unicodeCodePoint: "\u{1F406}"
-    },
-    tier: 6,
-    baseAttack: 6,
-    baseHealth: 4,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: __spreadProps(__spreadValues({}, leopardAbility(1)), {
-      description: `Start of battle: Deal 50% Attack damage to a random enemy.`
-    }),
-    level2Ability: leopardAbility(2),
-    level3Ability: leopardAbility(3)
-  };
-
-  // src/database/pets/llama.ts
-  function llamaAbility(level) {
-    return {
-      description: `End turn: If you have 4 or less animals, gain +${level * 2}/+${level * 2}.`,
-      trigger: Trigger.EndOfTurnWith4OrLessAnimals,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var llama = {
-    name: "Llama",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F999}"
-    },
-    tier: 4,
-    baseAttack: 2,
-    baseHealth: 5,
-    packs: ["ExpansionPack1"],
-    level1Ability: llamaAbility(1),
-    level2Ability: llamaAbility(2),
-    level3Ability: llamaAbility(3)
-  };
-
-  // src/database/pets/lobster.ts
-  function lobsterAbility(level) {
-    return {
-      description: `Friend summoned: Give it +${level * 2}/+${level * 2} when not in battle.`,
-      trigger: Trigger.Summoned,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "TriggeringEntity"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var lobster = {
-    name: "Lobster",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F99E}"
-    },
-    tier: 4,
-    baseAttack: 3,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: lobsterAbility(1),
-    level2Ability: lobsterAbility(2),
-    level3Ability: lobsterAbility(3)
-  };
-
-  // src/database/pets/mammoth.ts
-  function mammothAbility(level) {
-    return {
-      description: `Faint: Give all friends +${level * 2}/+${level * 2}`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        target: {
-          kind: "EachFriend"
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var mammoth = {
-    name: "Mammoth",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A3}"
-    },
-    tier: 6,
-    baseAttack: 2,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: mammothAbility(1),
-    level2Ability: mammothAbility(2),
-    level3Ability: mammothAbility(3)
-  };
-
-  // src/database/pets/microbe.ts
-  function microbeAbility(level) {
-    return {
-      description: `Faint: Make all animals Weak.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ApplyStatus",
-        status: {
-          name: "Weak"
-        },
-        to: {
-          kind: "All"
-        }
-      }
-    };
-  }
-  var microbe = {
-    name: "Microbe",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A0}"
-    },
-    tier: 5,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["ExpansionPack1"],
-    level1Ability: microbeAbility(1),
-    level2Ability: microbeAbility(2),
-    level3Ability: microbeAbility(3)
-  };
-
-  // src/database/pets/monkey.ts
-  function monkeyAbility(level) {
-    return {
-      description: `End turn: Give right-most friend +${level * 2}/+${level * 2}`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RightMostFriend"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var monkey = {
-    name: "Monkey",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F412}"
-    },
-    tier: 4,
-    baseAttack: 3,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: monkeyAbility(1),
-    level2Ability: monkeyAbility(2),
-    level3Ability: monkeyAbility(3)
-  };
-
-  // src/database/pets/mosquito.ts
-  function mosquitoAbility(level) {
-    return {
-      description: `Start of battle: Deal ${level} damage to a random enemy`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "None"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "RandomEnemy",
-          n: 1
-        },
-        amount: level
-      }
-    };
-  }
-  var mosquito = {
-    name: "Mosquito",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F99F}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: mosquitoAbility(1),
-    level2Ability: mosquitoAbility(2),
-    level3Ability: mosquitoAbility(3)
-  };
-
-  // src/database/pets/octopus.ts
-  function octopusAbility(level) {
-    if (level <= 1) {
-      return {
-        description: `Level-up: Gain +8/+8.`,
-        trigger: Trigger.LevelUp,
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "ModifyStats",
-          target: {
-            kind: "Self"
-          },
-          attackAmount: 8,
-          healthAmount: 8,
-          untilEndOfBattle: false
-        }
-      };
-    }
-    if (level <= 2) {
-      return {
-        description: `Level-up: Gain +8/+8 and a new ability.`,
-        trigger: Trigger.LevelUp,
-        triggeredBy: {
-          kind: "Self"
-        },
-        effect: {
-          kind: "AllOf",
-          effects: [
-            {
-              kind: "ModifyStats",
-              target: {
-                kind: "Self"
-              },
-              attackAmount: 8,
-              healthAmount: 8,
-              untilEndOfBattle: false
-            },
-            {
-              kind: "GainAbility",
-              target: {
-                kind: "Self"
-              }
-            }
-          ]
-        }
-      };
-    }
-    return {
-      description: `Before attack: Deal 5 damage to all enemies`,
-      trigger: Trigger.BeforeAttack,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "EachEnemy"
-        },
-        amount: 5
-      }
-    };
-  }
-  var octopus = {
-    name: "Octopus",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F419}"
-    },
-    tier: 6,
-    baseAttack: 8,
-    baseHealth: 8,
-    packs: ["ExpansionPack1"],
-    level1Ability: octopusAbility(1),
-    level2Ability: octopusAbility(2),
-    level3Ability: octopusAbility(3)
-  };
-
-  // src/database/pets/otter.ts
-  function otterAbility(level) {
-    return {
-      description: `Buy: Give a random friend +${level}/+${level}`,
-      trigger: Trigger.Buy,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 1
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var otter = {
-    name: "Otter",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A6}"
-    },
-    tier: 1,
-    baseAttack: 1,
-    baseHealth: 2,
-    packs: ["StandardPack"],
-    level1Ability: otterAbility(1),
-    level2Ability: otterAbility(2),
-    level3Ability: otterAbility(3)
-  };
-
-  // src/database/pets/owl.ts
-  function owlAbility(level) {
-    return {
-      description: `Sell: Give a random friend +2/+2`,
-      trigger: Trigger.Sell,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 1
-        },
-        attackAmount: 2,
-        healthAmount: 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var owl = {
-    name: "Owl",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F989}"
-    },
-    tier: 3,
-    baseAttack: 5,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: owlAbility(1),
-    level2Ability: owlAbility(2),
-    level3Ability: owlAbility(3)
-  };
-
-  // src/database/pets/ox.ts
-  function oxAbility(level) {
-    return {
-      description: `Friend ahead attacks: Gain Melon Armor and +${level * 2} attack`,
-      trigger: Trigger.AfterAttack,
-      triggeredBy: {
-        kind: "FriendAhead",
-        n: 1
-      },
-      effect: {
-        kind: "AllOf",
-        effects: [
-          {
-            kind: "ApplyStatus",
-            status: {
-              name: "MelonArmor"
-            },
-            to: {
-              kind: "Self"
-            }
-          },
-          {
-            kind: "ModifyStats",
-            target: {
-              kind: "Self"
-            },
-            attackAmount: level * 2,
-            untilEndOfBattle: false
-          }
-        ]
-      }
-    };
-  }
-  var ox = {
-    name: "Ox",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F402}"
-    },
-    tier: 3,
-    baseAttack: 1,
-    baseHealth: 4,
-    packs: ["StandardPack"],
-    level1Ability: oxAbility(1),
-    level2Ability: oxAbility(2),
-    level3Ability: oxAbility(3)
-  };
-
-  // src/database/pets/parrot.ts
-  function parrotAbility(level) {
-    return {
-      description: `End Turn: Copy the Lvl. ${level} ability from animal ahead.`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "TransferAbility",
-        from: {
-          kind: "FriendAhead",
-          n: level
-        },
-        to: {
-          kind: "Self"
-        },
-        level
-      }
-    };
-  }
-  var parrot = {
-    name: "Parrot",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F99C}"
-    },
-    tier: 5,
-    baseAttack: 3,
-    baseHealth: 2,
-    packs: ["StandardPack"],
-    level1Ability: parrotAbility(1),
-    level2Ability: parrotAbility(2),
-    level3Ability: parrotAbility(3)
-  };
-
-  // src/database/pets/peacock.ts
-  function peacockAbility(level) {
-    return {
-      description: `Hurt: Gain ${level * 2} Attack.`,
-      trigger: Trigger.Hurt,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var peacock = {
-    name: "Peacock",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F99A}"
-    },
-    tier: 2,
-    baseAttack: 1,
-    baseHealth: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: peacockAbility(1),
-    level2Ability: peacockAbility(2),
-    level3Ability: peacockAbility(3)
-  };
-
-  // src/database/pets/penguin.ts
-  function penguinAbility(level) {
-    return {
-      description: `End turn: Give other Lvl. 2 and 3 friends +${level}/+${level}`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Level2And3Friends"
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var penguin = {
-    name: "Penguin",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F427}"
-    },
-    tier: 4,
-    baseAttack: 1,
-    baseHealth: 2,
-    packs: ["StandardPack"],
-    level1Ability: penguinAbility(1),
-    level2Ability: penguinAbility(2),
-    level3Ability: penguinAbility(3)
-  };
-
-  // src/database/pets/pig.ts
-  function pigAbility(level) {
-    return {
-      description: `Sell: Gain an extra ${level} gold`,
-      trigger: Trigger.Sell,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "GainGold",
-        amount: level
-      }
-    };
-  }
-  var pig = {
-    name: "Pig",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F416}"
-    },
-    tier: 1,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: pigAbility(1),
-    level2Ability: pigAbility(2),
-    level3Ability: pigAbility(3)
-  };
-
-  // src/database/pets/poodle.ts
-  function poodleAbility(level) {
-    return {
-      description: `End turn: Give +${level}/+${level} to different tier animals.`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "DifferentTierAnimals"
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var poodle = {
-    name: "Poodle",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F429}"
-    },
-    tier: 4,
-    baseAttack: 4,
-    baseHealth: 2,
-    packs: ["ExpansionPack1"],
-    level1Ability: poodleAbility(1),
-    level2Ability: poodleAbility(2),
-    level3Ability: poodleAbility(3)
-  };
-
-  // src/database/pets/puppy.ts
-  function puppyAbility(level) {
-    return {
-      description: `End turn: If you have 2 or more gold, gain +${level * 2}/+${level * 2}`,
-      trigger: Trigger.EndOfTurnWith2PlusGold,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var puppy = {
-    name: "Puppy",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F415}"
-    },
-    tier: 3,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["ExpansionPack1"],
-    level1Ability: puppyAbility(1),
-    level2Ability: puppyAbility(2),
-    level3Ability: puppyAbility(3)
-  };
-
-  // src/database/pets/rabbit.ts
-  function rabbitAbility(level) {
-    return {
-      description: `Friend eats shop food: Give it +${level} Health`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "TriggeringEntity"
-        },
-        attackAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var rabbit = {
-    name: "Rabbit",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F407}"
-    },
-    tier: 3,
-    baseAttack: 3,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: rabbitAbility(1),
-    level2Ability: rabbitAbility(2),
-    level3Ability: rabbitAbility(3)
-  };
-
-  // src/database/pets/rat.ts
-  var dirtyRatSummoned = {
-    name: "Dirty Rat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F400}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: 1,
-    baseHealth: 1
-  };
-  function ratAbility(level) {
-    return {
-      description: `Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: dirtyRatSummoned,
-        team: "Enemy"
-      }
-    };
-  }
-  var rat = {
-    name: "Rat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F400}"
-    },
-    tier: 2,
-    baseAttack: 4,
-    baseHealth: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: ratAbility(1),
-    level2Ability: ratAbility(2),
-    level3Ability: ratAbility(3)
-  };
-
-  // src/database/pets/rhino.ts
-  function rhinoAbility(level) {
-    return {
-      description: `Knock out: Deal ${level * 4} damage to the first enemy.`,
-      trigger: Trigger.KnockOut,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "FirstEnemy"
-        },
-        amount: level * 4
-      }
-    };
-  }
-  var rhino = {
-    name: "Rhino",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F98F}"
-    },
-    tier: 5,
-    baseAttack: 5,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: rhinoAbility(1),
-    level2Ability: rhinoAbility(2),
-    level3Ability: rhinoAbility(3)
-  };
-
-  // src/database/pets/rooster.ts
-  var chick = {
-    name: "Chick",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F424}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: "?",
-    baseHealth: 1
-  };
-  function roosterAbility(level) {
-    return {
-      description: `Faint: Summon ${level} Chicks with the same Attack as this.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: chick,
-        team: "Friendly"
-      }
-    };
-  }
-  var rooster = {
-    name: "Rooster",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F413}"
-    },
-    tier: 4,
-    baseAttack: 3,
-    baseHealth: 3,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: __spreadProps(__spreadValues({}, roosterAbility(1)), {
-      description: "Faint: Summon a Chick with the same Attack as this."
-    }),
-    level2Ability: roosterAbility(2),
-    level3Ability: roosterAbility(3)
-  };
-
-  // src/database/pets/sauropod.ts
-  function sauropodAbility(level) {
-    return {
-      description: `Buy food: Gain 1 gold.`,
-      trigger: Trigger.BuyFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "GainGold",
-        amount: 1
-      }
-    };
-  }
-  var sauropod = {
-    name: "Sauropod",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F995}"
-    },
-    tier: 6,
-    baseAttack: 4,
-    baseHealth: 12,
-    packs: ["ExpansionPack1"],
-    level1Ability: sauropodAbility(1),
-    level2Ability: sauropodAbility(2),
-    level3Ability: sauropodAbility(3)
-  };
-
-  // src/database/pets/seal.ts
-  function sealAbility(level) {
-    return {
-      description: `Eats shop food: Give 2 random friends +${level}/+${level}.`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 2
-        },
-        attackAmount: level,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var seal = {
-    name: "Seal",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9AD}"
-    },
-    tier: 5,
-    baseAttack: 3,
-    baseHealth: 6,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: sealAbility(1),
-    level2Ability: sealAbility(2),
-    level3Ability: sealAbility(3)
-  };
-
-  // src/database/pets/shark.ts
-  function sharkAbility(level) {
-    return {
-      description: `Friend faints: Gain +${level * 2}/+${level}.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "Self"
-        },
-        attackAmount: level * 2,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var shark = {
-    name: "Shark",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F988}"
-    },
-    tier: 5,
-    baseAttack: 4,
-    baseHealth: 4,
-    packs: ["StandardPack"],
-    level1Ability: sharkAbility(1),
-    level2Ability: sharkAbility(2),
-    level3Ability: sharkAbility(3)
-  };
-
-  // src/database/pets/sheep.ts
-  var ramSummoned = {
-    name: "Ram",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F40F}"
-    },
-    packs: ["StandardPack", "ExpansionPack1"],
-    tier: "Summoned",
-    baseAttack: "?",
-    baseHealth: "?"
-  };
-  function sheepAbility(level) {
-    return {
-      description: `Faint: Summon two ${level * 2}/${level * 2} Rams`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonPet",
-        pet: __spreadProps(__spreadValues({}, ramSummoned), {
-          baseAttack: level * 2,
-          baseHealth: level * 2
-        }),
-        team: "Friendly"
-      }
-    };
-  }
-  var sheep = {
-    name: "Sheep",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F411}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: sheepAbility(1),
-    level2Ability: sheepAbility(2),
-    level3Ability: sheepAbility(3)
-  };
-
-  // src/database/pets/shrimp.ts
-  function shrimpAbility(level) {
-    return {
-      description: `Friend sold: Give a random friend +${level} Health.`,
-      trigger: Trigger.Sell,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "RandomFriend",
-          n: 1
-        },
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var shrimp = {
-    name: "Shrimp",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F990}"
-    },
-    tier: 2,
-    baseAttack: 2,
-    baseHealth: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: shrimpAbility(1),
-    level2Ability: shrimpAbility(2),
-    level3Ability: shrimpAbility(3)
-  };
-
-  // src/database/pets/skunk.ts
-  function skunkAbility(level) {
-    const percentage = level == 3 ? 100 : level * 33;
-    return {
-      description: `Start of battle: Reduce the highest Health enemy by ${percentage}%.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "None"
-      },
-      effect: {
-        kind: "ReduceHealth",
-        target: {
-          kind: "HighestHealthEnemy"
-        },
-        percentage
-      }
-    };
-  }
-  var skunk = {
-    name: "Skunk",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F9A8}"
-    },
-    tier: 4,
-    baseAttack: 3,
-    baseHealth: 5,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: skunkAbility(1),
-    level2Ability: skunkAbility(2),
-    level3Ability: skunkAbility(3)
-  };
-
-  // src/database/pets/snail.ts
-  function snailAbility(level) {
-    return {
-      description: `Buy: If you lost last battle, give all friends +${level * 2}/+${level}`,
-      trigger: Trigger.BuyAfterLoss,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachFriend"
-        },
-        attackAmount: level * 2,
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var snail = {
-    name: "Snail",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F40C}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: snailAbility(1),
-    level2Ability: snailAbility(2),
-    level3Ability: snailAbility(3)
-  };
-
-  // src/database/pets/snake.ts
-  function snakeAbility(level) {
-    return {
-      description: `Friend ahead attacks: Deal ${level * 5} damage to a random enemy.`,
-      trigger: Trigger.AfterAttack,
-      triggeredBy: {
-        kind: "FriendAhead",
-        n: 1
-      },
-      effect: {
-        kind: "DealDamage",
-        target: {
-          kind: "RandomEnemy",
-          n: 1
-        },
-        amount: level * 5
-      }
-    };
-  }
-  var snake = {
-    name: "Snake",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F40D}"
-    },
-    tier: 6,
-    baseAttack: 6,
-    baseHealth: 6,
-    packs: ["StandardPack"],
-    level1Ability: snakeAbility(1),
-    level2Ability: snakeAbility(2),
-    level3Ability: snakeAbility(3)
-  };
-
-  // src/database/pets/spider.ts
-  function spiderAbility(level) {
-    return {
-      description: `Faint: Summon one tier 3 animal as a ${level * 2}/${level * 2}.`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "SummonRandomPet",
-        tier: 3,
-        baseAttack: level * 2,
-        baseAealth: level * 2
-      }
-    };
-  }
-  var spider = {
-    name: "Spider",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F577}"
-    },
-    tier: 2,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: spiderAbility(1),
-    level2Ability: spiderAbility(2),
-    level3Ability: spiderAbility(3)
-  };
-
-  // src/database/pets/squirrel.ts
-  function squirrelAbility(level) {
-    return {
-      description: `Buy: Clear and fill shops with food.`,
-      trigger: Trigger.LevelUp,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "RefillShops",
-        shop: "All",
-        food: "Any"
-      }
-    };
-  }
-  var squirrel = {
-    name: "Squirrel",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F43F}"
-    },
-    tier: 4,
-    baseAttack: 2,
-    baseHealth: 2,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: squirrelAbility(1),
-    level2Ability: squirrelAbility(2),
-    level3Ability: squirrelAbility(3)
-  };
-
-  // src/database/pets/swan.ts
-  function swanAbility(level) {
-    return {
-      description: `Start of turn: Gain ${level} gold.`,
-      trigger: Trigger.StartOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "GainGold",
-        amount: level
-      }
-    };
-  }
-  var swan = {
-    name: "Swan",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F9A2}"
-    },
-    tier: 2,
-    baseAttack: 3,
-    baseHealth: 4,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: swanAbility(1),
-    level2Ability: swanAbility(2),
-    level3Ability: swanAbility(3)
-  };
-
-  // src/database/pets/tabbyCat.ts
-  function tabbyCatAbility(level) {
-    return {
-      description: `Eats shop food: Give friends +${level} Attack until end of battle`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachFriend"
-        },
-        attackAmount: level,
-        untilEndOfBattle: true
-      }
-    };
-  }
-  var tabbyCat = {
-    name: "Tabby Cat",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F408}"
-    },
-    tier: 2,
-    baseAttack: 4,
-    baseHealth: 3,
-    packs: ["ExpansionPack1"],
-    level1Ability: tabbyCatAbility(1),
-    level2Ability: tabbyCatAbility(2),
-    level3Ability: tabbyCatAbility(3)
-  };
-
-  // src/database/pets/tiger.ts
-  function tigerAbility(level) {
-    return {
-      description: `The friend ahead casts their ability twice in battle.`,
-      trigger: Trigger.CastsAbility,
-      triggeredBy: {
-        kind: "FriendAhead",
-        n: 1
-      },
-      effect: {
-        kind: "RepeatAbility",
-        target: {
-          kind: "TriggeringEntity"
-        }
-      }
-    };
-  }
-  var tiger = {
-    name: "Tiger",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F405}"
-    },
-    tier: 6,
-    baseAttack: 4,
-    baseHealth: 3,
-    packs: ["StandardPack"],
-    level1Ability: tigerAbility(1),
-    level2Ability: tigerAbility(2),
-    level3Ability: tigerAbility(3)
-  };
-
-  // src/database/pets/tropicalFish.ts
-  function tropicalFishAbility(level) {
-    return {
-      description: `End turn: Give adjacent friends +${level} Health`,
-      trigger: Trigger.EndOfTurn,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "AdjacentFriends"
-        },
-        healthAmount: level,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var tropicalFish = {
-    name: "Tropical Fish",
-    image: {
-      source: "twemoji",
-      unicodeCodePoint: "\u{1F420}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 4,
-    packs: ["ExpansionPack1"],
-    level1Ability: tropicalFishAbility(1),
-    level2Ability: tropicalFishAbility(2),
-    level3Ability: tropicalFishAbility(3)
-  };
-
-  // src/database/pets/turkey.ts
-  function turkeyAbility(level) {
-    return {
-      description: `Friend summoned: Give it +${level * 3}/+${level * 3}.`,
-      trigger: Trigger.Summoned,
-      triggeredBy: {
-        kind: "EachFriend"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "TriggeringEntity"
-        },
-        attackAmount: level * 3,
-        healthAmount: level * 3,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var turkey = {
-    name: "Turkey",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F983}"
-    },
-    tier: 5,
-    baseAttack: 3,
-    baseHealth: 4,
-    packs: ["StandardPack"],
-    level1Ability: turkeyAbility(1),
-    level2Ability: turkeyAbility(2),
-    level3Ability: turkeyAbility(3)
-  };
-
-  // src/database/pets/turtle.ts
-  function turtleAbility(level) {
-    return {
-      description: `Faint: Give ${level} friends behind Melon Armor`,
-      trigger: Trigger.Faint,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ApplyStatus",
-        status: {
-          name: "MelonArmor"
-        },
-        to: {
-          kind: "FriendBehind",
-          n: level
-        }
-      }
-    };
-  }
-  var turtle = {
-    name: "Turtle",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F422}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 4,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: __spreadProps(__spreadValues({}, turtleAbility(1)), {
-      description: "Faint: Give friend behind Melon Armor"
-    }),
-    level2Ability: turtleAbility(2),
-    level3Ability: turtleAbility(3)
-  };
-
-  // src/database/pets/tyrannosaurus.ts
-  function tyrannosaurusAbility(level) {
-    return {
-      description: `End turn: If you have 3 or more gold, give other friends +${level * 2}/+${level * 2}`,
-      trigger: Trigger.EndOfTurnWith3PlusGold,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        target: {
-          kind: "EachFriend"
-        },
-        attackAmount: level * 2,
-        healthAmount: level * 2,
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var tyrannosaurus = {
-    name: "Tyrannosaurus",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F996}"
-    },
-    tier: 6,
-    baseAttack: 9,
-    baseHealth: 4,
-    packs: ["ExpansionPack1"],
-    level1Ability: tyrannosaurusAbility(1),
-    level2Ability: tyrannosaurusAbility(2),
-    level3Ability: tyrannosaurusAbility(3)
-  };
-
-  // src/database/pets/whale.ts
-  function whaleAbility(level) {
-    return {
-      description: `Start of battle: Swallow friend ahead and release it as a level ${level} after fainting.`,
-      trigger: Trigger.StartOfBattle,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "Swallow",
-        target: {
-          kind: "FriendAhead",
-          n: 1
-        }
-      }
-    };
-  }
-  var whale = {
-    name: "Whale",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1F40B}"
-    },
-    tier: 3,
-    baseAttack: 2,
-    baseHealth: 6,
-    packs: ["StandardPack"],
-    level1Ability: whaleAbility(1),
-    level2Ability: whaleAbility(2),
-    level3Ability: whaleAbility(3)
-  };
-
-  // src/database/pets/worm.ts
-  function wormAbility(level) {
-    return {
-      description: `Eats shop food: Gain +${level}/+${level}`,
-      trigger: Trigger.EatsShopFood,
-      triggeredBy: {
-        kind: "Self"
-      },
-      effect: {
-        kind: "ModifyStats",
-        attackAmount: level,
-        healthAmount: level,
-        target: {
-          kind: "Self"
-        },
-        untilEndOfBattle: false
-      }
-    };
-  }
-  var worm = {
-    name: "Worm",
-    image: {
-      source: "noto-emoji",
-      unicodeCodePoint: "\u{1FAB1}"
-    },
-    tier: 4,
-    baseAttack: 1,
-    baseHealth: 1,
-    packs: ["StandardPack", "ExpansionPack1"],
-    level1Ability: wormAbility(1),
-    level2Ability: wormAbility(2),
-    level3Ability: wormAbility(3)
-  };
-
-  // src/database/index.ts
-  var Trigger;
-  (function(Trigger2) {
-    Trigger2["Faint"] = "Faint";
-    Trigger2["Sell"] = "Sell";
-    Trigger2["LevelUp"] = "LevelUp";
-    Trigger2["Summoned"] = "Summoned";
-    Trigger2["StartOfBattle"] = "StartOfBattle";
-    Trigger2["StartOfTurn"] = "StartOfTurn";
-    Trigger2["Buy"] = "Buy";
-    Trigger2["BuyAfterLoss"] = "BuyAfterLoss";
-    Trigger2["BuyTier1Animal"] = "BuyTier1Animal";
-    Trigger2["BuyFood"] = "BuyFood";
-    Trigger2["BeforeAttack"] = "BeforeAttack";
-    Trigger2["Hurt"] = "Hurt";
-    Trigger2["EndOfTurn"] = "EndOfTurn";
-    Trigger2["EndOfTurnWith2PlusGold"] = "EndOfTurnWith2PlusGold";
-    Trigger2["EndOfTurnWith3PlusGold"] = "EndOfTurnWith3PlusGold";
-    Trigger2["EndOfTurnWithLvl3Friend"] = "EndOfTurnWithLvl3Friend";
-    Trigger2["EndOfTurnWith4OrLessAnimals"] = "EndOfTurnWith4OrLessAnimals";
-    Trigger2["AfterAttack"] = "AfterAttack";
-    Trigger2["EatsShopFood"] = "EatsShopFood";
-    Trigger2["KnockOut"] = "KnockOut";
-    Trigger2["CastsAbility"] = "CastsAbility";
-    Trigger2["WhenAttacking"] = "WhenAttacking";
-    Trigger2["WhenDamaged"] = "WhenDamaged";
-  })(Trigger || (Trigger = {}));
-  var statuses2 = [
-    {
-      name: "Weak",
-      image: {
-        source: "noto-emoji",
-        unicodeCodePoint: "\u{1F9A0}"
-      },
-      ability: {
-        description: "Take 5 extra damage.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenDamaged,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: 5,
-          appliesOnce: false
-        }
-      }
-    },
-    {
-      name: "Coconut Shield",
-      image: { source: "twemoji", unicodeCodePoint: "\u{1F965}" },
-      ability: {
-        description: "Ignore damage once.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenDamaged,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: -Infinity,
-          appliesOnce: true
-        }
-      }
-    },
-    {
-      name: "Honey Bee",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F36F}"
-      },
-      ability: {
-        description: "Ignore damage once.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.Faint,
-        effect: {
-          kind: "SummonPet",
-          pet: beeSummoned,
-          team: "Friendly"
-        }
-      }
-    },
-    {
-      name: "Bone Attack",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F356}"
-      },
-      ability: {
-        description: "Attack for 5 more damage.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenAttacking,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: 5,
-          appliesOnce: false
-        }
-      }
-    },
-    {
-      name: "Garlic Armor",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F9C4}"
-      },
-      ability: {
-        description: "Take 2 less damage.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenDamaged,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: -2,
-          appliesOnce: false
-        }
-      }
-    },
-    {
-      name: "Splash Attack",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F336}"
-      },
-      ability: {
-        description: "Attack second enemy for 5 damage.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenAttacking,
-        effect: {
-          kind: "SplashDamage",
-          amount: 5
-        }
-      }
-    },
-    {
-      name: "Melon Armor",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F348}"
-      },
-      ability: {
-        description: "Take 20 damage less, once.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenDamaged,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: -20,
-          appliesOnce: true
-        }
-      }
-    },
-    {
-      name: "Extra Life",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F344}"
-      },
-      ability: {
-        description: "Come back as a 1/1 after fainting",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.Faint,
-        effect: {
-          kind: "RespawnPet",
-          baseAttack: 1,
-          baseHealth: 1
-        }
-      }
-    },
-    {
-      name: "Steak Attack",
-      image: {
-        source: "twemoji",
-        unicodeCodePoint: "\u{1F969}"
-      },
-      ability: {
-        description: "Attack for 20 more damage, once.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenAttacking,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: 20,
-          appliesOnce: true
-        }
-      }
-    },
-    {
-      name: "Poison Attack",
-      image: { source: "noto-emoji", unicodeCodePoint: "\u{1F95C}" },
-      ability: {
-        description: "Knock out any animal hit by this.",
-        triggeredBy: {
-          kind: "Self"
-        },
-        trigger: Trigger.WhenAttacking,
-        effect: {
-          kind: "ModifyDamage",
-          damageModifier: Infinity,
-          appliesOnce: false
-        }
-      }
-    }
-  ];
+  // src/database/database.ts
   function getPetId(pet) {
     let name = typeof pet == "string" ? pet : pet.name;
     return `pet_${sanitiseName(name)}`;
@@ -32983,7 +29511,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/website/components/Pet.tsx
-  function Pet82(props) {
+  function Pet(props) {
     return /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "m-3"
     }, /* @__PURE__ */ import_react18.default.createElement("div", {
@@ -33037,7 +29565,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
 
   // src/website/components/PetPage.tsx
   function PetPage(props) {
-    return /* @__PURE__ */ import_react19.default.createElement(import_react19.default.Fragment, null, /* @__PURE__ */ import_react19.default.createElement(Header, null, /* @__PURE__ */ import_react19.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react19.default.createElement(Pet82, {
+    return /* @__PURE__ */ import_react19.default.createElement(import_react19.default.Fragment, null, /* @__PURE__ */ import_react19.default.createElement(Header, null, /* @__PURE__ */ import_react19.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react19.default.createElement(Pet, {
       pet: props.pet
     }));
   }
@@ -33047,7 +29575,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
 
   // src/website/components/Food.tsx
   var import_react20 = __toModule(require_react());
-  function Food20(props) {
+  function Food(props) {
     return /* @__PURE__ */ import_react20.default.createElement("div", {
       className: "m-3"
     }, /* @__PURE__ */ import_react20.default.createElement("div", {
@@ -33083,7 +29611,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
 
   // src/website/components/FoodPage.tsx
   function FoodPage(props) {
-    return /* @__PURE__ */ import_react21.default.createElement(import_react21.default.Fragment, null, /* @__PURE__ */ import_react21.default.createElement(Header, null, /* @__PURE__ */ import_react21.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react21.default.createElement(Food20, {
+    return /* @__PURE__ */ import_react21.default.createElement(import_react21.default.Fragment, null, /* @__PURE__ */ import_react21.default.createElement(Header, null, /* @__PURE__ */ import_react21.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react21.default.createElement(Food, {
       food: props.theFood
     }));
   }
