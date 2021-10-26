@@ -23233,7 +23233,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "Self"
         },
         effect: {
-          kind: "Evolve"
+          kind: "Evolve",
+          into: "pet_butterfly"
         }
       }
     },

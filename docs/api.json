@@ -1783,7 +1783,8 @@
           "kind": "Self"
         },
         "effect": {
-          "kind": "Evolve"
+          "kind": "Evolve",
+          "into": "pet_butterfly"
         }
       }
     },

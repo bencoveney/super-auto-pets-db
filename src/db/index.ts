@@ -291,8 +291,9 @@ export interface SplashDamageEffect {
 }
 
 export interface EvolveEffect {
-  kind: "Evolve";
   // TODO: Evolve Effect.
+  kind: "Evolve";
+  into: PetRef;
 }
 
 export interface RefillShopsEffect {

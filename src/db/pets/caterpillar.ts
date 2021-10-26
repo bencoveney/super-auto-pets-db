@@ -1,19 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const butterfly: Pet = {
-  ...getPetIdentifiers("Butterfly"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1F98B}",
-  },
-  // TODO: Represent this as a summoned behaviour.
-  notes: "Summoned: Copy Attack and Health from most healthy friend.",
-  tier: "Summoned",
-  baseAttack: 1,
-  baseHealth: 1,
-  packs: ["ExpansionPack1"],
-};
+import { butterfly } from "./butterfly";
 
 function caterpillarAbility(level: number): Ability {
   if (level <= 2) {
@@ -41,6 +28,7 @@ function caterpillarAbility(level: number): Ability {
     },
     effect: {
       kind: "Evolve",
+      into: butterfly.id,
     },
   };
 }
