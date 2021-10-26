@@ -9,6 +9,7 @@ import { Polaroid } from "./Polaroid";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
 import { StatusDescription } from "./StatusDescription";
+import { SummaryStatus } from "./SummaryStatus";
 
 export function PetPage(props: { pet: Pet; database: Database }) {
   return (
@@ -51,19 +52,39 @@ export function PetPage(props: { pet: Pet; database: Database }) {
               {props.pet.notes}
             </StatsRow>
             <StatsSummary>Abilities</StatsSummary>
-            <StatsRow text="Level 1">
-              <AbilityDescription ability={props.pet.level1Ability} />
-            </StatsRow>
-            <StatsRow text="Level 2">
-              <AbilityDescription ability={props.pet.level2Ability} />
-            </StatsRow>
-            <StatsRow text="Level 3">
-              <AbilityDescription ability={props.pet.level3Ability} />
-            </StatsRow>
+            {props.pet.level1Ability && (
+              <StatsRow text="Level 1">
+                <AbilityDescription
+                  ability={props.pet.level1Ability}
+                  pet={props.pet.id}
+                  database={props.database}
+                />
+              </StatsRow>
+            )}
+            {props.pet.level2Ability && (
+              <StatsRow text="Level 2">
+                <AbilityDescription
+                  ability={props.pet.level2Ability}
+                  pet={props.pet.id}
+                  database={props.database}
+                />
+              </StatsRow>
+            )}
+            {props.pet.level3Ability && (
+              <StatsRow text="Level 3">
+                <AbilityDescription
+                  ability={props.pet.level3Ability}
+                  pet={props.pet.id}
+                  database={props.database}
+                />
+              </StatsRow>
+            )}
             {props.pet.status && (
               <StatsRow text="Status">
-                <StatusDescription
+                <p>This pet is summoned with:</p>
+                <SummaryStatus
                   status={props.pet.status}
+                  pet={props.pet.id}
                   database={props.database}
                 />
               </StatsRow>

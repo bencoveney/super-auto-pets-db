@@ -27003,7 +27003,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       name: "Poison Attack",
       id: "status_poison_attack",
       image: {
-        source: "noto-emoji",
+        source: "twemoji",
         unicodeCodePoint: "\u{1F95C}"
       },
       ability: {
@@ -29110,57 +29110,87 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var import_react18 = __toModule(require_react());
 
   // src/web/components/AbilityDescription.tsx
+  var import_react14 = __toModule(require_react());
+
+  // src/web/components/SummaryStatus.tsx
   var import_react13 = __toModule(require_react());
+  function SummaryStatus(props) {
+    const status = props.database.statuses[props.status];
+    const pet = props.database.pets[props.pet || "pet_sloth"];
+    return /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "flex m-3 bg-gray-900"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "relative w-20"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
+    }), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "z-2 relative p-1"
+    }, /* @__PURE__ */ import_react13.default.createElement("img", {
+      className: "drop-shadow-tile",
+      src: `/assets/${status.id}.svg`
+    })), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
+    })), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "flex-grow p-3 flex flex-col items-stretch justify-center"
+    }, /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "text-xl"
+    }, status.name), /* @__PURE__ */ import_react13.default.createElement("div", {
+      className: "text-base"
+    }, status.ability.description)));
+  }
+
+  // src/web/components/AbilityDescription.tsx
   function AbilityDescription(props) {
-    if (!props.ability) {
-      return null;
-    }
-    return /* @__PURE__ */ import_react13.default.createElement("div", null, props.ability.description);
+    return /* @__PURE__ */ import_react14.default.createElement("div", null, /* @__PURE__ */ import_react14.default.createElement("p", null, props.ability.description), props.ability.effect.kind === "ApplyStatus" ? /* @__PURE__ */ import_react14.default.createElement(SummaryStatus, {
+      status: props.ability.effect.status,
+      pet: props.pet,
+      database: props.database
+    }) : null);
   }
 
   // src/web/components/Polaroid.tsx
-  var import_react14 = __toModule(require_react());
+  var import_react15 = __toModule(require_react());
   function Polaroid({
     id,
     name,
     background
   }) {
-    return /* @__PURE__ */ import_react14.default.createElement("div", {
+    return /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "bg-white shadow p-3 m-4 transform rotate-3"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
+    }, /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "relative"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
+    }, /* @__PURE__ */ import_react15.default.createElement("div", {
       className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover`
-    }), /* @__PURE__ */ import_react14.default.createElement("div", {
+    }), /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "p-3"
-    }, /* @__PURE__ */ import_react14.default.createElement("img", {
+    }, /* @__PURE__ */ import_react15.default.createElement("img", {
       className: "filter drop-shadow-tile",
       src: `/assets/${id}.svg`
-    })), /* @__PURE__ */ import_react14.default.createElement("div", {
+    })), /* @__PURE__ */ import_react15.default.createElement("div", {
       className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover`
-    })), /* @__PURE__ */ import_react14.default.createElement("div", {
+    })), /* @__PURE__ */ import_react15.default.createElement("div", {
       className: "text-center text-black mt-2 italic text-xl"
     }, "My ", name, "!"));
   }
 
   // src/web/components/StatDisplay.tsx
-  var import_react15 = __toModule(require_react());
+  var import_react16 = __toModule(require_react());
   function StatDisplay(props) {
     if (typeof props.stat == "string") {
-      return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat);
+      return /* @__PURE__ */ import_react16.default.createElement("div", null, props.stat);
     }
-    return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
+    return /* @__PURE__ */ import_react16.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
   }
 
   // src/web/components/StatsGrid.tsx
-  var import_react16 = __toModule(require_react());
+  var import_react17 = __toModule(require_react());
   function StatsGrid(props) {
-    return /* @__PURE__ */ import_react16.default.createElement("div", {
+    return /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline"
     }, props.children);
   }
   function StatsSummary(props) {
-    return /* @__PURE__ */ import_react16.default.createElement("div", {
+    return /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "col-span-2 mt-4 border-b border-gray-500 text-2xl font-light"
     }, props.children);
   }
@@ -29168,23 +29198,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!props.children) {
       return null;
     }
-    return /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, /* @__PURE__ */ import_react16.default.createElement("div", {
+    return /* @__PURE__ */ import_react17.default.createElement(import_react17.default.Fragment, null, /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "font-bold text-base text-gray-300"
-    }, props.text, ":"), /* @__PURE__ */ import_react16.default.createElement("div", {
+    }, props.text, ":"), /* @__PURE__ */ import_react17.default.createElement("div", {
       className: props.className
     }, props.children));
-  }
-
-  // src/web/components/StatusDescription.tsx
-  var import_react17 = __toModule(require_react());
-  function StatusDescription(props) {
-    if (!props.status) {
-      return null;
-    }
-    const status = props.database.statuses[props.status];
-    return /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: "italic"
-    }, status.name, ": ", status.ability.description);
   }
 
   // src/web/components/PetPage.tsx
@@ -29226,22 +29244,29 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }))), /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Notes",
       className: "italic"
-    }, props.pet.notes), /* @__PURE__ */ import_react18.default.createElement(StatsSummary, null, "Abilities"), /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
+    }, props.pet.notes), /* @__PURE__ */ import_react18.default.createElement(StatsSummary, null, "Abilities"), props.pet.level1Ability && /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Level 1"
     }, /* @__PURE__ */ import_react18.default.createElement(AbilityDescription, {
-      ability: props.pet.level1Ability
-    })), /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
+      ability: props.pet.level1Ability,
+      pet: props.pet.id,
+      database: props.database
+    })), props.pet.level2Ability && /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Level 2"
     }, /* @__PURE__ */ import_react18.default.createElement(AbilityDescription, {
-      ability: props.pet.level2Ability
-    })), /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
+      ability: props.pet.level2Ability,
+      pet: props.pet.id,
+      database: props.database
+    })), props.pet.level3Ability && /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Level 3"
     }, /* @__PURE__ */ import_react18.default.createElement(AbilityDescription, {
-      ability: props.pet.level3Ability
+      ability: props.pet.level3Ability,
+      pet: props.pet.id,
+      database: props.database
     })), props.pet.status && /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Status"
-    }, /* @__PURE__ */ import_react18.default.createElement(StatusDescription, {
+    }, /* @__PURE__ */ import_react18.default.createElement("p", null, "This pet is summoned with:"), /* @__PURE__ */ import_react18.default.createElement(SummaryStatus, {
       status: props.pet.status,
+      pet: props.pet.id,
       database: props.database
     }))))));
   }
@@ -29279,11 +29304,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, props.food.notes), /* @__PURE__ */ import_react19.default.createElement(StatsSummary, null, "Abilities"), /* @__PURE__ */ import_react19.default.createElement(StatsRow, {
       text: "Effect"
     }, /* @__PURE__ */ import_react19.default.createElement(AbilityDescription, {
-      ability: props.food.ability
-    })), props.food.ability.effect.status && /* @__PURE__ */ import_react19.default.createElement(StatsRow, {
-      text: "Status"
-    }, /* @__PURE__ */ import_react19.default.createElement(StatusDescription, {
-      status: props.food.ability.effect.status,
+      ability: props.food.ability,
       database: props.database
     }))))));
   }

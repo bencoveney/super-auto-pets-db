@@ -1,5 +1,5 @@
 import React from "react";
-import { ApplyStatusEffect, Food } from "../../db";
+import { Food } from "../../db";
 import { Database } from "../../db/database";
 import { AbilityDescription } from "./AbilityDescription";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -8,7 +8,6 @@ import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
-import { StatusDescription } from "./StatusDescription";
 
 export function FoodPage(props: { food: Food; database: Database }) {
   return (
@@ -46,18 +45,11 @@ export function FoodPage(props: { food: Food; database: Database }) {
             </StatsRow>
             <StatsSummary>Abilities</StatsSummary>
             <StatsRow text="Effect">
-              <AbilityDescription ability={props.food.ability} />
+              <AbilityDescription
+                ability={props.food.ability}
+                database={props.database}
+              />
             </StatsRow>
-            {(props.food.ability.effect as ApplyStatusEffect).status && (
-              <StatsRow text="Status">
-                <StatusDescription
-                  status={
-                    (props.food.ability.effect as ApplyStatusEffect).status
-                  }
-                  database={props.database}
-                />
-              </StatsRow>
-            )}
           </StatsGrid>
         </div>
       </div>

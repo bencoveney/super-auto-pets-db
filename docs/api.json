@@ -5553,7 +5553,7 @@
       "name": "Poison Attack",
       "id": "status_poison_attack",
       "image": {
-        "source": "noto-emoji",
+        "source": "twemoji",
         "unicodeCodePoint": "🥜"
       },
       "ability": {
