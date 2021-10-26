@@ -4,11 +4,11 @@ import { Food, Pet } from "../../db";
 import { getFoodUrl, getPetUrl } from "../../db/database";
 import { Tile } from "./Tile";
 
-export function Tiles(props: { pets: Pet[]; food: Food[] }) {
+export function Tiles(props: { pets: Pet[]; foods: Food[] }) {
   const tiles = props.pets
     .map((pet, index) => <PetTile key={`pet${index}`} pet={pet} />)
     .concat(
-      props.food.map((food, index) => (
+      props.foods.map((food, index) => (
         <FoodTile key={`food${index}`} food={food} />
       ))
     );

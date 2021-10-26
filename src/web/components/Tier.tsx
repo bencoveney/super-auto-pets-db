@@ -2,14 +2,14 @@ import React from "react";
 import { Pet, Food, Tier as TierType } from "../../db";
 import { Tiles } from "./Tiles";
 
-export function Tier(props: { tier: TierType; pets: Pet[]; food: Food[] }) {
+export function Tier(props: { tier: TierType; pets: Pet[]; foods: Food[] }) {
   return (
     <div key={props.tier}>
       <h2 className="px-3 text-xl font-light sticky block top-0 z-10 bg-gray-800 py-2">
         {getTierName(props.tier)}
       </h2>
       {/* <List pets={props.pets} food={props.food} /> */}
-      <Tiles pets={props.pets} food={props.food} />
+      <Tiles pets={props.pets} foods={props.foods} />
     </div>
   );
 }

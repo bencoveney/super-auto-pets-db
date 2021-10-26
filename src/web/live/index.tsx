@@ -33,7 +33,7 @@ function FoodPageWrapper(props: RouteComponentProps<{ foodName: string }>) {
   if (!food) {
     throw new Error(`Could not find ${name}`);
   }
-  return <FoodPage theFood={food} database={database} />;
+  return <FoodPage food={food} database={database} />;
 }
 
 ReactDOM.hydrate(

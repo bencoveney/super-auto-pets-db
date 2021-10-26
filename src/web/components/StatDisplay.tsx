@@ -1,8 +1,8 @@
 import React from "react";
-import { Stat } from "../../db";
+import { Stat, Tier } from "../../db";
 
 export function StatDisplay(props: {
-  stat: Stat;
+  stat: Stat | Tier;
   emoji: string;
 }): React.ReactElement {
   if (typeof props.stat == "string") {

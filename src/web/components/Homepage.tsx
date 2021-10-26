@@ -32,9 +32,9 @@ export function Homepage(props: { database: Database }) {
     .map((tier) => ({
       tier: tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
-      food: filteredFoods.filter((food) => food.tier == tier),
+      foods: filteredFoods.filter((food) => food.tier == tier),
     }))
-    .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
+    .filter((tier) => tier.pets.length > 0 || tier.foods.length > 0);
 
   return (
     <>

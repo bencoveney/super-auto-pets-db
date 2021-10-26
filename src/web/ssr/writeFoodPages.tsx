@@ -31,7 +31,7 @@ async function writeFoodPage(
     ReactDOMServer.renderToStaticNodeStream(
       <Page>
         <StaticRouter location={{ pathname }}>
-          <FoodPage theFood={food} database={database} />
+          <FoodPage food={food} database={database} />
         </StaticRouter>
       </Page>
     ),
