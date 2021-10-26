@@ -1324,8 +1324,8 @@
         "unicodeCodePoint": "🦚"
       },
       "tier": 2,
-      "baseAttack": 3,
-      "baseHealth": 2,
+      "baseAttack": 1,
+      "baseHealth": 5,
       "packs": [
         "StandardPack",
         "ExpansionPack1"

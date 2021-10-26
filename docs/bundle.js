@@ -22774,8 +22774,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unicodeCodePoint: "\u{1F99A}"
       },
       tier: 2,
-      baseAttack: 3,
-      baseHealth: 2,
+      baseAttack: 1,
+      baseHealth: 5,
       packs: [
         "StandardPack",
         "ExpansionPack1"
@@ -29658,8 +29658,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       unicodeCodePoint: "\u{1F99A}"
     },
     tier: 2,
-    baseAttack: 3,
-    baseHealth: 2,
+    baseAttack: 1,
+    baseHealth: 5,
     packs: ["StandardPack", "ExpansionPack1"],
     level1Ability: peacockAbility(1),
     level2Ability: peacockAbility(2),
