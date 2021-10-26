@@ -1,5 +1,6 @@
 import { Pet } from "..";
 import { getPetIdentifiers } from "../database";
+import { poisonAttack } from "../statusEffects/poisonAttack";
 
 export const scorpion: Pet = {
   ...getPetIdentifiers("Scorpion"),
@@ -11,7 +12,5 @@ export const scorpion: Pet = {
   baseAttack: 1,
   baseHealth: 1,
   packs: ["StandardPack", "ExpansionPack1"],
-  status: {
-    name: "PoisinAttack",
-  },
+  status: poisonAttack.id,
 };

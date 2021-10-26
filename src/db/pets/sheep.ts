@@ -1,17 +1,6 @@
 import { Pet, Ability, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const ramSummoned: Pet = {
-  ...getPetIdentifiers("Ram"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1F40F}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: "?",
-  baseHealth: "?",
-};
+import { ram } from "./ram";
 
 function sheepAbility(level: number): Ability {
   return {
@@ -22,11 +11,9 @@ function sheepAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: {
-        ...ramSummoned,
-        baseAttack: level * 2,
-        baseHealth: level * 2,
-      },
+      pet: ram.id,
+      withAttack: level * 2,
+      withHealth: level * 2,
       team: "Friendly",
     },
   };

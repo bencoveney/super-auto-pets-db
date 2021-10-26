@@ -1,5 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
+import { melonArmor } from "../statusEffects/melonArmor";
 
 function turtleAbility(level: number): Ability {
   return {
@@ -10,9 +11,7 @@ function turtleAbility(level: number): Ability {
     },
     effect: {
       kind: "ApplyStatus",
-      status: {
-        name: "MelonArmor",
-      },
+      status: melonArmor.id,
       to: {
         kind: "FriendBehind",
         n: level,

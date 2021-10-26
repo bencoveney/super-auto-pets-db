@@ -8,7 +8,7 @@ import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
-import { Status } from "./Status";
+import { StatusDescription } from "./StatusDescription";
 
 export function FoodPage(props: { food: Food; database: Database }) {
   return (
@@ -50,10 +50,11 @@ export function FoodPage(props: { food: Food; database: Database }) {
             </StatsRow>
             {(props.food.ability.effect as ApplyStatusEffect).status && (
               <StatsRow text="Status">
-                <Status
+                <StatusDescription
                   status={
                     (props.food.ability.effect as ApplyStatusEffect).status
                   }
+                  database={props.database}
                 />
               </StatsRow>
             )}

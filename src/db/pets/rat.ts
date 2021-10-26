@@ -23,7 +23,7 @@ function ratAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: dirtyRatSummoned,
+      pet: dirtyRatSummoned.id,
       team: "Enemy",
     },
   };

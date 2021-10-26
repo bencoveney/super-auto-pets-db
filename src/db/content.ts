@@ -6,7 +6,7 @@ import { chili } from "./food/chili";
 import { chocolate } from "./food/chocolate";
 import { cupcake } from "./food/cupcake";
 import { garlic } from "./food/garlic";
-import { beeSummoned, honey } from "./food/honey";
+import { honey } from "./food/honey";
 import { meatBone } from "./food/meatBone";
 import { melon } from "./food/melon";
 import { milk } from "./food/milk";
@@ -21,20 +21,24 @@ import { ant } from "./pets/ant";
 import { badger } from "./pets/badger";
 import { bat } from "./pets/bat";
 import { beaver } from "./pets/beaver";
+import { bee } from "./pets/bee";
 import { beetle } from "./pets/beetle";
 import { bison } from "./pets/bison";
 import { blowfish } from "./pets/blowfish";
 import { bluebird } from "./pets/bluebird";
 import { buffalo } from "./pets/buffalo";
+import { bus } from "./pets/bus";
 import { camel } from "./pets/camel";
 import { cat } from "./pets/cat";
 import { caterpillar, butterfly } from "./pets/caterpillar";
+import { chick } from "./pets/chick";
 import { chicken } from "./pets/chicken";
 import { cow } from "./pets/cow";
 import { crab } from "./pets/crab";
-import { cricket, cricketSummoned } from "./pets/cricket";
+import { cricket } from "./pets/cricket";
 import { crocodile } from "./pets/crocodile";
-import { deer, busSummoned } from "./pets/deer";
+import { deer } from "./pets/deer";
+import { dirtyRat } from "./pets/dirtyRat";
 import { dodo } from "./pets/dodo";
 import { dog } from "./pets/dog";
 import { dolphin } from "./pets/dolphin";
@@ -45,7 +49,7 @@ import { eagle } from "./pets/eagle";
 import { elephant } from "./pets/elephant";
 import { fish } from "./pets/fish";
 import { flamingo } from "./pets/flamingo";
-import { fly, flySummoned } from "./pets/fly";
+import { fly } from "./pets/fly";
 import { giraffe } from "./pets/giraffe";
 import { goat } from "./pets/goat";
 import { gorilla } from "./pets/gorilla";
@@ -73,14 +77,15 @@ import { pig } from "./pets/pig";
 import { poodle } from "./pets/poodle";
 import { puppy } from "./pets/puppy";
 import { rabbit } from "./pets/rabbit";
-import { rat, dirtyRatSummoned } from "./pets/rat";
+import { ram } from "./pets/ram";
+import { rat } from "./pets/rat";
 import { rhino } from "./pets/rhino";
-import { rooster, chick } from "./pets/rooster";
+import { rooster } from "./pets/rooster";
 import { sauropod } from "./pets/sauropod";
 import { scorpion } from "./pets/scorpion";
 import { seal } from "./pets/seal";
 import { shark } from "./pets/shark";
-import { sheep, ramSummoned } from "./pets/sheep";
+import { sheep } from "./pets/sheep";
 import { shrimp } from "./pets/shrimp";
 import { skunk } from "./pets/skunk";
 import { sloth } from "./pets/sloth";
@@ -97,6 +102,8 @@ import { turtle } from "./pets/turtle";
 import { tyrannosaurus } from "./pets/tyrannosaurus";
 import { whale } from "./pets/whale";
 import { worm } from "./pets/worm";
+import { zombieCricket } from "./pets/zombieCricket";
+import { zombieFly } from "./pets/zombieFly";
 import { boneAttack } from "./statusEffects/boneAttack";
 import { coconutShield } from "./statusEffects/coconutShield";
 import { extraLife } from "./statusEffects/extraLife";
@@ -213,14 +220,14 @@ export const pets: Pet[] = [
   tiger,
   tyrannosaurus,
   // Summoned
-  cricketSummoned,
-  busSummoned,
-  flySummoned,
-  dirtyRatSummoned,
+  zombieCricket,
+  bus,
+  zombieFly,
+  dirtyRat,
   chick,
-  ramSummoned,
+  ram,
   butterfly,
-  beeSummoned,
+  bee,
 ];
 
 export const foods: Food[] = [

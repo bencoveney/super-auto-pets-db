@@ -1,5 +1,6 @@
 import { Food, Trigger } from "..";
 import { getFoodIdentifiers } from "../database";
+import { splashAttack } from "../statusEffects/splashAttack";
 
 export const chili: Food = {
   ...getFoodIdentifiers("Chili"),
@@ -20,9 +21,7 @@ export const chili: Food = {
       to: {
         kind: "PurchaseTarget",
       },
-      status: {
-        name: "SplashAttack",
-      },
+      status: splashAttack.id,
     },
   },
 };

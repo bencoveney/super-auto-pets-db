@@ -1,21 +1,6 @@
 import { Ability, Pet, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const busSummoned: Pet = {
-  ...getPetIdentifiers("Bus"),
-  image: {
-    source: "noto-emoji",
-    // TODO: Incorrect. Not sure where the right bus should come from
-    unicodeCodePoint: "\u{1F68D}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: "?",
-  baseHealth: "?",
-  status: {
-    name: "SplashAttack",
-  },
-};
+import { bus } from "./bus";
 
 function deerAbility(level: number): Ability {
   return {
@@ -28,11 +13,9 @@ function deerAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: {
-        ...busSummoned,
-        baseAttack: level * 5,
-        baseHealth: level * 5,
-      },
+      pet: bus.id,
+      withAttack: level * 5,
+      withHealth: level * 5,
       team: "Friendly",
     },
   };

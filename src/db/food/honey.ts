@@ -1,17 +1,6 @@
-import { Food, Pet, Trigger } from "..";
-import { getFoodIdentifiers, getPetIdentifiers } from "../database";
-
-export const beeSummoned: Pet = {
-  ...getPetIdentifiers("Bee"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1F41D}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: 1,
-  baseHealth: 1,
-};
+import { Food, Trigger } from "..";
+import { getFoodIdentifiers } from "../database";
+import { honeyBee } from "../statusEffects/honeyBee";
 
 export const honey: Food = {
   ...getFoodIdentifiers("Honey"),
@@ -32,9 +21,7 @@ export const honey: Food = {
       to: {
         kind: "PurchaseTarget",
       },
-      status: {
-        name: "HoneyBee",
-      },
+      status: honeyBee.id,
     },
   },
 };

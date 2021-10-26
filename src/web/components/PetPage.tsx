@@ -8,7 +8,7 @@ import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
-import { Status } from "./Status";
+import { StatusDescription } from "./StatusDescription";
 
 export function PetPage(props: { pet: Pet; database: Database }) {
   return (
@@ -62,7 +62,10 @@ export function PetPage(props: { pet: Pet; database: Database }) {
             </StatsRow>
             {props.pet.status && (
               <StatsRow text="Status">
-                <Status status={props.pet.status} />
+                <StatusDescription
+                  status={props.pet.status}
+                  database={props.database}
+                />
               </StatsRow>
             )}
           </StatsGrid>

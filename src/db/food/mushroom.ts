@@ -1,5 +1,6 @@
 import { Food, Trigger } from "..";
 import { getFoodIdentifiers } from "../database";
+import { extraLife } from "../statusEffects/extraLife";
 
 export const mushroom: Food = {
   ...getFoodIdentifiers("Mushroom"),
@@ -20,9 +21,7 @@ export const mushroom: Food = {
       to: {
         kind: "PurchaseTarget",
       },
-      status: {
-        name: "ExtraLife",
-      },
+      status: extraLife.id,
     },
   },
 };

@@ -272,21 +272,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Cricket",
-            "id": "pet_zombie_cricket",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦗"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 1,
-            "baseHealth": 1
-          },
+          "pet": "pet_zombie_cricket",
+          "withAttack": 1,
+          "withHealth": 1,
           "team": "Friendly"
         }
       },
@@ -298,21 +286,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Cricket",
-            "id": "pet_zombie_cricket",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦗"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 2,
-            "baseHealth": 2
-          },
+          "pet": "pet_zombie_cricket",
+          "withAttack": 2,
+          "withHealth": 2,
           "team": "Friendly"
         }
       },
@@ -324,21 +300,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Cricket",
-            "id": "pet_zombie_cricket",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🦗"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 3,
-            "baseHealth": 3
-          },
+          "pet": "pet_zombie_cricket",
+          "withAttack": 3,
+          "withHealth": 3,
           "team": "Friendly"
         }
       }
@@ -788,9 +752,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 1
@@ -805,9 +767,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 2
@@ -822,9 +782,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 3
@@ -1402,21 +1360,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Dirty Rat",
-            "id": "pet_dirty_rat",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐀"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 1,
-            "baseHealth": 1
-          },
+          "pet": "pet_dirty_rat",
           "team": "Enemy"
         }
       },
@@ -1428,21 +1372,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Dirty Rat",
-            "id": "pet_dirty_rat",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐀"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 1,
-            "baseHealth": 1
-          },
+          "pet": "pet_dirty_rat",
           "team": "Enemy"
         }
       },
@@ -1454,21 +1384,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Dirty Rat",
-            "id": "pet_dirty_rat",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐀"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 1,
-            "baseHealth": 1
-          },
+          "pet": "pet_dirty_rat",
           "team": "Enemy"
         }
       }
@@ -2219,9 +2135,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": {
-                "name": "MelonArmor"
-              },
+              "status": "status_melon_armor",
               "to": {
                 "kind": "Self"
               }
@@ -2249,9 +2163,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": {
-                "name": "MelonArmor"
-              },
+              "status": "status_melon_armor",
               "to": {
                 "kind": "Self"
               }
@@ -2279,9 +2191,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": {
-                "name": "MelonArmor"
-              },
+              "status": "status_melon_armor",
               "to": {
                 "kind": "Self"
               }
@@ -2442,21 +2352,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Ram",
-            "id": "pet_ram",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐏"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 2,
-            "baseHealth": 2
-          },
+          "pet": "pet_ram",
+          "withAttack": 2,
+          "withHealth": 2,
           "team": "Friendly"
         }
       },
@@ -2468,21 +2366,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Ram",
-            "id": "pet_ram",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐏"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 4,
-            "baseHealth": 4
-          },
+          "pet": "pet_ram",
+          "withAttack": 4,
+          "withHealth": 4,
           "team": "Friendly"
         }
       },
@@ -2494,21 +2380,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Ram",
-            "id": "pet_ram",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐏"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 6,
-            "baseHealth": 6
-          },
+          "pet": "pet_ram",
+          "withAttack": 6,
+          "withHealth": 6,
           "team": "Friendly"
         }
       }
@@ -2657,9 +2531,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "MelonArmor"
-          },
+          "status": "status_melon_armor",
           "to": {
             "kind": "FriendBehind",
             "n": 1
@@ -2674,9 +2546,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "MelonArmor"
-          },
+          "status": "status_melon_armor",
           "to": {
             "kind": "FriendBehind",
             "n": 2
@@ -2691,9 +2561,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "MelonArmor"
-          },
+          "status": "status_melon_armor",
           "to": {
             "kind": "FriendBehind",
             "n": 3
@@ -2904,24 +2772,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Bus",
-            "id": "pet_bus",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🚍"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 5,
-            "baseHealth": 5,
-            "status": {
-              "name": "SplashAttack"
-            }
-          },
+          "pet": "pet_bus",
+          "withAttack": 5,
+          "withHealth": 5,
           "team": "Friendly"
         }
       },
@@ -2933,24 +2786,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Bus",
-            "id": "pet_bus",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🚍"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 10,
-            "baseHealth": 10,
-            "status": {
-              "name": "SplashAttack"
-            }
-          },
+          "pet": "pet_bus",
+          "withAttack": 10,
+          "withHealth": 10,
           "team": "Friendly"
         }
       },
@@ -2962,24 +2800,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Bus",
-            "id": "pet_bus",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🚍"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 15,
-            "baseHealth": 15,
-            "status": {
-              "name": "SplashAttack"
-            }
-          },
+          "pet": "pet_bus",
+          "withAttack": 15,
+          "withHealth": 15,
           "team": "Friendly"
         }
       }
@@ -3434,21 +3257,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Chick",
-            "id": "pet_chick",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐤"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": "?",
-            "baseHealth": 1
-          },
+          "pet": "pet_chick",
           "team": "Friendly"
         }
       },
@@ -3460,21 +3269,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Chick",
-            "id": "pet_chick",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐤"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": "?",
-            "baseHealth": 1
-          },
+          "pet": "pet_chick",
           "team": "Friendly"
         }
       },
@@ -3486,21 +3281,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Chick",
-            "id": "pet_chick",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐤"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": "?",
-            "baseHealth": 1
-          },
+          "pet": "pet_chick",
           "team": "Friendly"
         }
       }
@@ -3966,9 +3747,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "All"
           }
@@ -3982,9 +3761,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "All"
           }
@@ -3998,9 +3775,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "Weak"
-          },
+          "status": "status_weak",
           "to": {
             "kind": "All"
           }
@@ -4146,9 +3921,7 @@
         "StandardPack",
         "ExpansionPack1"
       ],
-      "status": {
-        "name": "PoisinAttack"
-      }
+      "status": "status_poison_attack"
     },
     "pet_seal": {
       "name": "Seal",
@@ -4471,20 +4244,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Fly",
-            "id": "pet_zombie_fly",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🪰"
-            },
-            "packs": [
-              "StandardPack"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 2,
-            "baseHealth": 2
-          },
+          "pet": "pet_zombie_fly",
+          "withAttack": 2,
+          "withHealth": 2,
           "team": "Friendly"
         }
       },
@@ -4496,20 +4258,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Fly",
-            "id": "pet_zombie_fly",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🪰"
-            },
-            "packs": [
-              "StandardPack"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 4,
-            "baseHealth": 4
-          },
+          "pet": "pet_zombie_fly",
+          "withAttack": 4,
+          "withHealth": 4,
           "team": "Friendly"
         }
       },
@@ -4521,20 +4272,9 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Zombie Fly",
-            "id": "pet_zombie_fly",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🪰"
-            },
-            "packs": [
-              "StandardPack"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 6,
-            "baseHealth": 6
-          },
+          "pet": "pet_zombie_fly",
+          "withAttack": 6,
+          "withHealth": 6,
           "team": "Friendly"
         }
       }
@@ -4561,9 +4301,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "CoconutShield"
-          },
+          "status": "status_coconut_shield",
           "to": {
             "kind": "Self"
           }
@@ -4577,9 +4315,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "CoconutShield"
-          },
+          "status": "status_coconut_shield",
           "to": {
             "kind": "Self"
           }
@@ -4593,9 +4329,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": {
-            "name": "CoconutShield"
-          },
+          "status": "status_coconut_shield",
           "to": {
             "kind": "Self"
           }
@@ -5059,9 +4793,7 @@
       "tier": "Summoned",
       "baseAttack": "?",
       "baseHealth": "?",
-      "status": {
-        "name": "SplashAttack"
-      }
+      "status": "status_splash_attack"
     },
     "pet_zombie_fly": {
       "name": "Zombie Fly",
@@ -5206,9 +4938,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "HoneyBee"
-          }
+          "status": "status_honey_bee"
         }
       }
     },
@@ -5264,9 +4994,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "BoneAttack"
-          }
+          "status": "status_bone_attack"
         }
       }
     },
@@ -5321,9 +5049,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "GarlicArmor"
-          }
+          "status": "status_garlic_armor"
         }
       }
     },
@@ -5439,9 +5165,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "SplashAttack"
-          }
+          "status": "status_splash_attack"
         }
       }
     },
@@ -5525,9 +5249,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "MelonArmor"
-          }
+          "status": "status_melon_armor"
         }
       }
     },
@@ -5554,9 +5276,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "ExtraLife"
-          }
+          "status": "status_extra_life"
         }
       }
     },
@@ -5613,9 +5333,7 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": {
-            "name": "SteakAttack"
-          }
+          "status": "status_steak_attack"
         }
       }
     },
@@ -5699,28 +5417,14 @@
         "unicodeCodePoint": "🍯"
       },
       "ability": {
-        "description": "Ignore damage once.",
+        "description": "Summon a 1/1 Bee after fainting.",
         "triggeredBy": {
           "kind": "Self"
         },
         "trigger": "Faint",
         "effect": {
           "kind": "SummonPet",
-          "pet": {
-            "name": "Bee",
-            "id": "pet_bee",
-            "image": {
-              "source": "noto-emoji",
-              "unicodeCodePoint": "🐝"
-            },
-            "packs": [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            "tier": "Summoned",
-            "baseAttack": 1,
-            "baseHealth": 1
-          },
+          "pet": "pet_bee",
           "team": "Friendly"
         }
       }

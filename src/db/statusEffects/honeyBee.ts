@@ -1,6 +1,6 @@
 import { Status, Trigger } from "..";
 import { getStatusIdentifiers } from "../database";
-import { beeSummoned } from "../food/honey";
+import { bee } from "../pets/bee";
 
 export const honeyBee: Status = {
   ...getStatusIdentifiers("Honey Bee"),
@@ -9,14 +9,14 @@ export const honeyBee: Status = {
     unicodeCodePoint: "\u{1F36F}",
   },
   ability: {
-    description: "Ignore damage once.",
+    description: "Summon a 1/1 Bee after fainting.",
     triggeredBy: {
       kind: "Self",
     },
     trigger: Trigger.Faint,
     effect: {
       kind: "SummonPet",
-      pet: beeSummoned,
+      pet: bee.id,
       team: "Friendly",
     },
   },

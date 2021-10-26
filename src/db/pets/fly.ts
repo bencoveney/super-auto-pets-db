@@ -1,17 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const flySummoned: Pet = {
-  ...getPetIdentifiers("Zombie Fly"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1FAB0}",
-  },
-  packs: ["StandardPack"],
-  tier: "Summoned",
-  baseAttack: "?",
-  baseHealth: "?",
-};
+import { zombieFly } from "./zombieFly";
 
 function flyAbility(level: number): Ability {
   return {
@@ -24,11 +13,9 @@ function flyAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: {
-        ...flySummoned,
-        baseAttack: level * 2,
-        baseHealth: level * 2,
-      },
+      pet: zombieFly.id,
+      withAttack: level * 2,
+      withHealth: level * 2,
       team: "Friendly",
     },
   };

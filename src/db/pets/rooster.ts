@@ -1,17 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const chick: Pet = {
-  ...getPetIdentifiers("Chick"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1F424}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: "?",
-  baseHealth: 1,
-};
+import { chick } from "./chick";
 
 function roosterAbility(level: number): Ability {
   return {
@@ -22,7 +11,7 @@ function roosterAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: chick,
+      pet: chick.id,
       team: "Friendly",
       // TODO: Represent copied attack value.
     },

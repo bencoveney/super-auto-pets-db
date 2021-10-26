@@ -1,5 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
+import { melonArmor } from "../statusEffects/melonArmor";
 
 function oxAbility(level: number): Ability {
   return {
@@ -16,9 +17,7 @@ function oxAbility(level: number): Ability {
       effects: [
         {
           kind: "ApplyStatus",
-          status: {
-            name: "MelonArmor",
-          },
+          status: melonArmor.id,
           to: {
             kind: "Self",
           },

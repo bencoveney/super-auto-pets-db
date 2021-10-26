@@ -18,7 +18,11 @@ export function deserialiseDatabase(content: string): Database {
   return JSON.parse(content);
 }
 
-export function getPetId(pet: Pet | string) {
+export type PetRef = `pet_${string}`;
+export type FoodRef = `food_${string}`;
+export type StatusRef = `status_${string}`;
+
+export function getPetId(pet: Pet | string): PetRef {
   let name = typeof pet == "string" ? pet : pet.name;
   return `pet_${sanitiseName(name)}`;
 }
@@ -27,7 +31,7 @@ export function getPetUrl(pet: Pet) {
   return `/pet/${sanitiseName(pet.name)}`;
 }
 
-export function getFoodId(food: Food | string) {
+export function getFoodId(food: Food | string): FoodRef {
   let name = typeof food == "string" ? food : food.name;
   return `food_${sanitiseName(name)}`;
 }
@@ -36,7 +40,7 @@ export function getFoodUrl(food: Food) {
   return `/food/${sanitiseName(food.name)}`;
 }
 
-export function getStatusId(status: Status | string) {
+export function getStatusId(status: Status | string): StatusRef {
   let name = typeof status == "string" ? status : status.name;
   return `status_${sanitiseName(name)}`;
 }
@@ -55,21 +59,25 @@ export function sanitiseName(name: string): string {
   return name.toLowerCase().replace(/\s/g, "_");
 }
 
-export function getPetIdentifiers(name: string): Identifiers {
+export function getPetIdentifiers(name: string): { id: PetRef } & Identifiers {
   return {
     name,
     id: getPetId(name),
   };
 }
 
-export function getFoodIdentifiers(name: string): Identifiers {
+export function getFoodIdentifiers(
+  name: string
+): { id: FoodRef } & Identifiers {
   return {
     name,
     id: getFoodId(name),
   };
 }
 
-export function getStatusIdentifiers(name: string): Identifiers {
+export function getStatusIdentifiers(
+  name: string
+): { id: StatusRef } & Identifiers {
   return {
     name,
     id: getStatusId(name),

@@ -1,3 +1,5 @@
+import { PetRef, StatusRef, FoodRef } from "./database";
+
 export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
 export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
@@ -5,6 +7,8 @@ export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
 export type Stat = number | "?";
 
 export interface Pet extends Identifiers, HasImage, Filterable {
+  id: PetRef;
+  name: string;
   notes?: string;
   // The tier the food appears in.
   tier: Tier;
@@ -20,10 +24,12 @@ export interface Pet extends Identifiers, HasImage, Filterable {
   level2Ability?: Ability;
   // The ability the pet has at level 3.
   level3Ability?: Ability;
-  status?: StatusEffect;
+  status?: StatusRef;
 }
 
 export interface Food extends Identifiers, HasImage, Filterable {
+  id: FoodRef;
+  name: string;
   notes?: string;
   // The tier the food appears in.
   tier: Tier;
@@ -34,6 +40,8 @@ export interface Food extends Identifiers, HasImage, Filterable {
 }
 
 export interface Status extends Identifiers, HasImage, Filterable {
+  id: StatusRef;
+  name: string;
   // The ability the status item has.
   ability: Ability;
 }
@@ -221,10 +229,9 @@ export interface GainAbilityEffect {
 
 export interface SummonPetEffect {
   kind: "SummonPet";
-  pet: Pet;
-  // petId: string;
-  // withAttack?: Stat;
-  // withHealth?: Stat;
+  pet: PetRef;
+  withAttack?: Stat;
+  withHealth?: Stat;
   team: "Friendly" | "Enemy";
 }
 
@@ -261,8 +268,7 @@ export interface MultipleEffects {
 
 export interface ApplyStatusEffect {
   kind: "ApplyStatus";
-  // TODO: Status effects can probably represented as a string.
-  status: StatusEffect;
+  status: StatusRef;
   to: Target;
 }
 
@@ -282,20 +288,6 @@ export interface ModifyDamageEffect {
 export interface SplashDamageEffect {
   kind: "SplashDamage";
   amount: number;
-}
-
-export interface StatusEffect {
-  name:
-    | "Weak"
-    | "CoconutShield"
-    | "HoneyBee"
-    | "BoneAttack"
-    | "GarlicArmor"
-    | "SplashAttack"
-    | "MelonArmor"
-    | "ExtraLife"
-    | "SteakAttack"
-    | "PoisinAttack";
 }
 
 export interface EvolveEffect {

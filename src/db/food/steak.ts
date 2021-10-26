@@ -1,5 +1,6 @@
 import { Food, Trigger } from "..";
 import { getFoodIdentifiers } from "../database";
+import { steakAttack } from "../statusEffects/steakAttack";
 
 export const steak: Food = {
   ...getFoodIdentifiers("Steak"),
@@ -20,9 +21,7 @@ export const steak: Food = {
       to: {
         kind: "PurchaseTarget",
       },
-      status: {
-        name: "SteakAttack",
-      },
+      status: steakAttack.id,
     },
   },
 };

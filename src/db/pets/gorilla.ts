@@ -1,5 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
+import { coconutShield } from "../statusEffects/coconutShield";
 
 function gorillaAbility(level: number): Ability {
   return {
@@ -11,9 +12,7 @@ function gorillaAbility(level: number): Ability {
     },
     effect: {
       kind: "ApplyStatus",
-      status: {
-        name: "CoconutShield",
-      },
+      status: coconutShield.id,
       to: {
         kind: "Self",
       },

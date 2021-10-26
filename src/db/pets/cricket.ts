@@ -1,17 +1,6 @@
 import { Ability, Pet, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
-
-export const cricketSummoned: Pet = {
-  ...getPetIdentifiers("Zombie Cricket"),
-  image: {
-    source: "noto-emoji",
-    unicodeCodePoint: "\u{1F997}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: "?",
-  baseHealth: "?",
-};
+import { zombieCricket } from "./zombieCricket";
 
 function cricketAbility(level: number): Ability {
   return {
@@ -22,11 +11,9 @@ function cricketAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: {
-        ...cricketSummoned,
-        baseAttack: level,
-        baseHealth: level,
-      },
+      pet: zombieCricket.id,
+      withAttack: level,
+      withHealth: level,
       team: "Friendly",
     },
   };

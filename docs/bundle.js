@@ -21722,21 +21722,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Cricket",
-            id: "pet_zombie_cricket",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F997}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 1,
-            baseHealth: 1
-          },
+          pet: "pet_zombie_cricket",
+          withAttack: 1,
+          withHealth: 1,
           team: "Friendly"
         }
       },
@@ -21748,21 +21736,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Cricket",
-            id: "pet_zombie_cricket",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F997}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 2,
-            baseHealth: 2
-          },
+          pet: "pet_zombie_cricket",
+          withAttack: 2,
+          withHealth: 2,
           team: "Friendly"
         }
       },
@@ -21774,21 +21750,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Cricket",
-            id: "pet_zombie_cricket",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F997}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 3,
-            baseHealth: 3
-          },
+          pet: "pet_zombie_cricket",
+          withAttack: 3,
+          withHealth: 3,
           team: "Friendly"
         }
       }
@@ -22238,9 +22202,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "RandomEnemy",
             n: 1
@@ -22255,9 +22217,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "RandomEnemy",
             n: 2
@@ -22272,9 +22232,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "RandomEnemy",
             n: 3
@@ -22852,21 +22810,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Dirty Rat",
-            id: "pet_dirty_rat",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F400}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 1,
-            baseHealth: 1
-          },
+          pet: "pet_dirty_rat",
           team: "Enemy"
         }
       },
@@ -22878,21 +22822,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Dirty Rat",
-            id: "pet_dirty_rat",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F400}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 1,
-            baseHealth: 1
-          },
+          pet: "pet_dirty_rat",
           team: "Enemy"
         }
       },
@@ -22904,21 +22834,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Dirty Rat",
-            id: "pet_dirty_rat",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F400}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 1,
-            baseHealth: 1
-          },
+          pet: "pet_dirty_rat",
           team: "Enemy"
         }
       }
@@ -23669,9 +23585,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           effects: [
             {
               kind: "ApplyStatus",
-              status: {
-                name: "MelonArmor"
-              },
+              status: "status_melon_armor",
               to: {
                 kind: "Self"
               }
@@ -23699,9 +23613,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           effects: [
             {
               kind: "ApplyStatus",
-              status: {
-                name: "MelonArmor"
-              },
+              status: "status_melon_armor",
               to: {
                 kind: "Self"
               }
@@ -23729,9 +23641,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           effects: [
             {
               kind: "ApplyStatus",
-              status: {
-                name: "MelonArmor"
-              },
+              status: "status_melon_armor",
               to: {
                 kind: "Self"
               }
@@ -23892,21 +23802,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Ram",
-            id: "pet_ram",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F40F}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 2,
-            baseHealth: 2
-          },
+          pet: "pet_ram",
+          withAttack: 2,
+          withHealth: 2,
           team: "Friendly"
         }
       },
@@ -23918,21 +23816,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Ram",
-            id: "pet_ram",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F40F}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 4,
-            baseHealth: 4
-          },
+          pet: "pet_ram",
+          withAttack: 4,
+          withHealth: 4,
           team: "Friendly"
         }
       },
@@ -23944,21 +23830,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Ram",
-            id: "pet_ram",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F40F}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 6,
-            baseHealth: 6
-          },
+          pet: "pet_ram",
+          withAttack: 6,
+          withHealth: 6,
           team: "Friendly"
         }
       }
@@ -24107,9 +23981,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "MelonArmor"
-          },
+          status: "status_melon_armor",
           to: {
             kind: "FriendBehind",
             n: 1
@@ -24124,9 +23996,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "MelonArmor"
-          },
+          status: "status_melon_armor",
           to: {
             kind: "FriendBehind",
             n: 2
@@ -24141,9 +24011,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "MelonArmor"
-          },
+          status: "status_melon_armor",
           to: {
             kind: "FriendBehind",
             n: 3
@@ -24354,24 +24222,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Bus",
-            id: "pet_bus",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F68D}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 5,
-            baseHealth: 5,
-            status: {
-              name: "SplashAttack"
-            }
-          },
+          pet: "pet_bus",
+          withAttack: 5,
+          withHealth: 5,
           team: "Friendly"
         }
       },
@@ -24383,24 +24236,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Bus",
-            id: "pet_bus",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F68D}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 10,
-            baseHealth: 10,
-            status: {
-              name: "SplashAttack"
-            }
-          },
+          pet: "pet_bus",
+          withAttack: 10,
+          withHealth: 10,
           team: "Friendly"
         }
       },
@@ -24412,24 +24250,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Bus",
-            id: "pet_bus",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F68D}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 15,
-            baseHealth: 15,
-            status: {
-              name: "SplashAttack"
-            }
-          },
+          pet: "pet_bus",
+          withAttack: 15,
+          withHealth: 15,
           team: "Friendly"
         }
       }
@@ -24884,21 +24707,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Chick",
-            id: "pet_chick",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F424}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: "?",
-            baseHealth: 1
-          },
+          pet: "pet_chick",
           team: "Friendly"
         }
       },
@@ -24910,21 +24719,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Chick",
-            id: "pet_chick",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F424}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: "?",
-            baseHealth: 1
-          },
+          pet: "pet_chick",
           team: "Friendly"
         }
       },
@@ -24936,21 +24731,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Chick",
-            id: "pet_chick",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F424}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: "?",
-            baseHealth: 1
-          },
+          pet: "pet_chick",
           team: "Friendly"
         }
       }
@@ -25416,9 +25197,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "All"
           }
@@ -25432,9 +25211,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "All"
           }
@@ -25448,9 +25225,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "Weak"
-          },
+          status: "status_weak",
           to: {
             kind: "All"
           }
@@ -25596,9 +25371,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "StandardPack",
         "ExpansionPack1"
       ],
-      status: {
-        name: "PoisinAttack"
-      }
+      status: "status_poison_attack"
     },
     pet_seal: {
       name: "Seal",
@@ -25921,20 +25694,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Fly",
-            id: "pet_zombie_fly",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1FAB0}"
-            },
-            packs: [
-              "StandardPack"
-            ],
-            tier: "Summoned",
-            baseAttack: 2,
-            baseHealth: 2
-          },
+          pet: "pet_zombie_fly",
+          withAttack: 2,
+          withHealth: 2,
           team: "Friendly"
         }
       },
@@ -25946,20 +25708,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Fly",
-            id: "pet_zombie_fly",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1FAB0}"
-            },
-            packs: [
-              "StandardPack"
-            ],
-            tier: "Summoned",
-            baseAttack: 4,
-            baseHealth: 4
-          },
+          pet: "pet_zombie_fly",
+          withAttack: 4,
+          withHealth: 4,
           team: "Friendly"
         }
       },
@@ -25971,20 +25722,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Zombie Fly",
-            id: "pet_zombie_fly",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1FAB0}"
-            },
-            packs: [
-              "StandardPack"
-            ],
-            tier: "Summoned",
-            baseAttack: 6,
-            baseHealth: 6
-          },
+          pet: "pet_zombie_fly",
+          withAttack: 6,
+          withHealth: 6,
           team: "Friendly"
         }
       }
@@ -26011,9 +25751,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "CoconutShield"
-          },
+          status: "status_coconut_shield",
           to: {
             kind: "Self"
           }
@@ -26027,9 +25765,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "CoconutShield"
-          },
+          status: "status_coconut_shield",
           to: {
             kind: "Self"
           }
@@ -26043,9 +25779,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         },
         effect: {
           kind: "ApplyStatus",
-          status: {
-            name: "CoconutShield"
-          },
+          status: "status_coconut_shield",
           to: {
             kind: "Self"
           }
@@ -26509,9 +26243,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       tier: "Summoned",
       baseAttack: "?",
       baseHealth: "?",
-      status: {
-        name: "SplashAttack"
-      }
+      status: "status_splash_attack"
     },
     pet_zombie_fly: {
       name: "Zombie Fly",
@@ -26656,9 +26388,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "HoneyBee"
-          }
+          status: "status_honey_bee"
         }
       }
     },
@@ -26714,9 +26444,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "BoneAttack"
-          }
+          status: "status_bone_attack"
         }
       }
     },
@@ -26771,9 +26499,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "GarlicArmor"
-          }
+          status: "status_garlic_armor"
         }
       }
     },
@@ -26889,9 +26615,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "SplashAttack"
-          }
+          status: "status_splash_attack"
         }
       }
     },
@@ -26975,9 +26699,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "MelonArmor"
-          }
+          status: "status_melon_armor"
         }
       }
     },
@@ -27004,9 +26726,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "ExtraLife"
-          }
+          status: "status_extra_life"
         }
       }
     },
@@ -27063,9 +26783,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           to: {
             kind: "PurchaseTarget"
           },
-          status: {
-            name: "SteakAttack"
-          }
+          status: "status_steak_attack"
         }
       }
     },
@@ -27149,28 +26867,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unicodeCodePoint: "\u{1F36F}"
       },
       ability: {
-        description: "Ignore damage once.",
+        description: "Summon a 1/1 Bee after fainting.",
         triggeredBy: {
           kind: "Self"
         },
         trigger: "Faint",
         effect: {
           kind: "SummonPet",
-          pet: {
-            name: "Bee",
-            id: "pet_bee",
-            image: {
-              source: "noto-emoji",
-              unicodeCodePoint: "\u{1F41D}"
-            },
-            packs: [
-              "StandardPack",
-              "ExpansionPack1"
-            ],
-            tier: "Summoned",
-            baseAttack: 1,
-            baseHealth: 1
-          },
+          pet: "pet_bee",
           team: "Friendly"
         }
       }
@@ -29470,41 +29174,16 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, props.children));
   }
 
-  // src/web/components/Status.tsx
+  // src/web/components/StatusDescription.tsx
   var import_react17 = __toModule(require_react());
-  function Status(props) {
+  function StatusDescription(props) {
     if (!props.status) {
       return null;
     }
+    const status = props.database.statuses[props.status];
     return /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "italic"
-    }, getStatusDescription(props.status));
-  }
-  function getStatusDescription(status) {
-    switch (status.name) {
-      case "Weak":
-        return "Weak: Take 5 extra damage.";
-      case "CoconutShield":
-        return "Coconut Shield: Ignore damage once.";
-      case "HoneyBee":
-        return "Honey Bee: Summon a 1/1 Bee after fainting.";
-      case "BoneAttack":
-        return "Bone Attack: Attack for 5 more damage.";
-      case "GarlicArmor":
-        return "Garlic Armor: Take 2 less damage.";
-      case "SplashAttack":
-        return "Splash Attack: Attack second enemy for 5 damage.";
-      case "MelonArmor":
-        return "Melon Armor: Take 20 damage less, once.";
-      case "ExtraLife":
-        return "Extra Life: Come back as a 1/1 after fainting";
-      case "SteakAttack":
-        return "Steak Attack: Attack for 20 more damage, once.";
-      case "PoisinAttack":
-        return "Poisin Attack: Knock out any animal hit by this.";
-      default:
-        throw new Error(`Unknown status: ${status.name}`);
-    }
+    }, status.name, ": ", status.ability.description);
   }
 
   // src/web/components/PetPage.tsx
@@ -29560,8 +29239,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ability: props.pet.level3Ability
     })), props.pet.status && /* @__PURE__ */ import_react18.default.createElement(StatsRow, {
       text: "Status"
-    }, /* @__PURE__ */ import_react18.default.createElement(Status, {
-      status: props.pet.status
+    }, /* @__PURE__ */ import_react18.default.createElement(StatusDescription, {
+      status: props.pet.status,
+      database: props.database
     }))))));
   }
 
@@ -29601,8 +29281,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       ability: props.food.ability
     })), props.food.ability.effect.status && /* @__PURE__ */ import_react19.default.createElement(StatsRow, {
       text: "Status"
-    }, /* @__PURE__ */ import_react19.default.createElement(Status, {
-      status: props.food.ability.effect.status
+    }, /* @__PURE__ */ import_react19.default.createElement(StatusDescription, {
+      status: props.food.ability.effect.status,
+      database: props.database
     }))))));
   }
 

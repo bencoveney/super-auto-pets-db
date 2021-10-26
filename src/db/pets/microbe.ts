@@ -1,5 +1,6 @@
 import { Ability, Pet, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
+import { weak } from "../statusEffects/weak";
 
 function microbeAbility(level: number): Ability {
   return {
@@ -10,9 +11,7 @@ function microbeAbility(level: number): Ability {
     },
     effect: {
       kind: "ApplyStatus",
-      status: {
-        name: "Weak",
-      },
+      status: weak.id,
       to: {
         kind: "All",
       },
