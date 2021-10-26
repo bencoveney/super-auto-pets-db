@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { writeHomepage } from "./writeHomepage";
 import { copyAssets } from "./writeAssets";
-import { getFood, getPets, HasImage } from "../../database";
+import { getDatabase } from "../../database";
 import { writeApi } from "./writeApi";
 import { writePetPages } from "./writePetPages";
 import { writeFoodPages } from "./writeFoodPages";
@@ -17,13 +17,12 @@ function getOutputDir() {
 
 async function buildSite() {
   const outputDir = getOutputDir();
-  const pets = getPets();
-  const food = getFood();
-  writeApi(outputDir, pets, food);
-  copyAssets(outputDir, (pets as HasImage[]).concat(food));
-  await writeHomepage(outputDir, pets, food);
-  await writePetPages(outputDir, pets, food);
-  await writeFoodPages(outputDir, pets, food);
+  const database = getDatabase();
+  writeApi(outputDir, database);
+  copyAssets(outputDir, database);
+  await writeHomepage(outputDir, database);
+  await writePetPages(outputDir, database);
+  await writeFoodPages(outputDir, database);
 }
 
 buildSite().then(

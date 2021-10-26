@@ -1,13 +1,12 @@
 import React from "react";
-import { Pet as PetType, Food as FoodType } from "../../database";
+import { Food as FoodType, Database, WithId } from "../../database";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Food } from "./Food";
 import { Header } from "./Header";
 
 export function FoodPage(props: {
-  theFood: FoodType;
-  pets: PetType[];
-  food: FoodType[];
+  theFood: WithId<FoodType>;
+  database: Database;
 }) {
   return (
     <>

@@ -135,6 +135,13 @@ export interface Food extends HasImage, Filterable {
   ability: Ability;
 }
 
+export interface Status extends HasImage, Filterable {
+  // The name of the status.
+  name: string;
+  // The ability the status item has.
+  ability: Ability;
+}
+
 export interface HasImage {
   name: string;
   image: EmojiImage;
@@ -214,6 +221,9 @@ export const enum Trigger {
   EatsShopFood = "EatsShopFood",
   KnockOut = "KnockOut",
   CastsAbility = "CastsAbility",
+  // Status Triggers
+  WhenAttacking = "WhenAttacking",
+  WhenDamaged = "WhenDamaged",
   // ...
 }
 
@@ -268,7 +278,10 @@ export type Effect =
   | FoodMultiplierEffect
   | RepeatAbilityEffect
   | FaintEffect
-  | SummonRandomPetEffect;
+  | SummonRandomPetEffect
+  | RespawnPetEffect
+  | ModifyDamageEffect
+  | SplashDamageEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -319,6 +332,13 @@ export interface SummonRandomPetEffect {
   level?: number;
 }
 
+export interface RespawnPetEffect {
+  kind: "RespawnPet";
+  baseAttack?: number;
+  baseHealth?: number;
+  level?: number;
+}
+
 export interface GainGoldEffect {
   kind: "GainGold";
   amount: number;
@@ -345,6 +365,19 @@ export interface ApplyStatusEffect {
 export interface SwallowEffect {
   kind: "Swallow";
   target: Target;
+}
+
+// For status effects
+export interface ModifyDamageEffect {
+  kind: "ModifyDamage";
+  // Positive is an increase to damage dealt.
+  damageModifier: number;
+  appliesOnce: boolean;
+}
+
+export interface SplashDamageEffect {
+  kind: "SplashDamage";
+  amount: number;
 }
 
 export interface StatusEffect {
@@ -491,11 +524,7 @@ const pets: Pet[] = [
   beeSummoned,
 ];
 
-export function getPets(): Pet[] {
-  return pets;
-}
-
-const food: Food[] = [
+const foods: Food[] = [
   // Tier 1
   apple,
   honey,
@@ -522,6 +551,262 @@ const food: Food[] = [
   milk,
 ];
 
-export function getFood(): Food[] {
-  return food;
+const statuses: Status[] = [
+  {
+    name: "Weak",
+    image: {
+      source: "noto-emoji",
+      unicodeCodePoint: "\u{1F9A0}",
+    },
+    ability: {
+      description: "Take 5 extra damage.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenDamaged,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: 5,
+        appliesOnce: false,
+      },
+    },
+  },
+  {
+    name: "Coconut Shield",
+    image: { source: "twemoji", unicodeCodePoint: "\u{1F965}" },
+    ability: {
+      description: "Ignore damage once.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenDamaged,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: -Infinity,
+        appliesOnce: true,
+      },
+    },
+  },
+  {
+    name: "Honey Bee",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F36F}",
+    },
+    ability: {
+      description: "Ignore damage once.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.Faint,
+      effect: {
+        kind: "SummonPet",
+        pet: beeSummoned,
+        team: "Friendly",
+      },
+    },
+  },
+  {
+    name: "Bone Attack",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F356}",
+    },
+    ability: {
+      description: "Attack for 5 more damage.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenAttacking,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: 5,
+        appliesOnce: false,
+      },
+    },
+  },
+  {
+    name: "Garlic Armor",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F9C4}",
+    },
+    ability: {
+      description: "Take 2 less damage.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenDamaged,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: -2,
+        appliesOnce: false,
+      },
+    },
+  },
+  {
+    name: "Splash Attack",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F336}",
+    },
+    ability: {
+      description: "Attack second enemy for 5 damage.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenAttacking,
+      effect: {
+        kind: "SplashDamage",
+        amount: 5,
+      },
+    },
+  },
+  {
+    name: "Melon Armor",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F348}",
+    },
+    ability: {
+      description: "Take 20 damage less, once.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenDamaged,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: -20,
+        appliesOnce: true,
+      },
+    },
+  },
+  {
+    name: "Extra Life",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F344}",
+    },
+    ability: {
+      description: "Come back as a 1/1 after fainting",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.Faint,
+      effect: {
+        kind: "RespawnPet",
+        baseAttack: 1,
+        baseHealth: 1,
+      },
+    },
+  },
+  {
+    name: "Steak Attack",
+    image: {
+      source: "twemoji",
+      unicodeCodePoint: "\u{1F969}",
+    },
+    ability: {
+      description: "Attack for 20 more damage, once.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenAttacking,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: 20,
+        appliesOnce: true,
+      },
+    },
+  },
+  {
+    name: "Poison Attack",
+    image: { source: "noto-emoji", unicodeCodePoint: "\u{1F95C}" },
+    ability: {
+      description: "Knock out any animal hit by this.",
+      triggeredBy: {
+        kind: "Self",
+      },
+      trigger: Trigger.WhenAttacking,
+      effect: {
+        kind: "ModifyDamage",
+        damageModifier: Infinity,
+        appliesOnce: false,
+      },
+    },
+  },
+];
+
+export type WithId<T> = T & { id: string };
+
+export type Table<T> = { [id: string]: WithId<T> };
+
+export interface Database {
+  pets: Table<Pet>;
+  foods: Table<Food>;
+  statuses: Table<Status>;
+}
+
+export function getDatabase(): Database {
+  let database: Database = { pets: {}, foods: {}, statuses: {} };
+  pets.forEach((pet) => {
+    const id = getPetId(pet);
+    database.pets[id] = { ...pet, id };
+  });
+  foods.forEach((food) => {
+    const id = getFoodId(food);
+    database.foods[id] = { ...food, id };
+  });
+  statuses.forEach((status) => {
+    const id = getStatusId(status);
+    database.statuses[id] = { ...status, id };
+  });
+  return database;
+}
+
+export function serialiseDatabase(db: Database): string {
+  return JSON.stringify(db, null, 2);
+}
+
+export function deserialiseDatabase(content: string): Database {
+  return JSON.parse(content);
+}
+
+export function getPetId(pet: Pet | string) {
+  let name = typeof pet == "string" ? pet : pet.name;
+  return `pet_${sanitiseName(name)}`;
+}
+
+export function getPetUrl(pet: Pet) {
+  return `/pet/${sanitiseName(pet.name)}`;
+}
+
+export function getFoodId(food: Food | string) {
+  let name = typeof food == "string" ? food : food.name;
+  return `food_${sanitiseName(name)}`;
+}
+
+export function getFoodUrl(food: Food) {
+  return `/food/${sanitiseName(food.name)}`;
+}
+
+export function getStatusId(status: Status | string) {
+  let name = typeof status == "string" ? status : status.name;
+  return `status_${sanitiseName(name)}`;
+}
+
+export function getStatusUrl(status: Status) {
+  return `/status/${sanitiseName(status.name)}`;
+}
+
+export function enumerateTable<T>(table: Table<T>): WithId<T>[] {
+  return Object.entries(table).map((it) => it[1]);
+}
+
+export function yoinkId<T>(without: T): string {
+  return (without as WithId<T>).id;
+}
+
+export function sanitiseName(name: string): string {
+  return name.toLowerCase().replace(/\s/g, "_");
 }

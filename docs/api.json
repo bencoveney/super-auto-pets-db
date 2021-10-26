@@ -1,6 +1,6 @@
 {
-  "pets": [
-    {
+  "pets": {
+    "pet_ant": {
       "name": "Ant",
       "image": {
         "source": "noto-emoji",
@@ -63,9 +63,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_ant"
     },
-    {
+    "pet_beaver": {
       "name": "Beaver",
       "image": {
         "source": "noto-emoji",
@@ -125,9 +126,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_beaver"
     },
-    {
+    "pet_beetle": {
       "name": "Beetle",
       "image": {
         "source": "noto-emoji",
@@ -186,9 +188,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_beetle"
     },
-    {
+    "pet_bluebird": {
       "name": "Bluebird",
       "image": {
         "source": "noto-emoji",
@@ -244,9 +247,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_bluebird"
     },
-    {
+    "pet_cricket": {
       "name": "Cricket",
       "image": {
         "source": "noto-emoji",
@@ -333,9 +337,10 @@
           },
           "team": "Friendly"
         }
-      }
+      },
+      "id": "pet_cricket"
     },
-    {
+    "pet_duck": {
       "name": "Duck",
       "image": {
         "source": "noto-emoji",
@@ -397,9 +402,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_duck"
     },
-    {
+    "pet_fish": {
       "name": "Fish",
       "image": {
         "source": "fxemoji",
@@ -444,9 +450,10 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_fish"
     },
-    {
+    "pet_horse": {
       "name": "Horse",
       "image": {
         "source": "noto-emoji",
@@ -502,9 +509,10 @@
           "attackAmount": 3,
           "untilEndOfBattle": true
         }
-      }
+      },
+      "id": "pet_horse"
     },
-    {
+    "pet_ladybug": {
       "name": "Ladybug",
       "image": {
         "source": "noto-emoji",
@@ -563,9 +571,10 @@
           },
           "untilEndOfBattle": true
         }
-      }
+      },
+      "id": "pet_ladybug"
     },
-    {
+    "pet_mosquito": {
       "name": "Mosquito",
       "image": {
         "source": "noto-emoji",
@@ -622,9 +631,10 @@
           },
           "amount": 3
         }
-      }
+      },
+      "id": "pet_mosquito"
     },
-    {
+    "pet_otter": {
       "name": "Otter",
       "image": {
         "source": "noto-emoji",
@@ -686,9 +696,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_otter"
     },
-    {
+    "pet_pig": {
       "name": "Pig",
       "image": {
         "source": "noto-emoji",
@@ -733,9 +744,10 @@
           "kind": "GainGold",
           "amount": 3
         }
-      }
+      },
+      "id": "pet_pig"
     },
-    {
+    "pet_sloth": {
       "name": "Sloth",
       "notes": "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       "image": {
@@ -749,9 +761,10 @@
         "StandardPack",
         "ExpansionPack1",
         "EasterEgg"
-      ]
+      ],
+      "id": "pet_sloth"
     },
-    {
+    "pet_bat": {
       "name": "Bat",
       "image": {
         "source": "noto-emoji",
@@ -813,9 +826,10 @@
             "n": 3
           }
         }
-      }
+      },
+      "id": "pet_bat"
     },
-    {
+    "pet_crab": {
       "name": "Crab",
       "image": {
         "source": "noto-emoji",
@@ -883,9 +897,10 @@
             "kind": "Self"
           }
         }
-      }
+      },
+      "id": "pet_crab"
     },
-    {
+    "pet_dodo": {
       "name": "Dodo",
       "image": {
         "source": "noto-emoji",
@@ -953,9 +968,10 @@
             "n": 3
           }
         }
-      }
+      },
+      "id": "pet_dodo"
     },
-    {
+    "pet_dog": {
       "name": "Dog",
       "image": {
         "source": "twemoji",
@@ -1051,9 +1067,10 @@
             }
           ]
         }
-      }
+      },
+      "id": "pet_dog"
     },
-    {
+    "pet_dromedary": {
       "name": "Dromedary",
       "image": {
         "source": "noto-emoji",
@@ -1115,9 +1132,10 @@
           "attackAmount": 3,
           "healthAmount": 3
         }
-      }
+      },
+      "id": "pet_dromedary"
     },
-    {
+    "pet_elephant": {
       "name": "Elephant",
       "image": {
         "source": "noto-emoji",
@@ -1173,9 +1191,10 @@
           },
           "amount": 1
         }
-      }
+      },
+      "id": "pet_elephant"
     },
-    {
+    "pet_flamingo": {
       "name": "Flamingo",
       "image": {
         "source": "noto-emoji",
@@ -1238,9 +1257,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_flamingo"
     },
-    {
+    "pet_hedgehog": {
       "name": "Hedgehog",
       "image": {
         "source": "noto-emoji",
@@ -1294,9 +1314,10 @@
           },
           "amount": 6
         }
-      }
+      },
+      "id": "pet_hedgehog"
     },
-    {
+    "pet_peacock": {
       "name": "Peacock",
       "image": {
         "source": "noto-emoji",
@@ -1353,9 +1374,10 @@
           "attackAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_peacock"
     },
-    {
+    "pet_rat": {
       "name": "Rat",
       "image": {
         "source": "noto-emoji",
@@ -1442,9 +1464,10 @@
           },
           "team": "Enemy"
         }
-      }
+      },
+      "id": "pet_rat"
     },
-    {
+    "pet_shrimp": {
       "name": "Shrimp",
       "image": {
         "source": "noto-emoji",
@@ -1504,9 +1527,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_shrimp"
     },
-    {
+    "pet_spider": {
       "name": "Spider",
       "image": {
         "source": "noto-emoji",
@@ -1557,9 +1581,10 @@
           "baseAttack": 6,
           "baseAealth": 6
         }
-      }
+      },
+      "id": "pet_spider"
     },
-    {
+    "pet_swan": {
       "name": "Swan",
       "image": {
         "source": "twemoji",
@@ -1604,9 +1629,10 @@
           "kind": "GainGold",
           "amount": 3
         }
-      }
+      },
+      "id": "pet_swan"
     },
-    {
+    "pet_tabby_cat": {
       "name": "Tabby Cat",
       "image": {
         "source": "noto-emoji",
@@ -1662,9 +1688,10 @@
           "attackAmount": 3,
           "untilEndOfBattle": true
         }
-      }
+      },
+      "id": "pet_tabby_cat"
     },
-    {
+    "pet_badger": {
       "name": "Badger",
       "image": {
         "source": "noto-emoji",
@@ -1723,9 +1750,10 @@
             "attackDamagePercent": 100
           }
         }
-      }
+      },
+      "id": "pet_badger"
     },
-    {
+    "pet_blowfish": {
       "name": "Blowfish",
       "image": {
         "source": "noto-emoji",
@@ -1782,9 +1810,10 @@
           },
           "amount": 6
         }
-      }
+      },
+      "id": "pet_blowfish"
     },
-    {
+    "pet_caterpillar": {
       "name": "Caterpillar",
       "image": {
         "source": "noto-emoji",
@@ -1833,9 +1862,10 @@
         "effect": {
           "kind": "Evolve"
         }
-      }
+      },
+      "id": "pet_caterpillar"
     },
-    {
+    "pet_camel": {
       "name": "Camel",
       "image": {
         "source": "noto-emoji",
@@ -1897,9 +1927,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_camel"
     },
-    {
+    "pet_hatching_chick": {
       "name": "Hatching Chick",
       "image": {
         "source": "noto-emoji",
@@ -1959,9 +1990,10 @@
           },
           "amount": 1
         }
-      }
+      },
+      "id": "pet_hatching_chick"
     },
-    {
+    "pet_giraffe": {
       "name": "Giraffe",
       "image": {
         "source": "twemoji",
@@ -2023,9 +2055,10 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_giraffe"
     },
-    {
+    "pet_kangaroo": {
       "name": "Kangaroo",
       "image": {
         "source": "noto-emoji",
@@ -2087,9 +2120,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_kangaroo"
     },
-    {
+    "pet_owl": {
       "name": "Owl",
       "image": {
         "source": "noto-emoji",
@@ -2151,9 +2185,10 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_owl"
     },
-    {
+    "pet_ox": {
       "name": "Ox",
       "image": {
         "source": "noto-emoji",
@@ -2254,9 +2289,10 @@
             }
           ]
         }
-      }
+      },
+      "id": "pet_ox"
     },
-    {
+    "pet_puppy": {
       "name": "Puppy",
       "image": {
         "source": "noto-emoji",
@@ -2315,9 +2351,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_puppy"
     },
-    {
+    "pet_rabbit": {
       "name": "Rabbit",
       "image": {
         "source": "noto-emoji",
@@ -2374,9 +2411,10 @@
           "attackAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_rabbit"
     },
-    {
+    "pet_sheep": {
       "name": "Sheep",
       "image": {
         "source": "noto-emoji",
@@ -2463,9 +2501,10 @@
           },
           "team": "Friendly"
         }
-      }
+      },
+      "id": "pet_sheep"
     },
-    {
+    "pet_snail": {
       "name": "Snail",
       "image": {
         "source": "noto-emoji",
@@ -2525,9 +2564,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_snail"
     },
-    {
+    "pet_tropical_fish": {
       "name": "Tropical Fish",
       "image": {
         "source": "twemoji",
@@ -2583,9 +2623,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_tropical_fish"
     },
-    {
+    "pet_turtle": {
       "name": "Turtle",
       "image": {
         "source": "noto-emoji",
@@ -2648,9 +2689,10 @@
             "n": 3
           }
         }
-      }
+      },
+      "id": "pet_turtle"
     },
-    {
+    "pet_whale": {
       "name": "Whale",
       "image": {
         "source": "noto-emoji",
@@ -2703,9 +2745,10 @@
             "n": 1
           }
         }
-      }
+      },
+      "id": "pet_whale"
     },
-    {
+    "pet_bison": {
       "name": "Bison",
       "image": {
         "source": "noto-emoji",
@@ -2765,9 +2808,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_bison"
     },
-    {
+    "pet_buffalo": {
       "name": "Buffalo",
       "image": {
         "source": "noto-emoji",
@@ -2826,9 +2870,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_buffalo"
     },
-    {
+    "pet_deer": {
       "name": "Deer",
       "image": {
         "source": "noto-emoji",
@@ -2924,9 +2969,10 @@
           },
           "team": "Friendly"
         }
-      }
+      },
+      "id": "pet_deer"
     },
-    {
+    "pet_dolphin": {
       "name": "Dolphin",
       "image": {
         "source": "noto-emoji",
@@ -2979,9 +3025,10 @@
           },
           "amount": 15
         }
-      }
+      },
+      "id": "pet_dolphin"
     },
-    {
+    "pet_hippo": {
       "name": "Hippo",
       "image": {
         "source": "noto-emoji",
@@ -3040,9 +3087,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_hippo"
     },
-    {
+    "pet_llama": {
       "name": "Llama",
       "image": {
         "source": "noto-emoji",
@@ -3101,9 +3149,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_llama"
     },
-    {
+    "pet_lobster": {
       "name": "Lobster",
       "image": {
         "source": "twemoji",
@@ -3162,9 +3211,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_lobster"
     },
-    {
+    "pet_monkey": {
       "name": "Monkey",
       "image": {
         "source": "noto-emoji",
@@ -3223,9 +3273,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_monkey"
     },
-    {
+    "pet_penguin": {
       "name": "Penguin",
       "image": {
         "source": "noto-emoji",
@@ -3284,9 +3335,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_penguin"
     },
-    {
+    "pet_poodle": {
       "name": "Poodle",
       "image": {
         "source": "noto-emoji",
@@ -3345,9 +3397,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_poodle"
     },
-    {
+    "pet_rooster": {
       "name": "Rooster",
       "image": {
         "source": "noto-emoji",
@@ -3434,9 +3487,10 @@
           },
           "team": "Friendly"
         }
-      }
+      },
+      "id": "pet_rooster"
     },
-    {
+    "pet_skunk": {
       "name": "Skunk",
       "image": {
         "source": "noto-emoji",
@@ -3490,9 +3544,10 @@
           },
           "percentage": 100
         }
-      }
+      },
+      "id": "pet_skunk"
     },
-    {
+    "pet_squirrel": {
       "name": "Squirrel",
       "image": {
         "source": "noto-emoji",
@@ -3540,9 +3595,10 @@
           "shop": "All",
           "food": "Any"
         }
-      }
+      },
+      "id": "pet_squirrel"
     },
-    {
+    "pet_worm": {
       "name": "Worm",
       "image": {
         "source": "noto-emoji",
@@ -3602,9 +3658,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_worm"
     },
-    {
+    "pet_chicken": {
       "name": "Chicken",
       "image": {
         "source": "twemoji",
@@ -3666,9 +3723,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_chicken"
     },
-    {
+    "pet_cow": {
       "name": "Cow",
       "image": {
         "source": "noto-emoji",
@@ -3716,9 +3774,10 @@
           "shop": "Food",
           "food": "Milk"
         }
-      }
+      },
+      "id": "pet_cow"
     },
-    {
+    "pet_crocodile": {
       "name": "Crocodile",
       "image": {
         "source": "twemoji",
@@ -3771,9 +3830,10 @@
           },
           "amount": 21
         }
-      }
+      },
+      "id": "pet_crocodile"
     },
-    {
+    "pet_eagle": {
       "name": "Eagle",
       "image": {
         "source": "noto-emoji",
@@ -3820,9 +3880,10 @@
           "tier": 6,
           "level": 3
         }
-      }
+      },
+      "id": "pet_eagle"
     },
-    {
+    "pet_goat": {
       "name": "Goat",
       "image": {
         "source": "noto-emoji",
@@ -3866,9 +3927,10 @@
           "kind": "GainGold",
           "amount": 1
         }
-      }
+      },
+      "id": "pet_goat"
     },
-    {
+    "pet_microbe": {
       "name": "Microbe",
       "image": {
         "source": "noto-emoji",
@@ -3927,9 +3989,10 @@
             "kind": "All"
           }
         }
-      }
+      },
+      "id": "pet_microbe"
     },
-    {
+    "pet_parrot": {
       "name": "Parrot",
       "image": {
         "source": "noto-emoji",
@@ -3994,9 +4057,10 @@
           },
           "level": 3
         }
-      }
+      },
+      "id": "pet_parrot"
     },
-    {
+    "pet_rhino": {
       "name": "Rhino",
       "image": {
         "source": "noto-emoji",
@@ -4050,9 +4114,10 @@
           },
           "amount": 12
         }
-      }
+      },
+      "id": "pet_rhino"
     },
-    {
+    "pet_scorpion": {
       "name": "Scorpion",
       "image": {
         "source": "noto-emoji",
@@ -4067,9 +4132,10 @@
       ],
       "status": {
         "name": "PoisinAttack"
-      }
+      },
+      "id": "pet_scorpion"
     },
-    {
+    "pet_seal": {
       "name": "Seal",
       "image": {
         "source": "noto-emoji",
@@ -4132,9 +4198,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_seal"
     },
-    {
+    "pet_shark": {
       "name": "Shark",
       "image": {
         "source": "noto-emoji",
@@ -4193,9 +4260,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_shark"
     },
-    {
+    "pet_turkey": {
       "name": "Turkey",
       "image": {
         "source": "noto-emoji",
@@ -4254,9 +4322,10 @@
           "healthAmount": 9,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_turkey"
     },
-    {
+    "pet_cat": {
       "name": "Cat",
       "image": {
         "source": "noto-emoji",
@@ -4300,9 +4369,10 @@
           "kind": "FoodMultiplier",
           "amount": 4
         }
-      }
+      },
+      "id": "pet_cat"
     },
-    {
+    "pet_dragon": {
       "name": "Dragon",
       "image": {
         "source": "noto-emoji",
@@ -4362,9 +4432,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_dragon"
     },
-    {
+    "pet_fly": {
       "name": "Fly",
       "image": {
         "source": "noto-emoji",
@@ -4447,9 +4518,10 @@
           },
           "team": "Friendly"
         }
-      }
+      },
+      "id": "pet_fly"
     },
-    {
+    "pet_gorilla": {
       "name": "Gorilla",
       "image": {
         "source": "noto-emoji",
@@ -4509,9 +4581,10 @@
             "kind": "Self"
           }
         }
-      }
+      },
+      "id": "pet_gorilla"
     },
-    {
+    "pet_leopard": {
       "name": "Leopard",
       "image": {
         "source": "fxemoji",
@@ -4575,9 +4648,10 @@
             "attackDamagePercent": 50
           }
         }
-      }
+      },
+      "id": "pet_leopard"
     },
-    {
+    "pet_mammoth": {
       "name": "Mammoth",
       "image": {
         "source": "noto-emoji",
@@ -4637,9 +4711,10 @@
           },
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_mammoth"
     },
-    {
+    "pet_octopus": {
       "name": "Octopus",
       "image": {
         "source": "noto-emoji",
@@ -4707,9 +4782,10 @@
           },
           "amount": 5
         }
-      }
+      },
+      "id": "pet_octopus"
     },
-    {
+    "pet_sauropod": {
       "name": "Sauropod",
       "image": {
         "source": "noto-emoji",
@@ -4753,9 +4829,10 @@
           "kind": "GainGold",
           "amount": 1
         }
-      }
+      },
+      "id": "pet_sauropod"
     },
-    {
+    "pet_snake": {
       "name": "Snake",
       "image": {
         "source": "noto-emoji",
@@ -4814,9 +4891,10 @@
           },
           "amount": 15
         }
-      }
+      },
+      "id": "pet_snake"
     },
-    {
+    "pet_tiger": {
       "name": "Tiger",
       "image": {
         "source": "noto-emoji",
@@ -4869,9 +4947,10 @@
             "kind": "TriggeringEntity"
           }
         }
-      }
+      },
+      "id": "pet_tiger"
     },
-    {
+    "pet_tyrannosaurus": {
       "name": "Tyrannosaurus",
       "image": {
         "source": "noto-emoji",
@@ -4930,9 +5009,10 @@
           "healthAmount": 6,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "pet_tyrannosaurus"
     },
-    {
+    "pet_zombie_cricket": {
       "name": "Zombie Cricket",
       "image": {
         "source": "noto-emoji",
@@ -4944,9 +5024,10 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?"
+      "baseHealth": "?",
+      "id": "pet_zombie_cricket"
     },
-    {
+    "pet_bus": {
       "name": "Bus",
       "image": {
         "source": "noto-emoji",
@@ -4961,9 +5042,10 @@
       "baseHealth": "?",
       "status": {
         "name": "SplashAttack"
-      }
+      },
+      "id": "pet_bus"
     },
-    {
+    "pet_zombie_fly": {
       "name": "Zombie Fly",
       "image": {
         "source": "noto-emoji",
@@ -4974,9 +5056,10 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?"
+      "baseHealth": "?",
+      "id": "pet_zombie_fly"
     },
-    {
+    "pet_dirty_rat": {
       "name": "Dirty Rat",
       "image": {
         "source": "noto-emoji",
@@ -4988,9 +5071,10 @@
       ],
       "tier": "Summoned",
       "baseAttack": 1,
-      "baseHealth": 1
+      "baseHealth": 1,
+      "id": "pet_dirty_rat"
     },
-    {
+    "pet_chick": {
       "name": "Chick",
       "image": {
         "source": "noto-emoji",
@@ -5002,9 +5086,10 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": 1
+      "baseHealth": 1,
+      "id": "pet_chick"
     },
-    {
+    "pet_ram": {
       "name": "Ram",
       "image": {
         "source": "noto-emoji",
@@ -5016,9 +5101,10 @@
       ],
       "tier": "Summoned",
       "baseAttack": "?",
-      "baseHealth": "?"
+      "baseHealth": "?",
+      "id": "pet_ram"
     },
-    {
+    "pet_butterfly": {
       "name": "Butterfly",
       "image": {
         "source": "noto-emoji",
@@ -5030,9 +5116,10 @@
       "baseHealth": 1,
       "packs": [
         "ExpansionPack1"
-      ]
+      ],
+      "id": "pet_butterfly"
     },
-    {
+    "pet_bee": {
       "name": "Bee",
       "image": {
         "source": "noto-emoji",
@@ -5044,11 +5131,12 @@
       ],
       "tier": "Summoned",
       "baseAttack": 1,
-      "baseHealth": 1
+      "baseHealth": 1,
+      "id": "pet_bee"
     }
-  ],
-  "food": [
-    {
+  },
+  "foods": {
+    "food_apple": {
       "name": "Apple",
       "image": {
         "source": "twemoji",
@@ -5074,9 +5162,10 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_apple"
     },
-    {
+    "food_honey": {
       "name": "Honey",
       "image": {
         "source": "twemoji",
@@ -5102,9 +5191,10 @@
             "name": "HoneyBee"
           }
         }
-      }
+      },
+      "id": "food_honey"
     },
-    {
+    "food_cupcake": {
       "name": "Cupcake",
       "image": {
         "source": "twemoji",
@@ -5130,9 +5220,10 @@
           "healthAmount": 3,
           "untilEndOfBattle": true
         }
-      }
+      },
+      "id": "food_cupcake"
     },
-    {
+    "food_meat_bone": {
       "name": "Meat Bone",
       "image": {
         "source": "twemoji",
@@ -5158,9 +5249,10 @@
             "name": "BoneAttack"
           }
         }
-      }
+      },
+      "id": "food_meat_bone"
     },
-    {
+    "food_sleeping_pill": {
       "name": "Sleeping Pill",
       "image": {
         "source": "fxemoji",
@@ -5185,9 +5277,10 @@
             "kind": "PurchaseTarget"
           }
         }
-      }
+      },
+      "id": "food_sleeping_pill"
     },
-    {
+    "food_garlic": {
       "name": "Garlic",
       "image": {
         "source": "twemoji",
@@ -5213,9 +5306,10 @@
             "name": "GarlicArmor"
           }
         }
-      }
+      },
+      "id": "food_garlic"
     },
-    {
+    "food_salad_bowl": {
       "name": "Salad Bowl",
       "image": {
         "source": "twemoji",
@@ -5242,9 +5336,10 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_salad_bowl"
     },
-    {
+    "food_canned_food": {
       "name": "Canned Food",
       "image": {
         "source": "twemoji",
@@ -5271,9 +5366,10 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_canned_food"
     },
-    {
+    "food_pear": {
       "name": "Pear",
       "image": {
         "source": "twemoji",
@@ -5299,9 +5395,10 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_pear"
     },
-    {
+    "food_chili": {
       "name": "Chili",
       "image": {
         "source": "twemoji",
@@ -5327,9 +5424,10 @@
             "name": "SplashAttack"
           }
         }
-      }
+      },
+      "id": "food_chili"
     },
-    {
+    "food_chocolate": {
       "name": "Chocolate",
       "image": {
         "source": "twemoji",
@@ -5353,9 +5451,10 @@
           },
           "amount": 1
         }
-      }
+      },
+      "id": "food_chocolate"
     },
-    {
+    "food_sushi": {
       "name": "Sushi",
       "image": {
         "source": "twemoji",
@@ -5382,9 +5481,10 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_sushi"
     },
-    {
+    "food_melon": {
       "name": "Melon",
       "image": {
         "source": "twemoji",
@@ -5410,9 +5510,10 @@
             "name": "MelonArmor"
           }
         }
-      }
+      },
+      "id": "food_melon"
     },
-    {
+    "food_mushroom": {
       "name": "Mushroom",
       "image": {
         "source": "twemoji",
@@ -5438,9 +5539,10 @@
             "name": "ExtraLife"
           }
         }
-      }
+      },
+      "id": "food_mushroom"
     },
-    {
+    "food_pizza": {
       "name": "Pizza",
       "image": {
         "source": "twemoji",
@@ -5467,9 +5569,10 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_pizza"
     },
-    {
+    "food_steak": {
       "name": "Steak",
       "image": {
         "source": "twemoji",
@@ -5495,9 +5598,10 @@
             "name": "SteakAttack"
           }
         }
-      }
+      },
+      "id": "food_steak"
     },
-    {
+    "food_milk": {
       "name": "Milk",
       "notes": "This is free!",
       "image": {
@@ -5524,7 +5628,222 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "id": "food_milk"
     }
-  ]
+  },
+  "statuses": {
+    "status_weak": {
+      "name": "Weak",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🦠"
+      },
+      "ability": {
+        "description": "Take 5 extra damage.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenDamaged",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": 5,
+          "appliesOnce": false
+        }
+      },
+      "id": "status_weak"
+    },
+    "status_coconut_shield": {
+      "name": "Coconut Shield",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥥"
+      },
+      "ability": {
+        "description": "Ignore damage once.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenDamaged",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": null,
+          "appliesOnce": true
+        }
+      },
+      "id": "status_coconut_shield"
+    },
+    "status_honey_bee": {
+      "name": "Honey Bee",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍯"
+      },
+      "ability": {
+        "description": "Ignore damage once.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Faint",
+        "effect": {
+          "kind": "SummonPet",
+          "pet": {
+            "name": "Bee",
+            "image": {
+              "source": "noto-emoji",
+              "unicodeCodePoint": "🐝"
+            },
+            "packs": [
+              "StandardPack",
+              "ExpansionPack1"
+            ],
+            "tier": "Summoned",
+            "baseAttack": 1,
+            "baseHealth": 1
+          },
+          "team": "Friendly"
+        }
+      },
+      "id": "status_honey_bee"
+    },
+    "status_bone_attack": {
+      "name": "Bone Attack",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍖"
+      },
+      "ability": {
+        "description": "Attack for 5 more damage.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenAttacking",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": 5,
+          "appliesOnce": false
+        }
+      },
+      "id": "status_bone_attack"
+    },
+    "status_garlic_armor": {
+      "name": "Garlic Armor",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🧄"
+      },
+      "ability": {
+        "description": "Take 2 less damage.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenDamaged",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": -2,
+          "appliesOnce": false
+        }
+      },
+      "id": "status_garlic_armor"
+    },
+    "status_splash_attack": {
+      "name": "Splash Attack",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🌶"
+      },
+      "ability": {
+        "description": "Attack second enemy for 5 damage.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenAttacking",
+        "effect": {
+          "kind": "SplashDamage",
+          "amount": 5
+        }
+      },
+      "id": "status_splash_attack"
+    },
+    "status_melon_armor": {
+      "name": "Melon Armor",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍈"
+      },
+      "ability": {
+        "description": "Take 20 damage less, once.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenDamaged",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": -20,
+          "appliesOnce": true
+        }
+      },
+      "id": "status_melon_armor"
+    },
+    "status_extra_life": {
+      "name": "Extra Life",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🍄"
+      },
+      "ability": {
+        "description": "Come back as a 1/1 after fainting",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "Faint",
+        "effect": {
+          "kind": "RespawnPet",
+          "baseAttack": 1,
+          "baseHealth": 1
+        }
+      },
+      "id": "status_extra_life"
+    },
+    "status_steak_attack": {
+      "name": "Steak Attack",
+      "image": {
+        "source": "twemoji",
+        "unicodeCodePoint": "🥩"
+      },
+      "ability": {
+        "description": "Attack for 20 more damage, once.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenAttacking",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": 20,
+          "appliesOnce": true
+        }
+      },
+      "id": "status_steak_attack"
+    },
+    "status_poison_attack": {
+      "name": "Poison Attack",
+      "image": {
+        "source": "noto-emoji",
+        "unicodeCodePoint": "🥜"
+      },
+      "ability": {
+        "description": "Knock out any animal hit by this.",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "trigger": "WhenAttacking",
+        "effect": {
+          "kind": "ModifyDamage",
+          "damageModifier": null,
+          "appliesOnce": false
+        }
+      },
+      "id": "status_poison_attack"
+    }
+  }
 }

@@ -1,10 +1,11 @@
 import * as fs from "fs";
 import * as path from "path";
+import { Database, serialiseDatabase } from "../../database";
 
-export function writeApi(outputDir: string, pets: any, food: any) {
+export function writeApi(outputDir: string, database: Database) {
   const output = path.join(outputDir, "api.json");
 
-  fs.writeFileSync(output, JSON.stringify({ pets, food }, null, 2), {
+  fs.writeFileSync(output, serialiseDatabase(database), {
     encoding: "utf-8",
   });
 

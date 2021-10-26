@@ -8,6 +8,7 @@ module.exports = {
       gridTemplateColumns: {
         list: "repeat(auto-fill, minmax(250px, 1fr))",
         tiles: "repeat(auto-fill, minmax(175px, 1fr))",
+        keyvalue: "10rem auto",
       },
       backgroundImage: {
         "bgimage-1-1": "url('/assets/battleback1-1.png')",

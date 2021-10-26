@@ -1,63 +1,57 @@
 import React from "react";
-import { Pet as PetType, Ability as AbilityType } from "../../database";
-import { sanitiseName } from "../../utils";
+import { Pet as PetType, WithId } from "../../database";
+import { Polaroid } from "./Polaroid";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
+import { StatsGrid, StatsRow, StatsSummary } from "./StatsGrid";
+import { StatDisplay } from "./StatDisplay";
+import { AbilityDescription } from "./AbilityDescription";
 
-export function Pet(props: { pet: PetType }) {
+export function Pet(props: { pet: WithId<PetType> }) {
   return (
-    <div className="bg-gray-900 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5">
-      <div className="p-3 flex flex-row justify-between">
-        <div className="text-xl font-medium">{props.pet.name}</div>
-        <div className="">
-          ⚔️ {props.pet.baseAttack} / 💖 {props.pet.baseHealth}
+    <div className="m-3">
+      <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">
+        <div className="flex-grow max-w-xs w-80">
+          <Polaroid
+            id={props.pet.id}
+            name={props.pet.name}
+            background="bgimage-1"
+          />
         </div>
+        <StatsGrid>
+          <StatsSummary>Stats</StatsSummary>
+          <StatsRow text="Name">{props.pet.name}</StatsRow>
+          <StatsRow text="Attack">
+            <StatDisplay stat={props.pet.baseAttack} emoji="⚔️" />
+          </StatsRow>
+          <StatsRow text="Health">
+            <StatDisplay stat={props.pet.baseHealth} emoji="💖" />
+          </StatsRow>
+          <StatsRow text="Packs">
+            {(props.pet.packs || []).map((pack, index) => (
+              <Pack pack={pack} key={index} colored={true} condensed={false} />
+            ))}
+          </StatsRow>
+          <StatsRow text="Notes" className="italic">
+            {props.pet.notes}
+          </StatsRow>
+          <StatsSummary>Abilities</StatsSummary>
+          <StatsRow text="Level 1">
+            <AbilityDescription ability={props.pet.level1Ability} />
+          </StatsRow>
+          <StatsRow text="Level 2">
+            <AbilityDescription ability={props.pet.level2Ability} />
+          </StatsRow>
+          <StatsRow text="Level 3">
+            <AbilityDescription ability={props.pet.level3Ability} />
+          </StatsRow>
+          {props.pet.status && (
+            <StatsRow text="Status">
+              <Status status={props.pet.status} />
+            </StatsRow>
+          )}
+        </StatsGrid>
       </div>
-      <img
-        className="mx-20"
-        src={`/assets/${sanitiseName(props.pet.name)}.svg`}
-      />
-      <div className="p-3">
-        {(props.pet.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} colored={true} condensed={false} />
-        ))}
-      </div>
-      {props.pet.notes ? (
-        <div className="p-3 border-t border-gray-700 text-gray-200 italic">
-          {props.pet.notes}
-        </div>
-      ) : null}
-      {props.pet.level1Ability ? (
-        <Ability level={1} ability={props.pet.level1Ability} />
-      ) : null}
-      {props.pet.level2Ability ? (
-        <Ability level={2} ability={props.pet.level2Ability} />
-      ) : null}
-      {props.pet.level3Ability ? (
-        <Ability level={3} ability={props.pet.level3Ability} />
-      ) : null}
-      {!!props.pet.status ? <Status status={props.pet.status} /> : null}
     </div>
   );
-}
-
-function Ability(props: { level: number; ability: AbilityType }) {
-  return (
-    <div className="p-3 border-t border-gray-700 text-gray-200">
-      {LevelLabel(props.level)} {props.ability.description}
-    </div>
-  );
-}
-
-function LevelLabel(level: number) {
-  switch (level) {
-    case 1:
-      return "1️⃣";
-    case 2:
-      return "2️⃣";
-    case 3:
-      return "3️⃣";
-    default:
-      return "❗";
-  }
 }

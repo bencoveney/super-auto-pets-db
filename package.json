@@ -5,11 +5,11 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "typescript": "tsc",
-    "ssr": "node ./src/website/ssr/index.js",
+    "ssr": "ts-node ./src/website/ssr/index.ts",
+    "typecheck": "tsc -noEmit",
     "live": "esbuild ./src/website/live/index.tsx --bundle --outfile=docs\\bundle.js",
     "css": "tailwindcss -o docs/tailwind.css",
-    "start": "npm run typescript && npm run ssr && npm run live && npm run css",
+    "start": "npm run typecheck && npm run ssr && npm run live && npm run css",
     "dev": "serve docs"
   },
   "repository": {
@@ -44,6 +44,7 @@
     "react-router-dom": "^5.3.0",
     "serve": "^12.0.1",
     "tailwindcss": "^2.2.16",
+    "ts-node": "^10.4.0",
     "typescript": "^4.4.3"
   }
 }

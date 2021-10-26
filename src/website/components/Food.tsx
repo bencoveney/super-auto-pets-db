@@ -1,43 +1,46 @@
 import React from "react";
-import { Food as FoodType, Ability as AbilityType } from "../../database";
-import { sanitiseName } from "../../utils";
+import { Food as FoodType, ApplyStatusEffect, WithId } from "../../database";
 import { Pack } from "./Pack";
 import { Status } from "./Status";
+import { Polaroid } from "./Polaroid";
+import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
+import { AbilityDescription } from "./AbilityDescription";
 
-export function Food(props: { food: FoodType }) {
+export function Food(props: { food: WithId<FoodType> }) {
   return (
-    <div className="bg-gray-700 rounded-xl shadow-md flex flex-col items-stretch justify-start max-w-sm mx-auto my-5">
-      <div className="p-3 flex flex-row justify-between">
-        <div className="text-xl font-medium">{props.food.name}</div>
-      </div>
-      <img
-        className="mx-20"
-        src={`/assets/${sanitiseName(props.food.name)}.svg`}
-      />
-      <div className="p-3">
-        {(props.food.packs || []).map((pack, index) => (
-          <Pack pack={pack} key={index} colored={true} condensed={false} />
-        ))}
-      </div>
-      {props.food.notes ? (
-        <div className="p-3 border-t border-gray-500 text-gray-200 italic">
-          {props.food.notes}
+    <div className="m-3">
+      <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center">
+        <div className="flex-grow max-w-xs w-80">
+          <Polaroid
+            id={props.food.id}
+            name={props.food.name}
+            background="bgimage-4"
+          />
         </div>
-      ) : null}
-      {props.food.ability ? <Ability ability={props.food.ability} /> : null}
-    </div>
-  );
-}
-
-function Ability(props: { ability: AbilityType }) {
-  return (
-    <>
-      <div className="p-3 border-t border-gray-500 text-gray-200">
-        {props.ability.description}
+        <StatsGrid>
+          <StatsSummary>Stats</StatsSummary>
+          <StatsRow text="Name">{props.food.name}</StatsRow>
+          <StatsRow text="Packs">
+            {(props.food.packs || []).map((pack, index) => (
+              <Pack pack={pack} key={index} colored={true} condensed={false} />
+            ))}
+          </StatsRow>
+          <StatsRow text="Notes" className="italic">
+            {props.food.notes}
+          </StatsRow>
+          <StatsSummary>Abilities</StatsSummary>
+          <StatsRow text="Effect">
+            <AbilityDescription ability={props.food.ability} />
+          </StatsRow>
+          {(props.food.ability.effect as ApplyStatusEffect).status && (
+            <StatsRow text="Status">
+              <Status
+                status={(props.food.ability.effect as ApplyStatusEffect).status}
+              />
+            </StatsRow>
+          )}
+        </StatsGrid>
       </div>
-      {props.ability.effect.kind == "ApplyStatus" ? (
-        <Status status={props.ability.effect.status} />
-      ) : null}
-    </>
+    </div>
   );
 }

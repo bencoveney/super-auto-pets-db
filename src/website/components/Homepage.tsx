@@ -5,6 +5,8 @@ import {
   Food,
   Tier as TierType,
   Filterable,
+  Database,
+  enumerateTable,
 } from "../../database";
 import { Blurb } from "./Blurb";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -14,16 +16,24 @@ import { Filters, useFilters } from "./Filters";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
-export function Homepage(props: { pets: Pet[]; food: Food[] }) {
+export function Homepage(props: { database: Database }) {
   const [filters, setName, togglePack] = useFilters();
 
-  let filteredPets = applyFilter(props.pets, filters.packs, filters.name);
-  let filteredFood = applyFilter(props.food, filters.packs, filters.name);
+  let filteredPets = applyFilter(
+    enumerateTable(props.database.pets),
+    filters.packs,
+    filters.name
+  );
+  let filteredFoods = applyFilter(
+    enumerateTable(props.database.foods),
+    filters.packs,
+    filters.name
+  );
   const tiers = ([1, 2, 3, 4, 5, 6, "Summoned"] as TierType[])
     .map((tier) => ({
       tier: tier,
       pets: filteredPets.filter((pet) => pet.tier == tier),
-      food: filteredFood.filter((food) => food.tier == tier),
+      food: filteredFoods.filter((food) => food.tier == tier),
     }))
     .filter((tier) => tier.pets.length > 0 || tier.food.length > 0);
 
