@@ -6,8 +6,8 @@ export const bus: Pet = {
   ...getPetIdentifiers("Bus"),
   image: {
     source: "noto-emoji",
-    // TODO: Incorrect. Not sure where the right bus should come from
-    unicodeCodePoint: "\u{1F68D}",
+    commit: "f2a4f72bffe0212c72949a22698be235269bfab5",
+    unicodeCodePoint: "\u{1F68C}",
   },
   packs: ["StandardPack", "ExpansionPack1"],
   tier: "Summoned",

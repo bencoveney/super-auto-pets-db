@@ -23,6 +23,7 @@ export const skunk: Pet = {
   ...getPetIdentifiers("Skunk"),
   image: {
     source: "noto-emoji",
+    commit: "e022fd6573782431ac9a65b520376b57511c31cd",
     unicodeCodePoint: "\u{1F9A8}",
   },
   tier: 4,

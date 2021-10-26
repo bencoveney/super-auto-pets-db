@@ -31,6 +31,7 @@ export const cat: Pet = {
   ...getPetIdentifiers("Cat"),
   image: {
     source: "noto-emoji",
+    commit: "e022fd6573782431ac9a65b520376b57511c31cd",
     unicodeCodePoint: "\u{1F408}\u{200D}\u{2B1B}",
   },
   tier: 6,

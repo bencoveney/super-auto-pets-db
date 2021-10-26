@@ -21455,6 +21455,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_ant",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F41C}"
       },
       tier: 1,
@@ -21521,6 +21522,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_beaver",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9AB}"
       },
       tier: 1,
@@ -21584,6 +21586,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_beetle",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1FAB2}"
       },
       tier: 1,
@@ -21646,6 +21649,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_bluebird",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F426}"
       },
       tier: 1,
@@ -21705,6 +21709,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_cricket",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F997}"
       },
       tier: 1,
@@ -21762,6 +21767,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_duck",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F986}"
       },
       tier: 1,
@@ -21827,6 +21833,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_fish",
       image: {
         source: "fxemoji",
+        commit: "270af343bee346d8221f87806d2b1eee0438431a",
         name: "fish",
         unicodeCodePoint: "\u{1F41F}"
       },
@@ -21875,6 +21882,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_horse",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F40E}"
       },
       tier: 1,
@@ -21934,6 +21942,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_ladybug",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F41E}"
       },
       tier: 1,
@@ -21996,6 +22005,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_mosquito",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F99F}"
       },
       tier: 1,
@@ -22056,6 +22066,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_otter",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A6}"
       },
       tier: 1,
@@ -22121,6 +22132,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_pig",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F416}"
       },
       tier: 1,
@@ -22170,6 +22182,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       notes: "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A5}"
       },
       tier: 1,
@@ -22186,6 +22199,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_bat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F987}"
       },
       tier: 2,
@@ -22245,6 +22259,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_crab",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F980}"
       },
       tier: 2,
@@ -22316,6 +22331,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dodo",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A4}"
       },
       tier: 2,
@@ -22387,6 +22403,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dog",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F415}"
       },
       tier: 2,
@@ -22486,6 +22503,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dromedary",
       image: {
         source: "noto-emoji",
+        commit: "f2a4f72bffe0212c72949a22698be235269bfab5",
         unicodeCodePoint: "\u{1F42A}"
       },
       tier: 2,
@@ -22551,6 +22569,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_elephant",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F418}"
       },
       tier: 2,
@@ -22610,6 +22629,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_flamingo",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A9}"
       },
       tier: 2,
@@ -22676,6 +22696,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_hedgehog",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F994}"
       },
       tier: 2,
@@ -22733,6 +22754,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_peacock",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F99A}"
       },
       tier: 2,
@@ -22793,6 +22815,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_rat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F400}"
       },
       tier: 2,
@@ -22844,6 +22867,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_shrimp",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F990}"
       },
       tier: 2,
@@ -22907,6 +22931,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_spider",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F577}"
       },
       tier: 2,
@@ -22961,6 +22986,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_swan",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F9A2}"
       },
       tier: 2,
@@ -23009,6 +23035,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_tabby_cat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F408}"
       },
       tier: 2,
@@ -23068,6 +23095,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_badger",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A1}"
       },
       tier: 3,
@@ -23130,6 +23158,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_blowfish",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F421}"
       },
       tier: 3,
@@ -23190,6 +23219,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_caterpillar",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F41B}"
       },
       tier: 3,
@@ -23243,6 +23273,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_camel",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F42B}"
       },
       tier: 3,
@@ -23308,6 +23339,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_hatching_chick",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F423}"
       },
       tier: 3,
@@ -23371,6 +23403,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_giraffe",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F992}"
       },
       tier: 3,
@@ -23436,6 +23469,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_kangaroo",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F998}"
       },
       tier: 3,
@@ -23501,6 +23535,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_owl",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F989}"
       },
       tier: 3,
@@ -23566,6 +23601,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_ox",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F402}"
       },
       tier: 3,
@@ -23664,6 +23700,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_puppy",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F415}"
       },
       tier: 3,
@@ -23726,6 +23763,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_rabbit",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F407}"
       },
       tier: 3,
@@ -23786,6 +23824,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_sheep",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F411}"
       },
       tier: 3,
@@ -23843,6 +23882,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_snail",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F40C}"
       },
       tier: 3,
@@ -23906,6 +23946,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_tropical_fish",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F420}"
       },
       tier: 3,
@@ -23965,6 +24006,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_turtle",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F422}"
       },
       tier: 3,
@@ -24025,6 +24067,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_whale",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F40B}"
       },
       tier: 3,
@@ -24081,6 +24124,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_bison",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9AC}"
       },
       tier: 4,
@@ -24144,6 +24188,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_buffalo",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F403}"
       },
       tier: 4,
@@ -24206,6 +24251,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_deer",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F98C}"
       },
       tier: 4,
@@ -24263,6 +24309,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dolphin",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F42C}"
       },
       tier: 4,
@@ -24319,6 +24366,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_hippo",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F99B}"
       },
       tier: 4,
@@ -24381,6 +24429,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_llama",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F999}"
       },
       tier: 4,
@@ -24443,6 +24492,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_lobster",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F99E}"
       },
       tier: 4,
@@ -24505,6 +24555,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_monkey",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F412}"
       },
       tier: 4,
@@ -24567,6 +24618,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_penguin",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F427}"
       },
       tier: 4,
@@ -24629,6 +24681,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_poodle",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F429}"
       },
       tier: 4,
@@ -24691,6 +24744,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_rooster",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F413}"
       },
       tier: 4,
@@ -24742,6 +24796,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_skunk",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A8}"
       },
       tier: 4,
@@ -24799,6 +24854,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_squirrel",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F43F}"
       },
       tier: 4,
@@ -24850,6 +24906,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_worm",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1FAB1}"
       },
       tier: 4,
@@ -24913,6 +24970,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_chicken",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F413}"
       },
       tier: 5,
@@ -24978,6 +25036,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_cow",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F404}"
       },
       tier: 5,
@@ -25029,6 +25088,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_crocodile",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F40A}"
       },
       tier: 5,
@@ -25085,6 +25145,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_eagle",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F985}"
       },
       tier: 5,
@@ -25135,6 +25196,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_goat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F410}"
       },
       tier: 5,
@@ -25182,6 +25244,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_microbe",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A0}"
       },
       tier: 5,
@@ -25238,6 +25301,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_parrot",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F99C}"
       },
       tier: 5,
@@ -25306,6 +25370,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_rhino",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F98F}"
       },
       tier: 5,
@@ -25363,6 +25428,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_scorpion",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F982}"
       },
       tier: 5,
@@ -25379,6 +25445,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_seal",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9AD}"
       },
       tier: 5,
@@ -25445,6 +25512,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_shark",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F988}"
       },
       tier: 5,
@@ -25507,6 +25575,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_turkey",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F983}"
       },
       tier: 5,
@@ -25569,6 +25638,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_cat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F408}\u200D\u2B1B"
       },
       tier: 6,
@@ -25616,6 +25686,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dragon",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F409}"
       },
       tier: 6,
@@ -25679,6 +25750,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_fly",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1FAB0}"
       },
       tier: 6,
@@ -25735,6 +25807,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_gorilla",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F98D}"
       },
       tier: 6,
@@ -25792,6 +25865,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_leopard",
       image: {
         source: "fxemoji",
+        commit: "270af343bee346d8221f87806d2b1eee0438431a",
         name: "leopardside",
         unicodeCodePoint: "\u{1F406}"
       },
@@ -25859,6 +25933,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_mammoth",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A3}"
       },
       tier: 6,
@@ -25922,6 +25997,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_octopus",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F419}"
       },
       tier: 6,
@@ -25993,6 +26069,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_sauropod",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F995}"
       },
       tier: 6,
@@ -26040,6 +26117,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_snake",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F40D}"
       },
       tier: 6,
@@ -26102,6 +26180,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_tiger",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F405}"
       },
       tier: 6,
@@ -26158,6 +26237,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_tyrannosaurus",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F996}"
       },
       tier: 6,
@@ -26220,6 +26300,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_zombie_cricket",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F997}"
       },
       packs: [
@@ -26235,7 +26316,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_bus",
       image: {
         source: "noto-emoji",
-        unicodeCodePoint: "\u{1F68D}"
+        commit: "f2a4f72bffe0212c72949a22698be235269bfab5",
+        unicodeCodePoint: "\u{1F68C}"
       },
       packs: [
         "StandardPack",
@@ -26251,6 +26333,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_zombie_fly",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1FAB0}"
       },
       packs: [
@@ -26265,6 +26348,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_dirty_rat",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F400}"
       },
       packs: [
@@ -26280,6 +26364,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_chick",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F424}"
       },
       packs: [
@@ -26295,6 +26380,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_ram",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F40F}"
       },
       packs: [
@@ -26310,6 +26396,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_butterfly",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F98B}"
       },
       notes: "Summoned: Copy Attack and Health from most healthy friend.",
@@ -26325,6 +26412,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "pet_bee",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F41D}"
       },
       packs: [
@@ -26342,6 +26430,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_apple",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F34E}"
       },
       tier: 1,
@@ -26371,6 +26460,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_honey",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F36F}"
       },
       tier: 1,
@@ -26398,6 +26488,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_cupcake",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F9C1}"
       },
       tier: 2,
@@ -26427,6 +26518,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_meat_bone",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F356}"
       },
       tier: 2,
@@ -26454,6 +26546,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_sleeping_pill",
       image: {
         source: "fxemoji",
+        commit: "270af343bee346d8221f87806d2b1eee0438431a",
         unicodeCodePoint: "\u{1F48A}",
         name: "pill"
       },
@@ -26482,6 +26575,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_garlic",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F9C4}"
       },
       tier: 3,
@@ -26509,6 +26603,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_salad_bowl",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F957}"
       },
       tier: 3,
@@ -26539,6 +26634,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_canned_food",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F96B}"
       },
       tier: 4,
@@ -26569,6 +26665,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_pear",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F350}"
       },
       tier: 4,
@@ -26598,6 +26695,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_chili",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F336}"
       },
       tier: 5,
@@ -26625,6 +26723,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_chocolate",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F36B}"
       },
       tier: 5,
@@ -26652,6 +26751,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_sushi",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F363}"
       },
       tier: 5,
@@ -26682,6 +26782,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_melon",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F348}"
       },
       tier: 6,
@@ -26709,6 +26810,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_mushroom",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F344}"
       },
       tier: 6,
@@ -26736,6 +26838,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_pizza",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F355}"
       },
       tier: 6,
@@ -26766,6 +26869,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "food_steak",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F969}"
       },
       tier: 6,
@@ -26794,6 +26898,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       notes: "This is free!",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F95B}"
       },
       tier: "Summoned",
@@ -26825,6 +26930,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_weak",
       image: {
         source: "noto-emoji",
+        commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F9A0}"
       },
       ability: {
@@ -26845,6 +26951,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_coconut_shield",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F965}"
       },
       ability: {
@@ -26865,6 +26972,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_honey_bee",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F36F}"
       },
       ability: {
@@ -26885,6 +26993,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_bone_attack",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F356}"
       },
       ability: {
@@ -26905,6 +27014,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_garlic_armor",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F9C4}"
       },
       ability: {
@@ -26925,6 +27035,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_splash_attack",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F336}"
       },
       ability: {
@@ -26944,6 +27055,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_melon_armor",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F348}"
       },
       ability: {
@@ -26964,6 +27076,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_extra_life",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F344}"
       },
       ability: {
@@ -26984,6 +27097,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_steak_attack",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F969}"
       },
       ability: {
@@ -27004,6 +27118,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       id: "status_poison_attack",
       image: {
         source: "twemoji",
+        commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         unicodeCodePoint: "\u{1F95C}"
       },
       ability: {

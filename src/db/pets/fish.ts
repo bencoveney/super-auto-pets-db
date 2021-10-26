@@ -24,6 +24,7 @@ export const fish: Pet = {
   ...getPetIdentifiers("Fish"),
   image: {
     source: "fxemoji",
+    commit: "270af343bee346d8221f87806d2b1eee0438431a",
     name: "fish",
     unicodeCodePoint: "\u{1F41F}",
   },

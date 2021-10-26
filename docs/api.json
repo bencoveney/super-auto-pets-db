@@ -5,6 +5,7 @@
       "id": "pet_ant",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐜"
       },
       "tier": 1,
@@ -71,6 +72,7 @@
       "id": "pet_beaver",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦫"
       },
       "tier": 1,
@@ -134,6 +136,7 @@
       "id": "pet_beetle",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🪲"
       },
       "tier": 1,
@@ -196,6 +199,7 @@
       "id": "pet_bluebird",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐦"
       },
       "tier": 1,
@@ -255,6 +259,7 @@
       "id": "pet_cricket",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦗"
       },
       "tier": 1,
@@ -312,6 +317,7 @@
       "id": "pet_duck",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦆"
       },
       "tier": 1,
@@ -377,6 +383,7 @@
       "id": "pet_fish",
       "image": {
         "source": "fxemoji",
+        "commit": "270af343bee346d8221f87806d2b1eee0438431a",
         "name": "fish",
         "unicodeCodePoint": "🐟"
       },
@@ -425,6 +432,7 @@
       "id": "pet_horse",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐎"
       },
       "tier": 1,
@@ -484,6 +492,7 @@
       "id": "pet_ladybug",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐞"
       },
       "tier": 1,
@@ -546,6 +555,7 @@
       "id": "pet_mosquito",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦟"
       },
       "tier": 1,
@@ -606,6 +616,7 @@
       "id": "pet_otter",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦦"
       },
       "tier": 1,
@@ -671,6 +682,7 @@
       "id": "pet_pig",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐖"
       },
       "tier": 1,
@@ -720,6 +732,7 @@
       "notes": "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦥"
       },
       "tier": 1,
@@ -736,6 +749,7 @@
       "id": "pet_bat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦇"
       },
       "tier": 2,
@@ -795,6 +809,7 @@
       "id": "pet_crab",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦀"
       },
       "tier": 2,
@@ -866,6 +881,7 @@
       "id": "pet_dodo",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦤"
       },
       "tier": 2,
@@ -937,6 +953,7 @@
       "id": "pet_dog",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🐕"
       },
       "tier": 2,
@@ -1036,6 +1053,7 @@
       "id": "pet_dromedary",
       "image": {
         "source": "noto-emoji",
+        "commit": "f2a4f72bffe0212c72949a22698be235269bfab5",
         "unicodeCodePoint": "🐪"
       },
       "tier": 2,
@@ -1101,6 +1119,7 @@
       "id": "pet_elephant",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐘"
       },
       "tier": 2,
@@ -1160,6 +1179,7 @@
       "id": "pet_flamingo",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦩"
       },
       "tier": 2,
@@ -1226,6 +1246,7 @@
       "id": "pet_hedgehog",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦔"
       },
       "tier": 2,
@@ -1283,6 +1304,7 @@
       "id": "pet_peacock",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦚"
       },
       "tier": 2,
@@ -1343,6 +1365,7 @@
       "id": "pet_rat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐀"
       },
       "tier": 2,
@@ -1394,6 +1417,7 @@
       "id": "pet_shrimp",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦐"
       },
       "tier": 2,
@@ -1457,6 +1481,7 @@
       "id": "pet_spider",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🕷"
       },
       "tier": 2,
@@ -1511,6 +1536,7 @@
       "id": "pet_swan",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🦢"
       },
       "tier": 2,
@@ -1559,6 +1585,7 @@
       "id": "pet_tabby_cat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐈"
       },
       "tier": 2,
@@ -1618,6 +1645,7 @@
       "id": "pet_badger",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦡"
       },
       "tier": 3,
@@ -1680,6 +1708,7 @@
       "id": "pet_blowfish",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐡"
       },
       "tier": 3,
@@ -1740,6 +1769,7 @@
       "id": "pet_caterpillar",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐛"
       },
       "tier": 3,
@@ -1793,6 +1823,7 @@
       "id": "pet_camel",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐫"
       },
       "tier": 3,
@@ -1858,6 +1889,7 @@
       "id": "pet_hatching_chick",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐣"
       },
       "tier": 3,
@@ -1921,6 +1953,7 @@
       "id": "pet_giraffe",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🦒"
       },
       "tier": 3,
@@ -1986,6 +2019,7 @@
       "id": "pet_kangaroo",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦘"
       },
       "tier": 3,
@@ -2051,6 +2085,7 @@
       "id": "pet_owl",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦉"
       },
       "tier": 3,
@@ -2116,6 +2151,7 @@
       "id": "pet_ox",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐂"
       },
       "tier": 3,
@@ -2214,6 +2250,7 @@
       "id": "pet_puppy",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐕"
       },
       "tier": 3,
@@ -2276,6 +2313,7 @@
       "id": "pet_rabbit",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐇"
       },
       "tier": 3,
@@ -2336,6 +2374,7 @@
       "id": "pet_sheep",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐑"
       },
       "tier": 3,
@@ -2393,6 +2432,7 @@
       "id": "pet_snail",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐌"
       },
       "tier": 3,
@@ -2456,6 +2496,7 @@
       "id": "pet_tropical_fish",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🐠"
       },
       "tier": 3,
@@ -2515,6 +2556,7 @@
       "id": "pet_turtle",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐢"
       },
       "tier": 3,
@@ -2575,6 +2617,7 @@
       "id": "pet_whale",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐋"
       },
       "tier": 3,
@@ -2631,6 +2674,7 @@
       "id": "pet_bison",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦬"
       },
       "tier": 4,
@@ -2694,6 +2738,7 @@
       "id": "pet_buffalo",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐃"
       },
       "tier": 4,
@@ -2756,6 +2801,7 @@
       "id": "pet_deer",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦌"
       },
       "tier": 4,
@@ -2813,6 +2859,7 @@
       "id": "pet_dolphin",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐬"
       },
       "tier": 4,
@@ -2869,6 +2916,7 @@
       "id": "pet_hippo",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦛"
       },
       "tier": 4,
@@ -2931,6 +2979,7 @@
       "id": "pet_llama",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦙"
       },
       "tier": 4,
@@ -2993,6 +3042,7 @@
       "id": "pet_lobster",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🦞"
       },
       "tier": 4,
@@ -3055,6 +3105,7 @@
       "id": "pet_monkey",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐒"
       },
       "tier": 4,
@@ -3117,6 +3168,7 @@
       "id": "pet_penguin",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐧"
       },
       "tier": 4,
@@ -3179,6 +3231,7 @@
       "id": "pet_poodle",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐩"
       },
       "tier": 4,
@@ -3241,6 +3294,7 @@
       "id": "pet_rooster",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐓"
       },
       "tier": 4,
@@ -3292,6 +3346,7 @@
       "id": "pet_skunk",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦨"
       },
       "tier": 4,
@@ -3349,6 +3404,7 @@
       "id": "pet_squirrel",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐿"
       },
       "tier": 4,
@@ -3400,6 +3456,7 @@
       "id": "pet_worm",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🪱"
       },
       "tier": 4,
@@ -3463,6 +3520,7 @@
       "id": "pet_chicken",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🐓"
       },
       "tier": 5,
@@ -3528,6 +3586,7 @@
       "id": "pet_cow",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐄"
       },
       "tier": 5,
@@ -3579,6 +3638,7 @@
       "id": "pet_crocodile",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🐊"
       },
       "tier": 5,
@@ -3635,6 +3695,7 @@
       "id": "pet_eagle",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦅"
       },
       "tier": 5,
@@ -3685,6 +3746,7 @@
       "id": "pet_goat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐐"
       },
       "tier": 5,
@@ -3732,6 +3794,7 @@
       "id": "pet_microbe",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦠"
       },
       "tier": 5,
@@ -3788,6 +3851,7 @@
       "id": "pet_parrot",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦜"
       },
       "tier": 5,
@@ -3856,6 +3920,7 @@
       "id": "pet_rhino",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦏"
       },
       "tier": 5,
@@ -3913,6 +3978,7 @@
       "id": "pet_scorpion",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦂"
       },
       "tier": 5,
@@ -3929,6 +3995,7 @@
       "id": "pet_seal",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦭"
       },
       "tier": 5,
@@ -3995,6 +4062,7 @@
       "id": "pet_shark",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦈"
       },
       "tier": 5,
@@ -4057,6 +4125,7 @@
       "id": "pet_turkey",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦃"
       },
       "tier": 5,
@@ -4119,6 +4188,7 @@
       "id": "pet_cat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐈‍⬛"
       },
       "tier": 6,
@@ -4166,6 +4236,7 @@
       "id": "pet_dragon",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐉"
       },
       "tier": 6,
@@ -4229,6 +4300,7 @@
       "id": "pet_fly",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🪰"
       },
       "tier": 6,
@@ -4285,6 +4357,7 @@
       "id": "pet_gorilla",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦍"
       },
       "tier": 6,
@@ -4342,6 +4415,7 @@
       "id": "pet_leopard",
       "image": {
         "source": "fxemoji",
+        "commit": "270af343bee346d8221f87806d2b1eee0438431a",
         "name": "leopardside",
         "unicodeCodePoint": "🐆"
       },
@@ -4409,6 +4483,7 @@
       "id": "pet_mammoth",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦣"
       },
       "tier": 6,
@@ -4472,6 +4547,7 @@
       "id": "pet_octopus",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐙"
       },
       "tier": 6,
@@ -4543,6 +4619,7 @@
       "id": "pet_sauropod",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦕"
       },
       "tier": 6,
@@ -4590,6 +4667,7 @@
       "id": "pet_snake",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐍"
       },
       "tier": 6,
@@ -4652,6 +4730,7 @@
       "id": "pet_tiger",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐅"
       },
       "tier": 6,
@@ -4708,6 +4787,7 @@
       "id": "pet_tyrannosaurus",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦖"
       },
       "tier": 6,
@@ -4770,6 +4850,7 @@
       "id": "pet_zombie_cricket",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦗"
       },
       "packs": [
@@ -4785,7 +4866,8 @@
       "id": "pet_bus",
       "image": {
         "source": "noto-emoji",
-        "unicodeCodePoint": "🚍"
+        "commit": "f2a4f72bffe0212c72949a22698be235269bfab5",
+        "unicodeCodePoint": "🚌"
       },
       "packs": [
         "StandardPack",
@@ -4801,6 +4883,7 @@
       "id": "pet_zombie_fly",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🪰"
       },
       "packs": [
@@ -4815,6 +4898,7 @@
       "id": "pet_dirty_rat",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐀"
       },
       "packs": [
@@ -4830,6 +4914,7 @@
       "id": "pet_chick",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐤"
       },
       "packs": [
@@ -4845,6 +4930,7 @@
       "id": "pet_ram",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐏"
       },
       "packs": [
@@ -4860,6 +4946,7 @@
       "id": "pet_butterfly",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦋"
       },
       "notes": "Summoned: Copy Attack and Health from most healthy friend.",
@@ -4875,6 +4962,7 @@
       "id": "pet_bee",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🐝"
       },
       "packs": [
@@ -4892,6 +4980,7 @@
       "id": "food_apple",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍎"
       },
       "tier": 1,
@@ -4921,6 +5010,7 @@
       "id": "food_honey",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍯"
       },
       "tier": 1,
@@ -4948,6 +5038,7 @@
       "id": "food_cupcake",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🧁"
       },
       "tier": 2,
@@ -4977,6 +5068,7 @@
       "id": "food_meat_bone",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍖"
       },
       "tier": 2,
@@ -5004,6 +5096,7 @@
       "id": "food_sleeping_pill",
       "image": {
         "source": "fxemoji",
+        "commit": "270af343bee346d8221f87806d2b1eee0438431a",
         "unicodeCodePoint": "💊",
         "name": "pill"
       },
@@ -5032,6 +5125,7 @@
       "id": "food_garlic",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🧄"
       },
       "tier": 3,
@@ -5059,6 +5153,7 @@
       "id": "food_salad_bowl",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥗"
       },
       "tier": 3,
@@ -5089,6 +5184,7 @@
       "id": "food_canned_food",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥫"
       },
       "tier": 4,
@@ -5119,6 +5215,7 @@
       "id": "food_pear",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍐"
       },
       "tier": 4,
@@ -5148,6 +5245,7 @@
       "id": "food_chili",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🌶"
       },
       "tier": 5,
@@ -5175,6 +5273,7 @@
       "id": "food_chocolate",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍫"
       },
       "tier": 5,
@@ -5202,6 +5301,7 @@
       "id": "food_sushi",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍣"
       },
       "tier": 5,
@@ -5232,6 +5332,7 @@
       "id": "food_melon",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍈"
       },
       "tier": 6,
@@ -5259,6 +5360,7 @@
       "id": "food_mushroom",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍄"
       },
       "tier": 6,
@@ -5286,6 +5388,7 @@
       "id": "food_pizza",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍕"
       },
       "tier": 6,
@@ -5316,6 +5419,7 @@
       "id": "food_steak",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥩"
       },
       "tier": 6,
@@ -5344,6 +5448,7 @@
       "notes": "This is free!",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥛"
       },
       "tier": "Summoned",
@@ -5375,6 +5480,7 @@
       "id": "status_weak",
       "image": {
         "source": "noto-emoji",
+        "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
         "unicodeCodePoint": "🦠"
       },
       "ability": {
@@ -5395,6 +5501,7 @@
       "id": "status_coconut_shield",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥥"
       },
       "ability": {
@@ -5415,6 +5522,7 @@
       "id": "status_honey_bee",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍯"
       },
       "ability": {
@@ -5435,6 +5543,7 @@
       "id": "status_bone_attack",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍖"
       },
       "ability": {
@@ -5455,6 +5564,7 @@
       "id": "status_garlic_armor",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🧄"
       },
       "ability": {
@@ -5475,6 +5585,7 @@
       "id": "status_splash_attack",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🌶"
       },
       "ability": {
@@ -5494,6 +5605,7 @@
       "id": "status_melon_armor",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍈"
       },
       "ability": {
@@ -5514,6 +5626,7 @@
       "id": "status_extra_life",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🍄"
       },
       "ability": {
@@ -5534,6 +5647,7 @@
       "id": "status_steak_attack",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥩"
       },
       "ability": {
@@ -5554,6 +5668,7 @@
       "id": "status_poison_attack",
       "image": {
         "source": "twemoji",
+        "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
         "unicodeCodePoint": "🥜"
       },
       "ability": {

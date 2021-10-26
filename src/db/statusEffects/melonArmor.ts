@@ -5,6 +5,7 @@ export const melonArmor: Status = {
   ...getStatusIdentifiers("Melon Armor"),
   image: {
     source: "twemoji",
+    commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
     unicodeCodePoint: "\u{1F348}",
   },
   ability: {

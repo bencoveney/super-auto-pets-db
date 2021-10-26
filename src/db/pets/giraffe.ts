@@ -25,6 +25,7 @@ export const giraffe: Pet = {
   ...getPetIdentifiers("Giraffe"),
   image: {
     source: "twemoji",
+    commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
     unicodeCodePoint: "\u{1F992}",
   },
   tier: 3,

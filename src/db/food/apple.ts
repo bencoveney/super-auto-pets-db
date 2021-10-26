@@ -5,6 +5,7 @@ export const apple: Food = {
   ...getFoodIdentifiers("Apple"),
   image: {
     source: "twemoji",
+    commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
     unicodeCodePoint: "\u{1F34E}",
   },
   tier: 1,
