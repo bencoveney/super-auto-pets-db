@@ -75,8 +75,6 @@ function describeTarget(
 ): { description: string; isPlural: boolean; notes: string[] } {
   switch (triggeredBy.kind) {
     case "Self":
-      // TODO: "Whenever this Bluebird ends the turn" ?????
-      // TODO: "Whenever this Ladybug buys food" ?????
       return {
         description: `this ${abilityOwner.name}`,
         isPlural: false,
@@ -165,9 +163,6 @@ function describeTarget(
         notes: [],
       };
     case "None":
-      // TODO: this. Probably requires a change to how these triggers are represented.
-      // Currently used for start of battle but probably belongs to other phase changes as well
-      // TODO: Whenever none??? starts the battle ???
       return { description: "none???", isPlural: false, notes: [] };
     case "FriendAhead": {
       const n = triggeredBy.n;
