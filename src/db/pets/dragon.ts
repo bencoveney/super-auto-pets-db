@@ -6,8 +6,7 @@ function dragonAbility(level: number): Ability {
     description: `Buy tier 1 animal: Give all friends +${level}/+${level}.`,
     trigger: Trigger.BuyTier1Animal,
     triggeredBy: {
-      // TODO: Should by be a property of shop animals rather than friends?
-      kind: "EachFriend",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

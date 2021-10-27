@@ -6,7 +6,7 @@ function monkeyAbility(level: number): Ability {
     description: `End turn: Give right-most friend +${level * 2}/+${level * 2}`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

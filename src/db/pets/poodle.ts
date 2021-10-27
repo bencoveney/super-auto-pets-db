@@ -7,7 +7,7 @@ function poodleAbility(level: number): Ability {
     description: `End turn: Give +${level}/+${level} to different tier animals.`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

@@ -6,7 +6,7 @@ function penguinAbility(level: number): Ability {
     description: `End turn: Give other Lvl. 2 and 3 friends +${level}/+${level}`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

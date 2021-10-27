@@ -9,7 +9,7 @@ function llamaAbility(level: number): Ability {
     }/+${level * 2}.`,
     trigger: Trigger.EndOfTurnWith4OrLessAnimals,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

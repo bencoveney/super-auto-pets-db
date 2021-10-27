@@ -10,7 +10,7 @@ export function StatsGrid(props: React.PropsWithChildren<{}>) {
 
 export function StatsSummary(props: React.PropsWithChildren<{}>) {
   return (
-    <div className="col-span-2 mt-4 border-b border-gray-500 text-2xl font-light">
+    <div className="col-span-2 mt-4 mb-2 border-b border-gray-500 text-2xl font-light">
       {props.children}
     </div>
   );

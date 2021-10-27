@@ -7,7 +7,7 @@ function skunkAbility(level: number): Ability {
     description: `Start of battle: Reduce the highest Health enemy by ${percentage}%.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "None",
+      kind: "Player",
     },
     effect: {
       kind: "ReduceHealth",

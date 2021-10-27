@@ -10,6 +10,7 @@ import { Polaroid } from "./Polaroid";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
 import { StatusDescription } from "./StatusDescription";
+import { SummaryAbility } from "./SummaryAbility";
 import { SummaryStatus } from "./SummaryStatus";
 
 export function PetPage(props: { pet: Pet; database: Database }) {
@@ -58,27 +59,27 @@ export function PetPage(props: { pet: Pet; database: Database }) {
             <StatsSummary>Abilities</StatsSummary>
             {props.pet.level1Ability && (
               <StatsRow text="Level 1">
-                <AbilityDescription
+                <SummaryAbility
                   ability={props.pet.level1Ability}
-                  pet={props.pet.id}
+                  pet={props.pet}
                   database={props.database}
                 />
               </StatsRow>
             )}
             {props.pet.level2Ability && (
               <StatsRow text="Level 2">
-                <AbilityDescription
+                <SummaryAbility
                   ability={props.pet.level2Ability}
-                  pet={props.pet.id}
+                  pet={props.pet}
                   database={props.database}
                 />
               </StatsRow>
             )}
             {props.pet.level3Ability && (
               <StatsRow text="Level 3">
-                <AbilityDescription
+                <SummaryAbility
                   ability={props.pet.level3Ability}
-                  pet={props.pet.id}
+                  pet={props.pet}
                   database={props.database}
                 />
               </StatsRow>

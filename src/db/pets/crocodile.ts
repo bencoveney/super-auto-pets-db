@@ -6,7 +6,7 @@ function crocodileAbility(level: number): Ability {
     description: `Start of battle: Deal ${level * 7} damage to the last enemy`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "None",
+      kind: "Player",
     },
     effect: {
       kind: "DealDamage",

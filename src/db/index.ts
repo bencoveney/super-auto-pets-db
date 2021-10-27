@@ -144,6 +144,7 @@ export type Target = SimpleTarget | NTarget | ShopTarget;
 export type SimpleTarget = {
   kind:
     | "Self"
+    | "Player"
     | "All"
     | "EachFriend"
     | "EachEnemy"

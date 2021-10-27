@@ -8,7 +8,7 @@ function puppyAbility(level: number): Ability {
     }`,
     trigger: Trigger.EndOfTurnWith2PlusGold,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

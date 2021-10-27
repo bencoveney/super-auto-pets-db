@@ -6,7 +6,7 @@ function whaleAbility(level: number): Ability {
     description: `Start of battle: Swallow friend ahead and release it as a level ${level} after fainting.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       // TODO: This should probably be represented as 2 abilities, but I would need 2 triggers.

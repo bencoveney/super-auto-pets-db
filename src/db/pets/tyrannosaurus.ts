@@ -8,7 +8,7 @@ function tyrannosaurusAbility(level: number): Ability {
     }/+${level * 2}`,
     trigger: Trigger.EndOfTurnWith3PlusGold,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

@@ -212,7 +212,7 @@
         "description": "End turn: Give left-most friend +1 attack",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -227,7 +227,7 @@
         "description": "End turn: Give left-most friend +2 attack",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -242,7 +242,7 @@
         "description": "End turn: Give left-most friend +3 attack",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -505,7 +505,7 @@
         "description": "Buy food: Gain +1/+1 until end of battle",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -521,7 +521,7 @@
         "description": "Buy food: Gain +2/+2 until end of battle",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -537,7 +537,7 @@
         "description": "Buy food: Gain +3/+3 until end of battle",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -569,7 +569,7 @@
         "description": "Start of battle: Deal 1 damage to a random enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -584,7 +584,7 @@
         "description": "Start of battle: Deal 2 damage to a random enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -599,7 +599,7 @@
         "description": "Start of battle: Deal 3 damage to a random enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -762,7 +762,7 @@
         "description": "Start of battle: Make 1 enemy Weak.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ApplyStatus",
@@ -777,7 +777,7 @@
         "description": "Start of battle: Make 2 enemies Weak.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ApplyStatus",
@@ -792,7 +792,7 @@
         "description": "Start of battle: Make 3 enemies Weak.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ApplyStatus",
@@ -822,7 +822,7 @@
         "description": "Start of battle: Copy Health from friend ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -841,7 +841,7 @@
         "description": "Start of battle: Copy Health from friend ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -860,7 +860,7 @@
         "description": "Start of battle: Copy Health from friend ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -894,7 +894,7 @@
         "description": "Start of battle: Give Attack to friend ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -913,7 +913,7 @@
         "description": "Start of battle: Give Attack to 2 friends ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -932,7 +932,7 @@
         "description": "Start of battle: Give Attack to 3 friends ahead.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferStats",
@@ -967,7 +967,7 @@
         "description": "Friend summoned: Gain +1 Attack or +1 Health.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "OneOf",
@@ -995,7 +995,7 @@
         "description": "Friend summoned: Gain +2 Attack or +2 Health.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "OneOf",
@@ -1023,7 +1023,7 @@
         "description": "Friend summoned: Gain +3 Attack or +3 Health.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "OneOf",
@@ -1066,7 +1066,7 @@
         "description": "Start of turn: Give shop animals +1/+1",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1083,7 +1083,7 @@
         "description": "Start of turn: Give shop animals +2/+2",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1100,7 +1100,7 @@
         "description": "Start of turn: Give shop animals +3/+3",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1550,7 +1550,7 @@
         "description": "Start of turn: Gain 1 gold.",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -1561,7 +1561,7 @@
         "description": "Start of turn: Gain 2 gold.",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -1572,7 +1572,7 @@
         "description": "Start of turn: Gain 3 gold.",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -1782,7 +1782,7 @@
         "description": "Start of turn: Gain 1 Experience",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainExperience",
@@ -1796,7 +1796,7 @@
         "description": "Start of turn: Gain 1 Experience",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainExperience",
@@ -1810,7 +1810,7 @@
         "description": "Start of battle: Evolve into a Butterfly",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "Evolve",
@@ -1902,7 +1902,7 @@
         "description": "End turn: Give +5/+5 to friend ahead until end of battle.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1919,7 +1919,7 @@
         "description": "End turn: Give +2/+2 to friend ahead.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1936,7 +1936,7 @@
         "description": "Start of turn: Give +1 Experience to friend ahead",
         "trigger": "StartOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainExperience",
@@ -1966,7 +1966,7 @@
         "description": "End turn: Give friend ahead +1/+1",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -1983,7 +1983,7 @@
         "description": "End turn: Give 2 friends ahead +1/+1",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2000,7 +2000,7 @@
         "description": "End turn: Give 3 friends ahead +1/+1",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2263,7 +2263,7 @@
         "description": "End turn: If you have 2 or more gold, gain +2/+2",
         "trigger": "EndOfTurnWith2PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2279,7 +2279,7 @@
         "description": "End turn: If you have 2 or more gold, gain +4/+4",
         "trigger": "EndOfTurnWith2PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2295,7 +2295,7 @@
         "description": "End turn: If you have 2 or more gold, gain +6/+6",
         "trigger": "EndOfTurnWith2PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2446,7 +2446,7 @@
         "description": "Buy: If you lost last battle, give all friends +2/+1",
         "trigger": "BuyAfterLoss",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2462,7 +2462,7 @@
         "description": "Buy: If you lost last battle, give all friends +4/+2",
         "trigger": "BuyAfterLoss",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2478,7 +2478,7 @@
         "description": "Buy: If you lost last battle, give all friends +6/+3",
         "trigger": "BuyAfterLoss",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2509,7 +2509,7 @@
         "description": "End turn: Give adjacent friends +1 Health",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2524,7 +2524,7 @@
         "description": "End turn: Give adjacent friends +2 Health",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2539,7 +2539,7 @@
         "description": "End turn: Give adjacent friends +3 Health",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2630,7 +2630,7 @@
         "description": "Start of battle: Swallow friend ahead and release it as a level 1 after fainting.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "Swallow",
@@ -2644,7 +2644,7 @@
         "description": "Start of battle: Swallow friend ahead and release it as a level 2 after fainting.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "Swallow",
@@ -2658,7 +2658,7 @@
         "description": "Start of battle: Swallow friend ahead and release it as a level 3 after fainting.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "Swallow",
@@ -2688,7 +2688,7 @@
         "description": "End turn: Gain +2/+2 if there is at least one Lvl. 3 friend.",
         "trigger": "EndOfTurnWithLvl3Friend",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2704,7 +2704,7 @@
         "description": "End turn: Gain +4/+4 if there is at least one Lvl. 3 friend.",
         "trigger": "EndOfTurnWithLvl3Friend",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2720,7 +2720,7 @@
         "description": "End turn: Gain +6/+6 if there is at least one Lvl. 3 friend.",
         "trigger": "EndOfTurnWithLvl3Friend",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -2872,7 +2872,7 @@
         "description": "Start of battle: Deal 5 damage to the lowest health enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -2886,7 +2886,7 @@
         "description": "Start of battle: Deal 10 damage to the lowest health enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -2900,7 +2900,7 @@
         "description": "Start of battle: Deal 15 damage to the lowest health enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -2992,7 +2992,7 @@
         "description": "End turn: If you have 4 or less animals, gain +2/+2.",
         "trigger": "EndOfTurnWith4OrLessAnimals",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3008,7 +3008,7 @@
         "description": "End turn: If you have 4 or less animals, gain +4/+4.",
         "trigger": "EndOfTurnWith4OrLessAnimals",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3024,7 +3024,7 @@
         "description": "End turn: If you have 4 or less animals, gain +6/+6.",
         "trigger": "EndOfTurnWith4OrLessAnimals",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3118,7 +3118,7 @@
         "description": "End turn: Give right-most friend +2/+2",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3134,7 +3134,7 @@
         "description": "End turn: Give right-most friend +4/+4",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3150,7 +3150,7 @@
         "description": "End turn: Give right-most friend +6/+6",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3181,7 +3181,7 @@
         "description": "End turn: Give other Lvl. 2 and 3 friends +1/+1",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3197,7 +3197,7 @@
         "description": "End turn: Give other Lvl. 2 and 3 friends +2/+2",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3213,7 +3213,7 @@
         "description": "End turn: Give other Lvl. 2 and 3 friends +3/+3",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3244,7 +3244,7 @@
         "description": "End turn: Give +1/+1 to different tier animals.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3260,7 +3260,7 @@
         "description": "End turn: Give +2/+2 to different tier animals.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3276,7 +3276,7 @@
         "description": "End turn: Give +3/+3 to different tier animals.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3360,7 +3360,7 @@
         "description": "Start of battle: Reduce the highest Health enemy by 33%.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ReduceHealth",
@@ -3374,7 +3374,7 @@
         "description": "Start of battle: Reduce the highest Health enemy by 66%.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ReduceHealth",
@@ -3388,7 +3388,7 @@
         "description": "Start of battle: Reduce the highest Health enemy by 100%.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ReduceHealth",
@@ -3533,7 +3533,7 @@
         "description": "Buy tier 1 animal: Give current and future shop animals +1/+1",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3550,7 +3550,7 @@
         "description": "Buy tier 1 animal: Give current and future shop animals +2/+2",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3567,7 +3567,7 @@
         "description": "Buy tier 1 animal: Give current and future shop animals +3/+3",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -3651,7 +3651,7 @@
         "description": "Start of battle: Deal 7 damage to the last enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -3665,7 +3665,7 @@
         "description": "Start of battle: Deal 14 damage to the last enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -3679,7 +3679,7 @@
         "description": "Start of battle: Deal 21 damage to the last enemy",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "None"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -3864,7 +3864,7 @@
         "description": "End Turn: Copy the Lvl. 1 ability from animal ahead.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferAbility",
@@ -3882,7 +3882,7 @@
         "description": "End Turn: Copy the Lvl. 2 ability from animal ahead.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferAbility",
@@ -3900,7 +3900,7 @@
         "description": "End Turn: Copy the Lvl. 3 ability from animal ahead.",
         "trigger": "EndOfTurn",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "TransferAbility",
@@ -4250,7 +4250,7 @@
         "description": "Buy tier 1 animal: Give all friends +1/+1.",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -4266,7 +4266,7 @@
         "description": "Buy tier 1 animal: Give all friends +2/+2.",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -4282,7 +4282,7 @@
         "description": "Buy tier 1 animal: Give all friends +3/+3.",
         "trigger": "BuyTier1Animal",
         "triggeredBy": {
-          "kind": "EachFriend"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -4430,7 +4430,7 @@
         "description": "Start of battle: Deal 50% Attack damage to a random enemy.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -4447,7 +4447,7 @@
         "description": "Start of battle: Deal 50% Attack damage to 2 random enemies.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -4464,7 +4464,7 @@
         "description": "Start of battle: Deal 50% Attack damage to 3 random enemies.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "DealDamage",
@@ -4632,7 +4632,7 @@
         "description": "Buy food: Gain 1 gold.",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -4643,7 +4643,7 @@
         "description": "Buy food: Gain 1 gold.",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -4654,7 +4654,7 @@
         "description": "Buy food: Gain 1 gold.",
         "trigger": "BuyFood",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "GainGold",
@@ -4800,7 +4800,7 @@
         "description": "End turn: If you have 3 or more gold, give other friends +2/+2",
         "trigger": "EndOfTurnWith3PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -4816,7 +4816,7 @@
         "description": "End turn: If you have 3 or more gold, give other friends +4/+4",
         "trigger": "EndOfTurnWith3PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",
@@ -4832,7 +4832,7 @@
         "description": "End turn: If you have 3 or more gold, give other friends +6/+6",
         "trigger": "EndOfTurnWith3PlusGold",
         "triggeredBy": {
-          "kind": "Self"
+          "kind": "Player"
         },
         "effect": {
           "kind": "ModifyStats",

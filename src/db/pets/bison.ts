@@ -8,7 +8,7 @@ function bisonAbility(level: number): Ability {
     } if there is at least one Lvl. 3 friend.`,
     trigger: Trigger.EndOfTurnWithLvl3Friend,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

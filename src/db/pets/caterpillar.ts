@@ -8,7 +8,7 @@ function caterpillarAbility(level: number): Ability {
       description: `Start of turn: Gain 1 Experience`,
       trigger: Trigger.StartOfTurn,
       triggeredBy: {
-        kind: "Self",
+        kind: "Player",
       },
       effect: {
         kind: "GainExperience",
@@ -24,7 +24,7 @@ function caterpillarAbility(level: number): Ability {
     description: `Start of battle: Evolve into a Butterfly`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "Evolve",

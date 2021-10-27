@@ -7,7 +7,7 @@ function hatchingChickAbility(level: number): Ability {
       description: `End turn: Give +5/+5 to friend ahead until end of battle.`,
       trigger: Trigger.EndOfTurn,
       triggeredBy: {
-        kind: "Self",
+        kind: "Player",
       },
       effect: {
         kind: "ModifyStats",
@@ -27,7 +27,7 @@ function hatchingChickAbility(level: number): Ability {
       description: `End turn: Give +2/+2 to friend ahead.`,
       trigger: Trigger.EndOfTurn,
       triggeredBy: {
-        kind: "Self",
+        kind: "Player",
       },
       effect: {
         kind: "ModifyStats",
@@ -46,7 +46,7 @@ function hatchingChickAbility(level: number): Ability {
     description: `Start of turn: Give +1 Experience to friend ahead`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "GainExperience",

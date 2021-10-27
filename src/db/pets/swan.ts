@@ -6,7 +6,7 @@ function swanAbility(level: number): Ability {
     description: `Start of turn: Gain ${level} gold.`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "GainGold",

@@ -8,7 +8,7 @@ function snailAbility(level: number): Ability {
     }/+${level}`,
     trigger: Trigger.BuyAfterLoss,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

@@ -6,7 +6,7 @@ function parrotAbility(level: number): Ability {
     description: `End Turn: Copy the Lvl. ${level} ability from animal ahead.`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "TransferAbility",

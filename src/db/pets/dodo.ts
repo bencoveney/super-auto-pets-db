@@ -6,7 +6,7 @@ function dodoAbility(level: number): Ability {
     description: `Start of battle: Give Attack to ${level} friends ahead.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "TransferStats",

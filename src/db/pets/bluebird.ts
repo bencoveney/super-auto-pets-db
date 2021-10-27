@@ -6,7 +6,7 @@ function bluebirdAbility(level: number): Ability {
     description: `End turn: Give left-most friend +${level} attack`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

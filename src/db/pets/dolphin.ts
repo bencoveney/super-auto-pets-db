@@ -8,7 +8,7 @@ function dolphinAbility(level: number): Ability {
     } damage to the lowest health enemy`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "None",
+      kind: "Player",
     },
     effect: {
       kind: "DealDamage",

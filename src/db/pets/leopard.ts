@@ -6,7 +6,7 @@ function leopardAbility(level: number): Ability {
     description: `Start of battle: Deal 50% Attack damage to ${level} random enemies.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "DealDamage",

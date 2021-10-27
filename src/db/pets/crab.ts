@@ -6,7 +6,7 @@ function crabAbility(level: number): Ability {
     description: `Start of battle: Copy Health from friend ahead.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "TransferStats",

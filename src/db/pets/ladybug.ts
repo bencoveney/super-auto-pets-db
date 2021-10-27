@@ -6,7 +6,7 @@ function ladybugAbility(level: number): Ability {
     description: `Buy food: Gain +${level}/+${level} until end of battle`,
     trigger: Trigger.BuyFood,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

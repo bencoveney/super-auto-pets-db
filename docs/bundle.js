@@ -2462,11 +2462,11 @@
       if (true) {
         (function() {
           "use strict";
-          var React23 = require_react();
+          var React24 = require_react();
           var _assign = require_object_assign();
           var Scheduler = require_scheduler();
           var tracing = require_tracing();
-          var ReactSharedInternals = React23.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+          var ReactSharedInternals = React24.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
           function warn(format) {
             {
               for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -2498,7 +2498,7 @@
               Function.prototype.apply.call(console[level], console, argsWithFormat);
             }
           }
-          if (!React23) {
+          if (!React24) {
             {
               throw Error("ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.");
             }
@@ -3714,7 +3714,7 @@
           var didWarnInvalidChild = false;
           function flattenChildren(children) {
             var content = "";
-            React23.Children.forEach(children, function(child) {
+            React24.Children.forEach(children, function(child) {
               if (child == null) {
                 return;
               }
@@ -3725,7 +3725,7 @@
           function validateProps(element, props) {
             {
               if (typeof props.children === "object" && props.children !== null) {
-                React23.Children.forEach(props.children, function(child) {
+                React24.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -10918,7 +10918,7 @@
           }
           var fakeInternalInstance = {};
           var isArray = Array.isArray;
-          var emptyRefsObject = new React23.Component().refs;
+          var emptyRefsObject = new React24.Component().refs;
           var didWarnAboutStateAssignmentForComponent;
           var didWarnAboutUninitializedState;
           var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -21693,7 +21693,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give left-most friend +1 attack",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -21708,7 +21708,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give left-most friend +2 attack",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -21723,7 +21723,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give left-most friend +3 attack",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -21986,7 +21986,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain +1/+1 until end of battle",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -22002,7 +22002,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain +2/+2 until end of battle",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -22018,7 +22018,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain +3/+3 until end of battle",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -22050,7 +22050,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 1 damage to a random enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -22065,7 +22065,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 2 damage to a random enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -22080,7 +22080,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 3 damage to a random enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -22243,7 +22243,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Make 1 enemy Weak.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ApplyStatus",
@@ -22258,7 +22258,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Make 2 enemies Weak.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ApplyStatus",
@@ -22273,7 +22273,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Make 3 enemies Weak.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ApplyStatus",
@@ -22303,7 +22303,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Copy Health from friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22322,7 +22322,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Copy Health from friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22341,7 +22341,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Copy Health from friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22375,7 +22375,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Give Attack to friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22394,7 +22394,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Give Attack to 2 friends ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22413,7 +22413,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Give Attack to 3 friends ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferStats",
@@ -22448,7 +22448,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Friend summoned: Gain +1 Attack or +1 Health.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "OneOf",
@@ -22476,7 +22476,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Friend summoned: Gain +2 Attack or +2 Health.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "OneOf",
@@ -22504,7 +22504,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Friend summoned: Gain +3 Attack or +3 Health.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "OneOf",
@@ -22547,7 +22547,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Give shop animals +1/+1",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -22564,7 +22564,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Give shop animals +2/+2",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -22581,7 +22581,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Give shop animals +3/+3",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23031,7 +23031,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Gain 1 gold.",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -23042,7 +23042,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Gain 2 gold.",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -23053,7 +23053,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Gain 3 gold.",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -23263,7 +23263,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Gain 1 Experience",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainExperience",
@@ -23277,7 +23277,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Gain 1 Experience",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainExperience",
@@ -23291,7 +23291,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Evolve into a Butterfly",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "Evolve",
@@ -23383,7 +23383,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give +5/+5 to friend ahead until end of battle.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23400,7 +23400,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give +2/+2 to friend ahead.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23417,7 +23417,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of turn: Give +1 Experience to friend ahead",
         trigger: "StartOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainExperience",
@@ -23447,7 +23447,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give friend ahead +1/+1",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23464,7 +23464,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give 2 friends ahead +1/+1",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23481,7 +23481,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give 3 friends ahead +1/+1",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23744,7 +23744,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 2 or more gold, gain +2/+2",
         trigger: "EndOfTurnWith2PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23760,7 +23760,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 2 or more gold, gain +4/+4",
         trigger: "EndOfTurnWith2PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23776,7 +23776,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 2 or more gold, gain +6/+6",
         trigger: "EndOfTurnWith2PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23927,7 +23927,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy: If you lost last battle, give all friends +2/+1",
         trigger: "BuyAfterLoss",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23943,7 +23943,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy: If you lost last battle, give all friends +4/+2",
         trigger: "BuyAfterLoss",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23959,7 +23959,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy: If you lost last battle, give all friends +6/+3",
         trigger: "BuyAfterLoss",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -23990,7 +23990,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give adjacent friends +1 Health",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24005,7 +24005,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give adjacent friends +2 Health",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24020,7 +24020,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give adjacent friends +3 Health",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24111,7 +24111,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Swallow friend ahead and release it as a level 1 after fainting.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "Swallow",
@@ -24125,7 +24125,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Swallow friend ahead and release it as a level 2 after fainting.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "Swallow",
@@ -24139,7 +24139,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Swallow friend ahead and release it as a level 3 after fainting.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "Swallow",
@@ -24169,7 +24169,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Gain +2/+2 if there is at least one Lvl. 3 friend.",
         trigger: "EndOfTurnWithLvl3Friend",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24185,7 +24185,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Gain +4/+4 if there is at least one Lvl. 3 friend.",
         trigger: "EndOfTurnWithLvl3Friend",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24201,7 +24201,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Gain +6/+6 if there is at least one Lvl. 3 friend.",
         trigger: "EndOfTurnWithLvl3Friend",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24353,7 +24353,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 5 damage to the lowest health enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -24367,7 +24367,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 10 damage to the lowest health enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -24381,7 +24381,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 15 damage to the lowest health enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -24473,7 +24473,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 4 or less animals, gain +2/+2.",
         trigger: "EndOfTurnWith4OrLessAnimals",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24489,7 +24489,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 4 or less animals, gain +4/+4.",
         trigger: "EndOfTurnWith4OrLessAnimals",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24505,7 +24505,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 4 or less animals, gain +6/+6.",
         trigger: "EndOfTurnWith4OrLessAnimals",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24599,7 +24599,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give right-most friend +2/+2",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24615,7 +24615,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give right-most friend +4/+4",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24631,7 +24631,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give right-most friend +6/+6",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24662,7 +24662,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give other Lvl. 2 and 3 friends +1/+1",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24678,7 +24678,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give other Lvl. 2 and 3 friends +2/+2",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24694,7 +24694,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give other Lvl. 2 and 3 friends +3/+3",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24725,7 +24725,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give +1/+1 to different tier animals.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24741,7 +24741,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give +2/+2 to different tier animals.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24757,7 +24757,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: Give +3/+3 to different tier animals.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -24841,7 +24841,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Reduce the highest Health enemy by 33%.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "ReduceHealth",
@@ -24855,7 +24855,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Reduce the highest Health enemy by 66%.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "ReduceHealth",
@@ -24869,7 +24869,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Reduce the highest Health enemy by 100%.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "ReduceHealth",
@@ -25014,7 +25014,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give current and future shop animals +1/+1",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25031,7 +25031,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give current and future shop animals +2/+2",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25048,7 +25048,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give current and future shop animals +3/+3",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25132,7 +25132,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 7 damage to the last enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -25146,7 +25146,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 14 damage to the last enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -25160,7 +25160,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 21 damage to the last enemy",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "None"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -25345,7 +25345,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End Turn: Copy the Lvl. 1 ability from animal ahead.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferAbility",
@@ -25363,7 +25363,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End Turn: Copy the Lvl. 2 ability from animal ahead.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferAbility",
@@ -25381,7 +25381,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End Turn: Copy the Lvl. 3 ability from animal ahead.",
         trigger: "EndOfTurn",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "TransferAbility",
@@ -25731,7 +25731,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give all friends +1/+1.",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25747,7 +25747,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give all friends +2/+2.",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25763,7 +25763,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy tier 1 animal: Give all friends +3/+3.",
         trigger: "BuyTier1Animal",
         triggeredBy: {
-          kind: "EachFriend"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -25911,7 +25911,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 50% Attack damage to a random enemy.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -25928,7 +25928,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 50% Attack damage to 2 random enemies.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -25945,7 +25945,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Start of battle: Deal 50% Attack damage to 3 random enemies.",
         trigger: "StartOfBattle",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "DealDamage",
@@ -26113,7 +26113,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain 1 gold.",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -26124,7 +26124,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain 1 gold.",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -26135,7 +26135,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "Buy food: Gain 1 gold.",
         trigger: "BuyFood",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "GainGold",
@@ -26281,7 +26281,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 3 or more gold, give other friends +2/+2",
         trigger: "EndOfTurnWith3PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -26297,7 +26297,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 3 or more gold, give other friends +4/+4",
         trigger: "EndOfTurnWith3PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -26313,7 +26313,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         description: "End turn: If you have 3 or more gold, give other friends +6/+6",
         trigger: "EndOfTurnWith3PlusGold",
         triggeredBy: {
-          kind: "Self"
+          kind: "Player"
         },
         effect: {
           kind: "ModifyStats",
@@ -27195,7 +27195,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/web/live/index.tsx
-  var import_react22 = __toModule(require_react());
+  var import_react23 = __toModule(require_react());
   var import_react_dom = __toModule(require_react_dom());
 
   // src/web/components/Homepage.tsx
@@ -29255,85 +29255,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   // src/web/components/PetPage.tsx
   var import_react20 = __toModule(require_react());
 
-  // src/web/components/AbilityDescription.tsx
-  var import_react15 = __toModule(require_react());
-
-  // src/web/components/SummaryPet.tsx
-  var import_react13 = __toModule(require_react());
-  function SummaryPet(props) {
-    const pet = props.database.pets[props.pet];
-    const attack = props.setAttack || pet.baseAttack;
-    const health = props.setHealth || pet.baseHealth;
-    return /* @__PURE__ */ import_react13.default.createElement(Link, {
-      to: getPetUrl(pet)
-    }, /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "transition group flex m-3 bg-gray-900 hover:bg-black cursor-pointer"
-    }, /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "relative w-20"
-    }, /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
-    }), /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "z-2 relative p-1"
-    }, /* @__PURE__ */ import_react13.default.createElement("img", {
-      className: "drop-shadow-tile",
-      src: `/assets/${pet.id}.svg`
-    })), /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
-    })), /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "flex-grow p-3 flex flex-col items-stretch justify-center"
-    }, /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "text-xl"
-    }, pet.name), /* @__PURE__ */ import_react13.default.createElement("div", {
-      className: "text-base"
-    }, "\u2694\uFE0F ", attack, " / \u{1F496} ", health))));
-  }
-
-  // src/web/components/SummaryStatus.tsx
-  var import_react14 = __toModule(require_react());
-  function SummaryStatus(props) {
-    const status = props.database.statuses[props.status];
-    const pet = props.database.pets[props.pet || "pet_sloth"];
-    return /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "flex m-3 bg-gray-900"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "relative w-20"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
-    }), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "z-2 relative p-1"
-    }, /* @__PURE__ */ import_react14.default.createElement("img", {
-      className: "drop-shadow-tile",
-      src: `/assets/${status.id}.svg`
-    })), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
-    })), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "flex-grow p-3 flex flex-col items-stretch justify-center"
-    }, /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "text-xl"
-    }, status.name), /* @__PURE__ */ import_react14.default.createElement("div", {
-      className: "text-base"
-    }, status.ability.description)));
-  }
-
-  // src/web/components/AbilityDescription.tsx
-  function AbilityDescription(props) {
-    return /* @__PURE__ */ import_react15.default.createElement("div", null, /* @__PURE__ */ import_react15.default.createElement("p", null, props.ability.description), props.ability.effect.kind === "ApplyStatus" ? /* @__PURE__ */ import_react15.default.createElement(SummaryStatus, {
-      status: props.ability.effect.status,
-      pet: props.pet,
-      database: props.database
-    }) : null, props.ability.effect.kind === "SummonPet" ? /* @__PURE__ */ import_react15.default.createElement(SummaryPet, {
-      pet: props.ability.effect.pet,
-      database: props.database,
-      setAttack: props.ability.effect.withAttack,
-      setHealth: props.ability.effect.withHealth
-    }) : null);
-  }
-
   // src/web/components/EmojiSource.tsx
   var import_emoji_unicode = __toModule(require_lib());
-  var import_react16 = __toModule(require_react());
+  var import_react13 = __toModule(require_react());
   function EmojiSource(props) {
-    return /* @__PURE__ */ import_react16.default.createElement("div", null, /* @__PURE__ */ import_react16.default.createElement("a", {
+    return /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("a", {
       href: getGithubUrl(props.image),
       className: "text-blue-300 hover:text-blue-100 visited:text-purple-300 underline"
     }, getEmojiPackName(props.image)));
@@ -29361,60 +29287,544 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/web/components/Polaroid.tsx
-  var import_react17 = __toModule(require_react());
+  var import_react14 = __toModule(require_react());
   function Polaroid({
     id,
     name,
     background
   }) {
-    return /* @__PURE__ */ import_react17.default.createElement("div", {
+    return /* @__PURE__ */ import_react14.default.createElement("div", {
       className: "bg-white shadow p-3 m-4 transform rotate-3"
-    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+    }, /* @__PURE__ */ import_react14.default.createElement("div", {
       className: "relative"
-    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+    }, /* @__PURE__ */ import_react14.default.createElement("div", {
       className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover`
-    }), /* @__PURE__ */ import_react17.default.createElement("div", {
+    }), /* @__PURE__ */ import_react14.default.createElement("div", {
       className: "p-3"
-    }, /* @__PURE__ */ import_react17.default.createElement("img", {
+    }, /* @__PURE__ */ import_react14.default.createElement("img", {
       className: "filter drop-shadow-tile",
       src: `/assets/${id}.svg`
-    })), /* @__PURE__ */ import_react17.default.createElement("div", {
+    })), /* @__PURE__ */ import_react14.default.createElement("div", {
       className: `absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover`
-    })), /* @__PURE__ */ import_react17.default.createElement("div", {
+    })), /* @__PURE__ */ import_react14.default.createElement("div", {
       className: "text-center text-black mt-2 italic text-xl"
     }, "My ", name, "!"));
   }
 
   // src/web/components/StatDisplay.tsx
-  var import_react18 = __toModule(require_react());
+  var import_react15 = __toModule(require_react());
   function StatDisplay(props) {
     if (typeof props.stat == "string") {
-      return /* @__PURE__ */ import_react18.default.createElement("div", null, props.stat);
+      return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat);
     }
-    return /* @__PURE__ */ import_react18.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
+    return /* @__PURE__ */ import_react15.default.createElement("div", null, props.stat, " ", props.emoji.repeat(props.stat));
   }
 
   // src/web/components/StatsGrid.tsx
-  var import_react19 = __toModule(require_react());
+  var import_react16 = __toModule(require_react());
   function StatsGrid(props) {
-    return /* @__PURE__ */ import_react19.default.createElement("div", {
+    return /* @__PURE__ */ import_react16.default.createElement("div", {
       className: "text-xl flex-grow grid grid-cols-keyvalue gap-2 max-w-4xl items-baseline"
     }, props.children);
   }
   function StatsSummary(props) {
-    return /* @__PURE__ */ import_react19.default.createElement("div", {
-      className: "col-span-2 mt-4 border-b border-gray-500 text-2xl font-light"
+    return /* @__PURE__ */ import_react16.default.createElement("div", {
+      className: "col-span-2 mt-4 mb-2 border-b border-gray-500 text-2xl font-light"
     }, props.children);
   }
   function StatsRow(props) {
     if (!props.children) {
       return null;
     }
-    return /* @__PURE__ */ import_react19.default.createElement(import_react19.default.Fragment, null, /* @__PURE__ */ import_react19.default.createElement("div", {
+    return /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, /* @__PURE__ */ import_react16.default.createElement("div", {
       className: "font-bold text-base text-gray-300"
-    }, props.text, ":"), /* @__PURE__ */ import_react19.default.createElement("div", {
+    }, props.text, ":"), /* @__PURE__ */ import_react16.default.createElement("div", {
       className: props.className
     }, props.children));
+  }
+
+  // src/web/components/SummaryAbility.tsx
+  var import_react19 = __toModule(require_react());
+
+  // src/web/components/SummaryPet.tsx
+  var import_react17 = __toModule(require_react());
+  function SummaryPet(props) {
+    const pet = props.database.pets[props.pet];
+    const attack = props.setAttack || pet.baseAttack;
+    const health = props.setHealth || pet.baseHealth;
+    return /* @__PURE__ */ import_react17.default.createElement(Link, {
+      to: getPetUrl(pet)
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "transition group flex m-3 bg-gray-900 hover:bg-black cursor-pointer"
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "relative w-20"
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
+    }), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "z-2 relative p-1"
+    }, /* @__PURE__ */ import_react17.default.createElement("img", {
+      className: "drop-shadow-tile",
+      src: `/assets/${pet.id}.svg`
+    })), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
+    })), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "flex-grow p-3 flex flex-col items-stretch justify-center"
+    }, /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "text-xl"
+    }, pet.name), /* @__PURE__ */ import_react17.default.createElement("div", {
+      className: "text-base"
+    }, "\u2694\uFE0F ", attack, " / \u{1F496} ", health))));
+  }
+
+  // src/web/components/SummaryStatus.tsx
+  var import_react18 = __toModule(require_react());
+  function SummaryStatus(props) {
+    const status = props.database.statuses[props.status];
+    const pet = props.database.pets[props.pet || "pet_sloth"];
+    return /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "flex m-3 bg-gray-900"
+    }, /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "relative w-20"
+    }, /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
+    }), /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "z-2 relative p-1"
+    }, /* @__PURE__ */ import_react18.default.createElement("img", {
+      className: "drop-shadow-tile",
+      src: `/assets/${status.id}.svg`
+    })), /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
+    })), /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "flex-grow p-3 flex flex-col items-stretch justify-center"
+    }, /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "text-xl"
+    }, status.name), /* @__PURE__ */ import_react18.default.createElement("div", {
+      className: "text-base"
+    }, status.ability.description)));
+  }
+
+  // src/web/components/SummaryAbility.tsx
+  function SummaryAbility(props) {
+    return /* @__PURE__ */ import_react19.default.createElement("div", {
+      className: "mb-3 pb-3 border-b border-gray-500"
+    }, /* @__PURE__ */ import_react19.default.createElement("p", {
+      className: "text-xl font-light"
+    }, props.ability.description), /* @__PURE__ */ import_react19.default.createElement(DescribeAbility, __spreadValues({}, props)), props.ability.effect.kind === "ApplyStatus" ? /* @__PURE__ */ import_react19.default.createElement(SummaryStatus, {
+      status: props.ability.effect.status,
+      pet: props.pet.id,
+      database: props.database
+    }) : null, props.ability.effect.kind === "SummonPet" ? /* @__PURE__ */ import_react19.default.createElement(SummaryPet, {
+      pet: props.ability.effect.pet,
+      database: props.database,
+      setAttack: props.ability.effect.withAttack,
+      setHealth: props.ability.effect.withHealth
+    }) : null);
+  }
+  function DescribeAbility(props) {
+    if (props.pet.tier !== 1) {
+      return null;
+    }
+    const target = describeTarget(props.ability.triggeredBy, props.pet, false);
+    const trigger = describeTrigger(props.ability.trigger, props.pet);
+    const effect = describeEffect(props.ability.effect, props.ability.trigger, props.database, props.pet);
+    const description = `Whenever ${target.description} ${trigger.description}, ${effect.description}`;
+    const paragraphs = [
+      description,
+      ...target.notes,
+      ...trigger.notes,
+      ...effect.notes
+    ];
+    return /* @__PURE__ */ import_react19.default.createElement("ul", {
+      className: "list-disc ml-5 py-3"
+    }, paragraphs.map((content, index2) => /* @__PURE__ */ import_react19.default.createElement("li", {
+      key: index2,
+      className: "text-base mt-1"
+    }, content)));
+  }
+  function describeTarget(triggeredBy, abilityOwner, fromEffect) {
+    switch (triggeredBy.kind) {
+      case "Self":
+        return {
+          description: `this ${abilityOwner.name}`,
+          isPlural: false,
+          notes: []
+        };
+      case "Player":
+        return {
+          description: "you",
+          isPlural: false,
+          notes: []
+        };
+      case "All":
+        return {
+          description: `${fromEffect ? "any animal" : "all animals"}`,
+          isPlural: !fromEffect,
+          notes: []
+        };
+      case "EachFriend":
+        return {
+          description: `${fromEffect ? "each" : "any"} friend`,
+          isPlural: !fromEffect,
+          notes: []
+        };
+      case "EachEnemy":
+        return {
+          description: `${fromEffect ? "each" : "any"} enemy`,
+          isPlural: !fromEffect,
+          notes: []
+        };
+      case "LeftMostFriend":
+        return {
+          description: "the left-most friend",
+          isPlural: false,
+          notes: []
+        };
+      case "RightMostFriend":
+        return {
+          description: "the right-most friend",
+          isPlural: false,
+          notes: []
+        };
+      case "TriggeringEntity":
+        return {
+          description: `${fromEffect ? "that animal" : "the entity that triggered this"}`,
+          isPlural: false,
+          notes: []
+        };
+      case "AdjacentAnimals":
+        return { description: "adjacent animals", isPlural: true, notes: [] };
+      case "AdjacentFriends":
+        return { description: "adjacent friends", isPlural: true, notes: [] };
+      case "Level2And3Friends":
+        return {
+          description: "level 2 and 3 friends",
+          isPlural: true,
+          notes: []
+        };
+      case "FirstEnemy":
+        return { description: "the first enemy", isPlural: false, notes: [] };
+      case "LastEnemy":
+        return { description: "the last enemy", isPlural: false, notes: [] };
+      case "LowestHealthEnemy":
+        return {
+          description: "the lowest health enemy",
+          isPlural: false,
+          notes: []
+        };
+      case "HighestHealthEnemy":
+        return {
+          description: "the lowest health enemy",
+          isPlural: false,
+          notes: []
+        };
+      case "DifferentTierAnimals":
+        return {
+          description: "the left-most animal of each tier",
+          isPlural: false,
+          notes: []
+        };
+      case "PurchaseTarget":
+        return {
+          description: "the animal that was targeted with the food",
+          isPlural: false,
+          notes: []
+        };
+      case "None":
+        return { description: "none???", isPlural: false, notes: [] };
+      case "FriendAhead": {
+        const n = triggeredBy.n;
+        return {
+          description: `the ${n} ${n > 1 ? "friends" : "friend"} ahead`,
+          isPlural: n > 1,
+          notes: []
+        };
+      }
+      case "FriendBehind": {
+        const n = triggeredBy.n;
+        return {
+          description: `the ${n} ${n > 1 ? "friends" : "friend"} ahead`,
+          isPlural: n > 1,
+          notes: []
+        };
+      }
+      case "RandomFriend": {
+        const n = triggeredBy.n;
+        return {
+          description: `${n == 1 ? "a" : n} randomly selected ${n > 1 ? "friends" : "friend"}`,
+          isPlural: n > 1,
+          notes: [
+            `When selecting a random friend, the ${abilityOwner.name} that triggered this ability will not be selected.`
+          ]
+        };
+      }
+      case "RandomEnemy": {
+        const n = triggeredBy.n;
+        return {
+          description: `${n == 1 ? "a" : n} randomly selected ${n > 1 ? "enemies" : "enemy"}`,
+          isPlural: n > 1,
+          notes: []
+        };
+      }
+      case "EachShopAnimal": {
+        if (triggeredBy.includingFuture) {
+          return {
+            description: "current and future animals in the shop",
+            isPlural: true,
+            notes: []
+          };
+        } else {
+          return {
+            description: "animals currently in the shop",
+            isPlural: true,
+            notes: [
+              "Buffs to shop animals can be preserved between turns by freezing the animal."
+            ]
+          };
+        }
+      }
+      default:
+        return { description: "UNKNOWN", isPlural: false, notes: [] };
+    }
+  }
+  function describeTrigger(trigger, abilityOwner) {
+    switch (trigger) {
+      case "Faint":
+        return {
+          description: "faints",
+          notes: ["Faint abilities can be triggered in the shop using the pill."]
+        };
+      case "Sell":
+        return { description: "is sold", notes: [] };
+      case "LevelUp":
+        return { description: "levels up", notes: [] };
+      case "Summoned":
+        return {
+          description: "is summoned",
+          notes: [
+            "This ability can be triggered on the shop screen, whenever a new animal is placed into an empty slot on your team."
+          ]
+        };
+      case "StartOfBattle":
+        return { description: "start the battle", notes: [] };
+      case "StartOfTurn":
+        return {
+          description: "start the turn",
+          notes: ["The turn starts as you enter the shop screen."]
+        };
+      case "Buy":
+        return {
+          description: "is bought from the shop",
+          notes: [
+            `You can drag the ${abilityOwner.name} onto an existing ${abilityOwner.name} or an empty slot to trigger this ability.`
+          ]
+        };
+      case "BuyAfterLoss":
+        return {
+          description: "is bought from the shop after you lost the previous battle",
+          notes: []
+        };
+      case "BuyTier1Animal":
+        return { description: "buy a tier 1 animal", notes: [] };
+      case "BuyFood":
+        return { description: "buy food", notes: [] };
+      case "BeforeAttack":
+        return { description: "is about to attack", notes: [] };
+      case "Hurt":
+        return { description: "is hurt", notes: [] };
+      case "EndOfTurn":
+        return {
+          description: "end the turn",
+          notes: [
+            "The turn ends as you leave the shop screen, before you enter the battle."
+          ]
+        };
+      case "EndOfTurnWith2PlusGold":
+        return {
+          description: "end the turn with 2 or more unspent gold",
+          notes: []
+        };
+      case "EndOfTurnWith3PlusGold":
+        return {
+          description: "end the turn with 3 or more unspent gold",
+          notes: []
+        };
+      case "EndOfTurnWithLvl3Friend":
+        return {
+          description: "end the turn with at least 1 level 3 friend",
+          notes: []
+        };
+      case "EndOfTurnWith4OrLessAnimals":
+        return {
+          description: "end the turn 4 or less animals in your team",
+          notes: []
+        };
+      case "AfterAttack":
+        return { description: "has just attacked", notes: [] };
+      case "EatsShopFood":
+        return { description: "eats shop food", notes: [] };
+      case "KnockOut":
+        return { description: "knocks out an enemy animal", notes: [] };
+      case "CastsAbility":
+        return { description: "activate's its ability", notes: [] };
+      case "WhenAttacking":
+        return { description: "is being dealt damage", notes: [] };
+      case "WhenDamaged":
+        return { description: "is dealing damage", notes: [] };
+      default:
+        return { description: "UNKNOWN", notes: [] };
+    }
+  }
+  function describeEffect(effect, trigger, database2, abilityOwner) {
+    switch (effect.kind) {
+      case "ModifyStats": {
+        const target = describeTarget(effect.target, abilityOwner, true);
+        const gains = target.isPlural ? "gain" : "gains";
+        const attackModifier = effect.attackAmount ? `+${effect.attackAmount} attack` : "";
+        const healthModifier = effect.healthAmount ? `+${effect.healthAmount} health` : "";
+        const joinier = effect.attackAmount && effect.healthAmount ? " and " : "";
+        const notes = [...target.notes];
+        if (effect.untilEndOfBattle) {
+          notes.push("This buff is temporary and it will be removed at the end of the battle, or the end of the upcoming battle if applied in the shop.");
+        } else if (effect.target.kind != "EachShopAnimal") {
+          if (canFireInTheShop(trigger)) {
+            if (canFireInBattle(trigger)) {
+              notes.push("When this buff is applied to your friends in the shop screen, it is permanent.");
+            } else {
+              notes.push("This buff is applied permanently.");
+            }
+          }
+          if (canFireInBattle(trigger)) {
+            notes.push("When this buff is applied to an animal during a battle, it will not be retained after the battle has finished.");
+          }
+        }
+        return {
+          description: `${target.description} ${gains} ${attackModifier}${joinier}${healthModifier}.`,
+          notes
+        };
+      }
+      case "DealDamage":
+        return {
+          description: `this ${abilityOwner.name} deals ${effect.amount} damage to ${describeTarget(effect.target, abilityOwner, true).description}.`,
+          notes: []
+        };
+      case "SummonPet": {
+        const summonedName = database2.pets[effect.pet].name;
+        const team = effect.team == "Friendly" ? "to fight on your team" : "to fight on the enemy team";
+        const notes = [
+          `The ${summonedName} will not be summoned if you already have a full team of 5 animals. This can happen when animals summon multiple other animals when they faint, for example.`
+        ];
+        if (canFireInTheShop(trigger)) {
+          notes.push(`If this ability is triggered in the shop screen, the summoned ${summonedName} will become a member of your team.`);
+        }
+        return {
+          description: `a ${summonedName} will be summoned ${team} for the rest of the battle.`,
+          notes
+        };
+      }
+      case "GainGold":
+        return {
+          description: `you gain an extra ${effect.amount} gold.`,
+          notes: []
+        };
+      case "GainExperience":
+        return { description: ``, notes: [] };
+      case "TransferStats":
+        return { description: ``, notes: [] };
+      case "TransferAbility":
+        return { description: ``, notes: [] };
+      case "GainAbility":
+        return { description: ``, notes: [] };
+      case "OneOf":
+        return { description: ``, notes: [] };
+      case "AllOf":
+        return { description: ``, notes: [] };
+      case "ApplyStatus":
+        return { description: ``, notes: [] };
+      case "Swallow":
+        return { description: ``, notes: [] };
+      case "Evolve":
+        return { description: ``, notes: [] };
+      case "ReduceHealth":
+        return { description: ``, notes: [] };
+      case "RefillShops":
+        return { description: ``, notes: [] };
+      case "FoodMultiplier":
+        return { description: ``, notes: [] };
+      case "RepeatAbility":
+        return { description: ``, notes: [] };
+      case "Faint":
+        return { description: ``, notes: [] };
+      case "SummonRandomPet":
+        return { description: ``, notes: [] };
+      case "RespawnPet":
+        return { description: ``, notes: [] };
+      case "ModifyDamage":
+        return { description: ``, notes: [] };
+      case "SplashDamage":
+        return { description: ``, notes: [] };
+    }
+  }
+  function canFireInTheShop(trigger) {
+    switch (trigger) {
+      case "Faint":
+      case "Sell":
+      case "LevelUp":
+      case "Summoned":
+      case "Buy":
+      case "BuyAfterLoss":
+      case "BuyTier1Animal":
+      case "BuyFood":
+      case "Hurt":
+      case "EndOfTurn":
+      case "EndOfTurnWith2PlusGold":
+      case "EndOfTurnWith3PlusGold":
+      case "EndOfTurnWithLvl3Friend":
+      case "EndOfTurnWith4OrLessAnimals":
+      case "EatsShopFood":
+      case "CastsAbility":
+        return true;
+      case "StartOfBattle":
+      case "StartOfTurn":
+      case "BeforeAttack":
+      case "AfterAttack":
+      case "KnockOut":
+      case "WhenAttacking":
+      case "WhenDamaged":
+        return false;
+      default:
+        throw new Error(`Unknown trigger: ${trigger}`);
+    }
+  }
+  function canFireInBattle(trigger) {
+    switch (trigger) {
+      case "Faint":
+      case "Summoned":
+      case "StartOfBattle":
+      case "StartOfTurn":
+      case "BeforeAttack":
+      case "Hurt":
+      case "AfterAttack":
+      case "KnockOut":
+      case "CastsAbility":
+      case "WhenAttacking":
+      case "WhenDamaged":
+        return true;
+      case "Sell":
+      case "LevelUp":
+      case "Buy":
+      case "BuyAfterLoss":
+      case "BuyTier1Animal":
+      case "BuyFood":
+      case "EndOfTurn":
+      case "EndOfTurnWith2PlusGold":
+      case "EndOfTurnWith3PlusGold":
+      case "EndOfTurnWithLvl3Friend":
+      case "EndOfTurnWith4OrLessAnimals":
+      case "EatsShopFood":
+        return false;
+      default:
+        throw new Error(`Unknown trigger: ${trigger}`);
+    }
   }
 
   // src/web/components/PetPage.tsx
@@ -29462,21 +29872,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       image: props.pet.image
     })), /* @__PURE__ */ import_react20.default.createElement(StatsSummary, null, "Abilities"), props.pet.level1Ability && /* @__PURE__ */ import_react20.default.createElement(StatsRow, {
       text: "Level 1"
-    }, /* @__PURE__ */ import_react20.default.createElement(AbilityDescription, {
+    }, /* @__PURE__ */ import_react20.default.createElement(SummaryAbility, {
       ability: props.pet.level1Ability,
-      pet: props.pet.id,
+      pet: props.pet,
       database: props.database
     })), props.pet.level2Ability && /* @__PURE__ */ import_react20.default.createElement(StatsRow, {
       text: "Level 2"
-    }, /* @__PURE__ */ import_react20.default.createElement(AbilityDescription, {
+    }, /* @__PURE__ */ import_react20.default.createElement(SummaryAbility, {
       ability: props.pet.level2Ability,
-      pet: props.pet.id,
+      pet: props.pet,
       database: props.database
     })), props.pet.level3Ability && /* @__PURE__ */ import_react20.default.createElement(StatsRow, {
       text: "Level 3"
-    }, /* @__PURE__ */ import_react20.default.createElement(AbilityDescription, {
+    }, /* @__PURE__ */ import_react20.default.createElement(SummaryAbility, {
       ability: props.pet.level3Ability,
-      pet: props.pet.id,
+      pet: props.pet,
       database: props.database
     })), props.pet.status && /* @__PURE__ */ import_react20.default.createElement(StatsRow, {
       text: "Status"
@@ -29488,42 +29898,59 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
 
   // src/web/components/FoodPage.tsx
+  var import_react22 = __toModule(require_react());
+
+  // src/web/components/AbilityDescription.tsx
   var import_react21 = __toModule(require_react());
+  function AbilityDescription(props) {
+    return /* @__PURE__ */ import_react21.default.createElement("div", null, /* @__PURE__ */ import_react21.default.createElement("p", null, props.ability.description), props.ability.effect.kind === "ApplyStatus" ? /* @__PURE__ */ import_react21.default.createElement(SummaryStatus, {
+      status: props.ability.effect.status,
+      pet: props.pet,
+      database: props.database
+    }) : null, props.ability.effect.kind === "SummonPet" ? /* @__PURE__ */ import_react21.default.createElement(SummaryPet, {
+      pet: props.ability.effect.pet,
+      database: props.database,
+      setAttack: props.ability.effect.withAttack,
+      setHealth: props.ability.effect.withHealth
+    }) : null);
+  }
+
+  // src/web/components/FoodPage.tsx
   function FoodPage(props) {
-    return /* @__PURE__ */ import_react21.default.createElement(import_react21.default.Fragment, null, /* @__PURE__ */ import_react21.default.createElement(Header, null, /* @__PURE__ */ import_react21.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react21.default.createElement("div", {
+    return /* @__PURE__ */ import_react22.default.createElement(import_react22.default.Fragment, null, /* @__PURE__ */ import_react22.default.createElement(Header, null, /* @__PURE__ */ import_react22.default.createElement(Breadcrumbs, __spreadValues({}, props))), /* @__PURE__ */ import_react22.default.createElement("div", {
       className: "m-3"
-    }, /* @__PURE__ */ import_react21.default.createElement("div", {
+    }, /* @__PURE__ */ import_react22.default.createElement("div", {
       className: "flex flex-col lg:flex-row-reverse items-center lg:items-start justify-start lg:justify-center"
-    }, /* @__PURE__ */ import_react21.default.createElement("div", {
+    }, /* @__PURE__ */ import_react22.default.createElement("div", {
       className: "flex-grow max-w-xs w-80"
-    }, /* @__PURE__ */ import_react21.default.createElement(Polaroid, {
+    }, /* @__PURE__ */ import_react22.default.createElement(Polaroid, {
       id: props.food.id,
       name: props.food.name,
       background: "bgimage-4"
-    })), /* @__PURE__ */ import_react21.default.createElement(StatsGrid, null, /* @__PURE__ */ import_react21.default.createElement(StatsSummary, null, "Stats"), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    })), /* @__PURE__ */ import_react22.default.createElement(StatsGrid, null, /* @__PURE__ */ import_react22.default.createElement(StatsSummary, null, "Stats"), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Name"
-    }, props.food.name), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    }, props.food.name), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Tier"
-    }, /* @__PURE__ */ import_react21.default.createElement(StatDisplay, {
+    }, /* @__PURE__ */ import_react22.default.createElement(StatDisplay, {
       stat: props.food.tier,
       emoji: "\u{1F3B2}"
-    })), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    })), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Packs"
-    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react21.default.createElement(Pack, {
+    }, (props.food.packs || []).map((pack, index2) => /* @__PURE__ */ import_react22.default.createElement(Pack, {
       pack,
       key: index2,
       colored: true,
       condensed: false
-    }))), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    }))), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Notes",
       className: "italic"
-    }, props.food.notes), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    }, props.food.notes), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Image"
-    }, /* @__PURE__ */ import_react21.default.createElement(EmojiSource, {
+    }, /* @__PURE__ */ import_react22.default.createElement(EmojiSource, {
       image: props.food.image
-    })), /* @__PURE__ */ import_react21.default.createElement(StatsSummary, null, "Abilities"), /* @__PURE__ */ import_react21.default.createElement(StatsRow, {
+    })), /* @__PURE__ */ import_react22.default.createElement(StatsSummary, null, "Abilities"), /* @__PURE__ */ import_react22.default.createElement(StatsRow, {
       text: "Effect"
-    }, /* @__PURE__ */ import_react21.default.createElement(AbilityDescription, {
+    }, /* @__PURE__ */ import_react22.default.createElement(AbilityDescription, {
       ability: props.food.ability,
       database: props.database
     }))))));
@@ -29541,7 +29968,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!pet) {
       throw new Error(`Could not find pet ${name}`);
     }
-    return /* @__PURE__ */ import_react22.default.createElement(PetPage, {
+    return /* @__PURE__ */ import_react23.default.createElement(PetPage, {
       pet,
       database
     });
@@ -29552,21 +29979,21 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     if (!food) {
       throw new Error(`Could not find ${name}`);
     }
-    return /* @__PURE__ */ import_react22.default.createElement(FoodPage, {
+    return /* @__PURE__ */ import_react23.default.createElement(FoodPage, {
       food,
       database
     });
   }
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react22.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react22.default.createElement(Route, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react23.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react23.default.createElement(Route, {
     exact: true,
     path: "/"
-  }, /* @__PURE__ */ import_react22.default.createElement(Homepage, {
+  }, /* @__PURE__ */ import_react23.default.createElement(Homepage, {
     database
-  })), /* @__PURE__ */ import_react22.default.createElement(Route, {
+  })), /* @__PURE__ */ import_react23.default.createElement(Route, {
     exact: true,
     path: "/pet/:petName",
     component: PetPageWrapper
-  }), /* @__PURE__ */ import_react22.default.createElement(Route, {
+  }), /* @__PURE__ */ import_react23.default.createElement(Route, {
     exact: true,
     path: "/food/:foodName",
     component: FoodPageWrapper

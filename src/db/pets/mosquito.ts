@@ -6,7 +6,7 @@ function mosquitoAbility(level: number): Ability {
     description: `Start of battle: Deal ${level} damage to a random enemy`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "None",
+      kind: "Player",
     },
     effect: {
       kind: "DealDamage",

@@ -7,7 +7,7 @@ function batAbility(level: number): Ability {
     description: `Start of battle: Make ${level} enemies Weak.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ApplyStatus",

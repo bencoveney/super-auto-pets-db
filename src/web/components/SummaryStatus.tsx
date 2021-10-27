@@ -3,6 +3,7 @@ import { Database, PetRef, StatusRef } from "../../db/database";
 
 export function SummaryStatus(props: {
   status: StatusRef;
+  // TODO: unused.
   pet?: PetRef;
   database: Database;
 }) {

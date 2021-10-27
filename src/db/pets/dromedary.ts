@@ -6,7 +6,7 @@ function dromedaryAbility(level: number): Ability {
     description: `Start of turn: Give shop animals +${level}/+${level}`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",

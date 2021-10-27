@@ -6,7 +6,7 @@ function sauropodAbility(level: number): Ability {
     description: `Buy food: Gain 1 gold.`,
     trigger: Trigger.BuyFood,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "GainGold",

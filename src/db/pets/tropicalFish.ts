@@ -6,7 +6,7 @@ function tropicalFishAbility(level: number): Ability {
     description: `End turn: Give adjacent friends +${level} Health`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
-      kind: "Self",
+      kind: "Player",
     },
     effect: {
       kind: "ModifyStats",
