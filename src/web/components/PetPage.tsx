@@ -3,6 +3,7 @@ import { Pet } from "../../db";
 import { Database } from "../../db/database";
 import { AbilityDescription } from "./AbilityDescription";
 import { Breadcrumbs } from "./Breadcrumbs";
+import { EmojiSource } from "./EmojiSource";
 import { Header } from "./Header";
 import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
@@ -50,6 +51,9 @@ export function PetPage(props: { pet: Pet; database: Database }) {
             </StatsRow>
             <StatsRow text="Notes" className="italic">
               {props.pet.notes}
+            </StatsRow>
+            <StatsRow text="Image">
+              <EmojiSource image={props.pet.image} />
             </StatsRow>
             <StatsSummary>Abilities</StatsSummary>
             {props.pet.level1Ability && (

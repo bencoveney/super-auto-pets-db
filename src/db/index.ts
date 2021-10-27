@@ -64,7 +64,6 @@ export interface Filterable {
 export type EmojiImage = NotoEmojiImage | FxEmojiImage | TwEmojiImage;
 
 export type NotoEmojiImage = {
-  // https://github.com/googlefonts/noto-emoji/blob/f2a4f72bffe0212c72949a22698be235269bfab5/svg/emoji_u1f68c.svg
   source: "noto-emoji";
   commit: string;
   // Unicode codepoint
@@ -72,7 +71,6 @@ export type NotoEmojiImage = {
 };
 
 export type FxEmojiImage = {
-  // https://github.com/mozilla/fxemoji/blob/ccd4efe37c79a6a7200b3db2a2128bef25dd6ef3/svgs/FirefoxEmoji/u1F41F-fish.svg
   source: "fxemoji";
   commit: string;
   name: string;
@@ -81,7 +79,6 @@ export type FxEmojiImage = {
 };
 
 export type TwEmojiImage = {
-  // https://github.com/twitter/twemoji/blob/793a6a93f303c08877dd6eb589b2fabb3d1c45ee/assets/svg/1f420.svg
   source: "twemoji";
   commit: string;
   // Unicode codepoint

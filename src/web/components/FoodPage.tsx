@@ -3,6 +3,7 @@ import { Food } from "../../db";
 import { Database } from "../../db/database";
 import { AbilityDescription } from "./AbilityDescription";
 import { Breadcrumbs } from "./Breadcrumbs";
+import { EmojiSource } from "./EmojiSource";
 import { Header } from "./Header";
 import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
@@ -42,6 +43,9 @@ export function FoodPage(props: { food: Food; database: Database }) {
             </StatsRow>
             <StatsRow text="Notes" className="italic">
               {props.food.notes}
+            </StatsRow>
+            <StatsRow text="Image">
+              <EmojiSource image={props.food.image} />
             </StatsRow>
             <StatsSummary>Abilities</StatsSummary>
             <StatsRow text="Effect">
