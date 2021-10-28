@@ -114,6 +114,7 @@ export const enum Trigger {
   // TODO: Often requires a target, but doesn't need one.
   BuyFood = "BuyFood",
   BeforeAttack = "BeforeAttack",
+  // TODO: Doesn't trigger when taking zero damage.
   Hurt = "Hurt",
   // TODO: Often requires a target, but doesn't need one.
   EndOfTurn = "EndOfTurn",
@@ -219,6 +220,7 @@ export interface TransferStatsEffect {
 }
 
 export interface TransferAbilityEffect {
+  // TODO: only lasts for 1 turn.
   kind: "TransferAbility";
   from: Target;
   to: Target;

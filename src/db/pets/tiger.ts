@@ -10,6 +10,7 @@ function tigerAbility(level: number): Ability {
       n: 1,
     },
     effect: {
+      // TODO: Does this trigger on End of Turn and Start of Turn effects?
       kind: "RepeatAbility",
       target: {
         // TODO: Should this be targeting the ability rather than the entity?

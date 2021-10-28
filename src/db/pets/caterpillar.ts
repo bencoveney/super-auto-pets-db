@@ -5,7 +5,7 @@ import { butterfly } from "./butterfly";
 function caterpillarAbility(level: number): Ability {
   if (level <= 2) {
     return {
-      description: `Start of turn: Gain 1 Experience`,
+      description: `Start of turn: Gain 1 Experience.`,
       trigger: Trigger.StartOfTurn,
       triggeredBy: {
         kind: "Player",
@@ -21,7 +21,7 @@ function caterpillarAbility(level: number): Ability {
   }
 
   return {
-    description: `Start of battle: Evolve into a Butterfly`,
+    description: `Start of battle: Evolve into a Butterfly, then copy stats of the strongest friend.`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
       kind: "Player",

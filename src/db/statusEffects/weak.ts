@@ -9,14 +9,14 @@ export const weak: Status = {
     unicodeCodePoint: "\u{1F9A0}",
   },
   ability: {
-    description: "Take 5 extra damage.",
+    description: "Take 3 extra damage.",
     triggeredBy: {
       kind: "Self",
     },
     trigger: Trigger.WhenDamaged,
     effect: {
       kind: "ModifyDamage",
-      damageModifier: 5,
+      damageModifier: 3,
       appliesOnce: false,
     },
   },

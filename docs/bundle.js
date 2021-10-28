@@ -22235,7 +22235,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       },
       tier: 2,
       baseAttack: 1,
-      baseHealth: 3,
+      baseHealth: 2,
       packs: [
         "ExpansionPack1"
       ],
@@ -22391,7 +22391,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "Start of battle: Give Attack to 2 friends ahead.",
+        description: "Start of battle: Give 2X Attack to friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
           kind: "Player"
@@ -22410,7 +22410,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Start of battle: Give Attack to 3 friends ahead.",
+        description: "Start of battle: Give 3X Attack to friend ahead.",
         trigger: "StartOfBattle",
         triggeredBy: {
           kind: "Player"
@@ -23260,7 +23260,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "ExpansionPack1"
       ],
       level1Ability: {
-        description: "Start of turn: Gain 1 Experience",
+        description: "Start of turn: Gain 1 Experience.",
         trigger: "StartOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -23274,7 +23274,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "Start of turn: Gain 1 Experience",
+        description: "Start of turn: Gain 1 Experience.",
         trigger: "StartOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -23288,7 +23288,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Start of battle: Evolve into a Butterfly",
+        description: "Start of battle: Evolve into a Butterfly, then copy stats of the strongest friend.",
         trigger: "StartOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -25342,7 +25342,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "StandardPack"
       ],
       level1Ability: {
-        description: "End Turn: Copy the Lvl. 1 ability from animal ahead.",
+        description: "End Turn: Copy ability from pet ahead as lvl. 1 until end of battle.",
         trigger: "EndOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -25360,7 +25360,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "End Turn: Copy the Lvl. 2 ability from animal ahead.",
+        description: "End Turn: Copy ability from pet ahead as lvl. 2 until end of battle.",
         trigger: "EndOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -25369,7 +25369,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "TransferAbility",
           from: {
             kind: "FriendAhead",
-            n: 2
+            n: 1
           },
           to: {
             kind: "Self"
@@ -25378,7 +25378,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "End Turn: Copy the Lvl. 3 ability from animal ahead.",
+        description: "End Turn: Copy ability from pet ahead as lvl. 3 until end of battle.",
         trigger: "EndOfTurn",
         triggeredBy: {
           kind: "Player"
@@ -25387,7 +25387,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           kind: "TransferAbility",
           from: {
             kind: "FriendAhead",
-            n: 3
+            n: 1
           },
           to: {
             kind: "Self"
@@ -26430,7 +26430,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         commit: "e022fd6573782431ac9a65b520376b57511c31cd",
         unicodeCodePoint: "\u{1F98B}"
       },
-      notes: "Summoned: Copy Attack and Health from most healthy friend.",
+      notes: "Summoned: Copy stats of the strongest friend (highest attack and health combined).",
       tier: "Summoned",
       baseAttack: 1,
       baseHealth: 1,
@@ -26965,14 +26965,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unicodeCodePoint: "\u{1F9A0}"
       },
       ability: {
-        description: "Take 5 extra damage.",
+        description: "Take 3 extra damage.",
         triggeredBy: {
           kind: "Self"
         },
         trigger: "WhenDamaged",
         effect: {
           kind: "ModifyDamage",
-          damageModifier: 5,
+          damageModifier: 3,
           appliesOnce: false
         }
       }

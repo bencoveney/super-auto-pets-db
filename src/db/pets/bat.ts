@@ -29,7 +29,7 @@ export const bat: Pet = {
   },
   tier: 2,
   baseAttack: 1,
-  baseHealth: 3,
+  baseHealth: 2,
   packs: ["ExpansionPack1"],
   level1Ability: {
     ...batAbility(1),

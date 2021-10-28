@@ -9,7 +9,8 @@ export const butterfly: Pet = {
     unicodeCodePoint: "\u{1F98B}",
   },
   // TODO: Represent this as a summoned behaviour.
-  notes: "Summoned: Copy Attack and Health from most healthy friend.",
+  notes:
+    "Summoned: Copy stats of the strongest friend (highest attack and health combined).",
   tier: "Summoned",
   baseAttack: 1,
   baseHealth: 1,

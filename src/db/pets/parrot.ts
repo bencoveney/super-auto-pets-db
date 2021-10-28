@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function parrotAbility(level: number): Ability {
   return {
-    description: `End Turn: Copy the Lvl. ${level} ability from animal ahead.`,
+    description: `End Turn: Copy ability from pet ahead as lvl. ${level} until end of battle.`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",
@@ -12,7 +12,7 @@ function parrotAbility(level: number): Ability {
       kind: "TransferAbility",
       from: {
         kind: "FriendAhead",
-        n: level,
+        n: 1,
       },
       to: {
         kind: "Self",
