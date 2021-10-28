@@ -21497,10 +21497,10 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }, config2));
       };
       exports.load = load2;
-      var trackPageview2 = () => {
+      var trackPageview = () => {
         interpret("trackPageview");
       };
-      exports.trackPageview = trackPageview2;
+      exports.trackPageview = trackPageview;
       var config = (config2) => {
         interpret("config", config2);
       };
@@ -27575,9 +27575,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     var _props = props, getUserConfirmation = _props.getUserConfirmation, _props$initialEntries = _props.initialEntries, initialEntries = _props$initialEntries === void 0 ? ["/"] : _props$initialEntries, _props$initialIndex = _props.initialIndex, initialIndex = _props$initialIndex === void 0 ? 0 : _props$initialIndex, _props$keyLength = _props.keyLength, keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
     var transitionManager = createTransitionManager();
     function setState(nextState) {
-      _extends(history2, nextState);
-      history2.length = history2.entries.length;
-      transitionManager.notifyListeners(history2.location, history2.action);
+      _extends(history, nextState);
+      history.length = history.entries.length;
+      transitionManager.notifyListeners(history.location, history.action);
     }
     function createKey() {
       return Math.random().toString(36).substr(2, keyLength);
@@ -27590,13 +27590,13 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function push(path, state) {
       true ? tiny_warning_esm_default(!(typeof path === "object" && path.state !== void 0 && state !== void 0), "You should avoid providing a 2nd state argument to push when the 1st argument is a location-like object that already has state; it is ignored") : void 0;
       var action = "PUSH";
-      var location = createLocation(path, state, createKey(), history2.location);
+      var location = createLocation(path, state, createKey(), history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
-        var prevIndex = history2.index;
+        var prevIndex = history.index;
         var nextIndex = prevIndex + 1;
-        var nextEntries = history2.entries.slice(0);
+        var nextEntries = history.entries.slice(0);
         if (nextEntries.length > nextIndex) {
           nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
         } else {
@@ -27613,11 +27613,11 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function replace(path, state) {
       true ? tiny_warning_esm_default(!(typeof path === "object" && path.state !== void 0 && state !== void 0), "You should avoid providing a 2nd state argument to replace when the 1st argument is a location-like object that already has state; it is ignored") : void 0;
       var action = "REPLACE";
-      var location = createLocation(path, state, createKey(), history2.location);
+      var location = createLocation(path, state, createKey(), history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
-        history2.entries[history2.index] = location;
+        history.entries[history.index] = location;
         setState({
           action,
           location
@@ -27625,9 +27625,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       });
     }
     function go(n) {
-      var nextIndex = clamp(history2.index + n, 0, history2.entries.length - 1);
+      var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
       var action = "POP";
-      var location = history2.entries[nextIndex];
+      var location = history.entries[nextIndex];
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (ok) {
           setState({
@@ -27647,8 +27647,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       go(1);
     }
     function canGo(n) {
-      var nextIndex = history2.index + n;
-      return nextIndex >= 0 && nextIndex < history2.entries.length;
+      var nextIndex = history.index + n;
+      return nextIndex >= 0 && nextIndex < history.entries.length;
     }
     function block(prompt) {
       if (prompt === void 0) {
@@ -27659,7 +27659,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function listen(listener) {
       return transitionManager.appendListener(listener);
     }
-    var history2 = {
+    var history = {
       length: entries.length,
       action: "POP",
       location: entries[index2],
@@ -27675,7 +27675,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       block,
       listen
     };
-    return history2;
+    return history;
   }
 
   // node_modules/mini-create-react-context/dist/esm/index.js
@@ -28032,8 +28032,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     var computedMatch = _ref.computedMatch, to = _ref.to, _ref$push = _ref.push, push = _ref$push === void 0 ? false : _ref$push;
     return /* @__PURE__ */ import_react3.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Redirect> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
-      var history2 = context2.history, staticContext = context2.staticContext;
-      var method = push ? history2.push : history2.replace;
+      var history = context2.history, staticContext = context2.staticContext;
+      var method = push ? history.push : history.replace;
       var location = createLocation(computedMatch ? typeof to === "string" ? generatePath(to, computedMatch.params) : _extends({}, to, {
         pathname: generatePath(to.pathname, computedMatch.params)
       }) : to);
@@ -28244,7 +28244,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     };
     _proto.render = function render() {
       var _this$props2 = this.props, _this$props2$basename = _this$props2.basename, basename = _this$props2$basename === void 0 ? "" : _this$props2$basename, _this$props2$context = _this$props2.context, context2 = _this$props2$context === void 0 ? {} : _this$props2$context, _this$props2$location = _this$props2.location, location = _this$props2$location === void 0 ? "/" : _this$props2$location, rest = _objectWithoutPropertiesLoose(_this$props2, ["basename", "context", "location"]);
-      var history2 = {
+      var history = {
         createHref: function createHref(path) {
           return addLeadingSlash(basename + createURL(path));
         },
@@ -28259,7 +28259,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         block: this.handleBlock
       };
       return /* @__PURE__ */ import_react3.default.createElement(Router, _extends({}, rest, {
-        history: history2,
+        history,
         staticContext: context2
       }));
     };
@@ -28543,9 +28543,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     var transitionManager = createTransitionManager2();
     function setState(nextState) {
-      _extends(history2, nextState);
-      history2.length = globalHistory.length;
-      transitionManager.notifyListeners(history2.location, history2.action);
+      _extends(history, nextState);
+      history.length = globalHistory.length;
+      transitionManager.notifyListeners(history.location, history.action);
     }
     function handlePopState(event) {
       if (isExtraneousPopstateEvent(event))
@@ -28575,7 +28575,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       }
     }
     function revertPop(fromLocation) {
-      var toLocation = history2.location;
+      var toLocation = history.location;
       var toIndex = allKeys.indexOf(toLocation.key);
       if (toIndex === -1)
         toIndex = 0;
@@ -28596,7 +28596,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function push(path, state) {
       true ? tiny_warning_esm_default(!(typeof path === "object" && path.state !== void 0 && state !== void 0), "You should avoid providing a 2nd state argument to push when the 1st argument is a location-like object that already has state; it is ignored") : void 0;
       var action = "PUSH";
-      var location = createLocation2(path, state, createKey(), history2.location);
+      var location = createLocation2(path, state, createKey(), history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
@@ -28610,7 +28610,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           if (forceRefresh) {
             window.location.href = href;
           } else {
-            var prevIndex = allKeys.indexOf(history2.location.key);
+            var prevIndex = allKeys.indexOf(history.location.key);
             var nextKeys = allKeys.slice(0, prevIndex + 1);
             nextKeys.push(location.key);
             allKeys = nextKeys;
@@ -28628,7 +28628,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function replace(path, state) {
       true ? tiny_warning_esm_default(!(typeof path === "object" && path.state !== void 0 && state !== void 0), "You should avoid providing a 2nd state argument to replace when the 1st argument is a location-like object that already has state; it is ignored") : void 0;
       var action = "REPLACE";
-      var location = createLocation2(path, state, createKey(), history2.location);
+      var location = createLocation2(path, state, createKey(), history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
@@ -28642,7 +28642,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           if (forceRefresh) {
             window.location.replace(href);
           } else {
-            var prevIndex = allKeys.indexOf(history2.location.key);
+            var prevIndex = allKeys.indexOf(history.location.key);
             if (prevIndex !== -1)
               allKeys[prevIndex] = location.key;
             setState({
@@ -28704,7 +28704,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unlisten();
       };
     }
-    var history2 = {
+    var history = {
       length: globalHistory.length,
       action: "POP",
       location: initialLocation,
@@ -28717,7 +28717,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       block,
       listen
     };
-    return history2;
+    return history;
   }
   var HashChangeEvent$1 = "hashchange";
   var HashPathCoders = {
@@ -28772,9 +28772,9 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }
     var transitionManager = createTransitionManager2();
     function setState(nextState) {
-      _extends(history2, nextState);
-      history2.length = globalHistory.length;
-      transitionManager.notifyListeners(history2.location, history2.action);
+      _extends(history, nextState);
+      history.length = globalHistory.length;
+      transitionManager.notifyListeners(history.location, history.action);
     }
     var forceNextPop = false;
     var ignorePath = null;
@@ -28788,7 +28788,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         replaceHashPath(encodedPath2);
       } else {
         var location = getDOMLocation();
-        var prevLocation = history2.location;
+        var prevLocation = history.location;
         if (!forceNextPop && locationsAreEqual$$1(prevLocation, location))
           return;
         if (ignorePath === createPath2(location))
@@ -28816,7 +28816,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       }
     }
     function revertPop(fromLocation) {
-      var toLocation = history2.location;
+      var toLocation = history.location;
       var toIndex = allPaths.lastIndexOf(createPath2(toLocation));
       if (toIndex === -1)
         toIndex = 0;
@@ -28846,7 +28846,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function push(path2, state) {
       true ? tiny_warning_esm_default(state === void 0, "Hash history cannot push state; it is ignored") : void 0;
       var action = "PUSH";
-      var location = createLocation2(path2, void 0, void 0, history2.location);
+      var location = createLocation2(path2, void 0, void 0, history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
@@ -28856,7 +28856,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         if (hashChanged) {
           ignorePath = path3;
           pushHashPath(encodedPath2);
-          var prevIndex = allPaths.lastIndexOf(createPath2(history2.location));
+          var prevIndex = allPaths.lastIndexOf(createPath2(history.location));
           var nextPaths = allPaths.slice(0, prevIndex + 1);
           nextPaths.push(path3);
           allPaths = nextPaths;
@@ -28873,7 +28873,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     function replace(path2, state) {
       true ? tiny_warning_esm_default(state === void 0, "Hash history cannot replace state; it is ignored") : void 0;
       var action = "REPLACE";
-      var location = createLocation2(path2, void 0, void 0, history2.location);
+      var location = createLocation2(path2, void 0, void 0, history.location);
       transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function(ok) {
         if (!ok)
           return;
@@ -28884,7 +28884,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           ignorePath = path3;
           replaceHashPath(encodedPath2);
         }
-        var prevIndex = allPaths.indexOf(createPath2(history2.location));
+        var prevIndex = allPaths.indexOf(createPath2(history.location));
         if (prevIndex !== -1)
           allPaths[prevIndex] = path3;
         setState({
@@ -28938,7 +28938,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         unlisten();
       };
     }
-    var history2 = {
+    var history = {
       length: globalHistory.length,
       action: "POP",
       location: initialLocation,
@@ -28951,14 +28951,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       block,
       listen
     };
-    return history2;
+    return history;
   }
 
   // node_modules/react-router-dom/esm/react-router-dom.js
   var import_prop_types3 = __toModule(require_prop_types());
   var BrowserRouter = /* @__PURE__ */ function(_React$Component) {
-    _inheritsLoose(BrowserRouter3, _React$Component);
-    function BrowserRouter3() {
+    _inheritsLoose(BrowserRouter2, _React$Component);
+    function BrowserRouter2() {
       var _this;
       for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
@@ -28967,14 +28967,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       _this.history = createBrowserHistory(_this.props);
       return _this;
     }
-    var _proto = BrowserRouter3.prototype;
+    var _proto = BrowserRouter2.prototype;
     _proto.render = function render() {
       return /* @__PURE__ */ import_react4.default.createElement(Router, {
         history: this.history,
         children: this.props.children
       });
     };
-    return BrowserRouter3;
+    return BrowserRouter2;
   }(import_react4.default.Component);
   if (true) {
     BrowserRouter.propTypes = {
@@ -29025,8 +29025,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   var normalizeToLocation = function normalizeToLocation2(to, currentLocation) {
     return typeof to === "string" ? createLocation2(to, null, null, currentLocation) : to;
   };
-  var forwardRefShim = function forwardRefShim2(C2) {
-    return C2;
+  var forwardRefShim = function forwardRefShim2(C) {
+    return C;
   };
   var forwardRef = import_react4.default.forwardRef;
   if (typeof forwardRef === "undefined") {
@@ -29067,15 +29067,15 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     var _ref2$component = _ref2.component, component = _ref2$component === void 0 ? LinkAnchor : _ref2$component, replace = _ref2.replace, to = _ref2.to, innerRef = _ref2.innerRef, rest = _objectWithoutPropertiesLoose(_ref2, ["component", "replace", "to", "innerRef"]);
     return /* @__PURE__ */ import_react4.default.createElement(context.Consumer, null, function(context2) {
       !context2 ? true ? tiny_invariant_esm_default(false, "You should not use <Link> outside a <Router>") : tiny_invariant_esm_default(false) : void 0;
-      var history2 = context2.history;
+      var history = context2.history;
       var location = normalizeToLocation(resolveToLocation(to, context2.location), context2.location);
-      var href = location ? history2.createHref(location) : "";
+      var href = location ? history.createHref(location) : "";
       var props = _extends({}, rest, {
         href,
         navigate: function navigate() {
           var location2 = resolveToLocation(to, context2.location);
           var isDuplicateNavigation = createPath2(context2.location) === createPath2(normalizeToLocation(location2));
-          var method = replace || isDuplicateNavigation ? history2.replace : history2.push;
+          var method = replace || isDuplicateNavigation ? history.replace : history.push;
           method(location2);
         }
       });
@@ -29103,8 +29103,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
   }
   var toType;
   var refType;
-  var forwardRefShim$1 = function forwardRefShim3(C2) {
-    return C2;
+  var forwardRefShim$1 = function forwardRefShim3(C) {
+    return C;
   };
   var forwardRef$1 = import_react4.default.forwardRef;
   if (typeof forwardRef$1 === "undefined") {
@@ -30135,161 +30135,6 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }))))));
   }
 
-  // node_modules/history/index.js
-  var r;
-  var B = r || (r = {});
-  B.Pop = "POP";
-  B.Push = "PUSH";
-  B.Replace = "REPLACE";
-  var C = true ? function(b) {
-    return Object.freeze(b);
-  } : function(b) {
-    return b;
-  };
-  function D(b, h) {
-    if (!b) {
-      typeof console !== "undefined" && console.warn(h);
-      try {
-        throw Error(h);
-      } catch (k) {
-      }
-    }
-  }
-  function E(b) {
-    b.preventDefault();
-    b.returnValue = "";
-  }
-  function F() {
-    var b = [];
-    return { get length() {
-      return b.length;
-    }, push: function(h) {
-      b.push(h);
-      return function() {
-        b = b.filter(function(k) {
-          return k !== h;
-        });
-      };
-    }, call: function(h) {
-      b.forEach(function(k) {
-        return k && k(h);
-      });
-    } };
-  }
-  function H() {
-    return Math.random().toString(36).substr(2, 8);
-  }
-  function I(b) {
-    var h = b.pathname, k = b.search;
-    b = b.hash;
-    return (h === void 0 ? "/" : h) + (k === void 0 ? "" : k) + (b === void 0 ? "" : b);
-  }
-  function J(b) {
-    var h = {};
-    if (b) {
-      var k = b.indexOf("#");
-      0 <= k && (h.hash = b.substr(k), b = b.substr(0, k));
-      k = b.indexOf("?");
-      0 <= k && (h.search = b.substr(k), b = b.substr(0, k));
-      b && (h.pathname = b);
-    }
-    return h;
-  }
-  function createBrowserHistory2(b) {
-    function h() {
-      var c = p.location, a = m.state || {};
-      return [a.idx, C({ pathname: c.pathname, search: c.search, hash: c.hash, state: a.usr || null, key: a.key || "default" })];
-    }
-    function k(c) {
-      return typeof c === "string" ? c : I(c);
-    }
-    function x(c, a) {
-      a === void 0 && (a = null);
-      return C(_extends({}, q, typeof c === "string" ? J(c) : c, { state: a, key: H() }));
-    }
-    function z(c) {
-      t = c;
-      c = h();
-      v = c[0];
-      q = c[1];
-      d.call({ action: t, location: q });
-    }
-    function A(c, a) {
-      function e() {
-        A(c, a);
-      }
-      var l = r.Push, g = x(c, a);
-      if (!f.length || (f.call({
-        action: l,
-        location: g,
-        retry: e
-      }), false)) {
-        var n = [{ usr: g.state, key: g.key, idx: v + 1 }, k(g)];
-        g = n[0];
-        n = n[1];
-        try {
-          m.pushState(g, "", n);
-        } catch (G) {
-          p.location.assign(n);
-        }
-        z(l);
-      }
-    }
-    function y(c, a) {
-      function e() {
-        y(c, a);
-      }
-      var l = r.Replace, g = x(c, a);
-      f.length && (f.call({ action: l, location: g, retry: e }), 1) || (g = [{ usr: g.state, key: g.key, idx: v }, k(g)], m.replaceState(g[0], "", g[1]), z(l));
-    }
-    function w(c) {
-      m.go(c);
-    }
-    b === void 0 && (b = {});
-    b = b.window;
-    var p = b === void 0 ? document.defaultView : b, m = p.history, u = null;
-    p.addEventListener("popstate", function() {
-      if (u)
-        f.call(u), u = null;
-      else {
-        var c = r.Pop, a = h(), e = a[0];
-        a = a[1];
-        if (f.length)
-          if (e != null) {
-            var l = v - e;
-            l && (u = { action: c, location: a, retry: function() {
-              w(-1 * l);
-            } }, w(l));
-          } else
-            true ? D(false, "You are trying to block a POP navigation to a location that was not created by the history library. The block will fail silently in production, but in general you should do all navigation with the history library (instead of using window.history.pushState directly) to avoid this situation.") : void 0;
-        else
-          z(c);
-      }
-    });
-    var t = r.Pop;
-    b = h();
-    var v = b[0], q = b[1], d = F(), f = F();
-    v == null && (v = 0, m.replaceState(_extends({}, m.state, { idx: v }), ""));
-    return { get action() {
-      return t;
-    }, get location() {
-      return q;
-    }, createHref: k, push: A, replace: y, go: w, back: function() {
-      w(-1);
-    }, forward: function() {
-      w(1);
-    }, listen: function(c) {
-      return d.push(c);
-    }, block: function(c) {
-      var a = f.push(c);
-      f.length === 1 && p.addEventListener("beforeunload", E);
-      return function() {
-        a();
-        f.length || p.removeEventListener("beforeunload", E);
-      };
-    } };
-  }
-
   // src/web/live/index.tsx
   var Panelbear = __toModule(require_dist());
   var database = api_exports;
@@ -30319,10 +30164,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       database
     });
   }
-  var history = createBrowserHistory2();
-  import_react_dom.default.hydrate(/* @__PURE__ */ import_react23.default.createElement(Router, {
-    history
-  }, /* @__PURE__ */ import_react23.default.createElement(Route, {
+  import_react_dom.default.hydrate(/* @__PURE__ */ import_react23.default.createElement(BrowserRouter, null, /* @__PURE__ */ import_react23.default.createElement(Route, {
     exact: true,
     path: "/"
   }, /* @__PURE__ */ import_react23.default.createElement(Homepage, {
@@ -30336,8 +30178,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     path: "/food/:foodName",
     component: FoodPageWrapper
   })), reactRoot);
-  Panelbear.load("Kxep3xnqhgA");
-  history.listen(() => Panelbear.trackPageview());
+  Panelbear.load("Kxep3xnqhgA", {
+    debug: false,
+    enabled: true,
+    honorDNT: true,
+    autoTrack: true,
+    spaMode: "history",
+    includeURLFragment: false
+  });
 })();
 /*
 object-assign
