@@ -9,7 +9,12 @@ const database = api as any as Database;
 import React from "react";
 import ReactDOM from "react-dom";
 import { Homepage } from "../components/Homepage";
-import { BrowserRouter, Route, RouteComponentProps } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  RouteComponentProps,
+  Router,
+} from "react-router-dom";
 import { PetPage } from "../components/PetPage";
 import { FoodPage } from "../components/FoodPage";
 
@@ -36,13 +41,20 @@ function FoodPageWrapper(props: RouteComponentProps<{ foodName: string }>) {
   return <FoodPage food={food} database={database} />;
 }
 
+import { createBrowserHistory } from "history";
+const history = createBrowserHistory();
+
 ReactDOM.hydrate(
-  <BrowserRouter>
+  <Router history={history}>
     <Route exact path="/">
       <Homepage database={database}></Homepage>
     </Route>
     <Route exact path="/pet/:petName" component={PetPageWrapper} />
     <Route exact path="/food/:foodName" component={FoodPageWrapper} />
-  </BrowserRouter>,
+  </Router>,
   reactRoot
 );
+
+import * as Panelbear from "@panelbear/panelbear-js";
+Panelbear.load("Kxep3xnqhgA");
+history.listen(() => Panelbear.trackPageview());
