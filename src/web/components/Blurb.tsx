@@ -13,7 +13,7 @@ export function Blurb() {
           If you find any issues or would like to make a contribution, please
           raise an issue in the{" "}
           <a
-            className="text-blue-600 visited:text-purple-600 underline"
+            className="text-blue-300 visited:text-purple-300 underline"
             href="https://github.com/bencoveney/super-auto-pets-db"
           >
             Github Repository
@@ -24,7 +24,7 @@ export function Blurb() {
         <h2 className="text-xl font-medium">API</h2>
         <p className="mt-2">
           The data used to power this site can be read/consumed from{" "}
-          <a className="visited:text-purple-600 underline" href="./api.json">
+          <a className="text-blue-300 visited:text-purple-300 underline" href="./api.json">
             api.json
           </a>
           .

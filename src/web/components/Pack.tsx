@@ -27,7 +27,7 @@ export function Pack(props: {
   const text = props.condensed ? packInfo.nameCondensed : packInfo.name;
   const styles = props.condensed
     ? "rounded px-2 mr-1 text-sm"
-    : "rounded px-3 py-1 mr-2 text-sm";
+    : "rounded px-3 py-4 sm:px-3 sm:py-1 mr-2 text-sm";
   return (
     <span className={`inline-block font-semibold ${styles} ${color}`}>
       {text}

@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ssr": "ts-node ./src/web/ssr/index.ts",
     "typecheck": "tsc -noEmit",
-    "live": "esbuild ./src/web/live/index.tsx --bundle --outfile=docs/bundle.js",
+    "prod:js": "esbuild ./src/web/live/index.tsx --bundle --outfile=docs/bundle.js --minify --sourcemap",
+    "dev:js": "esbuild ./src/web/live/index.tsx --bundle --outfile=docs/bundle.js",
     "prod:css": "NODE_ENV=production tailwindcss -o docs/tailwind.css --minify",
     "dev:css": "tailwindcss -o docs/tailwind.css",
-    "prod:build": "npm run typecheck && npm run ssr && npm run live && npm run prod:css",
-    "dev:build": "npm run typecheck && npm run ssr && npm run live && npm run dev:css",
+    "prod:build": "npm run typecheck && npm run ssr && npm run prod:js && npm run prod:css",
+    "dev:build": "npm run typecheck && npm run ssr && npm run dev:js && npm run dev:css",
     "dev": "serve docs"
   },
   "repository": {

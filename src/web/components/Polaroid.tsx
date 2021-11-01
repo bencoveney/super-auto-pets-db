@@ -16,7 +16,13 @@ export function Polaroid({
           className={`absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover`}
         />
         <div className="p-3">
-          <img className="filter drop-shadow-tile" src={`/assets/${id}.svg`} />
+          <img
+            className="filter drop-shadow-tile w-auto h-auto"
+            src={`/assets/${id}.svg`}
+            alt={`The ${name} relaxing in its natural habitat.`}
+            width="100"
+            height="100"
+          />
         </div>
         <div
           className={`absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover`}

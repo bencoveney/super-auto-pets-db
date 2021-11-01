@@ -22,8 +22,11 @@ export function Tile({
           className={`transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-2 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`}
         />
         <img
-          className="transition-margin mx-7 my-7 group-hover:mx-3 group-hover:my-3 filter drop-shadow-tile"
+          className="transition-margin mx-7 my-7 group-hover:mx-3 group-hover:my-3 filter drop-shadow-tile w-auto h-auto"
           src={`/assets/${id}.svg`}
+          alt={`A thumbnail of the ${name}`}
+          width="100"
+          height="100"
         />
         <div
           className={`transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`}

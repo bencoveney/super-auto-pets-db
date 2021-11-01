@@ -22,7 +22,7 @@ export function Page(props: { children: React.ReactElement }) {
           id="react-root"
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
-        <script src="/bundle.js" />
+        <script defer src="/bundle.js" />
       </body>
     </html>
   );

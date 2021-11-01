@@ -44,7 +44,7 @@ export function Filters(props: {
     <div className="flex flex-col md:flex-row items-center">
       <input
         type="search"
-        className="bg-gray-900 shadow rounded border-0 p-1"
+        className="bg-gray-900 shadow rounded border-0 p-3 md:p-1"
         placeholder="Search by name"
         value={props.filters.name}
         onChange={(e) => props.setName(e.target.value)}
