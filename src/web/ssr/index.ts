@@ -19,7 +19,7 @@ async function buildSite() {
   const outputDir = getOutputDir();
   const database = getDatabase();
   writeApi(outputDir, database);
-  copyAssets(outputDir, database);
+  await copyAssets(outputDir, database);
   await writeHomepage(outputDir, database);
   await writePetPages(outputDir, database);
   await writeFoodPages(outputDir, database);

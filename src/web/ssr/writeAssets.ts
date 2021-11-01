@@ -4,10 +4,10 @@ import { Database } from "../../db/database";
 import { copyBackgroundAssets } from "./writeBackgroundAssets";
 import { copyEmojiAssets } from "./writeEmojiAssets";
 
-export function copyAssets(outputDir: string, database: Database) {
+export async function copyAssets(outputDir: string, database: Database) {
   const assetsDir = getAssetsDir(outputDir);
   copyEmojiAssets(assetsDir, database);
-  copyBackgroundAssets(assetsDir);
+  await copyBackgroundAssets(assetsDir);
 }
 
 function getAssetsDir(outputDir: string) {
