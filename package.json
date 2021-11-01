@@ -8,8 +8,10 @@
     "ssr": "ts-node ./src/web/ssr/index.ts",
     "typecheck": "tsc -noEmit",
     "live": "esbuild ./src/web/live/index.tsx --bundle --outfile=docs/bundle.js",
-    "css": "tailwindcss -o docs/tailwind.css",
-    "start": "npm run typecheck && npm run ssr && npm run live && npm run css",
+    "prod:css": "NODE_ENV=production tailwindcss -o docs/tailwind.css --minify",
+    "dev:css": "tailwindcss -o docs/tailwind.css",
+    "prod:build": "npm run typecheck && npm run ssr && npm run live && npm run prod:css",
+    "dev:build": "npm run typecheck && npm run ssr && npm run live && npm run dev:css",
     "dev": "serve docs"
   },
   "repository": {

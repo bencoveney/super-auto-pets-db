@@ -29538,14 +29538,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "relative w-20"
     }, /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
+      className: "z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75"
     }), /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "z-2 relative p-1"
     }, /* @__PURE__ */ import_react17.default.createElement("img", {
       className: "drop-shadow-tile",
       src: `/assets/${pet.id}.svg`
     })), /* @__PURE__ */ import_react17.default.createElement("div", {
-      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
+      className: "z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75"
     })), /* @__PURE__ */ import_react17.default.createElement("div", {
       className: "flex-grow p-3 flex flex-col items-stretch justify-center"
     }, /* @__PURE__ */ import_react17.default.createElement("div", {
@@ -29565,14 +29565,14 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
     }, /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "relative w-20"
     }, /* @__PURE__ */ import_react18.default.createElement("div", {
-      className: `z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75`
+      className: "z-0 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-2 bg-cover filter contrast-75 brightness-75"
     }), /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "z-2 relative p-1"
     }, /* @__PURE__ */ import_react18.default.createElement("img", {
       className: "drop-shadow-tile",
       src: `/assets/${status.id}.svg`
     })), /* @__PURE__ */ import_react18.default.createElement("div", {
-      className: `z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75`
+      className: "z-3 absolute bottom-0 left-0 top-0 right-0 bg-bgimage-2-1 bg-cover filter contrast-75 brightness-75"
     })), /* @__PURE__ */ import_react18.default.createElement("div", {
       className: "flex-grow p-3 flex flex-col items-stretch justify-center"
     }, /* @__PURE__ */ import_react18.default.createElement("div", {

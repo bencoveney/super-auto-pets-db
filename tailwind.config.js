@@ -2,7 +2,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./docs/**/*.html"],
+  purge: [
+    './docs/**/*.html',
+    './src/**/*.tsx',
+  ],
   theme: {
     extend: {
       gridTemplateColumns: {

@@ -20,12 +20,11 @@ export function StatsRow(
   props: React.PropsWithChildren<{ text: string; className?: string }>
 ) {
   if (!props.children) {
-    //|| props.children.type() === null) {
     return null;
   }
   return (
     <>
-      <div className={"font-bold text-base text-gray-300"}>{props.text}:</div>
+      <div className="font-bold text-base text-gray-300">{props.text}:</div>
       <div className={props.className}>{props.children}</div>
     </>
   );
