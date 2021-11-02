@@ -12,10 +12,17 @@ import { Homepage } from "../components/Homepage";
 import { BrowserRouter, Route, RouteComponentProps } from "react-router-dom";
 import { PetPage } from "../components/PetPage";
 import { FoodPage } from "../components/FoodPage";
+import { getFoodPageTitle, getHomepageTitle, getPetPageTitle, useTitle } from "../hooks/usePageTitle";
+import * as Panelbear from "@panelbear/panelbear-js";
 
 const reactRoot = document.getElementById("react-root");
 if (!reactRoot) {
   throw new Error("Could not find react root");
+}
+
+function HomepageWrapper(props: RouteComponentProps<{}>) {
+  useTitle(getHomepageTitle());
+  return <Homepage database={database} />;
 }
 
 function PetPageWrapper(props: RouteComponentProps<{ petName: string }>) {
@@ -24,6 +31,7 @@ function PetPageWrapper(props: RouteComponentProps<{ petName: string }>) {
   if (!pet) {
     throw new Error(`Could not find pet ${name}`);
   }
+  useTitle(getPetPageTitle(pet));
   return <PetPage pet={pet} database={database} />;
 }
 
@@ -33,21 +41,19 @@ function FoodPageWrapper(props: RouteComponentProps<{ foodName: string }>) {
   if (!food) {
     throw new Error(`Could not find ${name}`);
   }
+  useTitle(getFoodPageTitle(food));
   return <FoodPage food={food} database={database} />;
 }
 
 ReactDOM.hydrate(
   <BrowserRouter>
-    <Route exact path="/">
-      <Homepage database={database}></Homepage>
-    </Route>
+    <Route exact path="/" component={HomepageWrapper} />
     <Route exact path="/pet/:petName" component={PetPageWrapper} />
     <Route exact path="/food/:foodName" component={FoodPageWrapper} />
   </BrowserRouter>,
   reactRoot
 );
 
-import * as Panelbear from "@panelbear/panelbear-js";
 Panelbear.load("Kxep3xnqhgA", {
   debug: false,
   enabled: true,

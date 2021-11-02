@@ -7,6 +7,7 @@ import { Page } from "../components/Page";
 import { PetPage } from "../components/PetPage";
 import { StaticRouter } from "react-router-dom";
 import { writePage } from "./writePage";
+import { getPetPageTitle } from "../hooks/usePageTitle";
 
 export async function writePetPages(outputDir: string, database: Database) {
   const petPagesDir = path.resolve(outputDir, "pet");
@@ -23,7 +24,7 @@ export async function writePetPages(outputDir: string, database: Database) {
 async function writePetPage(outputDir: string, pet: Pet, database: Database) {
   const pathname = getPetUrl(pet);
   await writePage(
-    <Page>
+    <Page title={getPetPageTitle(pet)}>
       <StaticRouter location={{ pathname }}>
         <PetPage pet={pet} database={database} />
       </StaticRouter>

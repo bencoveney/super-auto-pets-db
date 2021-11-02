@@ -5,10 +5,11 @@ import { Homepage } from "../components/Homepage";
 import { Page } from "../components/Page";
 import { StaticRouter } from "react-router-dom";
 import { writePage } from "./writePage";
+import { getHomepageTitle } from "../hooks/usePageTitle";
 
 export async function writeHomepage(outputDir: string, database: Database) {
   await writePage(
-    <Page>
+    <Page title={getHomepageTitle()}>
       <StaticRouter location={{ pathname: `/` }}>
         <Homepage database={database} />
       </StaticRouter>

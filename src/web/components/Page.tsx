@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 
-export function Page(props: { children: React.ReactElement }) {
+export function Page(props: { children: React.ReactElement, title: string }) {
   const content = ReactDOMServer.renderToString(props.children);
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Super Auto Pets Database</title>
+        <title>{props.title}</title>
         <meta
           name="description"
           content="This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."
