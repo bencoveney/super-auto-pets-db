@@ -6,5 +6,9 @@
     "**/node_modules": true,
     "src/emoji": true,
     "docs": true,
-  }
+  },
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
