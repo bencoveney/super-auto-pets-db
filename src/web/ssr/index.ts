@@ -7,6 +7,7 @@ import { writeApi } from "./writeApi";
 import { writePetPages } from "./writePetPages";
 import { writeFoodPages } from "./writeFoodPages";
 import { copyRobots } from "./writeRobots";
+import { writeSitemap } from "./writeSitemap";
 
 function getOutputDir() {
   const outputDir = path.join(process.cwd(), "docs");
@@ -25,6 +26,7 @@ async function buildSite() {
   await writeHomepage(outputDir, database);
   await writePetPages(outputDir, database);
   await writeFoodPages(outputDir, database);
+  await writeSitemap(outputDir, database);
 }
 
 buildSite().then(
