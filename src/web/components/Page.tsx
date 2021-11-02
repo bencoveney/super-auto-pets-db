@@ -11,7 +11,7 @@ export function Page(props: { children: React.ReactElement; title: string }) {
         <title>{props.title}</title>
         <meta
           name="description"
-          content="This database website is an un-official guide and reference for the pets, food and stats from the game Super Auto Pets."
+          content="This database website is an un-official list, guide and reference for the pets, food and stats from the game Super Auto Pets."
         />
         <meta name="author" content="Ben Coveney" />
         <link rel="icon" type="image/svg+xml" href="/assets/pet-fish.svg" />

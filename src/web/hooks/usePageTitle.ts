@@ -8,13 +8,13 @@ export function useTitle(title: string) {
 }
 
 export function getHomepageTitle() {
-    return "Super Auto Pets Database";
+  return "Super Auto Pets List";
 }
 
 export function getPetPageTitle(pet: Pet) {
-    return `${pet.name}: Stats and Abilities`;
+  return `${pet.name}: Stats and Abilities`;
 }
 
 export function getFoodPageTitle(food: Food) {
-    return `${food.name}: Stats and Effects`;
+  return `${food.name}: Stats and Effects`;
 }

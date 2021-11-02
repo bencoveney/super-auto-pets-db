@@ -49,7 +49,7 @@ export function Breadcrumbs(props: { database: Database }) {
       <Route path="/">
         📚{" "}
         <Link className="hover:text-blue-300" to="/">
-          Super Auto Pets Database
+          Super Auto Pets List
         </Link>
       </Route>
       <Route
