@@ -30,7 +30,7 @@ export function copyEmojiAssets(targetDir: string, database: Database) {
 }
 
 function getExistingEmojis(targetDir: string) {
-  const regExp = /((?:pet|status|food)_\w+).svg/;
+  const regExp = /((?:pet|status|food)-\w+).svg/;
   return fs
     .readdirSync(targetDir)
     .map((filename) => filename.match(regExp))
@@ -56,7 +56,7 @@ function getFxEmojiPath(emoji: FxEmojiImage): string {
   return path.resolve(
     __dirname,
     "../../emoji/fxemoji/svgs/FirefoxEmoji/",
-    `u${unicodeValues.join("_")}-${emoji.name}.svg`
+    `u${unicodeValues.join("_").toUpperCase()}-${emoji.name}.svg`
   );
 }
 
@@ -82,12 +82,19 @@ function gitShowEmoji(image: EmojiImage) {
   const emojiPath = getEmojiPath(image);
   const emojiDir = path.dirname(emojiPath);
   const emojiFileName = path.basename(emojiPath);
-  return childProcess
-    .execSync(`git show ${image.commit}:./${emojiFileName}`, {
-      cwd: emojiDir,
-      windowsHide: true,
-    })
-    .toString();
+  try {
+    return childProcess
+      .execSync(`git show ${image.commit}:./${emojiFileName}`, {
+        cwd: emojiDir,
+        windowsHide: true,
+      })
+      .toString();
+  } catch (e) {
+    console.warn(
+      "Do you need to get submodules?: git submodule update --init --recursive"
+    );
+    throw e;
+  }
 }
 
 function sanitiseSvg(svgContent: string) {

@@ -1,8 +1,8 @@
 {
   "pets": {
-    "pet_ant": {
+    "pet-ant": {
       "name": "Ant",
-      "id": "pet_ant",
+      "id": "pet-ant",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -67,9 +67,9 @@
         }
       }
     },
-    "pet_beaver": {
+    "pet-beaver": {
       "name": "Beaver",
-      "id": "pet_beaver",
+      "id": "pet-beaver",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -131,9 +131,9 @@
         }
       }
     },
-    "pet_beetle": {
+    "pet-beetle": {
       "name": "Beetle",
-      "id": "pet_beetle",
+      "id": "pet-beetle",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -194,9 +194,9 @@
         }
       }
     },
-    "pet_bluebird": {
+    "pet-bluebird": {
       "name": "Bluebird",
-      "id": "pet_bluebird",
+      "id": "pet-bluebird",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -254,9 +254,9 @@
         }
       }
     },
-    "pet_cricket": {
+    "pet-cricket": {
       "name": "Cricket",
-      "id": "pet_cricket",
+      "id": "pet-cricket",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -277,7 +277,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_cricket",
+          "pet": "pet-zombie-cricket",
           "withAttack": 1,
           "withHealth": 1,
           "team": "Friendly"
@@ -291,7 +291,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_cricket",
+          "pet": "pet-zombie-cricket",
           "withAttack": 2,
           "withHealth": 2,
           "team": "Friendly"
@@ -305,16 +305,16 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_cricket",
+          "pet": "pet-zombie-cricket",
           "withAttack": 3,
           "withHealth": 3,
           "team": "Friendly"
         }
       }
     },
-    "pet_duck": {
+    "pet-duck": {
       "name": "Duck",
-      "id": "pet_duck",
+      "id": "pet-duck",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -378,9 +378,9 @@
         }
       }
     },
-    "pet_fish": {
+    "pet-fish": {
       "name": "Fish",
-      "id": "pet_fish",
+      "id": "pet-fish",
       "image": {
         "source": "fxemoji",
         "commit": "270af343bee346d8221f87806d2b1eee0438431a",
@@ -427,9 +427,9 @@
         }
       }
     },
-    "pet_horse": {
+    "pet-horse": {
       "name": "Horse",
-      "id": "pet_horse",
+      "id": "pet-horse",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -487,9 +487,9 @@
         }
       }
     },
-    "pet_ladybug": {
+    "pet-ladybug": {
       "name": "Ladybug",
-      "id": "pet_ladybug",
+      "id": "pet-ladybug",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -550,9 +550,9 @@
         }
       }
     },
-    "pet_mosquito": {
+    "pet-mosquito": {
       "name": "Mosquito",
-      "id": "pet_mosquito",
+      "id": "pet-mosquito",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -611,9 +611,9 @@
         }
       }
     },
-    "pet_otter": {
+    "pet-otter": {
       "name": "Otter",
-      "id": "pet_otter",
+      "id": "pet-otter",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -677,9 +677,9 @@
         }
       }
     },
-    "pet_pig": {
+    "pet-pig": {
       "name": "Pig",
-      "id": "pet_pig",
+      "id": "pet-pig",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -726,9 +726,9 @@
         }
       }
     },
-    "pet_sloth": {
+    "pet-sloth": {
       "name": "Sloth",
-      "id": "pet_sloth",
+      "id": "pet-sloth",
       "notes": "Has no special ability. Is kind of lame combat-wise. But he truly believes in you!",
       "image": {
         "source": "noto-emoji",
@@ -744,9 +744,9 @@
         "EasterEgg"
       ]
     },
-    "pet_bat": {
+    "pet-bat": {
       "name": "Bat",
-      "id": "pet_bat",
+      "id": "pet-bat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -766,7 +766,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 1
@@ -781,7 +781,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 2
@@ -796,7 +796,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "RandomEnemy",
             "n": 3
@@ -804,9 +804,9 @@
         }
       }
     },
-    "pet_crab": {
+    "pet-crab": {
       "name": "Crab",
-      "id": "pet_crab",
+      "id": "pet-crab",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -876,9 +876,9 @@
         }
       }
     },
-    "pet_dodo": {
+    "pet-dodo": {
       "name": "Dodo",
-      "id": "pet_dodo",
+      "id": "pet-dodo",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -948,9 +948,9 @@
         }
       }
     },
-    "pet_dog": {
+    "pet-dog": {
       "name": "Dog",
-      "id": "pet_dog",
+      "id": "pet-dog",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -1048,9 +1048,9 @@
         }
       }
     },
-    "pet_dromedary": {
+    "pet-dromedary": {
       "name": "Dromedary",
-      "id": "pet_dromedary",
+      "id": "pet-dromedary",
       "image": {
         "source": "noto-emoji",
         "commit": "f2a4f72bffe0212c72949a22698be235269bfab5",
@@ -1114,9 +1114,9 @@
         }
       }
     },
-    "pet_elephant": {
+    "pet-elephant": {
       "name": "Elephant",
-      "id": "pet_elephant",
+      "id": "pet-elephant",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1174,9 +1174,9 @@
         }
       }
     },
-    "pet_flamingo": {
+    "pet-flamingo": {
       "name": "Flamingo",
-      "id": "pet_flamingo",
+      "id": "pet-flamingo",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1241,9 +1241,9 @@
         }
       }
     },
-    "pet_hedgehog": {
+    "pet-hedgehog": {
       "name": "Hedgehog",
-      "id": "pet_hedgehog",
+      "id": "pet-hedgehog",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1299,9 +1299,9 @@
         }
       }
     },
-    "pet_peacock": {
+    "pet-peacock": {
       "name": "Peacock",
-      "id": "pet_peacock",
+      "id": "pet-peacock",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1360,9 +1360,9 @@
         }
       }
     },
-    "pet_rat": {
+    "pet-rat": {
       "name": "Rat",
-      "id": "pet_rat",
+      "id": "pet-rat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1383,7 +1383,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_dirty_rat",
+          "pet": "pet-dirty-rat",
           "team": "Enemy"
         }
       },
@@ -1395,7 +1395,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_dirty_rat",
+          "pet": "pet-dirty-rat",
           "team": "Enemy"
         }
       },
@@ -1407,14 +1407,14 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_dirty_rat",
+          "pet": "pet-dirty-rat",
           "team": "Enemy"
         }
       }
     },
-    "pet_shrimp": {
+    "pet-shrimp": {
       "name": "Shrimp",
-      "id": "pet_shrimp",
+      "id": "pet-shrimp",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1476,9 +1476,9 @@
         }
       }
     },
-    "pet_spider": {
+    "pet-spider": {
       "name": "Spider",
-      "id": "pet_spider",
+      "id": "pet-spider",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1531,9 +1531,9 @@
         }
       }
     },
-    "pet_swan": {
+    "pet-swan": {
       "name": "Swan",
-      "id": "pet_swan",
+      "id": "pet-swan",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -1580,9 +1580,9 @@
         }
       }
     },
-    "pet_tabby_cat": {
+    "pet-tabby-cat": {
       "name": "Tabby Cat",
-      "id": "pet_tabby_cat",
+      "id": "pet-tabby-cat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1640,9 +1640,9 @@
         }
       }
     },
-    "pet_badger": {
+    "pet-badger": {
       "name": "Badger",
-      "id": "pet_badger",
+      "id": "pet-badger",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1703,9 +1703,9 @@
         }
       }
     },
-    "pet_blowfish": {
+    "pet-blowfish": {
       "name": "Blowfish",
-      "id": "pet_blowfish",
+      "id": "pet-blowfish",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1764,9 +1764,9 @@
         }
       }
     },
-    "pet_caterpillar": {
+    "pet-caterpillar": {
       "name": "Caterpillar",
-      "id": "pet_caterpillar",
+      "id": "pet-caterpillar",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1814,13 +1814,13 @@
         },
         "effect": {
           "kind": "Evolve",
-          "into": "pet_butterfly"
+          "into": "pet-butterfly"
         }
       }
     },
-    "pet_camel": {
+    "pet-camel": {
       "name": "Camel",
-      "id": "pet_camel",
+      "id": "pet-camel",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1884,9 +1884,9 @@
         }
       }
     },
-    "pet_hatching_chick": {
+    "pet-hatching-chick": {
       "name": "Hatching Chick",
-      "id": "pet_hatching_chick",
+      "id": "pet-hatching-chick",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -1948,9 +1948,9 @@
         }
       }
     },
-    "pet_giraffe": {
+    "pet-giraffe": {
       "name": "Giraffe",
-      "id": "pet_giraffe",
+      "id": "pet-giraffe",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -2014,9 +2014,9 @@
         }
       }
     },
-    "pet_kangaroo": {
+    "pet-kangaroo": {
       "name": "Kangaroo",
-      "id": "pet_kangaroo",
+      "id": "pet-kangaroo",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2080,9 +2080,9 @@
         }
       }
     },
-    "pet_owl": {
+    "pet-owl": {
       "name": "Owl",
-      "id": "pet_owl",
+      "id": "pet-owl",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2146,9 +2146,9 @@
         }
       }
     },
-    "pet_ox": {
+    "pet-ox": {
       "name": "Ox",
-      "id": "pet_ox",
+      "id": "pet-ox",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2172,7 +2172,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": "status_melon_armor",
+              "status": "status-melon-armor",
               "to": {
                 "kind": "Self"
               }
@@ -2200,7 +2200,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": "status_melon_armor",
+              "status": "status-melon-armor",
               "to": {
                 "kind": "Self"
               }
@@ -2228,7 +2228,7 @@
           "effects": [
             {
               "kind": "ApplyStatus",
-              "status": "status_melon_armor",
+              "status": "status-melon-armor",
               "to": {
                 "kind": "Self"
               }
@@ -2245,9 +2245,9 @@
         }
       }
     },
-    "pet_puppy": {
+    "pet-puppy": {
       "name": "Puppy",
-      "id": "pet_puppy",
+      "id": "pet-puppy",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2308,9 +2308,9 @@
         }
       }
     },
-    "pet_rabbit": {
+    "pet-rabbit": {
       "name": "Rabbit",
-      "id": "pet_rabbit",
+      "id": "pet-rabbit",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2369,9 +2369,9 @@
         }
       }
     },
-    "pet_sheep": {
+    "pet-sheep": {
       "name": "Sheep",
-      "id": "pet_sheep",
+      "id": "pet-sheep",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2392,7 +2392,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_ram",
+          "pet": "pet-ram",
           "withAttack": 2,
           "withHealth": 2,
           "team": "Friendly"
@@ -2406,7 +2406,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_ram",
+          "pet": "pet-ram",
           "withAttack": 4,
           "withHealth": 4,
           "team": "Friendly"
@@ -2420,16 +2420,16 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_ram",
+          "pet": "pet-ram",
           "withAttack": 6,
           "withHealth": 6,
           "team": "Friendly"
         }
       }
     },
-    "pet_snail": {
+    "pet-snail": {
       "name": "Snail",
-      "id": "pet_snail",
+      "id": "pet-snail",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2491,9 +2491,9 @@
         }
       }
     },
-    "pet_tropical_fish": {
+    "pet-tropical-fish": {
       "name": "Tropical Fish",
-      "id": "pet_tropical_fish",
+      "id": "pet-tropical-fish",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -2551,9 +2551,9 @@
         }
       }
     },
-    "pet_turtle": {
+    "pet-turtle": {
       "name": "Turtle",
-      "id": "pet_turtle",
+      "id": "pet-turtle",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2574,7 +2574,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_melon_armor",
+          "status": "status-melon-armor",
           "to": {
             "kind": "FriendBehind",
             "n": 1
@@ -2589,7 +2589,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_melon_armor",
+          "status": "status-melon-armor",
           "to": {
             "kind": "FriendBehind",
             "n": 2
@@ -2604,7 +2604,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_melon_armor",
+          "status": "status-melon-armor",
           "to": {
             "kind": "FriendBehind",
             "n": 3
@@ -2612,9 +2612,9 @@
         }
       }
     },
-    "pet_whale": {
+    "pet-whale": {
       "name": "Whale",
-      "id": "pet_whale",
+      "id": "pet-whale",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2669,9 +2669,9 @@
         }
       }
     },
-    "pet_bison": {
+    "pet-bison": {
       "name": "Bison",
-      "id": "pet_bison",
+      "id": "pet-bison",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2733,9 +2733,9 @@
         }
       }
     },
-    "pet_buffalo": {
+    "pet-buffalo": {
       "name": "Buffalo",
-      "id": "pet_buffalo",
+      "id": "pet-buffalo",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2796,9 +2796,9 @@
         }
       }
     },
-    "pet_deer": {
+    "pet-deer": {
       "name": "Deer",
-      "id": "pet_deer",
+      "id": "pet-deer",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2819,7 +2819,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_bus",
+          "pet": "pet-bus",
           "withAttack": 5,
           "withHealth": 5,
           "team": "Friendly"
@@ -2833,7 +2833,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_bus",
+          "pet": "pet-bus",
           "withAttack": 10,
           "withHealth": 10,
           "team": "Friendly"
@@ -2847,16 +2847,16 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_bus",
+          "pet": "pet-bus",
           "withAttack": 15,
           "withHealth": 15,
           "team": "Friendly"
         }
       }
     },
-    "pet_dolphin": {
+    "pet-dolphin": {
       "name": "Dolphin",
-      "id": "pet_dolphin",
+      "id": "pet-dolphin",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2911,9 +2911,9 @@
         }
       }
     },
-    "pet_hippo": {
+    "pet-hippo": {
       "name": "Hippo",
-      "id": "pet_hippo",
+      "id": "pet-hippo",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -2974,9 +2974,9 @@
         }
       }
     },
-    "pet_llama": {
+    "pet-llama": {
       "name": "Llama",
-      "id": "pet_llama",
+      "id": "pet-llama",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3037,9 +3037,9 @@
         }
       }
     },
-    "pet_lobster": {
+    "pet-lobster": {
       "name": "Lobster",
-      "id": "pet_lobster",
+      "id": "pet-lobster",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -3100,9 +3100,9 @@
         }
       }
     },
-    "pet_monkey": {
+    "pet-monkey": {
       "name": "Monkey",
-      "id": "pet_monkey",
+      "id": "pet-monkey",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3163,9 +3163,9 @@
         }
       }
     },
-    "pet_penguin": {
+    "pet-penguin": {
       "name": "Penguin",
-      "id": "pet_penguin",
+      "id": "pet-penguin",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3226,9 +3226,9 @@
         }
       }
     },
-    "pet_poodle": {
+    "pet-poodle": {
       "name": "Poodle",
-      "id": "pet_poodle",
+      "id": "pet-poodle",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3289,9 +3289,9 @@
         }
       }
     },
-    "pet_rooster": {
+    "pet-rooster": {
       "name": "Rooster",
-      "id": "pet_rooster",
+      "id": "pet-rooster",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3312,7 +3312,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_chick",
+          "pet": "pet-chick",
           "team": "Friendly"
         }
       },
@@ -3324,7 +3324,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_chick",
+          "pet": "pet-chick",
           "team": "Friendly"
         }
       },
@@ -3336,14 +3336,14 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_chick",
+          "pet": "pet-chick",
           "team": "Friendly"
         }
       }
     },
-    "pet_skunk": {
+    "pet-skunk": {
       "name": "Skunk",
-      "id": "pet_skunk",
+      "id": "pet-skunk",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3399,9 +3399,9 @@
         }
       }
     },
-    "pet_squirrel": {
+    "pet-squirrel": {
       "name": "Squirrel",
-      "id": "pet_squirrel",
+      "id": "pet-squirrel",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3451,9 +3451,9 @@
         }
       }
     },
-    "pet_worm": {
+    "pet-worm": {
       "name": "Worm",
-      "id": "pet_worm",
+      "id": "pet-worm",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3515,9 +3515,9 @@
         }
       }
     },
-    "pet_chicken": {
+    "pet-chicken": {
       "name": "Chicken",
-      "id": "pet_chicken",
+      "id": "pet-chicken",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -3581,9 +3581,9 @@
         }
       }
     },
-    "pet_cow": {
+    "pet-cow": {
       "name": "Cow",
-      "id": "pet_cow",
+      "id": "pet-cow",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3633,9 +3633,9 @@
         }
       }
     },
-    "pet_crocodile": {
+    "pet-crocodile": {
       "name": "Crocodile",
-      "id": "pet_crocodile",
+      "id": "pet-crocodile",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -3690,9 +3690,9 @@
         }
       }
     },
-    "pet_eagle": {
+    "pet-eagle": {
       "name": "Eagle",
-      "id": "pet_eagle",
+      "id": "pet-eagle",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3741,9 +3741,9 @@
         }
       }
     },
-    "pet_goat": {
+    "pet-goat": {
       "name": "Goat",
-      "id": "pet_goat",
+      "id": "pet-goat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3789,9 +3789,9 @@
         }
       }
     },
-    "pet_microbe": {
+    "pet-microbe": {
       "name": "Microbe",
-      "id": "pet_microbe",
+      "id": "pet-microbe",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3811,7 +3811,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "All"
           }
@@ -3825,7 +3825,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "All"
           }
@@ -3839,16 +3839,16 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_weak",
+          "status": "status-weak",
           "to": {
             "kind": "All"
           }
         }
       }
     },
-    "pet_parrot": {
+    "pet-parrot": {
       "name": "Parrot",
-      "id": "pet_parrot",
+      "id": "pet-parrot",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3915,9 +3915,9 @@
         }
       }
     },
-    "pet_rhino": {
+    "pet-rhino": {
       "name": "Rhino",
-      "id": "pet_rhino",
+      "id": "pet-rhino",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3973,9 +3973,9 @@
         }
       }
     },
-    "pet_scorpion": {
+    "pet-scorpion": {
       "name": "Scorpion",
-      "id": "pet_scorpion",
+      "id": "pet-scorpion",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -3988,11 +3988,11 @@
         "StandardPack",
         "ExpansionPack1"
       ],
-      "status": "status_poison_attack"
+      "status": "status-poison-attack"
     },
-    "pet_seal": {
+    "pet-seal": {
       "name": "Seal",
-      "id": "pet_seal",
+      "id": "pet-seal",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4057,9 +4057,9 @@
         }
       }
     },
-    "pet_shark": {
+    "pet-shark": {
       "name": "Shark",
-      "id": "pet_shark",
+      "id": "pet-shark",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4120,9 +4120,9 @@
         }
       }
     },
-    "pet_turkey": {
+    "pet-turkey": {
       "name": "Turkey",
-      "id": "pet_turkey",
+      "id": "pet-turkey",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4183,9 +4183,9 @@
         }
       }
     },
-    "pet_cat": {
+    "pet-cat": {
       "name": "Cat",
-      "id": "pet_cat",
+      "id": "pet-cat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4231,9 +4231,9 @@
         }
       }
     },
-    "pet_dragon": {
+    "pet-dragon": {
       "name": "Dragon",
-      "id": "pet_dragon",
+      "id": "pet-dragon",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4295,9 +4295,9 @@
         }
       }
     },
-    "pet_fly": {
+    "pet-fly": {
       "name": "Fly",
-      "id": "pet_fly",
+      "id": "pet-fly",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4317,7 +4317,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_fly",
+          "pet": "pet-zombie-fly",
           "withAttack": 2,
           "withHealth": 2,
           "team": "Friendly"
@@ -4331,7 +4331,7 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_fly",
+          "pet": "pet-zombie-fly",
           "withAttack": 4,
           "withHealth": 4,
           "team": "Friendly"
@@ -4345,16 +4345,16 @@
         },
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_zombie_fly",
+          "pet": "pet-zombie-fly",
           "withAttack": 6,
           "withHealth": 6,
           "team": "Friendly"
         }
       }
     },
-    "pet_gorilla": {
+    "pet-gorilla": {
       "name": "Gorilla",
-      "id": "pet_gorilla",
+      "id": "pet-gorilla",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4375,7 +4375,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_coconut_shield",
+          "status": "status-coconut-shield",
           "to": {
             "kind": "Self"
           }
@@ -4389,7 +4389,7 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_coconut_shield",
+          "status": "status-coconut-shield",
           "to": {
             "kind": "Self"
           }
@@ -4403,16 +4403,16 @@
         },
         "effect": {
           "kind": "ApplyStatus",
-          "status": "status_coconut_shield",
+          "status": "status-coconut-shield",
           "to": {
             "kind": "Self"
           }
         }
       }
     },
-    "pet_leopard": {
+    "pet-leopard": {
       "name": "Leopard",
-      "id": "pet_leopard",
+      "id": "pet-leopard",
       "image": {
         "source": "fxemoji",
         "commit": "270af343bee346d8221f87806d2b1eee0438431a",
@@ -4478,9 +4478,9 @@
         }
       }
     },
-    "pet_mammoth": {
+    "pet-mammoth": {
       "name": "Mammoth",
-      "id": "pet_mammoth",
+      "id": "pet-mammoth",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4542,9 +4542,9 @@
         }
       }
     },
-    "pet_octopus": {
+    "pet-octopus": {
       "name": "Octopus",
-      "id": "pet_octopus",
+      "id": "pet-octopus",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4614,9 +4614,9 @@
         }
       }
     },
-    "pet_sauropod": {
+    "pet-sauropod": {
       "name": "Sauropod",
-      "id": "pet_sauropod",
+      "id": "pet-sauropod",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4662,9 +4662,9 @@
         }
       }
     },
-    "pet_snake": {
+    "pet-snake": {
       "name": "Snake",
-      "id": "pet_snake",
+      "id": "pet-snake",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4725,9 +4725,9 @@
         }
       }
     },
-    "pet_tiger": {
+    "pet-tiger": {
       "name": "Tiger",
-      "id": "pet_tiger",
+      "id": "pet-tiger",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4782,9 +4782,9 @@
         }
       }
     },
-    "pet_tyrannosaurus": {
+    "pet-tyrannosaurus": {
       "name": "Tyrannosaurus",
-      "id": "pet_tyrannosaurus",
+      "id": "pet-tyrannosaurus",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4845,9 +4845,9 @@
         }
       }
     },
-    "pet_zombie_cricket": {
+    "pet-zombie-cricket": {
       "name": "Zombie Cricket",
-      "id": "pet_zombie_cricket",
+      "id": "pet-zombie-cricket",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4861,9 +4861,9 @@
       "baseAttack": "?",
       "baseHealth": "?"
     },
-    "pet_bus": {
+    "pet-bus": {
       "name": "Bus",
-      "id": "pet_bus",
+      "id": "pet-bus",
       "image": {
         "source": "noto-emoji",
         "commit": "f2a4f72bffe0212c72949a22698be235269bfab5",
@@ -4876,11 +4876,11 @@
       "tier": "Summoned",
       "baseAttack": "?",
       "baseHealth": "?",
-      "status": "status_splash_attack"
+      "status": "status-splash-attack"
     },
-    "pet_zombie_fly": {
+    "pet-zombie-fly": {
       "name": "Zombie Fly",
-      "id": "pet_zombie_fly",
+      "id": "pet-zombie-fly",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4893,9 +4893,9 @@
       "baseAttack": "?",
       "baseHealth": "?"
     },
-    "pet_dirty_rat": {
+    "pet-dirty-rat": {
       "name": "Dirty Rat",
-      "id": "pet_dirty_rat",
+      "id": "pet-dirty-rat",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4909,9 +4909,9 @@
       "baseAttack": 1,
       "baseHealth": 1
     },
-    "pet_chick": {
+    "pet-chick": {
       "name": "Chick",
-      "id": "pet_chick",
+      "id": "pet-chick",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4925,9 +4925,9 @@
       "baseAttack": "?",
       "baseHealth": 1
     },
-    "pet_ram": {
+    "pet-ram": {
       "name": "Ram",
-      "id": "pet_ram",
+      "id": "pet-ram",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4941,9 +4941,9 @@
       "baseAttack": "?",
       "baseHealth": "?"
     },
-    "pet_butterfly": {
+    "pet-butterfly": {
       "name": "Butterfly",
-      "id": "pet_butterfly",
+      "id": "pet-butterfly",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4957,9 +4957,9 @@
         "ExpansionPack1"
       ]
     },
-    "pet_bee": {
+    "pet-bee": {
       "name": "Bee",
-      "id": "pet_bee",
+      "id": "pet-bee",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -4975,9 +4975,9 @@
     }
   },
   "foods": {
-    "food_apple": {
+    "food-apple": {
       "name": "Apple",
-      "id": "food_apple",
+      "id": "food-apple",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5005,9 +5005,9 @@
         }
       }
     },
-    "food_honey": {
+    "food-honey": {
       "name": "Honey",
-      "id": "food_honey",
+      "id": "food-honey",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5029,13 +5029,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_honey_bee"
+          "status": "status-honey-bee"
         }
       }
     },
-    "food_cupcake": {
+    "food-cupcake": {
       "name": "Cupcake",
-      "id": "food_cupcake",
+      "id": "food-cupcake",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5063,9 +5063,9 @@
         }
       }
     },
-    "food_meat_bone": {
+    "food-meat-bone": {
       "name": "Meat Bone",
-      "id": "food_meat_bone",
+      "id": "food-meat-bone",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5087,13 +5087,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_bone_attack"
+          "status": "status-bone-attack"
         }
       }
     },
-    "food_sleeping_pill": {
+    "food-sleeping-pill": {
       "name": "Sleeping Pill",
-      "id": "food_sleeping_pill",
+      "id": "food-sleeping-pill",
       "image": {
         "source": "fxemoji",
         "commit": "270af343bee346d8221f87806d2b1eee0438431a",
@@ -5120,9 +5120,9 @@
         }
       }
     },
-    "food_garlic": {
+    "food-garlic": {
       "name": "Garlic",
-      "id": "food_garlic",
+      "id": "food-garlic",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5144,13 +5144,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_garlic_armor"
+          "status": "status-garlic-armor"
         }
       }
     },
-    "food_salad_bowl": {
+    "food-salad-bowl": {
       "name": "Salad Bowl",
-      "id": "food_salad_bowl",
+      "id": "food-salad-bowl",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5179,9 +5179,9 @@
         }
       }
     },
-    "food_canned_food": {
+    "food-canned-food": {
       "name": "Canned Food",
-      "id": "food_canned_food",
+      "id": "food-canned-food",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5210,9 +5210,9 @@
         }
       }
     },
-    "food_pear": {
+    "food-pear": {
       "name": "Pear",
-      "id": "food_pear",
+      "id": "food-pear",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5240,9 +5240,9 @@
         }
       }
     },
-    "food_chili": {
+    "food-chili": {
       "name": "Chili",
-      "id": "food_chili",
+      "id": "food-chili",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5264,13 +5264,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_splash_attack"
+          "status": "status-splash-attack"
         }
       }
     },
-    "food_chocolate": {
+    "food-chocolate": {
       "name": "Chocolate",
-      "id": "food_chocolate",
+      "id": "food-chocolate",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5296,9 +5296,9 @@
         }
       }
     },
-    "food_sushi": {
+    "food-sushi": {
       "name": "Sushi",
-      "id": "food_sushi",
+      "id": "food-sushi",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5327,9 +5327,9 @@
         }
       }
     },
-    "food_melon": {
+    "food-melon": {
       "name": "Melon",
-      "id": "food_melon",
+      "id": "food-melon",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5351,13 +5351,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_melon_armor"
+          "status": "status-melon-armor"
         }
       }
     },
-    "food_mushroom": {
+    "food-mushroom": {
       "name": "Mushroom",
-      "id": "food_mushroom",
+      "id": "food-mushroom",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5379,13 +5379,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_extra_life"
+          "status": "status-extra-life"
         }
       }
     },
-    "food_pizza": {
+    "food-pizza": {
       "name": "Pizza",
-      "id": "food_pizza",
+      "id": "food-pizza",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5414,9 +5414,9 @@
         }
       }
     },
-    "food_steak": {
+    "food-steak": {
       "name": "Steak",
-      "id": "food_steak",
+      "id": "food-steak",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5438,13 +5438,13 @@
           "to": {
             "kind": "PurchaseTarget"
           },
-          "status": "status_steak_attack"
+          "status": "status-steak-attack"
         }
       }
     },
-    "food_milk": {
+    "food-milk": {
       "name": "Milk",
-      "id": "food_milk",
+      "id": "food-milk",
       "notes": "This is free!",
       "image": {
         "source": "twemoji",
@@ -5475,9 +5475,9 @@
     }
   },
   "statuses": {
-    "status_weak": {
+    "status-weak": {
       "name": "Weak",
-      "id": "status_weak",
+      "id": "status-weak",
       "image": {
         "source": "noto-emoji",
         "commit": "e022fd6573782431ac9a65b520376b57511c31cd",
@@ -5496,9 +5496,9 @@
         }
       }
     },
-    "status_coconut_shield": {
+    "status-coconut-shield": {
       "name": "Coconut Shield",
-      "id": "status_coconut_shield",
+      "id": "status-coconut-shield",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5517,9 +5517,9 @@
         }
       }
     },
-    "status_honey_bee": {
+    "status-honey-bee": {
       "name": "Honey Bee",
-      "id": "status_honey_bee",
+      "id": "status-honey-bee",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5533,14 +5533,14 @@
         "trigger": "Faint",
         "effect": {
           "kind": "SummonPet",
-          "pet": "pet_bee",
+          "pet": "pet-bee",
           "team": "Friendly"
         }
       }
     },
-    "status_bone_attack": {
+    "status-bone-attack": {
       "name": "Bone Attack",
-      "id": "status_bone_attack",
+      "id": "status-bone-attack",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5559,9 +5559,9 @@
         }
       }
     },
-    "status_garlic_armor": {
+    "status-garlic-armor": {
       "name": "Garlic Armor",
-      "id": "status_garlic_armor",
+      "id": "status-garlic-armor",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5580,9 +5580,9 @@
         }
       }
     },
-    "status_splash_attack": {
+    "status-splash-attack": {
       "name": "Splash Attack",
-      "id": "status_splash_attack",
+      "id": "status-splash-attack",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5600,9 +5600,9 @@
         }
       }
     },
-    "status_melon_armor": {
+    "status-melon-armor": {
       "name": "Melon Armor",
-      "id": "status_melon_armor",
+      "id": "status-melon-armor",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5621,9 +5621,9 @@
         }
       }
     },
-    "status_extra_life": {
+    "status-extra-life": {
       "name": "Extra Life",
-      "id": "status_extra_life",
+      "id": "status-extra-life",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5642,9 +5642,9 @@
         }
       }
     },
-    "status_steak_attack": {
+    "status-steak-attack": {
       "name": "Steak Attack",
-      "id": "status_steak_attack",
+      "id": "status-steak-attack",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
@@ -5663,9 +5663,9 @@
         }
       }
     },
-    "status_poison_attack": {
+    "status-poison-attack": {
       "name": "Poison Attack",
-      "id": "status_poison_attack",
+      "id": "status-poison-attack",
       "image": {
         "source": "twemoji",
         "commit": "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",

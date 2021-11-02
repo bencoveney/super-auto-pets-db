@@ -8,7 +8,7 @@ export function SummaryStatus(props: {
   database: Database;
 }) {
   const status = props.database.statuses[props.status];
-  const pet = props.database.pets[props.pet || "pet_sloth"];
+  // const pet = props.database.pets[props.pet || "pet-sloth"];
   return (
     <div className="flex m-3 bg-gray-900">
       <div className="relative w-20">
