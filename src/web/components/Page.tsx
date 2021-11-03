@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 
-export function Page(props: { children: React.ReactElement; title: string }) {
+export function Page(props: {
+  children: React.ReactElement;
+  title: string;
+  canonical: string;
+}) {
   const content = ReactDOMServer.renderToString(props.children);
   return (
     <html lang="en">
@@ -16,6 +20,7 @@ export function Page(props: { children: React.ReactElement; title: string }) {
         <meta name="author" content="Ben Coveney" />
         <link rel="icon" type="image/svg+xml" href="/assets/pet-fish.svg" />
         <link rel="stylesheet" href="/tailwind.css" />
+        <link rel="canonical" href={props.canonical} />
       </head>
       <body className="bg-gray-800 text-white">
         <div

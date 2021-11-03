@@ -8,6 +8,7 @@ import { FoodPage } from "../components/FoodPage";
 import { StaticRouter } from "react-router-dom";
 import { writePage } from "./writePage";
 import { getFoodPageTitle } from "../hooks/usePageTitle";
+import { hostname } from "../common";
 
 export async function writeFoodPages(outputDir: string, database: Database) {
   const foodPagesDir = path.resolve(outputDir, "food");
@@ -27,8 +28,9 @@ async function writeFoodPage(
   database: Database
 ) {
   const pathname = getFoodUrl(food);
+  const fullPathname = getFoodUrl(food, hostname);
   await writePage(
-    <Page title={getFoodPageTitle(food)}>
+    <Page title={getFoodPageTitle(food)} canonical={fullPathname}>
       <StaticRouter location={{ pathname }}>
         <FoodPage food={food} database={database} />
       </StaticRouter>
