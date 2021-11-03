@@ -6,6 +6,7 @@ export function EmojiSource(props: { image: EmojiImage }): React.ReactElement {
   return (
     <div>
       <a
+        rel="nofollow"
         href={getGithubUrl(props.image)}
         className="text-blue-300 hover:text-blue-100 visited:text-purple-300 underline"
       >

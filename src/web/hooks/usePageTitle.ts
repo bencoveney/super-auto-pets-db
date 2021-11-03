@@ -12,9 +12,9 @@ export function getHomepageTitle() {
 }
 
 export function getPetPageTitle(pet: Pet) {
-  return `${pet.name}: Stats and Abilities`;
+  return `${pet.name}'s Stats and Abilities | Super Auto Pets List`;
 }
 
 export function getFoodPageTitle(food: Food) {
-  return `${food.name}: Stats and Effects`;
+  return `${food.name}'s Stats and Effects | Super Auto Pets List`;
 }

@@ -15,6 +15,16 @@ import { Filters, useFilters } from "./Filters";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
+const allTiers: { tier: TierType; availableOnTurn?: number }[] = [
+  { tier: 1, availableOnTurn: 1 },
+  { tier: 2, availableOnTurn: 3 },
+  { tier: 3, availableOnTurn: 5 },
+  { tier: 4, availableOnTurn: 7 },
+  { tier: 5, availableOnTurn: 9 },
+  { tier: 6, availableOnTurn: 11 },
+  { tier: "Summoned" },
+];
+
 export function Homepage(props: { database: Database }) {
   const [filters, setName, togglePack] = useFilters();
 
@@ -28,9 +38,10 @@ export function Homepage(props: { database: Database }) {
     filters.packs,
     filters.name
   );
-  const tiers = ([1, 2, 3, 4, 5, 6, "Summoned"] as TierType[])
-    .map((tier) => ({
-      tier: tier,
+  const tiers = allTiers
+    .map(({ tier, availableOnTurn }) => ({
+      tier,
+      availableOnTurn,
       pets: filteredPets.filter((pet) => pet.tier == tier),
       foods: filteredFoods.filter((food) => food.tier == tier),
     }))
