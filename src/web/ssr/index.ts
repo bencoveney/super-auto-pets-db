@@ -6,7 +6,7 @@ import { getDatabase } from "../../db/content";
 import { writeApi } from "./writeApi";
 import { writePetPages } from "./writePetPages";
 import { writeFoodPages } from "./writeFoodPages";
-import { copyRobots } from "./writeRobots";
+import { copyFiles } from "./writeRawFiles";
 import { writeSitemap } from "./writeSitemap";
 
 function getOutputDir() {
@@ -22,7 +22,7 @@ async function buildSite() {
   const database = getDatabase();
   writeApi(outputDir, database);
   await copyAssets(outputDir, database);
-  await copyRobots(outputDir);
+  await copyFiles(outputDir);
   await writeHomepage(outputDir, database);
   await writePetPages(outputDir, database);
   await writeFoodPages(outputDir, database);
