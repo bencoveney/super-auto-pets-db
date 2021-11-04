@@ -18,7 +18,10 @@ export function Page(props: {
           content="This database website is an un-official list, guide and reference for the pets, food and stats from the game Super Auto Pets."
         />
         <meta name="author" content="Ben Coveney" />
-        <link rel="icon" type="image/svg+xml" href="/assets/pet-fish.svg" />
+        <link rel="icon" href="/favicon-32.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon-180.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="stylesheet" href="/tailwind.css" />
         <link rel="canonical" href={props.canonical} />
       </head>

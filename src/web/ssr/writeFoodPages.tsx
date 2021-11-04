@@ -10,19 +10,7 @@ import { writePage } from "./writePage";
 import { getFoodPageTitle } from "../hooks/usePageTitle";
 import { hostname } from "../common";
 
-export async function writeFoodPages(outputDir: string, database: Database) {
-  const foodPagesDir = path.resolve(outputDir, "food");
-  if (!fs.existsSync(foodPagesDir)) {
-    fs.mkdirSync(foodPagesDir, { recursive: true });
-  }
-  await Promise.all(
-    enumerateTable(database.foods).map((food) =>
-      writeFoodPage(foodPagesDir, food, database)
-    )
-  );
-}
-
-async function writeFoodPage(
+export async function writeFoodPage(
   outputDir: string,
   food: Food,
   database: Database
