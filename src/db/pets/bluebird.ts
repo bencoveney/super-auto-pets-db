@@ -28,7 +28,7 @@ export const bluebird: Pet = {
   },
   tier: 1,
   baseAttack: 2,
-  baseHealth: 3,
+  baseHealth: 1,
   packs: ["ExpansionPack1"],
   level1Ability: bluebirdAbility(1),
   level2Ability: bluebirdAbility(2),
