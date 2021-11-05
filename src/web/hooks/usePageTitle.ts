@@ -8,7 +8,7 @@ export function useTitle(title: string) {
 }
 
 export function getHomepageTitle() {
-  return "Super Auto Pets List";
+  return "Super Auto Pets Animal List";
 }
 
 export function getPetPageTitle(pet: Pet) {

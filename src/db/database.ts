@@ -27,8 +27,8 @@ export function getPetId(pet: Pet | string): PetRef {
   return `pet-${sanitiseName(name)}`;
 }
 
-export function getPetUrl(pet: Pet) {
-  return `/pet/${sanitiseName(pet.name)}`;
+export function getPetUrl(pet: Pet, hostname?: string) {
+  return `${hostname || ""}/pet/${sanitiseName(pet.name)}`;
 }
 
 export function getFoodId(food: Food | string): FoodRef {
@@ -36,8 +36,8 @@ export function getFoodId(food: Food | string): FoodRef {
   return `food-${sanitiseName(name)}`;
 }
 
-export function getFoodUrl(food: Food) {
-  return `/food/${sanitiseName(food.name)}`;
+export function getFoodUrl(food: Food, hostname?: string) {
+  return `${hostname || ""}/food/${sanitiseName(food.name)}`;
 }
 
 export function getStatusId(status: Status | string): StatusRef {
@@ -45,8 +45,8 @@ export function getStatusId(status: Status | string): StatusRef {
   return `status-${sanitiseName(name)}`;
 }
 
-export function getStatusUrl(status: Status) {
-  return `/status/${sanitiseName(status.name)}`;
+export function getStatusUrl(status: Status, hostname?: string) {
+  return `${hostname || ""}/status/${sanitiseName(status.name)}`;
 }
 
 export function enumerateTable<TIdentifiers extends Identifiers>(

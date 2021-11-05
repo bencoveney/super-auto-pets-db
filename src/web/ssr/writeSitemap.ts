@@ -13,14 +13,13 @@ import {
   getFoodUrl,
   getPetUrl,
 } from "../../db/database";
-
-const baseHostname = "https://superauto.pet";
+import { hostname } from "../common";
 
 export async function writeSitemap(targetDir: string, database: Database) {
   const updatedDate = new Date().toISOString();
   const links: SitemapItemLoose[] = [
     {
-      url: `${baseHostname}/`,
+      url: `${hostname}/`,
       changefreq: EnumChangefreq.WEEKLY,
       lastmod: updatedDate,
     },
@@ -28,10 +27,7 @@ export async function writeSitemap(targetDir: string, database: Database) {
     ...describeFoodPages(database, updatedDate),
   ];
 
-  const sitemapStream = new SitemapStream({
-    hostname: "https://superauto.pet",
-  });
-
+  const sitemapStream = new SitemapStream({ hostname });
   const content = await streamToPromise(
     stream.Readable.from(links).pipe(sitemapStream)
   );
@@ -48,12 +44,12 @@ function describePetPages(
 ): SitemapItemLoose[] {
   return enumerateTable(database.pets).map((pet) => {
     return {
-      url: `${baseHostname}${getPetUrl(pet)}`,
+      url: `${hostname}${getPetUrl(pet)}`,
       changefreq: EnumChangefreq.WEEKLY,
       lastmod: updatedDate,
       img: [
         {
-          url: `${baseHostname}/assets/${pet.id}.svg`,
+          url: `${hostname}/assets/${pet.id}.svg`,
           // caption: "Another image",
           // title: "The Title of Image Two",
           // geoLocation: "London, United Kingdom",
@@ -70,12 +66,12 @@ function describeFoodPages(
 ): SitemapItemLoose[] {
   return enumerateTable(database.foods).map((food) => {
     return {
-      url: `${baseHostname}${getFoodUrl(food)}`,
+      url: `${hostname}${getFoodUrl(food)}`,
       changefreq: EnumChangefreq.WEEKLY,
       lastmod: updatedDate,
       img: [
         {
-          url: `${baseHostname}/assets/${food.id}.svg`,
+          url: `${hostname}/assets/${food.id}.svg`,
           // caption: "Another image",
           // title: "The Title of Image Two",
           // geoLocation: "London, United Kingdom",

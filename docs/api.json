@@ -204,7 +204,7 @@
       },
       "tier": 1,
       "baseAttack": 2,
-      "baseHealth": 3,
+      "baseHealth": 1,
       "packs": [
         "ExpansionPack1"
       ],
