@@ -4368,7 +4368,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Hurt: Gain Coconut Shield.",
+        "description": "Hurt: Gain Coconut Shield. ",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
