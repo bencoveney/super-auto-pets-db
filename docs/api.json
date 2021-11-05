@@ -4368,7 +4368,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Hurt: Gain Coconut Shield.",
+        "description": "Hurt: Gain Coconut Shield. ",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -4382,7 +4382,7 @@
         }
       },
       "level2Ability": {
-        "description": "Hurt: Gain Coconut Shield.",
+        "description": "Hurt: Gain Coconut Shield. Works 2 times per turn.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -4396,7 +4396,7 @@
         }
       },
       "level3Ability": {
-        "description": "Hurt: Gain Coconut Shield.",
+        "description": "Hurt: Gain Coconut Shield. Works 3 times per turn.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
