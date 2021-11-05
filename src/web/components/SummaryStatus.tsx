@@ -26,7 +26,7 @@ export function SummaryStatus(props: {
           <img
             className="drop-shadow-tile w-auto h-auto"
             src={`/assets/${status.id}.svg`}
-            alt={`A thumbnail showing what ${status.image} looks like`}
+            alt={`A thumbnail showing what ${status.name} looks like`}
             width="100"
             height="100"
           />
