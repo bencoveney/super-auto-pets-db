@@ -37,7 +37,7 @@ function DescribeAbility(props: {
   pet: Pet;
   database: Database;
 }) {
-  if (props.pet.tier !== 1) {
+  if (props.pet.tier > 2) {
     return null;
   }
 
@@ -182,24 +182,39 @@ function describeTarget(
     }
     case "RandomFriend": {
       const n = triggeredBy.n;
+      const randomNotes: string[] = [];
+      if (n > 1) {
+        // TODO: Less word soup.
+        randomNotes.push(
+          "When multiple friends are randomly selected, each one will be different. For a single trigger of the ability, the same animal will not be selected multiple times."
+        );
+      }
       return {
         description: `${n == 1 ? "a" : n} randomly selected ${
           n > 1 ? "friends" : "friend"
         }`,
         isPlural: n > 1,
         notes: [
-          `When selecting a random friend, the ${abilityOwner.name} that triggered this ability will not be selected.`,
+          `When selecting random friends, the ${abilityOwner.name} that triggered this ability will not be selected.`,
+          ...randomNotes,
         ],
       };
     }
     case "RandomEnemy": {
       const n = triggeredBy.n;
+      const randomNotes: string[] = [];
+      if (n > 1) {
+        // TODO: Less word soup.
+        randomNotes.push(
+          "When multiple enemies are randomly selected, each one will be different. For a single trigger of the ability, the same animal will not be selected multiple times."
+        );
+      }
       return {
         description: `${n == 1 ? "a" : n} randomly selected ${
           n > 1 ? "enemies" : "enemy"
         }`,
         isPlural: n > 1,
-        notes: [],
+        notes: [...randomNotes],
       };
     }
     case "EachShopAnimal": {
@@ -260,6 +275,7 @@ function describeTrigger(
         description: "is bought from the shop",
         notes: [
           `You can drag the ${abilityOwner.name} onto an existing ${abilityOwner.name} or an empty slot to trigger this ability.`,
+          `If you level up a pet by buying an animal from the shop and placing it directly on top, the higher level ability will be triggered. For example, if you have a level 1.5 pet, and buy another copy (placing it on top), the level 2 buy ability will be triggered.`,
         ],
       };
     case "BuyAfterLoss":
@@ -412,7 +428,16 @@ function describeEffect(
     case "AllOf":
       return { description: ``, notes: [] };
     case "ApplyStatus":
-      return { description: ``, notes: [] };
+      const status = database.statuses[effect.status];
+      const target = describeTarget(effect.to, abilityOwner, true);
+      const targetPlural = target.isPlural ? "target" : "targets";
+      return {
+        description: `this ${abilityOwner.name} will apply the ${status.name} status to ${target.description}.`,
+        notes: [
+          `The ${status.name} status will replace any status the ${targetPlural} previously had.`,
+          ...target.notes,
+        ],
+      };
     case "Swallow":
       return { description: ``, notes: [] };
     case "Evolve":

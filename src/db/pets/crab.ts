@@ -9,6 +9,7 @@ function crabAbility(level: number): Ability {
       kind: "Player",
     },
     effect: {
+      // TODO: How exactly do these transfer from pet to pet?
       kind: "TransferStats",
       copyAttack: false,
       copyHealth: true,
