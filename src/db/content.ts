@@ -1,5 +1,12 @@
-import { Pet, Food, Status } from ".";
-import { Database, getPetId, getFoodId, getStatusId } from "./database";
+import { Pet, Food, Status, Turn } from ".";
+import {
+  Database,
+  getPetId,
+  getFoodId,
+  getStatusId,
+  getTurnIdentifiers,
+  getTurnId,
+} from "./database";
 import { apple } from "./food/apple";
 import { cannedFood } from "./food/cannedFood";
 import { chili } from "./food/chili";
@@ -117,7 +124,7 @@ import { steakAttack } from "./statusEffects/steakAttack";
 import { weak } from "./statusEffects/weak";
 
 export function getDatabase(): Database {
-  let database: Database = { pets: {}, foods: {}, statuses: {} };
+  let database: Database = { pets: {}, foods: {}, statuses: {}, turns: {} };
   pets.forEach((pet) => {
     const id = getPetId(pet);
     database.pets[id] = { ...pet, id };
@@ -130,10 +137,15 @@ export function getDatabase(): Database {
     const id = getStatusId(status);
     database.statuses[id] = { ...status, id };
   });
+  turns.forEach((turn) => {
+    const id = getTurnId(turn);
+    database.turns[id] = { ...turn, id };
+  });
+
   return database;
 }
 
-export const pets: Pet[] = [
+const pets: Pet[] = [
   // Tier 1
   ant,
   beaver,
@@ -231,7 +243,7 @@ export const pets: Pet[] = [
   bee,
 ];
 
-export const foods: Food[] = [
+const foods: Food[] = [
   // Tier 1
   apple,
   honey,
@@ -258,7 +270,7 @@ export const foods: Food[] = [
   milk,
 ];
 
-export const statuses: Status[] = [
+const statuses: Status[] = [
   weak,
   coconutShield,
   honeyBee,
@@ -270,3 +282,81 @@ export const statuses: Status[] = [
   steakAttack,
   poisonAttack,
 ];
+
+const turns: Turn[] = [];
+
+for (let turnIndex = 1; turnIndex <= 11; turnIndex++) {
+  const turn: Turn = {
+    ...getTurnIdentifiers(turnIndex < 11 ? `Turn ${turnIndex}` : `Turn 11+`),
+    index: turnIndex,
+    foodShopSlots: -1,
+    animalShopSlots: -1,
+    tiersAvailable: "Summoned",
+  };
+
+  switch (turnIndex) {
+    case 1:
+    case 2:
+      turn.foodShopSlots = 1;
+      break;
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+      turn.foodShopSlots = 2;
+      break;
+  }
+
+  switch (turnIndex) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      turn.animalShopSlots = 3;
+      break;
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+      turn.animalShopSlots = 4;
+      break;
+    case 9:
+    case 10:
+    case 11:
+      turn.animalShopSlots = 5;
+      break;
+  }
+
+  switch (turnIndex) {
+    case 1:
+    case 2:
+      turn.tiersAvailable = 1;
+      break;
+    case 3:
+    case 4:
+      turn.tiersAvailable = 2;
+      break;
+    case 5:
+    case 6:
+      turn.tiersAvailable = 3;
+      break;
+    case 7:
+    case 8:
+      turn.tiersAvailable = 4;
+      break;
+    case 9:
+    case 10:
+      turn.tiersAvailable = 5;
+      break;
+    case 11:
+      turn.tiersAvailable = 6;
+      break;
+  }
+
+  turns.push(turn);
+}

@@ -1,14 +1,18 @@
 {
   "files.exclude": {
-    "**/node_modules": true,
+    "**/node_modules": true
   },
   "search.exclude": {
     "**/node_modules": true,
     "src/emoji": true,
-    "docs": true,
+    "docs": true
   },
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[html]": {
+    // Make diffs a bit easier to read.
+    "editor.wordWrap": "on"
+  }
 }

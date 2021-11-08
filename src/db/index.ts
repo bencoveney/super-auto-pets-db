@@ -46,6 +46,13 @@ export interface Status extends Identifiers, HasImage, Filterable {
   ability: Ability;
 }
 
+export interface Turn extends Identifiers {
+  index: number;
+  tiersAvailable: Tier;
+  animalShopSlots: number;
+  foodShopSlots: number;
+}
+
 export type Identifiers = {
   name: string;
   id: string;

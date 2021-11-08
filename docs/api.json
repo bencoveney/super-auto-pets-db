@@ -5684,5 +5684,95 @@
         }
       }
     }
+  },
+  "turns": {
+    "turn-1": {
+      "name": "Turn 1",
+      "id": "turn-1",
+      "index": 1,
+      "foodShopSlots": 1,
+      "animalShopSlots": 3,
+      "tiersAvailable": 1
+    },
+    "turn-2": {
+      "name": "Turn 2",
+      "id": "turn-2",
+      "index": 2,
+      "foodShopSlots": 1,
+      "animalShopSlots": 3,
+      "tiersAvailable": 1
+    },
+    "turn-3": {
+      "name": "Turn 3",
+      "id": "turn-3",
+      "index": 3,
+      "foodShopSlots": 2,
+      "animalShopSlots": 3,
+      "tiersAvailable": 2
+    },
+    "turn-4": {
+      "name": "Turn 4",
+      "id": "turn-4",
+      "index": 4,
+      "foodShopSlots": 2,
+      "animalShopSlots": 3,
+      "tiersAvailable": 2
+    },
+    "turn-5": {
+      "name": "Turn 5",
+      "id": "turn-5",
+      "index": 5,
+      "foodShopSlots": 2,
+      "animalShopSlots": 4,
+      "tiersAvailable": 3
+    },
+    "turn-6": {
+      "name": "Turn 6",
+      "id": "turn-6",
+      "index": 6,
+      "foodShopSlots": 2,
+      "animalShopSlots": 4,
+      "tiersAvailable": 3
+    },
+    "turn-7": {
+      "name": "Turn 7",
+      "id": "turn-7",
+      "index": 7,
+      "foodShopSlots": 2,
+      "animalShopSlots": 4,
+      "tiersAvailable": 4
+    },
+    "turn-8": {
+      "name": "Turn 8",
+      "id": "turn-8",
+      "index": 8,
+      "foodShopSlots": 2,
+      "animalShopSlots": 4,
+      "tiersAvailable": 4
+    },
+    "turn-9": {
+      "name": "Turn 9",
+      "id": "turn-9",
+      "index": 9,
+      "foodShopSlots": 2,
+      "animalShopSlots": 5,
+      "tiersAvailable": 5
+    },
+    "turn-10": {
+      "name": "Turn 10",
+      "id": "turn-10",
+      "index": 10,
+      "foodShopSlots": 2,
+      "animalShopSlots": 5,
+      "tiersAvailable": 5
+    },
+    "turn-11": {
+      "name": "Turn 11+",
+      "id": "turn-11",
+      "index": 11,
+      "foodShopSlots": 2,
+      "animalShopSlots": 5,
+      "tiersAvailable": 6
+    }
   }
 }
