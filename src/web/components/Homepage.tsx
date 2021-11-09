@@ -13,8 +13,6 @@ import { Header } from "./Header";
 import { Tier } from "./Tier";
 import { Filters, useFilters } from "./Filters";
 
-const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
-
 const allTiers: {
   tier: TierType;
   availableOnTurn?: number;
