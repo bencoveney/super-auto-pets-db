@@ -15,14 +15,18 @@ import { Filters, useFilters } from "./Filters";
 
 const allPacks: PackType[] = ["StandardPack", "ExpansionPack1"];
 
-const allTiers: { tier: TierType; availableOnTurn?: number }[] = [
-  { tier: 1, availableOnTurn: 1 },
-  { tier: 2, availableOnTurn: 3 },
-  { tier: 3, availableOnTurn: 5 },
-  { tier: 4, availableOnTurn: 7 },
-  { tier: 5, availableOnTurn: 9 },
-  { tier: 6, availableOnTurn: 11 },
-  { tier: "Summoned" },
+const allTiers: {
+  tier: TierType;
+  availableOnTurn?: number;
+  deferImages: boolean;
+}[] = [
+  { tier: 1, availableOnTurn: 1, deferImages: false },
+  { tier: 2, availableOnTurn: 3, deferImages: true },
+  { tier: 3, availableOnTurn: 5, deferImages: true },
+  { tier: 4, availableOnTurn: 7, deferImages: true },
+  { tier: 5, availableOnTurn: 9, deferImages: true },
+  { tier: 6, availableOnTurn: 11, deferImages: true },
+  { tier: "Summoned", deferImages: true },
 ];
 
 export function Homepage(props: { database: Database }) {
@@ -39,11 +43,12 @@ export function Homepage(props: { database: Database }) {
     filters.name
   );
   const tiers = allTiers
-    .map(({ tier, availableOnTurn }) => ({
+    .map(({ tier, availableOnTurn, deferImages }) => ({
       tier,
       availableOnTurn,
       pets: filteredPets.filter((pet) => pet.tier == tier),
       foods: filteredFoods.filter((food) => food.tier == tier),
+      deferImages,
     }))
     .filter((tier) => tier.pets.length > 0 || tier.foods.length > 0);
 

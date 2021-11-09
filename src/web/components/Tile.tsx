@@ -8,12 +8,14 @@ export function Tile({
   stats,
   packs,
   background,
+  deferImage,
 }: {
   id: string;
   name: string;
   stats?: { attack: Stat; health: Stat };
   packs: PackType[];
   background: string;
+  deferImage: boolean;
 }) {
   return (
     <div className="transition group bg-gray-900 hover:bg-black shadow-md flex flex-col items-stretch justify-start max-w-sm cursor-pointer">
@@ -27,6 +29,7 @@ export function Tile({
           alt={`A thumbnail of the ${name}`}
           width="100"
           height="100"
+          loading={deferImage ? "lazy" : "eager"}
         />
         <div
           className={`transition absolute bottom-0 left-0 top-0 right-0 bg-${background}-1 bg-cover filter contrast-75 brightness-25 group-hover:contrast-100 group-hover:brightness-100`}

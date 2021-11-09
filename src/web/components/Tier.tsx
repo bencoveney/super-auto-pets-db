@@ -7,6 +7,7 @@ export function Tier(props: {
   availableOnTurn?: number;
   pets: Pet[];
   foods: Food[];
+  deferImages: boolean;
 }) {
   return (
     <div key={props.tier}>
@@ -19,7 +20,11 @@ export function Tier(props: {
         ) : null}
       </div>
       {/* <List pets={props.pets} food={props.food} /> */}
-      <Tiles pets={props.pets} foods={props.foods} />
+      <Tiles
+        pets={props.pets}
+        foods={props.foods}
+        deferImages={props.deferImages}
+      />
     </div>
   );
 }
