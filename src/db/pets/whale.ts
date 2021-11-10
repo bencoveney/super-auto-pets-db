@@ -10,6 +10,7 @@ function whaleAbility(level: number): Ability {
     },
     effect: {
       // TODO: This should probably be represented as 2 abilities, but I would need 2 triggers.
+      // TODO: Reviving a whale while it has swallowed something doesn't work.
       kind: "Swallow",
       target: {
         kind: "FriendAhead",

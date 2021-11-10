@@ -1,4 +1,4 @@
-import { PetRef, StatusRef, FoodRef } from "./database";
+import { PetRef, StatusRef, FoodRef, TurnRef } from "./database";
 
 export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
 
@@ -6,18 +6,18 @@ export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
 
 export type Stat = number | "?";
 
-export interface Pet extends Identifiers, HasImage, Filterable {
+export interface Pet
+  extends Identifiers,
+    HasImage,
+    Filterable,
+    AppearanceProbabilities,
+    AppearsInTier {
   id: PetRef;
-  name: string;
   notes?: string;
-  // The tier the food appears in.
-  tier: Tier;
   // The standard starting attack points for the pet.
   baseAttack: Stat;
   // The standard starting health points for the pet.
   baseHealth: Stat;
-  // Which packs the pet appears in.
-  packs?: Pack[];
   // The ability the pet has at level 1.
   level1Ability?: Ability;
   // The ability the pet has at level 2.
@@ -27,19 +27,19 @@ export interface Pet extends Identifiers, HasImage, Filterable {
   status?: StatusRef;
 }
 
-export interface Food extends Identifiers, HasImage, Filterable {
+export interface Food
+  extends Identifiers,
+    HasImage,
+    Filterable,
+    AppearanceProbabilities,
+    AppearsInTier {
   id: FoodRef;
-  name: string;
   notes?: string;
-  // The tier the food appears in.
-  tier: Tier;
-  // Which packs the food appears in.
-  packs?: Pack[];
   // The ability the food item has.
   ability: Ability;
 }
 
-export interface Status extends Identifiers, HasImage, Filterable {
+export interface Status extends Identifiers, HasImage {
   id: StatusRef;
   name: string;
   // The ability the status item has.
@@ -47,6 +47,7 @@ export interface Status extends Identifiers, HasImage, Filterable {
 }
 
 export interface Turn extends Identifiers {
+  id: TurnRef;
   index: number;
   tiersAvailable: Tier;
   animalShopSlots: number;
@@ -63,9 +64,16 @@ export interface HasImage {
   image: EmojiImage;
 }
 
-export interface Filterable {
+export interface Filterable extends AppearsInPacks {
   name: string;
-  packs?: Pack[];
+}
+
+export interface AppearsInPacks {
+  packs: Pack[];
+}
+
+export interface AppearsInTier {
+  tier: Tier;
 }
 
 export type EmojiImage = NotoEmojiImage | FxEmojiImage | TwEmojiImage;
@@ -334,4 +342,42 @@ export interface RepeatAbilityEffect {
 export interface FaintEffect {
   kind: "Faint";
   target: Target;
+}
+
+export type By<Key extends string | number | symbol, Value> = {
+  [key in Key]: Value;
+};
+export type ByTier<T> = By<Tier, T>;
+export type ByPack<T> = By<Pack, T>;
+
+export interface AppearanceProbabilities {
+  probabilities?: Array<AnyProbability>;
+}
+
+export type AnyProbability =
+  | ShopProbability
+  | SummonProbability
+  | LevelUpProbability;
+
+export interface ShopProbability extends Probability {
+  kind: "shop";
+  perShop: ByPack<number>;
+  perSlot: ByPack<number>;
+}
+
+export interface SummonProbability extends Probability {
+  kind: "summon";
+  fromPet: PetRef;
+  petSlot: ByPack<number>;
+}
+
+export interface LevelUpProbability extends Probability {
+  kind: "levelup";
+  perSlot: ByPack<number>;
+}
+
+export interface Probability {
+  kind: string;
+  turn: TurnRef;
+  pack: Pack;
 }

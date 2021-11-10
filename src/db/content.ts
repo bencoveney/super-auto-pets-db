@@ -112,6 +112,7 @@ import { whale } from "./pets/whale";
 import { worm } from "./pets/worm";
 import { zombieCricket } from "./pets/zombieCricket";
 import { zombieFly } from "./pets/zombieFly";
+import { populateProbabilities } from "./populateProbabilities";
 import { boneAttack } from "./statusEffects/boneAttack";
 import { coconutShield } from "./statusEffects/coconutShield";
 import { extraLife } from "./statusEffects/extraLife";
@@ -141,7 +142,7 @@ export function getDatabase(): Database {
     const id = getTurnId(turn);
     database.turns[id] = { ...turn, id };
   });
-
+  populateProbabilities(database);
   return database;
 }
 

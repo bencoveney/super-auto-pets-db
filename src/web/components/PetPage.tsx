@@ -1,15 +1,14 @@
 import React from "react";
 import { Pet } from "../../db";
 import { Database } from "../../db/database";
-import { AbilityDescription } from "./AbilityDescription";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { EmojiSource } from "./EmojiSource";
 import { Header } from "./Header";
 import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
+import { ProbabilityTable } from "./ProbabilityTable";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
-import { StatusDescription } from "./StatusDescription";
 import { SummaryAbility } from "./SummaryAbility";
 import { SummaryStatus } from "./SummaryStatus";
 
@@ -93,6 +92,12 @@ export function PetPage(props: { pet: Pet; database: Database }) {
                   database={props.database}
                 />
               </StatsRow>
+            )}
+            {(props.pet.probabilities?.length || -1) > 0 && (
+              <>
+                <StatsSummary>Appearance Probability</StatsSummary>
+                <ProbabilityTable pet={props.pet} database={props.database} />
+              </>
             )}
           </StatsGrid>
         </div>

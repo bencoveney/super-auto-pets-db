@@ -54,6 +54,7 @@ export function FoodPage(props: { food: Food; database: Database }) {
                 database={props.database}
               />
             </StatsRow>
+            <StatsSummary>Appearance Probability</StatsSummary>
           </StatsGrid>
         </div>
       </div>
