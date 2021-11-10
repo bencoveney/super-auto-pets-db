@@ -231,6 +231,8 @@ function describeTrigger(
   description: string;
   notes: string[];
 } {
+  // TODO: Many abilities trigger in order based on attack.
+  // Particularly annoying for start-of-battle (e.g. dolphin/caterpillar).
   switch (trigger) {
     case "Faint":
       return {
