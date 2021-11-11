@@ -44,35 +44,37 @@ function getShopProbabilities<T extends HasProbabilities>(
   byPackAndTier: By<Pack, ByTier<T[]>>,
   turns: Turn[]
 ): ShopProbability[] {
-  return turns.map<ShopProbability>((turn): ShopProbability => {
-    const animalsAvailableByPack = mapGroup(byPackAndTier, (byTier) => {
-      const tiersAvailable = filterGroup(
-        byTier,
-        // TODO: Tiers are numbers, but have been transformed to strings when adding/removing from objects.
-        // TODO: Make sure its a safe assumption we aren't going to get "summoned"
-        (tier) => turn.tiersAvailable >= parseInt(tier as string)
-      );
-      return flatten(tiersAvailable).length;
+  return turns
+    .filter((turn) => turn.tiersAvailable >= entity.tier)
+    .map<ShopProbability>((turn): ShopProbability => {
+      const animalsAvailableByPack = mapGroup(byPackAndTier, (byTier) => {
+        const tiersAvailable = filterGroup(
+          byTier,
+          // TODO: Tiers are numbers, but have been transformed to strings when adding/removing from objects.
+          // TODO: Make sure its a safe assumption we aren't going to get "summoned"
+          (tier) => turn.tiersAvailable >= parseInt(tier as string)
+        );
+        return flatten(tiersAvailable).length;
+      });
+      return {
+        kind: "shop",
+        turn: turn.id,
+        pack: "StandardPack",
+        perShop: mapGroup(
+          animalsAvailableByPack,
+          (animalsAvailable) =>
+            1 -
+            Math.pow(
+              (animalsAvailable - 1) / animalsAvailable,
+              turn.animalShopSlots
+            )
+        ),
+        perSlot: mapGroup(
+          animalsAvailableByPack,
+          (animalsAvailable) => 1 / animalsAvailable
+        ),
+      };
     });
-    return {
-      kind: "shop",
-      turn: turn.id,
-      pack: "StandardPack",
-      perShop: mapGroup(
-        animalsAvailableByPack,
-        (animalsAvailable) =>
-          1 -
-          Math.pow(
-            (animalsAvailable - 1) / animalsAvailable,
-            turn.animalShopSlots
-          )
-      ),
-      perSlot: mapGroup(
-        animalsAvailableByPack,
-        (animalsAvailable) => 1 / animalsAvailable
-      ),
-    };
-  });
 }
 
 function getSummonProbabilities(
