@@ -96,7 +96,10 @@ export function PetPage(props: { pet: Pet; database: Database }) {
             {(props.pet.probabilities?.length || -1) > 0 && (
               <>
                 <StatsSummary>Appearance Probability</StatsSummary>
-                <ProbabilityTable pet={props.pet} database={props.database} />
+                <ProbabilityTable
+                  entity={props.pet}
+                  database={props.database}
+                />
               </>
             )}
           </StatsGrid>

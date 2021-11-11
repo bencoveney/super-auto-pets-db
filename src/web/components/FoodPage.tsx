@@ -7,6 +7,7 @@ import { EmojiSource } from "./EmojiSource";
 import { Header } from "./Header";
 import { Pack } from "./Pack";
 import { Polaroid } from "./Polaroid";
+import { ProbabilityTable } from "./ProbabilityTable";
 import { StatDisplay } from "./StatDisplay";
 import { StatsGrid, StatsSummary, StatsRow } from "./StatsGrid";
 
@@ -54,7 +55,15 @@ export function FoodPage(props: { food: Food; database: Database }) {
                 database={props.database}
               />
             </StatsRow>
-            <StatsSummary>Appearance Probability</StatsSummary>
+            {(props.food.probabilities?.length || -1) > 0 && (
+              <>
+                <StatsSummary>Appearance Probability</StatsSummary>
+                <ProbabilityTable
+                  entity={props.food}
+                  database={props.database}
+                />
+              </>
+            )}
           </StatsGrid>
         </div>
       </div>

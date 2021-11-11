@@ -7,12 +7,13 @@ import {
   SummonProbability,
 } from "../../db";
 import { Database } from "../../db/database";
+import { HasProbabilities } from "../../db/populateProbabilities";
 
 export function ProbabilityTable({
-  pet,
+  entity,
   database,
 }: {
-  pet: Pet;
+  entity: HasProbabilities;
   database: Database;
 }) {
   return (
@@ -20,7 +21,7 @@ export function ProbabilityTable({
       <thead>
         <tr>
           <th></th>
-          {pet.packs.map((pack, index) => (
+          {entity.packs.map((pack, index) => (
             <th key={index} colSpan={2} className="font-normal">
               {pack}
             </th>
@@ -28,10 +29,10 @@ export function ProbabilityTable({
         </tr>
       </thead>
       <tbody>
-        {pet.probabilities?.map((probability, index) => (
+        {entity.probabilities?.map((probability, index) => (
           <AnyProbabilityRow
             key={index}
-            pet={pet}
+            entity={entity}
             probability={probability}
             database={database}
           />
@@ -42,7 +43,7 @@ export function ProbabilityTable({
 }
 
 function AnyProbabilityRow(props: {
-  pet: Pet;
+  entity: HasProbabilities;
   probability: AnyProbability;
   database: Database;
 }) {
@@ -50,19 +51,22 @@ function AnyProbabilityRow(props: {
     case "shop":
       return (
         <ShopProbabilityRow
-          pet={props.pet}
+          entity={props.entity}
           probability={props.probability}
           database={props.database}
         />
       );
     case "summon":
       return (
-        <SummonProbabilityRow pet={props.pet} probability={props.probability} />
+        <SummonProbabilityRow
+          entity={props.entity}
+          probability={props.probability}
+        />
       );
     case "levelup":
       return (
         <LevelUpProbabilityRow
-          pet={props.pet}
+          entity={props.entity}
           probability={props.probability}
         />
       );
@@ -70,7 +74,7 @@ function AnyProbabilityRow(props: {
 }
 
 function ShopProbabilityRow(props: {
-  pet: Pet;
+  entity: HasProbabilities;
   probability: ShopProbability;
   database: Database;
 }) {
@@ -78,7 +82,7 @@ function ShopProbabilityRow(props: {
   return (
     <tr>
       <td className="font-bold text-base text-gray-300">{turnName}</td>
-      {props.pet.packs.flatMap((pack, index) => {
+      {props.entity.packs.flatMap((pack, index) => {
         return [
           <td key={`shop-${index}`} className="text-right">
             {formatProbability(props.probability.perShop[pack])}
@@ -95,14 +99,14 @@ function ShopProbabilityRow(props: {
 }
 
 function SummonProbabilityRow(props: {
-  pet: Pet;
+  entity: HasProbabilities;
   probability: SummonProbability;
 }) {
   return <tr></tr>;
 }
 
 function LevelUpProbabilityRow(props: {
-  pet: Pet;
+  entity: HasProbabilities;
   probability: LevelUpProbability;
 }) {
   return <tr></tr>;

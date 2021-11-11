@@ -16,7 +16,7 @@ import {
 import { Database, enumerateTable, Table, TurnRef } from "./database";
 
 type ContributesToProbs = AppearsInPacks & Identifiers & AppearsInTier;
-type HasProbabilities = ContributesToProbs & AppearanceProbabilities;
+export type HasProbabilities = ContributesToProbs & AppearanceProbabilities;
 
 export function populateProbabilities(database: Database) {
   const turns = enumerateTable(database.turns);
@@ -32,17 +32,41 @@ export function populateProbabilities(database: Database) {
       pet.packs.includes(pack)
     );
     pet.probabilities = [
-      ...getShopProbabilities(pet, relevantPetsGrouped, turns),
+      ...getShopProbabilities(
+        pet,
+        relevantPetsGrouped,
+        turns,
+        "animalShopSlots"
+      ),
     ];
   });
 
   const foods = getRelevantEntities(database.foods);
+  const foodsGrouped = mapGroup(
+    filterGroup(groupByPack(foods), (key) => key !== "EasterEgg"),
+    groupByTier
+  );
+
+  foods.forEach((food) => {
+    const relevantFoodsGrouped = filterGroup(foodsGrouped, (pack) =>
+      food.packs.includes(pack)
+    );
+    food.probabilities = [
+      ...getShopProbabilities(
+        food,
+        relevantFoodsGrouped,
+        turns,
+        "foodShopSlots"
+      ),
+    ];
+  });
 }
 
 function getShopProbabilities<T extends HasProbabilities>(
   entity: T,
   byPackAndTier: By<Pack, ByTier<T[]>>,
-  turns: Turn[]
+  turns: Turn[],
+  slotsAvailable: keyof Turn
 ): ShopProbability[] {
   return turns
     .filter((turn) => turn.tiersAvailable >= entity.tier)
@@ -66,7 +90,7 @@ function getShopProbabilities<T extends HasProbabilities>(
             1 -
             Math.pow(
               (animalsAvailable - 1) / animalsAvailable,
-              turn.animalShopSlots
+              turn[slotsAvailable] as number
             )
         ),
         perSlot: mapGroup(

@@ -10956,7 +10956,152 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-1",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          },
+          "perSlot": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-2",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          },
+          "perSlot": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-3",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-4",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-honey": {
       "name": "Honey",
@@ -10984,7 +11129,152 @@
           },
           "status": "status-honey-bee"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-1",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          },
+          "perSlot": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-2",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          },
+          "perSlot": {
+            "StandardPack": 0.5,
+            "ExpansionPack1": 0.5
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-3",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-4",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-cupcake": {
       "name": "Cupcake",
@@ -11014,7 +11304,126 @@
           "healthAmount": 3,
           "untilEndOfBattle": true
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-3",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-4",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-meat-bone": {
       "name": "Meat Bone",
@@ -11042,7 +11451,126 @@
           },
           "status": "status-bone-attack"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-3",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-4",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-sleeping-pill": {
       "name": "Sleeping Pill",
@@ -11071,7 +11599,126 @@
             "kind": "PurchaseTarget"
           }
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-3",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-4",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.3599999999999999,
+            "ExpansionPack1": 0.3599999999999999
+          },
+          "perSlot": {
+            "StandardPack": 0.2,
+            "ExpansionPack1": 0.2
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-garlic": {
       "name": "Garlic",
@@ -11099,7 +11746,100 @@
           },
           "status": "status-garlic-armor"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-salad-bowl": {
       "name": "Salad Bowl",
@@ -11130,7 +11870,100 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-5",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-6",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.26530612244897966,
+            "ExpansionPack1": 0.26530612244897966
+          },
+          "perSlot": {
+            "StandardPack": 0.14285714285714285,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-canned-food": {
       "name": "Canned Food",
@@ -11161,7 +11994,74 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-pear": {
       "name": "Pear",
@@ -11191,7 +12091,74 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-7",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-8",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.2098765432098766,
+            "ExpansionPack1": 0.2098765432098766
+          },
+          "perSlot": {
+            "StandardPack": 0.1111111111111111,
+            "ExpansionPack1": 0.1111111111111111
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-chili": {
       "name": "Chili",
@@ -11219,7 +12186,48 @@
           },
           "status": "status-splash-attack"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-chocolate": {
       "name": "Chocolate",
@@ -11247,7 +12255,48 @@
           },
           "amount": 1
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-sushi": {
       "name": "Sushi",
@@ -11278,7 +12327,48 @@
           "healthAmount": 1,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-9",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-10",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.15972222222222232,
+            "ExpansionPack1": 0.15972222222222232
+          },
+          "perSlot": {
+            "StandardPack": 0.08333333333333333,
+            "ExpansionPack1": 0.08333333333333333
+          }
+        },
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-melon": {
       "name": "Melon",
@@ -11306,7 +12396,22 @@
           },
           "status": "status-melon-armor"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-mushroom": {
       "name": "Mushroom",
@@ -11334,7 +12439,22 @@
           },
           "status": "status-extra-life"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-pizza": {
       "name": "Pizza",
@@ -11365,7 +12485,22 @@
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-steak": {
       "name": "Steak",
@@ -11393,7 +12528,22 @@
           },
           "status": "status-steak-attack"
         }
-      }
+      },
+      "probabilities": [
+        {
+          "kind": "shop",
+          "turn": "turn-11",
+          "pack": "StandardPack",
+          "perShop": {
+            "StandardPack": 0.12109375,
+            "ExpansionPack1": 0.12109375
+          },
+          "perSlot": {
+            "StandardPack": 0.0625,
+            "ExpansionPack1": 0.0625
+          }
+        }
+      ]
     },
     "food-milk": {
       "name": "Milk",
