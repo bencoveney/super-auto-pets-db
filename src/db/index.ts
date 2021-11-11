@@ -50,6 +50,7 @@ export interface Turn extends Identifiers {
   id: TurnRef;
   index: number;
   tiersAvailable: Tier;
+  levelUpTier: Tier;
   animalShopSlots: number;
   foodShopSlots: number;
 }
@@ -379,5 +380,4 @@ export interface LevelUpProbability extends Probability {
 export interface Probability {
   kind: string;
   turn: TurnRef;
-  pack: Pack;
 }

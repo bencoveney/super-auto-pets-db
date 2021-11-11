@@ -38,6 +38,7 @@ export function populateProbabilities(database: Database) {
         turns,
         "animalShopSlots"
       ),
+      ...getLevelUpProbabilities(pet, relevantPetsGrouped, turns),
     ];
   });
 
@@ -71,7 +72,7 @@ function getShopProbabilities<T extends HasProbabilities>(
   return turns
     .filter((turn) => turn.tiersAvailable >= entity.tier)
     .map<ShopProbability>((turn): ShopProbability => {
-      const animalsAvailableByPack = mapGroup(byPackAndTier, (byTier) => {
+      const availableByPack = mapGroup(byPackAndTier, (byTier) => {
         const tiersAvailable = filterGroup(
           byTier,
           // TODO: Tiers are numbers, but have been transformed to strings when adding/removing from objects.
@@ -83,38 +84,45 @@ function getShopProbabilities<T extends HasProbabilities>(
       return {
         kind: "shop",
         turn: turn.id,
-        pack: "StandardPack",
         perShop: mapGroup(
-          animalsAvailableByPack,
-          (animalsAvailable) =>
+          availableByPack,
+          (available) =>
             1 -
             Math.pow(
-              (animalsAvailable - 1) / animalsAvailable,
+              (available - 1) / available,
               turn[slotsAvailable] as number
             )
         ),
-        perSlot: mapGroup(
-          animalsAvailableByPack,
-          (animalsAvailable) => 1 / animalsAvailable
-        ),
+        perSlot: mapGroup(availableByPack, (available) => 1 / available),
       };
     });
 }
 
-function getSummonProbabilities(
-  entity: HasProbabilities,
-  others: ByTier<ContributesToProbs[]>,
-  turns: Table<Turn>
+function getSummonProbabilities<T extends ContributesToProbs>(
+  entity: T,
+  byPackAndTier: By<Pack, ByTier<T[]>>,
+  turns: Turn[]
 ): SummonProbability[] {
   return [];
 }
 
-function getLevelUpProbabilities(
-  entity: HasProbabilities,
-  others: ByTier<ContributesToProbs[]>,
-  turns: Table<Turn>
+function getLevelUpProbabilities<T extends ContributesToProbs>(
+  entity: T,
+  byPackAndTier: By<Pack, ByTier<T[]>>,
+  turns: Turn[]
 ): LevelUpProbability[] {
-  return [];
+  return turns
+    .filter((turn) => turn.levelUpTier === entity.tier)
+    .map<LevelUpProbability>((turn) => {
+      return {
+        kind: "levelup",
+        turn: turn.id,
+        perSlot: mapGroup(
+          byPackAndTier,
+          (byTier) => 1 / byTier[turn.levelUpTier].length
+        ),
+      };
+    });
 }
 
 function getRelevantEntities<T extends ContributesToProbs>(

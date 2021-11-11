@@ -61,6 +61,7 @@ function AnyProbabilityRow(props: {
         <SummonProbabilityRow
           entity={props.entity}
           probability={props.probability}
+          database={props.database}
         />
       );
     case "levelup":
@@ -68,6 +69,7 @@ function AnyProbabilityRow(props: {
         <LevelUpProbabilityRow
           entity={props.entity}
           probability={props.probability}
+          database={props.database}
         />
       );
   }
@@ -101,6 +103,7 @@ function ShopProbabilityRow(props: {
 function SummonProbabilityRow(props: {
   entity: HasProbabilities;
   probability: SummonProbability;
+  database: Database;
 }) {
   return <tr></tr>;
 }
@@ -108,8 +111,22 @@ function SummonProbabilityRow(props: {
 function LevelUpProbabilityRow(props: {
   entity: HasProbabilities;
   probability: LevelUpProbability;
+  database: Database;
 }) {
-  return <tr></tr>;
+  const turnName = props.database.turns[props.probability.turn].name;
+  return (
+    <tr>
+      <td className="font-bold text-base text-gray-300">{turnName}</td>
+      {props.entity.packs.flatMap((pack, index) => {
+        return [
+          <td key={index} colSpan={2} className="text-right">
+            {formatProbability(props.probability.perSlot[pack])}
+            <span className="text-base text-gray-300"> / level up</span>
+          </td>,
+        ];
+      })}
+    </tr>
+  );
 }
 
 function formatProbability(probability: number) {

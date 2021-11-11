@@ -70,7 +70,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -83,7 +82,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -96,7 +94,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -109,7 +106,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -122,7 +118,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -135,7 +130,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -148,7 +142,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -161,7 +154,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -174,7 +166,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -187,7 +178,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -200,7 +190,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -279,7 +268,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -292,7 +280,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -305,7 +292,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -318,7 +304,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -331,7 +316,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -344,7 +328,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -357,7 +340,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -370,7 +352,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -383,7 +364,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -396,7 +376,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -409,7 +388,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -487,7 +465,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -498,7 +475,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -509,7 +485,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -520,7 +495,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -531,7 +505,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -542,7 +515,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -553,7 +525,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -564,7 +535,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -575,7 +545,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -586,7 +555,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -597,7 +565,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
@@ -670,7 +637,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -681,7 +647,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -692,7 +657,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -703,7 +667,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -714,7 +677,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -725,7 +687,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -736,7 +697,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -747,7 +707,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -758,7 +717,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -769,7 +727,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -780,7 +737,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
@@ -851,7 +807,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -864,7 +819,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -877,7 +831,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -890,7 +843,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -903,7 +855,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -916,7 +867,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -929,7 +879,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -942,7 +891,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -955,7 +903,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -968,7 +915,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -981,7 +927,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -1062,7 +1007,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -1073,7 +1017,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -1084,7 +1027,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -1095,7 +1037,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -1106,7 +1047,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -1117,7 +1057,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -1128,7 +1067,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -1139,7 +1077,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -1150,7 +1087,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -1161,7 +1097,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -1172,7 +1107,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
@@ -1234,7 +1168,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -1247,7 +1180,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -1260,7 +1192,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -1273,7 +1204,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -1286,7 +1216,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -1299,7 +1228,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -1312,7 +1240,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -1325,7 +1252,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -1338,7 +1264,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -1351,7 +1276,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -1364,7 +1288,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -1439,7 +1362,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -1450,7 +1372,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -1461,7 +1382,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -1472,7 +1392,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -1483,7 +1402,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -1494,7 +1412,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -1505,7 +1422,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -1516,7 +1432,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -1527,7 +1442,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -1538,7 +1452,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -1549,7 +1462,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
@@ -1625,7 +1537,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -1636,7 +1547,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.2976680384087793
           },
@@ -1647,7 +1557,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -1658,7 +1567,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -1669,7 +1577,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -1680,7 +1587,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -1691,7 +1597,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -1702,7 +1607,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -1713,7 +1617,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -1724,7 +1627,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -1735,7 +1637,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
@@ -1809,7 +1710,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -1822,7 +1722,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -1835,7 +1734,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -1848,7 +1746,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -1861,7 +1758,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -1874,7 +1770,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -1887,7 +1782,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -1900,7 +1794,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -1913,7 +1806,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -1926,7 +1818,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -1939,7 +1830,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -2020,7 +1910,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -2031,7 +1920,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793
           },
@@ -2042,7 +1930,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2053,7 +1940,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2064,7 +1950,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2075,7 +1960,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2086,7 +1970,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2097,7 +1980,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2108,7 +1990,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2119,7 +2000,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2130,7 +2010,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
@@ -2192,7 +2071,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -2205,7 +2083,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2976680384087793,
             "ExpansionPack1": 0.2976680384087793
@@ -2218,7 +2095,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -2231,7 +2107,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -2244,7 +2119,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -2257,7 +2131,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -2270,7 +2143,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -2283,7 +2155,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -2296,7 +2167,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -2309,7 +2179,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -2322,7 +2191,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -2415,7 +2283,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -2426,7 +2293,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -2437,7 +2303,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -2448,7 +2313,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -2459,7 +2323,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -2470,7 +2333,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -2481,7 +2343,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -2492,7 +2353,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -2503,12 +2363,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -2588,7 +2461,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2599,7 +2471,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2610,7 +2481,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2621,7 +2491,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2632,7 +2501,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2643,7 +2511,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2654,7 +2521,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2665,7 +2531,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2676,12 +2541,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -2761,7 +2639,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2772,7 +2649,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -2783,7 +2659,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2794,7 +2669,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -2805,7 +2679,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2816,7 +2689,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -2827,7 +2699,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2838,7 +2709,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -2849,12 +2719,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -2962,7 +2845,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -2975,7 +2857,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -2988,7 +2869,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3001,7 +2881,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3014,7 +2893,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3027,7 +2905,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3040,7 +2917,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3053,7 +2929,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3066,7 +2941,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -3074,6 +2948,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -3147,7 +3037,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -3158,7 +3047,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -3169,7 +3057,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -3180,7 +3067,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -3191,7 +3077,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -3202,7 +3087,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -3213,7 +3097,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -3224,7 +3107,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -3235,12 +3117,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -3308,7 +3203,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -3319,7 +3213,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001
           },
@@ -3330,7 +3223,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -3341,7 +3233,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -3352,7 +3243,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -3363,7 +3253,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -3374,7 +3263,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -3385,7 +3273,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -3396,12 +3283,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -3476,7 +3376,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3489,7 +3388,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3502,7 +3400,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3515,7 +3412,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3528,7 +3424,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3541,7 +3436,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3554,7 +3448,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3567,7 +3460,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3580,7 +3472,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -3588,6 +3479,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -3653,7 +3560,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3666,7 +3572,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3679,7 +3584,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3692,7 +3596,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3705,7 +3608,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3718,7 +3620,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3731,7 +3632,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3744,7 +3644,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3757,7 +3656,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -3765,6 +3663,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -3833,7 +3747,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3846,7 +3759,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -3859,7 +3771,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3872,7 +3783,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -3885,7 +3795,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3898,7 +3807,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -3911,7 +3819,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3924,7 +3831,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -3937,7 +3843,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -3945,6 +3850,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4004,7 +3925,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4017,7 +3937,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4030,7 +3949,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4043,7 +3961,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4056,7 +3973,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4069,7 +3985,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4082,7 +3997,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4095,7 +4009,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4108,7 +4021,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -4116,6 +4028,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4187,7 +4115,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4200,7 +4127,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4213,7 +4139,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4226,7 +4151,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4239,7 +4163,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4252,7 +4175,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4265,7 +4187,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4278,7 +4199,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4291,7 +4211,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -4299,6 +4218,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4361,7 +4296,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4374,7 +4308,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4387,7 +4320,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4400,7 +4332,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4413,7 +4344,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4426,7 +4356,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4439,7 +4368,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4452,7 +4380,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4465,7 +4392,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -4473,6 +4399,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4529,7 +4471,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4542,7 +4483,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.1426250000000001,
             "ExpansionPack1": 0.1426250000000001
@@ -4555,7 +4495,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4568,7 +4507,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -4581,7 +4519,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4594,7 +4531,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -4607,7 +4543,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4620,7 +4555,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -4633,7 +4567,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -4641,6 +4574,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4708,7 +4657,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -4719,7 +4667,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.1426250000000001
           },
@@ -4730,7 +4677,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -4741,7 +4687,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -4752,7 +4697,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -4763,7 +4707,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -4774,7 +4717,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -4785,7 +4727,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -4796,12 +4737,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-1",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-2",
+          "perSlot": {
+            "ExpansionPack1": 0.09090909090909091
           }
         }
       ]
@@ -4872,7 +4826,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -4883,7 +4836,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -4894,7 +4846,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -4905,7 +4856,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -4916,7 +4866,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -4927,7 +4876,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -4938,12 +4886,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -5012,7 +4973,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -5025,7 +4985,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -5038,7 +4997,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -5051,7 +5009,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -5064,7 +5021,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -5077,7 +5033,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -5090,7 +5045,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -5098,6 +5052,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -5159,7 +5129,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5170,7 +5139,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5181,7 +5149,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5192,7 +5159,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5203,7 +5169,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5214,7 +5179,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5225,12 +5189,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -5304,7 +5281,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5315,7 +5291,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5326,7 +5301,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5337,7 +5311,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5348,7 +5321,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5359,7 +5331,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5370,12 +5341,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -5447,7 +5431,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5458,7 +5441,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5469,7 +5451,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5480,7 +5461,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5491,7 +5471,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5502,7 +5481,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5513,12 +5491,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -5592,7 +5583,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5603,7 +5593,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5614,7 +5603,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5625,7 +5613,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5636,7 +5623,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5647,7 +5633,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5658,12 +5643,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -5737,7 +5735,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5748,7 +5745,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -5759,7 +5755,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5770,7 +5765,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -5781,7 +5775,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5792,7 +5785,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -5803,12 +5795,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -5882,7 +5887,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5893,7 +5897,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -5904,7 +5907,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5915,7 +5917,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -5926,7 +5927,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5937,7 +5937,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -5948,12 +5947,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6060,7 +6072,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -6071,7 +6082,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -6082,7 +6092,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -6093,7 +6102,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -6104,7 +6112,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -6115,7 +6122,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -6126,12 +6132,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -6202,7 +6221,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -6213,7 +6231,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -6224,7 +6241,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -6235,7 +6251,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -6246,7 +6261,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -6257,7 +6271,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -6268,12 +6281,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6342,7 +6368,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6355,7 +6380,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6368,7 +6392,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6381,7 +6404,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6394,7 +6416,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6407,7 +6428,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6420,7 +6440,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -6428,6 +6447,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6493,7 +6528,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6506,7 +6540,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6519,7 +6552,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6532,7 +6564,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6545,7 +6576,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6558,7 +6588,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6571,7 +6600,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -6579,6 +6607,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6650,7 +6694,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6663,7 +6706,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6676,7 +6718,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6689,7 +6730,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6702,7 +6742,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6715,7 +6754,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -6728,7 +6766,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -6736,6 +6773,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6803,7 +6856,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -6814,7 +6866,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.12681358024691358
           },
@@ -6825,7 +6876,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -6836,7 +6886,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -6847,7 +6896,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -6858,7 +6906,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -6869,12 +6916,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -6943,7 +7003,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6956,7 +7015,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611,
             "ExpansionPack1": 0.12681358024691358
@@ -6969,7 +7027,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6982,7 +7039,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -6995,7 +7051,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7008,7 +7063,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7021,7 +7075,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -7029,6 +7082,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -7093,7 +7162,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -7104,7 +7172,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12292194763302611
           },
@@ -7115,7 +7182,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7126,7 +7192,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7137,7 +7202,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7148,7 +7212,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7159,12 +7222,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-3",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-4",
+          "perSlot": {
+            "StandardPack": 0.09090909090909091
           }
         }
       ]
@@ -7236,7 +7312,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -7249,7 +7324,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -7262,7 +7336,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7275,7 +7348,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7288,7 +7360,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -7296,6 +7367,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -7366,7 +7453,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7377,7 +7463,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7388,7 +7473,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -7399,7 +7483,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -7410,12 +7493,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -7481,7 +7577,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -7494,7 +7589,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -7507,7 +7601,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7520,7 +7613,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -7533,7 +7625,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -7541,6 +7632,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -7605,7 +7712,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7616,7 +7722,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7627,7 +7732,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7638,7 +7742,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7649,12 +7752,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1
           }
         }
       ]
@@ -7725,7 +7841,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7736,7 +7851,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -7747,7 +7861,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7758,7 +7871,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -7769,12 +7881,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1
           }
         }
       ]
@@ -7845,7 +7970,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7856,7 +7980,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7867,7 +7990,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -7878,7 +8000,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -7889,12 +8010,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -7965,7 +8099,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7976,7 +8109,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -7987,7 +8119,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -7998,7 +8129,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -8009,12 +8139,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8085,7 +8228,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -8096,7 +8238,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -8107,7 +8248,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -8118,7 +8258,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -8129,12 +8268,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1
           }
         }
       ]
@@ -8205,7 +8357,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -8216,7 +8367,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527
           },
@@ -8227,7 +8377,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -8238,7 +8387,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -8249,12 +8397,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1
           }
         }
       ]
@@ -8325,7 +8486,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -8336,7 +8496,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.09631210937500012
           },
@@ -8347,7 +8506,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -8358,7 +8516,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -8369,12 +8526,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8434,7 +8604,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8447,7 +8616,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8460,7 +8628,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8473,7 +8640,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8486,7 +8652,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -8494,6 +8659,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8559,7 +8740,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8572,7 +8752,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8585,7 +8764,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8598,7 +8776,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8611,7 +8788,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -8619,6 +8795,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8678,7 +8870,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8691,7 +8882,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8704,7 +8894,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8717,7 +8906,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8730,7 +8918,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -8738,6 +8925,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8809,7 +9012,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8822,7 +9024,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09404935520024527,
             "ExpansionPack1": 0.09631210937500012
@@ -8835,7 +9036,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8848,7 +9048,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -8861,7 +9060,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -8869,6 +9067,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-5",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-6",
+          "perSlot": {
+            "StandardPack": 0.1,
+            "ExpansionPack1": 0.1
           }
         }
       ]
@@ -8942,7 +9156,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -8953,7 +9166,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -8964,12 +9176,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9029,7 +9254,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9042,7 +9266,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9055,7 +9278,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -9063,6 +9285,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9127,7 +9365,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9138,7 +9375,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9149,12 +9385,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -9213,7 +9462,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9224,7 +9472,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9235,12 +9482,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9296,7 +9556,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9307,7 +9566,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9318,12 +9576,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9388,7 +9659,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9399,7 +9669,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.099915873366619
           },
@@ -9410,12 +9679,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9492,7 +9774,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9503,7 +9784,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9514,12 +9794,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -9585,7 +9878,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9598,7 +9890,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9611,7 +9902,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -9619,6 +9909,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9643,7 +9949,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9656,7 +9961,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9669,7 +9973,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -9677,6 +9980,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9751,7 +10070,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9764,7 +10082,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535,
             "ExpansionPack1": 0.099915873366619
@@ -9777,7 +10094,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -9785,6 +10101,22 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.125
           }
         }
       ]
@@ -9855,7 +10187,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9866,7 +10197,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9877,12 +10207,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -9953,7 +10296,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9964,7 +10306,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.09796001985292535
           },
@@ -9975,12 +10316,25 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-7",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-8",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -10036,12 +10390,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -10113,7 +10487,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -10121,6 +10494,30 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10185,12 +10582,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -10256,7 +10673,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -10264,6 +10680,30 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10339,7 +10779,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -10347,6 +10786,30 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10418,7 +10881,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707,
             "ExpansionPack1": 0.08766286654538002
@@ -10426,6 +10888,30 @@
           "perSlot": {
             "StandardPack": 0.017543859649122806,
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125,
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10505,12 +10991,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10566,12 +11072,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10642,12 +11168,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -10712,12 +11258,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.08469495385078707
           },
           "perSlot": {
             "StandardPack": 0.017543859649122806
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "StandardPack": 0.125
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "StandardPack": 0.125
           }
         }
       ]
@@ -10788,12 +11354,32 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "ExpansionPack1": 0.08766286654538002
           },
           "perSlot": {
             "ExpansionPack1": 0.01818181818181818
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-9",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-10",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
+          }
+        },
+        {
+          "kind": "levelup",
+          "turn": "turn-11",
+          "perSlot": {
+            "ExpansionPack1": 0.14285714285714285
           }
         }
       ]
@@ -10961,7 +11547,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.5,
             "ExpansionPack1": 0.5
@@ -10974,7 +11559,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.5,
             "ExpansionPack1": 0.5
@@ -10987,7 +11571,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11000,7 +11583,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11013,7 +11595,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11026,7 +11607,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11039,7 +11619,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11052,7 +11631,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11065,7 +11643,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11078,7 +11655,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11091,7 +11667,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11134,7 +11709,6 @@
         {
           "kind": "shop",
           "turn": "turn-1",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.5,
             "ExpansionPack1": 0.5
@@ -11147,7 +11721,6 @@
         {
           "kind": "shop",
           "turn": "turn-2",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.5,
             "ExpansionPack1": 0.5
@@ -11160,7 +11733,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11173,7 +11745,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11186,7 +11757,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11199,7 +11769,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11212,7 +11781,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11225,7 +11793,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11238,7 +11805,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11251,7 +11817,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11264,7 +11829,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11309,7 +11873,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11322,7 +11885,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11335,7 +11897,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11348,7 +11909,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11361,7 +11921,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11374,7 +11933,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11387,7 +11945,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11400,7 +11957,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11413,7 +11969,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11456,7 +12011,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11469,7 +12023,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11482,7 +12035,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11495,7 +12047,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11508,7 +12059,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11521,7 +12071,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11534,7 +12083,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11547,7 +12095,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11560,7 +12107,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11604,7 +12150,6 @@
         {
           "kind": "shop",
           "turn": "turn-3",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11617,7 +12162,6 @@
         {
           "kind": "shop",
           "turn": "turn-4",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.3599999999999999,
             "ExpansionPack1": 0.3599999999999999
@@ -11630,7 +12174,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11643,7 +12186,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11656,7 +12198,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11669,7 +12210,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11682,7 +12222,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11695,7 +12234,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11708,7 +12246,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11751,7 +12288,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11764,7 +12300,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11777,7 +12312,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11790,7 +12324,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11803,7 +12336,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11816,7 +12348,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11829,7 +12360,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11875,7 +12405,6 @@
         {
           "kind": "shop",
           "turn": "turn-5",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11888,7 +12417,6 @@
         {
           "kind": "shop",
           "turn": "turn-6",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.26530612244897966,
             "ExpansionPack1": 0.26530612244897966
@@ -11901,7 +12429,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11914,7 +12441,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -11927,7 +12453,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11940,7 +12465,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -11953,7 +12477,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -11999,7 +12522,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -12012,7 +12534,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -12025,7 +12546,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12038,7 +12558,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12051,7 +12570,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12096,7 +12614,6 @@
         {
           "kind": "shop",
           "turn": "turn-7",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -12109,7 +12626,6 @@
         {
           "kind": "shop",
           "turn": "turn-8",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.2098765432098766,
             "ExpansionPack1": 0.2098765432098766
@@ -12122,7 +12638,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12135,7 +12650,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12148,7 +12662,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12191,7 +12704,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12204,7 +12716,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12217,7 +12728,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12260,7 +12770,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12273,7 +12782,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12286,7 +12794,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12332,7 +12839,6 @@
         {
           "kind": "shop",
           "turn": "turn-9",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12345,7 +12851,6 @@
         {
           "kind": "shop",
           "turn": "turn-10",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.15972222222222232,
             "ExpansionPack1": 0.15972222222222232
@@ -12358,7 +12863,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12401,7 +12905,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12444,7 +12947,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12490,7 +12992,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12533,7 +13034,6 @@
         {
           "kind": "shop",
           "turn": "turn-11",
-          "pack": "StandardPack",
           "perShop": {
             "StandardPack": 0.12109375,
             "ExpansionPack1": 0.12109375
@@ -12795,7 +13295,8 @@
       "index": 1,
       "foodShopSlots": 1,
       "animalShopSlots": 3,
-      "tiersAvailable": 1
+      "tiersAvailable": 1,
+      "levelUpTier": 2
     },
     "turn-2": {
       "name": "Turn 2",
@@ -12803,7 +13304,8 @@
       "index": 2,
       "foodShopSlots": 1,
       "animalShopSlots": 3,
-      "tiersAvailable": 1
+      "tiersAvailable": 1,
+      "levelUpTier": 2
     },
     "turn-3": {
       "name": "Turn 3",
@@ -12811,7 +13313,8 @@
       "index": 3,
       "foodShopSlots": 2,
       "animalShopSlots": 3,
-      "tiersAvailable": 2
+      "tiersAvailable": 2,
+      "levelUpTier": 3
     },
     "turn-4": {
       "name": "Turn 4",
@@ -12819,7 +13322,8 @@
       "index": 4,
       "foodShopSlots": 2,
       "animalShopSlots": 3,
-      "tiersAvailable": 2
+      "tiersAvailable": 2,
+      "levelUpTier": 3
     },
     "turn-5": {
       "name": "Turn 5",
@@ -12827,7 +13331,8 @@
       "index": 5,
       "foodShopSlots": 2,
       "animalShopSlots": 4,
-      "tiersAvailable": 3
+      "tiersAvailable": 3,
+      "levelUpTier": 4
     },
     "turn-6": {
       "name": "Turn 6",
@@ -12835,7 +13340,8 @@
       "index": 6,
       "foodShopSlots": 2,
       "animalShopSlots": 4,
-      "tiersAvailable": 3
+      "tiersAvailable": 3,
+      "levelUpTier": 4
     },
     "turn-7": {
       "name": "Turn 7",
@@ -12843,7 +13349,8 @@
       "index": 7,
       "foodShopSlots": 2,
       "animalShopSlots": 4,
-      "tiersAvailable": 4
+      "tiersAvailable": 4,
+      "levelUpTier": 5
     },
     "turn-8": {
       "name": "Turn 8",
@@ -12851,7 +13358,8 @@
       "index": 8,
       "foodShopSlots": 2,
       "animalShopSlots": 4,
-      "tiersAvailable": 4
+      "tiersAvailable": 4,
+      "levelUpTier": 5
     },
     "turn-9": {
       "name": "Turn 9",
@@ -12859,7 +13367,8 @@
       "index": 9,
       "foodShopSlots": 2,
       "animalShopSlots": 5,
-      "tiersAvailable": 5
+      "tiersAvailable": 5,
+      "levelUpTier": 6
     },
     "turn-10": {
       "name": "Turn 10",
@@ -12867,7 +13376,8 @@
       "index": 10,
       "foodShopSlots": 2,
       "animalShopSlots": 5,
-      "tiersAvailable": 5
+      "tiersAvailable": 5,
+      "levelUpTier": 6
     },
     "turn-11": {
       "name": "Turn 11+",
@@ -12875,7 +13385,8 @@
       "index": 11,
       "foodShopSlots": 2,
       "animalShopSlots": 5,
-      "tiersAvailable": 6
+      "tiersAvailable": 6,
+      "levelUpTier": 6
     }
   }
 }
