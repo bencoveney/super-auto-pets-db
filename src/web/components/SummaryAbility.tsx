@@ -12,6 +12,9 @@ export function SummaryAbility(props: {
   return (
     <div className="mb-3 pb-3 border-b border-gray-500">
       <p className="text-xl font-light">{props.ability.description}</p>
+      {typeof props.ability.maxTriggers === "number" ? (
+        <MaxTriggers maxTriggers={props.ability.maxTriggers} />
+      ) : null}
       <DescribeAbility {...props} />
       {props.ability.effect.kind === "ApplyStatus" ? (
         <SummaryStatus
@@ -30,6 +33,10 @@ export function SummaryAbility(props: {
       ) : null}
     </div>
   );
+}
+
+function MaxTriggers(props: { maxTriggers: number }) {
+  return <p className="italic">Works {props.maxTriggers} times per turn.</p>;
 }
 
 function DescribeAbility(props: {

@@ -110,6 +110,8 @@ export interface Ability {
   triggeredBy: Target;
   // What the effect does.
   effect: Effect;
+  // How many times the ability will be triggered - if a limit exists.
+  maxTriggers?: number;
 }
 
 // TODO: const enum https://github.com/evanw/esbuild/issues/128

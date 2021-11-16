@@ -3,9 +3,8 @@ import { getPetIdentifiers } from "../database";
 import { coconutShield } from "../statusEffects/coconutShield";
 
 function gorillaAbility(level: number): Ability {
-  const numTimes = level <= 1 ? "" : `Works ${level} times per turn.`;
   return {
-    description: `Hurt: Gain Coconut Shield. ${numTimes}`,
+    description: `Hurt: Gain Coconut Shield.`,
     trigger: Trigger.Hurt,
     triggeredBy: {
       kind: "Self",
@@ -17,6 +16,7 @@ function gorillaAbility(level: number): Ability {
         kind: "Self",
       },
     },
+    maxTriggers: 1,
   };
 }
 

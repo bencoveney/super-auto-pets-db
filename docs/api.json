@@ -10628,7 +10628,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Hurt: Gain Coconut Shield. ",
+        "description": "Hurt: Gain Coconut Shield.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -10639,10 +10639,11 @@
           "to": {
             "kind": "Self"
           }
-        }
+        },
+        "maxTriggers": 1
       },
       "level2Ability": {
-        "description": "Hurt: Gain Coconut Shield. Works 2 times per turn.",
+        "description": "Hurt: Gain Coconut Shield.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -10653,10 +10654,11 @@
           "to": {
             "kind": "Self"
           }
-        }
+        },
+        "maxTriggers": 1
       },
       "level3Ability": {
-        "description": "Hurt: Gain Coconut Shield. Works 3 times per turn.",
+        "description": "Hurt: Gain Coconut Shield.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -10667,7 +10669,8 @@
           "to": {
             "kind": "Self"
           }
-        }
+        },
+        "maxTriggers": 1
       },
       "probabilities": [
         {
@@ -11044,7 +11047,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 3
       },
       "level2Ability": {
         "description": "Buy food: Gain 1 gold.",
@@ -11055,7 +11059,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 6
       },
       "level3Ability": {
         "description": "Buy food: Gain 1 gold.",
@@ -11066,7 +11071,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 9
       },
       "probabilities": [
         {
