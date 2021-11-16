@@ -11,7 +11,7 @@ function crocodileAbility(level: number): Ability {
     effect: {
       kind: "DealDamage",
       target: {
-        kind: "LowestHealthEnemy",
+        kind: "LastEnemy",
       },
       amount: level * 7,
     },

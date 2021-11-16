@@ -9328,7 +9328,7 @@
         "effect": {
           "kind": "DealDamage",
           "target": {
-            "kind": "LowestHealthEnemy"
+            "kind": "LastEnemy"
           },
           "amount": 7
         }
@@ -9342,7 +9342,7 @@
         "effect": {
           "kind": "DealDamage",
           "target": {
-            "kind": "LowestHealthEnemy"
+            "kind": "LastEnemy"
           },
           "amount": 14
         }
@@ -9356,7 +9356,7 @@
         "effect": {
           "kind": "DealDamage",
           "target": {
-            "kind": "LowestHealthEnemy"
+            "kind": "LastEnemy"
           },
           "amount": 21
         }
