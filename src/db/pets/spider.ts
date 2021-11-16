@@ -14,7 +14,7 @@ function spiderAbility(level: number): Ability {
       kind: "SummonRandomPet",
       tier: 3,
       baseAttack: level * 2,
-      baseAealth: level * 2,
+      baseHealth: level * 2,
     },
   };
 }

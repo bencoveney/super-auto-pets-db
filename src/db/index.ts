@@ -261,7 +261,7 @@ export interface SummonRandomPetEffect {
   kind: "SummonRandomPet";
   tier: Tier;
   baseAttack?: number;
-  baseAealth?: number;
+  baseHealth?: number;
   level?: number;
 }
 

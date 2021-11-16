@@ -4263,7 +4263,7 @@
           "kind": "SummonRandomPet",
           "tier": 3,
           "baseAttack": 2,
-          "baseAealth": 2
+          "baseHealth": 2
         }
       },
       "level2Ability": {
@@ -4276,7 +4276,7 @@
           "kind": "SummonRandomPet",
           "tier": 3,
           "baseAttack": 4,
-          "baseAealth": 4
+          "baseHealth": 4
         }
       },
       "level3Ability": {
@@ -4289,7 +4289,7 @@
           "kind": "SummonRandomPet",
           "tier": 3,
           "baseAttack": 6,
-          "baseAealth": 6
+          "baseHealth": 6
         }
       },
       "probabilities": [
