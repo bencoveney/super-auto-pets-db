@@ -7,7 +7,7 @@ function oxAbility(level: number): Ability {
     description: `Friend ahead attacks: Gain Melon Armor and +${
       level * 2
     } attack`,
-    trigger: Trigger.AfterAttack,
+    trigger: Trigger.Faint,
     triggeredBy: {
       kind: "FriendAhead",
       n: 1,

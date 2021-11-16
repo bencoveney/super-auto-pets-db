@@ -5986,7 +5986,7 @@
       ],
       "level1Ability": {
         "description": "Friend ahead attacks: Gain Melon Armor and +2 attack",
-        "trigger": "AfterAttack",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
           "n": 1
@@ -6014,7 +6014,7 @@
       },
       "level2Ability": {
         "description": "Friend ahead attacks: Gain Melon Armor and +4 attack",
-        "trigger": "AfterAttack",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
           "n": 1
@@ -6042,7 +6042,7 @@
       },
       "level3Ability": {
         "description": "Friend ahead attacks: Gain Melon Armor and +6 attack",
-        "trigger": "AfterAttack",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
           "n": 1
