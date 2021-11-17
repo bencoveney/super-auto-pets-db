@@ -157,6 +157,15 @@ function describeTarget(
         isPlural: false,
         notes: [],
       };
+    case "StrongestFriend":
+      return {
+        description:
+          "the strongest friend (with the strongest combined health and attack)",
+        isPlural: false,
+        notes: [
+          "Strength is the sum of attack and health, for example a 3/4 pet would have 7 strength.",
+        ],
+      };
     case "DifferentTierAnimals":
       return {
         description: "the left-most animal of each tier",

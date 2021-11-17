@@ -11500,7 +11500,25 @@
       "baseHealth": 1,
       "packs": [
         "ExpansionPack1"
-      ]
+      ],
+      "level1Ability": {
+        "description": "Copy stats of the strongest friend (highest attack and health combined).",
+        "trigger": "Summoned",
+        "triggeredBy": {
+          "kind": "Self"
+        },
+        "effect": {
+          "kind": "TransferStats",
+          "copyAttack": true,
+          "copyHealth": true,
+          "from": {
+            "kind": "StrongestFriend"
+          },
+          "to": {
+            "kind": "Self"
+          }
+        }
+      }
     },
     "pet-bee": {
       "name": "Bee",

@@ -177,6 +177,7 @@ export type SimpleTarget = {
     | "LastEnemy"
     | "LowestHealthEnemy"
     | "HighestHealthEnemy"
+    | "StrongestFriend"
     | "DifferentTierAnimals"
     | "PurchaseTarget"
     | "None";
@@ -315,7 +316,7 @@ export interface SplashDamageEffect {
 }
 
 export interface EvolveEffect {
-  // TODO: Evolve Effect.
+  // TODO: Evolve Effect. Summoned butterfly is a 1/1 lvl.1, then the ability copies health.
   kind: "Evolve";
   into: PetRef;
 }
