@@ -4,15 +4,32 @@ This database website is an un-official guide and reference for the pets, food a
 
 ## Usage
 
-- `npm start` will build the website and API in the `docs` directory.
-- `npm run typescript` will build the website and API.
-- `npm run css` will compile the tailwind styles.
+### Prerequisites
+
+- Install node (I use `v14.16.0`, your mileage may vary on earlier versions).
+- Run `npm install`.
+
+### Building the project
+
+You can use `npm run prod:build` or `npm run dev:build` to build the site. This will write the website to the `docs/` directory, for hosting through GitHub Pages.
+
+You can use `npm run dev` to create a local development server.
 
 ### Navigating the project
 
-- `src` - Code files used in the project
-  - `database` - Files involved in building and populating the pets database.
-  - `website` - Files involved in building the website.
+- `docs/` - The output directory for the website files. Everything in this directory is generated from the `src/` files, you probably don't want to be changing these files directly.
+- `src/` - Code files used in the project
+  - `db/` - Files involved in building and populating the pets database.
+    - `food/` - Files defining all the food items in the game.
+    - `pets/` - Files defining all the pets items in the game.
+    - `statusEffects/` - Files defining all the status effects items in the game.
+  - `emoji/` - Git submodules for the emoji fonts that contain the animal icons.
+  - `web/` - Files involved in building the website.
+    - `assets/` - Static files and images
+    - `components/` - React components.
+    - `hooks/` - React hooks.
+    - `live/` - Entry point for the run-time code.
+    - `ssr/` - Entry point for static site rendering code.
 
 ## API
 
@@ -61,10 +78,10 @@ The purpose of the extra information on the `Ability` type is so that in the fut
 - Generate more detailed/precise descriptions for what each ability does.
 - Allow filtering on things like "pets that spawn other pets".
 
-This extra ability information is still subject to change as the data model becomes clearer. Check out `src/database/index.ts` to get a better idea of how this information is structured.
+**This extra ability information is still subject to change as the data model becomes clearer.** Check out `src/database/index.ts` to get a better idea of how this information is structured.
 
 ## Useful Resources
 
-- (Emojipedia, source of icons)[https://emojipedia.org/]
-- (Steam Guide, All Pets and Food)[https://steamcommunity.com/sharedfiles/filedetails/?id=2628954046]
-- (Background images)[https://opengameart.org/content/backgrounds-3]
+- [Emojipedia, source of icons](https://emojipedia.org/)
+- [Steam Guide, All Pets and Food](https://steamcommunity.com/sharedfiles/filedetails/?id=2628954046)
+- [Background images](https://opengameart.org/content/backgrounds-3)
