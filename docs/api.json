@@ -8832,7 +8832,7 @@
       ],
       "level1Ability": {
         "description": "Buy: Clear and fill shops with food.",
-        "trigger": "LevelUp",
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -8844,7 +8844,7 @@
       },
       "level2Ability": {
         "description": "Buy: Clear and fill shops with food.",
-        "trigger": "LevelUp",
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -8856,7 +8856,7 @@
       },
       "level3Ability": {
         "description": "Buy: Clear and fill shops with food.",
-        "trigger": "LevelUp",
+        "trigger": "Buy",
         "triggeredBy": {
           "kind": "Self"
         },
