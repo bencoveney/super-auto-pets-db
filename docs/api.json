@@ -4776,7 +4776,7 @@
       ],
       "level1Ability": {
         "description": "Faint: Deal Attack damage to adjacent animals",
-        "trigger": "EatsShopFood",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -4792,7 +4792,7 @@
       },
       "level2Ability": {
         "description": "Faint: Deal Attack damage to adjacent animals",
-        "trigger": "EatsShopFood",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
@@ -4808,7 +4808,7 @@
       },
       "level3Ability": {
         "description": "Faint: Deal Attack damage to adjacent animals",
-        "trigger": "EatsShopFood",
+        "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
         },
