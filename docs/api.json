@@ -2759,9 +2759,9 @@
       ],
       "level1Ability": {
         "description": "Friend summoned: Gain +1 Attack or +1 Health.",
-        "trigger": "StartOfBattle",
+        "trigger": "Summoned",
         "triggeredBy": {
-          "kind": "Player"
+          "kind": "EachFriend"
         },
         "effect": {
           "kind": "OneOf",
@@ -2787,9 +2787,9 @@
       },
       "level2Ability": {
         "description": "Friend summoned: Gain +2 Attack or +2 Health.",
-        "trigger": "StartOfBattle",
+        "trigger": "Summoned",
         "triggeredBy": {
-          "kind": "Player"
+          "kind": "EachFriend"
         },
         "effect": {
           "kind": "OneOf",
@@ -2815,9 +2815,9 @@
       },
       "level3Ability": {
         "description": "Friend summoned: Gain +3 Attack or +3 Health.",
-        "trigger": "StartOfBattle",
+        "trigger": "Summoned",
         "triggeredBy": {
-          "kind": "Player"
+          "kind": "EachFriend"
         },
         "effect": {
           "kind": "OneOf",
@@ -9528,7 +9528,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 3
       },
       "level2Ability": {
         "description": "Friend bought: Gain 1 gold.",
@@ -9539,7 +9540,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 6
       },
       "level3Ability": {
         "description": "Friend bought: Gain 1 gold.",
@@ -9550,7 +9552,8 @@
         "effect": {
           "kind": "GainGold",
           "amount": 1
-        }
+        },
+        "maxTriggers": 9
       },
       "probabilities": [
         {

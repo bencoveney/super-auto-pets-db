@@ -4,10 +4,9 @@ import { getPetIdentifiers } from "../database";
 function dogAbility(level: number): Ability {
   return {
     description: `Friend summoned: Gain +${level} Attack or +${level} Health.`,
-    // TODO: incorrect.
-    trigger: Trigger.StartOfBattle,
+    trigger: Trigger.Summoned,
     triggeredBy: {
-      kind: "Player",
+      kind: "EachFriend",
     },
     effect: {
       kind: "OneOf",
