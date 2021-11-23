@@ -292,6 +292,7 @@ for (let turnIndex = 1; turnIndex <= 11; turnIndex++) {
     index: turnIndex,
     foodShopSlots: -1,
     animalShopSlots: -1,
+    livesLost: -1,
     tiersAvailable: "Summoned",
     levelUpTier: "Summoned",
   };
@@ -339,30 +340,36 @@ for (let turnIndex = 1; turnIndex <= 11; turnIndex++) {
     case 2:
       turn.tiersAvailable = 1;
       turn.levelUpTier = 2;
+      turn.livesLost = 1;
       break;
     case 3:
     case 4:
       turn.tiersAvailable = 2;
       turn.levelUpTier = 3;
+      turn.livesLost = 2;
       break;
     case 5:
     case 6:
       turn.tiersAvailable = 3;
       turn.levelUpTier = 4;
+      turn.livesLost = 3;
       break;
     case 7:
     case 8:
       turn.tiersAvailable = 4;
       turn.levelUpTier = 5;
+      turn.livesLost = 3;
       break;
     case 9:
     case 10:
       turn.tiersAvailable = 5;
       turn.levelUpTier = 6;
+      turn.livesLost = 4;
       break;
     case 11:
       turn.tiersAvailable = 6;
       turn.levelUpTier = 6;
+      turn.livesLost = 5;
       break;
   }
 

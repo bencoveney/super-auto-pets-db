@@ -55,6 +55,7 @@ export interface Turn extends Identifiers {
   levelUpTier: Tier;
   animalShopSlots: number;
   foodShopSlots: number;
+  livesLost: number;
 }
 
 export type Identifiers = {
