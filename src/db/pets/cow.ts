@@ -1,5 +1,6 @@
 import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
+import { milk } from "../food/milk";
 
 function cowAbility(level: number): Ability {
   return {
@@ -11,7 +12,7 @@ function cowAbility(level: number): Ability {
     effect: {
       kind: "RefillShops",
       shop: "Food",
-      food: "Milk",
+      food: milk.id,
     },
   };
 }

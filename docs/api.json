@@ -9223,7 +9223,7 @@
         "effect": {
           "kind": "RefillShops",
           "shop": "Food",
-          "food": "Milk"
+          "food": "food-milk"
         }
       },
       "level2Ability": {
@@ -9235,7 +9235,7 @@
         "effect": {
           "kind": "RefillShops",
           "shop": "Food",
-          "food": "Milk"
+          "food": "food-milk"
         }
       },
       "level3Ability": {
@@ -9247,7 +9247,7 @@
         "effect": {
           "kind": "RefillShops",
           "shop": "Food",
-          "food": "Milk"
+          "food": "food-milk"
         }
       },
       "probabilities": [

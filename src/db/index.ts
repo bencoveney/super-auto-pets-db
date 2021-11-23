@@ -324,7 +324,7 @@ export interface EvolveEffect {
 export interface RefillShopsEffect {
   kind: "RefillShops";
   shop: "All" | "Food";
-  food: "Any" | "Milk";
+  food: "Any" | FoodRef;
 }
 
 export interface ReduceHealthEffect {
