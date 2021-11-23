@@ -12160,6 +12160,7 @@
         "StandardPack",
         "ExpansionPack1"
       ],
+      "cost": 1,
       "ability": {
         "description": "Make a friendly animal faint.",
         "triggeredBy": {
@@ -13086,6 +13087,7 @@
         "StandardPack",
         "ExpansionPack1"
       ],
+      "cost": 0,
       "ability": {
         "description": "Give an animal +2/+2.",
         "triggeredBy": {

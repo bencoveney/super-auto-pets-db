@@ -37,6 +37,8 @@ export interface Food
   notes?: string;
   // The ability the food item has.
   ability: Ability;
+  // The cost of the item (if not 3).
+  cost?: number;
 }
 
 export interface Status extends Identifiers, HasImage {

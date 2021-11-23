@@ -12,6 +12,7 @@ export const sleepingPill: Food = {
   notes: "This costs 1 gold.",
   tier: 2,
   packs: ["StandardPack", "ExpansionPack1"],
+  cost: 1,
   ability: {
     description: "Make a friendly animal faint.",
     triggeredBy: {

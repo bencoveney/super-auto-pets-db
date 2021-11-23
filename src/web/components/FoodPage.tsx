@@ -48,6 +48,11 @@ export function FoodPage(props: { food: Food; database: Database }) {
             <StatsRow text="Image">
               <EmojiSource image={props.food.image} />
             </StatsRow>
+            {typeof props.food.cost === "number" && (
+              <StatsRow text="Cost">
+                <StatDisplay stat={props.food.cost} emoji="🪙" />
+              </StatsRow>
+            )}
             <StatsSummary>Abilities</StatsSummary>
             <StatsRow text="Effect">
               <AbilityDescription

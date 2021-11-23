@@ -11,6 +11,7 @@ export const milk: Food = {
   },
   tier: "Summoned",
   packs: ["StandardPack", "ExpansionPack1"],
+  cost: 0,
   ability: {
     description: "Give an animal +2/+2.",
     triggeredBy: {
