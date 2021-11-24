@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function sauropodAbility(level: number): Ability {
   return {
-    description: `Buy food: Gain 1 gold.`,
+    description: `Buy food: Gain ${level} gold.`,
     trigger: Trigger.BuyFood,
     triggeredBy: {
       kind: "Player",

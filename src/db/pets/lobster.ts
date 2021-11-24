@@ -2,10 +2,10 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function lobsterAbility(level: number): Ability {
+  const amount = level * 3;
   return {
-    description: `Friend summoned: Give it +${level * 3}/+${
-      level * 3
-    } when not in battle.`,
+    description: `Friend summoned: Give it +${amount}/+${amount}
+	when not in battle.`,
     trigger: Trigger.Summoned,
     triggeredBy: {
       kind: "EachFriend",
@@ -15,8 +15,8 @@ function lobsterAbility(level: number): Ability {
       target: {
         kind: "TriggeringEntity",
       },
-      attackAmount: level * 2,
-      healthAmount: level * 2,
+      attackAmount: amount,
+      healthAmount: amount,
       untilEndOfBattle: false,
     },
   };
