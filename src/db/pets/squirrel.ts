@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function squirrelAbility(level: number): Ability {
   return {
-    description: `Buy: Clear and fill shops with food.`,
+    description: `Buy: Clear and fill shops with food. Food cost is reduced by ${level} gold.`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "Self",

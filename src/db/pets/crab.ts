@@ -3,8 +3,8 @@ import { getPetIdentifiers } from "../database";
 
 function crabAbility(level: number): Ability {
   return {
-    description: `Start of battle: Copy Health from friend ahead.`,
-    trigger: Trigger.StartOfBattle,
+    description: `Buy: Copy Health from friend ahead.`,
+    trigger: Trigger.Buy,
     triggeredBy: {
       kind: "Player",
     },

@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function turkeyAbility(level: number): Ability {
   return {
-    description: `Friend summoned: Give it +${level * 3}/+${level * 3}.`,
+    description: `Friend summoned: Give it +${level * 2}/+${level * 2}.`,
     trigger: Trigger.Summoned,
     triggeredBy: {
       kind: "EachFriend",
@@ -29,7 +29,7 @@ export const turkey: Pet = {
   },
   tier: 5,
   baseAttack: 3,
-  baseHealth: 4,
+  baseHealth: 7,
   packs: ["StandardPack"],
   level1Ability: turkeyAbility(1),
   level2Ability: turkeyAbility(2),

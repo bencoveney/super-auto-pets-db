@@ -4,8 +4,8 @@ import { zombieFly } from "./zombieFly";
 
 function flyAbility(level: number): Ability {
   return {
-    description: `Friend faints: Summon a ${level * 2}/${
-      level * 2
+    description: `Friend faints: Summon a ${level * 4}/${
+      level * 4
     } fly in its place`,
     trigger: Trigger.Faint,
     triggeredBy: {
@@ -18,6 +18,7 @@ function flyAbility(level: number): Ability {
       withHealth: level * 2,
       team: "Friendly",
     },
+	maxTriggers: 3,
   };
 }
 

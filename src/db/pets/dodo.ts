@@ -2,7 +2,7 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function dodoAbility(level: number): Ability {
-  const multiplier = level <= 1 ? "" : `${level}X`;
+  const multiplier = `${level* 33}%`;
   return {
     description: `Start of battle: Give ${multiplier} Attack to friend ahead.`,
     trigger: Trigger.StartOfBattle,
@@ -33,7 +33,7 @@ export const dodo: Pet = {
     unicodeCodePoint: "\u{1F9A4}",
   },
   tier: 2,
-  baseAttack: 1,
+  baseAttack: 2,
   baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: {

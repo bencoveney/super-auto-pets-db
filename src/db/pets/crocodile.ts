@@ -2,8 +2,9 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function crocodileAbility(level: number): Ability {
+  const damageAmount = level * 8;
   return {
-    description: `Start of battle: Deal ${level * 7} damage to the last enemy`,
+    description: `Start of battle: Deal ${damageAmount} damage to the last enemy`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
       kind: "Player",
@@ -13,7 +14,7 @@ function crocodileAbility(level: number): Ability {
       target: {
         kind: "LastEnemy",
       },
-      amount: level * 7,
+      amount: damageAmount,
     },
   };
 }
@@ -26,8 +27,8 @@ export const crocodile: Pet = {
     unicodeCodePoint: "\u{1F40A}",
   },
   tier: 5,
-  baseAttack: 6,
-  baseHealth: 3,
+  baseAttack: 8,
+  baseHealth: 4,
   packs: ["StandardPack"],
   level1Ability: crocodileAbility(1),
   level2Ability: crocodileAbility(2),

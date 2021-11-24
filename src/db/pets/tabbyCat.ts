@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function tabbyCatAbility(level: number): Ability {
   return {
-    description: `Eats shop food: Give friends +${level} Attack until end of battle`,
+    description: `Eats shop food: Give friends +${level * 2} Attack until end of battle`,
     trigger: Trigger.EatsShopFood,
     triggeredBy: {
       kind: "Self",
@@ -27,7 +27,7 @@ export const tabbyCat: Pet = {
     unicodeCodePoint: "\u{1F408}",
   },
   tier: 2,
-  baseAttack: 4,
+  baseAttack: 2,
   baseHealth: 3,
   packs: ["ExpansionPack1"],
   level1Ability: tabbyCatAbility(1),

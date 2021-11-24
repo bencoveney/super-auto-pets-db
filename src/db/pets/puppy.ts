@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function puppyAbility(level: number): Ability {
   return {
-    description: `End turn: If you have 2 or more gold, gain +${level * 2}/+${
+    description: `End turn: If you have 3 or more gold, gain +${level * 2}/+${
       level * 2
     }`,
     trigger: Trigger.EndOfTurnWith2PlusGold,
