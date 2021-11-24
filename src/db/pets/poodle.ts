@@ -29,7 +29,7 @@ export const poodle: Pet = {
     unicodeCodePoint: "\u{1F429}",
   },
   tier: 4,
-  baseAttack: 4,
+  baseAttack: 2,
   baseHealth: 2,
   packs: ["ExpansionPack1"],
   level1Ability: poodleAbility(1),

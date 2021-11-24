@@ -25,7 +25,7 @@ export const goat: Pet = {
   },
   tier: 5,
   baseAttack: 4,
-  baseHealth: 5,
+  baseHealth: 6,
   packs: ["ExpansionPack1"],
   level1Ability: goatAbility(1),
   level2Ability: goatAbility(2),

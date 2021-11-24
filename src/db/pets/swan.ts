@@ -24,7 +24,7 @@ export const swan: Pet = {
   },
   tier: 2,
   baseAttack: 3,
-  baseHealth: 4,
+  baseHealth: 3,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: swanAbility(1),
   level2Ability: swanAbility(2),

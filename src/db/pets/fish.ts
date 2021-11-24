@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function fishAbility(level: number): Ability {
   return {
-    description: `Level-up: Give all friends +${level}/+${level}`,
+    description: `Level-up: Give all friends +${level} Health`,
     trigger: Trigger.LevelUp,
     triggeredBy: {
       kind: "Self",

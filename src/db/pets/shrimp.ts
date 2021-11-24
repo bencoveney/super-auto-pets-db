@@ -29,7 +29,7 @@ export const shrimp: Pet = {
   },
   tier: 2,
   baseAttack: 2,
-  baseHealth: 1,
+  baseHealth: 3,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: shrimpAbility(1),
   level2Ability: shrimpAbility(2),

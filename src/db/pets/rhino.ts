@@ -27,7 +27,7 @@ export const rhino: Pet = {
   },
   tier: 5,
   baseAttack: 5,
-  baseHealth: 6,
+  baseHealth: 8,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: rhinoAbility(1),
   level2Ability: rhinoAbility(2),
