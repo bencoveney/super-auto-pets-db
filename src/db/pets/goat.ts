@@ -12,7 +12,7 @@ function goatAbility(level: number): Ability {
       kind: "GainGold",
       amount: 1,
     },
-    maxTriggers: level * 3,
+    maxTriggers: 3,
   };
 }
 
