@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function goatAbility(level: number): Ability {
   return {
-    description: `Friend bought: Gain 1 gold.`,
+    description: `Friend bought: Gain ${level} gold.`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "EachFriend",
