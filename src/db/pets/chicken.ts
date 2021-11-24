@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function chickenAbility(level: number): Ability {
   return {
-    description: `Buy tier 1 animal: Give current and future shop animals +${level}/+${level}`,
+    description: `Buy tier 1 animal: Give current and future shop animals +${level * 1}/+${level * 2}`,
     trigger: Trigger.BuyTier1Animal,
     triggeredBy: {
       kind: "Player",
