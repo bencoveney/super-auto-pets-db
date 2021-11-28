@@ -13,7 +13,7 @@ function rabbitAbility(level: number): Ability {
       target: {
         kind: "TriggeringEntity",
       },
-      attackAmount: level,
+      healthAmount: level,
       untilEndOfBattle: false,
     },
   };
