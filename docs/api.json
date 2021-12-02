@@ -6330,7 +6330,7 @@
           "target": {
             "kind": "TriggeringEntity"
           },
-          "attackAmount": 1,
+          "healthAmount": 1,
           "untilEndOfBattle": false
         }
       },
@@ -6345,7 +6345,7 @@
           "target": {
             "kind": "TriggeringEntity"
           },
-          "attackAmount": 2,
+          "healthAmount": 2,
           "untilEndOfBattle": false
         }
       },
@@ -6360,7 +6360,7 @@
           "target": {
             "kind": "TriggeringEntity"
           },
-          "attackAmount": 3,
+          "healthAmount": 3,
           "untilEndOfBattle": false
         }
       },
