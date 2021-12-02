@@ -1,5 +1,26 @@
-import { Pet } from "..";
+import { Pet, Ability, Trigger, } from "..";
 import { getPetIdentifiers } from "../database";
+
+
+
+function dirtyRatAbility(level : number): Ability {
+  return {
+    description: `Friend ahead attacks: Deal it ${level} damage`,
+    trigger: Trigger.AfterAttack,
+    triggeredBy: {
+      kind: "FriendAhead",
+      n: 1,
+    },
+    effect: {
+      kind: "DealDamage",
+      target: {
+        kind: "FriendAhead",
+        n: 1,
+      },
+      amount: level,
+    },
+  };
+}
 
 export const dirtyRat: Pet = {
   ...getPetIdentifiers("Dirty Rat"),
@@ -12,5 +33,7 @@ export const dirtyRat: Pet = {
   tier: "Summoned",
   baseAttack: 1,
   baseHealth: 1,
-  // TODO: whenever the animal in front of it attacks the rat will do 1 damage to it
+  level1Ability: dirtyRatAbility(1),
+  level2Ability: dirtyRatAbility(2),
+  level3Ability: dirtyRatAbility(3),
 };
