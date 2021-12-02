@@ -1,19 +1,8 @@
 import { Pet, Ability, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
+import { dirtyRat } from "./dirtyRat";
 
-export const dirtyRatSummoned: Pet = {
-  ...getPetIdentifiers("Dirty Rat"),
-  image: {
-    source: "noto-emoji",
-    commit: "e022fd6573782431ac9a65b520376b57511c31cd",
-    unicodeCodePoint: "\u{1F400}",
-  },
-  packs: ["StandardPack", "ExpansionPack1"],
-  tier: "Summoned",
-  baseAttack: 1,
-  baseHealth: 1,
-  // TODO: whenever the animal in front of it attacks the rat will do 1 damage to it
-};
+
 
 function ratAbility(level: number): Ability {
   return {
@@ -24,7 +13,7 @@ function ratAbility(level: number): Ability {
     },
     effect: {
       kind: "SummonPet",
-      pet: dirtyRatSummoned.id,
+      pet: dirtyRat.id,
       team: "Enemy",
     },
   };
