@@ -4,9 +4,9 @@ import { zombieFly } from "./zombieFly";
 
 function flyAbility(level: number): Ability {
   return {
-    description: `Friend faints: Summon a ${level * 2}/${
-      level * 2
-    } fly in its place`,
+    description: `Friend faints: Summon a ${level * 5}/${
+      level * 5
+    } fly in its place (Max 3 times)`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "EachFriend",
@@ -14,10 +14,11 @@ function flyAbility(level: number): Ability {
     effect: {
       kind: "SummonPet",
       pet: zombieFly.id,
-      withAttack: level * 2,
-      withHealth: level * 2,
+      withAttack: level * 5,
+      withHealth: level * 5,
       team: "Friendly",
     },
+    maxTriggers: 3,
   };
 }
 
@@ -29,8 +30,8 @@ export const fly: Pet = {
     unicodeCodePoint: "\u{1FAB0}",
   },
   tier: 6,
-  baseAttack: 2,
-  baseHealth: 2,
+  baseAttack: 5,
+  baseHealth: 5,
   packs: ["StandardPack"],
   level1Ability: flyAbility(1),
   level2Ability: flyAbility(2),

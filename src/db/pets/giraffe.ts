@@ -29,8 +29,8 @@ export const giraffe: Pet = {
     unicodeCodePoint: "\u{1F992}",
   },
   tier: 3,
-  baseAttack: 1,
-  baseHealth: 3,
+  baseAttack: 2,
+  baseHealth: 5,
   packs: ["StandardPack"],
   level1Ability: {
     ...giraffeAbility(1),

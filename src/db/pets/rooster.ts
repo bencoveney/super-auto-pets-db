@@ -4,7 +4,7 @@ import { chick } from "./chick";
 
 function roosterAbility(level: number): Ability {
   return {
-    description: `Faint: Summon ${level} Chicks with the same Attack as this.`,
+    description: `Faint: Summon ${level} Chicks with 1 health and half the Attack of this.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "Self",
@@ -26,12 +26,13 @@ export const rooster: Pet = {
     unicodeCodePoint: "\u{1F413}",
   },
   tier: 4,
-  baseAttack: 3,
+  baseAttack: 5,
   baseHealth: 3,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: {
     ...roosterAbility(1),
-    description: "Faint: Summon a Chick with the same Attack as this.",
+    description:
+      "Faint: Summon a Chick with 1 health and half the Attack of this.",
   },
   level2Ability: roosterAbility(2),
   level3Ability: roosterAbility(3),

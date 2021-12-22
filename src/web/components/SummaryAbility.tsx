@@ -453,6 +453,9 @@ function describeEffect(
       return { description: ``, notes: [] };
     case "SplashDamage":
       return { description: ``, notes: [] };
+    // idk why I didnt need this before but I couldnt build without this after my changes
+    default:
+      return { description: "UNKNOWN", notes: [] };
   }
 }
 

@@ -11,7 +11,7 @@ export const cannedFood: Food = {
   tier: 4,
   packs: ["StandardPack", "ExpansionPack1"],
   ability: {
-    description: "Give all current and future shop animals +2/+2.",
+    description: "Give all current and future shop animals +2/+1.",
     triggeredBy: {
       kind: "Self",
     },
@@ -23,7 +23,7 @@ export const cannedFood: Food = {
         includingFuture: true,
       },
       attackAmount: 2,
-      healthAmount: 2,
+      healthAmount: 1,
       untilEndOfBattle: false,
     },
   },

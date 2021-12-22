@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function duckAbility(level: number): Ability {
   return {
-    description: `Sell: Give shop animals +${level}/+${level}`,
+    description: `Sell: Give shop animals +${level} Health`,
     trigger: Trigger.Sell,
     triggeredBy: {
       kind: "Self",
@@ -14,7 +14,6 @@ function duckAbility(level: number): Ability {
         kind: "EachShopAnimal",
         includingFuture: false,
       },
-      attackAmount: level,
       healthAmount: level,
       untilEndOfBattle: false,
     },

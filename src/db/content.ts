@@ -33,6 +33,7 @@ import { beetle } from "./pets/beetle";
 import { bison } from "./pets/bison";
 import { blowfish } from "./pets/blowfish";
 import { bluebird } from "./pets/bluebird";
+import { boar } from "./pets/boar";
 import { buffalo } from "./pets/buffalo";
 import { bus } from "./pets/bus";
 import { butterfly } from "./pets/butterfly";
@@ -223,6 +224,7 @@ const pets: Pet[] = [
   turkey,
   // Tier 6
   cat,
+  boar,
   dragon,
   fly,
   gorilla,

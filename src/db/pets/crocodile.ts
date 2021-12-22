@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function crocodileAbility(level: number): Ability {
   return {
-    description: `Start of battle: Deal ${level * 7} damage to the last enemy`,
+    description: `Start of battle: Deal ${level * 8} damage to the last enemy`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
       kind: "Player",
@@ -26,8 +26,8 @@ export const crocodile: Pet = {
     unicodeCodePoint: "\u{1F40A}",
   },
   tier: 5,
-  baseAttack: 6,
-  baseHealth: 3,
+  baseAttack: 8,
+  baseHealth: 4,
   packs: ["StandardPack"],
   level1Ability: crocodileAbility(1),
   level2Ability: crocodileAbility(2),

@@ -39,7 +39,7 @@ export const dog: Pet = {
     commit: "793a6a93f303c08877dd6eb589b2fabb3d1c45ee",
     unicodeCodePoint: "\u{1F415}",
   },
-  tier: 2,
+  tier: 3,
   baseAttack: 2,
   baseHealth: 2,
   packs: ["StandardPack", "ExpansionPack1"],
