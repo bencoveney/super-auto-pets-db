@@ -12,9 +12,9 @@ function mosquitoAbility(level: number): Ability {
       kind: "DealDamage",
       target: {
         kind: "RandomEnemy",
-        n: 1,
+        n: level,
       },
-      amount: level,
+      amount: 1,
     },
   };
 }

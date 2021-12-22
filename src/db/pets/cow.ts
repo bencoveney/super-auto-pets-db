@@ -4,7 +4,7 @@ import { milk } from "../food/milk";
 
 function cowAbility(level: number): Ability {
   return {
-    description: `Buy: Replace food shop with 2 free milk that gives +2/+2.`,
+    description: `Buy: Replace food shop with 2 free milk that gives +${level}/+${level * 2}.`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "Self",

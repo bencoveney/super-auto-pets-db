@@ -28,7 +28,7 @@ export const leopard: Pet = {
     unicodeCodePoint: "\u{1F406}",
   },
   tier: 6,
-  baseAttack: 6,
+  baseAttack: 10,
   baseHealth: 4,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: {

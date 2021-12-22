@@ -27,7 +27,7 @@ export const tabbyCat: Pet = {
     unicodeCodePoint: "\u{1F408}",
   },
   tier: 2,
-  baseAttack: 4,
+  baseAttack: 5,
   baseHealth: 3,
   packs: ["ExpansionPack1"],
   level1Ability: tabbyCatAbility(1),

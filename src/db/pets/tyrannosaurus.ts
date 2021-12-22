@@ -3,9 +3,9 @@ import { getPetIdentifiers } from "../database";
 
 function tyrannosaurusAbility(level: number): Ability {
   return {
-    description: `End turn: If you have 3 or more gold, give other friends +${
+    description: `End turn: If you have 3 or more gold, give all +${
       level * 2
-    }/+${level * 2}`,
+    }/+${level}`,
     trigger: Trigger.EndOfTurnWith3PlusGold,
     triggeredBy: {
       kind: "Player",
@@ -16,7 +16,7 @@ function tyrannosaurusAbility(level: number): Ability {
         kind: "EachFriend",
       },
       attackAmount: level * 2,
-      healthAmount: level * 2,
+      healthAmount: level,
       untilEndOfBattle: false,
     },
   };

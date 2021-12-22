@@ -180,6 +180,7 @@ export type SimpleTarget = {
     | "LastEnemy"
     | "LowestHealthEnemy"
     | "HighestHealthEnemy"
+    | "HighestHealthFriend"
     | "StrongestFriend"
     | "DifferentTierAnimals"
     | "PurchaseTarget"
@@ -217,13 +218,14 @@ export type Effect =
   | SummonRandomPetEffect
   | RespawnPetEffect
   | ModifyDamageEffect
-  | SplashDamageEffect;
+  | SplashDamageEffect
+  | DiscountFoodEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
   target: Target;
-  attackAmount?: number;
-  healthAmount?: number;
+  attackAmount?: Stat;
+  healthAmount?: Stat;
   untilEndOfBattle: boolean;
 }
 
@@ -239,6 +241,7 @@ export interface TransferStatsEffect {
   to: Target;
   copyAttack: boolean;
   copyHealth: boolean;
+  percentage?: number
 }
 
 export interface TransferAbilityEffect {
@@ -344,11 +347,17 @@ export interface FoodMultiplierEffect {
 export interface RepeatAbilityEffect {
   kind: "RepeatAbility";
   target: Target;
+  level?: number;
 }
 
 export interface FaintEffect {
   kind: "Faint";
   target: Target;
+}
+
+export interface DiscountFoodEffect {
+  kind: "DiscountFood";
+  ammount: number;
 }
 
 export type By<Key extends string | number | symbol, Value> = {

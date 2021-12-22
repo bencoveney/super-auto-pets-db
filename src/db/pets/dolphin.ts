@@ -30,7 +30,7 @@ export const dolphin: Pet = {
   tier: 4,
   baseAttack: 4,
   baseHealth: 6,
-  packs: ["StandardPack"],
+  packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: dolphinAbility(1),
   level2Ability: dolphinAbility(2),
   level3Ability: dolphinAbility(3),

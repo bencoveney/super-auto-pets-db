@@ -27,7 +27,7 @@ export const whale: Pet = {
     commit: "e022fd6573782431ac9a65b520376b57511c31cd",
     unicodeCodePoint: "\u{1F40B}",
   },
-  tier: 3,
+  tier: 4,
   baseAttack: 2,
   baseHealth: 6,
   packs: ["StandardPack"],

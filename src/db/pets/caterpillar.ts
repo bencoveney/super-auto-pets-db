@@ -42,7 +42,7 @@ export const caterpillar: Pet = {
   },
   tier: 3,
   baseAttack: 1,
-  baseHealth: 4,
+  baseHealth: 3,
   packs: ["ExpansionPack1"],
   level1Ability: caterpillarAbility(1),
   level2Ability: caterpillarAbility(2),

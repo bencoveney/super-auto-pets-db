@@ -28,8 +28,8 @@ export const turtle: Pet = {
     unicodeCodePoint: "\u{1F422}",
   },
   tier: 3,
-  baseAttack: 2,
-  baseHealth: 4,
+  baseAttack: 1,
+  baseHealth: 2,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: {
     ...turtleAbility(1),

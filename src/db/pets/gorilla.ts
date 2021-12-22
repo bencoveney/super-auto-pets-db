@@ -29,7 +29,7 @@ export const gorilla: Pet = {
   },
   tier: 6,
   baseAttack: 6,
-  baseHealth: 6,
+  baseHealth: 9,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: gorillaAbility(1),
   level2Ability: gorillaAbility(2),

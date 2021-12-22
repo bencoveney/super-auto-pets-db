@@ -27,7 +27,7 @@ export const horse: Pet = {
     unicodeCodePoint: "\u{1F40E}",
   },
   tier: 1,
-  baseAttack: 1,
+  baseAttack: 2,
   baseHealth: 1,
   packs: ["StandardPack"],
   level1Ability: horseAbility(1),

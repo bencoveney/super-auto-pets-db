@@ -13,7 +13,7 @@ export const milk: Food = {
   packs: ["StandardPack", "ExpansionPack1"],
   cost: 0,
   ability: {
-    description: "Give an animal +2/+2.",
+    description: "Give an animal +1/2/3 attack and +2/4/6 health (depending on level of Cow).",
     triggeredBy: {
       kind: "Self",
     },
@@ -23,8 +23,8 @@ export const milk: Food = {
       target: {
         kind: "PurchaseTarget",
       },
-      attackAmount: 2,
-      healthAmount: 2,
+      attackAmount: "?",
+      healthAmount: "?",
       untilEndOfBattle: false,
     },
   },

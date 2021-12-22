@@ -3,15 +3,14 @@ import { getPetIdentifiers } from "../database";
 
 function squirrelAbility(level: number): Ability {
   return {
-    description: `Buy: Clear and fill shops with food.`,
-    trigger: Trigger.Buy,
+    description: `Start of turn: Discount shop food by ${level} gold`,
+    trigger: Trigger.StartOfTurn,
     triggeredBy: {
       kind: "Self",
     },
     effect: {
-      kind: "RefillShops",
-      shop: "All",
-      food: "Any",
+      kind: "DiscountFood",
+      ammount: level,
     },
   };
 }

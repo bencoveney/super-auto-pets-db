@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function rabbitAbility(level: number): Ability {
   return {
-    description: `Friend eats shop food: Give it +${level} Health`,
+    description: `Pet eats shop food: Give it +${level} Health`,
     trigger: Trigger.EatsShopFood,
     triggeredBy: {
       kind: "EachFriend",
