@@ -24,8 +24,8 @@ export const boar: Pet = {
   ...getPetIdentifiers("Boar"),
   image: {
     source: "noto-emoji",
-    commit: "e022fd6573782431ac9a65b520376b57511c31cd",
-    unicodeCodePoint: "\u{1F417}", 
+    commit: "f2a4f72bffe0212c72949a22698be235269bfab5",
+    unicodeCodePoint: "\u{1F417}",
   },
   tier: 6,
   baseAttack: 8,
