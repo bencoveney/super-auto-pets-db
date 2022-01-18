@@ -8767,7 +8767,7 @@
         },
         "effect": {
           "kind": "DiscountFood",
-          "ammount": 1
+          "amount": 1
         }
       },
       "level2Ability": {
@@ -8778,7 +8778,7 @@
         },
         "effect": {
           "kind": "DiscountFood",
-          "ammount": 2
+          "amount": 2
         }
       },
       "level3Ability": {
@@ -8789,7 +8789,7 @@
         },
         "effect": {
           "kind": "DiscountFood",
-          "ammount": 3
+          "amount": 3
         }
       },
       "probabilities": [

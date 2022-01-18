@@ -357,7 +357,7 @@ export interface FaintEffect {
 
 export interface DiscountFoodEffect {
   kind: "DiscountFood";
-  ammount: number;
+  amount: number;
 }
 
 export type By<Key extends string | number | symbol, Value> = {
