@@ -10,7 +10,7 @@ function squirrelAbility(level: number): Ability {
     },
     effect: {
       kind: "DiscountFood",
-      ammount: level,
+      amount: level,
     },
   };
 }
