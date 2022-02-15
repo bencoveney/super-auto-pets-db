@@ -23,7 +23,7 @@ export const swan: Pet = {
     unicodeCodePoint: "\u{1F9A2}",
   },
   tier: 2,
-  baseAttack: 3,
+  baseAttack: 1,
   baseHealth: 3,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: swanAbility(1),

@@ -29,7 +29,7 @@ export const duck: Pet = {
   },
   tier: 1,
   baseAttack: 1,
-  baseHealth: 2,
+  baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: duckAbility(1),
   level2Ability: duckAbility(2),

@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function peacockAbility(level: number): Ability {
   return {
-    description: `Hurt: Gain ${level * 2} Attack.`,
+    description: `Hurt: Gain 50% more Attack. Works ${level} time(s) per turn.`,
     trigger: Trigger.Hurt,
     triggeredBy: {
       kind: "Self",
@@ -12,8 +12,8 @@ function peacockAbility(level: number): Ability {
       kind: "ModifyStats",
       target: {
         kind: "Self",
-      },
-      attackAmount: level * 2,
+      },      
+      attackAmount: "?",
       untilEndOfBattle: false,
     },
   };

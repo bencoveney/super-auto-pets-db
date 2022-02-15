@@ -948,7 +948,7 @@
       },
       "tier": 1,
       "baseAttack": 1,
-      "baseHealth": 2,
+      "baseHealth": 3,
       "packs": [
         "StandardPack"
       ],
@@ -3672,7 +3672,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Hurt: Gain 2 Attack.",
+        "description": "Hurt: Gain 50% more Attack. Works 1 time(s) per turn.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -3682,12 +3682,12 @@
           "target": {
             "kind": "Self"
           },
-          "attackAmount": 2,
+          "attackAmount": "?",
           "untilEndOfBattle": false
         }
       },
       "level2Ability": {
-        "description": "Hurt: Gain 4 Attack.",
+        "description": "Hurt: Gain 50% more Attack. Works 2 time(s) per turn.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -3697,12 +3697,12 @@
           "target": {
             "kind": "Self"
           },
-          "attackAmount": 4,
+          "attackAmount": "?",
           "untilEndOfBattle": false
         }
       },
       "level3Ability": {
-        "description": "Hurt: Gain 6 Attack.",
+        "description": "Hurt: Gain 50% more Attack. Works 3 time(s) per turn.",
         "trigger": "Hurt",
         "triggeredBy": {
           "kind": "Self"
@@ -3712,7 +3712,7 @@
           "target": {
             "kind": "Self"
           },
-          "attackAmount": 6,
+          "attackAmount": "?",
           "untilEndOfBattle": false
         }
       },
@@ -4404,7 +4404,7 @@
         "unicodeCodePoint": "🦢"
       },
       "tier": 2,
-      "baseAttack": 3,
+      "baseAttack": 1,
       "baseHealth": 3,
       "packs": [
         "StandardPack",
@@ -6619,7 +6619,23 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Buy: If you lost last battle, give all friends +2/+1",
+        "description": "Buy: If you lost last battle, give all friends +1/+1",
+        "trigger": "BuyAfterLoss",
+        "triggeredBy": {
+          "kind": "Player"
+        },
+        "effect": {
+          "kind": "ModifyStats",
+          "target": {
+            "kind": "EachFriend"
+          },
+          "attackAmount": 1,
+          "healthAmount": 1,
+          "untilEndOfBattle": false
+        }
+      },
+      "level2Ability": {
+        "description": "Buy: If you lost last battle, give all friends +2/+2",
         "trigger": "BuyAfterLoss",
         "triggeredBy": {
           "kind": "Player"
@@ -6630,28 +6646,12 @@
             "kind": "EachFriend"
           },
           "attackAmount": 2,
-          "healthAmount": 1,
-          "untilEndOfBattle": false
-        }
-      },
-      "level2Ability": {
-        "description": "Buy: If you lost last battle, give all friends +4/+2",
-        "trigger": "BuyAfterLoss",
-        "triggeredBy": {
-          "kind": "Player"
-        },
-        "effect": {
-          "kind": "ModifyStats",
-          "target": {
-            "kind": "EachFriend"
-          },
-          "attackAmount": 4,
           "healthAmount": 2,
           "untilEndOfBattle": false
         }
       },
       "level3Ability": {
-        "description": "Buy: If you lost last battle, give all friends +6/+3",
+        "description": "Buy: If you lost last battle, give all friends +3/+3",
         "trigger": "BuyAfterLoss",
         "triggeredBy": {
           "kind": "Player"
@@ -6661,7 +6661,7 @@
           "target": {
             "kind": "EachFriend"
           },
-          "attackAmount": 6,
+          "attackAmount": 3,
           "healthAmount": 3,
           "untilEndOfBattle": false
         }
@@ -7087,8 +7087,8 @@
         "unicodeCodePoint": "🐋"
       },
       "tier": 4,
-      "baseAttack": 2,
-      "baseHealth": 6,
+      "baseAttack": 3,
+      "baseHealth": 8,
       "packs": [
         "StandardPack"
       ],
@@ -8146,7 +8146,7 @@
         "StandardPack"
       ],
       "level1Ability": {
-        "description": "End turn: Give right-most friend +3/+3",
+        "description": "End turn: Give right-most friend +2/+3",
         "trigger": "EndOfTurn",
         "triggeredBy": {
           "kind": "Player"
@@ -8157,12 +8157,12 @@
             "kind": "RightMostFriend"
           },
           "attackAmount": 2,
-          "healthAmount": 2,
+          "healthAmount": 3,
           "untilEndOfBattle": false
         }
       },
       "level2Ability": {
-        "description": "End turn: Give right-most friend +6/+6",
+        "description": "End turn: Give right-most friend +4/+6",
         "trigger": "EndOfTurn",
         "triggeredBy": {
           "kind": "Player"
@@ -8173,12 +8173,12 @@
             "kind": "RightMostFriend"
           },
           "attackAmount": 4,
-          "healthAmount": 4,
+          "healthAmount": 6,
           "untilEndOfBattle": false
         }
       },
       "level3Ability": {
-        "description": "End turn: Give right-most friend +9/+9",
+        "description": "End turn: Give right-most friend +6/+9",
         "trigger": "EndOfTurn",
         "triggeredBy": {
           "kind": "Player"
@@ -8189,7 +8189,7 @@
             "kind": "RightMostFriend"
           },
           "attackAmount": 6,
-          "healthAmount": 6,
+          "healthAmount": 9,
           "untilEndOfBattle": false
         }
       },

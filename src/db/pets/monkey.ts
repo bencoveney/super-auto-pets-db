@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function monkeyAbility(level: number): Ability {
   return {
-    description: `End turn: Give right-most friend +${level * 3}/+${level * 3}`,
+    description: `End turn: Give right-most friend +${level * 2}/+${level * 3}`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",
@@ -14,7 +14,7 @@ function monkeyAbility(level: number): Ability {
         kind: "RightMostFriend",
       },
       attackAmount: level * 2,
-      healthAmount: level * 2,
+      healthAmount: level * 3,
       untilEndOfBattle: false,
     },
   };

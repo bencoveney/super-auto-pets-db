@@ -3,9 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function tyrannosaurusAbility(level: number): Ability {
   return {
-    description: `End turn: If you have 3 or more gold, give all +${
-      level * 2
-    }/+${level}`,
+    description: `End turn: If you have 3 or more gold, give all +${level * 2}/+${level}`,
     trigger: Trigger.EndOfTurnWith3PlusGold,
     triggeredBy: {
       kind: "Player",
