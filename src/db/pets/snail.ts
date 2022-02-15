@@ -3,9 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function snailAbility(level: number): Ability {
   return {
-    description: `Buy: If you lost last battle, give all friends +${
-      level * 2
-    }/+${level}`,
+    description: `Buy: If you lost last battle, give all friends +${level}/+${level}`,
     trigger: Trigger.BuyAfterLoss,
     triggeredBy: {
       kind: "Player",
@@ -15,7 +13,7 @@ function snailAbility(level: number): Ability {
       target: {
         kind: "EachFriend",
       },
-      attackAmount: level * 2,
+      attackAmount: level,
       healthAmount: level,
       untilEndOfBattle: false,
     },
