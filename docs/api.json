@@ -1659,7 +1659,7 @@
         "ExpansionPack1"
       ],
       "level1Ability": {
-        "description": "Start of battle: Deal 1 damage to a random enemy",
+        "description": "Start of battle: Deal 1 damage to 1 random enemy.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "Player"
@@ -1674,7 +1674,7 @@
         }
       },
       "level2Ability": {
-        "description": "Start of battle: Deal 2 damage to a random enemy",
+        "description": "Start of battle: Deal 2 damage to 2 random enemies.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "Player"
@@ -1689,7 +1689,7 @@
         }
       },
       "level3Ability": {
-        "description": "Start of battle: Deal 3 damage to a random enemy",
+        "description": "Start of battle: Deal 3 damage to 3 random enemies.",
         "trigger": "StartOfBattle",
         "triggeredBy": {
           "kind": "Player"
@@ -5961,7 +5961,7 @@
         "StandardPack"
       ],
       "level1Ability": {
-        "description": "Friend ahead attacks: Gain Melon Armor and +2 attack",
+        "description": "Friend ahead faints: Gain Melon Armor and +2 attack.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
@@ -5989,7 +5989,7 @@
         }
       },
       "level2Ability": {
-        "description": "Friend ahead attacks: Gain Melon Armor and +4 attack",
+        "description": "Friend ahead faints: Gain Melon Armor and +4 attack.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
@@ -6017,7 +6017,7 @@
         }
       },
       "level3Ability": {
-        "description": "Friend ahead attacks: Gain Melon Armor and +6 attack",
+        "description": "Friend ahead faints: Gain Melon Armor and +6 attack.",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
