@@ -4,9 +4,7 @@ import { melonArmor } from "../statusEffects/melonArmor";
 
 function oxAbility(level: number): Ability {
   return {
-    description: `Friend ahead attacks: Gain Melon Armor and +${
-      level * 2
-    } attack`,
+    description: `Friend ahead faints: Gain Melon Armor and +${level * 2} attack.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "FriendAhead",
