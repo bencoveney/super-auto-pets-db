@@ -2,8 +2,9 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function mosquitoAbility(level: number): Ability {
+  const enemy = level == 1 ? "enemy" : "enemies";
   return {
-    description: `Start of battle: Deal ${level} damage to a random enemy`,
+    description: `Start of battle: Deal ${level} damage to ${level} random ${enemy}.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
       kind: "Player",
