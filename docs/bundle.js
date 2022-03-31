@@ -26273,7 +26273,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "StandardPack"
       ],
       level1Ability: {
-        description: "Faint: Deal Attack damage to adjacent animals",
+        description: "Faint: Deal Attack x1 damage to adjacent animals",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -26289,7 +26289,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "Faint: Deal Attack damage to adjacent animals",
+        description: "Faint: Deal Attack x2 damage to adjacent animals",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -26305,7 +26305,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Faint: Deal Attack damage to adjacent animals",
+        description: "Faint: Deal Attack x3 damage to adjacent animals",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"

@@ -4751,7 +4751,7 @@
         "StandardPack"
       ],
       "level1Ability": {
-        "description": "Faint: Deal Attack damage to adjacent animals",
+        "description": "Faint: Deal Attack x1 damage to adjacent animals",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
@@ -4767,7 +4767,7 @@
         }
       },
       "level2Ability": {
-        "description": "Faint: Deal Attack damage to adjacent animals",
+        "description": "Faint: Deal Attack x2 damage to adjacent animals",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"
@@ -4783,7 +4783,7 @@
         }
       },
       "level3Ability": {
-        "description": "Faint: Deal Attack damage to adjacent animals",
+        "description": "Faint: Deal Attack x3 damage to adjacent animals",
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "Self"

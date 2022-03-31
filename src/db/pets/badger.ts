@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function badgerAbility(level: number): Ability {
   return {
-    description: `Faint: Deal Attack damage to adjacent animals`,
+    description: `Faint: Deal Attack x${level} damage to adjacent animals`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "Self",
