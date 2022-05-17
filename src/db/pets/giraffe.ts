@@ -30,7 +30,7 @@ export const giraffe: Pet = {
   },
   tier: 3,
   baseAttack: 2,
-  baseHealth: 5,
+  baseHealth: 4,
   packs: ["StandardPack"],
   level1Ability: {
     ...giraffeAbility(1),

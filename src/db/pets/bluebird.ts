@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function bluebirdAbility(level: number): Ability {
   return {
-    description: `End turn: Give left-most friend +${level} attack`,
+    description: `End turn: Give a random friend +${level} attack`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",
@@ -12,7 +12,8 @@ function bluebirdAbility(level: number): Ability {
       kind: "ModifyStats",
       attackAmount: level,
       target: {
-        kind: "LeftMostFriend",
+        kind: "RandomFriend",
+        n: 1
       },
       untilEndOfBattle: false,
     },

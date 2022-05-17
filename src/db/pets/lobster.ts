@@ -3,9 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function lobsterAbility(level: number): Ability {
   return {
-    description: `Friend summoned: Give it +${level * 2}/+${
-      level * 2
-    } when not in battle.`,
+    description: `Friend summoned outside of battle: Give it +${level * 2}/+${level * 3}.`,
     trigger: Trigger.Summoned,
     triggeredBy: {
       kind: "EachFriend",
@@ -16,7 +14,7 @@ function lobsterAbility(level: number): Ability {
         kind: "TriggeringEntity",
       },
       attackAmount: level * 2,
-      healthAmount: level * 2,
+      healthAmount: level * 3,
       untilEndOfBattle: false,
     },
   };

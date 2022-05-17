@@ -17,6 +17,11 @@ export function Pack(props: {
       name: "Expansion 1",
       nameCondensed: "Exp 1",
     },
+    ExpansionPack2: {
+      color: "bg-pink-800",
+      name: "Expansion 2",
+      nameCondensed: "Exp 2",
+    },
     EasterEgg: {
       color: "bg-yellow-800",
       name: "Rare Easter Egg",

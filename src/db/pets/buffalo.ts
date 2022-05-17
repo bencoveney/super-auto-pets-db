@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function buffaloAbility(level: number): Ability {
   return {
-    description: `Friend bought: Gain +${level}/+${level}`,
+    description: `Buy friend: Gain +${level}/+${level}. Works 3 times per turn.`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "EachFriend",

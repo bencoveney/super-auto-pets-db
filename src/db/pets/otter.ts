@@ -2,8 +2,9 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function otterAbility(level: number): Ability {
+  const friend = level == 1 ? "friend" : "friends";
   return {
-    description: `Buy: Give a random friend +${level}/+${level}`,
+    description: `Buy: Give ${level} random ${friend} +1/+1`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "Self",

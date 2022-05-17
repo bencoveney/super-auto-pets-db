@@ -28,7 +28,7 @@ export const duck: Pet = {
     unicodeCodePoint: "\u{1F986}",
   },
   tier: 1,
-  baseAttack: 1,
+  baseAttack: 2,
   baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: duckAbility(1),

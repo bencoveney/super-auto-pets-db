@@ -458,7 +458,12 @@ function describeEffect(
         description: `On the next turn, if this animal is on your team, the first set of food in the shop will be discounted`,
         notes: [`This only applies to the food that first appears, food on subsequent rolls will be full price`],
       };
+    case "AddShopFood":
+      return {
+        description: `This will add another food item to the shop.`,
+        notes: [],
   }
+}
 }
 
 function canFireInTheShop(trigger: Trigger) {

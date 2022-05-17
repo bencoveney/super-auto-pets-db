@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function turkeyAbility(level: number): Ability {
   return {
-    description: `Friend summoned: Give it +${level * 3}/+${level * 3}.`,
+    description: `Friend summoned: Give it +${level * 2}/+${level * 3}.`,
     trigger: Trigger.Summoned,
     triggeredBy: {
       kind: "EachFriend",
@@ -13,7 +13,7 @@ function turkeyAbility(level: number): Ability {
       target: {
         kind: "TriggeringEntity",
       },
-      attackAmount: level * 3,
+      attackAmount: level * 2,
       healthAmount: level * 3,
       untilEndOfBattle: false,
     },

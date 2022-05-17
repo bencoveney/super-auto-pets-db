@@ -3,14 +3,23 @@ import { getPetIdentifiers } from "../database";
 
 function squirrelAbility(level: number): Ability {
   return {
-    description: `Start of turn: Discount shop food by ${level} gold`,
+    description: `Start of turn: Add 1 shop food and discount them by ${level} gold.`,
     trigger: Trigger.StartOfTurn,
     triggeredBy: {
       kind: "Self",
     },
     effect: {
-      kind: "DiscountFood",
-      amount: level,
+      kind: "AllOf",
+      effects: [
+        {
+          kind: "AddShopFood",
+          amount: 1,
+        },
+        {
+          kind: "DiscountFood",
+          amount: level,
+        },
+      ],
     },
   };
 }

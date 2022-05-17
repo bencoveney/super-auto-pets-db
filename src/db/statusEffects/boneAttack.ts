@@ -9,14 +9,14 @@ export const boneAttack: Status = {
     unicodeCodePoint: "\u{1F356}",
   },
   ability: {
-    description: "Attack for 5 more damage.",
+    description: "Attack for 4 more damage.",
     triggeredBy: {
       kind: "Self",
     },
     trigger: Trigger.WhenAttacking,
     effect: {
       kind: "ModifyDamage",
-      damageModifier: 5,
+      damageModifier: 4,
       appliesOnce: false,
     },
   },

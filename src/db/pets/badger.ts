@@ -2,8 +2,9 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function badgerAbility(level: number): Ability {
+  const percent = level*50
   return {
-    description: `Faint: Deal Attack damage to adjacent animals`,
+    description: `Faint: Deal ${percent}% Attack damage to adjacent pets.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "Self",
@@ -13,7 +14,7 @@ function badgerAbility(level: number): Ability {
       target: {
         kind: "AdjacentAnimals",
       },
-      amount: { attackDamagePercent: 100 },
+      amount: { attackDamagePercent: percent },
     },
   };
 }
@@ -27,7 +28,7 @@ export const badger: Pet = {
   },
   tier: 3,
   baseAttack: 5,
-  baseHealth: 4,
+  baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: badgerAbility(1),
   level2Ability: badgerAbility(2),

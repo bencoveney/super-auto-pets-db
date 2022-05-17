@@ -28,7 +28,7 @@ export const beaver: Pet = {
     unicodeCodePoint: "\u{1F9AB}",
   },
   tier: 1,
-  baseAttack: 2,
+  baseAttack: 3,
   baseHealth: 2,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: beaverAbility(1),

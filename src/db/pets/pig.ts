@@ -23,7 +23,7 @@ export const pig: Pet = {
     unicodeCodePoint: "\u{1F416}",
   },
   tier: 1,
-  baseAttack: 3,
+  baseAttack: 4,
   baseHealth: 1,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: pigAbility(1),

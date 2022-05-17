@@ -4,7 +4,7 @@ import { melonArmor } from "../statusEffects/melonArmor";
 
 function oxAbility(level: number): Ability {
   return {
-    description: `Friend ahead faints: Gain Melon Armor and +${level * 2} attack.`,
+    description: `Friend ahead faints: Gain Melon Armor and +${level} Attack.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "FriendAhead",
@@ -25,7 +25,7 @@ function oxAbility(level: number): Ability {
           target: {
             kind: "Self",
           },
-          attackAmount: level * 2,
+          attackAmount: level,
           untilEndOfBattle: false,
         },
       ],
@@ -42,7 +42,7 @@ export const ox: Pet = {
   },
   tier: 3,
   baseAttack: 1,
-  baseHealth: 4,
+  baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: oxAbility(1),
   level2Ability: oxAbility(2),

@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function elephantAbility(level: number): Ability {
   return {
-    description: `Before Attack: Deal 1 damage to ${level} friends behind.`,
+    description: `Before Attack: Deal 1 damage to the friend behind. Repeat ${level} times.`,
     trigger: Trigger.BeforeAttack,
     triggeredBy: {
       kind: "Self",
@@ -12,9 +12,10 @@ function elephantAbility(level: number): Ability {
       kind: "DealDamage",
       target: {
         kind: "FriendBehind",
-        n: level,
+        n: 1,
       },
       amount: 1,
+      times: level,
     },
   };
 }

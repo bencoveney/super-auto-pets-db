@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function rhinoAbility(level: number): Ability {
   return {
-    description: `Knock out: Deal ${level * 4} damage to the first enemy.`,
+    description: `Knock out: Deal ${level * 4} damage to the first enemy. Double against Tier 1 pets.`,
     trigger: Trigger.KnockOut,
     triggeredBy: {
       kind: "Self",

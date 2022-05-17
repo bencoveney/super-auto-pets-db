@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function camelAbility(level: number): Ability {
   return {
-    description: `Hurt: Give friend behind +${level}/+${level * 2}`,
+    description: `Hurt: Give +${level*2}/+${level*2} to friend behind.`,
     trigger: Trigger.Hurt,
     triggeredBy: {
       kind: "Self",
@@ -14,9 +14,9 @@ function camelAbility(level: number): Ability {
         kind: "FriendBehind",
         n: 1,
       },
-      attackAmount: level,
+      attackAmount: level * 2,
       healthAmount: level * 2,
-      untilEndOfBattle: false,
+      untilEndOfBattle: true,
     },
   };
 }
@@ -30,7 +30,7 @@ export const camel: Pet = {
   },
   tier: 3,
   baseAttack: 2,
-  baseHealth: 5,
+  baseHealth: 6,
   packs: ["StandardPack"],
   level1Ability: camelAbility(1),
   level2Ability: camelAbility(2),

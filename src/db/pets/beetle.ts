@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function beetleAbility(level: number): Ability {
   return {
-    description: `Eat shop food: Give shop animals +${level} health`,
+    description: `Eat shop food: Give the left-most shop pet +${level} health`,
     trigger: Trigger.EatsShopFood,
     triggeredBy: {
       kind: "Self",
@@ -12,8 +12,9 @@ function beetleAbility(level: number): Ability {
       kind: "ModifyStats",
       healthAmount: level,
       target: {
-        kind: "EachShopAnimal",
+        kind: "LeftMostShopAnimal",
         includingFuture: false,
+        amount: 1,
       },
       untilEndOfBattle: false,
     },

@@ -3,8 +3,8 @@ import { getPetIdentifiers } from "../database";
 
 function dromedaryAbility(level: number): Ability {
   return {
-    description: `Start of turn: Give shop animals +${level}/+${level}`,
-    trigger: Trigger.StartOfTurn,
+    description: `End turn: Give the 2 left-most shop pets +${level}/+${level}`,
+    trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",
     },
@@ -12,7 +12,8 @@ function dromedaryAbility(level: number): Ability {
       kind: "ModifyStats",
       untilEndOfBattle: false,
       target: {
-        kind: "EachShopAnimal",
+        kind: "LeftMostShopAnimal",
+        amount: 2,
         includingFuture: false,
       },
       attackAmount: level,

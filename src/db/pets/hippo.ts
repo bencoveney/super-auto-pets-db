@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function hippoAbility(level: number): Ability {
   return {
-    description: `Knock out: Gain +${level * 2}/+${level * 2}.`,
+    description: `Knock out: Gain +${level * 3}/+${level * 3}.`,
     trigger: Trigger.KnockOut,
     triggeredBy: {
       kind: "Self",
@@ -13,8 +13,8 @@ function hippoAbility(level: number): Ability {
       target: {
         kind: "Self",
       },
-      attackAmount: level * 2,
-      healthAmount: level * 2,
+      attackAmount: level * 3,
+      healthAmount: level * 3,
       untilEndOfBattle: false,
     },
   };

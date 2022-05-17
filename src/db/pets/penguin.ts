@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function penguinAbility(level: number): Ability {
   return {
-    description: `End turn: Give other Lvl. 2 and 3 friends +${level}/+${level}`,
+    description: `End turn: Give three Lvl. 2 and 3 friends +${level}/+${level}`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",
@@ -12,6 +12,7 @@ function penguinAbility(level: number): Ability {
       kind: "ModifyStats",
       target: {
         kind: "Level2And3Friends",
+        n: 3,
       },
       attackAmount: level,
       healthAmount: level,

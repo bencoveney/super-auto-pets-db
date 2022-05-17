@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function crocodileAbility(level: number): Ability {
   return {
-    description: `Start of battle: Deal ${level * 8} damage to the last enemy`,
+    description: `Start of battle: Deal 8 damage to the last enemy. Repeat ${level} times.`,
     trigger: Trigger.StartOfBattle,
     triggeredBy: {
       kind: "Player",
@@ -13,7 +13,8 @@ function crocodileAbility(level: number): Ability {
       target: {
         kind: "LastEnemy",
       },
-      amount: level * 7,
+      amount: 8,
+      times: level
     },
   };
 }

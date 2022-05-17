@@ -27,7 +27,7 @@ export const rabbit: Pet = {
     unicodeCodePoint: "\u{1F407}",
   },
   tier: 3,
-  baseAttack: 3,
+  baseAttack: 1,
   baseHealth: 2,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: rabbitAbility(1),

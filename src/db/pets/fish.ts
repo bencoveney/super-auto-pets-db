@@ -30,7 +30,7 @@ export const fish: Pet = {
   },
   tier: 1,
   baseAttack: 2,
-  baseHealth: 3,
+  baseHealth: 2,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: fishAbility(1),
   level2Ability: fishAbility(2),

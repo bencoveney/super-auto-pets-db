@@ -1,6 +1,6 @@
 import { PetRef, StatusRef, FoodRef, TurnRef } from "./database";
 
-export type Pack = "StandardPack" | "ExpansionPack1" | "EasterEgg";
+export type Pack = "StandardPack" | "ExpansionPack1" | "ExpansionPack2" | "EasterEgg";
 
 export type Tier = 1 | 2 | 3 | 4 | 5 | 6 | "Summoned";
 
@@ -188,13 +188,14 @@ export type SimpleTarget = {
 };
 
 export type NTarget = {
-  kind: "FriendAhead" | "FriendBehind" | "RandomFriend" | "RandomEnemy";
+  kind: "FriendAhead" | "FriendBehind" | "RandomFriend" | "RandomEnemy" | "Level2And3Friends";
   n: number;
 };
 
 export type ShopTarget = {
-  kind: "EachShopAnimal";
+  kind: "EachShopAnimal" | "LeftMostShopAnimal";
   includingFuture: boolean;
+  amount?: number;
 };
 
 export type Effect =
@@ -219,7 +220,8 @@ export type Effect =
   | RespawnPetEffect
   | ModifyDamageEffect
   | SplashDamageEffect
-  | DiscountFoodEffect;
+  | DiscountFoodEffect
+  | AddShopFoodEffect;
 
 export interface ModifyStatsEffect {
   kind: "ModifyStats";
@@ -232,7 +234,8 @@ export interface ModifyStatsEffect {
 export interface DealDamageEffect {
   kind: "DealDamage";
   target: Target;
-  amount: number | { attackDamagePercent: number };
+  amount: number | { attackDamagePercent: number }
+  times?: number;
 }
 
 export interface TransferStatsEffect {
@@ -357,6 +360,11 @@ export interface FaintEffect {
 
 export interface DiscountFoodEffect {
   kind: "DiscountFood";
+  amount: number;
+}
+
+export interface AddShopFoodEffect {
+  kind: "AddShopFood";
   amount: number;
 }
 

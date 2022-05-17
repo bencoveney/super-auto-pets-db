@@ -3,7 +3,7 @@ import { getPetIdentifiers } from "../database";
 
 function sharkAbility(level: number): Ability {
   return {
-    description: `Friend faints: Gain +${level * 2}/+${level}.`,
+    description: `Friend faints: Gain +${level * 2}/+${level * 2}.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "EachFriend",
@@ -14,7 +14,7 @@ function sharkAbility(level: number): Ability {
         kind: "Self",
       },
       attackAmount: level * 2,
-      healthAmount: level,
+      healthAmount: level * 2,
       untilEndOfBattle: false,
     },
   };

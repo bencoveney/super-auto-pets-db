@@ -4,7 +4,7 @@ import { getPetIdentifiers } from "../database";
 function poodleAbility(level: number): Ability {
   return {
     // TODO: The Poodle buffs the leftmost animal of each tier
-    description: `End turn: Give +${level}/+${level} to different tier animals.`,
+    description: `End turn: Give +${level}/+${level} to a friend of each tier.`,
     trigger: Trigger.EndOfTurn,
     triggeredBy: {
       kind: "Player",

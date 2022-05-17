@@ -2,71 +2,23 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function octopusAbility(level: number): Ability {
-  if (level <= 1) {
     return {
-      description: `Level-up: Gain +8/+8.`,
-      trigger: Trigger.LevelUp,
+      description: `Before attack: Deal ${level*3} damage to 2 random enemies.`,
+      trigger: Trigger.BeforeAttack,
       triggeredBy: {
         kind: "Self",
       },
       effect: {
-        kind: "ModifyStats",
+        kind: "DealDamage",
         target: {
-          kind: "Self",
+          kind: "RandomEnemy",
+          n: 2,
         },
-        attackAmount: 8,
-        healthAmount: 8,
-        untilEndOfBattle: false,
+        amount: level*3,
       },
     };
-  }
-
-  if (level <= 2) {
-    return {
-      description: `Level-up: Gain +8/+8 and a new ability.`,
-      trigger: Trigger.LevelUp,
-      triggeredBy: {
-        kind: "Self",
-      },
-      effect: {
-        kind: "AllOf",
-        effects: [
-          {
-            kind: "ModifyStats",
-            target: {
-              kind: "Self",
-            },
-            attackAmount: 8,
-            healthAmount: 8,
-            untilEndOfBattle: false,
-          },
-          {
-            kind: "GainAbility",
-            target: {
-              kind: "Self",
-            },
-          },
-        ],
-      },
-    };
-  }
-
-  return {
-    description: `Before attack: Deal 5 damage to all enemies`,
-    trigger: Trigger.BeforeAttack,
-    triggeredBy: {
-      kind: "Self",
-    },
-    effect: {
-      kind: "DealDamage",
-      target: {
-        kind: "EachEnemy",
-      },
-      amount: 5,
-    },
-  };
 }
-
+      
 export const octopus: Pet = {
   ...getPetIdentifiers("Octopus"),
   image: {
@@ -81,4 +33,4 @@ export const octopus: Pet = {
   level1Ability: octopusAbility(1),
   level2Ability: octopusAbility(2),
   level3Ability: octopusAbility(3),
-};
+}

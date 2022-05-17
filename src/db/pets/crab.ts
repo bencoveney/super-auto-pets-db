@@ -2,13 +2,14 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function crabAbility(level: number): Ability {
+  const percent = level*50
   return {
-    description: `Buy: Copy Health from the most healthy friend`,
+    description: `Buy: Copy ${percent}% Health from the most healthy friend.`,
     trigger: Trigger.Buy,
     triggeredBy: {
       kind: "Player",
     },
-    effect: {
+     effect: {
       kind: "TransferStats",
       copyAttack: false,
       copyHealth: true,
@@ -18,6 +19,7 @@ function crabAbility(level: number): Ability {
       to: {
         kind: "Self",
       },
+      percentage: percent,
     },
   };
 }
