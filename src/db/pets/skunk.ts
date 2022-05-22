@@ -28,7 +28,7 @@ export const skunk: Pet = {
   },
   tier: 4,
   baseAttack: 3,
-  baseHealth: 6,
+  baseHealth: 5,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: skunkAbility(1),
   level2Ability: skunkAbility(2),

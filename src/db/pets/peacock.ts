@@ -27,7 +27,7 @@ export const peacock: Pet = {
     unicodeCodePoint: "\u{1F99A}",
   },
   tier: 2,
-  baseAttack: 1,
+  baseAttack: 2,
   baseHealth: 5,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: peacockAbility(1),

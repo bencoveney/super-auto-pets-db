@@ -30,7 +30,7 @@ export const parrot: Pet = {
     unicodeCodePoint: "\u{1F99C}",
   },
   tier: 4,
-  baseAttack: 5,
+  baseAttack: 6,
   baseHealth: 3,
   packs: ["StandardPack"],
   level1Ability: parrotAbility(1),

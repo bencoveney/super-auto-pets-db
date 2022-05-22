@@ -25,7 +25,7 @@ export const squirrel: Pet = {
   },
   tier: 4,
   baseAttack: 2,
-  baseHealth: 2,
+  baseHealth: 5,
   packs: ["StandardPack", "ExpansionPack1"],
   level1Ability: squirrelAbility(1),
   level2Ability: squirrelAbility(2),
