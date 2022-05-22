@@ -12,6 +12,7 @@ function peacockAbility(level: number): Ability {
       kind: "ModifyStats",
       target: {
         kind: "Self",
+        n: level,
       },      
       attackAmount: "?",
       untilEndOfBattle: false,
