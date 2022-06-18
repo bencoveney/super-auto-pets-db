@@ -5976,6 +5976,7 @@
         "StandardPack"
       ],
       "level1Ability": {
+<<<<<<< HEAD
         "description": "Friend ahead faints: Gain Melon Armor and +1 Attack.",
         "trigger": "Faint",
         "triggeredBy": {
@@ -6005,6 +6006,9 @@
       },
       "level2Ability": {
         "description": "Friend ahead faints: Gain Melon Armor and +2 Attack.",
+=======
+        "description": "Friend ahead faints: Gain Melon Armor and +2 attack.",
+>>>>>>> 4942c4cc5fa1979783a63d129b033aa0a93fe1a2
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
@@ -6031,8 +6035,41 @@
           ]
         }
       },
+<<<<<<< HEAD
       "level3Ability": {
         "description": "Friend ahead faints: Gain Melon Armor and +3 Attack.",
+=======
+      "level2Ability": {
+        "description": "Friend ahead faints: Gain Melon Armor and +4 attack.",
+        "trigger": "Faint",
+        "triggeredBy": {
+          "kind": "FriendAhead",
+          "n": 1
+        },
+        "effect": {
+          "kind": "AllOf",
+          "effects": [
+            {
+              "kind": "ApplyStatus",
+              "status": "status-melon-armor",
+              "to": {
+                "kind": "Self"
+              }
+            },
+            {
+              "kind": "ModifyStats",
+              "target": {
+                "kind": "Self"
+              },
+              "attackAmount": 4,
+              "untilEndOfBattle": false
+            }
+          ]
+        }
+      },
+      "level3Ability": {
+        "description": "Friend ahead faints: Gain Melon Armor and +6 attack.",
+>>>>>>> 4942c4cc5fa1979783a63d129b033aa0a93fe1a2
         "trigger": "Faint",
         "triggeredBy": {
           "kind": "FriendAhead",
