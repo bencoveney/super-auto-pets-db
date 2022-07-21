@@ -16,7 +16,7 @@ function gorillaAbility(level: number): Ability {
         kind: "Self",
       },
     },
-    maxTriggers: 1,
+    maxTriggers: level,
   };
 }
 
