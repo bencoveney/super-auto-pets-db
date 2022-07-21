@@ -2,7 +2,7 @@ import { Ability, Trigger, Pet } from "..";
 import { getPetIdentifiers } from "../database";
 
 function skunkAbility(level: number): Ability {
-  const percentage = level == 3 ? 100 : level * 33;
+  const percentage = level * 33;
   return {
     description: `Start of battle: Reduce the highest Health enemy by ${percentage}%.`,
     trigger: Trigger.StartOfBattle,
