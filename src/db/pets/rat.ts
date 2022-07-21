@@ -2,11 +2,11 @@ import { Pet, Ability, Trigger } from "..";
 import { getPetIdentifiers } from "../database";
 import { dirtyRat } from "./dirtyRat";
 
-
-
 function ratAbility(level: number): Ability {
   return {
-    description: `Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.`,
+    description: `Faint: summon ${level} 1/1 Dirty Rat${
+      level > 1 ? "s" : ""
+    } up front for the opponent.`,
     trigger: Trigger.Faint,
     triggeredBy: {
       kind: "Self",

@@ -25381,7 +25381,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         "ExpansionPack1"
       ],
       level1Ability: {
-        description: "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
+        description: "Faint: summon 1 1/1 Dirty Rat up front for the opponent.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -25393,7 +25393,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level2Ability: {
-        description: "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
+        description: "Faint: summon 2 1/1 Dirty Rats up front for the opponent.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -25405,7 +25405,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Faint: summon one 1/1 Dirty Rat for the opponent that betrays him.",
+        description: "Faint: summon 3 1/1 Dirty Rats up front for the opponent.",
         trigger: "Faint",
         triggeredBy: {
           kind: "Self"
@@ -30174,7 +30174,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
         }
       },
       level3Ability: {
-        description: "Start of battle: Reduce the highest Health enemy by 100%.",
+        description: "Start of battle: Reduce the highest Health enemy by 99%.",
         trigger: "StartOfBattle",
         triggeredBy: {
           kind: "Player"
@@ -30184,7 +30184,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           target: {
             kind: "HighestHealthEnemy"
           },
-          percentage: 100
+          percentage: 99
         }
       },
       probabilities: [
@@ -32251,7 +32251,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "Self"
           }
         },
-        maxTriggers: 1
+        maxTriggers: 2
       },
       level3Ability: {
         description: "Hurt: Gain Coconut Shield.",
@@ -32266,7 +32266,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
             kind: "Self"
           }
         },
-        maxTriggers: 1
+        maxTriggers: 3
       },
       probabilities: [
         {
