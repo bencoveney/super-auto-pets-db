@@ -27478,12 +27478,40 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
       },
       tier: 3,
       baseAttack: 1,
-      baseHealth: 4,
+      baseHealth: 3,
       packs: [
         "StandardPack"
       ],
       level1Ability: {
-        description: "Friend ahead attacks: Gain Melon Armor and +2 attack",
+        description: "Friend ahead faints: Gain Melon Armor and +1 attack",
+        trigger: "Faint",
+        triggeredBy: {
+          kind: "FriendAhead",
+          n: 1
+        },
+        effect: {
+          kind: "AllOf",
+          effects: [
+            {
+              kind: "ApplyStatus",
+              status: "status-melon-armor",
+              to: {
+                kind: "Self"
+              }
+            },
+            {
+              kind: "ModifyStats",
+              target: {
+                kind: "Self"
+              },
+              attackAmount: 1,
+              untilEndOfBattle: false
+            }
+          ]
+        }
+      },
+      level2Ability: {
+        description: "Friend ahead faints: Gain Melon Armor and +2 attack",
         trigger: "Faint",
         triggeredBy: {
           kind: "FriendAhead",
@@ -27510,36 +27538,8 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
           ]
         }
       },
-      level2Ability: {
-        description: "Friend ahead attacks: Gain Melon Armor and +4 attack",
-        trigger: "Faint",
-        triggeredBy: {
-          kind: "FriendAhead",
-          n: 1
-        },
-        effect: {
-          kind: "AllOf",
-          effects: [
-            {
-              kind: "ApplyStatus",
-              status: "status-melon-armor",
-              to: {
-                kind: "Self"
-              }
-            },
-            {
-              kind: "ModifyStats",
-              target: {
-                kind: "Self"
-              },
-              attackAmount: 4,
-              untilEndOfBattle: false
-            }
-          ]
-        }
-      },
       level3Ability: {
-        description: "Friend ahead attacks: Gain Melon Armor and +6 attack",
+        description: "Friend ahead faints: Gain Melon Armor and +3 attack",
         trigger: "Faint",
         triggeredBy: {
           kind: "FriendAhead",
@@ -27560,7 +27560,7 @@ For more info, visit https://reactjs.org/link/mock-scheduler`);
               target: {
                 kind: "Self"
               },
-              attackAmount: 6,
+              attackAmount: 3,
               untilEndOfBattle: false
             }
           ]
